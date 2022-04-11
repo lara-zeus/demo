@@ -5,6 +5,12 @@ module.exports = {
         "./resources/**/*.blade.php",
     ],
     theme: {
+        debugScreens: {
+            style: {
+                fontSize: '24px',
+                // ...
+            },
+        },
         extend: {
             colors: {
                 gray: colors.zinc,
@@ -17,5 +23,7 @@ module.exports = {
             }
         },
     },
-    plugins: [],
+    plugins: [
+        require('tailwindcss-debug-screens'),
+    ],
 }

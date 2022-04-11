@@ -23,7 +23,7 @@
         @endif
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 @if(app()->isLocal()) debug-screens @endif">
 
 <div class="inset-0 sm:h-screen flex items-center">
     <div class="container mx-auto">

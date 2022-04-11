@@ -15,6 +15,7 @@
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.4.12",
-        "tailwindcss": "^3.0.23"
+        "tailwindcss": "^3.0.23",
+        "tailwindcss-debug-screens": "^2.2.1"
     }
 }
