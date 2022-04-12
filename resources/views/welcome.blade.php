@@ -1,6 +1,6 @@
 <x-app>
     <div class="text-center p-10">
-        <img class="h-32 w-auto mx-auto" src="{{ asset('vendor/zeus/images/zeus-logo.png') }}" alt="Lara-zeus Wind package">
+        <img class="h-32 w-auto mx-auto" src="https://larazeus.com/images/zeus-logo.png" alt="Lara-zeus Wind package">
         <p class="text-6xl">@zeus</p>
         <p class="text-xl my-4">Demo App for all @zeus packages</p>
 
@@ -13,12 +13,12 @@
         </span>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 sm:gap-10 mx-4 sm:mx-0">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mx-4">
         @include('wind')
-        {{--@include('sky')--}}
-        {{--@include('bolt')--}}
+        @include('sky')
         @include('soon')
     </div>
+
     <div class="sm:my-32 my-10 mx-8 group">
         <div class="flex items-center justify-start gap-2" >
             <x-iconoir-left-round-arrow class="w-8 h-8 text-yellow-600"/>

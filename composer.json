@@ -11,7 +11,8 @@
         "codeat3/blade-iconpark": "^1.4",
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
-        "lara-zeus/wind": "^1.0",
+        "lara-zeus/sky": "dev-main",
+        "lara-zeus/wind": "dev-main",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
         "sentry/sentry-laravel": "^2.11"
@@ -63,5 +64,23 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../wind-pkg"
+        },
+        {
+            "type": "path",
+            "url": "../sky-pkg"
+        },
+        {
+            "type": "path",
+            "url": "../bolt-pkg"
+        },
+        {
+            "type": "path",
+            "url": "../core"
+        }
+    ]
 }

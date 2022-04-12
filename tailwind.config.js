@@ -8,12 +8,11 @@ module.exports = {
         debugScreens: {
             style: {
                 fontSize: '24px',
-                // ...
             },
         },
         extend: {
             colors: {
-                gray: colors.zinc,
+                gray: colors.stone,
                 primary: colors.green,
                 secondary: colors.yellow,
                 danger: colors.rose,
