@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83c0d6702aee0eee7f339085029b3054",
+    "content-hash": "5788d49f8f4f3784104c9651453791a5",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -2279,11 +2279,12 @@
             "dist": {
                 "type": "path",
                 "url": "../core",
-                "reference": "1474b42dc3f8518893f02a58a4f4fb1b4126f5b2"
+                "reference": "2b4bfd09dbc0df1be7578a03257609855a4f5bf0"
             },
             "require": {
                 "archtechx/laravel-seo": "^0.4.0",
                 "calebporzio/sushi": "^2.4",
+                "codeat3/blade-iconpark": "^1.4",
                 "filament/filament": "^2.10",
                 "illuminate/support": "^8.0 || ^9.0",
                 "php": "^8.0"
@@ -2350,10 +2351,9 @@
             "dist": {
                 "type": "path",
                 "url": "../sky-pkg",
-                "reference": "436533a41e886fd49d5b8eceb1e3b4fb998caab9"
+                "reference": "c6c5520989a57db23bc275b1fcd4863d017fc8ab"
             },
             "require": {
-                "codeat3/blade-iconpark": "^1.4",
                 "ext-json": "*",
                 "filament/spatie-laravel-media-library-plugin": "^2.0",
                 "filament/spatie-laravel-tags-plugin": "^2.0",
@@ -2430,7 +2430,7 @@
             "dist": {
                 "type": "path",
                 "url": "../wind-pkg",
-                "reference": "f8e93d45523999ece8b3e7a354b134de56050da4"
+                "reference": "dd7c094518bb71edf4243ed94f6350ed8c52872f"
             },
             "require": {
                 "lara-zeus/core": "dev-main",

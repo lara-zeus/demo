@@ -15,7 +15,7 @@
         "lara-zeus/wind": "dev-main",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
-        "sentry/sentry-laravel": "^2.11"
+        "sentry/sentry-laravel": "^2.12"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
