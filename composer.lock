@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2cd2ec9bf40a14d6843b2b7321282166",
+    "content-hash": "a80245e539e4db6fb1d604a845f0bc17",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -2276,10 +2276,16 @@
         {
             "name": "lara-zeus/core",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/core.git",
+                "reference": "d6cade003af1ba4203e5019962de1b543010c237"
+            },
             "dist": {
-                "type": "path",
-                "url": "../core",
-                "reference": "2b4bfd09dbc0df1be7578a03257609855a4f5bf0"
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/d6cade003af1ba4203e5019962de1b543010c237",
+                "reference": "d6cade003af1ba4203e5019962de1b543010c237",
+                "shasum": ""
             },
             "require": {
                 "archtechx/laravel-seo": "^0.4.0",
@@ -2293,6 +2299,7 @@
                 "orchestra/testbench": "^6.0 || ^7.0",
                 "phpunit/phpunit": "^9.5.10"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2309,19 +2316,7 @@
                     "LaraZeus\\Core\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "LaraZeus\\Core\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "test-coverage": [
-                    "vendor/bin/phpunit --coverage-html coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2341,17 +2336,31 @@
                 "lara-zeus",
                 "laravel"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/lara-zeus/core/issues",
+                "source": "https://github.com/lara-zeus/core/tree/main"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/atm_code",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-19T06:11:30+00:00"
         },
         {
             "name": "lara-zeus/sky",
-            "version": "dev-main",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/sky.git",
+                "reference": "77cd2c633e2660241d7f844e738a67c3906db38b"
+            },
             "dist": {
-                "type": "path",
-                "url": "../sky-pkg",
-                "reference": "1fbc907ba7b9f05d8a06f4fc4fb987501a5f8636"
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/77cd2c633e2660241d7f844e738a67c3906db38b",
+                "reference": "77cd2c633e2660241d7f844e738a67c3906db38b",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -2366,8 +2375,7 @@
                 "spatie/laravel-tags": "^4.0"
             },
             "require-dev": {
-                "orchestra/testbench": "^6.0 || ^7.0",
-                "phpunit/phpunit": "^9.5.10"
+                "orchestra/testbench": "^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
@@ -2382,19 +2390,7 @@
                     "LaraZeus\\Sky\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "LaraZeus\\Sky\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "test-coverage": [
-                    "vendor/bin/phpunit --coverage-html coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2408,10 +2404,10 @@
             "description": "simple packages to create and manage forms for your users",
             "homepage": "https://larazeus.com",
             "keywords": [
+                "Laravel CMS",
                 "cms",
                 "lara-zeus",
                 "laravel",
-                "laravel cms",
                 "menu",
                 "news",
                 "pages",
@@ -2420,17 +2416,25 @@
                 "wordpress alternative",
                 "wordpress laravel"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/lara-zeus/sky/issues",
+                "source": "https://github.com/lara-zeus/sky/tree/2.0.1"
+            },
+            "time": "2022-04-19T06:29:23+00:00"
         },
         {
             "name": "lara-zeus/wind",
-            "version": "dev-main",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/wind.git",
+                "reference": "91f6883ab4d3d40360817cda8be99cfc762952a9"
+            },
             "dist": {
-                "type": "path",
-                "url": "../wind-pkg",
-                "reference": "10e903a0a8f48f3169f1c2269c65900a99a13525"
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/91f6883ab4d3d40360817cda8be99cfc762952a9",
+                "reference": "91f6883ab4d3d40360817cda8be99cfc762952a9",
+                "shasum": ""
             },
             "require": {
                 "lara-zeus/core": "dev-main",
@@ -2455,6 +2459,7 @@
                     "LaraZeus\\Wind\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2468,16 +2473,24 @@
             "description": "laravel packages to create and manage contact us for your site",
             "homepage": "https://github.com/lara-zeus",
             "keywords": [
+                "Forms",
                 "contact",
                 "form",
-                "forms",
                 "lara-zeus",
                 "laravel",
                 "mailing"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/lara-zeus/wind/issues",
+                "source": "https://github.com/lara-zeus/wind/tree/2.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/atm_code",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-04-19T06:22:31+00:00"
         },
         {
             "name": "laravel/framework",
@@ -11417,10 +11430,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "lara-zeus/sky": 20,
-        "lara-zeus/wind": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
