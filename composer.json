@@ -8,6 +8,7 @@
         "php": "^8.0.2",
         "andreiio/blade-iconoir": "^1.5",
         "andreiio/blade-remix-icon": "^1.1",
+        "codeat3/blade-clarity-icons": "^1.7",
         "codeat3/blade-iconpark": "^1.4",
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",

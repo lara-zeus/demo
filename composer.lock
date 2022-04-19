@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a80245e539e4db6fb1d604a845f0bc17",
+    "content-hash": "946f9d1743a8df50e6aec581b42c4528",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -629,6 +629,78 @@
                 }
             ],
             "time": "2022-02-21T13:15:14+00:00"
+        },
+        {
+            "name": "codeat3/blade-clarity-icons",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codeat3/blade-clarity-icons.git",
+                "reference": "b66060a29283c1c6df5a3636f52ec5831c9357fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codeat3/blade-clarity-icons/zipball/b66060a29283c1c6df5a3636f52ec5831c9357fc",
+                "reference": "b66060a29283c1c6df5a3636f52ec5831c9357fc",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.1",
+                "illuminate/support": "^8.0|^9.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "codeat3/blade-icon-generation-helpers": "^0.1",
+                "codeat3/phpcs-styles": "^1.0",
+                "orchestra/testbench": "^6.0|^7.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Codeat3\\BladeClarityIcons\\BladeClarityIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Codeat3\\BladeClarityIcons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Swapnil Sarwe",
+                    "homepage": "https://swapnilsarwe.com"
+                },
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A package to easily make use of Clarity Icons in your Laravel Blade views.",
+            "homepage": "https://github.com/codeat3/blade-clarity-icons",
+            "keywords": [
+                "blade",
+                "clarity",
+                "icons",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/codeat3/blade-clarity-icons/issues",
+                "source": "https://github.com/codeat3/blade-clarity-icons/tree/1.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/swapnilsarwe",
+                    "type": "custom"
+                }
+            ],
+            "time": "2022-03-28T12:26:32+00:00"
         },
         {
             "name": "codeat3/blade-iconpark",

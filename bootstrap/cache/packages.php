@@ -41,6 +41,13 @@
       0 => 'BladeUI\\Icons\\BladeIconsServiceProvider',
     ),
   ),
+  'codeat3/blade-clarity-icons' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Codeat3\\BladeClarityIcons\\BladeClarityIconsServiceProvider',
+    ),
+  ),
   'codeat3/blade-iconpark' => 
   array (
     'providers' => 
