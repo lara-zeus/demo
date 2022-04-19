@@ -18,11 +18,12 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'Zeus',
             'email' => 'zeus@larazeus.com',
-            'password' => Hash::make('wind#larazeus'),
+            'password' => Hash::make('zeus#larazeus'),
         ]);
 
         $this->call([
-            //WindSeeder::class,
+            WindSeeder::class,
+            SkySeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
     }

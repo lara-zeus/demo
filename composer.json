@@ -76,10 +76,6 @@
         },
         {
             "type": "path",
-            "url": "../bolt-pkg"
-        },
-        {
-            "type": "path",
             "url": "../core"
         }
     ]
