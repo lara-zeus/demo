@@ -20,6 +20,13 @@
       0 => 'AndreiIonita\\BladeRemixIcon\\BladeRemixIconServiceProvider',
     ),
   ),
+  'archtechx/laravel-seo' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'ArchTech\\SEO\\SEOServiceProvider',
+    ),
+  ),
   'blade-ui-kit/blade-heroicons' => 
   array (
     'providers' => 
@@ -55,6 +62,13 @@
       0 => 'Filament\\Forms\\FormsServiceProvider',
     ),
   ),
+  'filament/spatie-laravel-translatable-plugin' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Filament\\SpatieLaravelTranslatablePluginServiceProvider',
+    ),
+  ),
   'filament/tables' => 
   array (
     'providers' => 
@@ -69,6 +83,28 @@
       0 => 'Fruitcake\\Cors\\CorsServiceProvider',
     ),
   ),
+  'imliam/laravel-blade-helper' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'ImLiam\\BladeHelper\\BladeHelperServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'BladeHelper' => 'ImLiam\\BladeHelper\\BladeHelperFacade',
+    ),
+  ),
+  'intervention/image' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Intervention\\Image\\ImageServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Image' => 'Intervention\\Image\\Facades\\Image',
+    ),
+  ),
   'lara-zeus/core' => 
   array (
     'providers' => 
@@ -78,6 +114,13 @@
     'aliases' => 
     array (
       'Core' => 'LaraZeus\\Core\\CoreFacade',
+    ),
+  ),
+  'lara-zeus/sky' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'LaraZeus\\Sky\\SkyServiceProvider',
     ),
   ),
   'lara-zeus/wind' => 
@@ -123,6 +166,13 @@
       'Livewire' => 'Livewire\\Livewire',
     ),
   ),
+  'mohamedsabil83/filament-forms-tinyeditor' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Mohamedsabil83\\FilamentFormsTinyeditor\\FilamentFormsTinyeditorServiceProvider',
+    ),
+  ),
   'nesbot/carbon' => 
   array (
     'providers' => 
@@ -149,6 +199,13 @@
       'Sentry' => 'Sentry\\Laravel\\Facade',
     ),
   ),
+  'spatie/eloquent-sortable' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\EloquentSortable\\EloquentSortableServiceProvider',
+    ),
+  ),
   'spatie/laravel-ignition' => 
   array (
     'providers' => 
@@ -158,6 +215,27 @@
     'aliases' => 
     array (
       'Flare' => 'Spatie\\LaravelIgnition\\Facades\\Flare',
+    ),
+  ),
+  'spatie/laravel-medialibrary' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\MediaLibrary\\MediaLibraryServiceProvider',
+    ),
+  ),
+  'spatie/laravel-tags' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Tags\\TagsServiceProvider',
+    ),
+  ),
+  'spatie/laravel-translatable' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Translatable\\TranslatableServiceProvider',
     ),
   ),
 );

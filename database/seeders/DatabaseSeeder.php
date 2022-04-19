@@ -16,13 +16,14 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'name' => 'Zeus Wind',
-            'email' => 'wind@larazeus.com',
-            'password' => Hash::make('wind#larazeus'),
+            'name' => 'Zeus',
+            'email' => 'zeus@larazeus.com',
+            'password' => Hash::make('zeus#larazeus'),
         ]);
 
         $this->call([
             WindSeeder::class,
+            SkySeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
     }

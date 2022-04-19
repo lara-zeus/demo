@@ -1,7 +1,7 @@
 <x-zeus::app>
     <div class="flex items-center justify-center inset-0 sm:h-[calc(100vh-25rem)] px-4 mt-32">
         <div class="flex flex-col sm:flex-row w-full gap-4">
-            <img class="h-32 w-auto mx-auto" src="{{ asset('vendor/zeus/images/zeus-logo.png') }}" alt="Lara-zeus Wind package">
+            <img class="h-32 w-auto mx-auto" src="https://larazeus.com/images/zeus-logo.png" alt="Lara-zeus Wind package">
             <div class="flex flex-col gap-2 items-center sm:items-start">
                 <div class="mt-1 text-5xl sm:text-5xl lg:text-6xl font-extrabold {{--flex flex-row sm:items-center sm:justify-start--}}">
                     <span class="mr-4">@zeus</span>
