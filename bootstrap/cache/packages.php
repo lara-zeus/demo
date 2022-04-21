@@ -194,6 +194,13 @@
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
+  'phpsa/filament-dadjokes' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Phpsa\\FilamentDadJokes\\FilamentDadJokesProvider',
+    ),
+  ),
   'sentry/sentry-laravel' => 
   array (
     'providers' => 

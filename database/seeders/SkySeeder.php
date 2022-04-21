@@ -15,7 +15,7 @@ class SkySeeder extends Seeder
         Tag::create([ 'name' => 'dev', 'type' => 'category' ]);
 
         Post::factory()
-            ->count(8)
+            ->count(10)
             ->create();
 
         foreach (Post::all() as $post) { // loop through all posts

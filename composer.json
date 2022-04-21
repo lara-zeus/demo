@@ -16,6 +16,7 @@
         "lara-zeus/wind": "^2.0",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
+        "phpsa/filament-dadjokes": "^1.0",
         "sentry/sentry-laravel": "^2.12"
     },
     "require-dev": {

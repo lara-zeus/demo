@@ -18,11 +18,12 @@ class PostFactory extends Factory
     {
         return [
             'user_id'      => 1,
-            'title'        => $this->faker->word,
+            'title'        => $this->faker->sentence($nbWords = 6, $variableNbWords = true),
             'slug'         => $this->faker->slug(2),
-            'description'  => $this->faker->sentence,
-            'content'      => $this->faker->sentence,
+            'description'  => $this->faker->paragraph($nbSentences = 3, $variableNbSentences = true),
+            'content'      => $this->faker->paragraph($nbSentences = 12, $variableNbSentences = true),
             'published_at' => now(),
+            'status'       => $this->faker->randomElement([ 'publish', 'future', 'draft', 'private' ]),
             'post_type'    => $this->faker->randomElement([ 'page', 'post' ]),
         ];
     }

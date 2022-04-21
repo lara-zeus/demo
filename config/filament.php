@@ -13,6 +13,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Phpsa\FilamentDadJokes\Widgets\DadJokeWidget;
 
 return [
 
@@ -117,7 +118,8 @@ return [
         'namespace' => 'App\\Filament\\Widgets',
         'path' => app_path('Filament/Widgets'),
         'register' => [
-            Widgets\AccountWidget::class,
+            //Widgets\AccountWidget::class,
+            DadJokeWidget::class,
             Widgets\FilamentInfoWidget::class,
         ],
     ],
