@@ -2621,16 +2621,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "6629748c787fb25956784cd5cd39c8aa0c46f5d8"
+                "reference": "8bf7d048f87b0563fbdf98de635e680b7a1092b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/6629748c787fb25956784cd5cd39c8aa0c46f5d8",
-                "reference": "6629748c787fb25956784cd5cd39c8aa0c46f5d8",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/8bf7d048f87b0563fbdf98de635e680b7a1092b6",
+                "reference": "8bf7d048f87b0563fbdf98de635e680b7a1092b6",
                 "shasum": ""
             },
             "require": {
@@ -2689,9 +2689,9 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/sky/issues",
-                "source": "https://github.com/lara-zeus/sky/tree/2.0.4"
+                "source": "https://github.com/lara-zeus/sky/tree/2.0.5"
             },
-            "time": "2022-04-22T04:00:33+00:00"
+            "time": "2022-04-22T11:16:12+00:00"
         },
         {
             "name": "lara-zeus/wind",

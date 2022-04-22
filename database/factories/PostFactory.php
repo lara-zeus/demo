@@ -23,6 +23,7 @@ class PostFactory extends Factory
             'description'  => $this->faker->paragraph($nbSentences = 3, $variableNbSentences = true),
             'content'      => $this->faker->paragraph($nbSentences = 12, $variableNbSentences = true),
             'published_at' => now(),
+            'sticky_until' => $this->faker->randomElement([ now(), null ]),
             'status'       => $this->faker->randomElement([ 'publish', 'future', 'draft', 'private' ]),
             'post_type'    => $this->faker->randomElement([ 'page', 'post' ]),
         ];
