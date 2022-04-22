@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "361dfebb3c2c79bf03d795cc393fbfe7",
+    "content-hash": "2fe90570288ac7fd257c8e87b16f5022",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -2621,11 +2621,17 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "dev-validation",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/sky.git",
+                "reference": "6629748c787fb25956784cd5cd39c8aa0c46f5d8"
+            },
             "dist": {
-                "type": "path",
-                "url": "../sky-pkg",
-                "reference": "d8c07d8c44fcdb8f34934880a0e9212881954f46"
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/6629748c787fb25956784cd5cd39c8aa0c46f5d8",
+                "reference": "6629748c787fb25956784cd5cd39c8aa0c46f5d8",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -2655,6 +2661,7 @@
                     "LaraZeus\\Sky\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2668,10 +2675,10 @@
             "description": "simple packages to create and manage forms for your users",
             "homepage": "https://larazeus.com",
             "keywords": [
+                "Laravel CMS",
                 "cms",
                 "lara-zeus",
                 "laravel",
-                "laravel cms",
                 "menu",
                 "news",
                 "pages",
@@ -2680,9 +2687,11 @@
                 "wordpress alternative",
                 "wordpress laravel"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/lara-zeus/sky/issues",
+                "source": "https://github.com/lara-zeus/sky/tree/2.0.4"
+            },
+            "time": "2022-04-22T04:00:33+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -11814,9 +11823,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "lara-zeus/sky": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
