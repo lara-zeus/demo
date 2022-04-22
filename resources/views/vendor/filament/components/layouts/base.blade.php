@@ -33,7 +33,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa:wght@400;700&family=El+Messiri:wght@400;500;600;700&family=Lemonada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
         @foreach (\Filament\Facades\Filament::getStyles() as $name => $path)
             @if (Str::of($path)->startsWith(['http://', 'https://']))
@@ -59,7 +59,7 @@
     </head>
 
     <body @class([
-        'bg-gray-100 text-gray-900 filament-body',
+        'bg-gray-100 text-gray-900 filament-body rtl:font-el-messiri ltr:font-koho',
         'dark:text-gray-100 dark:bg-gray-900' => config('filament.dark_mode'),
     ])>
         {{ $slot }}

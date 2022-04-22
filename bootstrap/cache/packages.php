@@ -27,6 +27,17 @@
       0 => 'ArchTech\\SEO\\SEOServiceProvider',
     ),
   ),
+  'atm-code/signature' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'AtmCode\\Signature\\SignatureServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Signature' => 'AtmCode\\Signature\\SignatureFacade',
+    ),
+  ),
   'blade-ui-kit/blade-heroicons' => 
   array (
     'providers' => 
@@ -110,6 +121,17 @@
     'aliases' => 
     array (
       'Image' => 'Intervention\\Image\\Facades\\Image',
+    ),
+  ),
+  'jenssegers/agent' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Jenssegers\\Agent\\AgentServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Agent' => 'Jenssegers\\Agent\\Facades\\Agent',
     ),
   ),
   'lara-zeus/core' => 

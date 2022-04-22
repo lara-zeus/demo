@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "625a44fbc9688f21c3bc1d6798cdbf7d",
+    "content-hash": "361dfebb3c2c79bf03d795cc393fbfe7",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -302,6 +302,68 @@
                 "source": "https://github.com/asm89/stack-cors/tree/v2.1.1"
             },
             "time": "2022-01-18T09:12:03+00:00"
+        },
+        {
+            "name": "atm-code/signature",
+            "version": "1.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atm-code/signature.git",
+                "reference": "e13527192c60023a1c8e964679c1208018618e59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atm-code/signature/zipball/e13527192c60023a1c8e964679c1208018618e59",
+                "reference": "e13527192c60023a1c8e964679c1208018618e59",
+                "shasum": ""
+            },
+            "require": {
+                "jenssegers/agent": "^2.6",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.17",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AtmCode\\Signature\\SignatureServiceProvider"
+                    ],
+                    "aliases": {
+                        "Signature": "AtmCode\\Signature\\SignatureFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AtmCode\\Signature\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ashraf Monshi",
+                    "email": "wh7r.com@gmail.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "laravel packages to add @atm-code and @zeus to the footer where it's needed in amm our projects",
+            "homepage": "https://github.com/atm-code",
+            "keywords": [
+                "atm-code",
+                "lara-zeus",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/atm-code/signature/issues",
+                "source": "https://github.com/atm-code/signature/tree/1.16"
+            },
+            "time": "2021-12-01T01:40:45+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -1252,16 +1314,16 @@
         },
         {
             "name": "filament/filament",
-            "version": "v2.11.0",
+            "version": "v2.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-filament/admin.git",
-                "reference": "541f4c32eeabff81bb05ed3ab2f9b3e3ec07e53c"
+                "reference": "4ad23cf83f7fa03c4063ca790b2623a6264f6e68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-filament/admin/zipball/541f4c32eeabff81bb05ed3ab2f9b3e3ec07e53c",
-                "reference": "541f4c32eeabff81bb05ed3ab2f9b3e3ec07e53c",
+                "url": "https://api.github.com/repos/laravel-filament/admin/zipball/4ad23cf83f7fa03c4063ca790b2623a6264f6e68",
+                "reference": "4ad23cf83f7fa03c4063ca790b2623a6264f6e68",
                 "shasum": ""
             },
             "require": {
@@ -1308,11 +1370,11 @@
                 "issues": "https://github.com/laravel-filament/filament/issues",
                 "source": "https://github.com/laravel-filament/filament"
             },
-            "time": "2022-04-20T21:10:12+00:00"
+            "time": "2022-04-21T22:56:35+00:00"
         },
         {
             "name": "filament/forms",
-            "version": "v2.11.0",
+            "version": "v2.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-filament/forms.git",
@@ -1368,7 +1430,7 @@
         },
         {
             "name": "filament/spatie-laravel-media-library-plugin",
-            "version": "v2.11.0",
+            "version": "v2.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-filament/spatie-laravel-media-library-plugin.git",
@@ -1405,7 +1467,7 @@
         },
         {
             "name": "filament/spatie-laravel-tags-plugin",
-            "version": "v2.11.0",
+            "version": "v2.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-filament/spatie-laravel-tags-plugin.git",
@@ -1442,7 +1504,7 @@
         },
         {
             "name": "filament/spatie-laravel-translatable-plugin",
-            "version": "v2.11.0",
+            "version": "v2.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-filament/spatie-laravel-translatable-plugin.git",
@@ -1488,16 +1550,16 @@
         },
         {
             "name": "filament/tables",
-            "version": "v2.11.0",
+            "version": "v2.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-filament/tables.git",
-                "reference": "5fb3896d042449a600782558a030c44dcb4c17c7"
+                "reference": "957c8fca3bdebbdf9b88211ba881df3f57deaa7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-filament/tables/zipball/5fb3896d042449a600782558a030c44dcb4c17c7",
-                "reference": "5fb3896d042449a600782558a030c44dcb4c17c7",
+                "url": "https://api.github.com/repos/laravel-filament/tables/zipball/957c8fca3bdebbdf9b88211ba881df3f57deaa7a",
+                "reference": "957c8fca3bdebbdf9b88211ba881df3f57deaa7a",
                 "shasum": ""
             },
             "require": {
@@ -1537,7 +1599,7 @@
                 "issues": "https://github.com/laravel-filament/filament/issues",
                 "source": "https://github.com/laravel-filament/filament"
             },
-            "time": "2022-04-20T21:10:06+00:00"
+            "time": "2022-04-21T22:56:38+00:00"
         },
         {
             "name": "fruitcake/laravel-cors",
@@ -2289,6 +2351,58 @@
             "time": "2021-12-16T16:49:26+00:00"
         },
         {
+            "name": "jaybizzle/crawler-detect",
+            "version": "v1.2.111",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JayBizzle/Crawler-Detect.git",
+                "reference": "d572ed4a65a70a2d2871dc5137c9c5b7e69745ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/d572ed4a65a70a2d2871dc5137c9c5b7e69745ab",
+                "reference": "d572ed4a65a70a2d2871dc5137c9c5b7e69745ab",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8|^5.5|^6.5|^9.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jaybizzle\\CrawlerDetect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Beech",
+                    "email": "m@rkbee.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
+            "homepage": "https://github.com/JayBizzle/Crawler-Detect/",
+            "keywords": [
+                "crawler",
+                "crawler detect",
+                "crawler detector",
+                "crawlerdetect",
+                "php crawler detect"
+            ],
+            "support": {
+                "issues": "https://github.com/JayBizzle/Crawler-Detect/issues",
+                "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.2.111"
+            },
+            "time": "2022-03-15T22:19:01+00:00"
+        },
+        {
             "name": "jean85/pretty-package-versions",
             "version": "2.0.5",
             "source": {
@@ -2346,6 +2460,89 @@
                 "source": "https://github.com/Jean85/pretty-package-versions/tree/2.0.5"
             },
             "time": "2021-10-08T21:21:46+00:00"
+        },
+        {
+            "name": "jenssegers/agent",
+            "version": "v2.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/agent.git",
+                "reference": "daa11c43729510b3700bc34d414664966b03bffe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jenssegers/agent/zipball/daa11c43729510b3700bc34d414664966b03bffe",
+                "reference": "daa11c43729510b3700bc34d414664966b03bffe",
+                "shasum": ""
+            },
+            "require": {
+                "jaybizzle/crawler-detect": "^1.2",
+                "mobiledetect/mobiledetectlib": "^2.7.6",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5.0|^6.0|^7.0"
+            },
+            "suggest": {
+                "illuminate/support": "Required for laravel service providers"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Jenssegers\\Agent\\AgentServiceProvider"
+                    ],
+                    "aliases": {
+                        "Agent": "Jenssegers\\Agent\\Facades\\Agent"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jenssegers\\Agent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com"
+                }
+            ],
+            "description": "Desktop/mobile user agent parser with support for Laravel, based on Mobiledetect",
+            "homepage": "https://github.com/jenssegers/agent",
+            "keywords": [
+                "Agent",
+                "browser",
+                "desktop",
+                "laravel",
+                "mobile",
+                "platform",
+                "user agent",
+                "useragent"
+            ],
+            "support": {
+                "issues": "https://github.com/jenssegers/agent/issues",
+                "source": "https://github.com/jenssegers/agent/tree/v2.6.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/jenssegers",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/jenssegers/agent",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-13T08:05:20+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -2424,17 +2621,11 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "2.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "336ced5e5aec44d577fd6a14a75c3dfb4b72aa09"
-            },
+            "version": "dev-validation",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/336ced5e5aec44d577fd6a14a75c3dfb4b72aa09",
-                "reference": "336ced5e5aec44d577fd6a14a75c3dfb4b72aa09",
-                "shasum": ""
+                "type": "path",
+                "url": "../sky-pkg",
+                "reference": "d8c07d8c44fcdb8f34934880a0e9212881954f46"
             },
             "require": {
                 "ext-json": "*",
@@ -2464,7 +2655,6 @@
                     "LaraZeus\\Sky\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2478,10 +2668,10 @@
             "description": "simple packages to create and manage forms for your users",
             "homepage": "https://larazeus.com",
             "keywords": [
-                "Laravel CMS",
                 "cms",
                 "lara-zeus",
                 "laravel",
+                "laravel cms",
                 "menu",
                 "news",
                 "pages",
@@ -2490,11 +2680,9 @@
                 "wordpress alternative",
                 "wordpress laravel"
             ],
-            "support": {
-                "issues": "https://github.com/lara-zeus/sky/issues",
-                "source": "https://github.com/lara-zeus/sky/tree/2.0.3"
-            },
-            "time": "2022-04-21T04:37:37+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/wind",
@@ -3411,6 +3599,62 @@
                 }
             ],
             "time": "2020-05-30T13:11:16+00:00"
+        },
+        {
+            "name": "mobiledetect/mobiledetectlib",
+            "version": "2.8.39",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/serbanghita/Mobile-Detect.git",
+                "reference": "0fd6753003fc870f6e229bae869cc1337c99bc45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/0fd6753003fc870f6e229bae869cc1337c99bc45",
+                "reference": "0fd6753003fc870f6e229bae869cc1337c99bc45",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.35||~5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Detection": "namespaced/"
+                },
+                "classmap": [
+                    "Mobile_Detect.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Serban Ghita",
+                    "email": "serbanghita@gmail.com",
+                    "homepage": "http://mobiledetect.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mobile_Detect is a lightweight PHP class for detecting mobile devices. It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.",
+            "homepage": "https://github.com/serbanghita/Mobile-Detect",
+            "keywords": [
+                "detect mobile devices",
+                "mobile",
+                "mobile detect",
+                "mobile detector",
+                "php mobile detect"
+            ],
+            "support": {
+                "issues": "https://github.com/serbanghita/Mobile-Detect/issues",
+                "source": "https://github.com/serbanghita/Mobile-Detect/tree/2.8.39"
+            },
+            "time": "2022-02-17T19:24:25+00:00"
         },
         {
             "name": "mohamedsabil83/filament-forms-tinyeditor",
@@ -11570,7 +11814,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "lara-zeus/sky": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

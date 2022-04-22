@@ -12,6 +12,10 @@ module.exports = {
             },
         },
         extend: {
+            fontFamily: {
+                'el-messiri': ['El Messiri', 'sans-serif'],
+                'koho': ['KoHo', 'sans-serif'],
+            },
             colors: {
                 gray: colors.stone,
                 primary: colors.emerald,

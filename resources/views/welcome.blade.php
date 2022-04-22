@@ -1,4 +1,7 @@
 <x-app>
+    <div class="relative inline-flex top-0 rtl:right-0 ltr:left-0">
+        <x-lang-switcher/>
+    </div>
     <div class="text-center p-10">
         <img class="h-32 w-auto mx-auto" src="https://larazeus.com/images/zeus-logo.png" alt="Lara-zeus Wind package">
         <p class="text-6xl">@zeus</p>

@@ -8,11 +8,12 @@
         "php": "^8.0.2",
         "andreiio/blade-iconoir": "^1.5",
         "andreiio/blade-remix-icon": "^1.1",
+        "atm-code/signature": "^1.16",
         "codeat3/blade-clarity-icons": "^1.7",
         "codeat3/blade-iconpark": "^1.4",
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
-        "lara-zeus/sky": "^2.0",
+        "lara-zeus/sky": "dev-validation",
         "lara-zeus/wind": "^2.0",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
@@ -66,5 +67,11 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../sky-pkg"
+        }
+    ]
 }
