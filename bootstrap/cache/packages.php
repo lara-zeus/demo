@@ -87,6 +87,13 @@
       0 => 'Filament\\SpatieLaravelTranslatablePluginServiceProvider',
     ),
   ),
+  'filament/support' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Filament\\Support\\SupportServiceProvider',
+    ),
+  ),
   'filament/tables' => 
   array (
     'providers' => 
@@ -214,13 +221,6 @@
     'providers' => 
     array (
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    ),
-  ),
-  'phpsa/filament-dadjokes' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Phpsa\\FilamentDadJokes\\FilamentDadJokesProvider',
     ),
   ),
   'sentry/sentry-laravel' => 
