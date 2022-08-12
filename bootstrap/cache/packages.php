@@ -80,6 +80,13 @@
       0 => 'Filament\\Forms\\FormsServiceProvider',
     ),
   ),
+  'filament/notifications' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Filament\\Notifications\\NotificationsServiceProvider',
+    ),
+  ),
   'filament/spatie-laravel-translatable-plugin' => 
   array (
     'providers' => 
@@ -139,6 +146,13 @@
     'aliases' => 
     array (
       'Agent' => 'Jenssegers\\Agent\\Facades\\Agent',
+    ),
+  ),
+  'lara-zeus/bolt' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'LaraZeus\\Bolt\\BoltServiceProvider',
     ),
   ),
   'lara-zeus/core' => 
@@ -221,6 +235,13 @@
     'providers' => 
     array (
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    ),
+  ),
+  'nunomaduro/termwind' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Termwind\\Laravel\\TermwindServiceProvider',
     ),
   ),
   'sentry/sentry-laravel' => 

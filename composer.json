@@ -14,7 +14,8 @@
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
         "lara-zeus/sky": "^2.1",
-        "lara-zeus/wind": "^2.1.0",
+        "lara-zeus/wind": "^2.1",
+        "lara-zeus/bolt": "dev-main",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
         "sentry/sentry-laravel": "^2.12"
@@ -66,5 +67,15 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../bolt-pkg"
+        },
+        {
+            "type": "path",
+            "url": "../core"
+        }
+    ]
 }
