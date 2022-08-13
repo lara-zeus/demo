@@ -2990,7 +2990,7 @@
             "dist": {
                 "type": "path",
                 "url": "../bolt-pkg",
-                "reference": "4f915fbc84e404260300f109d2ae9492968703f4"
+                "reference": "87119a227a63988c3b1ba0071bd36eef9122cb09"
             },
             "require": {
                 "codeat3/blade-clarity-icons": "^1.7",
@@ -3046,7 +3046,7 @@
             "dist": {
                 "type": "path",
                 "url": "../core",
-                "reference": "bca51462a14e76672549183d6d8bb59b78925bb1"
+                "reference": "f5dff8856767d8e780c1ba6e5b127498269ac10e"
             },
             "require": {
                 "archtechx/laravel-seo": "^0.4.0",
@@ -4308,16 +4308,16 @@
         },
         {
             "name": "mohamedsabil83/filament-forms-tinyeditor",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mohamedsabil83/filament-forms-tinyeditor.git",
-                "reference": "04e7c89aa71ef9f208721c20cb8889fa235a2467"
+                "reference": "5923deb0c325caccb1e3e582aa980ab46d014a70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mohamedsabil83/filament-forms-tinyeditor/zipball/04e7c89aa71ef9f208721c20cb8889fa235a2467",
-                "reference": "04e7c89aa71ef9f208721c20cb8889fa235a2467",
+                "url": "https://api.github.com/repos/mohamedsabil83/filament-forms-tinyeditor/zipball/5923deb0c325caccb1e3e582aa980ab46d014a70",
+                "reference": "5923deb0c325caccb1e3e582aa980ab46d014a70",
                 "shasum": ""
             },
             "require": {
@@ -4373,15 +4373,19 @@
             ],
             "support": {
                 "issues": "https://github.com/mohamedsabil83/filament-forms-tinyeditor/issues",
-                "source": "https://github.com/mohamedsabil83/filament-forms-tinyeditor/tree/v1.6.0"
+                "source": "https://github.com/mohamedsabil83/filament-forms-tinyeditor/tree/v1.6.1"
             },
             "funding": [
                 {
                     "url": "https://paypal.me/technolizer",
                     "type": "custom"
+                },
+                {
+                    "url": "https://github.com/mohamedsabil83",
+                    "type": "github"
                 }
             ],
-            "time": "2022-06-23T10:10:26+00:00"
+            "time": "2022-08-12T15:20:22+00:00"
         },
         {
             "name": "monolog/monolog",
