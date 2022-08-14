@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca210c404308d28d6187340bb9d4f886",
+    "content-hash": "7539dedec61189808c505b9707b2ba8e",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -2192,6 +2192,53 @@
             "time": "2022-02-20T15:07:15+00:00"
         },
         {
+            "name": "garygreen/pretty-routes",
+            "version": "1.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/garygreen/pretty-routes.git",
+                "reference": "7fa09429416dcceab7fab6b36d7ff57bbcb8b504"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/garygreen/pretty-routes/zipball/7fa09429416dcceab7fab6b36d7ff57bbcb8b504",
+                "reference": "7fa09429416dcceab7fab6b36d7ff57bbcb8b504",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.*|6.*|7.*|8.*|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "PrettyRoutes\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PrettyRoutes\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gary Green",
+                    "email": "holegary@gmail.com"
+                }
+            ],
+            "description": "Pretty routes for Laravel 5+",
+            "support": {
+                "issues": "https://github.com/garygreen/pretty-routes/issues",
+                "source": "https://github.com/garygreen/pretty-routes/tree/1.0.11"
+            },
+            "time": "2022-02-06T16:45:56+00:00"
+        },
+        {
             "name": "graham-campbell/result-type",
             "version": "v1.1.0",
             "source": {
@@ -2990,7 +3037,7 @@
             "dist": {
                 "type": "path",
                 "url": "../bolt-pkg",
-                "reference": "87119a227a63988c3b1ba0071bd36eef9122cb09"
+                "reference": "63cd4d7405e3f39603ccc4dbbbeb685e036b2ffc"
             },
             "require": {
                 "codeat3/blade-clarity-icons": "^1.7",

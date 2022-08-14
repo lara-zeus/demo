@@ -115,6 +115,13 @@
       0 => 'Fruitcake\\Cors\\CorsServiceProvider',
     ),
   ),
+  'garygreen/pretty-routes' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'PrettyRoutes\\ServiceProvider',
+    ),
+  ),
   'imliam/laravel-blade-helper' => 
   array (
     'providers' => 
