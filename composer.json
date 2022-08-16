@@ -15,8 +15,6 @@
         "garygreen/pretty-routes": "^1.0",
         "guzzlehttp/guzzle": "^7.2",
         "lara-zeus/bolt": "dev-main",
-        "lara-zeus/sky": "^2.1",
-        "lara-zeus/wind": "^2.1",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
         "sentry/sentry-laravel": "^2.12"
