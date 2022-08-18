@@ -19,6 +19,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mx-4">
         @include('wind')
         @include('sky')
+        @include('bolt')
         @include('soon')
     </div>
 

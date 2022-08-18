@@ -52,6 +52,13 @@
       0 => 'BladeUI\\Icons\\BladeIconsServiceProvider',
     ),
   ),
+  'codeat3/blade-akar-icons' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Codeat3\\BladeAkarIcons\\BladeAkarIconsServiceProvider',
+    ),
+  ),
   'codeat3/blade-clarity-icons' => 
   array (
     'providers' => 
@@ -85,6 +92,13 @@
     'providers' => 
     array (
       0 => 'Filament\\Notifications\\NotificationsServiceProvider',
+    ),
+  ),
+  'filament/spatie-laravel-translatable-plugin' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Filament\\SpatieLaravelTranslatablePluginServiceProvider',
     ),
   ),
   'filament/support' => 
@@ -126,6 +140,17 @@
       'BladeHelper' => 'ImLiam\\BladeHelper\\BladeHelperFacade',
     ),
   ),
+  'intervention/image' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Intervention\\Image\\ImageServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Image' => 'Intervention\\Image\\Facades\\Image',
+    ),
+  ),
   'jenssegers/agent' => 
   array (
     'providers' => 
@@ -143,6 +168,10 @@
     array (
       0 => 'LaraZeus\\Bolt\\BoltServiceProvider',
     ),
+    'aliases' => 
+    array (
+      'Bolt' => 'LaraZeus\\Bolt\\Facades\\Bolt',
+    ),
   ),
   'lara-zeus/core' => 
   array (
@@ -153,6 +182,24 @@
     'aliases' => 
     array (
       'Core' => 'LaraZeus\\Core\\CoreFacade',
+    ),
+  ),
+  'lara-zeus/sky' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'LaraZeus\\Sky\\SkyServiceProvider',
+    ),
+  ),
+  'lara-zeus/wind' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'LaraZeus\\Wind\\WindServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Wind' => 'LaraZeus\\Wind\\WindFacade',
     ),
   ),
   'laravel/sail' => 
@@ -185,6 +232,13 @@
     'aliases' => 
     array (
       'Livewire' => 'Livewire\\Livewire',
+    ),
+  ),
+  'mohamedsabil83/filament-forms-tinyeditor' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Mohamedsabil83\\FilamentFormsTinyeditor\\FilamentFormsTinyeditorServiceProvider',
     ),
   ),
   'nesbot/carbon' => 
@@ -220,6 +274,13 @@
       'Sentry' => 'Sentry\\Laravel\\Facade',
     ),
   ),
+  'spatie/eloquent-sortable' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\EloquentSortable\\EloquentSortableServiceProvider',
+    ),
+  ),
   'spatie/laravel-ignition' => 
   array (
     'providers' => 
@@ -229,6 +290,27 @@
     'aliases' => 
     array (
       'Flare' => 'Spatie\\LaravelIgnition\\Facades\\Flare',
+    ),
+  ),
+  'spatie/laravel-medialibrary' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\MediaLibrary\\MediaLibraryServiceProvider',
+    ),
+  ),
+  'spatie/laravel-tags' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Tags\\TagsServiceProvider',
+    ),
+  ),
+  'spatie/laravel-translatable' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Translatable\\TranslatableServiceProvider',
     ),
   ),
 );

@@ -54,7 +54,7 @@
         @endif
     @endforeach
 
-    <link rel="stylesheet" href="{{ asset('vendor/zeus-bolt/app.css') }}" />
+    <link rel="stylesheet" href="{{ asset('vendor/zeus/app.css') }}" />
 
     {{ \Filament\Facades\Filament::getThemeLink() }}
 
