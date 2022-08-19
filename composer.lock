@@ -3109,12 +3109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "a99c019223a6f0256e1861c5e6414148dfc214a4"
+                "reference": "b9e14e23a827c0f8f0918e1118e9648eb5704f64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/a99c019223a6f0256e1861c5e6414148dfc214a4",
-                "reference": "a99c019223a6f0256e1861c5e6414148dfc214a4",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/b9e14e23a827c0f8f0918e1118e9648eb5704f64",
+                "reference": "b9e14e23a827c0f8f0918e1118e9648eb5704f64",
                 "shasum": ""
             },
             "require": {
@@ -3167,7 +3167,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/main"
+                "source": "https://github.com/lara-zeus/bolt/tree/0.0.3"
             },
             "funding": [
                 {
@@ -3175,7 +3175,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-19T04:50:33+00:00"
+            "time": "2022-08-19T11:27:52+00:00"
         },
         {
             "name": "lara-zeus/core",
