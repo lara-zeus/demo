@@ -197,10 +197,6 @@
     array (
       0 => 'LaraZeus\\Wind\\WindServiceProvider',
     ),
-    'aliases' => 
-    array (
-      'Wind' => 'LaraZeus\\Wind\\WindFacade',
-    ),
   ),
   'laravel/sail' => 
   array (
