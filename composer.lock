@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8322307e78c2a184fde35e3aec0d77b3",
+    "content-hash": "830b9ce02b3991237cf2402048fb0945",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -3105,16 +3105,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "0.0.2",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "743196993e53b08f0cb061b96870175753598387"
+                "reference": "a99c019223a6f0256e1861c5e6414148dfc214a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/743196993e53b08f0cb061b96870175753598387",
-                "reference": "743196993e53b08f0cb061b96870175753598387",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/a99c019223a6f0256e1861c5e6414148dfc214a4",
+                "reference": "a99c019223a6f0256e1861c5e6414148dfc214a4",
                 "shasum": ""
             },
             "require": {
@@ -3126,6 +3126,7 @@
             "require-dev": {
                 "orchestra/testbench": "^6.0 || ^7.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3166,7 +3167,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/0.0.2"
+                "source": "https://github.com/lara-zeus/bolt/tree/main"
             },
             "funding": [
                 {
@@ -3174,7 +3175,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-19T04:32:43+00:00"
+            "time": "2022-08-19T04:50:33+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -12758,7 +12759,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "lara-zeus/bolt": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
