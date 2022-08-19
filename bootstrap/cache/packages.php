@@ -52,6 +52,13 @@
       0 => 'BladeUI\\Icons\\BladeIconsServiceProvider',
     ),
   ),
+  'codeat3/blade-akar-icons' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Codeat3\\BladeAkarIcons\\BladeAkarIconsServiceProvider',
+    ),
+  ),
   'codeat3/blade-clarity-icons' => 
   array (
     'providers' => 
@@ -115,6 +122,13 @@
       0 => 'Fruitcake\\Cors\\CorsServiceProvider',
     ),
   ),
+  'garygreen/pretty-routes' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'PrettyRoutes\\ServiceProvider',
+    ),
+  ),
   'imliam/laravel-blade-helper' => 
   array (
     'providers' => 
@@ -148,6 +162,17 @@
       'Agent' => 'Jenssegers\\Agent\\Facades\\Agent',
     ),
   ),
+  'lara-zeus/bolt' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'LaraZeus\\Bolt\\BoltServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Bolt' => 'LaraZeus\\Bolt\\Facades\\Bolt',
+    ),
+  ),
   'lara-zeus/core' => 
   array (
     'providers' => 
@@ -171,10 +196,6 @@
     'providers' => 
     array (
       0 => 'LaraZeus\\Wind\\WindServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Wind' => 'LaraZeus\\Wind\\WindFacade',
     ),
   ),
   'laravel/sail' => 
