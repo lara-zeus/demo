@@ -27,11 +27,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Filament::serving(function () {
-            //Filament::registerTheme(mix('css/app.css'));
-            //Filament::registerTheme('https://demo.test/vendor/zeus-bolt/app.css');
+            //Filament::registerTheme(asset('vendor/zeus/app.css'));
+            Filament::registerTheme(mix('css/app.css'));
         });
-        //Filament::registerTheme('https://demo.test/vendor/zeus/app.css');
-        Filament::registerTheme(mix('css/app.css'));
 
         Filament::registerRenderHook(
             'global-search.end',
