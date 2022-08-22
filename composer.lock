@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8322307e78c2a184fde35e3aec0d77b3",
+    "content-hash": "e82c32dca9b2cb3087e19b2c239af30d",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -1180,16 +1180,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "3.4.1",
+            "version": "3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "94e016428884227245fb1219e0de7d8b86ca16d7"
+                "reference": "22de295f10edbe00df74f517612f1fbd711131e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/94e016428884227245fb1219e0de7d8b86ca16d7",
-                "reference": "94e016428884227245fb1219e0de7d8b86ca16d7",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/22de295f10edbe00df74f517612f1fbd711131e2",
+                "reference": "22de295f10edbe00df74f517612f1fbd711131e2",
                 "shasum": ""
             },
             "require": {
@@ -1271,7 +1271,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.4.1"
+                "source": "https://github.com/doctrine/dbal/tree/3.4.2"
             },
             "funding": [
                 {
@@ -1287,7 +1287,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-16T18:37:46+00:00"
+            "time": "2022-08-21T14:21:06+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -3105,16 +3105,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "0.0.5",
+            "version": "0.0.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "1a93cb2eb0b7d6d0fc0591b985879ea44a323168"
+                "url": "git@github.com:lara-zeus/bolt.git",
+                "reference": "c200875ffe99716978c0b9255a3f0be21d716dc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/1a93cb2eb0b7d6d0fc0591b985879ea44a323168",
-                "reference": "1a93cb2eb0b7d6d0fc0591b985879ea44a323168",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/c200875ffe99716978c0b9255a3f0be21d716dc3",
+                "reference": "c200875ffe99716978c0b9255a3f0be21d716dc3",
                 "shasum": ""
             },
             "require": {
@@ -3142,7 +3142,6 @@
                     "LaraZeus\\Bolt\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3156,25 +3155,26 @@
             "description": "laravel package to create and manage forms",
             "homepage": "https://github.com/lara-zeus",
             "keywords": [
-                "Forms",
+                "bolt",
                 "bolt",
                 "form",
+                "forms",
                 "generator",
                 "lara-zeus",
                 "laravel",
                 "maker"
             ],
             "support": {
-                "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/0.0.5"
+                "source": "https://github.com/lara-zeus/bolt/tree/0.0.6",
+                "issues": "https://github.com/lara-zeus/bolt/issues"
             },
             "funding": [
                 {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
+                    "type": "github",
+                    "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2022-08-21T17:45:53+00:00"
+            "time": "2022-08-22T10:20:17+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -6642,16 +6642,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "10.4.3",
+            "version": "10.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "8f3bf5fa504a3368a1bb50d56e54bbcce311b9a9"
+                "reference": "e66c599717e96e692c3abc506a7a2a3760c952ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/8f3bf5fa504a3368a1bb50d56e54bbcce311b9a9",
-                "reference": "8f3bf5fa504a3368a1bb50d56e54bbcce311b9a9",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/e66c599717e96e692c3abc506a7a2a3760c952ab",
+                "reference": "e66c599717e96e692c3abc506a7a2a3760c952ab",
                 "shasum": ""
             },
             "require": {
@@ -6734,7 +6734,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-medialibrary/issues",
-                "source": "https://github.com/spatie/laravel-medialibrary/tree/10.4.3"
+                "source": "https://github.com/spatie/laravel-medialibrary/tree/10.4.4"
             },
             "funding": [
                 {
@@ -6746,7 +6746,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-02T07:35:43+00:00"
+            "time": "2022-08-22T09:17:01+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",
