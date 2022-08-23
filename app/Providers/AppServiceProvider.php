@@ -3,8 +3,8 @@
 namespace App\Providers;
 
 use Filament\Facades\Filament;
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -17,7 +17,6 @@ class AppServiceProvider extends ServiceProvider
     {
         //
     }
-
 
     /**
      * Bootstrap any application services.
@@ -33,7 +32,7 @@ class AppServiceProvider extends ServiceProvider
 
         Filament::registerRenderHook(
             'global-search.end',
-            fn() : View => view('filament.hooks.lang-switcher'),
+            fn (): View => view('filament.hooks.lang-switcher'),
         );
     }
 }
