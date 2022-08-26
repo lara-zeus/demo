@@ -43,7 +43,7 @@
             return window.matchMedia('(prefers-color-scheme: dark)').matches
         },
     }"
-        class="relative"
+        class="relative ltr:ml-3 rtl:mr-3"
 >
     <button
             x-on:click="isOpen = ! isOpen"

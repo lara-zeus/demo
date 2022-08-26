@@ -12,7 +12,7 @@
                 Admin Panel
             </a>
         </div>
-        <div class="mt-3 sm:mt-0 sm:ml-3">
+        <div class="mt-3 sm:mt-0 sm:mx-3">
             <a href="{{ url('/blog') }}" class="transition ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 px-4 py-2">
                 Blog
             </a>

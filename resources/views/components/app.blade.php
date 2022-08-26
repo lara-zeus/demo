@@ -38,7 +38,7 @@
         @endif
     </style>
 </head>
-<body class="bg-gray-50 rtl:font-el-messiri ltr:font-koho @if(app()->isLocal()) debug-screens @endif">
+<body class="bg-gray-50 @if(app()->isLocal()) debug-screens @endif">
 <div class="inset-0 min-h-screen flex items-center justify-center">
     <div class="container mx-auto">
         {{ $slot }}
