@@ -8,7 +8,7 @@
     @endslot
     @slot('btns')
         <div class="rounded-md shadow">
-            <a href="{{ url('/admin') }}" class="transition ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-white bg-secondary-500 hover:bg-secondary-600 px-4 py-2">
+            <a href="{{ url('/admin/departments') }}" class="transition ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-white bg-secondary-500 hover:bg-secondary-600 px-4 py-2">
                 Admin Panel
             </a>
         </div>

@@ -11,15 +11,30 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}">
     <link rel="icon" href="{{ asset('favicon.ico?v=0.1') }}">
 
-    <style>
-        [x-cloak] {
-            display: none !important;
-        }
+    @php
+        seo()
+        ->title('Lara Zeus Demo App')
+        ->description('demo app for all lara zeus packages')
+        ->site('https://larazeus.com/')
+        ->image(asset('images/demo-banner.png'))
+        ->twitter()
+        ->twitterCreator('atmonshi')
+        ->twitterSite('https://twitter.com/atmonshi')
+        ->twitterTitle('Lara Zeus Demo')
+        ->twitterDescription('wind, sky, and bolt all the demos for all lara zeus packages')
+        ->twitterImage(asset('images/demo-banner.png'))
+        ->favicon()
+        ->withUrl()
+        ;
+    @endphp
 
+    <x-seo::meta />
+
+    <style>
+        [x-cloak] {display: none !important;}
         @if(app()->isLocal())
-        .bord {
-            border: solid 1px crimson
-        }
+            /*a css debugging tool 😜*/
+            .bord {border: solid 1px crimson}
         @endif
     </style>
 </head>
@@ -29,7 +44,7 @@
         {{ $slot }}
     </div>
 </div>
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
 @atmStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
 </body>
 </html>

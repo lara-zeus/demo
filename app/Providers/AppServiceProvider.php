@@ -25,6 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+
         Filament::serving(function () {
             //Filament::registerTheme(asset('vendor/zeus/app.css'));
             Filament::registerTheme(mix('css/app.css'));
