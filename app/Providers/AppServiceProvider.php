@@ -30,6 +30,11 @@ class AppServiceProvider extends ServiceProvider
         });
 
         Filament::registerRenderHook(
+            'content.start',
+            fn (): View => view('filament.hooks.db-notice'),
+        );
+
+        Filament::registerRenderHook(
             'global-search.end',
             fn (): View => view('filament.hooks.lang-switcher'),
         );

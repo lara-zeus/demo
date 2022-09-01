@@ -11,3 +11,7 @@ Route::get('/lang/{lang}', function ($lang) {
 
     return redirect()->back();
 });
+
+/*Route::get('/feedbackCode', function ($response) {
+    dd($response);
+});*/

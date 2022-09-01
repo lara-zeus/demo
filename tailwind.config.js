@@ -4,6 +4,7 @@ module.exports = {
     content: [
         "./resources/**/*.blade.php",
         './vendor/filament/**/*.blade.php',
+        './vendor/lara-zeus/bolt/resources/views/**/*.blade.php',
     ],
     theme: {
         debugScreens: {
