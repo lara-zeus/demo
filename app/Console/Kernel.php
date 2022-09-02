@@ -16,7 +16,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // art migrate:fresh --seed
-        $schedule->command('migrate:fresh --force --seed --quiet')->daily();
+        $schedule->command('migrate:fresh --seed --force --quiet')->daily();
     }
 
     /**
