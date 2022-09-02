@@ -16,6 +16,12 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('zeus#larazeus'),
         ]);
 
+        DB::table('users')->insert([
+            'name' => 'ass·hole Spammer',
+            'email' => 'spammer@larazeus.com',
+            'password' => Hash::make('assholespammer'),
+        ]);
+
         $this->call([
             WindSeeder::class,
             SkySeeder::class,
