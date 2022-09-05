@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
     {
         DB::table('users')->insert([
             'name' => 'Zeus',
-            'email' => 'zeus@larazeus.com',
+            'email' => 'info@larazeus.com',
             'password' => Hash::make('zeus#larazeus'),
         ]);
 
