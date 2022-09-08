@@ -16,7 +16,8 @@
         "fruitcake/laravel-cors": "^2.0.5",
         "garygreen/pretty-routes": "^1.0",
         "guzzlehttp/guzzle": "^7.2",
-        "lara-zeus/bolt": "^0.0",
+        "lara-zeus/bolt": "dev-main",
+        "lara-zeus/thunder": "dev-main",
         "lara-zeus/sky": "^2.2",
         "lara-zeus/wind": "^2.2",
         "laravel/framework": "^9.0",
@@ -75,8 +76,12 @@
     "prefer-stable": true,
     "repositories": [
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/bolt.git"
+            "type": "path",
+            "url": "../bolt-pkg"
+        },
+        {
+            "type": "path",
+            "url": "../thunder-pkg"
         }
     ]
 }
