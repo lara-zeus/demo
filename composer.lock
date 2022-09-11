@@ -76,16 +76,16 @@
         },
         {
             "name": "andreiio/blade-iconoir",
-            "version": "1.7.1",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreiio/blade-iconoir.git",
-                "reference": "74ed9b8b43744545fce8720ea24c89b0ae9c6f5e"
+                "reference": "4eb66a11bf1bb8896282a6e1fb46099c8734cf5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreiio/blade-iconoir/zipball/74ed9b8b43744545fce8720ea24c89b0ae9c6f5e",
-                "reference": "74ed9b8b43744545fce8720ea24c89b0ae9c6f5e",
+                "url": "https://api.github.com/repos/andreiio/blade-iconoir/zipball/4eb66a11bf1bb8896282a6e1fb46099c8734cf5b",
+                "reference": "4eb66a11bf1bb8896282a6e1fb46099c8734cf5b",
                 "shasum": ""
             },
             "require": {
@@ -122,7 +122,7 @@
             "description": "A package to easily make use of Iconoir in your Laravel Blade views.",
             "support": {
                 "issues": "https://github.com/andreiio/blade-iconoir/issues",
-                "source": "https://github.com/andreiio/blade-iconoir/tree/1.7.1"
+                "source": "https://github.com/andreiio/blade-iconoir/tree/1.8.0"
             },
             "funding": [
                 {
@@ -130,7 +130,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-07-06T12:39:24+00:00"
+            "time": "2022-09-10T22:33:41+00:00"
         },
         {
             "name": "andreiio/blade-remix-icon",
@@ -1592,16 +1592,16 @@
         },
         {
             "name": "dragonmantank/cron-expression",
-            "version": "v3.3.1",
+            "version": "v3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dragonmantank/cron-expression.git",
-                "reference": "be85b3f05b46c39bbc0d95f6c071ddff669510fa"
+                "reference": "782ca5968ab8b954773518e9e49a6f892a34b2a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/be85b3f05b46c39bbc0d95f6c071ddff669510fa",
-                "reference": "be85b3f05b46c39bbc0d95f6c071ddff669510fa",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/782ca5968ab8b954773518e9e49a6f892a34b2a8",
+                "reference": "782ca5968ab8b954773518e9e49a6f892a34b2a8",
                 "shasum": ""
             },
             "require": {
@@ -1641,7 +1641,7 @@
             ],
             "support": {
                 "issues": "https://github.com/dragonmantank/cron-expression/issues",
-                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.3.1"
+                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.3.2"
             },
             "funding": [
                 {
@@ -1649,7 +1649,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-18T15:43:28+00:00"
+            "time": "2022-09-10T18:51:20+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -1721,16 +1721,16 @@
         },
         {
             "name": "filament/filament",
-            "version": "v2.16.0",
+            "version": "v2.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/admin.git",
-                "reference": "3a132393034b3b7c7d35917795642efc07c48bca"
+                "reference": "4bfea272b3a4210fff0f3440a03072f7daa3568f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/admin/zipball/3a132393034b3b7c7d35917795642efc07c48bca",
-                "reference": "3a132393034b3b7c7d35917795642efc07c48bca",
+                "url": "https://api.github.com/repos/filamentphp/admin/zipball/4bfea272b3a4210fff0f3440a03072f7daa3568f",
+                "reference": "4bfea272b3a4210fff0f3440a03072f7daa3568f",
                 "shasum": ""
             },
             "require": {
@@ -1780,11 +1780,11 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2022-09-10T12:35:27+00:00"
+            "time": "2022-09-10T14:22:14+00:00"
         },
         {
             "name": "filament/forms",
-            "version": "v2.16.0",
+            "version": "v2.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/forms.git",
@@ -1842,16 +1842,16 @@
         },
         {
             "name": "filament/notifications",
-            "version": "v2.16.0",
+            "version": "v2.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/notifications.git",
-                "reference": "197ecc05b9963da9d8937f9b9d693354c9191dfa"
+                "reference": "7c82359cc3521892aa5ab47e50ef9670a1a2f240"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/notifications/zipball/197ecc05b9963da9d8937f9b9d693354c9191dfa",
-                "reference": "197ecc05b9963da9d8937f9b9d693354c9191dfa",
+                "url": "https://api.github.com/repos/filamentphp/notifications/zipball/7c82359cc3521892aa5ab47e50ef9670a1a2f240",
+                "reference": "7c82359cc3521892aa5ab47e50ef9670a1a2f240",
                 "shasum": ""
             },
             "require": {
@@ -1888,11 +1888,11 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2022-09-10T12:35:15+00:00"
+            "time": "2022-09-10T14:22:10+00:00"
         },
         {
             "name": "filament/spatie-laravel-media-library-plugin",
-            "version": "v2.16.0",
+            "version": "v2.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-media-library-plugin.git",
@@ -1929,7 +1929,7 @@
         },
         {
             "name": "filament/spatie-laravel-tags-plugin",
-            "version": "v2.16.0",
+            "version": "v2.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-tags-plugin.git",
@@ -1966,7 +1966,7 @@
         },
         {
             "name": "filament/spatie-laravel-translatable-plugin",
-            "version": "v2.16.0",
+            "version": "v2.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-translatable-plugin.git",
@@ -2012,7 +2012,7 @@
         },
         {
             "name": "filament/support",
-            "version": "v2.16.0",
+            "version": "v2.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/support.git",
@@ -2062,7 +2062,7 @@
         },
         {
             "name": "filament/tables",
-            "version": "v2.16.0",
+            "version": "v2.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/tables.git",
@@ -3116,16 +3116,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "0.0.13",
+            "version": "0.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "5bb9daed96dfa0a90b71911b58c1ae428fa5c7a9"
+                "reference": "6299744735d3d1e38f761a6a82192ced4cc6925e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/5bb9daed96dfa0a90b71911b58c1ae428fa5c7a9",
-                "reference": "5bb9daed96dfa0a90b71911b58c1ae428fa5c7a9",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/6299744735d3d1e38f761a6a82192ced4cc6925e",
+                "reference": "6299744735d3d1e38f761a6a82192ced4cc6925e",
                 "shasum": ""
             },
             "require": {
@@ -3178,7 +3178,7 @@
                 "maker"
             ],
             "support": {
-                "source": "https://github.com/lara-zeus/bolt/tree/0.0.13",
+                "source": "https://github.com/lara-zeus/bolt/tree/0.0.14",
                 "issues": "https://github.com/lara-zeus/bolt/issues"
             },
             "funding": [
@@ -3187,7 +3187,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2022-09-10T14:06:09+00:00"
+            "time": "2022-09-11T13:21:58+00:00"
         },
         {
             "name": "lara-zeus/core",
