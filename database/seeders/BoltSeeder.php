@@ -86,7 +86,7 @@ class BoltSeeder extends Seeder
             'user_id' => 1,
             'start_date' => null,
             'end_date' => null,
-            'layout' => '',
+            'layout' => '1',
             'ordering' => 1,
             'is_active' => 1,
             'desc' => json_encode(['en' => 'send us your Feedback about our service', 'ar' => 'شاركنا تقييمك على خدماتنا'], JSON_THROW_ON_ERROR),
