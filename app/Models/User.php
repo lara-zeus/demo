@@ -3,11 +3,11 @@
 namespace App\Models;
 
 use Filament\Models\Contracts\FilamentUser;
+use Filament\Models\Contracts\HasAvatar;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use Filament\Models\Contracts\HasAvatar;
 
 class User extends Authenticatable implements FilamentUser, HasAvatar
 {
@@ -50,6 +50,6 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
 
     public function getFilamentAvatarUrl(): ?string
     {
-        return 'https://secure.gravatar.com/avatar/' . md5(strtolower(trim($this->email)));
+        return 'https://secure.gravatar.com/avatar/'.md5(strtolower(trim($this->email)));
     }
 }
