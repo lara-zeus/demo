@@ -13,13 +13,12 @@
         "codeat3/blade-akar-icons": "^1.18",
         "codeat3/blade-clarity-icons": "^1.7",
         "codeat3/blade-iconpark": "^1.4",
+        "doctrine/dbal": "^3.4",
         "fruitcake/laravel-cors": "^2.0.5",
         "garygreen/pretty-routes": "^1.0",
         "guzzlehttp/guzzle": "^7.2",
         "lara-zeus/bolt": "dev-main",
         "lara-zeus/thunder": "dev-main",
-        "lara-zeus/sky": "^2.2",
-        "lara-zeus/wind": "^2.2",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
         "sentry/sentry-laravel": "^2.12",
@@ -82,6 +81,10 @@
         {
             "type": "path",
             "url": "../thunder-pkg"
+        },
+        {
+            "type": "path",
+            "url": "../core"
         }
     ]
 }
