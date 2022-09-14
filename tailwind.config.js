@@ -26,7 +26,6 @@ module.exports = {
                 success: colors.emerald,
                 warning: colors.yellow,
                 info: colors.blue,
-
                 emerald: {
                     50: "#d1fae5",
                     100: "#a7f3d0",

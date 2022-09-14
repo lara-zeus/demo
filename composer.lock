@@ -3191,16 +3191,16 @@
         },
         {
             "name": "lara-zeus/core",
-            "version": "2.2.8",
+            "version": "2.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "dd59435776d5c823ea7eb9a1ffcde8c927a5dbf4"
+                "reference": "4ff7392b35b932e3c8a33d60762ac9945456ee31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/dd59435776d5c823ea7eb9a1ffcde8c927a5dbf4",
-                "reference": "dd59435776d5c823ea7eb9a1ffcde8c927a5dbf4",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/4ff7392b35b932e3c8a33d60762ac9945456ee31",
+                "reference": "4ff7392b35b932e3c8a33d60762ac9945456ee31",
                 "shasum": ""
             },
             "require": {
@@ -3208,10 +3208,12 @@
                 "calebporzio/sushi": "^2.4",
                 "codeat3/blade-iconpark": "^1.4",
                 "filament/filament": "^2.16",
+                "filament/notifications": "^2.0",
                 "illuminate/support": "^8.0 || ^9.0",
                 "php": "^8.0"
             },
             "require-dev": {
+                "laravel/pint": "^1.2",
                 "orchestra/testbench": "^6.0 || ^7.0",
                 "phpunit/phpunit": "^9.5.10"
             },
@@ -3253,7 +3255,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/core/issues",
-                "source": "https://github.com/lara-zeus/core/tree/2.2.8"
+                "source": "https://github.com/lara-zeus/core/tree/2.2.9"
             },
             "funding": [
                 {
@@ -3261,7 +3263,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-09-10T14:03:19+00:00"
+            "time": "2022-09-14T18:53:22+00:00"
         },
         {
             "name": "lara-zeus/sky",
@@ -3346,16 +3348,16 @@
         },
         {
             "name": "lara-zeus/wind",
-            "version": "2.2.4",
+            "version": "2.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "334022b20f68ef03da7a6e3223c5862bc9ea30b8"
+                "reference": "dd306193275a2e934cbea823f9086d301b8744c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/334022b20f68ef03da7a6e3223c5862bc9ea30b8",
-                "reference": "334022b20f68ef03da7a6e3223c5862bc9ea30b8",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/dd306193275a2e934cbea823f9086d301b8744c8",
+                "reference": "dd306193275a2e934cbea823f9086d301b8744c8",
                 "shasum": ""
             },
             "require": {
@@ -3401,7 +3403,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/wind/issues",
-                "source": "https://github.com/lara-zeus/wind/tree/2.2.4"
+                "source": "https://github.com/lara-zeus/wind/tree/2.2.5"
             },
             "funding": [
                 {
@@ -3409,7 +3411,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-09-06T22:28:53+00:00"
+            "time": "2022-09-14T19:14:33+00:00"
         },
         {
             "name": "laravel/framework",
