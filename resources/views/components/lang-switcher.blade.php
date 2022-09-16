@@ -1,6 +1,6 @@
 <x-dropdown>
     <x-slot name="oppener">
-        <div class="block flex-shrink-0 w-10 h-10 rounded-full bg-gray-50 flex">
+        <div class="block flex-shrink-0 w-10 h-10 rounded-full bg-gray-50 dark:bg-gray-800 flex">
             <x-ri-translate class="w-8 h-8 mx-auto my-auto text-secondary-500" />
         </div>
     </x-slot>

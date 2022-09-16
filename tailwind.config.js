@@ -5,7 +5,11 @@ module.exports = {
         "./resources/**/*.blade.php",
         './vendor/filament/**/*.blade.php',
         './vendor/lara-zeus/bolt/resources/views/**/*.blade.php',
+        './vendor/lara-zeus/sky/resources/views/**/*.blade.php',
+        './vendor/lara-zeus/wind/resources/views/**/*.blade.php',
+        './vendor/lara-zeus/thunder/resources/views/**/*.blade.php',
     ],
+    darkMode: 'class',
     theme: {
         debugScreens: {
             style: {

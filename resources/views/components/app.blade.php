@@ -1,5 +1,5 @@
 <!doctype html>
-<html dir="{{ __('dir') }}">
+<html dir="{{ __('dir') }}" class="antialiased filament js-focus-visible">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +38,7 @@
         @endif
     </style>
 </head>
-<body class="bg-gray-50 @if(app()->isLocal()) debug-screens @endif">
+<body class="bg-gray-50 dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
 <div class="inset-0 min-h-screen flex items-center justify-center">
     <div class="container mx-auto">
         {{ $slot }}
@@ -46,5 +46,12 @@
 </div>
 <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
 @atmStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
+<script>
+    const theme = localStorage.getItem('theme')
+
+    if ((theme === 'dark') || (! theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+    }
+</script>
 </body>
 </html>

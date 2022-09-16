@@ -1,4 +1,3 @@
-
 <div class="flex justify-center">
     <div
             x-data="{
@@ -44,7 +43,7 @@
                 x-on:click.outside="close($refs.button)"
                 :id="$id('dropdown-button')"
                 style="display: none;"
-                class="absolute ltr:left-0 rtl:right-0 w-36 bg-white rounded shadow-md overflow-hidden"
+                class="absolute ltr:left-0 rtl:right-0 w-36 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded shadow-md overflow-hidden"
         >
             {{ $slot }}
         </div>
