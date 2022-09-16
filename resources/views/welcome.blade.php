@@ -20,6 +20,7 @@
         @include('wind')
         @include('sky')
         @include('bolt')
+        @include('thunder')
         @include('soon')
     </div>
 

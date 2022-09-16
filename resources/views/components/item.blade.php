@@ -8,7 +8,7 @@
     <p class="my-10 text-gray-700 text-xl h-full">
         {{ $desc }}
     </p>
-    <div class="mt-5 sm:flex sm:justify-center lg:justify-end w-full">
+    <div class="mt-5 flex gap-4 sm:justify-center lg:justify-end w-full">
         {{ $btns }}
     </div>
 </div>
