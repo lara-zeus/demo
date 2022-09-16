@@ -2962,7 +2962,7 @@
             "dist": {
                 "type": "path",
                 "url": "../bolt-pkg",
-                "reference": "def565f7629c25d457af0cd637ab699aa44f2869"
+                "reference": "bfe113b63da822255533bf182a5b33a54d1144f5"
             },
             "require": {
                 "codeat3/blade-clarity-icons": "^1.7",
@@ -3023,7 +3023,7 @@
             "dist": {
                 "type": "path",
                 "url": "../core",
-                "reference": "4ff7392b35b932e3c8a33d60762ac9945456ee31"
+                "reference": "5292300a88a38e742e6e71ad768e93df795046b3"
             },
             "require": {
                 "archtechx/laravel-seo": "^0.5",
@@ -3097,7 +3097,7 @@
             "dist": {
                 "type": "path",
                 "url": "../thunder-pkg",
-                "reference": "7dde516c4baf3f9223dc7bd03094480c2ae01440"
+                "reference": "951ad4f29d52f9a96290e05e13b89f72063c5cb5"
             },
             "require": {
                 "codeat3/blade-clarity-icons": "^1.7",
