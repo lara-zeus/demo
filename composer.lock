@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf6e793d117277ba8c1a2a1202e3cc11",
+    "content-hash": "50f6e57b41d40af62bda49eece6828b9",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -365,6 +365,66 @@
                 "source": "https://github.com/atm-code/signature/tree/1.16"
             },
             "time": "2021-12-01T01:40:45+00:00"
+        },
+        {
+            "name": "beyondcode/laravel-comments",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beyondcode/laravel-comments.git",
+                "reference": "a49cde825eb447db48b701d64d21cf1f3f467a4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beyondcode/laravel-comments/zipball/a49cde825eb447db48b701d64d21cf1f3f467a4d",
+                "reference": "a49cde825eb447db48b701d64d21cf1f3f467a4d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0",
+                "php": "^7.2.5|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.6|^5.0|^6.0|^7.0",
+                "phpunit/phpunit": "^7.0|^8.0|9.2.*|^9.5.10"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BeyondCode\\Comments\\CommentsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BeyondCode\\Comments\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "marcel@beyondco.de",
+                    "homepage": "https://beyondcode.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add comments to your Laravel application",
+            "homepage": "https://github.com/beyondcode/laravel-comments",
+            "keywords": [
+                "beyondcode",
+                "comments",
+                "laravel-comments"
+            ],
+            "support": {
+                "issues": "https://github.com/beyondcode/laravel-comments/issues",
+                "source": "https://github.com/beyondcode/laravel-comments/tree/1.3.0"
+            },
+            "time": "2022-02-14T11:24:46+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -1721,16 +1781,16 @@
         },
         {
             "name": "filament/filament",
-            "version": "v2.16.2",
+            "version": "v2.16.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/admin.git",
-                "reference": "91a73f1a583a964ed7c657f5d8627b6eb10d7903"
+                "reference": "b9d0c5fb137718731911436caeacf04f3f6f42f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/admin/zipball/91a73f1a583a964ed7c657f5d8627b6eb10d7903",
-                "reference": "91a73f1a583a964ed7c657f5d8627b6eb10d7903",
+                "url": "https://api.github.com/repos/filamentphp/admin/zipball/b9d0c5fb137718731911436caeacf04f3f6f42f4",
+                "reference": "b9d0c5fb137718731911436caeacf04f3f6f42f4",
                 "shasum": ""
             },
             "require": {
@@ -1780,20 +1840,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2022-09-12T15:57:50+00:00"
+            "time": "2022-09-16T10:23:14+00:00"
         },
         {
             "name": "filament/forms",
-            "version": "v2.16.2",
+            "version": "v2.16.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/forms.git",
-                "reference": "0de49bf91025c25df22ee596f2df624a4a7a5039"
+                "reference": "c5b22a1dc88c21a8d6f42b539d1ccbf06957fed2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/forms/zipball/0de49bf91025c25df22ee596f2df624a4a7a5039",
-                "reference": "0de49bf91025c25df22ee596f2df624a4a7a5039",
+                "url": "https://api.github.com/repos/filamentphp/forms/zipball/c5b22a1dc88c21a8d6f42b539d1ccbf06957fed2",
+                "reference": "c5b22a1dc88c21a8d6f42b539d1ccbf06957fed2",
                 "shasum": ""
             },
             "require": {
@@ -1838,20 +1898,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2022-09-12T15:57:51+00:00"
+            "time": "2022-09-16T13:28:06+00:00"
         },
         {
             "name": "filament/notifications",
-            "version": "v2.16.2",
+            "version": "v2.16.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/notifications.git",
-                "reference": "3c704738306123337acebe0ba990c6fd84b4842c"
+                "reference": "8bc1cbfb4aede05113d499677be870d71b87ddf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/notifications/zipball/3c704738306123337acebe0ba990c6fd84b4842c",
-                "reference": "3c704738306123337acebe0ba990c6fd84b4842c",
+                "url": "https://api.github.com/repos/filamentphp/notifications/zipball/8bc1cbfb4aede05113d499677be870d71b87ddf1",
+                "reference": "8bc1cbfb4aede05113d499677be870d71b87ddf1",
                 "shasum": ""
             },
             "require": {
@@ -1888,11 +1948,11 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2022-09-12T15:57:43+00:00"
+            "time": "2022-09-16T10:23:15+00:00"
         },
         {
             "name": "filament/spatie-laravel-translatable-plugin",
-            "version": "v2.16.2",
+            "version": "v2.16.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-translatable-plugin.git",
@@ -1938,16 +1998,16 @@
         },
         {
             "name": "filament/support",
-            "version": "v2.16.2",
+            "version": "v2.16.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/support.git",
-                "reference": "65d67c72ab370ba193d203f09975a033f627de09"
+                "reference": "d4cb0588141371ed8a49aa472ca5c8ea3b732e96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/support/zipball/65d67c72ab370ba193d203f09975a033f627de09",
-                "reference": "65d67c72ab370ba193d203f09975a033f627de09",
+                "url": "https://api.github.com/repos/filamentphp/support/zipball/d4cb0588141371ed8a49aa472ca5c8ea3b732e96",
+                "reference": "d4cb0588141371ed8a49aa472ca5c8ea3b732e96",
                 "shasum": ""
             },
             "require": {
@@ -1984,20 +2044,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2022-09-12T15:57:43+00:00"
+            "time": "2022-09-16T10:23:06+00:00"
         },
         {
             "name": "filament/tables",
-            "version": "v2.16.2",
+            "version": "v2.16.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/tables.git",
-                "reference": "b5854e190dd8ba9c463b6c5a8c26e70978e28e73"
+                "reference": "def2615dc4a37dacd736ec3b1aa4041ac01e5e62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/tables/zipball/b5854e190dd8ba9c463b6c5a8c26e70978e28e73",
-                "reference": "b5854e190dd8ba9c463b6c5a8c26e70978e28e73",
+                "url": "https://api.github.com/repos/filamentphp/tables/zipball/def2615dc4a37dacd736ec3b1aa4041ac01e5e62",
+                "reference": "def2615dc4a37dacd736ec3b1aa4041ac01e5e62",
                 "shasum": ""
             },
             "require": {
@@ -2040,7 +2100,7 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2022-09-12T15:57:42+00:00"
+            "time": "2022-09-16T10:23:07+00:00"
         },
         {
             "name": "fruitcake/laravel-cors",
@@ -2958,17 +3018,23 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "dev-main",
+            "version": "0.0.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/bolt.git",
+                "reference": "dbfff0a4baf6c072671557089ce9c52d3d5c3fb0"
+            },
             "dist": {
-                "type": "path",
-                "url": "../bolt-pkg",
-                "reference": "bfe113b63da822255533bf182a5b33a54d1144f5"
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/dbfff0a4baf6c072671557089ce9c52d3d5c3fb0",
+                "reference": "dbfff0a4baf6c072671557089ce9c52d3d5c3fb0",
+                "shasum": ""
             },
             "require": {
                 "codeat3/blade-clarity-icons": "^1.7",
                 "filament/notifications": "^2.0",
                 "filament/spatie-laravel-translatable-plugin": "^2.0",
-                "lara-zeus/core": "dev-main",
+                "lara-zeus/core": "^2.2",
                 "php": "^8.0"
             },
             "require-dev": {
@@ -3013,17 +3079,31 @@
                 "laravel",
                 "maker"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/lara-zeus/bolt/tree/0.0.16",
+                "issues": "https://github.com/lara-zeus/bolt/issues"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/atmonshi"
+                }
+            ],
+            "time": "2022-09-16T13:24:28+00:00"
         },
         {
             "name": "lara-zeus/core",
-            "version": "dev-main",
+            "version": "2.2.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/core.git",
+                "reference": "195c4306713bbef1f23003243bbf24069c3277d2"
+            },
             "dist": {
-                "type": "path",
-                "url": "../core",
-                "reference": "5292300a88a38e742e6e71ad768e93df795046b3"
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/195c4306713bbef1f23003243bbf24069c3277d2",
+                "reference": "195c4306713bbef1f23003243bbf24069c3277d2",
+                "shasum": ""
             },
             "require": {
                 "archtechx/laravel-seo": "^0.5",
@@ -3055,19 +3135,7 @@
                     "LaraZeus\\Core\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "LaraZeus\\Core\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "test-coverage": [
-                    "vendor/bin/phpunit --coverage-html coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3087,24 +3155,39 @@
                 "lara-zeus",
                 "laravel"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/lara-zeus/core/issues",
+                "source": "https://github.com/lara-zeus/core/tree/2.2.10"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/atmonshi",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-09-16T13:14:10+00:00"
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "dev-main",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:lara-zeus/thunder.git",
+                "reference": "3497ed2a30421f7dc3c02b48e620deef5dd14b90"
+            },
             "dist": {
-                "type": "path",
-                "url": "../thunder-pkg",
-                "reference": "951ad4f29d52f9a96290e05e13b89f72063c5cb5"
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/3497ed2a30421f7dc3c02b48e620deef5dd14b90",
+                "reference": "3497ed2a30421f7dc3c02b48e620deef5dd14b90",
+                "shasum": ""
             },
             "require": {
+                "beyondcode/laravel-comments": "^1.3",
                 "codeat3/blade-clarity-icons": "^1.7",
                 "filament/notifications": "^2.0",
                 "filament/spatie-laravel-translatable-plugin": "^2.0",
-                "lara-zeus/bolt": "dev-main",
-                "lara-zeus/core": "dev-main",
+                "lara-zeus/bolt": "^0.0",
+                "lara-zeus/core": "^2.2",
                 "php": "^8.0"
             },
             "require-dev": {
@@ -3151,9 +3234,17 @@
                 "thunder",
                 "tickets"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/lara-zeus/thunder/tree/0.0.1",
+                "issues": "https://github.com/lara-zeus/thunder/issues"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/atmonshi"
+                }
+            ],
+            "time": "2022-09-16T13:29:48+00:00"
         },
         {
             "name": "laravel/framework",
@@ -11667,10 +11758,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "lara-zeus/bolt": 20,
-        "lara-zeus/thunder": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
