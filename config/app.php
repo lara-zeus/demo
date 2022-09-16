@@ -13,6 +13,7 @@ return [
     |
     */
 
+    'zeus-demo' => true,
     'name' => env('APP_NAME', 'Laravel'),
 
     /*

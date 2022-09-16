@@ -23,8 +23,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call([
-            WindSeeder::class,
-            SkySeeder::class,
+            //WindSeeder::class,
+            //SkySeeder::class,
             BoltSeeder::class,
         ]);
     }
