@@ -685,9 +685,9 @@ const _default = {
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!*******************************!*\
-  !*** ./resources/js/admin.js ***!
-  \*******************************/
+/*!**********************************!*\
+  !*** ./resources/js/filament.js ***!
+  \**********************************/
 __webpack_require__(/*! ./_tager */ "./resources/js/_tager.js");
 })();
 

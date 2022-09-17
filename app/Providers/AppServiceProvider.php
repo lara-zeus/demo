@@ -27,7 +27,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Filament::serving(function () {
             Filament::registerTheme(mix('css/app.css'));
-            //Filament::registerTheme(asset('vendor/zeus/app.css'));
         });
 
         Filament::registerRenderHook(

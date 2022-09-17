@@ -2978,8 +2978,8 @@ var module_default = src_default;
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js");
-/* harmony import */ var _vendor_filament_forms_dist_module_esm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../vendor/filament/forms/dist/module.esm */ "./vendor/filament/forms/dist/module.esm.js");
-/* harmony import */ var _vendor_filament_notifications_dist_module_esm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../vendor/filament/notifications/dist/module.esm */ "./vendor/filament/notifications/dist/module.esm.js");
+/* harmony import */ var _vendor_filament_forms_dist_module_esm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../vendor/filament/forms/dist/module.esm */ "../../vendor/filament/forms/dist/module.esm.js");
+/* harmony import */ var _vendor_filament_notifications_dist_module_esm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../vendor/filament/notifications/dist/module.esm */ "../../vendor/filament/notifications/dist/module.esm.js");
 
 
 
@@ -2990,10 +2990,10 @@ alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start();
 
 /***/ }),
 
-/***/ "./vendor/filament/forms/dist/module.esm.js":
-/*!**************************************************!*\
-  !*** ./vendor/filament/forms/dist/module.esm.js ***!
-  \**************************************************/
+/***/ "../../vendor/filament/forms/dist/module.esm.js":
+/*!******************************************************!*\
+  !*** ../../vendor/filament/forms/dist/module.esm.js ***!
+  \******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3198,10 +3198,10 @@ var js_default=function js_default(Alpine){Alpine.plugin(color_picker_default2);
 
 /***/ }),
 
-/***/ "./vendor/filament/notifications/dist/module.esm.js":
-/*!**********************************************************!*\
-  !*** ./vendor/filament/notifications/dist/module.esm.js ***!
-  \**********************************************************/
+/***/ "../../vendor/filament/notifications/dist/module.esm.js":
+/*!**************************************************************!*\
+  !*** ../../vendor/filament/notifications/dist/module.esm.js ***!
+  \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3538,10 +3538,22 @@ var js_default = function js_default(Alpine) {
 
 /***/ }),
 
-/***/ "./resources/css/app.css":
-/*!*******************************!*\
-  !*** ./resources/css/app.css ***!
-  \*******************************/
+/***/ "./resources/css/filament.css":
+/*!************************************!*\
+  !*** ./resources/css/filament.css ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/frontend.css":
+/*!************************************!*\
+  !*** ./resources/css/frontend.css ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3654,7 +3666,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/dist/app": 0,
-/******/ 			"dist/app": 0
+/******/ 			"dist/frontend": 0,
+/******/ 			"dist/filament": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -3704,8 +3717,9 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["dist/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["dist/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["dist/frontend","dist/filament"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["dist/frontend","dist/filament"], () => (__webpack_require__("./resources/css/filament.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["dist/frontend","dist/filament"], () => (__webpack_require__("./resources/css/frontend.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
