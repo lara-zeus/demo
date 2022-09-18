@@ -1,7 +1,7 @@
 <x-dropdown>
     <x-slot name="oppener">
         <div class="block flex-shrink-0 w-10 h-10 rounded-full bg-gray-50 dark:bg-gray-800 flex">
-            <x-ri-translate class="w-8 h-8 mx-auto my-auto text-secondary-500" />
+            <x-ri-translate class="w-6 h-6 md:w-8 md:h-8 mx-auto my-auto text-secondary-500" />
         </div>
     </x-slot>
     <ul class="py-1 space-y-1 overflow-hidden {{--bg-white shadow rounded-xl--}}">

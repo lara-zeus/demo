@@ -1,0 +1,112 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "andreiio/blade-iconoir": "^1.5",
+        "andreiio/blade-remix-icon": "^1.1",
+        "archtechx/laravel-seo": "^0.5.1",
+        "atm-code/signature": "^1.16",
+        "codeat3/blade-akar-icons": "^1.18",
+        "codeat3/blade-clarity-icons": "^1.7",
+        "codeat3/blade-iconpark": "^1.4",
+        "doctrine/dbal": "^3.4",
+        "fruitcake/laravel-cors": "^2.0.5",
+        "garygreen/pretty-routes": "^1.0",
+        "guzzlehttp/guzzle": "^7.2",
+        "lara-zeus/bolt": "dev-main",
+        "lara-zeus/thunder": "dev-main",
+        "lara-zeus/sky": "dev-main",
+        "lara-zeus/wind": "dev-main",
+        "laravel/framework": "^9.0",
+        "laravel/sanctum": "^2.14",
+        "sentry/sentry-laravel": "^2.12",
+        "yepsua/filament-rating-field": "^0.1.0"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9.1",
+        "laravel/pint": "^1.0",
+        "laravel/sail": "^1.0.1",
+        "laravel/tinker": "^2.7",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^6.1",
+        "nunomaduro/larastan": "^2.0",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "pestphp/pest-plugin-livewire": "^1.0",
+        "pestphp/pest-plugin-parallel": "^0.3",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpunit/phpunit": "^9.5",
+        "spatie/laravel-ignition": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "pkg/core"
+        },
+        {
+            "type": "path",
+            "url": "pkg/wind"
+        },
+        {
+            "type": "path",
+            "url": "pkg/sky"
+        },
+        {
+            "type": "path",
+            "url": "pkg/bolt"
+        },
+        {
+            "type": "path",
+            "url": "pkg/thunder"
+        }
+    ]
+}

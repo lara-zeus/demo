@@ -11,11 +11,6 @@ module.exports = {
     ],
     darkMode: 'class',
     theme: {
-        debugScreens: {
-            style: {
-                fontSize: '24px',
-            },
-        },
         extend: {
             fontFamily: {
                 'el-messiri': ['El Messiri', 'sans-serif'],

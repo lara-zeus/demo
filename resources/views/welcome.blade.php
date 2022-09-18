@@ -1,7 +1,7 @@
 <x-app>
     <div class="relative flex justify-end top-4 ltr:right-4 rtl:left-4">
         <x-lang-switcher/>
-        <div class="mt-5 mx-4"
+        <div class="mt-2 sm:mt-5 mx-4"
              x-data="{
                         mode: null,
 
@@ -45,10 +45,10 @@
                         },
                     }">
                     <span x-cloak x-show="theme === 'dark'" x-on:click="mode = 'manual'; theme = 'light'" class="cursor-pointer">
-                        <x-heroicon-s-moon class="h-8 w-8 text-secondary-500 sm:-mt-4"/>
+                        <x-heroicon-s-moon class="h-6 w-6 md:h-8 md:w-8 text-secondary-500 sm:-mt-4"/>
                     </span>
                     <span x-cloak x-show="theme === 'light'" x-on:click="mode = 'manual'; theme = 'dark'" class="cursor-pointer">
-                        <x-heroicon-s-sun class="h-8 w-8 text-secondary-500 sm:-mt-4"/>
+                        <x-heroicon-s-sun class="h-6 w-6 md:h-8 md:w-8 text-secondary-500 sm:-mt-4"/>
                     </span>
         </div>
     </div>

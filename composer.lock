@@ -3176,16 +3176,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "0.0.17",
+            "version": "0.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "8ee56b3f14d4247c9dfdd942006dc2650e7762fd"
+                "reference": "d86185fdd0613fb2a90a207a34f626321b9d8846"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/8ee56b3f14d4247c9dfdd942006dc2650e7762fd",
-                "reference": "8ee56b3f14d4247c9dfdd942006dc2650e7762fd",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/d86185fdd0613fb2a90a207a34f626321b9d8846",
+                "reference": "d86185fdd0613fb2a90a207a34f626321b9d8846",
                 "shasum": ""
             },
             "require": {
@@ -3248,7 +3248,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/0.0.17"
+                "source": "https://github.com/lara-zeus/bolt/tree/0.0.18"
             },
             "funding": [
                 {
@@ -3256,20 +3256,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-09-17T18:07:57+00:00"
+            "time": "2022-09-18T15:02:01+00:00"
         },
         {
             "name": "lara-zeus/core",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "3fd995a86691ac2b5354a0bc587b8c7205a84bbd"
+                "reference": "53c34864444c88b14edc36f37d76c0281cb1c882"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/3fd995a86691ac2b5354a0bc587b8c7205a84bbd",
-                "reference": "3fd995a86691ac2b5354a0bc587b8c7205a84bbd",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/53c34864444c88b14edc36f37d76c0281cb1c882",
+                "reference": "53c34864444c88b14edc36f37d76c0281cb1c882",
                 "shasum": ""
             },
             "require": {
@@ -3332,7 +3332,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/core/issues",
-                "source": "https://github.com/lara-zeus/core/tree/2.3.1"
+                "source": "https://github.com/lara-zeus/core/tree/2.3.2"
             },
             "funding": [
                 {
@@ -3340,20 +3340,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-09-17T17:33:39+00:00"
+            "time": "2022-09-18T14:53:46+00:00"
         },
         {
             "name": "lara-zeus/sky",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "aadc2bc2171d2ffbe92623ed6101d455576fa26f"
+                "reference": "74f54b7ecba4bfce99c6c9fb723d1154722ebe12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/aadc2bc2171d2ffbe92623ed6101d455576fa26f",
-                "reference": "aadc2bc2171d2ffbe92623ed6101d455576fa26f",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/74f54b7ecba4bfce99c6c9fb723d1154722ebe12",
+                "reference": "74f54b7ecba4bfce99c6c9fb723d1154722ebe12",
                 "shasum": ""
             },
             "require": {
@@ -3423,7 +3423,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/sky/issues",
-                "source": "https://github.com/lara-zeus/sky/tree/2.3.0"
+                "source": "https://github.com/lara-zeus/sky/tree/2.3.1"
             },
             "funding": [
                 {
@@ -3431,20 +3431,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-09-17T18:05:25+00:00"
+            "time": "2022-09-18T14:59:17+00:00"
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "8768494b019f4e3885586818ceed29120fb07fe0"
+                "reference": "fd81328f5d3a3ed1d024fca06bdacabc83837d3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/8768494b019f4e3885586818ceed29120fb07fe0",
-                "reference": "8768494b019f4e3885586818ceed29120fb07fe0",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/fd81328f5d3a3ed1d024fca06bdacabc83837d3d",
+                "reference": "fd81328f5d3a3ed1d024fca06bdacabc83837d3d",
                 "shasum": ""
             },
             "require": {
@@ -3453,7 +3453,6 @@
                 "filament/notifications": "^2.0",
                 "filament/spatie-laravel-translatable-plugin": "^2.0",
                 "lara-zeus/bolt": "^0.0",
-                "lara-zeus/core": "^2.3",
                 "php": "^8.0"
             },
             "require-dev": {
@@ -3530,7 +3529,7 @@
                 "tickets"
             ],
             "support": {
-                "source": "https://github.com/lara-zeus/thunder/tree/0.0.2",
+                "source": "https://github.com/lara-zeus/thunder/tree/0.0.3",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -3539,20 +3538,20 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2022-09-17T18:12:25+00:00"
+            "time": "2022-09-18T15:04:07+00:00"
         },
         {
             "name": "lara-zeus/wind",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "4040cfd7dde32b965fbab68a29de335360199d30"
+                "reference": "7ff9fac978b1d1bbbdcadab61858919dc43c3dcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/4040cfd7dde32b965fbab68a29de335360199d30",
-                "reference": "4040cfd7dde32b965fbab68a29de335360199d30",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/7ff9fac978b1d1bbbdcadab61858919dc43c3dcb",
+                "reference": "7ff9fac978b1d1bbbdcadab61858919dc43c3dcb",
                 "shasum": ""
             },
             "require": {
@@ -3608,7 +3607,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/wind/issues",
-                "source": "https://github.com/lara-zeus/wind/tree/2.3.0"
+                "source": "https://github.com/lara-zeus/wind/tree/2.3.1"
             },
             "funding": [
                 {
@@ -3616,7 +3615,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-09-17T18:00:39+00:00"
+            "time": "2022-09-18T14:56:31+00:00"
         },
         {
             "name": "laravel/framework",
@@ -4120,16 +4119,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "5972d2a966e236674286e3a2281139ce74e4415d"
+                "reference": "b7bb46dee497b57e0c378315f2a711824cb46c38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/5972d2a966e236674286e3a2281139ce74e4415d",
-                "reference": "5972d2a966e236674286e3a2281139ce74e4415d",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/b7bb46dee497b57e0c378315f2a711824cb46c38",
+                "reference": "b7bb46dee497b57e0c378315f2a711824cb46c38",
                 "shasum": ""
             },
             "require": {
@@ -4191,7 +4190,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.4.0"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.5.0"
             },
             "funding": [
                 {
@@ -4207,7 +4206,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-09-16T20:57:23+00:00"
+            "time": "2022-09-17T21:06:02+00:00"
         },
         {
             "name": "league/glide",
@@ -11438,29 +11437,29 @@
         },
         {
             "name": "pestphp/pest-plugin",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest-plugin.git",
-                "reference": "fc8519de148699fe612d9c669be60554cd2db4fa"
+                "reference": "606c5f79c6a339b49838ffbee0151ca519efe378"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest-plugin/zipball/fc8519de148699fe612d9c669be60554cd2db4fa",
-                "reference": "fc8519de148699fe612d9c669be60554cd2db4fa",
+                "url": "https://api.github.com/repos/pestphp/pest-plugin/zipball/606c5f79c6a339b49838ffbee0151ca519efe378",
+                "reference": "606c5f79c6a339b49838ffbee0151ca519efe378",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.1 || ^2.0",
+                "composer-plugin-api": "^1.1.0 || ^2.0.0",
                 "php": "^7.3 || ^8.0"
             },
             "conflict": {
                 "pestphp/pest": "<1.0"
             },
             "require-dev": {
-                "composer/composer": "^1.10.19",
-                "pestphp/pest": "^1.0",
-                "pestphp/pest-dev-tools": "dev-master"
+                "composer/composer": "^2.4.2",
+                "pestphp/pest": "^1.22.1",
+                "pestphp/pest-dev-tools": "^1.0.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -11490,7 +11489,7 @@
                 "unit"
             ],
             "support": {
-                "source": "https://github.com/pestphp/pest-plugin/tree/v1.0.0"
+                "source": "https://github.com/pestphp/pest-plugin/tree/v1.1.0"
             },
             "funding": [
                 {
@@ -11506,29 +11505,29 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-01-03T15:53:42+00:00"
+            "time": "2022-09-18T13:18:17+00:00"
         },
         {
             "name": "pestphp/pest-plugin-laravel",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest-plugin-laravel.git",
-                "reference": "64996218006570f6f58f3c7ebb6f0c7bfb3c60b9"
+                "reference": "561930875e0336441f93fbd120fd53a2a890a8f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest-plugin-laravel/zipball/64996218006570f6f58f3c7ebb6f0c7bfb3c60b9",
-                "reference": "64996218006570f6f58f3c7ebb6f0c7bfb3c60b9",
+                "url": "https://api.github.com/repos/pestphp/pest-plugin-laravel/zipball/561930875e0336441f93fbd120fd53a2a890a8f5",
+                "reference": "561930875e0336441f93fbd120fd53a2a890a8f5",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^7.0 || ^8.0 || ^9.0",
-                "pestphp/pest": "^1.7",
+                "laravel/framework": "^7.30.6 || ^8.83.23 || ^9.30.1",
+                "pestphp/pest": "^1.22.1",
                 "php": "^7.3 || ^8.0"
             },
             "require-dev": {
-                "orchestra/testbench": "^5.12.1 || ^6.7.2",
+                "orchestra/testbench": "^5.20.0 || ^6.25.0 || ^7.7.0",
                 "pestphp/pest-dev-tools": "dev-master"
             },
             "type": "library",
@@ -11560,7 +11559,7 @@
                 "unit"
             ],
             "support": {
-                "source": "https://github.com/pestphp/pest-plugin-laravel/tree/v1.2.0"
+                "source": "https://github.com/pestphp/pest-plugin-laravel/tree/v1.3.0"
             },
             "funding": [
                 {
@@ -11576,7 +11575,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-01-13T17:09:04+00:00"
+            "time": "2022-09-18T13:04:53+00:00"
         },
         {
             "name": "pestphp/pest-plugin-livewire",
