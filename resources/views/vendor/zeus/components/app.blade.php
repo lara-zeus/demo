@@ -51,7 +51,7 @@
                 <a href="{{ url('/bolt') }}" class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
                     Forms
                 </a>
-                <a href="{{ url('/thunder/offices') }}" class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                <a href="{{ url('/thunder') }}" class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
                     Tickets
                 </a>
                 <a href="{{ url('/admin') }}" class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
@@ -118,24 +118,23 @@
     <header class="bg-gray-100 dark:bg-gray-800">
         <div class="container mx-auto py-2 px-3">
 
-            @if(isset($header))
-                <div class="italic font-semibold text-xl text-gray-600 dark:text-gray-100">
-                    {{ $header }}
-                </div>
-            @endif
-
             @if(isset($breadcrumps))
-                <nav class="text-gray-400 font-bold my-2" aria-label="Breadcrumb">
+                <nav class="text-gray-400 font-bold my-1" aria-label="Breadcrumb">
                     <ol class="list-none p-0 inline-flex">
-                        <li class="flex items-center">
+                        {{--<li class="flex items-center">
                             <a href="{{ route('blogs') }}">Home</a>
                             <x-iconpark-rightsmall-o class="fill-current w-4 h-4 mx-3" />
-                        </li>
+                        </li>--}}
                         {{ $breadcrumps }}
                     </ol>
                 </nav>
             @endif
 
+            @if(isset($header))
+                <div class="italic font-semibold text-xl text-gray-600 dark:text-gray-100">
+                    {{ $header }}
+                </div>
+            @endif
         </div>
     </header>
 @endif
