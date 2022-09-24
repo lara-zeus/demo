@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 
 class User extends Authenticatable implements FilamentUser, HasAvatar
 {
@@ -46,6 +47,13 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
     public function canAccessFilament(): bool
     {
         return $this->email === 'info@larazeus.com';
+    }
+
+    protected function avatar(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->getFilamentAvatarUrl(),
+        );
     }
 
     public function getFilamentAvatarUrl(): ?string

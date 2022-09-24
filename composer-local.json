@@ -90,23 +90,23 @@
     "repositories": [
         {
             "type": "path",
-            "url": "pkg/core"
+            "url": "../core"
         },
         {
             "type": "path",
-            "url": "pkg/wind"
+            "url": "../wind"
         },
         {
             "type": "path",
-            "url": "pkg/sky"
+            "url": "../sky"
         },
         {
             "type": "path",
-            "url": "pkg/bolt"
+            "url": "../bolt"
         },
         {
             "type": "path",
-            "url": "pkg/thunder"
+            "url": "../thunder"
         }
     ]
 }
