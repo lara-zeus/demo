@@ -216,7 +216,7 @@ return [
     |
     */
 
-    'favicon' => null,
+    'favicon' => 'https://demo.test/favicon/favicon.ico',
 
     /*
     |--------------------------------------------------------------------------
