@@ -22,10 +22,17 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('assholespammer'),
         ]);
 
+        DB::table('users')->insert([
+            'name' => 'the printer magician',
+            'email' => 'printer-god@larazeus.com',
+            'password' => Hash::make('printerMagician'),
+        ]);
+
         $this->call([
-            //WindSeeder::class,
-            //SkySeeder::class,
+            WindSeeder::class,
+            SkySeeder::class,
             BoltSeeder::class,
+            ThunderSeeder::class,
         ]);
     }
 }
