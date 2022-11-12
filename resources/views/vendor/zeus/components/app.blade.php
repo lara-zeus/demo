@@ -45,54 +45,67 @@
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">@zeus</span>
             </a>
             <div class="hidden sm:flex gap-4">
-                <a href="{{ url('/blog') }}"
-                   class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
-                    Blog
-                </a>
-                <a href="{{ url('/contact-us') }}"
-                   class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
-                    Contact us
-                </a>
-
                 <x-dropdown>
                     <x-slot name="oppener">
-                        <div class="flex-shrink-0 rounded-full bg-gray-50 dark:bg-gray-800 flex">
-                            Forms
+                        <div class="flex-shrink-0 flex">
+                            {{ __('Site') }}
                         </div>
                     </x-slot>
-                    <ul class="py-2 px-4 space-y-1 overflow-hidden">
-                        <a href="{{ url('/bolt') }}"
-                           class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
-                            All Forms
+                    <ul class="px-2 py-1 overflow-hidden">
+                        <a href="{{ url('/blog') }}"
+                           class="flex my-2 whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                            {{ __('Blog') }}
                         </a>
-                        <a href="{{ url('/bolt/entries') }}"
-                           class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
-                            My Entries
+                        <a href="{{ url('/faq') }}"
+                           class="flex my-2 whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                            {{ __('Faq') }}
+                        </a>
+                        <a href="{{ url('/contact-us') }}"
+                           class="flex my-2 whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                            {{ __('Contact us') }}
                         </a>
                     </ul>
                 </x-dropdown>
 
                 <x-dropdown>
                     <x-slot name="oppener">
-                        <div class="flex-shrink-0 rounded-full bg-gray-50 dark:bg-gray-800 flex">
-                            Tickets
+                        <div class="flex-shrink-0 flex">
+                            {{ __('Forms') }}
                         </div>
                     </x-slot>
-                    <ul class="py-2 px-4 space-y-1 overflow-hidden">
+                    <ul class="px-2 py-1 overflow-hidden">
+                        <a href="{{ url('/bolt') }}"
+                           class="flex my-2 whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                            {{ __('All Forms') }}
+                        </a>
+                        <a href="{{ url('/bolt/entries') }}"
+                           class="flex my-2 whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                            {{ __('My Entries') }}
+                        </a>
+                    </ul>
+                </x-dropdown>
+
+                <x-dropdown>
+                    <x-slot name="oppener">
+                        <div class="flex-shrink-0 flex">
+                            {{ __('Tickets') }}
+                        </div>
+                    </x-slot>
+                    <ul class="px-2 py-1 overflow-hidden">
                         <a href="{{ url('/thunder') }}"
-                           class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
-                            All Tickets
+                           class="flex my-2 whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                            {{ __('All Tickets') }}
                         </a>
                         <a href="{{ url('/thunder/tickets') }}"
-                           class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
-                            My Tickets
+                           class="flex my-2 whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                            {{ __('My Tickets') }}
                         </a>
                     </ul>
                 </x-dropdown>
 
                 <a href="{{ url('/admin') }}"
                    class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
-                    Admin Panel
+                    {{ __('Admin Panel') }}
                 </a>
 
                 <x-lang-switcher/>

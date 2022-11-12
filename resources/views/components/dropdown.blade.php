@@ -6,16 +6,12 @@
                 if (this.open) {
                     return this.close()
                 }
-
                 this.$refs.button.focus()
-
                 this.open = true
             },
             close(focusAfter) {
                 if (! this.open) return
-
                 this.open = false
-
                 focusAfter && focusAfter.focus()
             }
         }"
@@ -31,6 +27,7 @@
                 :aria-expanded="open"
                 :aria-controls="$id('dropdown-button')"
                 type="button"
+                class="text-primary-600 dark:text-primary-100"
         >
             {{ $oppener }}
         </button>
@@ -43,7 +40,7 @@
                 x-on:click.outside="close($refs.button)"
                 :id="$id('dropdown-button')"
                 style="display: none;"
-                class="absolute ltr:left-0 rtl:right-0 w-36 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded shadow-md overflow-hidden"
+                class="absolute ltr:left-0 rtl:right-0 w-36 bg-white dark:bg-gray-700 text-primary-800 dark:text-primary-100 rounded shadow-md overflow-hidden"
         >
             {{ $slot }}
         </div>

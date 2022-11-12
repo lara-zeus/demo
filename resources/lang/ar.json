@@ -2,5 +2,16 @@
   "dir": "rtl",
   "ar": "عربي",
   "en": "English",
-  "fr": "French"
+  "fr": "French",
+  "Admin Panel": "لوحة التحكم",
+  "My Tickets": "تذاكري",
+  "All Tickets": "كافة التذاكر",
+  "My Entries": "الادخالات",
+  "Tickets": "التذاكر الإلكترونية",
+  "All Forms": "كافة النماذج",
+  "Forms": "النماذج الإلكترونية",
+  "Contact us": "اتصل بنا",
+  "Blog": "المدونة",
+  "Site": "الموقع",
+  "Faq": "الأسئلة الشائعة"
 }

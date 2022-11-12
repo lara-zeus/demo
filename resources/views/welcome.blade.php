@@ -4,42 +4,31 @@
         <div class="mt-2 sm:mt-5 mx-4"
              x-data="{
                         mode: null,
-
                         theme: null,
-
                         init: function () {
                             this.theme = localStorage.getItem('theme') || (this.isSystemDark() ? 'dark' : 'light')
                             this.mode = localStorage.getItem('theme') ? 'manual' : 'auto'
-
                             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
                                 if (this.mode === 'manual') return
-
                                 if (event.matches && (! document.documentElement.classList.contains('dark'))) {
                                     this.theme = 'dark'
-
                                     document.documentElement.classList.add('dark')
                                 } else if ((! event.matches) && document.documentElement.classList.contains('dark')) {
                                     this.theme = 'light'
-
                                     document.documentElement.classList.remove('dark')
                                 }
                             })
-
                             $watch('theme', () => {
                                 if (this.mode === 'auto') return
-
                                 localStorage.setItem('theme', this.theme)
-
                                 if (this.theme === 'dark' && (! document.documentElement.classList.contains('dark'))) {
                                     document.documentElement.classList.add('dark')
                                 } else if (this.theme === 'light' && document.documentElement.classList.contains('dark')) {
                                     document.documentElement.classList.remove('dark')
                                 }
-
                                 $dispatch('dark-mode-toggled', this.theme)
                             })
                         },
-
                         isSystemDark: function () {
                             return window.matchMedia('(prefers-color-scheme: dark)').matches
                         },
