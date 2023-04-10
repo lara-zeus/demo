@@ -16,14 +16,14 @@
         "doctrine/dbal": "^3.0",
         "garygreen/pretty-routes": "^1.0",
         "guzzlehttp/guzzle": "^7.5",
-        "lara-zeus/bolt": "dev-main",
-        "lara-zeus/thunder": "dev-main",
-        "lara-zeus/sky": "dev-main",
-        "lara-zeus/wind": "dev-main",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
-        "sentry/sentry-laravel": "^2.12",
-        "yepsua/filament-rating-field": "^0.1.0"
+        "sentry/sentry-laravel": "^3.3",
+        "yepsua/filament-rating-field": "^0.1.0",
+        "lara-zeus/wind": "^2.4",
+        "lara-zeus/sky": "^2.4",
+        "lara-zeus/bolt": "^0.0",
+        "lara-zeus/thunder": "^2.4"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -81,31 +81,16 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true
         }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
         {
-            "type": "path",
-            "url": "../core"
-        },
-        {
-            "type": "path",
-            "url": "../wind"
-        },
-        {
-            "type": "path",
-            "url": "../sky"
-        },
-        {
-            "type": "path",
-            "url": "../bolt"
-        },
-        {
-            "type": "path",
-            "url": "../thunder"
+            "type": "github",
+            "url": "git@github.com:lara-zeus/thunder.git"
         }
     ]
 }
