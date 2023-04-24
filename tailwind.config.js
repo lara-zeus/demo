@@ -17,6 +17,7 @@ module.exports = {
                 'koho': ['KoHo', 'sans-serif'],
             },
             colors: {
+                ...colors,
                 gray: colors.stone,
                 primary: colors.emerald,
                 green: colors.emerald,
@@ -25,6 +26,7 @@ module.exports = {
                 success: colors.emerald,
                 warning: colors.yellow,
                 info: colors.blue,
+                blue: colors.blue,
                 emerald: {
                     50: "#d1fae5",
                     100: "#a7f3d0",

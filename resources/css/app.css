@@ -15,3 +15,7 @@
 [dir=ltr]{
     font-family: 'KoHo', 'sans-serif';
 }
+
+.bord{
+    border: solid 1px red;
+}
