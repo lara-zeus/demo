@@ -3686,6 +3686,12 @@ select{
 .-mb-4{
   margin-bottom: -1rem;
 }
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+.mt-7{
+  margin-top: 1.75rem;
+}
 .block{
   display: block;
 }
@@ -3772,6 +3778,9 @@ select{
 }
 .h-20{
   height: 5rem;
+}
+.h-24{
+  height: 6rem;
 }
 .max-h-96{
   max-height: 24rem;
@@ -3927,6 +3936,9 @@ select{
 }
 .max-w-\[20em\]{
   max-width: 20em;
+}
+.max-w-screen-md{
+  max-width: 768px;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -4878,6 +4890,9 @@ select{
 }
 .pt-3{
   padding-top: 0.75rem;
+}
+.\!pt-0{
+  padding-top: 0px !important;
 }
 .text-left{
   text-align: left;
@@ -5999,6 +6014,16 @@ select{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.prose-a\:text-blue-600 :is(:where(a):not(:where([class~="not-prose"] *))){
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.prose-a\:text-primary-600 :is(:where(a):not(:where([class~="not-prose"] *))){
+  --tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+
 [dir="ltr"] .ltr\:right-4{
   right: 1rem;
 }
@@ -6568,6 +6593,11 @@ select{
   color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-blue-500{
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
 .dark .dark\:placeholder-gray-400::-moz-placeholder{
   --tw-placeholder-opacity: 1;
   color: rgb(168 162 158 / var(--tw-placeholder-opacity));
@@ -7069,6 +7099,10 @@ select{
     flex-direction: column;
   }
 
+  .sm\:flex-nowrap{
+    flex-wrap: nowrap;
+  }
+
   .sm\:items-start{
     align-items: flex-start;
   }
@@ -7119,6 +7153,12 @@ select{
     --tw-space-y-reverse: 0;
     margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+  }
+
+  .sm\:space-x-6 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .sm\:py-16{
@@ -7829,6 +7869,10 @@ select{
     gap: 0.75rem;
   }
 
+  .lg\:rounded-lg{
+    border-radius: 0.5rem;
+  }
+
   .lg\:border-r{
     border-right-width: 1px;
   }
@@ -7868,6 +7912,10 @@ select{
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:leading-snug{
+    line-height: 1.375;
   }
 
   .lg\:transition{

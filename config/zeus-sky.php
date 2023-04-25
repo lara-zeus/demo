@@ -61,12 +61,12 @@ return [
      * you can use the default layout as a starting point for your blog.
      * however, if you're already using your own component, just set the path here.
      */
-    'layout' => 'zeus-sky::themes.artemis.app',
+    //'layout' => 'zeus-sky::themes.artemis.app',
 
     /**
      * the default theme, for now we only have one theme, and soon we will provide more free and premium themes.
      */
-    'theme' => 'artemis',
+    //'theme' => 'artemis',
 
     /**
      * css class to apply on found search result, e.g. `bg-yellow-400`.
@@ -87,5 +87,5 @@ return [
      * default featured image, set to null to disable it.
      * ex: https://placehold.co/600x400
      */
-    'default_featured_image' => 'https://placehold.co/600x400',
+    'default_featured_image' => null,
 ];

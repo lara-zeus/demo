@@ -15,13 +15,10 @@
         "doctrine/dbal": "^3.0",
         "garygreen/pretty-routes": "^1.0",
         "guzzlehttp/guzzle": "^7.5",
-        "lara-zeus/bolt": "^0.0",
-        "lara-zeus/sky": "^2.4",
-        "lara-zeus/thunder": "^0.0",
-        "lara-zeus/wind": "^2.4",
+        "lara-zeus/artemis": "dev-main",
+        "lara-zeus/sky": "dev-main",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
-        "ryangjchandler/filament-navigation": "^0.5.0",
         "sentry/sentry-laravel": "^3.3",
         "still-code/signature": "dev-main",
         "yepsua/filament-rating-field": "^0.1.0"
@@ -96,6 +93,14 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/laravel-comments.git"
+        },
+        {
+            "type": "path",
+            "url": "../artemis"
+        },
+        {
+            "type": "path",
+            "url": "../sky"
         }
     ]
 }

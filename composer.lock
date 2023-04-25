@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f65d81bb5c730d76a2624e41433a957",
+    "content-hash": "b39aa1e04324708ba4a15282a40983b1",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -248,77 +248,6 @@
                 "source": "https://github.com/archtechx/laravel-seo/tree/v0.7.0"
             },
             "time": "2023-03-03T13:19:18+00:00"
-        },
-        {
-            "name": "beyondcode/laravel-comments",
-            "version": "dev-lara-10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/laravel-comments.git",
-                "reference": "f0b5e047cdc3a9f1c0bd3a2564762392752319af"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/laravel-comments/zipball/f0b5e047cdc3a9f1c0bd3a2564762392752319af",
-                "reference": "f0b5e047cdc3a9f1c0bd3a2564762392752319af",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^3.6|^5.0|^6.0|^7.0|^8.0",
-                "phpunit/phpunit": "^7.0|^8.0|9.2.*|^9.5.10"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "BeyondCode\\Comments\\CommentsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "BeyondCode\\Comments\\": "src"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "BeyondCode\\Comments\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "test-coverage": [
-                    "vendor/bin/phpunit --coverage-html coverage"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marcel Pociot",
-                    "email": "marcel@beyondco.de",
-                    "homepage": "https://beyondcode.de",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Add comments to your Laravel application",
-            "homepage": "https://github.com/beyondcode/laravel-comments",
-            "keywords": [
-                "beyondcode",
-                "comments",
-                "laravel-comments"
-            ],
-            "support": {
-                "source": "https://github.com/lara-zeus/laravel-comments/tree/lara-10"
-            },
-            "time": "2023-04-10T22:52:26+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -3001,56 +2930,45 @@
             "time": "2020-06-13T08:05:20+00:00"
         },
         {
-            "name": "lara-zeus/bolt",
-            "version": "0.0.20",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "f7aec872261201fccb4b4290d45a261389766b2b"
-            },
+            "name": "lara-zeus/artemis",
+            "version": "dev-main",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/f7aec872261201fccb4b4290d45a261389766b2b",
-                "reference": "f7aec872261201fccb4b4290d45a261389766b2b",
-                "shasum": ""
+                "type": "path",
+                "url": "../artemis",
+                "reference": "7888b6ecceb2a169d2c76cee28b5118163ca31be"
             },
             "require": {
-                "codeat3/blade-clarity-icons": "^1.7",
-                "filament/notifications": "^2.0",
-                "filament/spatie-laravel-translatable-plugin": "^2.0",
-                "lara-zeus/core": "^2.4",
+                "lara-zeus/sky": "dev-main",
                 "php": "^8.0"
-            },
-            "require-dev": {
-                "laravel/pint": "^1.0",
-                "nunomaduro/larastan": "^2.0.1",
-                "orchestra/testbench": "^6.0 || ^7.0",
-                "pestphp/pest": "^1.21",
-                "pestphp/pest-plugin-laravel": "^1.1",
-                "pestphp/pest-plugin-livewire": "^1.0",
-                "pestphp/pest-plugin-parallel": "^0.3",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.0",
-                "phpunit/phpunit": "^9.5"
             },
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "LaraZeus\\Bolt\\BoltServiceProvider"
-                    ],
-                    "aliases": {
-                        "Bolt": "LaraZeus\\Bolt\\Facades\\Bolt"
-                    }
+                        "LaraZeus\\Artemis\\ArtemisServiceProvider"
+                    ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "LaraZeus\\Bolt\\": "src"
+                    "LaraZeus\\Artemis\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:pest": [
+                    "vendor/bin/pest --parallel"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "@test:pest",
+                    "@test:phpstan"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -3061,28 +2979,24 @@
                     "role": "Owner"
                 }
             ],
-            "description": "laravel package to create and manage forms",
-            "homepage": "https://github.com/lara-zeus",
+            "description": "artistic themes for lara zeus sky",
+            "homepage": "https://larazeus.com",
             "keywords": [
-                "Forms",
-                "bolt",
-                "form",
-                "generator",
+                "cms",
                 "lara-zeus",
                 "laravel",
-                "maker"
+                "laravel cms",
+                "menu",
+                "news",
+                "pages",
+                "posts",
+                "sky",
+                "wordpress alternative",
+                "wordpress laravel"
             ],
-            "support": {
-                "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/0.0.20"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-04-10T22:37:32+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/core",
@@ -3170,17 +3084,11 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "2.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "01a5a95136a2f6225792fa1400334bb32f87d5ab"
-            },
+            "version": "dev-main",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/01a5a95136a2f6225792fa1400334bb32f87d5ab",
-                "reference": "01a5a95136a2f6225792fa1400334bb32f87d5ab",
-                "shasum": ""
+                "type": "path",
+                "url": "../sky",
+                "reference": "a829932f58e593e20c7900048f7047ba623e1369"
             },
             "require": {
                 "doctrine/dbal": "^3.3",
@@ -3191,6 +3099,7 @@
                 "lara-zeus/core": "^2.4",
                 "mohamedsabil83/filament-forms-tinyeditor": "^1.5",
                 "php": "^8.0",
+                "ryangjchandler/filament-navigation": "^0.5",
                 "spatie/laravel-medialibrary": "^10.0.0",
                 "spatie/laravel-sluggable": "^3.3",
                 "spatie/laravel-tags": "^4.0"
@@ -3221,98 +3130,9 @@
                     "LaraZeus\\Sky\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ashraf Monshi",
-                    "email": "wh7r.com@gmail.com",
-                    "role": "Owner"
-                }
-            ],
-            "description": "simple packages to create and manage forms for your users",
-            "homepage": "https://larazeus.com",
-            "keywords": [
-                "Laravel CMS",
-                "cms",
-                "lara-zeus",
-                "laravel",
-                "menu",
-                "news",
-                "pages",
-                "posts",
-                "sky",
-                "wordpress alternative",
-                "wordpress laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/lara-zeus/sky/issues",
-                "source": "https://github.com/lara-zeus/sky/tree/2.4.2"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-04-24T04:04:55+00:00"
-        },
-        {
-            "name": "lara-zeus/thunder",
-            "version": "0.0.6",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "81913a610928e19e2bebfccbc7ec3b10336f890c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/81913a610928e19e2bebfccbc7ec3b10336f890c",
-                "reference": "81913a610928e19e2bebfccbc7ec3b10336f890c",
-                "shasum": ""
-            },
-            "require": {
-                "beyondcode/laravel-comments": "dev-lara-10",
-                "codeat3/blade-clarity-icons": "^1.7",
-                "filament/notifications": "^2.0",
-                "filament/spatie-laravel-translatable-plugin": "^2.0",
-                "lara-zeus/bolt": "^0.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "laravel/pint": "^1.0",
-                "nunomaduro/larastan": "^2.0",
-                "orchestra/testbench": "^6.0 || ^7.0 || ^8.0",
-                "pestphp/pest": "^1.21 || ^2.0",
-                "pestphp/pest-plugin-laravel": "^1.1 || ^2.0",
-                "pestphp/pest-plugin-livewire": "^1.0",
-                "pestphp/pest-plugin-parallel": "^0.3",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.0",
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "LaraZeus\\Thunder\\ThunderServiceProvider"
-                    ],
-                    "aliases": {
-                        "Thunder": "LaraZeus\\Thunder\\Facades\\Thunder"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "LaraZeus\\Thunder\\": "src"
-                }
-            },
             "autoload-dev": {
                 "psr-4": {
-                    "LaraZeus\\Thunder\\Tests\\": "tests"
+                    "LaraZeus\\Sky\\Tests\\": "tests"
                 }
             },
             "scripts": {
@@ -3340,108 +3160,24 @@
                     "role": "Owner"
                 }
             ],
-            "description": "tickets system for laravel biult as filament plugin",
-            "homepage": "https://github.com/lara-zeus",
+            "description": "simple packages to create and manage forms for your users",
+            "homepage": "https://larazeus.com",
             "keywords": [
-                "form",
-                "forms",
-                "generator",
-                "help desk",
+                "cms",
                 "lara-zeus",
                 "laravel",
-                "maker",
-                "self hosted",
-                "thunder",
-                "tickets"
+                "laravel cms",
+                "menu",
+                "news",
+                "pages",
+                "posts",
+                "sky",
+                "wordpress alternative",
+                "wordpress laravel"
             ],
-            "support": {
-                "source": "https://github.com/lara-zeus/thunder/tree/0.0.6",
-                "issues": "https://github.com/lara-zeus/thunder/issues"
-            },
-            "funding": [
-                {
-                    "type": "github",
-                    "url": "https://github.com/atmonshi"
-                }
-            ],
-            "time": "2023-04-10T22:56:24+00:00"
-        },
-        {
-            "name": "lara-zeus/wind",
-            "version": "2.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "8fa00ff82ded088978d365b0c481c526c76a51a5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/8fa00ff82ded088978d365b0c481c526c76a51a5",
-                "reference": "8fa00ff82ded088978d365b0c481c526c76a51a5",
-                "shasum": ""
-            },
-            "require": {
-                "lara-zeus/core": "^2.4",
-                "php": "^8.1"
-            },
-            "require-dev": {
-                "laravel/pint": "^1.0",
-                "nunomaduro/larastan": "^2.0",
-                "orchestra/testbench": "^6.0 || ^7.0 || ^8.0",
-                "pestphp/pest": "^1.21 || ^2.0",
-                "pestphp/pest-plugin-laravel": "^1.1 || ^2.0",
-                "pestphp/pest-plugin-livewire": "^1.0",
-                "pestphp/pest-plugin-parallel": "^0.3",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.0",
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "LaraZeus\\Wind\\WindServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "LaraZeus\\Wind\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ashraf Monshi",
-                    "email": "wh7r.com@gmail.com",
-                    "role": "Owner"
-                }
-            ],
-            "description": "laravel packages to create and manage contact us for your site",
-            "homepage": "https://github.com/lara-zeus",
-            "keywords": [
-                "Forms",
-                "contact",
-                "form",
-                "lara-zeus",
-                "laravel",
-                "mailing"
-            ],
-            "support": {
-                "issues": "https://github.com/lara-zeus/wind/issues",
-                "source": "https://github.com/lara-zeus/wind/tree/2.4.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-04-10T22:24:38+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "laravel/framework",
@@ -4045,23 +3781,23 @@
         },
         {
             "name": "league/glide",
-            "version": "2.2.3",
+            "version": "2.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/glide.git",
-                "reference": "446b1fc9f15101db52e8ddb7bec8cb16e814b244"
+                "reference": "d31132bf5651d5abeef345ff523cd9cf2575b971"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/glide/zipball/446b1fc9f15101db52e8ddb7bec8cb16e814b244",
-                "reference": "446b1fc9f15101db52e8ddb7bec8cb16e814b244",
+                "url": "https://api.github.com/repos/thephpleague/glide/zipball/d31132bf5651d5abeef345ff523cd9cf2575b971",
+                "reference": "d31132bf5651d5abeef345ff523cd9cf2575b971",
                 "shasum": ""
             },
             "require": {
                 "intervention/image": "^2.7",
                 "league/flysystem": "^2.0|^3.0",
                 "php": "^7.2|^8.0",
-                "psr/http-message": "^1.0"
+                "psr/http-message": "^1.0|^2.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.3.3",
@@ -4104,9 +3840,9 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/glide/issues",
-                "source": "https://github.com/thephpleague/glide/tree/2.2.3"
+                "source": "https://github.com/thephpleague/glide/tree/2.2.4"
             },
-            "time": "2023-02-14T06:15:26+00:00"
+            "time": "2023-04-18T18:42:22+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -5828,16 +5564,16 @@
         },
         {
             "name": "psr/http-message",
-            "version": "1.1",
+            "version": "2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
-                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
                 "shasum": ""
             },
             "require": {
@@ -5846,7 +5582,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -5861,7 +5597,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common interface for HTTP messages",
@@ -5875,9 +5611,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-message/tree/1.1"
+                "source": "https://github.com/php-fig/http-message/tree/2.0"
             },
-            "time": "2023-04-04T09:50:52+00:00"
+            "time": "2023-04-04T09:54:51+00:00"
         },
         {
             "name": "psr/log",
@@ -13990,6 +13726,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "lara-zeus/artemis": 20,
+        "lara-zeus/sky": 20,
         "still-code/signature": 20
     },
     "prefer-stable": true,
