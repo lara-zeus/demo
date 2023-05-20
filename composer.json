@@ -15,8 +15,10 @@
         "doctrine/dbal": "^3.0",
         "garygreen/pretty-routes": "^1.0",
         "guzzlehttp/guzzle": "^7.5",
-        "lara-zeus/artemis": "dev-main",
-        "lara-zeus/sky": "dev-main",
+        "lara-zeus/wind": "^2.4",
+        "lara-zeus/sky": "^2.4",
+        "lara-zeus/bolt": "^0.0",
+        "lara-zeus/thunder": "^0.0",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
         "sentry/sentry-laravel": "^3.3",
@@ -95,12 +97,8 @@
             "url": "git@github.com:lara-zeus/laravel-comments.git"
         },
         {
-            "type": "path",
-            "url": "../artemis"
-        },
-        {
-            "type": "path",
-            "url": "../sky"
+            "type": "github",
+            "url": "https://github.com/atmonshi/filament-navigation"
         }
     ]
 }
