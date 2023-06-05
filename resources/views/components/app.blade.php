@@ -2,7 +2,11 @@
 <html dir="{{ __('dir') }}" class="antialiased filament js-focus-visible">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="application-name" content="{{ config('app.name') }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     <!-- favicon -->
@@ -29,9 +33,11 @@
     @endphp
 
     <x-seo::meta />
-
+    @livewireStyles
     <style>
-        [x-cloak] {display: none !important;}
+        [x-cloak=""], [x-cloak="x-cloak"], [x-cloak="1"] { display: none !important; }
+        @media (max-width: 1023px) { [x-cloak="-lg"] { display: none !important; } }
+        @media (min-width: 1024px) { [x-cloak="lg"] { display: none !important; } }
         @if(app()->isLocal())
             /*a css debugging tool 😜*/
             .bord {border: solid 1px crimson}
@@ -39,12 +45,14 @@
     </style>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
-<div class="inset-0 min-h-screen flex items-center justify-center">
+<div x-data class="inset-0 min-h-screen flex items-center justify-center">
     <div class="container mx-auto">
         {{ $slot }}
     </div>
 </div>
-<script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
+
+@livewireScripts
+@stack('scripts')
 @atmStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
 <script>
     const theme = localStorage.getItem('theme')
@@ -53,5 +61,8 @@
         document.documentElement.classList.add('dark')
     }
 </script>
+
+<script src="{{ mix('js/app.js') }}" defer></script>
+
 </body>
 </html>

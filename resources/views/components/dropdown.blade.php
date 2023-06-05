@@ -1,4 +1,4 @@
-<div class="flex justify-center">
+<div class="flex justify-center items-center bord">
     <div
         x-data="{
             open: false,
@@ -33,13 +33,12 @@
         </button>
 
         <!-- Panel -->
-        <div
+        <div x-cloak
             x-ref="panel"
             x-show="open"
             x-transition.origin.top.left
             x-on:click.outside="close($refs.button)"
             :id="$id('dropdown-button')"
-            style="display: none;"
             class="absolute z-50 ltr:left-0 rtl:right-0 w-36 bg-white dark:bg-primary-700 text-primary-800 dark:text-primary-400 rounded shadow-md overflow-hidden"
         >
             {{ $slot }}

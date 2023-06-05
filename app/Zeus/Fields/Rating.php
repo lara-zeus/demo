@@ -11,12 +11,12 @@ class Rating extends FieldsContract
 
     public int $sort = 99;
 
-    public function title()
+    public function title(): string
     {
         return __('Rating');
     }
 
-    public static function getOptions()
+    public static function getOptions(): array
     {
         return [
             Toggle::make('options.is_required')->label(__('Is Required')),

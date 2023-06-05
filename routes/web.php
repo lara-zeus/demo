@@ -13,9 +13,7 @@ Route::get('/lang/{lang}', function ($lang) {
 });
 
 Route::post('/forms', function () {
-    /*return response('Hello World', 200)
-        ->header('Content-Type', 'text/plain');*/
-
+    // test callbacks for bolt
     $code = \Illuminate\Support\Str::random(4,5);
 
     \Illuminate\Support\Facades\DB::table('logger')->insert([
@@ -29,7 +27,3 @@ Route::post('/forms', function () {
         'state' => 'faild',
     ]);
 });
-
-/*Route::get('/feedbackCode', function ($response) {
-    dd($response);
-});*/

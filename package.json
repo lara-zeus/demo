@@ -10,15 +10,17 @@
         "production": "mix --production"
     },
     "devDependencies": {
-        "@alpinejs/collapse": "^3.10.3",
-        "@tailwindcss/forms": "^0.5.0",
-        "@tailwindcss/typography": "^0.5.2",
+        "@alpinejs/collapse": "^3.12.2",
+        "@alpinejs/focus": "^3.12.2",
+        "@awcodes/alpine-floating-ui": "^3.5.0",
+        "@ryangjchandler/alpine-tooltip": "^1.2.0",
+        "@tailwindcss/forms": "^0.5.3",
+        "@tailwindcss/typography": "^0.5.9",
+        "alpinejs": "^3.12.2",
         "autoprefixer": "^10.4.4",
-        "axios": "^0.21",
         "laravel-mix": "^6.0.6",
-        "lodash": "^4.17.19",
-        "postcss": "^8.4.12",
-        "tailwindcss": "^3.0.24",
+        "postcss": "^8.4.24",
+        "tailwindcss": "^3.3.2",
         "tailwindcss-debug-screens": "^2.2.1",
         "tippy.js": "^6.3.7"
     }

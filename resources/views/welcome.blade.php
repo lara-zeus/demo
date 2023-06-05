@@ -1,45 +1,8 @@
 <x-app>
-    <div class="relative flex justify-end top-4 ltr:right-4 rtl:left-4">
+    <div  class="absolute flex justify-start items-center gap-4 top-4 ltr:right-4 rtl:left-4">
         <x-lang-switcher/>
-        <div class="mt-2 sm:mt-5 mx-4"
-             x-data="{
-                        mode: null,
-                        theme: null,
-                        init: function () {
-                            this.theme = localStorage.getItem('theme') || (this.isSystemDark() ? 'dark' : 'light')
-                            this.mode = localStorage.getItem('theme') ? 'manual' : 'auto'
-                            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
-                                if (this.mode === 'manual') return
-                                if (event.matches && (! document.documentElement.classList.contains('dark'))) {
-                                    this.theme = 'dark'
-                                    document.documentElement.classList.add('dark')
-                                } else if ((! event.matches) && document.documentElement.classList.contains('dark')) {
-                                    this.theme = 'light'
-                                    document.documentElement.classList.remove('dark')
-                                }
-                            })
-                            $watch('theme', () => {
-                                if (this.mode === 'auto') return
-                                localStorage.setItem('theme', this.theme)
-                                if (this.theme === 'dark' && (! document.documentElement.classList.contains('dark'))) {
-                                    document.documentElement.classList.add('dark')
-                                } else if (this.theme === 'light' && document.documentElement.classList.contains('dark')) {
-                                    document.documentElement.classList.remove('dark')
-                                }
-                                $dispatch('dark-mode-toggled', this.theme)
-                            })
-                        },
-                        isSystemDark: function () {
-                            return window.matchMedia('(prefers-color-scheme: dark)').matches
-                        },
-                    }">
-                    <span x-cloak x-show="theme === 'dark'" x-on:click="mode = 'manual'; theme = 'light'" class="cursor-pointer">
-                        <x-heroicon-s-moon class="h-6 w-6 md:h-8 md:w-8 text-secondary-500 sm:-mt-4"/>
-                    </span>
-                    <span x-cloak x-show="theme === 'light'" x-on:click="mode = 'manual'; theme = 'dark'" class="cursor-pointer">
-                        <x-heroicon-s-sun class="h-6 w-6 md:h-8 md:w-8 text-secondary-500 sm:-mt-4"/>
-                    </span>
-        </div>
+        <x-dark-mode/>
+
     </div>
 
     <div class="text-center py-6 dark:text-gray-100">
@@ -56,11 +19,11 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 mx-4">
-        @include('wind')
-        @include('sky')
-        @include('bolt')
-        @include('thunder')
-        @include('soon')
+        @include('items.wind')
+        @include('items.sky')
+        @include('items.bolt')
+        @include('items.thunder')
+        @include('items.soon')
     </div>
 
     <div class="sm:my-32 my-10 mx-8 group">
