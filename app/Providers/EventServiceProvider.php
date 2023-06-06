@@ -6,8 +6,6 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Event;
-use LaraZeus\Bolt\Events\FormMounted;
-use LaraZeus\Thunder\Listeners\CheckOffice;
 
 class EventServiceProvider extends ServiceProvider
 {

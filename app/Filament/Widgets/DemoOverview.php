@@ -8,5 +8,5 @@ class DemoOverview extends Widget
 {
     protected static string $view = 'filament.widgets.demo-overview';
 
-    protected int | string | array $columnSpan = 'full';
+    protected int|string|array $columnSpan = 'full';
 }

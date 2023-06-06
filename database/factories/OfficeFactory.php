@@ -26,7 +26,7 @@ class OfficeFactory extends Factory
     {
         return [
             'name' => $this->faker->words(3, true),
-            'slug' => $this->faker->slug(5)
+            'slug' => $this->faker->slug(5),
         ];
     }
 }
