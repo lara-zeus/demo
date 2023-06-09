@@ -391,16 +391,16 @@
         },
         {
             "name": "blade-ui-kit/blade-icons",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blade-ui-kit/blade-icons.git",
-                "reference": "b2a80ff2a26641f64bfee48ad0d2a922ce781228"
+                "reference": "4d6b6b2548b1994a777211a985e18691701891e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blade-ui-kit/blade-icons/zipball/b2a80ff2a26641f64bfee48ad0d2a922ce781228",
-                "reference": "b2a80ff2a26641f64bfee48ad0d2a922ce781228",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-icons/zipball/4d6b6b2548b1994a777211a985e18691701891e4",
+                "reference": "4d6b6b2548b1994a777211a985e18691701891e4",
                 "shasum": ""
             },
             "require": {
@@ -460,15 +460,11 @@
             },
             "funding": [
                 {
-                    "url": "https://github.com/caneco",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/driesvints",
+                    "url": "https://github.com/sponsors/driesvints",
                     "type": "github"
                 }
             ],
-            "time": "2023-02-15T16:30:12+00:00"
+            "time": "2023-06-09T15:47:26+00:00"
         },
         {
             "name": "brick/math",
@@ -3061,16 +3057,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "0.0.31",
+            "version": "0.0.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "2b35f61b1ff0110ed7e680a17eabdb4079f241c5"
+                "reference": "9c28b367597e67e37d8573dd696e8e9e091ef50a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/2b35f61b1ff0110ed7e680a17eabdb4079f241c5",
-                "reference": "2b35f61b1ff0110ed7e680a17eabdb4079f241c5",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/9c28b367597e67e37d8573dd696e8e9e091ef50a",
+                "reference": "9c28b367597e67e37d8573dd696e8e9e091ef50a",
                 "shasum": ""
             },
             "require": {
@@ -3137,7 +3133,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/0.0.31"
+                "source": "https://github.com/lara-zeus/bolt/tree/0.0.34"
             },
             "funding": [
                 {
@@ -3145,7 +3141,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-08T13:37:19+00:00"
+            "time": "2023-06-09T20:04:58+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -3326,16 +3322,16 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "0.0.9",
+            "version": "0.0.11",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "3f606e6d038cc6789752f845206f2cb69639d69a"
+                "reference": "f1088a194a55abd2c93556ce131391dd663ccf92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/3f606e6d038cc6789752f845206f2cb69639d69a",
-                "reference": "3f606e6d038cc6789752f845206f2cb69639d69a",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/f1088a194a55abd2c93556ce131391dd663ccf92",
+                "reference": "f1088a194a55abd2c93556ce131391dd663ccf92",
                 "shasum": ""
             },
             "require": {
@@ -3401,13 +3397,14 @@
             "authors": [
                 {
                     "name": "php coder",
-                    "email": "wh7r.com@gmail.com",
+                    "email": "info@larazeus.com",
                     "role": "Owner"
                 }
             ],
             "description": "tickets system for laravel biult as filament plugin",
             "homepage": "https://github.com/lara-zeus",
             "keywords": [
+                "filamentphp",
                 "form",
                 "forms",
                 "generator",
@@ -3420,7 +3417,7 @@
                 "tickets"
             ],
             "support": {
-                "source": "https://github.com/lara-zeus/thunder/tree/0.0.9",
+                "source": "https://github.com/lara-zeus/thunder/tree/0.0.11",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -3429,7 +3426,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-06-05T05:14:15+00:00"
+            "time": "2023-06-09T20:09:21+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -3511,16 +3508,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v10.13.2",
+            "version": "v10.13.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "fd4619b56b56308e2c2c1840fedd0b8ebb73dfc5"
+                "reference": "03106ae9ba2ec4b36dc973b7bdca6fad81e032b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/fd4619b56b56308e2c2c1840fedd0b8ebb73dfc5",
-                "reference": "fd4619b56b56308e2c2c1840fedd0b8ebb73dfc5",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/03106ae9ba2ec4b36dc973b7bdca6fad81e032b4",
+                "reference": "03106ae9ba2ec4b36dc973b7bdca6fad81e032b4",
                 "shasum": ""
             },
             "require": {
@@ -3707,7 +3704,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-06-05T15:48:15+00:00"
+            "time": "2023-06-08T20:25:36+00:00"
         },
         {
             "name": "laravel/sanctum",
