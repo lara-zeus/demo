@@ -53,7 +53,7 @@
 
 @livewireScripts
 @stack('scripts')
-@atmStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
+@stillStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
 <script>
     const theme = localStorage.getItem('theme')
 
