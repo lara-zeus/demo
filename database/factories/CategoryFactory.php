@@ -3,16 +3,13 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use LaraZeus\Bolt\Models\Category;
 
 class CategoryFactory extends Factory
 {
-    /**
-     * The name of the factory's corresponding model.
-     *
-     * @var string
-     */
-    protected $model = Category::class;
+    public function getModel(): string
+    {
+        return config('zeus-bolt.models.Category');
+    }
 
     /**
      * Define the model's default state.
@@ -27,7 +24,7 @@ class CategoryFactory extends Factory
             'name' => $this->faker->words(3, true),
             'ordering' => $this->faker->numberBetween(1, 10),
             'is_active' => 1,
-            'desc' => $this->faker->words(5, true),
+            'description' => $this->faker->words(5, true),
             'slug' => $this->faker->slug,
         ];
     }

@@ -67,7 +67,7 @@ class BoltSeeder extends Seeder
 
         $category = DB::table('categories')->insertGetId([
             'name' => json_encode(['en' => 'General Forms', 'ar' => 'النماذج العامة'], JSON_THROW_ON_ERROR),
-            'desc' => json_encode(['en' => 'all other Forms', 'ar' => 'كافة النماذج'], JSON_THROW_ON_ERROR),
+            'description' => json_encode(['en' => 'all other Forms', 'ar' => 'كافة النماذج'], JSON_THROW_ON_ERROR),
             'slug' => 'general-forms',
             'created_at' => now(),
         ]);
@@ -77,7 +77,7 @@ class BoltSeeder extends Seeder
             'slug' => 'feedback',
             'options' => json_encode([
                 'confirmation-message' => 'Thank you for your feedback',
-                'show-as-wizard' => false,
+                'show-as' => 'page',
                 'require-login' => false,
                 'emails-notification' => null,
                 'web-hook' => null,
@@ -86,10 +86,9 @@ class BoltSeeder extends Seeder
             'user_id' => 1,
             'start_date' => null,
             'end_date' => null,
-            'layout' => '1',
             'ordering' => 1,
             'is_active' => 1,
-            'desc' => json_encode(['en' => 'send us your Feedback about our service', 'ar' => 'شاركنا تقييمك على خدماتنا'], JSON_THROW_ON_ERROR),
+            'description' => json_encode(['en' => 'send us your Feedback about our service', 'ar' => 'شاركنا تقييمك على خدماتنا'], JSON_THROW_ON_ERROR),
             'details' => json_encode(['en' => 'please use the same email address you used on registration, so we can add points to your account', 'ar' => 'الرجاء استخدام نفس البريد الإلكتروني المستخدم في التسجيل لاضافة النقاط لحسابك'], JSON_THROW_ON_ERROR),
             'created_at' => now(),
         ]);
@@ -110,7 +109,7 @@ class BoltSeeder extends Seeder
             'section_id' => $section1,
             'ordering' => 1,
             'options' => json_encode([
-                'dateType' => 'text',
+                'dateType' => 'string',
                 'is_required' => true,
             ], JSON_THROW_ON_ERROR),
             'type' => '\LaraZeus\Bolt\Fields\Classes\TextInput',

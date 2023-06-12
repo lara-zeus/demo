@@ -46,7 +46,7 @@ class ThunderSeeder extends Seeder
         ]);
         $category = DB::table('categories')->insertGetId([
             'name' => json_encode(['en' => 'support tickets Forms', 'ar' => 'نماذج الدعم الفني'], JSON_THROW_ON_ERROR),
-            'desc' => json_encode(['en' => 'all support tickets Forms', 'ar' => 'كافة نماذج الدعم الفني'], JSON_THROW_ON_ERROR),
+            'description' => json_encode(['en' => 'all support tickets Forms', 'ar' => 'كافة نماذج الدعم الفني'], JSON_THROW_ON_ERROR),
             'slug' => 'general-forms',
             'created_at' => now(),
         ]);
@@ -65,10 +65,9 @@ class ThunderSeeder extends Seeder
             'user_id' => 1,
             'start_date' => null,
             'end_date' => null,
-            'layout' => '1',
             'ordering' => 1,
             'is_active' => 1,
-            'desc' => json_encode(['en' => 'for all printer issues, your printer dosent work? we are here for you', 'ar' => 'لحل كافة مشاكل الطابعات'], JSON_THROW_ON_ERROR),
+            'description' => json_encode(['en' => 'for all printer issues, your printer dosent work? we are here for you', 'ar' => 'لحل كافة مشاكل الطابعات'], JSON_THROW_ON_ERROR),
             'created_at' => now(),
         ]);
 

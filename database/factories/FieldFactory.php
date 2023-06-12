@@ -3,17 +3,13 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use LaraZeus\Bolt\Models\Field;
-use LaraZeus\Bolt\Models\Section;
 
 class FieldFactory extends Factory
 {
-    /**
-     * The name of the factory's corresponding model.
-     *
-     * @var string
-     */
-    protected $model = Field::class;
+    public function getModel(): string
+    {
+        return config('zeus-bolt.models.Field');
+    }
 
     /**
      * Define the model's default state.
@@ -25,11 +21,8 @@ class FieldFactory extends Factory
         return [
             'name' => $this->faker->words(3, true),
             'type' => '\LaraZeus\Bolt\Fields\Classes\TextInput',
-            'section_id' => Section::factory(),
-            'layout_position' => $this->faker->numberBetween(1, 2),
+            'section_id' => config('zeus-bolt.models.Section')::factory(),
             'ordering' => $this->faker->numberBetween(1, 20),
-            'html_id' => $this->faker->realTextBetween(1, 10),
-            'html_name' => $this->faker->realTextBetween(1, 10),
         ];
     }
 }
