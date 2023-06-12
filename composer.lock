@@ -3057,16 +3057,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "0.0.37",
+            "version": "0.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "7b431b156ec0ed60d1dd4541110c11a273ec7cb7"
+                "reference": "69682c88bfb2275647d43cde8a30b6f33cd6f70a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/7b431b156ec0ed60d1dd4541110c11a273ec7cb7",
-                "reference": "7b431b156ec0ed60d1dd4541110c11a273ec7cb7",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/69682c88bfb2275647d43cde8a30b6f33cd6f70a",
+                "reference": "69682c88bfb2275647d43cde8a30b6f33cd6f70a",
                 "shasum": ""
             },
             "require": {
@@ -3133,7 +3133,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/0.0.37"
+                "source": "https://github.com/lara-zeus/bolt/tree/0.0.38"
             },
             "funding": [
                 {
@@ -3141,20 +3141,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-11T19:54:08+00:00"
+            "time": "2023-06-12T13:31:06+00:00"
         },
         {
             "name": "lara-zeus/core",
-            "version": "2.4.8",
+            "version": "2.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "1554b95e1f79d781adbb47f6f84a9d5cc2201f6f"
+                "reference": "a97fd0ff4fde8b6438ae89e5dc1013784b55df61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/1554b95e1f79d781adbb47f6f84a9d5cc2201f6f",
-                "reference": "1554b95e1f79d781adbb47f6f84a9d5cc2201f6f",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/a97fd0ff4fde8b6438ae89e5dc1013784b55df61",
+                "reference": "a97fd0ff4fde8b6438ae89e5dc1013784b55df61",
                 "shasum": ""
             },
             "require": {
@@ -3217,7 +3217,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/core/issues",
-                "source": "https://github.com/lara-zeus/core/tree/2.4.8"
+                "source": "https://github.com/lara-zeus/core/tree/2.4.9"
             },
             "funding": [
                 {
@@ -3225,20 +3225,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-06T13:45:27+00:00"
+            "time": "2023-06-12T13:17:22+00:00"
         },
         {
             "name": "lara-zeus/sky",
-            "version": "2.4.12",
+            "version": "2.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "76179f661c5c7a74ace2efa2dbcaa5e992f0820d"
+                "reference": "235289d5de56612563527bf234f71530b6d89696"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/76179f661c5c7a74ace2efa2dbcaa5e992f0820d",
-                "reference": "76179f661c5c7a74ace2efa2dbcaa5e992f0820d",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/235289d5de56612563527bf234f71530b6d89696",
+                "reference": "235289d5de56612563527bf234f71530b6d89696",
                 "shasum": ""
             },
             "require": {
@@ -3310,7 +3310,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/sky/issues",
-                "source": "https://github.com/lara-zeus/sky/tree/2.4.12"
+                "source": "https://github.com/lara-zeus/sky/tree/2.4.13"
             },
             "funding": [
                 {
@@ -3318,20 +3318,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-06T13:56:11+00:00"
+            "time": "2023-06-12T13:25:33+00:00"
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "0.0.11",
+            "version": "0.0.12",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "f1088a194a55abd2c93556ce131391dd663ccf92"
+                "reference": "da49cf2e05f95b1164bd06294f9ec7eefadbf1fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/f1088a194a55abd2c93556ce131391dd663ccf92",
-                "reference": "f1088a194a55abd2c93556ce131391dd663ccf92",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/da49cf2e05f95b1164bd06294f9ec7eefadbf1fa",
+                "reference": "da49cf2e05f95b1164bd06294f9ec7eefadbf1fa",
                 "shasum": ""
             },
             "require": {
@@ -3417,7 +3417,7 @@
                 "tickets"
             ],
             "support": {
-                "source": "https://github.com/lara-zeus/thunder/tree/0.0.11",
+                "source": "https://github.com/lara-zeus/thunder/tree/0.0.12",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -3426,20 +3426,20 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-06-09T20:09:21+00:00"
+            "time": "2023-06-12T13:46:30+00:00"
         },
         {
             "name": "lara-zeus/wind",
-            "version": "2.4.8",
+            "version": "2.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "074a8711a76e7c823585978701e146829f12f718"
+                "reference": "aebde28fb9f6cf97e880d1ff3534acc8d861284a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/074a8711a76e7c823585978701e146829f12f718",
-                "reference": "074a8711a76e7c823585978701e146829f12f718",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/aebde28fb9f6cf97e880d1ff3534acc8d861284a",
+                "reference": "aebde28fb9f6cf97e880d1ff3534acc8d861284a",
                 "shasum": ""
             },
             "require": {
@@ -3496,7 +3496,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/wind/issues",
-                "source": "https://github.com/lara-zeus/wind/tree/2.4.8"
+                "source": "https://github.com/lara-zeus/wind/tree/2.4.9"
             },
             "funding": [
                 {
@@ -3504,7 +3504,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-06T13:50:46+00:00"
+            "time": "2023-06-12T13:21:30+00:00"
         },
         {
             "name": "laravel/framework",
@@ -4638,16 +4638,16 @@
         },
         {
             "name": "mohamedsabil83/filament-forms-tinyeditor",
-            "version": "v1.7.3",
+            "version": "v1.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mohamedsabil83/filament-forms-tinyeditor.git",
-                "reference": "90cead0d5b6a920fa7de57a091a022f472aaeb94"
+                "reference": "f497ef271c20817d35275f7effbfc2db56211213"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mohamedsabil83/filament-forms-tinyeditor/zipball/90cead0d5b6a920fa7de57a091a022f472aaeb94",
-                "reference": "90cead0d5b6a920fa7de57a091a022f472aaeb94",
+                "url": "https://api.github.com/repos/mohamedsabil83/filament-forms-tinyeditor/zipball/f497ef271c20817d35275f7effbfc2db56211213",
+                "reference": "f497ef271c20817d35275f7effbfc2db56211213",
                 "shasum": ""
             },
             "require": {
@@ -4704,7 +4704,7 @@
             ],
             "support": {
                 "issues": "https://github.com/mohamedsabil83/filament-forms-tinyeditor/issues",
-                "source": "https://github.com/mohamedsabil83/filament-forms-tinyeditor/tree/v1.7.3"
+                "source": "https://github.com/mohamedsabil83/filament-forms-tinyeditor/tree/v1.7.4"
             },
             "funding": [
                 {
@@ -4716,7 +4716,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-05-24T14:18:50+00:00"
+            "time": "2023-06-09T10:02:17+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -10654,16 +10654,16 @@
         },
         {
             "name": "fakerphp/faker",
-            "version": "v1.22.0",
+            "version": "v1.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "f85772abd508bd04e20bb4b1bbe260a68d0066d2"
+                "reference": "e3daa170d00fde61ea7719ef47bb09bb8f1d9b01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/f85772abd508bd04e20bb4b1bbe260a68d0066d2",
-                "reference": "f85772abd508bd04e20bb4b1bbe260a68d0066d2",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/e3daa170d00fde61ea7719ef47bb09bb8f1d9b01",
+                "reference": "e3daa170d00fde61ea7719ef47bb09bb8f1d9b01",
                 "shasum": ""
             },
             "require": {
@@ -10716,9 +10716,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v1.22.0"
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.23.0"
             },
-            "time": "2023-05-14T12:31:37+00:00"
+            "time": "2023-06-12T08:44:38+00:00"
         },
         {
             "name": "fidry/cpu-core-counter",
@@ -10905,16 +10905,16 @@
         },
         {
             "name": "laravel/pint",
-            "version": "v1.10.1",
+            "version": "v1.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/pint.git",
-                "reference": "d69f914aa347a448628b672ba90adf0b4ea0ce4a"
+                "reference": "f78de1a1bbab7aa41a6ea211c5962b0530d1a301"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pint/zipball/d69f914aa347a448628b672ba90adf0b4ea0ce4a",
-                "reference": "d69f914aa347a448628b672ba90adf0b4ea0ce4a",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/f78de1a1bbab7aa41a6ea211c5962b0530d1a301",
+                "reference": "f78de1a1bbab7aa41a6ea211c5962b0530d1a301",
                 "shasum": ""
             },
             "require": {
@@ -10967,7 +10967,7 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
-            "time": "2023-06-03T15:01:17+00:00"
+            "time": "2023-06-12T10:50:04+00:00"
         },
         {
             "name": "laravel/sail",
