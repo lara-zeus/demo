@@ -3252,16 +3252,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "0.0.39",
+            "version": "0.0.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "2241a57913d6e1678a780649acc92f193a1e9df8"
+                "reference": "c008198ea0f259e1bb50c728f8a3909f965ed12f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/2241a57913d6e1678a780649acc92f193a1e9df8",
-                "reference": "2241a57913d6e1678a780649acc92f193a1e9df8",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/c008198ea0f259e1bb50c728f8a3909f965ed12f",
+                "reference": "c008198ea0f259e1bb50c728f8a3909f965ed12f",
                 "shasum": ""
             },
             "require": {
@@ -3329,7 +3329,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/0.0.39"
+                "source": "https://github.com/lara-zeus/bolt/tree/0.0.40"
             },
             "funding": [
                 {
@@ -3337,20 +3337,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-12T17:00:44+00:00"
+            "time": "2023-06-13T17:06:04+00:00"
         },
         {
             "name": "lara-zeus/core",
-            "version": "2.4.9",
+            "version": "2.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "a97fd0ff4fde8b6438ae89e5dc1013784b55df61"
+                "reference": "dd84ccba8e47540bc26ad40e603e711fdb2a7a43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/a97fd0ff4fde8b6438ae89e5dc1013784b55df61",
-                "reference": "a97fd0ff4fde8b6438ae89e5dc1013784b55df61",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/dd84ccba8e47540bc26ad40e603e711fdb2a7a43",
+                "reference": "dd84ccba8e47540bc26ad40e603e711fdb2a7a43",
                 "shasum": ""
             },
             "require": {
@@ -3413,7 +3413,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/core/issues",
-                "source": "https://github.com/lara-zeus/core/tree/2.4.9"
+                "source": "https://github.com/lara-zeus/core/tree/2.4.10"
             },
             "funding": [
                 {
@@ -3421,20 +3421,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-12T13:17:22+00:00"
+            "time": "2023-06-13T16:32:19+00:00"
         },
         {
             "name": "lara-zeus/sky",
-            "version": "2.4.13",
+            "version": "2.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "235289d5de56612563527bf234f71530b6d89696"
+                "reference": "30f83bb413693d39fcdf55bbc1f705f9eb76a2c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/235289d5de56612563527bf234f71530b6d89696",
-                "reference": "235289d5de56612563527bf234f71530b6d89696",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/30f83bb413693d39fcdf55bbc1f705f9eb76a2c6",
+                "reference": "30f83bb413693d39fcdf55bbc1f705f9eb76a2c6",
                 "shasum": ""
             },
             "require": {
@@ -3506,7 +3506,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/sky/issues",
-                "source": "https://github.com/lara-zeus/sky/tree/2.4.13"
+                "source": "https://github.com/lara-zeus/sky/tree/2.4.14"
             },
             "funding": [
                 {
@@ -3514,20 +3514,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-12T13:25:33+00:00"
+            "time": "2023-06-13T16:54:00+00:00"
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "0.0.13",
+            "version": "0.0.14",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "9ea79130d10a58be7f14b5c0067899b384a27791"
+                "reference": "edb127ccdb5de312bdce0f2a01e5750a50b3fc67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/9ea79130d10a58be7f14b5c0067899b384a27791",
-                "reference": "9ea79130d10a58be7f14b5c0067899b384a27791",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/edb127ccdb5de312bdce0f2a01e5750a50b3fc67",
+                "reference": "edb127ccdb5de312bdce0f2a01e5750a50b3fc67",
                 "shasum": ""
             },
             "require": {
@@ -3613,7 +3613,7 @@
                 "tickets"
             ],
             "support": {
-                "source": "https://github.com/lara-zeus/thunder/tree/0.0.13",
+                "source": "https://github.com/lara-zeus/thunder/tree/0.0.14",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -3622,20 +3622,20 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-06-12T17:03:16+00:00"
+            "time": "2023-06-13T17:08:22+00:00"
         },
         {
             "name": "lara-zeus/wind",
-            "version": "2.4.9",
+            "version": "2.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "aebde28fb9f6cf97e880d1ff3534acc8d861284a"
+                "reference": "8357f8627bf8b86e5ce3fa0ee2fdaa418abc521b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/aebde28fb9f6cf97e880d1ff3534acc8d861284a",
-                "reference": "aebde28fb9f6cf97e880d1ff3534acc8d861284a",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/8357f8627bf8b86e5ce3fa0ee2fdaa418abc521b",
+                "reference": "8357f8627bf8b86e5ce3fa0ee2fdaa418abc521b",
                 "shasum": ""
             },
             "require": {
@@ -3692,7 +3692,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/wind/issues",
-                "source": "https://github.com/lara-zeus/wind/tree/2.4.9"
+                "source": "https://github.com/lara-zeus/wind/tree/2.4.10"
             },
             "funding": [
                 {
@@ -3700,7 +3700,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-12T13:21:30+00:00"
+            "time": "2023-06-13T16:44:49+00:00"
         },
         {
             "name": "laravel/framework",
@@ -14243,16 +14243,16 @@
         },
         {
             "name": "spatie/backtrace",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/backtrace.git",
-                "reference": "ec4dd16476b802dbdc6b4467f84032837e316b8c"
+                "reference": "47794d19e3215ace9e005a8f200cd7cc7be52572"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/backtrace/zipball/ec4dd16476b802dbdc6b4467f84032837e316b8c",
-                "reference": "ec4dd16476b802dbdc6b4467f84032837e316b8c",
+                "url": "https://api.github.com/repos/spatie/backtrace/zipball/47794d19e3215ace9e005a8f200cd7cc7be52572",
+                "reference": "47794d19e3215ace9e005a8f200cd7cc7be52572",
                 "shasum": ""
             },
             "require": {
@@ -14289,7 +14289,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/backtrace/tree/1.4.0"
+                "source": "https://github.com/spatie/backtrace/tree/1.4.1"
             },
             "funding": [
                 {
@@ -14301,7 +14301,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2023-03-04T08:57:24+00:00"
+            "time": "2023-06-13T14:35:04+00:00"
         },
         {
             "name": "spatie/flare-client-php",
