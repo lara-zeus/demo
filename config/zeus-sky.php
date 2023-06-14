@@ -4,7 +4,7 @@ return [
     /**
      * set the default path for the blogs homepage.
      */
-    'path' => 'blog',
+    'path' => 'sky',
 
     /**
      * the middleware you want to apply on all the blogs routes
@@ -25,7 +25,7 @@ return [
     /**
      * set the prefix for library URL.
      */
-    'library_uri_prefix' => 'library',
+    'library_uri_prefix' => 'sky/library',
 
     /**
      * customize the models
@@ -52,7 +52,7 @@ return [
     /**
      * set the prefix for FAQ URL.
      */
-    'faq_uri_prefix' => 'faq',
+    'faq_uri_prefix' => 'sky/faq',
 
     /**
      * this will be setup the default seo site title. read more about it in 'laravel-seo'.

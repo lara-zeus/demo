@@ -3252,16 +3252,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "0.0.40",
+            "version": "0.0.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "c008198ea0f259e1bb50c728f8a3909f965ed12f"
+                "reference": "1403624aec92f16518b8c589c04b15211c4e9b72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/c008198ea0f259e1bb50c728f8a3909f965ed12f",
-                "reference": "c008198ea0f259e1bb50c728f8a3909f965ed12f",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/1403624aec92f16518b8c589c04b15211c4e9b72",
+                "reference": "1403624aec92f16518b8c589c04b15211c4e9b72",
                 "shasum": ""
             },
             "require": {
@@ -3329,7 +3329,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/0.0.40"
+                "source": "https://github.com/lara-zeus/bolt/tree/0.0.41"
             },
             "funding": [
                 {
@@ -3337,7 +3337,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-13T17:06:04+00:00"
+            "time": "2023-06-14T14:02:54+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -3626,16 +3626,16 @@
         },
         {
             "name": "lara-zeus/wind",
-            "version": "2.4.10",
+            "version": "2.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "8357f8627bf8b86e5ce3fa0ee2fdaa418abc521b"
+                "reference": "c438471d20a1739966d86b634e9a63e08161e29a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/8357f8627bf8b86e5ce3fa0ee2fdaa418abc521b",
-                "reference": "8357f8627bf8b86e5ce3fa0ee2fdaa418abc521b",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/c438471d20a1739966d86b634e9a63e08161e29a",
+                "reference": "c438471d20a1739966d86b634e9a63e08161e29a",
                 "shasum": ""
             },
             "require": {
@@ -3692,7 +3692,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/wind/issues",
-                "source": "https://github.com/lara-zeus/wind/tree/2.4.10"
+                "source": "https://github.com/lara-zeus/wind/tree/2.4.11"
             },
             "funding": [
                 {
@@ -3700,7 +3700,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-13T16:44:49+00:00"
+            "time": "2023-06-14T13:51:22+00:00"
         },
         {
             "name": "laravel/framework",
@@ -11878,16 +11878,16 @@
         },
         {
             "name": "nunomaduro/larastan",
-            "version": "v2.6.2",
+            "version": "v2.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/larastan.git",
-                "reference": "fd1b5c2560ccf4a2a0075a30524b63ebb142cd6c"
+                "reference": "73e5be5f5c732212ce6ca77ffd2753a136f36a23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/larastan/zipball/fd1b5c2560ccf4a2a0075a30524b63ebb142cd6c",
-                "reference": "fd1b5c2560ccf4a2a0075a30524b63ebb142cd6c",
+                "url": "https://api.github.com/repos/nunomaduro/larastan/zipball/73e5be5f5c732212ce6ca77ffd2753a136f36a23",
+                "reference": "73e5be5f5c732212ce6ca77ffd2753a136f36a23",
                 "shasum": ""
             },
             "require": {
@@ -11950,7 +11950,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nunomaduro/larastan/issues",
-                "source": "https://github.com/nunomaduro/larastan/tree/v2.6.2"
+                "source": "https://github.com/nunomaduro/larastan/tree/v2.6.3"
             },
             "funding": [
                 {
@@ -11970,7 +11970,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-06-10T17:23:14+00:00"
+            "time": "2023-06-13T21:39:27+00:00"
         },
         {
             "name": "pestphp/pest",

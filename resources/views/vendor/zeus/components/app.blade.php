@@ -63,11 +63,24 @@
 <div class="container mx-auto py-10">
     {{ $slot }}
 </div>
-
+@php
+    $urls = [
+        'wind'=>'lara-zeus/wind',
+        'bolt'=>'lara-zeus/bolt',
+        'sky'=>'lara-zeus/sky',
+        'thunder'=>'lara-zeus/thunder',
+    ];
+    $packageName = (isset($urls[explode('/',request()->path())[0]])) ? $urls[explode('/',request()->path())[0]] : null;
+@endphp
 <footer class="bg-gray-100 dark:bg-gray-800 p-6 mt-20 text-center font-light">
     <a href="https://larazeus.com" target="_blank">
         a gift with ❤️ &nbsp;from @zeus
     </a>
+    @if($packageName !== null)
+        <p class="py-2 px-4 text-gray-900">
+            {{ $packageName }} v:{{ \Composer\InstalledVersions::getVersion($packageName) }}
+        </p>
+    @endif
 </footer>
 
 <script src="{{ asset('vendor/zeus/app.js') }}" defer></script>

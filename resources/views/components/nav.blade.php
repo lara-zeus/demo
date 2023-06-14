@@ -29,7 +29,7 @@
                             class="dark:text-gray-200 text-gray-700"
                             :color="'secondary'"
                             :icon="'iconpark-dot'"
-                            :href="url('blog')"
+                            :href="url('sky')"
                             tag="a"
                     >
                         {{ __('Blog') }}
@@ -38,7 +38,7 @@
                             class="dark:text-gray-200 text-gray-700"
                             :color="'secondary'"
                             :icon="'iconpark-dot'"
-                            :href="url('faq')"
+                            :href="url('sky/faq')"
                             tag="a"
                     >
                         {{ __('Faq') }}
@@ -47,7 +47,7 @@
                             class="dark:text-gray-200 text-gray-700"
                             :color="'secondary'"
                             :icon="'iconpark-dot'"
-                            :href="url('library')"
+                            :href="url('sky/library')"
                             tag="a"
                     >
                         {{ __('Library') }}
@@ -56,7 +56,7 @@
                             class="dark:text-gray-200 text-gray-700"
                             :color="'secondary'"
                             :icon="'iconpark-dot'"
-                            :href="url('contact-us')"
+                            :href="url('wind/contact-us')"
                             tag="a"
                     >
                         {{ __('Contact us') }}
@@ -157,19 +157,19 @@
     >
         <div class="mt-0 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white dark:bg-gray-800 divide-y-2 divide-gray-50 mx-2">
             <div class="flex flex-col p-4 gap-4">
-                <a href="{{ url('/blog') }}"
+                <a href="{{ url('sky') }}"
                    class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
                     {{ __('Blog') }}
                 </a>
-                <a href="{{ url('/contact-us') }}"
+                <a href="{{ url('wind/contact-us') }}"
                    class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
                     {{ __('Contact us') }}
                 </a>
-                <a href="{{ url('/faq') }}"
+                <a href="{{ url('sky/faq') }}"
                    class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
                     {{ __('Faq') }}
                 </a>
-                <a href="{{ url('/library') }}"
+                <a href="{{ url('sky/library') }}"
                    class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
                     {{ __('Library') }}
                 </a>
