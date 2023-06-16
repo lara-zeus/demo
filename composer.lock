@@ -3574,16 +3574,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "2.4.17",
+            "version": "2.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "343a42d65077a12ac624f5e7b890e25f48a931ea"
+                "reference": "c25358e5a1acc54ab8acf6ee2f0474dbc7bc49f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/343a42d65077a12ac624f5e7b890e25f48a931ea",
-                "reference": "343a42d65077a12ac624f5e7b890e25f48a931ea",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/c25358e5a1acc54ab8acf6ee2f0474dbc7bc49f3",
+                "reference": "c25358e5a1acc54ab8acf6ee2f0474dbc7bc49f3",
                 "shasum": ""
             },
             "require": {
@@ -3655,7 +3655,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/sky/issues",
-                "source": "https://github.com/lara-zeus/sky/tree/2.4.17"
+                "source": "https://github.com/lara-zeus/sky/tree/2.4.18"
             },
             "funding": [
                 {
@@ -3663,7 +3663,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-16T16:49:22+00:00"
+            "time": "2023-06-16T18:51:08+00:00"
         },
         {
             "name": "lara-zeus/thunder",
