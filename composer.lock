@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44b2534e4651eba27fdde678c7afaf1a",
+    "content-hash": "1e984134e5663f40fc989ebebaa95a7d",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -843,6 +843,78 @@
                 }
             ],
             "time": "2023-05-16T15:02:49+00:00"
+        },
+        {
+            "name": "codeat3/blade-carbon-icons",
+            "version": "2.13.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codeat3/blade-carbon-icons.git",
+                "reference": "1eeb0817bdc1108bd9bab0062d8dde7c57e2eb9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codeat3/blade-carbon-icons/zipball/1eeb0817bdc1108bd9bab0062d8dde7c57e2eb9e",
+                "reference": "1eeb0817bdc1108bd9bab0062d8dde7c57e2eb9e",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.1",
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "codeat3/blade-icon-generation-helpers": "^0.4",
+                "codeat3/phpcs-styles": "^1.0",
+                "orchestra/testbench": "^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Codeat3\\BladeCarbonIcons\\BladeCarbonIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Codeat3\\BladeCarbonIcons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Swapnil Sarwe",
+                    "homepage": "https://swapnilsarwe.com"
+                },
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A package to easily make use of Carbon Icons in your Laravel Blade views.",
+            "homepage": "https://github.com/codeat3/blade-carbon-icons",
+            "keywords": [
+                "blade",
+                "carbon-icons",
+                "icons",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/codeat3/blade-carbon-icons/issues",
+                "source": "https://github.com/codeat3/blade-carbon-icons/tree/2.13.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/swapnilsarwe",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-05-16T15:04:54+00:00"
         },
         {
             "name": "codeat3/blade-clarity-icons",
@@ -3252,16 +3324,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "0.0.41",
+            "version": "0.0.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "1403624aec92f16518b8c589c04b15211c4e9b72"
+                "reference": "13947169fc1a1e3bc9f593d9000861c7f3d5034a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/1403624aec92f16518b8c589c04b15211c4e9b72",
-                "reference": "1403624aec92f16518b8c589c04b15211c4e9b72",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/13947169fc1a1e3bc9f593d9000861c7f3d5034a",
+                "reference": "13947169fc1a1e3bc9f593d9000861c7f3d5034a",
                 "shasum": ""
             },
             "require": {
@@ -3329,7 +3401,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/0.0.41"
+                "source": "https://github.com/lara-zeus/bolt/tree/0.0.42"
             },
             "funding": [
                 {
@@ -3337,20 +3409,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-14T14:02:54+00:00"
+            "time": "2023-06-16T02:13:25+00:00"
         },
         {
             "name": "lara-zeus/core",
-            "version": "2.4.10",
+            "version": "2.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "dd84ccba8e47540bc26ad40e603e711fdb2a7a43"
+                "reference": "61944cad5fe2695156db62aed755c644763f7a75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/dd84ccba8e47540bc26ad40e603e711fdb2a7a43",
-                "reference": "dd84ccba8e47540bc26ad40e603e711fdb2a7a43",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/61944cad5fe2695156db62aed755c644763f7a75",
+                "reference": "61944cad5fe2695156db62aed755c644763f7a75",
                 "shasum": ""
             },
             "require": {
@@ -3413,7 +3485,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/core/issues",
-                "source": "https://github.com/lara-zeus/core/tree/2.4.10"
+                "source": "https://github.com/lara-zeus/core/tree/2.4.11"
             },
             "funding": [
                 {
@@ -3421,20 +3493,97 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-13T16:32:19+00:00"
+            "time": "2023-06-16T01:57:37+00:00"
         },
         {
-            "name": "lara-zeus/sky",
-            "version": "2.4.14",
+            "name": "lara-zeus/rain",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "30f83bb413693d39fcdf55bbc1f705f9eb76a2c6"
+                "url": "https://github.com/lara-zeus/rain.git",
+                "reference": "15014917c160f51d884f698fd307df0983b2af95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/30f83bb413693d39fcdf55bbc1f705f9eb76a2c6",
-                "reference": "30f83bb413693d39fcdf55bbc1f705f9eb76a2c6",
+                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/15014917c160f51d884f698fd307df0983b2af95",
+                "reference": "15014917c160f51d884f698fd307df0983b2af95",
+                "shasum": ""
+            },
+            "require": {
+                "lara-zeus/core": "^2.4",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^6.0 || ^7.0 || ^8.0",
+                "pestphp/pest": "^1.21 || ^2.0",
+                "pestphp/pest-plugin-laravel": "^1.1 || ^2.0",
+                "pestphp/pest-plugin-livewire": "^1.0",
+                "pestphp/pest-plugin-parallel": "^0.3",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Rain\\RainServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Rain\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "Zeus Rain simple way to manage widgets for your website landing page",
+            "homepage": "https://github.com/lara-zeus",
+            "keywords": [
+                "filamentphp",
+                "frontpage",
+                "landing page",
+                "lara-zeus",
+                "laravel",
+                "widgets"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/rain/issues",
+                "source": "https://github.com/lara-zeus/rain/tree/0.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/atmonshi",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-16T00:04:08+00:00"
+        },
+        {
+            "name": "lara-zeus/sky",
+            "version": "2.4.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/sky.git",
+                "reference": "359560f25054c6f764424e6c34033b1cc35664a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/359560f25054c6f764424e6c34033b1cc35664a6",
+                "reference": "359560f25054c6f764424e6c34033b1cc35664a6",
                 "shasum": ""
             },
             "require": {
@@ -3506,7 +3655,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/sky/issues",
-                "source": "https://github.com/lara-zeus/sky/tree/2.4.14"
+                "source": "https://github.com/lara-zeus/sky/tree/2.4.15"
             },
             "funding": [
                 {
@@ -3514,20 +3663,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-13T16:54:00+00:00"
+            "time": "2023-06-16T02:07:10+00:00"
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "0.0.14",
+            "version": "0.0.15",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "edb127ccdb5de312bdce0f2a01e5750a50b3fc67"
+                "reference": "2ebc4f18032b3d04e2aece7607e4e3ecd89ad305"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/edb127ccdb5de312bdce0f2a01e5750a50b3fc67",
-                "reference": "edb127ccdb5de312bdce0f2a01e5750a50b3fc67",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/2ebc4f18032b3d04e2aece7607e4e3ecd89ad305",
+                "reference": "2ebc4f18032b3d04e2aece7607e4e3ecd89ad305",
                 "shasum": ""
             },
             "require": {
@@ -3613,7 +3762,7 @@
                 "tickets"
             ],
             "support": {
-                "source": "https://github.com/lara-zeus/thunder/tree/0.0.14",
+                "source": "https://github.com/lara-zeus/thunder/tree/0.0.15",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -3622,20 +3771,20 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-06-13T17:08:22+00:00"
+            "time": "2023-06-16T02:20:07+00:00"
         },
         {
             "name": "lara-zeus/wind",
-            "version": "2.4.11",
+            "version": "2.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "c438471d20a1739966d86b634e9a63e08161e29a"
+                "reference": "e77736ec5a82ed7f5df0c383b83e60e4e4cf7200"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/c438471d20a1739966d86b634e9a63e08161e29a",
-                "reference": "c438471d20a1739966d86b634e9a63e08161e29a",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/e77736ec5a82ed7f5df0c383b83e60e4e4cf7200",
+                "reference": "e77736ec5a82ed7f5df0c383b83e60e4e4cf7200",
                 "shasum": ""
             },
             "require": {
@@ -3692,7 +3841,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/wind/issues",
-                "source": "https://github.com/lara-zeus/wind/tree/2.4.11"
+                "source": "https://github.com/lara-zeus/wind/tree/2.4.12"
             },
             "funding": [
                 {
@@ -3700,7 +3849,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-14T13:51:22+00:00"
+            "time": "2023-06-16T02:03:00+00:00"
         },
         {
             "name": "laravel/framework",
@@ -6943,21 +7092,21 @@
         },
         {
             "name": "sentry/sdk",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-php-sdk.git",
-                "reference": "7f1e04a5380a91e41a1a68c363ec19f88619a870"
+                "reference": "cd91b752f07c4bab9fb3b173f81af68a78a78d6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-php-sdk/zipball/7f1e04a5380a91e41a1a68c363ec19f88619a870",
-                "reference": "7f1e04a5380a91e41a1a68c363ec19f88619a870",
+                "url": "https://api.github.com/repos/getsentry/sentry-php-sdk/zipball/cd91b752f07c4bab9fb3b173f81af68a78a78d6d",
+                "reference": "cd91b752f07c4bab9fb3b173f81af68a78a78d6d",
                 "shasum": ""
             },
             "require": {
                 "http-interop/http-factory-guzzle": "^1.0",
-                "sentry/sentry": "^3.18",
+                "sentry/sentry": "^3.19",
                 "symfony/http-client": "^4.3|^5.0|^6.0"
             },
             "type": "metapackage",
@@ -6984,7 +7133,7 @@
             ],
             "support": {
                 "issues": "https://github.com/getsentry/sentry-php-sdk/issues",
-                "source": "https://github.com/getsentry/sentry-php-sdk/tree/3.4.0"
+                "source": "https://github.com/getsentry/sentry-php-sdk/tree/3.5.0"
             },
             "funding": [
                 {
@@ -6996,7 +7145,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-05-22T16:02:39+00:00"
+            "time": "2023-06-12T17:50:36+00:00"
         },
         {
             "name": "sentry/sentry",
@@ -12620,16 +12769,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.18",
+            "version": "1.10.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "52b6416c579663eebdd2f1d97df21971daf3b43f"
+                "reference": "af5a296ff02610c1bfb4ddfac9fd4a08657b9046"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/52b6416c579663eebdd2f1d97df21971daf3b43f",
-                "reference": "52b6416c579663eebdd2f1d97df21971daf3b43f",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/af5a296ff02610c1bfb4ddfac9fd4a08657b9046",
+                "reference": "af5a296ff02610c1bfb4ddfac9fd4a08657b9046",
                 "shasum": ""
             },
             "require": {
@@ -12678,7 +12827,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-07T22:00:43+00:00"
+            "time": "2023-06-14T15:26:58+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",

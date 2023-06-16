@@ -22,6 +22,7 @@
         @include('items.wind')
         @include('items.sky')
         @include('items.bolt')
+        @include('items.rain')
         @include('items.thunder')
         @include('items.soon')
     </div>
