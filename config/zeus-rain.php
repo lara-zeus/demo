@@ -61,5 +61,5 @@ return [
     /**
      * default layout slug
      */
-    'default_layout' => 'home-page-1',
+    'default_layout' => 'new-page',
 ];

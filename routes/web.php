@@ -23,7 +23,7 @@ Route::post('/forms', function () {
     ]);
 
     return response()->json([
-        'message' => 'your code is '.$code,
+        'message' => 'your code is ' . $code,
         'state' => 'faild',
     ]);
 });
