@@ -3497,16 +3497,16 @@
         },
         {
             "name": "lara-zeus/rain",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/rain.git",
-                "reference": "ec18a1141076a1ca93b0d2286cc7b4e5cf085924"
+                "reference": "04b813edb28bfa79b0ec9f45ac9ec5f64b883e82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/ec18a1141076a1ca93b0d2286cc7b4e5cf085924",
-                "reference": "ec18a1141076a1ca93b0d2286cc7b4e5cf085924",
+                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/04b813edb28bfa79b0ec9f45ac9ec5f64b883e82",
+                "reference": "04b813edb28bfa79b0ec9f45ac9ec5f64b883e82",
                 "shasum": ""
             },
             "require": {
@@ -3562,7 +3562,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/rain/issues",
-                "source": "https://github.com/lara-zeus/rain/tree/0.0.3"
+                "source": "https://github.com/lara-zeus/rain/tree/0.0.4"
             },
             "funding": [
                 {
@@ -3570,7 +3570,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-16T02:28:32+00:00"
+            "time": "2023-06-16T03:23:55+00:00"
         },
         {
             "name": "lara-zeus/sky",
