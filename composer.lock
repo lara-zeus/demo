@@ -3324,16 +3324,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "0.0.44",
+            "version": "0.0.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "376bafa71ce19171cc2a821cdb4a58e8dbae2f24"
+                "reference": "71919ed9ba9da85aaf3c21d3d5e3f7fcd1a2ea9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/376bafa71ce19171cc2a821cdb4a58e8dbae2f24",
-                "reference": "376bafa71ce19171cc2a821cdb4a58e8dbae2f24",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/71919ed9ba9da85aaf3c21d3d5e3f7fcd1a2ea9c",
+                "reference": "71919ed9ba9da85aaf3c21d3d5e3f7fcd1a2ea9c",
                 "shasum": ""
             },
             "require": {
@@ -3401,7 +3401,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/0.0.44"
+                "source": "https://github.com/lara-zeus/bolt/tree/0.0.45"
             },
             "funding": [
                 {
@@ -3409,20 +3409,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-16T16:49:28+00:00"
+            "time": "2023-06-17T19:51:31+00:00"
         },
         {
             "name": "lara-zeus/core",
-            "version": "2.4.14",
+            "version": "2.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "c6c318007d26ef89b8ae2c17b1b047f8d06cc6d0"
+                "reference": "f7af097987e0240fcbd870da4462996fa16cfb55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/c6c318007d26ef89b8ae2c17b1b047f8d06cc6d0",
-                "reference": "c6c318007d26ef89b8ae2c17b1b047f8d06cc6d0",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/f7af097987e0240fcbd870da4462996fa16cfb55",
+                "reference": "f7af097987e0240fcbd870da4462996fa16cfb55",
                 "shasum": ""
             },
             "require": {
@@ -3485,7 +3485,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/core/issues",
-                "source": "https://github.com/lara-zeus/core/tree/2.4.14"
+                "source": "https://github.com/lara-zeus/core/tree/2.4.15"
             },
             "funding": [
                 {
@@ -3493,20 +3493,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-16T16:43:16+00:00"
+            "time": "2023-06-17T19:32:04+00:00"
         },
         {
             "name": "lara-zeus/rain",
-            "version": "0.0.7",
+            "version": "0.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/rain.git",
-                "reference": "c34f8e7c934e9b25aa4973686bc2deadc51a814a"
+                "reference": "c453bd16817db1df7b6ace142ee0ef26e284d78a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/c34f8e7c934e9b25aa4973686bc2deadc51a814a",
-                "reference": "c34f8e7c934e9b25aa4973686bc2deadc51a814a",
+                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/c453bd16817db1df7b6ace142ee0ef26e284d78a",
+                "reference": "c453bd16817db1df7b6ace142ee0ef26e284d78a",
                 "shasum": ""
             },
             "require": {
@@ -3531,7 +3531,10 @@
                 "laravel": {
                     "providers": [
                         "LaraZeus\\Rain\\RainServiceProvider"
-                    ]
+                    ],
+                    "aliases": {
+                        "Rain": "LaraZeus\\Rain\\Facades\\Rain"
+                    }
                 }
             },
             "autoload": {
@@ -3562,7 +3565,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/rain/issues",
-                "source": "https://github.com/lara-zeus/rain/tree/0.0.7"
+                "source": "https://github.com/lara-zeus/rain/tree/0.0.8"
             },
             "funding": [
                 {
@@ -3570,20 +3573,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-16T16:49:33+00:00"
+            "time": "2023-06-17T19:39:17+00:00"
         },
         {
             "name": "lara-zeus/sky",
-            "version": "2.4.19",
+            "version": "2.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "01d599084d9c5f821705b2dc8a2bc9f703e6f411"
+                "reference": "79b7e76096e6b3a7dade8927839143f54bdfcea4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/01d599084d9c5f821705b2dc8a2bc9f703e6f411",
-                "reference": "01d599084d9c5f821705b2dc8a2bc9f703e6f411",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/79b7e76096e6b3a7dade8927839143f54bdfcea4",
+                "reference": "79b7e76096e6b3a7dade8927839143f54bdfcea4",
                 "shasum": ""
             },
             "require": {
@@ -3655,7 +3658,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/sky/issues",
-                "source": "https://github.com/lara-zeus/sky/tree/2.4.19"
+                "source": "https://github.com/lara-zeus/sky/tree/2.4.20"
             },
             "funding": [
                 {
@@ -3663,20 +3666,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-16T19:01:26+00:00"
+            "time": "2023-06-17T19:51:19+00:00"
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "0.0.17",
+            "version": "0.0.18",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "e4cb4a58b701c0c469d7bdcc5a505695a984fb9d"
+                "reference": "56ffe5fe8feaf452413a9bd6a5173b44121f0234"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/e4cb4a58b701c0c469d7bdcc5a505695a984fb9d",
-                "reference": "e4cb4a58b701c0c469d7bdcc5a505695a984fb9d",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/56ffe5fe8feaf452413a9bd6a5173b44121f0234",
+                "reference": "56ffe5fe8feaf452413a9bd6a5173b44121f0234",
                 "shasum": ""
             },
             "require": {
@@ -3762,7 +3765,7 @@
                 "tickets"
             ],
             "support": {
-                "source": "https://github.com/lara-zeus/thunder/tree/0.0.17",
+                "source": "https://github.com/lara-zeus/thunder/tree/0.0.18",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -3771,20 +3774,20 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-06-16T16:54:53+00:00"
+            "time": "2023-06-17T19:56:41+00:00"
         },
         {
             "name": "lara-zeus/wind",
-            "version": "2.4.14",
+            "version": "2.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "7f554f53de26bc67fe1e4dc95273cc4d96169874"
+                "reference": "5c733f73aea992cf2a0666b1ff9098b1f428e2f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/7f554f53de26bc67fe1e4dc95273cc4d96169874",
-                "reference": "7f554f53de26bc67fe1e4dc95273cc4d96169874",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/5c733f73aea992cf2a0666b1ff9098b1f428e2f5",
+                "reference": "5c733f73aea992cf2a0666b1ff9098b1f428e2f5",
                 "shasum": ""
             },
             "require": {
@@ -3841,7 +3844,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/wind/issues",
-                "source": "https://github.com/lara-zeus/wind/tree/2.4.14"
+                "source": "https://github.com/lara-zeus/wind/tree/2.4.15"
             },
             "funding": [
                 {
@@ -3849,7 +3852,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-16T16:49:14+00:00"
+            "time": "2023-06-17T19:51:45+00:00"
         },
         {
             "name": "laravel/framework",

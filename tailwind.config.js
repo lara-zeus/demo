@@ -9,6 +9,7 @@ module.exports = {
         './vendor/lara-zeus/wind/resources/views/**/*.blade.php',
         './vendor/lara-zeus/thunder/resources/views/**/*.blade.php',
         './vendor/lara-zeus/artemis/resources/views/**/*.blade.php',
+        './vendor/lara-zeus/rain/resources/views/**/*.blade.php',
     ],
     darkMode: 'class',
     theme: {
