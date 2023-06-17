@@ -7,7 +7,7 @@ use LaraZeus\Bolt\Fields\FieldsContract;
 
 class Rating extends FieldsContract
 {
-    public string $renderClass = '\Yepsua\Filament\Forms\Components\Rating';
+    public string $renderClass = \Yepsua\Filament\Forms\Components\Rating::class;
 
     public int $sort = 99;
 
