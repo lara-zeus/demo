@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b1c4f4f14f57b522c83f846bf0b66441",
+    "content-hash": "ca4e32ae19282ed9add57e494a0c1cd4",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -3514,16 +3514,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "0.0.47",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "60474052813576fd56ae4dc0a1499f28a68f7686"
+                "reference": "a61ddc3bcc4a778aad1917b6c7a6c37bc70f4058"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/60474052813576fd56ae4dc0a1499f28a68f7686",
-                "reference": "60474052813576fd56ae4dc0a1499f28a68f7686",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/a61ddc3bcc4a778aad1917b6c7a6c37bc70f4058",
+                "reference": "a61ddc3bcc4a778aad1917b6c7a6c37bc70f4058",
                 "shasum": ""
             },
             "require": {
@@ -3591,7 +3591,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/0.0.47"
+                "source": "https://github.com/lara-zeus/bolt/tree/1.0.0"
             },
             "funding": [
                 {
@@ -3599,7 +3599,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-18T01:41:57+00:00"
+            "time": "2023-06-18T21:17:55+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -3944,16 +3944,16 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "0.0.18",
+            "version": "0.0.19",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "56ffe5fe8feaf452413a9bd6a5173b44121f0234"
+                "reference": "77184396f5b4172863ad83a26bb6500f4c76ad76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/56ffe5fe8feaf452413a9bd6a5173b44121f0234",
-                "reference": "56ffe5fe8feaf452413a9bd6a5173b44121f0234",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/77184396f5b4172863ad83a26bb6500f4c76ad76",
+                "reference": "77184396f5b4172863ad83a26bb6500f4c76ad76",
                 "shasum": ""
             },
             "require": {
@@ -3961,7 +3961,7 @@
                 "codeat3/blade-clarity-icons": "^1.7",
                 "filament/notifications": "^2.0",
                 "filament/spatie-laravel-translatable-plugin": "^2.0",
-                "lara-zeus/bolt": "^0.0",
+                "lara-zeus/bolt": "^1.0",
                 "php": "^8.0"
             },
             "require-dev": {
@@ -4039,7 +4039,7 @@
                 "tickets"
             ],
             "support": {
-                "source": "https://github.com/lara-zeus/thunder/tree/0.0.18",
+                "source": "https://github.com/lara-zeus/thunder/tree/0.0.19",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -4048,7 +4048,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-06-17T19:56:41+00:00"
+            "time": "2023-06-18T21:27:03+00:00"
         },
         {
             "name": "lara-zeus/wind",
