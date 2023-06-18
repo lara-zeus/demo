@@ -24,6 +24,7 @@
         @include('items.bolt')
         @include('items.rain')
         @include('items.thunder')
+        @include('items.rhea')
         @include('items.soon')
     </div>
 
