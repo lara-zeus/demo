@@ -3767,16 +3767,16 @@
         },
         {
             "name": "lara-zeus/rhea",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/rhea.git",
-                "reference": "a32a957c3ac427dbdcfe4132436a7aff4c3c0833"
+                "reference": "c816db54d2d08d1449794de3af9083c6f2225270"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/rhea/zipball/a32a957c3ac427dbdcfe4132436a7aff4c3c0833",
-                "reference": "a32a957c3ac427dbdcfe4132436a7aff4c3c0833",
+                "url": "https://api.github.com/repos/lara-zeus/rhea/zipball/c816db54d2d08d1449794de3af9083c6f2225270",
+                "reference": "c816db54d2d08d1449794de3af9083c6f2225270",
                 "shasum": ""
             },
             "require": {
@@ -3839,7 +3839,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/rhea/issues",
-                "source": "https://github.com/lara-zeus/rhea/tree/1.0.0"
+                "source": "https://github.com/lara-zeus/rhea/tree/1.0.1"
             },
             "funding": [
                 {
@@ -3847,7 +3847,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-18T17:44:00+00:00"
+            "time": "2023-06-18T18:52:32+00:00"
         },
         {
             "name": "lara-zeus/sky",
