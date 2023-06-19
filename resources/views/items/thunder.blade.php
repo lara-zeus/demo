@@ -4,7 +4,7 @@
         <span class="text-primary-600">Thunder</span>
     @endslot
     @slot('desc')
-        @zeus Thunder is a tickets system for laravel biult as filament plugin.
+        @zeus Thunder is a tickets system for laravel built as filament plugin.
     @endslot
     @slot('btns')
         <a href="{{ url('/admin/offices') }}" class="shadow transition ease-in-out whitespace-nowrap text-base font-medium rounded-md text-white bg-secondary-500 hover:bg-secondary-600 px-4 py-2 dark:bg-secondary-700 dark:hover:bg-secondary-800">
