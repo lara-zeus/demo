@@ -16,7 +16,7 @@ return [
      * customize the models
      */
     'models' => [
-        'widgets' => \LaraZeus\Rain\Models\Widgets::class,
+        'layout' => \LaraZeus\Rain\Models\Layout::class,
     ],
 
     /**
