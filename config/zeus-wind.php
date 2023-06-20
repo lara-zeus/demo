@@ -72,5 +72,5 @@ return [
     /**
      * Navigation Group Label
      */
-    'navigation_group_label' => 'wind',
+    'navigation_group_label' => 'Wind',
 ];

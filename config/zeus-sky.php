@@ -100,7 +100,7 @@ return [
     /**
      * Navigation Group Label
      */
-    'navigation_group_label' => 'sky',
+    'navigation_group_label' => 'Sky',
 
     /**
      * default featured image, set to null to disable it.

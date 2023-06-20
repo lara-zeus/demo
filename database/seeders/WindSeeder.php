@@ -18,7 +18,7 @@ class WindSeeder extends Seeder
                 'is_active' => 1,
                 'desc' => 'any help with Customer service',
                 'slug' => 'customer-service',
-                'logo' => 'widgets/d8snXpNRmcxggHsotkH9p8lxZQ2zeA-metaRGVtby5wbmc=-.png',
+                'logo' => 'layouts/d8snXpNRmcxggHsotkH9p8lxZQ2zeA-metaRGVtby5wbmc=-.png',
                 'created_at' => now(),
             ]);
 

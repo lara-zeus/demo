@@ -79,5 +79,15 @@ class AppServiceProvider extends ServiceProvider
             'footer.after',
             fn (): View => view('filament.hooks.footer'),
         );
+
+        Filament::registerNavigationGroups([
+            'App',
+            'Wind',
+            'Sky',
+            'Bolt',
+            'Thunder',
+            'Rain',
+            'Rhea',
+        ]);
     }
 }

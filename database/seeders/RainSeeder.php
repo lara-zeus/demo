@@ -12,7 +12,7 @@ class RainSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('widgets')
+        DB::table('layouts')
             ->insertGetId([
                 'user_id' => 1,
                 'layout_title' => 'New page',
