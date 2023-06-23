@@ -46,7 +46,7 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
 
     public function canAccessFilament(): bool
     {
-        return $this->email === 'info@larazeus.com';
+        return true;
     }
 
     protected function avatar(): Attribute

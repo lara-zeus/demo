@@ -32,7 +32,7 @@ return [
     */
 
     'post_types' => [
-//        'video' => App\Models\Video::class,
+        //        'video' => App\Models\Video::class,
     ],
 
     /*
@@ -48,7 +48,7 @@ return [
     */
 
     'shortcodes' => [
-//        'foo' => App\Shortcodes\FooShortcode::class,
+        //        'foo' => App\Shortcodes\FooShortcode::class,
     ],
 
     /*
