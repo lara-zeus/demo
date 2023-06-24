@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7da738f8505227f4eec21c4ffd46ea0",
+    "content-hash": "6bf3dfc32cdd381880661a8b497a13fc",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -3167,6 +3167,77 @@
                 "source": "https://github.com/http-interop/http-factory-guzzle/tree/1.2.0"
             },
             "time": "2021-07-21T13:50:14+00:00"
+        },
+        {
+            "name": "ibrahimbougaoua/filament-menu-scroll-fix",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ibrahimBougaoua/filament-menu-scroll-fix.git",
+                "reference": "54cc0c9c9684fa61fa8abb3974d78d9f24ad9e14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ibrahimBougaoua/filament-menu-scroll-fix/zipball/54cc0c9c9684fa61fa8abb3974d78d9f24ad9e14",
+                "reference": "54cc0c9c9684fa61fa8abb3974d78d9f24ad9e14",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^2.17",
+                "illuminate/contracts": "^10.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.9",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "FilamentMenuScrollFix\\FilamentMenuScrollFix\\FilamentMenuScrollFixServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FilamentMenuScrollFix\\FilamentMenuScrollFix\\": "src/",
+                    "FilamentMenuScrollFix\\FilamentMenuScrollFix\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ibrahim",
+                    "email": "ibrahim.bougaoua@etu.usthb.dz",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Now whene a user clicks on an item it sets focus on the selected item without the weird reloading and scrolling up the list, Especially if the user contains a lot of elements he would have to scroll the the selected element manually.",
+            "homepage": "https://github.com/ibrahimbougaoua/filament-menu-scroll-fix",
+            "keywords": [
+                "filament-menu-scroll-fix",
+                "ibrahimBougaoua",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/ibrahimBougaoua/filament-menu-scroll-fix/issues",
+                "source": "https://github.com/ibrahimBougaoua/filament-menu-scroll-fix/tree/v1.0.0"
+            },
+            "time": "2023-06-16T23:15:25+00:00"
         },
         {
             "name": "intervention/image",
