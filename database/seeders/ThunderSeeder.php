@@ -72,7 +72,10 @@ class ThunderSeeder extends Seeder
         ]);
 
         $office = DB::table('offices')->insertGetId([
-            'name' => 'printers department',
+            'name' => json_encode([
+                'en'=>'printers department',
+                'ar'=>'مشاكل الطابعات',
+            ]),
             'slug' => 'printers-department',
             'form_ids' => json_encode([$form]),
             'description' => json_encode(['en' => 'printer issues', 'ar' => 'مشاكل الطابعات'], JSON_THROW_ON_ERROR),
@@ -145,7 +148,7 @@ class ThunderSeeder extends Seeder
         $response_1 = DB::table('responses')->insertGetId([
             'form_id' => $form,
             'user_id' => 3,
-            'status' => 'NEW',
+            'status' => 'OPEN',
             'notes' => null,
             'created_at' => now(),
         ]);
@@ -180,12 +183,12 @@ class ThunderSeeder extends Seeder
         ]);
 
         $ticket = DB::table('tickets')->insertGetId([
-            'ticket_no' => Str::random(10),
+            'ticket_no' => Str::random(6),
             'office_id' => $office,
             'response_id' => $response_1,
             'user_id' => 3,
             'assignee_id' => 1,
-            'status' => 'NEW',
+            'status' => 'OPEN',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
