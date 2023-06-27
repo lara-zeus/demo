@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use LaraZeus\Bolt\Models\Response;
 
 class ThunderSeeder extends Seeder
 {
@@ -69,6 +70,7 @@ class ThunderSeeder extends Seeder
             'is_active' => 1,
             'description' => json_encode(['en' => 'for all printer issues, your printer dosent work? we are here for you', 'ar' => 'لحل كافة مشاكل الطابعات'], JSON_THROW_ON_ERROR),
             'created_at' => now(),
+            'extensions' => 'LaraZeus\Thunder\Extensions\Thunder',
         ]);
 
         $office = DB::table('offices')->insertGetId([
@@ -148,7 +150,7 @@ class ThunderSeeder extends Seeder
         $response_1 = DB::table('responses')->insertGetId([
             'form_id' => $form,
             'user_id' => 3,
-            'status' => 'OPEN',
+            'status' => 'NEW',
             'notes' => null,
             'created_at' => now(),
         ]);
@@ -193,5 +195,6 @@ class ThunderSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
+        Response::find($response_1)->update(['extension_item_id' => $ticket]);
     }
 }
