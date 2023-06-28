@@ -88,18 +88,23 @@ class BoltSeeder extends Seeder
             'end_date' => null,
             'ordering' => 1,
             'is_active' => 1,
-            'description' => json_encode(['en' => 'send us your Feedback about our service', 'ar' => 'شاركنا تقييمك على خدماتنا'], JSON_THROW_ON_ERROR),
-            'details' => json_encode(['en' => 'please use the same email address you used on registration, so we can add points to your account', 'ar' => 'الرجاء استخدام نفس البريد الإلكتروني المستخدم في التسجيل لاضافة النقاط لحسابك'], JSON_THROW_ON_ERROR),
+            'description' => json_encode([
+                'en' => 'send us your Feedback about our service', 'ar' => 'شاركنا تقييمك على خدماتنا'
+            ], JSON_THROW_ON_ERROR),
+            'details' => json_encode([
+                'en' => 'please use the same email address you used on registration, so we can add points to your account',
+                'ar' => 'الرجاء استخدام نفس البريد الإلكتروني المستخدم في التسجيل لاضافة النقاط لحسابك'
+            ], JSON_THROW_ON_ERROR),
             'created_at' => now(),
         ]);
 
-        $section1 = DB::table('sections')->insertGetId([
-            'name' => json_encode(['en' => 'your info', 'ar' => 'بياناتك الشخصية'], JSON_THROW_ON_ERROR),
+        $section2 = DB::table('sections')->insertGetId([
+            'name' => json_encode(['en' => 'feedback', 'ar' => 'التقييم'], JSON_THROW_ON_ERROR),
             'form_id' => $form,
             'created_at' => now(),
         ]);
-        $section2 = DB::table('sections')->insertGetId([
-            'name' => json_encode(['en' => 'feedback', 'ar' => 'التقييم'], JSON_THROW_ON_ERROR),
+        $section1 = DB::table('sections')->insertGetId([
+            'name' => json_encode(['en' => 'your info', 'ar' => 'بياناتك الشخصية'], JSON_THROW_ON_ERROR),
             'form_id' => $form,
             'created_at' => now(),
         ]);
@@ -110,7 +115,12 @@ class BoltSeeder extends Seeder
             'ordering' => 1,
             'options' => json_encode([
                 'dateType' => 'string',
-                'is_required' => true,
+                'is_required' => false,
+                'visibility' => [
+                    'active' => true,
+                    'fieldID' => "4",
+                    'values' => "yes",
+                ],
             ], JSON_THROW_ON_ERROR),
             'type' => '\LaraZeus\Bolt\Fields\Classes\TextInput',
             'created_at' => now(),
@@ -139,7 +149,9 @@ class BoltSeeder extends Seeder
             'created_at' => now(),
         ]);
         $section2_field_2 = DB::table('fields')->insertGetId([
-            'name' => json_encode(['en' => 'would you recommend our services to others', 'ar' => 'هل تنصح الآخرين باستخدام خدماتنا'], JSON_THROW_ON_ERROR),
+            'name' => json_encode([
+                'en' => 'would you recommend our services to others', 'ar' => 'هل تنصح الآخرين باستخدام خدماتنا'
+            ], JSON_THROW_ON_ERROR),
             'section_id' => $section2,
             'ordering' => 2,
             'options' => json_encode([
