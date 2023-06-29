@@ -3585,16 +3585,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "2919c81606d301a04c21f2d7c49270734dea90bf"
+                "reference": "812c2c5be21fc9dc8fff308593448fc30a4f742c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/2919c81606d301a04c21f2d7c49270734dea90bf",
-                "reference": "2919c81606d301a04c21f2d7c49270734dea90bf",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/812c2c5be21fc9dc8fff308593448fc30a4f742c",
+                "reference": "812c2c5be21fc9dc8fff308593448fc30a4f742c",
                 "shasum": ""
             },
             "require": {
@@ -3662,7 +3662,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/1.2.1"
+                "source": "https://github.com/lara-zeus/bolt/tree/1.2.2"
             },
             "funding": [
                 {
@@ -3670,7 +3670,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-29T17:41:59+00:00"
+            "time": "2023-06-29T21:27:03+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -4015,16 +4015,16 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "d4c2fac9d8c38240b404484c8494f0dbcfd53ff9"
+                "reference": "b79e94d2930713450016a3f53e2a1df99ed2224a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/d4c2fac9d8c38240b404484c8494f0dbcfd53ff9",
-                "reference": "d4c2fac9d8c38240b404484c8494f0dbcfd53ff9",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/b79e94d2930713450016a3f53e2a1df99ed2224a",
+                "reference": "b79e94d2930713450016a3f53e2a1df99ed2224a",
                 "shasum": ""
             },
             "require": {
@@ -4110,7 +4110,7 @@
                 "tickets"
             ],
             "support": {
-                "source": "https://github.com/lara-zeus/thunder/tree/1.0.4",
+                "source": "https://github.com/lara-zeus/thunder/tree/1.0.5",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -4119,7 +4119,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-06-28T22:50:04+00:00"
+            "time": "2023-06-29T21:31:47+00:00"
         },
         {
             "name": "lara-zeus/wind",
