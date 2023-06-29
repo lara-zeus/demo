@@ -4123,16 +4123,16 @@
         },
         {
             "name": "lara-zeus/wind",
-            "version": "2.4.18",
+            "version": "2.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "00680dcb9cf3090ddda6a64a1086a96449aecd57"
+                "reference": "75620b3d27a04842d51f91bd67693e307fe5b03f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/00680dcb9cf3090ddda6a64a1086a96449aecd57",
-                "reference": "00680dcb9cf3090ddda6a64a1086a96449aecd57",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/75620b3d27a04842d51f91bd67693e307fe5b03f",
+                "reference": "75620b3d27a04842d51f91bd67693e307fe5b03f",
                 "shasum": ""
             },
             "require": {
@@ -4189,7 +4189,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/wind/issues",
-                "source": "https://github.com/lara-zeus/wind/tree/2.4.18"
+                "source": "https://github.com/lara-zeus/wind/tree/2.4.19"
             },
             "funding": [
                 {
@@ -4197,7 +4197,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-28T22:25:19+00:00"
+            "time": "2023-06-29T00:51:48+00:00"
         },
         {
             "name": "laravel/framework",
