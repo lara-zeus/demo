@@ -7,7 +7,7 @@
         @zeus Rain, simple way to manage widgets for your website landing page
     @endslot
     @slot('btns')
-        <a href="{{ url('/admin/departments') }}" class="shadow transition ease-in-out whitespace-nowrap text-base font-medium rounded-md text-white bg-secondary-500 hover:bg-secondary-600 px-4 py-2 dark:bg-secondary-700 dark:hover:bg-secondary-800">
+        <a href="{{ url('/admin/layouts') }}" class="shadow transition ease-in-out whitespace-nowrap text-base font-medium rounded-md text-white bg-secondary-500 hover:bg-secondary-600 px-4 py-2 dark:bg-secondary-700 dark:hover:bg-secondary-800">
             Admin Panel
         </a>
 
