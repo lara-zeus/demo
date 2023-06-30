@@ -27,3 +27,5 @@ Route::post('/forms', function () {
         'state' => 'faild',
     ]);
 });
+
+Route::view('embed', 'embed');
