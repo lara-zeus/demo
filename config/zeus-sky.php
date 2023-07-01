@@ -127,4 +127,12 @@ return [
         'library' => 'Library',
         'faq' => 'faq',
     ],
+
+    /**
+     * the default editor for pages and posts, Available:
+     * \LaraZeus\Sky\Classes\TipTapEditor::class,
+     * \LaraZeus\Sky\Classes\TinyEditor::class,
+     * \LaraZeus\Sky\Classes\MarkdownEditor::class,
+     */
+    'editor' => \LaraZeus\Sky\Classes\TipTapEditor::class,
 ];
