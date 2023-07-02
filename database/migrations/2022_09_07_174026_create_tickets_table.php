@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('ticket_no', 20)->default('0'); //todo rand string?
 
             $table->foreignId('office_id')->constrained('offices');
-            $table->foreignId('category_id')->nullable()->constrained('categories');
-            $table->foreignId('response_id')->nullable()->constrained('responses');
+            $table->foreignId('category_id')->nullable()->constrained('categories')->nullOnDelete();
+            $table->foreignId('response_id')->nullable()->constrained('responses')->nullOnDelete();
             $table->foreignId('user_id')->nullable()->constrained('users');
             $table->foreignId('assignee_id')->nullable()->constrained('users'); // todo multiple?
 
