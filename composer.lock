@@ -77,16 +77,16 @@
         },
         {
             "name": "alperenersoy/filament-export",
-            "version": "v0.3.6",
+            "version": "v0.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alperenersoy/filament-export.git",
-                "reference": "0a25d55a61406ad0b0ed9bd8cb1e67ebfcd81a1a"
+                "reference": "44caa31f0166cf4ff725e0959acded3deceabc9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alperenersoy/filament-export/zipball/0a25d55a61406ad0b0ed9bd8cb1e67ebfcd81a1a",
-                "reference": "0a25d55a61406ad0b0ed9bd8cb1e67ebfcd81a1a",
+                "url": "https://api.github.com/repos/alperenersoy/filament-export/zipball/44caa31f0166cf4ff725e0959acded3deceabc9b",
+                "reference": "44caa31f0166cf4ff725e0959acded3deceabc9b",
                 "shasum": ""
             },
             "require": {
@@ -127,9 +127,9 @@
             "description": "Customizable export and print functionality for Filament Admin Panel",
             "support": {
                 "issues": "https://github.com/alperenersoy/filament-export/issues",
-                "source": "https://github.com/alperenersoy/filament-export/tree/v0.3.6"
+                "source": "https://github.com/alperenersoy/filament-export/tree/v0.3.7"
             },
-            "time": "2023-06-20T18:03:18+00:00"
+            "time": "2023-06-29T10:34:11+00:00"
         },
         {
             "name": "andreiio/blade-iconoir",
@@ -3664,16 +3664,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "f4c10b867655fde5411a84245b690276028b1da1"
+                "reference": "de637a79e91d73497d4d42ebfa381016a03681ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/f4c10b867655fde5411a84245b690276028b1da1",
-                "reference": "f4c10b867655fde5411a84245b690276028b1da1",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/de637a79e91d73497d4d42ebfa381016a03681ed",
+                "reference": "de637a79e91d73497d4d42ebfa381016a03681ed",
                 "shasum": ""
             },
             "require": {
@@ -3741,7 +3741,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/1.2.4"
+                "source": "https://github.com/lara-zeus/bolt/tree/1.2.5"
             },
             "funding": [
                 {
@@ -3749,7 +3749,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-01T19:42:10+00:00"
+            "time": "2023-07-02T23:57:46+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -4202,16 +4202,16 @@
         },
         {
             "name": "lara-zeus/wind",
-            "version": "2.4.21",
+            "version": "2.4.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "801e31d4dcd033a92b3319aabdc6be7e51deb623"
+                "reference": "53a5345a1d5d42602ffebd60abe2d44d78c898f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/801e31d4dcd033a92b3319aabdc6be7e51deb623",
-                "reference": "801e31d4dcd033a92b3319aabdc6be7e51deb623",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/53a5345a1d5d42602ffebd60abe2d44d78c898f8",
+                "reference": "53a5345a1d5d42602ffebd60abe2d44d78c898f8",
                 "shasum": ""
             },
             "require": {
@@ -4268,7 +4268,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/wind/issues",
-                "source": "https://github.com/lara-zeus/wind/tree/2.4.21"
+                "source": "https://github.com/lara-zeus/wind/tree/2.4.22"
             },
             "funding": [
                 {
@@ -4276,7 +4276,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-02T06:07:25+00:00"
+            "time": "2023-07-02T17:55:37+00:00"
         },
         {
             "name": "laravel/framework",
@@ -5593,16 +5593,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.67.0",
+            "version": "2.68.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "c1001b3bc75039b07f38a79db5237c4c529e04c8"
+                "reference": "4f991ed2a403c85efbc4f23eb4030063fdbe01da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/c1001b3bc75039b07f38a79db5237c4c529e04c8",
-                "reference": "c1001b3bc75039b07f38a79db5237c4c529e04c8",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/4f991ed2a403c85efbc4f23eb4030063fdbe01da",
+                "reference": "4f991ed2a403c85efbc4f23eb4030063fdbe01da",
                 "shasum": ""
             },
             "require": {
@@ -5691,7 +5691,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-05-25T22:09:47+00:00"
+            "time": "2023-06-20T18:29:04+00:00"
         },
         {
             "name": "nette/schema",
