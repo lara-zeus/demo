@@ -75,8 +75,8 @@ class ThunderSeeder extends Seeder
 
         $office = DB::table('offices')->insertGetId([
             'name' => json_encode([
-                'en'=>'printers department',
-                'ar'=>'مشاكل الطابعات',
+                'en' => 'printers department',
+                'ar' => 'مشاكل الطابعات',
             ]),
             'slug' => 'printers-department',
             'form_ids' => json_encode([$form]),

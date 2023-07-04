@@ -89,11 +89,11 @@ class BoltSeeder extends Seeder
             'ordering' => 1,
             'is_active' => 1,
             'description' => json_encode([
-                'en' => 'send us your Feedback about our service', 'ar' => 'شاركنا تقييمك على خدماتنا'
+                'en' => 'send us your Feedback about our service', 'ar' => 'شاركنا تقييمك على خدماتنا',
             ], JSON_THROW_ON_ERROR),
             'details' => json_encode([
                 'en' => 'please use the same email address you used on registration, so we can add points to your account',
-                'ar' => 'الرجاء استخدام نفس البريد الإلكتروني المستخدم في التسجيل لاضافة النقاط لحسابك'
+                'ar' => 'الرجاء استخدام نفس البريد الإلكتروني المستخدم في التسجيل لاضافة النقاط لحسابك',
             ], JSON_THROW_ON_ERROR),
             'created_at' => now(),
         ]);
@@ -118,8 +118,8 @@ class BoltSeeder extends Seeder
                 'is_required' => false,
                 'visibility' => [
                     'active' => true,
-                    'fieldID' => "4",
-                    'values' => "yes",
+                    'fieldID' => '4',
+                    'values' => 'yes',
                 ],
             ], JSON_THROW_ON_ERROR),
             'type' => '\LaraZeus\Bolt\Fields\Classes\TextInput',
@@ -150,7 +150,7 @@ class BoltSeeder extends Seeder
         ]);
         $section2_field_2 = DB::table('fields')->insertGetId([
             'name' => json_encode([
-                'en' => 'would you recommend our services to others', 'ar' => 'هل تنصح الآخرين باستخدام خدماتنا'
+                'en' => 'would you recommend our services to others', 'ar' => 'هل تنصح الآخرين باستخدام خدماتنا',
             ], JSON_THROW_ON_ERROR),
             'section_id' => $section2,
             'ordering' => 2,
