@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b703f6ea5d6be5e224d101bd35533958",
+    "content-hash": "94f4b21c5c2da615d904b6f97eab58ff",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -3837,16 +3837,16 @@
         },
         {
             "name": "lara-zeus/rain",
-            "version": "1.0.6",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/rain.git",
-                "reference": "f5449fa6facb9e299a6948b93a6aa149315f6649"
+                "reference": "7e56a8bf59daa963b09fb2568b4ca17ec0a79c5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/f5449fa6facb9e299a6948b93a6aa149315f6649",
-                "reference": "f5449fa6facb9e299a6948b93a6aa149315f6649",
+                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/7e56a8bf59daa963b09fb2568b4ca17ec0a79c5b",
+                "reference": "7e56a8bf59daa963b09fb2568b4ca17ec0a79c5b",
                 "shasum": ""
             },
             "require": {
@@ -3905,7 +3905,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/rain/issues",
-                "source": "https://github.com/lara-zeus/rain/tree/1.0.6"
+                "source": "https://github.com/lara-zeus/rain/tree/1.1.0"
             },
             "funding": [
                 {
@@ -3913,7 +3913,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-07T00:52:05+00:00"
+            "time": "2023-07-07T01:43:20+00:00"
         },
         {
             "name": "lara-zeus/rhea",
