@@ -14,8 +14,10 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // art migrate:fresh --seed
-        $schedule->command('migrate:fresh --seed --force --quiet')->daily();
+        $schedule->command('migrate:fresh --seed --force --quiet')
+            ->weekly()
+            ->days([0,2,4])
+            ->at('4:00');
     }
 
     /**
