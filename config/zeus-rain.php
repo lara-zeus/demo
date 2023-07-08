@@ -2,7 +2,7 @@
 
 return [
     /**
-     * set the default path for the widgets.
+     * set the default path for the layout page.
      */
     'path' => 'rain',
 
@@ -31,7 +31,7 @@ return [
      */
     'uploads' => [
         'disk' => 'public',
-        'directory' => 'widgets',
+        'directory' => 'layouts',
     ],
 
     /**
