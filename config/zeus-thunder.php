@@ -12,22 +12,17 @@ return [
      */
     'middleware' => ['web'],
 
-    /**
-     * set the prefix for forms URL.
-     */
-    'tickets_uri_prefix' => 'form',
-
     'layout' => 'zeus::components.app',
 
     /**
      * this will be setup the default seo site title. read more about it in 'laravel-seo'.
      */
-    'site_title' => config('app.name', 'Laravel').' | Tickets',
+    'site_title' => config('app.name', 'Laravel') . ' | Tickets',
 
     /**
      * this will be setup the default seo site description. read more about it in 'laravel-seo'.
      */
-    'site_description' => 'All about '.config('app.name', 'Laravel').' Tickets',
+    'site_description' => 'All about ' . config('app.name', 'Laravel') . ' Tickets',
 
     /**
      * this will be setup the default seo site color theme. read more about it in 'laravel-seo'.
@@ -36,7 +31,7 @@ return [
 
     'uploads' => [
         'disk' => 'public',
-        'directory' => 'logos',
+        'directory' => 'tickets',
     ],
 
     /**
