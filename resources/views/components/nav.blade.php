@@ -194,7 +194,7 @@
                 <x-filament-support::hr/>
                 <a href="{{ url('/admin') }}"
                    class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
-                    Admin Panel
+                    {{ __('Admin Panel') }}
                 </a>
 
                 <div class="flex gap-4 mt-4">

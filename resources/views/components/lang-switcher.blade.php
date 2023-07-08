@@ -5,21 +5,21 @@
         </x-slot>
 
         <x-filament::dropdown.header class="dark:text-gray-200 text-gray-700"
-                :color="'primary'"
-                :icon="'ri-translate'"
-                :href="'#'"
-                :tag="'a'"
+            :color="'primary'"
+            :icon="'ri-translate'"
+            :href="'#'"
+            :tag="'a'"
         >
-            Select Language
+            {{ __('Select Language') }}
         </x-filament::dropdown.header>
 
         <x-filament::dropdown.list>
             @foreach(config('app.locales') as $local)
                 <x-filament::dropdown.list.item class="dark:text-gray-200 text-gray-700"
-                        :color="'secondary'"
-                        :icon="'iconpark-dot'"
-                        :href="url('lang/'.$local)"
-                        tag="a"
+                    :color="(session('current_lang') === $local) ? 'warning' : 'secondary'"
+                    :icon="'iconpark-dot'"
+                    :href="url('lang/'.$local)"
+                    tag="a"
                 >
                     {{ __($local) }}
                 </x-filament::dropdown.list.item>

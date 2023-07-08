@@ -1,6 +1,22 @@
 {
-  "dir": "ltr",
-  "ar": "Arabic",
-  "en": "English",
-  "fr": "French"
+    "dir": "ltr",
+    "ar": "Arabic",
+    "en": "English",
+    "fr": "French",
+    "pt_PT": "Portuguese",
+    "es": "Spanish",
+    "Select Language": "Select Language",
+    "Admin Panel": "Admin Panel",
+    "Admin": "Admin",
+
+    "My Tickets": "My Tickets",
+    "All Tickets": "All Tickets",
+    "My Entries": "My Entries",
+    "Tickets": "Tickets",
+    "All Forms": "All Forms",
+    "Forms": "Forms",
+    "Contact us": "Contact us",
+    "Blog": "Blog",
+    "Site": "Site",
+    "Faq": "Faq"
 }
