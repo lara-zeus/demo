@@ -11,7 +11,7 @@
             {{ __('Admin Panel') }}
         </a>
 
-        <a href="{{ url('sky') }}" class="shadow transition ease-in-out whitespace-nowrap text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 px-4 py-2">
+        <a href="{{ route('blogs') }}" class="shadow transition ease-in-out whitespace-nowrap text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 px-4 py-2">
             Blog
         </a>
     @endslot

@@ -2,13 +2,15 @@
     <div  class="absolute flex justify-start items-center gap-4 top-4 ltr:right-4 rtl:left-4">
         <x-lang-switcher/>
         <x-dark-mode/>
-
     </div>
 
     <div class="text-center py-6 dark:text-gray-100">
         <img class="h-32 w-auto mx-auto" src="https://larazeus.com/images/zeus-logo.png" alt="Lara-zeus packages">
         <p class="text-6xl">@zeus</p>
-        <p class="text-xl my-4 title-font">Demo app for all @zeus packages</p>
+        @dump(app()->getLocale())
+        @dump(route('contact', [], true, 'nl'))
+        @dump(route('contact'))
+        <p class="text-xl my-4 title-font">{{ __('Demo app for all') }} @zeus {{ __('Packages') }}</p>
         <span class="title-font mb-4 flex items-center justify-center gap-2 text-xl">
             <span>built as</span>
                 <a class="text-secondary-600 dark:text-secondary-100 flex items-center justify-center gap-2 underline decoration-wavy underline-offset-4 decoration-primary-600 hover:decoration-secondary-500 transition ease-in-out" href="https://filamentphp.com/plugins" target="_blank">

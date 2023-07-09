@@ -4,7 +4,7 @@ return [
     /**
      * set the default path for the layout page.
      */
-    'path' => 'rain',
+    'path' => '{locale}/rain',
 
     /**
      * the middleware you want to apply on all the blogs routes

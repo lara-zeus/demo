@@ -4,7 +4,7 @@ return [
     /**
      * set the default path for the blogs homepage.
      */
-    'path' => 'sky',
+    'path' => '{locale}/sky',
 
     /**
      * the middleware you want to apply on all the blogs routes

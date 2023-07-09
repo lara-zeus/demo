@@ -4,7 +4,7 @@ return [
     /**
      * set the default path for the contact form homepage.
      */
-    'path' => 'wind',
+    'path' => '{locale}/wind',
 
     /**
      * the middleware you want to apply on all the blogs routes
