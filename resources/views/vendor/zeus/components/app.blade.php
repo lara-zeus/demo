@@ -78,9 +78,9 @@
         a gift with ❤️ &nbsp;from @zeus
     </a>
     @if($packageName !== null)
-        <p class="py-2 px-4 text-gray-900">
+        <a target="_blank" href="https://github.com/{{ $packageName }}" class="block py-2 px-4 text-gray-900">
             {{ $packageName }} v:{{ \Composer\InstalledVersions::getVersion($packageName) }}
-        </p>
+        </a>
     @endif
 </footer>
 

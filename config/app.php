@@ -82,7 +82,23 @@ return [
     */
 
     'locale' => 'en',
-    'locales' => ['en', 'fr', 'pt_PT', 'es', 'ar'],
+    'locales' => [
+        'en' => ['name' => 'English', 'native' => 'English', 'regional' => 'en_GB'],
+        'fr' => ['name' => 'French', 'native' => 'français', 'regional' => 'fr_FR'],
+        'ru' => ['name' => 'Russian', 'native' => 'русский', 'regional' => 'ru_RU'],
+        'pt' => ['name' => 'Portuguese', 'native' => 'português', 'regional' => 'pt_PT'],
+        //'pt-BR' => ['name' => 'Brazilian Portuguese', 'native' => 'português do Brasil', 'regional' => 'pt_BR'],
+        'es' => ['name' => 'Spanish', 'native' => 'español', 'regional' => 'es_ES'],
+        'ko' => ['name' => 'Korean', 'native' => '한국어', 'regional' => 'ko_KR'],
+        //'de' => ['name' => 'German', 'native' => 'Deutsch', 'regional' => 'de_DE'],
+        //'nl' => ['name' => 'Dutch', 'native' => 'Nederlands', 'regional' => 'nl_NL'],
+        //'it' => ['name' => 'Italian', 'native' => 'italiano', 'regional' => 'it_IT'],
+        //'id' => ['name' => 'Indonesian', 'native' => 'Bahasa Indonesia', 'regional' => 'id_ID'],
+        //'tr' => ['name' => 'Turkish', 'native' => 'Türkçe', 'regional' => 'tr_TR'],
+        //'hu' => ['name' => 'Hungarian', 'native' => 'magyar', 'regional' => 'hu_HU'],
+        //'pl' => ['name' => 'Polish', 'native' => 'polski', 'regional' => 'pl_PL'],
+        'ar' => ['name' => 'Arabic', 'native' => 'العربية', 'regional' => 'ar_AE'],
+    ],
 
     /*
     |--------------------------------------------------------------------------

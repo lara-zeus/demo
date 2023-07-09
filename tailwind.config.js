@@ -16,10 +16,10 @@ module.exports = {
     darkMode: 'class',
     theme: {
         extend: {
-            fontFamily: {
+            /*fontFamily: {
                 'el-messiri': ['El Messiri', 'sans-serif'],
                 'koho': ['KoHo', 'sans-serif'],
-            },
+            },*/
             colors: {
                 gray: colors.stone,
                 primary: colors.emerald,

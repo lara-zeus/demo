@@ -4,7 +4,7 @@ return [
     /**
      * set the default path for the tickets homepage.
      */
-    'path' => '{locale}/thunder',
+    'path' => 'thunder',
 
     /**
      * the middleware you want to apply on all the tickets routes

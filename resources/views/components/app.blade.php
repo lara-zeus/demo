@@ -1,5 +1,5 @@
 <!doctype html>
-<html dir="{{ __('dir') }}" class="antialiased filament js-focus-visible">
+<html dir="{{ (app()->getLocale() === 'ar') ? 'rtl' : 'ltr' }}" class="antialiased filament js-focus-visible">
 <head>
     <meta charset="utf-8">
 
@@ -44,6 +44,7 @@
         @endif
     </style>
 </head>
+
 <body class="bg-gray-50 dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
 <div x-data class="inset-0 min-h-screen flex items-center justify-center">
     <div class="container mx-auto">

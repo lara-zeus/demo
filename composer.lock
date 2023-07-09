@@ -307,16 +307,16 @@
         },
         {
             "name": "awcodes/filament-tiptap-editor",
-            "version": "v2.6.4",
+            "version": "v2.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/filament-tiptap-editor.git",
-                "reference": "eb13fbb6363cc58f1f2cfe96bed74ca2a3f195ad"
+                "reference": "13127542c29ff203c32c0a72d01f5b4638563ab2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/filament-tiptap-editor/zipball/eb13fbb6363cc58f1f2cfe96bed74ca2a3f195ad",
-                "reference": "eb13fbb6363cc58f1f2cfe96bed74ca2a3f195ad",
+                "url": "https://api.github.com/repos/awcodes/filament-tiptap-editor/zipball/13127542c29ff203c32c0a72d01f5b4638563ab2",
+                "reference": "13127542c29ff203c32c0a72d01f5b4638563ab2",
                 "shasum": ""
             },
             "require": {
@@ -374,7 +374,7 @@
             ],
             "support": {
                 "issues": "https://github.com/awcodes/filament-tiptap-editor/issues",
-                "source": "https://github.com/awcodes/filament-tiptap-editor/tree/v2.6.4"
+                "source": "https://github.com/awcodes/filament-tiptap-editor/tree/v2.6.5"
             },
             "funding": [
                 {
@@ -382,7 +382,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-01T18:42:57+00:00"
+            "time": "2023-07-09T05:10:37+00:00"
         },
         {
             "name": "barryvdh/laravel-dompdf",

@@ -14,14 +14,14 @@
         </x-filament::dropdown.header>
 
         <x-filament::dropdown.list>
-            @foreach(config('app.locales') as $local)
+            @foreach(config('app.locales') as $local => $localInfo)
                 <x-filament::dropdown.list.item class="dark:text-gray-200 text-gray-700"
                     :color="(session('current_lang') === $local) ? 'warning' : 'secondary'"
                     :icon="'iconpark-dot'"
                     :href="url('lang/'.$local)"
                     tag="a"
                 >
-                    {{ __($local) }}
+                    {{  $localInfo['native'] }}
                 </x-filament::dropdown.list.item>
             @endforeach
         </x-filament::dropdown.list>

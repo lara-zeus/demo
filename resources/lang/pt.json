@@ -1,14 +1,4 @@
 {
-    "dir": "ltr",
-    "ar": "Arabic",
-    "en": "English",
-    "fr": "French",
-    "pt_PT": "Portuguese",
-    "es": "Spanish",
-    "Select Language": "Selecione o idioma",
-    "Admin Panel": "Painel Administrativo",
-    "Admin": "Administrativo",
-
     "(and :count more error)": "(e mais :count erros)",
     "(and :count more errors)": "(e mais :count erros)",
     "All rights reserved.": "Todos os direitos reservados.",
@@ -45,5 +35,22 @@
     "Unauthorized": "Não autorizado",
     "Verify Email Address": "Verifique o endereço de e-mail",
     "Whoops!": "Ops!",
-    "You are receiving this email because we received a password reset request for your account.": "Recebeu esse e-mail porque foi solicitada a redefinição da palavra-passe da sua conta."
+    "You are receiving this email because we received a password reset request for your account.": "Recebeu esse e-mail porque foi solicitada a redefinição da palavra-passe da sua conta.",
+    "Select Language": "Selecione o idioma",
+    "Admin Panel": "Painel Administrativo",
+    "Admin": "Administrativo",
+    "Demo app for all": "Aplicativo de demonstração para todos os pacotes",
+    "Packages": " ",
+    "built as": "construído como",
+    "filament plugin": "plug-in de filamento",
+    "My Tickets": "Meus ingressos",
+    "All Tickets": "Todos os Tickets",
+    "My Entries": "Minhas entradas",
+    "Tickets": "Ingressos",
+    "All Forms": "Todos os formulários",
+    "Forms": "Formulários",
+    "Contact us": "Contate-nos",
+    "Blog": "Blog",
+    "Site": "Site",
+    "Faq": "Perguntas frequentes"
 }

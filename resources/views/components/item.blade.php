@@ -3,7 +3,7 @@
     shadow-lg hover:shadow-xl dark:hover:shadow-lg dark:hover:shadow-gray-800
     rounded-2xl transition ease-in-out duration-300
     flex flex-col gap-2 items-center sm:items-start">
-    <div class="text-5xl lg:text-6xl font-extrabold">
+    <div class="text-5xl lg:text-6xl title-font">
         <span class="flex sm:flex-none mt-4 sm:mt-8 justify-center sm:justify-start">
             {{ $title }}
         </span>

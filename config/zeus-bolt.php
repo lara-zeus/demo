@@ -4,7 +4,7 @@ return [
     /**
      * set the default path for the forms' homepage.
      */
-    'path' => '{locale}/bolt',
+    'path' => 'bolt',
 
     /**
      * the middleware you want to apply on all the forms routes

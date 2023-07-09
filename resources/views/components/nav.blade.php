@@ -5,7 +5,7 @@
                  alt="{{ config('zeus.wind.name', config('app.name', 'Laravel')) }}">
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">@zeus</span>
         </a>
-        <div class="hidden sm:flex items-center justify-center gap-4">
+        <div class="z-50 hidden sm:flex items-center justify-center gap-4">
             <x-filament::dropdown placement="bottom-start" teleport="true">
                 <x-slot name="trigger"
                         class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
