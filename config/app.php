@@ -86,7 +86,7 @@ return [
         'en' => ['name' => 'English', 'native' => 'English', 'regional' => 'en_GB'],
         'fr' => ['name' => 'French', 'native' => 'français', 'regional' => 'fr_FR'],
         'ru' => ['name' => 'Russian', 'native' => 'русский', 'regional' => 'ru_RU'],
-        'pt' => ['name' => 'Portuguese', 'native' => 'português', 'regional' => 'pt_PT'],
+        'pt_PT' => ['name' => 'Portuguese', 'native' => 'português', 'regional' => 'pt_PT'],
         //'pt-BR' => ['name' => 'Brazilian Portuguese', 'native' => 'português do Brasil', 'regional' => 'pt_BR'],
         'es' => ['name' => 'Spanish', 'native' => 'español', 'regional' => 'es_ES'],
         'ko' => ['name' => 'Korean', 'native' => '한국어', 'regional' => 'ko_KR'],
