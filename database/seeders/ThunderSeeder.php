@@ -106,6 +106,7 @@ class ThunderSeeder extends Seeder
             'section_id' => $section1,
             'ordering' => 1,
             'options' => json_encode([
+                'htmlId' => Str::random(6),
                 'dateType' => 'numeric',
                 'is_required' => true,
             ], JSON_THROW_ON_ERROR),
@@ -117,6 +118,7 @@ class ThunderSeeder extends Seeder
             'section_id' => $section1,
             'ordering' => 2,
             'options' => json_encode([
+                'htmlId' => Str::random(6),
                 'dateType' => 'numeric',
                 'is_required' => true,
             ], JSON_THROW_ON_ERROR),
@@ -128,6 +130,7 @@ class ThunderSeeder extends Seeder
             'section_id' => $section2,
             'ordering' => 2,
             'options' => json_encode([
+                'htmlId' => Str::random(6),
                 'dataSource' => '2',
                 'is_required' => true,
                 'is_inline' => true,
@@ -140,6 +143,7 @@ class ThunderSeeder extends Seeder
             'section_id' => $section2,
             'ordering' => 2,
             'options' => json_encode([
+                'htmlId' => Str::random(6),
                 'dataSource' => '3',
                 'is_required' => true,
             ], JSON_THROW_ON_ERROR),
