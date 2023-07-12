@@ -4001,16 +4001,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "2.4.32",
+            "version": "2.4.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "000dd0a70997dd43945482ee6d8fbd668c11758d"
+                "reference": "8a957224e494185c850acb2d8f66c7dd28cd6507"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/000dd0a70997dd43945482ee6d8fbd668c11758d",
-                "reference": "000dd0a70997dd43945482ee6d8fbd668c11758d",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/8a957224e494185c850acb2d8f66c7dd28cd6507",
+                "reference": "8a957224e494185c850acb2d8f66c7dd28cd6507",
                 "shasum": ""
             },
             "require": {
@@ -4025,7 +4025,7 @@
                 "ryangjchandler/filament-navigation": "dev-with-rtl",
                 "spatie/laravel-medialibrary": "^10.0.0",
                 "spatie/laravel-sluggable": "^3.3",
-                "spatie/laravel-tags": "^4.0"
+                "spatie/laravel-tags": "^4.4"
             },
             "require-dev": {
                 "laravel/pint": "^1.0",
@@ -4038,7 +4038,7 @@
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan-deprecation-rules": "^1.0",
                 "phpstan/phpstan-phpunit": "^1.0",
-                "phpunit/phpunit": "^9.5"
+                "phpunit/phpunit": "^9.5|^10.0"
             },
             "type": "library",
             "extra": {
@@ -4082,7 +4082,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/sky/issues",
-                "source": "https://github.com/lara-zeus/sky/tree/2.4.32"
+                "source": "https://github.com/lara-zeus/sky/tree/2.4.33"
             },
             "funding": [
                 {
@@ -4090,7 +4090,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-12T13:07:15+00:00"
+            "time": "2023-07-12T15:07:07+00:00"
         },
         {
             "name": "lara-zeus/thunder",
