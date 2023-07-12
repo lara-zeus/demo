@@ -25,13 +25,14 @@
         "lara-zeus/rain": "^1.1",
         "lara-zeus/rhea": "^1.0",
         "lara-zeus/sky": "^2.4",
-        "lara-zeus/wind": "^2.4",
         "lara-zeus/thunder": "^1.0",
+        "lara-zeus/wind": "^2.4",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
         "ryangjchandler/blade-tabler-icons": "^2.0",
         "sentry/sentry-laravel": "^3.3",
         "still-code/signature": "dev-main",
+        "torchlight/torchlight-laravel": "^0.5.13",
         "yepsua/filament-rating-field": "^0.1.0"
     },
     "require-dev": {
