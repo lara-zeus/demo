@@ -3,7 +3,7 @@
             justify-start gap-2">
     <x-heroicon-o-exclamation class="w-6 h-6 text-amber-500 dark:text-amber-300" />
     <div class="w-full">
-        <span class="font-semibold">FYI:</span>
+        <span class="font-semibold">BTW:</span>
         <pre><x-torchlight-code language='php'>
         DB::migrate("fresh")->weekly()->days([0,2,4])->at("4:04")
         </x-torchlight-code></pre>

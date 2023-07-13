@@ -3664,16 +3664,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "1.2.9",
+            "version": "1.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "caf305e025fdc7bdc9a09a71905ee32ca71c364c"
+                "reference": "1f0023191d5666f35f85e97a830ddb27c4feda2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/caf305e025fdc7bdc9a09a71905ee32ca71c364c",
-                "reference": "caf305e025fdc7bdc9a09a71905ee32ca71c364c",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/1f0023191d5666f35f85e97a830ddb27c4feda2b",
+                "reference": "1f0023191d5666f35f85e97a830ddb27c4feda2b",
                 "shasum": ""
             },
             "require": {
@@ -3682,7 +3682,8 @@
                 "filament/spatie-laravel-translatable-plugin": "^2.0",
                 "guava/filament-icon-picker": "^1.3",
                 "lara-zeus/core": "^2.4",
-                "php": "^8.0"
+                "php": "^8.0",
+                "webbingbrasil/filament-copyactions": "^1.1"
             },
             "require-dev": {
                 "laravel/pint": "^1.0",
@@ -3741,7 +3742,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/1.2.9"
+                "source": "https://github.com/lara-zeus/bolt/tree/1.2.10"
             },
             "funding": [
                 {
@@ -3749,7 +3750,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-12T12:59:32+00:00"
+            "time": "2023-07-13T23:22:38+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -4094,16 +4095,16 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "1.0.12",
+            "version": "1.0.13",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "378ffc662c6c8500cc935f2cfc858efd033e3670"
+                "reference": "4ccd69e4fc8d86f3211c577b461e5afe00dab697"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/378ffc662c6c8500cc935f2cfc858efd033e3670",
-                "reference": "378ffc662c6c8500cc935f2cfc858efd033e3670",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/4ccd69e4fc8d86f3211c577b461e5afe00dab697",
+                "reference": "4ccd69e4fc8d86f3211c577b461e5afe00dab697",
                 "shasum": ""
             },
             "require": {
@@ -4189,7 +4190,7 @@
                 "tickets"
             ],
             "support": {
-                "source": "https://github.com/lara-zeus/thunder/tree/1.0.12",
+                "source": "https://github.com/lara-zeus/thunder/tree/1.0.13",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -4198,7 +4199,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-07-12T13:11:06+00:00"
+            "time": "2023-07-13T23:27:44+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -7433,12 +7434,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atmonshi/filament-navigation.git",
-                "reference": "7e1f0cb04ef3bde1801c040723bb68a0a3133743"
+                "reference": "d8f9dee8c4781fa0583486dc5580282af8655e89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atmonshi/filament-navigation/zipball/7e1f0cb04ef3bde1801c040723bb68a0a3133743",
-                "reference": "7e1f0cb04ef3bde1801c040723bb68a0a3133743",
+                "url": "https://api.github.com/repos/atmonshi/filament-navigation/zipball/d8f9dee8c4781fa0583486dc5580282af8655e89",
+                "reference": "d8f9dee8c4781fa0583486dc5580282af8655e89",
                 "shasum": ""
             },
             "require": {
@@ -7524,7 +7525,7 @@
                     "url": "https://github.com/ryangjchandler"
                 }
             ],
-            "time": "2023-04-29T15:14:51+00:00"
+            "time": "2023-07-13T12:57:29+00:00"
         },
         {
             "name": "sabberworm/php-css-parser",
@@ -11823,6 +11824,60 @@
             "time": "2022-03-08T17:03:00+00:00"
         },
         {
+            "name": "webbingbrasil/filament-copyactions",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webbingbrasil/filament-copyactions.git",
+                "reference": "e744ea5f29c2c8878a504dfa825d30eaf926021c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webbingbrasil/filament-copyactions/zipball/e744ea5f29c2c8878a504dfa825d30eaf926021c",
+                "reference": "e744ea5f29c2c8878a504dfa825d30eaf926021c",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^2.16",
+                "php": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Webbingbrasil\\FilamentCopyActions\\FilamentCopyActionsProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webbingbrasil\\FilamentCopyActions\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Danilo Andrade",
+                    "email": "danilo@webbingbrasil.com.br",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A easy-to-use copy actions for Filament Admin.",
+            "homepage": "https://github.com/webbingbrasil/filament-copyactions",
+            "keywords": [
+                "filament",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/webbingbrasil/filament-copyactions/issues",
+                "source": "https://github.com/webbingbrasil/filament-copyactions/tree/1.1.2"
+            },
+            "time": "2023-04-20T22:05:14+00:00"
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.11.0",
             "source": {
@@ -12556,16 +12611,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.15.2",
+            "version": "2.15.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "aac9304c5ed61bf7b1b7a6064bf9806ab842ce73"
+                "reference": "c83e88a30524f9360b11f585f71e6b17313b7187"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/aac9304c5ed61bf7b1b7a6064bf9806ab842ce73",
-                "reference": "aac9304c5ed61bf7b1b7a6064bf9806ab842ce73",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/c83e88a30524f9360b11f585f71e6b17313b7187",
+                "reference": "c83e88a30524f9360b11f585f71e6b17313b7187",
                 "shasum": ""
             },
             "require": {
@@ -12615,7 +12670,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.15.2"
+                "source": "https://github.com/filp/whoops/tree/2.15.3"
             },
             "funding": [
                 {
@@ -12623,7 +12678,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-12T12:00:00+00:00"
+            "time": "2023-07-13T12:00:00+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
