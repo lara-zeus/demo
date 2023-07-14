@@ -22,6 +22,19 @@ class SkySeeder extends Seeder
             ->count(15)
             ->create();
 
+        Post::create([
+            'user_id' => 1,
+            'title' => 'Embed a Form',
+            'slug' => 'embed-form',
+            'description' => "this is an example of an embed form from bolt",
+            'content' => "<p>This is a form</p><p></p><p>&lt;bolt&gt;feedback&lt;/bolt&gt;</p><p></p><p></p>",
+            'published_at' => now(),
+            'sticky_until' => null,
+            'status' => 'publish',
+            'post_type' => 'post',
+            'featured_image' => 'https://picsum.photos/1200/1300?random=404',
+        ]);
+
         foreach (Post::all() as $post) { // loop through all posts
             $random_tags = Tag::all()->random(1)->first()->name;
             $post->syncTagsWithType([$random_tags], 'category');

@@ -12,8 +12,6 @@ class RainSeeder extends Seeder
      */
     public function run()
     {
-
-        //{"headerColumn":[{"type":"paragraph","data":{"title":null,"sort":1,"widget":"LaraZeus\\Rain\\Widgets\\Classes\\HeadingWidget","content":"no title top column content"}},{"type":"Menu","data":{"menu_slug":"nav-menu","menu_dir":"horizontal","title":null,"sort":1,"widget":"LaraZeus\\Rain\\Widgets\\Classes\\MenuWidget"}}],"rightColumn":[{"type":"paragraph","data":{"title":"left column","sort":1,"widget":"LaraZeus\\Rain\\Widgets\\Classes\\HeadingWidget","content":"left column"}}],"middleColumn":[{"type":"image","data":{"title":null,"sort":1,"widget":"LaraZeus\\Rain\\Widgets\\Classes\\ImageWidget","url":"widgets\/wHolBt7bwoaJytec3Snc9f10MloRVf-metac2h1YmhhbS1kaGFnZS00dTdWekRnTmdMSS11bnNwbGFzaC5qcGc=-.jpg","alt":"alt"}}],"leftColumn":[{"type":"paragraph","data":{"title":"right column","sort":1,"widget":"LaraZeus\\Rain\\Widgets\\Classes\\HeadingWidget","content":"right column"}}],"footerColumn":[{"type":"paragraph","data":{"title":null,"sort":1,"widget":"LaraZeus\\Rain\\Widgets\\Classes\\HeadingWidget","content":"no title bottom column content"}}]}
         DB::table('layouts')
             ->insertGetId([
                 'user_id' => 1,
