@@ -1,14 +1,33 @@
 <x-filament::widget>
     <x-filament::card>
-        <h2 class="font-bold text-xl">🔥 welcome to @zeus demo</h2>
+        <h2 class="font-bold text-xl">🔥 Welcome to @zeus Demo App</h2>
         <p>
-            this admin board will include a demo for all zeus packages.
+            this admin panel will include a demo for all zeus packages.
             feel free to look around before start using.
         </p>
-        <p class="text-lg">📖 to learn more:</p>
-        <ul class="pl-3">
-            <li><a href="https://larazeus.com/docs" class="text-gray-800 hover:text-primary-500 transition ease-in-out" target="_blank">⚡️ Zeus Documentation</a></li>
-            <li><a href="https://github.com/lara-zeus" class="text-gray-800 hover:text-primary-500 transition ease-in-out" target="_blank">⚡️ Zeus Github page</a></li>
-        </ul>
+        <p class="font-bold text-lg">📖 Learn More About @zeus:</p>
+
+        <x-list.index>
+            <x-list.item url="https://larazeus.com">
+                ⚡️ Zeus Website
+            </x-list.item>
+
+            <x-list.item url="https://larazeus.com/blog">
+                ⚡️ Zeus Blog
+            </x-list.item>
+
+            <x-list.item url="https://larazeus.com/docs">
+                ⚡️ Zeus Documentation
+            </x-list.item>
+
+            <x-list.item url="https://github.com/lara-zeus">
+                ⚡️ Zeus On Github
+            </x-list.item>
+
+            <x-list.item url="https://twitter.com/larazeus">
+                ⚡️ Zeus On Twitter
+            </x-list.item>
+        </x-list.index>
+
     </x-filament::card>
 </x-filament::widget>
