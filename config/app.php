@@ -100,6 +100,8 @@ return [
         'ar' => ['name' => 'Arabic', 'native' => 'العربية', 'regional' => 'ar_AE'],
     ],
 
+    'repos' => ['wind', 'sky', 'bolt', 'rain', 'rhea', 'zeus'], //thunder
+
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
