@@ -19,7 +19,9 @@ class Rating extends FieldsContract
     public static function getOptions(): array
     {
         return [
-            Toggle::make('options.is_required')->label(__('Is Required')),
+            self::required(),
+            self::htmlID(),
+            self::visibility(),
         ];
     }
 }
