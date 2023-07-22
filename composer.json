@@ -2,17 +2,15 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": [
-        "framework",
-        "laravel"
-    ],
+    "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
         "php": "^8.1",
         "andreiio/blade-iconoir": "^2.5",
         "andreiio/blade-remix-icon": "^1.2",
         "archtechx/laravel-seo": "^0.7",
-        "awcodes/filament-tiptap-editor": "^2.6",
+        "awcodes/filament-tiptap-editor": "^3.0",
+        "filament/filament": "^3.6",
         "codeat3/blade-akar-icons": "^1.21",
         "codeat3/blade-carbon-icons": "^2.13",
         "codeat3/blade-clarity-icons": "^1.8",
@@ -21,21 +19,20 @@
         "garygreen/pretty-routes": "^1.0",
         "graham-campbell/github": "^12.2",
         "guzzlehttp/guzzle": "^7.5",
-        "ibrahimbougaoua/filament-menu-scroll-fix": "^1.0",
         "jeremykenedy/laravel-packagist": "^1.0",
-        "lara-zeus/bolt": "^1.2",
-        "lara-zeus/rain": "^1.1",
-        "lara-zeus/rhea": "^1.0",
-        "lara-zeus/sky": "^2.4",
-        "lara-zeus/thunder": "^1.0",
-        "lara-zeus/wind": "^2.4",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
         "ryangjchandler/blade-tabler-icons": "^2.0",
         "sentry/sentry-laravel": "^3.3",
         "still-code/signature": "dev-main",
         "torchlight/torchlight-laravel": "^0.5.13",
-        "yepsua/filament-rating-field": "^0.1.0"
+        "lara-zeus/wind": "3.x-dev",
+        "lara-zeus/sky": "3.x-dev",
+        "lara-zeus/bolt": "2.x-dev",
+        "lara-zeus/thunder": "2.x-dev",
+        "lara-zeus/rain": "2.x-dev",
+        "lara-zeus/rhea": "2.x-dev",
+        "lara-zeus/artemis": "1.x-dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -44,16 +41,15 @@
         "laravel/sail": "^1.0.1",
         "laravel/tinker": "^2.7",
         "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^6.1",
+        "nunomaduro/collision": "^7.2",
         "nunomaduro/larastan": "^2.0",
-        "pestphp/pest": "^1.21",
-        "pestphp/pest-plugin-laravel": "^1.1",
-        "pestphp/pest-plugin-livewire": "^1.0",
-        "pestphp/pest-plugin-parallel": "^0.3",
+        "pestphp/pest": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.x-dev",
+        "pestphp/pest-plugin-livewire": "^2.x-dev",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
-        "phpunit/phpunit": "^9.5",
+        "phpunit/phpunit": "^10.0",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
@@ -71,7 +67,8 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
+            "@php artisan package:discover --ansi",
+            "@php artisan filament:upgrade"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
@@ -110,6 +107,10 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/laravel-comments.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/artemis.git"
         },
         {
             "type": "github",

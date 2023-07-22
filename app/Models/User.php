@@ -4,13 +4,14 @@ namespace App\Models;
 
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasAvatar;
+use Filament\Panel;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable implements FilamentUser, HasAvatar
+class User extends Authenticatable implements FilamentUser
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -44,7 +45,7 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
         'email_verified_at' => 'datetime',
     ];
 
-    public function canAccessFilament(): bool
+    public function canAccessPanel(Panel $panel): bool
     {
         return true;
     }
@@ -54,10 +55,5 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
         return Attribute::make(
             get: fn () => $this->getFilamentAvatarUrl(),
         );
-    }
-
-    public function getFilamentAvatarUrl(): ?string
-    {
-        return 'https://secure.gravatar.com/avatar/'.md5(strtolower(trim($this->email)));
     }
 }

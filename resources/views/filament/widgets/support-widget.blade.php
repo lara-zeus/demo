@@ -1,4 +1,4 @@
-<x-filament::widget>
+<x-filament-widgets::widget>
     <x-filament::card class="space-y-4">
         <h2 class="font-bold text-xl">📢 Help me keep @zeus going</h2>
         <p>
@@ -28,4 +28,4 @@
         </x-list.index>
 
     </x-filament::card>
-</x-filament::widget>
+</x-filament-widgets::widget>

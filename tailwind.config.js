@@ -1,17 +1,15 @@
 const colors = require('tailwindcss/colors')
+import preset from './vendor/filament/filament/tailwind.config.preset'
 
 module.exports = {
+    presets: [preset],
     content: [
         "./resources/**/*.blade.php",
+
+        './vendor/lara-zeus/**/*.blade.php',
+        './app/Filament/**/*.php',
+        './resources/views/filament/**/*.blade.php',
         './vendor/filament/**/*.blade.php',
-        './vendor/lara-zeus/*/resources/views/**/*.blade.php',
-        './vendor/lara-zeus/wind/resources/views/**/*.blade.php',
-        './vendor/lara-zeus/sky/resources/views/**/*.blade.php',
-        './vendor/lara-zeus/bolt/resources/views/**/*.blade.php',
-        './vendor/lara-zeus/thunder/resources/views/**/*.blade.php',
-        './vendor/lara-zeus/artemis/resources/views/**/*.blade.php',
-        './vendor/lara-zeus/rain/resources/views/**/*.blade.php',
-        './vendor/lara-zeus/rhea/resources/views/**/*.blade.php',
     ],
     darkMode: 'class',
     theme: {
@@ -33,7 +31,5 @@ module.exports = {
     },
     plugins: [
         require('tailwindcss-debug-screens'),
-        require('@tailwindcss/forms'),
-        require('@tailwindcss/typography'),
     ],
 }

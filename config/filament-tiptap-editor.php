@@ -61,7 +61,7 @@ return [
     |
     | See: https://tiptap.dev/guide/output
     */
-    'output' => FilamentTiptapEditor\TiptapEditor::OUTPUT_HTML,
+    'output' => \FilamentTiptapEditor\Enums\TiptapOutput::Html,
 
     /*
     |--------------------------------------------------------------------------

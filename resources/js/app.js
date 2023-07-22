@@ -1,6 +1,6 @@
 import Alpine from 'alpinejs'
-import FormsAlpinePlugin from '../../vendor/filament/forms/dist/module.esm'
-import NotificationsAlpinePlugin from '../../vendor/filament/notifications/dist/module.esm'
+import FormsAlpinePlugin from '../../vendor/filament/forms/dist/index'
+import NotificationsAlpinePlugin from '../../vendor/filament/notifications/dist/index'
 import AlpineFloatingUI from '@awcodes/alpine-floating-ui'
 import Focus from "@alpinejs/focus"; // optional unless you want to use x-trap
 

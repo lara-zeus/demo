@@ -1,4 +1,4 @@
-<x-filament::widget>
+<x-filament-widgets::widget>
     <x-filament::card>
         <h2 class="font-bold text-xl">🔥 Welcome to @zeus Demo App</h2>
         <p>
@@ -30,4 +30,4 @@
         </x-list.index>
 
     </x-filament::card>
-</x-filament::widget>
+</x-filament-widgets::widget>
