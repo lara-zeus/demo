@@ -173,7 +173,7 @@
                    class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
                     {{ __('Library') }}
                 </a>
-                <x-filament-support::hr/>
+                <hr/>
                 <a href="{{ url('/bolt') }}"
                    class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
                     All Forms
@@ -182,7 +182,7 @@
                    class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
                     My Entries
                 </a>
-                <x-filament-support::hr/>
+                <hr/>
                 <a href="{{ url('/thunder') }}"
                    class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
                     All Tickets
@@ -191,7 +191,7 @@
                    class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
                     My Tickets
                 </a>
-                <x-filament-support::hr/>
+                <hr/>
                 <a href="{{ url('/admin') }}"
                    class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
                     {{ __('Admin Panel') }}

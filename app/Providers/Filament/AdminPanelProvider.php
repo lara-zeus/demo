@@ -8,6 +8,7 @@ use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Pages;
 use Filament\Panel;
 use Filament\PanelProvider;
+use Filament\SpatieLaravelTranslatablePlugin;
 use Filament\Support\Colors\Color;
 use Filament\Widgets;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
@@ -58,6 +59,7 @@ class AdminPanelProvider extends PanelProvider
             ->plugin(new RainPlugin())
             ->plugin(new RheaPlugin())
             ->plugin(new ThunderPlugin())
+            ->plugin(new SpatieLaravelTranslatablePlugin())
 
             ->renderHook(
                 'zeus-forms.before',
@@ -89,7 +91,7 @@ class AdminPanelProvider extends PanelProvider
                 'footer.after',
                 fn(): View => view('filament.hooks.footer'),
             )
-            ->theme(asset('css/app.css'))
+           // ->theme(asset('css/app.css'))
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
                 Widgets\AccountWidget::class,

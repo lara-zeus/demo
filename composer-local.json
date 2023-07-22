@@ -25,6 +25,18 @@
         {
             "type": "path",
             "url": "../thunder"
+        },
+        {
+            "type": "path",
+            "url": "../rain"
+        },
+        {
+            "type": "path",
+            "url": "../artemis"
+        },
+        {
+            "type": "path",
+            "url": "../rhea"
         }
     ]
 }

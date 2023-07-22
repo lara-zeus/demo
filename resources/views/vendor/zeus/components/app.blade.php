@@ -17,11 +17,10 @@
             href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=KoHo:ital,wght@0,200;0,300;0,500;0,700;1,200;1,300;1,600;1,700&display=swap"
             rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset('vendor/zeus/frontend.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-
     @livewireStyles
+    @filamentStyles
     @stack('styles')
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     <style>
         * {
@@ -63,6 +62,7 @@
 <div class="container mx-auto py-10">
     {{ $slot }}
 </div>
+
 @php
     $urls = [
         'wind'=>'lara-zeus/wind',
@@ -84,9 +84,8 @@
     @endif
 </footer>
 
-<script src="{{ asset('vendor/zeus/app.js') }}" defer></script>
-
 @stack('scripts')
+@filamentScripts
 @livewireScripts
 @livewire('notifications')
 
