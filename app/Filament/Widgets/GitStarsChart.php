@@ -10,7 +10,7 @@ class GitStarsChart extends LineChartWidget
 {
     protected static ?string $heading = 'Github Repositories Stats';
 
-    protected int | string | array $columnSpan = 'full';
+    protected int|string|array $columnSpan = 'full';
 
     protected static ?string $maxHeight = '200px';
 

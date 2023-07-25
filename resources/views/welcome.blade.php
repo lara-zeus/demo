@@ -29,8 +29,8 @@
 
     <div class="sm:my-32 my-10 mx-8 group">
         <div class="flex items-center justify-start gap-2">
-            <x-iconoir-left-round-arrow class="rtl:hidden w-9 h-9 text-secondary-600"/>
-            <x-iconoir-right-round-arrow class="ltr:hidden w-9 h-9 text-secondary-600"/>
+            @svg('iconoir-left-round-arrow','rtl:hidden w-9 h-9 text-secondary-600')
+            @svg('iconoir-right-round-arrow','ltr:hidden w-9 h-9 text-secondary-600')
             <a href="https://larazeus.com/" class="text-gray-700 dark:text-gray-100 text-lg transition ease-in-out underline decoration-wavy underline-offset-4 decoration-primary-600 hover:decoration-secondary-500">Back To @zeus Site</a>
         </div>
     </div>

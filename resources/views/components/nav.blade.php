@@ -10,8 +10,7 @@
                 <x-slot name="trigger"
                         class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
                     {{ __('Site') }}
-                    <x-ri-arrow-down-s-fill
-                            class="h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300"/>
+                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
                 </x-slot>
 
                 <x-filament::dropdown.header
@@ -68,8 +67,7 @@
                 <x-slot name="trigger"
                         class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
                     {{ __('Forms') }}
-                    <x-ri-arrow-down-s-fill
-                            class="h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300"/>
+                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
                 </x-slot>
 
                 <x-filament::dropdown.list>
@@ -97,7 +95,7 @@
             <x-filament::dropdown placement="bottom-start" teleport="true">
                 <x-slot name="trigger" class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
                     {{ __('Tickets') }}
-                    <x-ri-arrow-down-s-fill class="h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300"/>
+                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
                 </x-slot>
 
                 <x-filament::dropdown.list>

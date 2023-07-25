@@ -7,8 +7,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon/favicon-32x32.png') }}">
@@ -33,7 +31,9 @@
     @endphp
 
     <x-seo::meta />
+
     @livewireStyles
+    @filamentStyles
     <style>
         [x-cloak=""], [x-cloak="x-cloak"], [x-cloak="1"] { display: none !important; }
         @media (max-width: 1023px) { [x-cloak="-lg"] { display: none !important; } }
@@ -43,9 +43,11 @@
             .bord {border: solid 1px crimson}
         @endif
     </style>
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 
 <body class="bg-gray-50 dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
+
 <div x-data class="inset-0 min-h-screen flex items-center justify-center">
     <div class="container mx-auto">
         {{ $slot }}
@@ -53,6 +55,7 @@
 </div>
 
 @livewireScripts
+@filamentScripts
 @stack('scripts')
 @stillStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
 <script>

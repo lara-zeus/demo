@@ -26,8 +26,8 @@ class SkySeeder extends Seeder
             'user_id' => 1,
             'title' => 'Embed a Form',
             'slug' => 'embed-form',
-            'description' => "this is an example of an embed form from bolt",
-            'content' => "<p>This is a form</p><p></p><p>&lt;bolt&gt;feedback&lt;/bolt&gt;</p><p></p><p></p>",
+            'description' => 'this is an example of an embed form from bolt',
+            'content' => '<p>This is a form</p><p></p><p>&lt;bolt&gt;feedback&lt;/bolt&gt;</p><p></p><p></p>',
             'published_at' => now(),
             'sticky_until' => null,
             'status' => 'publish',
@@ -53,7 +53,7 @@ class SkySeeder extends Seeder
         $faq->syncTagsWithType([$faqTag], 'faq');
 
         config('zeus-sky.models.tag')::create([
-            'name' => ['en' => 'support docs', 'ar' => 'الدعم الفني'], 'type' => 'library'
+            'name' => ['en' => 'support docs', 'ar' => 'الدعم الفني'], 'type' => 'library',
         ]);
         config('zeus-sky.models.tag')::create(['name' => ['en' => 'how to', 'ar' => 'كيف'], 'type' => 'library']);
 
@@ -96,7 +96,7 @@ class SkySeeder extends Seeder
                         'target' => null,
                     ],
                     'children' => [],
-                ]
+                ],
             ],
         ]);
     }

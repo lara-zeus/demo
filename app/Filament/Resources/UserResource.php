@@ -7,6 +7,7 @@ use App\Models\User;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
+use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
@@ -75,6 +76,9 @@ class UserResource extends Resource
                 TextColumn::make('updated_at')
                     ->dateTime('M j, Y')
                     ->sortable(),
+            ])
+            ->actions([
+                EditAction::make()
             ])
             ->filters([
                 Filter::make('verified')

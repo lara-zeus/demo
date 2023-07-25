@@ -16,7 +16,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('migrate:fresh --seed --force --quiet')
             ->weekly()
-            ->days([0,2,4])
+            ->days([0, 2, 4])
             ->at('4:00');
     }
 

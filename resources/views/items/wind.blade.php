@@ -1,6 +1,6 @@
 <x-item>
     @slot('title')
-        <x-ri-windy-line class="h-10 w-10 text-secondary-600 sm:-mt-4"/>
+        @svg('ri-windy-line','h-10 w-10 text-secondary-600 sm:-mt-4')
         <span class="text-primary-600">Wind</span>
     @endslot
     @slot('desc')

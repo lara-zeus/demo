@@ -2,7 +2,6 @@
 
 namespace App\Zeus\Fields;
 
-use Filament\Forms\Components\Toggle;
 use LaraZeus\Bolt\Fields\FieldsContract;
 
 class Rating extends FieldsContract

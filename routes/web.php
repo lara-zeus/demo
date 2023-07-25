@@ -26,5 +26,6 @@ Route::view('embed', 'embed');
 Route::get('lang/{lang}', function ($lang) {
     session()->put('current_lang', $lang);
     app()->setLocale($lang);
+
     return redirect()->back();
 });

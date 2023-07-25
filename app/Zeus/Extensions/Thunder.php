@@ -20,7 +20,7 @@ class Thunder implements Extension
         // return [];
     }
 
-    public function render(Form $form, array $data): string|null
+    public function render(Form $form, array $data): ?string
     {
         // set any data and pas it to your view
         // $data['items'] = ...
@@ -28,14 +28,14 @@ class Thunder implements Extension
         // return view();
     }
 
-    public function formComponents(Form $form): array|null
+    public function formComponents(Form $form): ?array
     {
         return [
             TextInput::make('extensions.order_number'),
         ];
     }
 
-    public function store(Form $form, array $data): array|null
+    public function store(Form $form, array $data): ?array
     {
         /*$model = Model::create([
             'order_number' => $data['order_number'],
@@ -54,7 +54,7 @@ class Thunder implements Extension
         // fire some events
     }
 
-    public function SubmittedRender(Form $form, array $data): string|null
+    public function SubmittedRender(Form $form, array $data): ?string
     {
         // return view()->with('data', $data);
     }

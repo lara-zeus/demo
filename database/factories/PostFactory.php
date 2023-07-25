@@ -25,7 +25,7 @@ class PostFactory extends Factory
             'published_at' => now()->subDays(2),
             'sticky_until' => $this->faker->randomElement([now()->addWeek(), null, null]),
             'status' => $this->faker->randomElement([
-                'publish', 'future', 'publish', 'draft', 'publish', 'private', 'publish', 'publish', 'publish'
+                'publish', 'future', 'publish', 'draft', 'publish', 'private', 'publish', 'publish', 'publish',
             ]), // , 'future', 'draft', 'private'
             'post_type' => $this->faker->randomElement(['page', 'post']),
             'featured_image' => 'https://picsum.photos/1200/1300?random='.$this->faker->randomNumber(),

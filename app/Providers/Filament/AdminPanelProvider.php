@@ -11,6 +11,7 @@ use Filament\PanelProvider;
 use Filament\SpatieLaravelTranslatablePlugin;
 use Filament\Support\Colors\Color;
 use Filament\Widgets;
+use Illuminate\Contracts\View\View;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -18,13 +19,13 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-use Illuminate\View\View;
 use LaraZeus\Bolt\BoltPlugin;
 use LaraZeus\Rain\RainPlugin;
 use LaraZeus\Rhea\RheaPlugin;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\WindPlugin;
+use RyanChandler\FilamentNavigation\FilamentNavigationPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -36,7 +37,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::Sky,
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -44,6 +45,19 @@ class AdminPanelProvider extends PanelProvider
                 Pages\Dashboard::class,
             ])
             ->sidebarCollapsibleOnDesktop()
+            ->plugin(
+                SpatieLaravelTranslatablePlugin::make()
+                    ->defaultLocales(['en', 'ar', 'fr'])
+            )
+            ->plugin(FilamentNavigationPlugin::make())
+
+            //->plugin(WindPlugin::make())
+            ->plugin(SkyPlugin::make())
+            //->plugin(BoltPlugin::make())
+            //->plugin(ThunderPlugin::make())
+            //->plugin(RainPlugin::make())
+            //->plugin(RheaPlugin::make())
+
             ->navigationGroups([
                 'App',
                 'Wind',
@@ -53,45 +67,38 @@ class AdminPanelProvider extends PanelProvider
                 'Rain',
                 'Rhea',
             ])
-            ->plugin(new WindPlugin())
-            ->plugin(new SkyPlugin())
-            ->plugin(new BoltPlugin())
-            ->plugin(new RainPlugin())
-            ->plugin(new RheaPlugin())
-            ->plugin(new ThunderPlugin())
-            ->plugin(new SpatieLaravelTranslatablePlugin())
 
             ->renderHook(
                 'zeus-forms.before',
-                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
+                fn (): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
             )
             ->renderHook(
                 'zeus-forms.after',
-                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.after']),
+                fn (): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.after']),
             )
             ->renderHook(
                 'zeus-form.before',
-                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-form.before']),
+                fn (): View => view('filament.hooks.placeholder', ['data' => 'zeus-form.before']),
             )
             ->renderHook(
                 'zeus-form.after',
-                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-form.after']),
+                fn (): View => view('filament.hooks.placeholder', ['data' => 'zeus-form.after']),
+            )
+            ->renderHook(
+                'content.start',
+                fn (): View => view('filament.hooks.db-notice'),
             )
 
             ->renderHook(
-                'content.start',
-                fn(): View => view('filament.hooks.db-notice'),
-            )
-            // todo
-            /*->renderHook(
                 'global-search.end',
-                fn(): View => view('filament.hooks.lang-switcher'),
-            )*/
+                fn (): View => view('filament.hooks.lang-switcher'),
+            )
+
             ->renderHook(
                 'footer.after',
-                fn(): View => view('filament.hooks.footer'),
+                fn (): View => view('filament.hooks.footer'),
             )
-           // ->theme(asset('css/app.css'))
+            //->theme(asset('css/app.css'))
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
                 Widgets\AccountWidget::class,
