@@ -45,19 +45,16 @@ class AdminPanelProvider extends PanelProvider
                 Pages\Dashboard::class,
             ])
             ->sidebarCollapsibleOnDesktop()
-            ->plugin(
+            ->plugins([
                 SpatieLaravelTranslatablePlugin::make()
-                    ->defaultLocales(['en', 'ar', 'fr'])
-            )
-            ->plugin(FilamentNavigationPlugin::make())
-
-            //->plugin(WindPlugin::make())
-            ->plugin(SkyPlugin::make())
-            //->plugin(BoltPlugin::make())
-            //->plugin(ThunderPlugin::make())
-            //->plugin(RainPlugin::make())
-            //->plugin(RheaPlugin::make())
-
+                    ->defaultLocales(['en', 'ar', 'fr']),
+                WindPlugin::make(),
+                SkyPlugin::make(),
+                ThunderPlugin::make(),
+                RainPlugin::make(),
+                RheaPlugin::make(),
+                FilamentNavigationPlugin::make(),
+            ])
             ->navigationGroups([
                 'App',
                 'Wind',
@@ -67,36 +64,33 @@ class AdminPanelProvider extends PanelProvider
                 'Rain',
                 'Rhea',
             ])
-
             ->renderHook(
                 'zeus-forms.before',
-                fn (): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
+                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
             )
             ->renderHook(
                 'zeus-forms.after',
-                fn (): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.after']),
+                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.after']),
             )
             ->renderHook(
                 'zeus-form.before',
-                fn (): View => view('filament.hooks.placeholder', ['data' => 'zeus-form.before']),
+                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-form.before']),
             )
             ->renderHook(
                 'zeus-form.after',
-                fn (): View => view('filament.hooks.placeholder', ['data' => 'zeus-form.after']),
+                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-form.after']),
             )
             ->renderHook(
                 'content.start',
-                fn (): View => view('filament.hooks.db-notice'),
+                fn(): View => view('filament.hooks.db-notice'),
             )
-
             ->renderHook(
                 'global-search.end',
-                fn (): View => view('filament.hooks.lang-switcher'),
+                fn(): View => view('filament.hooks.lang-switcher'),
             )
-
             ->renderHook(
                 'footer.after',
-                fn (): View => view('filament.hooks.footer'),
+                fn(): View => view('filament.hooks.footer'),
             )
             //->theme(asset('css/app.css'))
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')

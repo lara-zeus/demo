@@ -78,7 +78,7 @@ class UserResource extends Resource
                     ->sortable(),
             ])
             ->actions([
-                EditAction::make()
+                EditAction::make(),
             ])
             ->filters([
                 Filter::make('verified')
