@@ -1,6 +1,6 @@
 <x-item>
     @slot('title')
-        <x-carbon-rain-heavy class="h-10 w-10 text-secondary-600 sm:-mt-4"/>
+        @svg('carbon-rain-heavy','h-10 w-10 text-secondary-600 sm:-mt-4')
         <span class="text-primary-600">Rain</span>
     @endslot
     @slot('desc')

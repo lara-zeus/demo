@@ -38,8 +38,8 @@ module.exports = {
             },*/
             colors: {
                 gray: colors.stone,
-                primary: colors.emerald,
-                //custom: colors.pink,
+                primary: colors.green,
+                custom: colors.yellow,
                 secondary: colors.yellow,
                 danger: colors.red,
                 success: colors.green,

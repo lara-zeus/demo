@@ -1,6 +1,6 @@
 <x-item>
     @slot('title')
-        <x-tabler-bow class="h-10 w-10 text-secondary-600 sm:-mt-4"/>
+        @svg('tabler-bow','h-10 w-10 text-secondary-600 sm:-mt-4')
         <span class="text-primary-600">Rhea</span>
     @endslot
     @slot('desc')

@@ -1,6 +1,6 @@
 <x-item>
     @slot('title')
-        <x-akar-thunder class="h-10 w-10 text-secondary-600 sm:-mt-4"/>
+        @svg('akar-thunder','h-10 w-10 text-secondary-600 sm:-mt-4')
         <span class="text-primary-600">Bolt</span>
     @endslot
     @slot('desc')

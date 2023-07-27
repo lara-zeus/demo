@@ -50,6 +50,7 @@ class AdminPanelProvider extends PanelProvider
                     ->defaultLocales(['en', 'ar', 'fr']),
                 WindPlugin::make(),
                 SkyPlugin::make(),
+                BoltPlugin::make(),
                 ThunderPlugin::make(),
                 RainPlugin::make(),
                 RheaPlugin::make(),

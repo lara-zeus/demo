@@ -26,7 +26,7 @@
                 <x-filament::dropdown.list>
                     <x-filament::dropdown.list.item
                             class="dark:text-gray-200 text-gray-700"
-                            :color="'secondary'"
+                            :color="'gray'"
                             :icon="'iconpark-dot'"
                             :href="url('sky')"
                             tag="a"
@@ -35,7 +35,7 @@
                     </x-filament::dropdown.list.item>
                     <x-filament::dropdown.list.item
                             class="dark:text-gray-200 text-gray-700"
-                            :color="'secondary'"
+                            :color="'gray'"
                             :icon="'iconpark-dot'"
                             :href="url('sky/faq')"
                             tag="a"
@@ -44,7 +44,7 @@
                     </x-filament::dropdown.list.item>
                     <x-filament::dropdown.list.item
                             class="dark:text-gray-200 text-gray-700"
-                            :color="'secondary'"
+                            :color="'gray'"
                             :icon="'iconpark-dot'"
                             :href="url('sky/library')"
                             tag="a"
@@ -53,7 +53,7 @@
                     </x-filament::dropdown.list.item>
                     <x-filament::dropdown.list.item
                             class="dark:text-gray-200 text-gray-700"
-                            :color="'secondary'"
+                            :color="'gray'"
                             :icon="'iconpark-dot'"
                             :href="url('wind/contact-us')"
                             tag="a"
@@ -73,7 +73,7 @@
                 <x-filament::dropdown.list>
                     <x-filament::dropdown.list.item
                             class="dark:text-gray-200 text-gray-700"
-                            :color="'secondary'"
+                            :color="'gray'"
                             :icon="'iconpark-dot'"
                             :href="url('bolt')"
                             tag="a"
@@ -82,7 +82,7 @@
                     </x-filament::dropdown.list.item>
                     <x-filament::dropdown.list.item
                             class="dark:text-gray-200 text-gray-700"
-                            :color="'secondary'"
+                            :color="'gray'"
                             :icon="'iconpark-dot'"
                             :href="url('bolt/entries')"
                             tag="a"
@@ -101,7 +101,7 @@
                 <x-filament::dropdown.list>
                     <x-filament::dropdown.list.item
                             class="dark:text-gray-200 text-gray-700"
-                            :color="'secondary'"
+                            :color="'gray'"
                             :icon="'iconpark-dot'"
                             :href="url('thunder')"
                             tag="a"
@@ -110,7 +110,7 @@
                     </x-filament::dropdown.list.item>
                     <x-filament::dropdown.list.item
                             class="dark:text-gray-200 text-gray-700"
-                            :color="'secondary'"
+                            :color="'gray'"
                             :icon="'iconpark-dot'"
                             :href="url('thunder/tickets')"
                             tag="a"
