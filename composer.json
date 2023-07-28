@@ -7,33 +7,33 @@
     "require": {
         "php": "^8.1",
         "andreiio/blade-iconoir": "^2.5",
-        "andreiio/blade-remix-icon": "^1.2",
         "archtechx/laravel-seo": "^0.7",
         "awcodes/filament-tiptap-editor": "^3.0",
         "codeat3/blade-akar-icons": "^1.21",
         "codeat3/blade-carbon-icons": "^2.13",
-        "filament/spatie-laravel-translatable-plugin": "^3.0@beta",
         "codeat3/blade-clarity-icons": "^1.8",
         "codeat3/blade-iconpark": "^1.5",
         "doctrine/dbal": "^3.0",
+        "filament/spatie-laravel-translatable-plugin": "^3.0@beta",
         "garygreen/pretty-routes": "^1.0",
         "graham-campbell/github": "^12.2",
         "guzzlehttp/guzzle": "^7.5",
         "jeremykenedy/laravel-packagist": "^1.0",
+        "lara-zeus/artemis": "1.x-dev",
+        "lara-zeus/bolt": "2.x-dev",
+        "lara-zeus/rain": "2.x-dev",
+        "lara-zeus/rhea": "2.x-dev",
+        "lara-zeus/sky": "3.x-dev",
+        "lara-zeus/thunder": "2.x-dev",
+        "lara-zeus/wind": "3.x-dev",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
+        "livewire/livewire": "^3.0@beta",
         "ryangjchandler/blade-tabler-icons": "^2.0",
         "sentry/sentry-laravel": "^3.3",
         "still-code/signature": "dev-main",
-        "torchlight/torchlight-laravel": "^0.5.13",
-        "livewire/livewire": "^3.0",
-        "lara-zeus/wind": "3.x-dev",
-        "lara-zeus/sky": "3.x-dev",
-        "lara-zeus/bolt": "2.x-dev",
-        "lara-zeus/thunder": "2.x-dev",
-        "lara-zeus/rain": "2.x-dev",
-        "lara-zeus/rhea": "2.x-dev",
-        "lara-zeus/artemis": "1.x-dev"
+        "andreiio/blade-remix-icon": "^2.3",
+        "torchlight/torchlight-laravel": "^0.5.13"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -105,9 +105,9 @@
             "type": "path",
             "url": "../filament-navigation"
         },
-       {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/laravel-comments.git"
+        {
+            "type": "path",
+            "url": "../laravel-comments"
         },
         {
             "type": "path",

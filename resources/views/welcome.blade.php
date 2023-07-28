@@ -2,6 +2,9 @@
     <div  class="absolute flex justify-start items-center gap-4 top-4 ltr:right-4 rtl:left-4">
         <x-lang-switcher/>
         <x-dark-mode/>
+        <a href="https://github.com/lara-zeus" class="font-semibold leading-6" target="_blank" rel="noreferrer">
+            @svg('ri-github-fill','h-8 w-8 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
+        </a>
     </div>
 
     <div class="text-center py-6 dark:text-gray-100">
@@ -17,7 +20,7 @@
         </span>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 mx-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-4 mx-4">
         @include('items.wind')
         @include('items.sky')
         @include('items.bolt')

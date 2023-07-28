@@ -44,7 +44,7 @@
                     <x-filament::dropdown.list.item
                         class="dark:text-gray-200 text-gray-700"
                         :color="'gray'"
-                        :icon="'iconpark-dot'"
+                        :icon="'heroicon-m-chevron-right'"
                         :href="url('sky')"
                         tag="a"
                     >
@@ -53,7 +53,7 @@
                     <x-filament::dropdown.list.item
                         class="dark:text-gray-200 text-gray-700"
                         :color="'gray'"
-                        :icon="'iconpark-dot'"
+                        :icon="'heroicon-m-chevron-right'"
                         :href="url('sky/faq')"
                         tag="a"
                     >
@@ -62,7 +62,7 @@
                     <x-filament::dropdown.list.item
                         class="dark:text-gray-200 text-gray-700"
                         :color="'gray'"
-                        :icon="'iconpark-dot'"
+                        :icon="'heroicon-m-chevron-right'"
                         :href="url('sky/library')"
                         tag="a"
                     >
@@ -71,7 +71,7 @@
                     <x-filament::dropdown.list.item
                         class="dark:text-gray-200 text-gray-700"
                         :color="'gray'"
-                        :icon="'iconpark-dot'"
+                        :icon="'heroicon-m-chevron-right'"
                         :href="url('wind/contact-us')"
                         tag="a"
                     >
@@ -91,7 +91,7 @@
                     <x-filament::dropdown.list.item
                         class="dark:text-gray-200 text-gray-700"
                         :color="'gray'"
-                        :icon="'iconpark-dot'"
+                        :icon="'heroicon-m-chevron-right'"
                         :href="url('bolt')"
                         tag="a"
                     >
@@ -100,7 +100,7 @@
                     <x-filament::dropdown.list.item
                         class="dark:text-gray-200 text-gray-700"
                         :color="'gray'"
-                        :icon="'iconpark-dot'"
+                        :icon="'heroicon-m-chevron-right'"
                         :href="url('bolt/entries')"
                         tag="a"
                     >
@@ -119,7 +119,7 @@
                     <x-filament::dropdown.list.item
                         class="dark:text-gray-200 text-gray-700"
                         :color="'gray'"
-                        :icon="'iconpark-dot'"
+                        :icon="'heroicon-m-chevron-right'"
                         :href="url('thunder')"
                         tag="a"
                     >
@@ -128,7 +128,7 @@
                     <x-filament::dropdown.list.item
                         class="dark:text-gray-200 text-gray-700"
                         :color="'gray'"
-                        :icon="'iconpark-dot'"
+                        :icon="'heroicon-m-chevron-right'"
                         :href="url('thunder/tickets')"
                         tag="a"
                     >

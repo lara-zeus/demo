@@ -17,6 +17,7 @@ class AppServiceProvider extends ServiceProvider
     {
         FilamentAsset::register([
             Css::make('example-external-stylesheet', asset('css/flag-icons.css')),
+            Css::make('filament-stylesheet', asset('css/filament.css')),
         ]);
     }
 }
