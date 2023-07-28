@@ -5,7 +5,7 @@
     </div>
 
     <div class="text-center py-6 dark:text-gray-100">
-        <img class="h-32 w-auto mx-auto" src="https://larazeus.com/images/zeus-logo.png" alt="Lara-zeus packages">
+        <img class="h-32 w-auto mx-auto" src="{{ asset('images/zeus-logo.png') }}" alt="Lara-zeus packages">
         <p class="text-6xl">@zeus</p>
         <p class="text-xl my-4 title-font">{{ __('Demo app for all') }} @zeus {{ __('Packages') }}</p>
         <span class="title-font mb-4 flex items-center justify-center gap-2 text-xl">

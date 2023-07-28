@@ -44,6 +44,7 @@
         @endif
     </style>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/flag-icons.css') }}">
 </head>
 
 <body class="bg-gray-50 dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">

@@ -20,6 +20,7 @@
     @livewireStyles
     @filamentStyles
     @stack('styles')
+    <link rel="stylesheet" href="{{ asset('vendor/zeus/frontend.css') }}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     <style>
@@ -73,7 +74,7 @@
     ];
     $packageName = (isset($urls[explode('/',request()->path())[0]])) ? $urls[explode('/',request()->path())[0]] : null;
 @endphp
-<footer class="bg-gray-100 dark:bg-gray-800 p-6 mt-20 text-center font-light">
+<footer class="bg-gray-100 dark:bg-gray-800 p-6 pt-20 text-center font-light">
     <a href="https://larazeus.com" target="_blank">
         a gift with ❤️ &nbsp;from @zeus
     </a>

@@ -36,14 +36,12 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+
+            ->theme(asset('css/app.css'))
             ->colors([
-                'primary' => Color::Sky,
+                'primary' => Color::Green,
             ])
-            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
-            ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
-            ->pages([
-                Pages\Dashboard::class,
-            ])
+
             ->sidebarCollapsibleOnDesktop()
             ->plugins([
                 SpatieLaravelTranslatablePlugin::make()
@@ -56,6 +54,7 @@ class AdminPanelProvider extends PanelProvider
                 RheaPlugin::make(),
                 FilamentNavigationPlugin::make(),
             ])
+
             ->navigationGroups([
                 'App',
                 'Wind',
@@ -65,6 +64,7 @@ class AdminPanelProvider extends PanelProvider
                 'Rain',
                 'Rhea',
             ])
+
             ->renderHook(
                 'zeus-forms.before',
                 fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
@@ -93,8 +93,13 @@ class AdminPanelProvider extends PanelProvider
                 'footer.after',
                 fn(): View => view('filament.hooks.footer'),
             )
-            //->theme(asset('css/app.css'))
+
+            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
+            ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
+            ->pages([
+                Pages\Dashboard::class,
+            ])
             ->widgets([
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,

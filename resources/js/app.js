@@ -1,3 +1,4 @@
+/*
 import Alpine from 'alpinejs'
 import FormsAlpinePlugin from '../../vendor/filament/forms/dist/index'
 import NotificationsAlpinePlugin from '../../vendor/filament/notifications/dist/index'
@@ -12,3 +13,4 @@ Alpine.plugin(NotificationsAlpinePlugin)
 window.Alpine = Alpine
 
 Alpine.start()
+*/

@@ -14,16 +14,20 @@
         </x-filament::dropdown.header>
 
         <x-filament::dropdown.list>
-            @foreach(config('app.locales') as $local => $localInfo)
-                <x-filament::dropdown.list.item class="dark:text-gray-200 text-gray-700"
-                    :color="(session('current_lang') === $local) ? 'warning' : 'secondary'"
-                    :icon="'iconpark-dot'"
-                    :href="url('lang/'.$local)"
-                    tag="a"
-                >
-                    {{  $localInfo['native'] }}
-                </x-filament::dropdown.list.item>
-            @endforeach
+            <div class="overflow-y-scroll max-h-56">
+                @foreach(config('app.locales') as $local => $localInfo)
+                    <x-filament::dropdown.list.item
+                        class="font-semibold dark:text-green-200 text-green-700"
+                            :color="(session('current_lang') === $local) ? 'primary' : 'green'"
+                            :icon="'iconpark-dot'"
+                            :href="url('lang/'.$local)"
+                            tag="a"
+                    >
+                        <span class="flag-icons flag-icons-{{ $localInfo['flag'] }}"></span>
+                        {{ str($localInfo['native'])->title() }}
+                    </x-filament::dropdown.list.item>
+                @endforeach
+            </div>
         </x-filament::dropdown.list>
     </x-filament::dropdown>
 </div>

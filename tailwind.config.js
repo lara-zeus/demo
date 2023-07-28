@@ -32,14 +32,9 @@ module.exports = {
     darkMode: 'class',
     theme: {
         extend: {
-            /*fontFamily: {
-                'el-messiri': ['El Messiri', 'sans-serif'],
-                'koho': ['KoHo', 'sans-serif'],
-            },*/
             colors: {
                 gray: colors.stone,
                 primary: colors.green,
-                custom: colors.yellow,
                 secondary: colors.yellow,
                 danger: colors.red,
                 success: colors.green,

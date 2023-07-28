@@ -1,133 +1,10 @@
 <nav class="container mx-auto">
     <div class="flex justify-between px-2">
         <a href="{{ url('/') }}" class="flex items-center gap-2">
-            <img class="w-7" src="https://larazeus.com/images/zeus-logo.png"
+            <img class="w-7" src="{{ asset('images/zeus-logo.png') }}"
                  alt="{{ config('zeus.wind.name', config('app.name', 'Laravel')) }}">
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">@zeus</span>
         </a>
-        <div class="z-50 hidden sm:flex items-center justify-center gap-4">
-            <x-filament::dropdown placement="bottom-start" teleport="true">
-                <x-slot name="trigger"
-                        class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
-                    {{ __('Site') }}
-                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
-                </x-slot>
-
-                <x-filament::dropdown.header
-                        class="dark:text-gray-200 text-gray-700"
-                        :color="'primary'"
-                        :icon="'ri-global-fill'"
-                        :href="'#'"
-                        :tag="'a'"
-                >
-                    Our Site:
-                </x-filament::dropdown.header>
-
-                <x-filament::dropdown.list>
-                    <x-filament::dropdown.list.item
-                            class="dark:text-gray-200 text-gray-700"
-                            :color="'gray'"
-                            :icon="'iconpark-dot'"
-                            :href="url('sky')"
-                            tag="a"
-                    >
-                        {{ __('Blog') }}
-                    </x-filament::dropdown.list.item>
-                    <x-filament::dropdown.list.item
-                            class="dark:text-gray-200 text-gray-700"
-                            :color="'gray'"
-                            :icon="'iconpark-dot'"
-                            :href="url('sky/faq')"
-                            tag="a"
-                    >
-                        {{ __('Faq') }}
-                    </x-filament::dropdown.list.item>
-                    <x-filament::dropdown.list.item
-                            class="dark:text-gray-200 text-gray-700"
-                            :color="'gray'"
-                            :icon="'iconpark-dot'"
-                            :href="url('sky/library')"
-                            tag="a"
-                    >
-                        {{ __('Library') }}
-                    </x-filament::dropdown.list.item>
-                    <x-filament::dropdown.list.item
-                            class="dark:text-gray-200 text-gray-700"
-                            :color="'gray'"
-                            :icon="'iconpark-dot'"
-                            :href="url('wind/contact-us')"
-                            tag="a"
-                    >
-                        {{ __('Contact us') }}
-                    </x-filament::dropdown.list.item>
-                </x-filament::dropdown.list>
-            </x-filament::dropdown>
-
-            <x-filament::dropdown placement="bottom-start" teleport="true">
-                <x-slot name="trigger"
-                        class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
-                    {{ __('Forms') }}
-                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
-                </x-slot>
-
-                <x-filament::dropdown.list>
-                    <x-filament::dropdown.list.item
-                            class="dark:text-gray-200 text-gray-700"
-                            :color="'gray'"
-                            :icon="'iconpark-dot'"
-                            :href="url('bolt')"
-                            tag="a"
-                    >
-                        {{ __('All Forms') }}
-                    </x-filament::dropdown.list.item>
-                    <x-filament::dropdown.list.item
-                            class="dark:text-gray-200 text-gray-700"
-                            :color="'gray'"
-                            :icon="'iconpark-dot'"
-                            :href="url('bolt/entries')"
-                            tag="a"
-                    >
-                        {{ __('My Entries') }}
-                    </x-filament::dropdown.list.item>
-                </x-filament::dropdown.list>
-            </x-filament::dropdown>
-
-            <x-filament::dropdown placement="bottom-start" teleport="true">
-                <x-slot name="trigger" class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
-                    {{ __('Tickets') }}
-                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
-                </x-slot>
-
-                <x-filament::dropdown.list>
-                    <x-filament::dropdown.list.item
-                            class="dark:text-gray-200 text-gray-700"
-                            :color="'gray'"
-                            :icon="'iconpark-dot'"
-                            :href="url('thunder')"
-                            tag="a"
-                    >
-                        {{ __('All Tickets') }}
-                    </x-filament::dropdown.list.item>
-                    <x-filament::dropdown.list.item
-                            class="dark:text-gray-200 text-gray-700"
-                            :color="'gray'"
-                            :icon="'iconpark-dot'"
-                            :href="url('thunder/tickets')"
-                            tag="a"
-                    >
-                        {{ __('My Tickets') }}
-                    </x-filament::dropdown.list.item>
-                </x-filament::dropdown.list>
-            </x-filament::dropdown>
-
-            <x-filament::button tag="a" size="sm" href="{{ url('/admin') }}">
-                {{ __('Admin') }}
-            </x-filament::button>
-
-            <x-lang-switcher/>
-            <x-dark-mode/>
-        </div>
-
         <button @click="open = !open" type="button"
                 class="inline-flex sm:hidden items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
                 aria-controls="mobile-menu" aria-expanded="false">
@@ -144,6 +21,129 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
             </svg>
         </button>
+
+        <div class="z-50 hidden sm:flex items-center justify-center gap-4">
+            <x-filament::dropdown placement="bottom-start" teleport="true">
+                <x-slot name="trigger"
+                        class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
+                    {{ __('Site') }}
+                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
+                </x-slot>
+
+                <x-filament::dropdown.header
+                    class="dark:text-gray-200 text-gray-700"
+                    :color="'primary'"
+                    :icon="'ri-global-fill'"
+                    :href="'#'"
+                    :tag="'a'"
+                >
+                    Our Site:
+                </x-filament::dropdown.header>
+
+                <x-filament::dropdown.list>
+                    <x-filament::dropdown.list.item
+                        class="dark:text-gray-200 text-gray-700"
+                        :color="'gray'"
+                        :icon="'iconpark-dot'"
+                        :href="url('sky')"
+                        tag="a"
+                    >
+                        {{ __('Blog') }}
+                    </x-filament::dropdown.list.item>
+                    <x-filament::dropdown.list.item
+                        class="dark:text-gray-200 text-gray-700"
+                        :color="'gray'"
+                        :icon="'iconpark-dot'"
+                        :href="url('sky/faq')"
+                        tag="a"
+                    >
+                        {{ __('Faq') }}
+                    </x-filament::dropdown.list.item>
+                    <x-filament::dropdown.list.item
+                        class="dark:text-gray-200 text-gray-700"
+                        :color="'gray'"
+                        :icon="'iconpark-dot'"
+                        :href="url('sky/library')"
+                        tag="a"
+                    >
+                        {{ __('Library') }}
+                    </x-filament::dropdown.list.item>
+                    <x-filament::dropdown.list.item
+                        class="dark:text-gray-200 text-gray-700"
+                        :color="'gray'"
+                        :icon="'iconpark-dot'"
+                        :href="url('wind/contact-us')"
+                        tag="a"
+                    >
+                        {{ __('Contact us') }}
+                    </x-filament::dropdown.list.item>
+                </x-filament::dropdown.list>
+            </x-filament::dropdown>
+
+            <x-filament::dropdown placement="bottom-start" teleport="true">
+                <x-slot name="trigger"
+                        class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
+                    {{ __('Forms') }}
+                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
+                </x-slot>
+
+                <x-filament::dropdown.list>
+                    <x-filament::dropdown.list.item
+                        class="dark:text-gray-200 text-gray-700"
+                        :color="'gray'"
+                        :icon="'iconpark-dot'"
+                        :href="url('bolt')"
+                        tag="a"
+                    >
+                        {{ __('All Forms') }}
+                    </x-filament::dropdown.list.item>
+                    <x-filament::dropdown.list.item
+                        class="dark:text-gray-200 text-gray-700"
+                        :color="'gray'"
+                        :icon="'iconpark-dot'"
+                        :href="url('bolt/entries')"
+                        tag="a"
+                    >
+                        {{ __('My Entries') }}
+                    </x-filament::dropdown.list.item>
+                </x-filament::dropdown.list>
+            </x-filament::dropdown>
+
+            <x-filament::dropdown placement="bottom-start" teleport="true">
+                <x-slot name="trigger" class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
+                    {{ __('Tickets') }}
+                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
+                </x-slot>
+
+                <x-filament::dropdown.list>
+                    <x-filament::dropdown.list.item
+                        class="dark:text-gray-200 text-gray-700"
+                        :color="'gray'"
+                        :icon="'iconpark-dot'"
+                        :href="url('thunder')"
+                        tag="a"
+                    >
+                        {{ __('All Tickets') }}
+                    </x-filament::dropdown.list.item>
+                    <x-filament::dropdown.list.item
+                        class="dark:text-gray-200 text-gray-700"
+                        :color="'gray'"
+                        :icon="'iconpark-dot'"
+                        :href="url('thunder/tickets')"
+                        tag="a"
+                    >
+                        {{ __('My Tickets') }}
+                    </x-filament::dropdown.list.item>
+                </x-filament::dropdown.list>
+            </x-filament::dropdown>
+
+            <x-filament::button tag="a" size="sm" href="{{ url('/admin') }}">
+                {{ __('Admin') }}
+            </x-filament::button>
+
+            <x-lang-switcher/>
+            <x-dark-mode/>
+        </div>
     </div>
     <div x-show="open" @click.away="open = false" x-cloak class="" id="mobile-menu"
          x-transition:enter="duration-200 ease-out"
