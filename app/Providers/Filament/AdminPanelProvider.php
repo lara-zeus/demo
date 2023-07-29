@@ -34,14 +34,14 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
-            ->theme(asset('css/app.css'))
             ->font('Karla', provider: GoogleFontProvider::class)
             ->id('admin')
             ->path('admin')
             ->login()
             ->colors([
                 'gray' => Color::Stone,
-                'primary' => Color::Lime,
+                //'primary' => Color::Lime,
+                'primary' => Color::hex('#6FA33B'),
             ])
             ->sidebarCollapsibleOnDesktop()
             ->plugins([

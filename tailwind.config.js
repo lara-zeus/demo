@@ -29,9 +29,7 @@ module.exports = {
 
         // filament
         './vendor/filament/**/*.blade.php',
-
         './vendor/awcodes/filament-tiptap-editor/resources/**/*.blade.php',
-
     ],
     darkMode: 'class',
     theme: {
