@@ -34,6 +34,7 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
+            ->theme(asset('css/app.css'))
             ->font('Karla', provider: GoogleFontProvider::class)
             ->id('admin')
             ->path('admin')

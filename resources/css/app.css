@@ -2,6 +2,8 @@
 @import '~tippy.js/dist/tippy.css';
 @import '~tippy.js/themes/light.css';
 
+@import '../../vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';
+
 @import '../../vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Blaka+Hollow&family=El+Messiri:wght@400;500;600;700&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lalezar&family=Reem+Kufi+Fun:wght@400;500;600;700&family=Reem+Kufi+Ink&family=Reggae+One&display=swap');

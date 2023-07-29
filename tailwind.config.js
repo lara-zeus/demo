@@ -23,11 +23,15 @@ module.exports = {
 
         './vendor/lara-zeus/rain/resources/views/**/*.blade.php',
         './vendor/lara-zeus/rain/src/Models/Columns.php',
+        './vendor/lara-zeus/rain/src/Models/Columns.php',
 
         './vendor/lara-zeus/rhea/resources/views/**/*.blade.php',
 
         // filament
         './vendor/filament/**/*.blade.php',
+
+        './vendor/awcodes/filament-tiptap-editor/resources/**/*.blade.php',
+
     ],
     darkMode: 'class',
     theme: {
@@ -35,6 +39,7 @@ module.exports = {
             colors: {
                 gray: colors.stone,
                 primary: colors.green,
+                custom: colors.green,
                 secondary: colors.yellow,
                 danger: colors.red,
                 success: colors.green,

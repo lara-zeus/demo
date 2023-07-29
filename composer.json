@@ -8,13 +8,12 @@
         "php": "^8.1",
         "andreiio/blade-iconoir": "^2.5",
         "archtechx/laravel-seo": "^0.7",
-        "awcodes/filament-tiptap-editor": "^3.0",
+        "awcodes/filament-tiptap-editor": "dev-livewire-v3 as 3.0.0",
         "codeat3/blade-akar-icons": "^1.21",
         "codeat3/blade-carbon-icons": "^2.13",
         "codeat3/blade-clarity-icons": "^1.8",
         "codeat3/blade-iconpark": "^1.5",
         "doctrine/dbal": "^3.0",
-        "filament/spatie-laravel-translatable-plugin": "^3.0@beta",
         "garygreen/pretty-routes": "^1.0",
         "graham-campbell/github": "^12.2",
         "guzzlehttp/guzzle": "^7.5",
@@ -33,7 +32,9 @@
         "sentry/sentry-laravel": "^3.3",
         "still-code/signature": "dev-main",
         "andreiio/blade-remix-icon": "^2.3",
-        "torchlight/torchlight-laravel": "^0.5.13"
+        "torchlight/torchlight-laravel": "^0.5.13",
+        "filament/spatie-laravel-translatable-plugin": "^3.0@beta",
+        "filament/filament": "^3.0@beta"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -101,6 +102,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:jyrkidn/filament-tiptap-editor.git"
+        },
         {
             "type": "path",
             "url": "../filament-navigation"
