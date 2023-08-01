@@ -1,7 +1,7 @@
 <div class="relative">
     <x-filament::dropdown maxHeight="250px" placement="bottom-start" teleport="true">
         <x-slot name="trigger">
-            @svg('ri-translate', 'h-6 w-6 md:h-8 md:w-8 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
+            @svg('ri-translate', 'h-6 w-6 md:h-8 md:w-8 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
         </x-slot>
 
         <x-filament::dropdown.header class="font-semibold"

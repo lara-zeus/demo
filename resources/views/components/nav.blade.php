@@ -27,7 +27,7 @@
                 <x-slot name="trigger"
                         class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
                     {{ __('Site') }}
-                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
+                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
                 </x-slot>
 
                 <x-filament::dropdown.header
@@ -84,7 +84,7 @@
                 <x-slot name="trigger"
                         class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
                     {{ __('Forms') }}
-                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
+                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
                 </x-slot>
 
                 <x-filament::dropdown.list>
@@ -112,7 +112,7 @@
             <x-filament::dropdown placement="bottom-start" teleport="true">
                 <x-slot name="trigger" class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
                     {{ __('Tickets') }}
-                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
+                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
                 </x-slot>
 
                 <x-filament::dropdown.list>
@@ -156,42 +156,42 @@
         <div class="mt-0 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white dark:bg-gray-800 divide-y-2 divide-gray-50 mx-2">
             <div class="flex flex-col p-4 gap-4">
                 <a href="{{ url('sky') }}"
-                   class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                   class="whitespace-nowrap transition ease-in-out text-primary-500 dark:text-primary-200 hover:text-secondary-500 dark:hover:text-secondary-300">
                     {{ __('Blog') }}
                 </a>
                 <a href="{{ url('wind/contact-us') }}"
-                   class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                   class="whitespace-nowrap transition ease-in-out text-primary-500 dark:text-primary-200 hover:text-secondary-500 dark:hover:text-secondary-300">
                     {{ __('Contact us') }}
                 </a>
                 <a href="{{ url('sky/faq') }}"
-                   class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                   class="whitespace-nowrap transition ease-in-out text-primary-500 dark:text-primary-200 hover:text-secondary-500 dark:hover:text-secondary-300">
                     {{ __('Faq') }}
                 </a>
                 <a href="{{ url('sky/library') }}"
-                   class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                   class="whitespace-nowrap transition ease-in-out text-primary-500 dark:text-primary-200 hover:text-secondary-500 dark:hover:text-secondary-300">
                     {{ __('Library') }}
                 </a>
                 <hr/>
                 <a href="{{ url('/bolt') }}"
-                   class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                   class="whitespace-nowrap transition ease-in-out text-primary-500 dark:text-primary-200 hover:text-secondary-500 dark:hover:text-secondary-300">
                     All Forms
                 </a>
                 <a href="{{ url('/bolt/entries') }}"
-                   class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                   class="whitespace-nowrap transition ease-in-out text-primary-500 dark:text-primary-200 hover:text-secondary-500 dark:hover:text-secondary-300">
                     My Entries
                 </a>
                 <hr/>
                 <a href="{{ url('/thunder') }}"
-                   class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                   class="whitespace-nowrap transition ease-in-out text-primary-500 dark:text-primary-200 hover:text-secondary-500 dark:hover:text-secondary-300">
                     All Tickets
                 </a>
                 <a href="{{ url('/thunder/tickets') }}"
-                   class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                   class="whitespace-nowrap transition ease-in-out text-primary-500 dark:text-primary-200 hover:text-secondary-500 dark:hover:text-secondary-300">
                     My Tickets
                 </a>
                 <hr/>
                 <a href="{{ url('/admin') }}"
-                   class="whitespace-nowrap transition ease-in-out text-primary-600 dark:text-primary-200 hover:text-secondary-600 dark:hover:text-secondary-300">
+                   class="whitespace-nowrap transition ease-in-out text-primary-500 dark:text-primary-200 hover:text-secondary-500 dark:hover:text-secondary-300">
                     {{ __('Admin Panel') }}
                 </a>
 

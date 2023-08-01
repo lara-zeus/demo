@@ -3,7 +3,7 @@
         <span>
             Syntax highlighting by
         </span>
-        <a href="https://torchlight.dev" target="_blank" class="hover:text-primary-600 dark:hover:text-primary-400">
+        <a href="https://torchlight.dev" target="_blank" class="hover:text-primary-500 dark:hover:text-primary-400">
             Torchlight
         </a>.
     </p>

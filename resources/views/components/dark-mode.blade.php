@@ -31,9 +31,9 @@
                         },
                     }">
                 <span x-cloak x-show="theme === 'dark'" x-on:click="mode = 'manual'; theme = 'light'" class="cursor-pointer">
-                    @svg('heroicon-s-moon','h-6 w-6 md:h-8 md:w-8 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
+                    @svg('heroicon-s-moon','h-6 w-6 md:h-8 md:w-8 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
                 </span>
                 <span x-cloak x-show="theme === 'light'" x-on:click="mode = 'manual'; theme = 'dark'" class="cursor-pointer">
-                    @svg('heroicon-s-sun','h-6 w-6 md:h-8 md:w-8 text-secondary-500 hover:text-primary-600 transition-all ease-in-out duration-300')
+                    @svg('heroicon-s-sun','h-6 w-6 md:h-8 md:w-8 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
                 </span>
 </div>

@@ -20,8 +20,8 @@
     @livewireStyles
     @filamentStyles
     @stack('styles')
-    <link rel="stylesheet" href="{{ asset('vendor/zeus/frontend.css') }}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/zeus/frontend.css') }}">
 
     <style>
         * {

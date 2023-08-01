@@ -27,7 +27,7 @@
             :aria-expanded="open"
             :aria-controls="$id('dropdown-button')"
             type="button"
-            class="text-primary-600 dark:text-primary-400 hover:text-secondary-600 hover:dark:text-secondary-400"
+            class="text-primary-500 dark:text-primary-400 hover:text-secondary-500 hover:dark:text-secondary-400"
         >
             {{ $oppener }}
         </button>

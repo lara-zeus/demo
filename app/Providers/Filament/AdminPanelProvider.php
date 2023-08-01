@@ -40,8 +40,9 @@ class AdminPanelProvider extends PanelProvider
             ->login()
             ->colors([
                 'gray' => Color::Stone,
-                //'primary' => Color::Lime,
-                'primary' => Color::hex('#6FA33B'),
+                'primary' => Color::hex('#45B39D'),
+                'custom' => Color::hex('#45B39D'),
+                'secondary' => Color::hex('#F1948A'),
             ])
             ->sidebarCollapsibleOnDesktop()
             ->plugins([
@@ -53,7 +54,7 @@ class AdminPanelProvider extends PanelProvider
                 ThunderPlugin::make(),
                 RainPlugin::make(),
                 RheaPlugin::make(),
-                FilamentNavigationPlugin::make(),
+                //FilamentNavigationPlugin::make(),
             ])
             ->navigationGroups([
                 'App',
@@ -81,15 +82,15 @@ class AdminPanelProvider extends PanelProvider
                 fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-form.after']),
             )
             ->renderHook(
-                'content.start',
+                'panels::content.start',
                 fn(): View => view('filament.hooks.db-notice'),
             )
             ->renderHook(
-                'global-search.end',
+                'panels::global-search.end',
                 fn(): View => view('filament.hooks.lang-switcher'),
             )
             ->renderHook(
-                'footer.after',
+                'panels::footer',
                 fn(): View => view('filament.hooks.footer'),
             )
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')

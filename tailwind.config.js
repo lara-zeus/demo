@@ -28,7 +28,9 @@ module.exports = {
         './vendor/lara-zeus/rhea/resources/views/**/*.blade.php',
 
         // filament
-        './vendor/filament/**/*.blade.php',
+        './vendor/filament/forms/resources/view/**/*.blade.php',
+        './vendor/filament/filament/resources/view/**/*.blade.php',
+        './vendor/filament/support/resources/view/**/*.blade.php',
         './vendor/awcodes/filament-tiptap-editor/resources/**/*.blade.php',
     ],
     darkMode: 'class',
@@ -36,9 +38,12 @@ module.exports = {
         extend: {
             colors: {
                 gray: colors.stone,
-                primary: colors.green,
-                custom: colors.green,
-                secondary: colors.yellow,
+                primary: {  DEFAULT: '#45B39D',  50: '#C6E9E2',  100: '#B8E4DB',  200: '#9AD8CC',  300: '#7DCDBD',  400: '#5FC1AE',  500: '#45B39D',  600: '#358B79',  700: '#266256',  800: '#163A32',  900: '#07110F',  950: '#000000'},
+                custom: {  DEFAULT: '#45B39D',  50: '#C6E9E2',  100: '#B8E4DB',  200: '#9AD8CC',  300: '#7DCDBD',  400: '#5FC1AE',  500: '#45B39D',  600: '#358B79',  700: '#266256',  800: '#163A32',  900: '#07110F',  950: '#000000'},
+                secondary: {  DEFAULT: '#F1948A',  50: '#FDF2F0',  100: '#FCE7E5',  200: '#F9D2CE',  300: '#F6BEB8',  400: '#F4A9A1',  500: '#F1948A',  600: '#EB6658',  700: '#E53826',  800: '#BC2717',  900: '#8A1C11',  950: '#71170E'},
+                //primary: colors.green,
+                //secondary: colors.yellow,
+                //custom: colors.primary,
                 danger: colors.red,
                 success: colors.green,
                 warning: colors.yellow,
