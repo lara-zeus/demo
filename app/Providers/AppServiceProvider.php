@@ -27,8 +27,8 @@ class AppServiceProvider extends ServiceProvider
         });
 
         Blade::directive('zeus', function ($part = null) {
-            return '<span class="font-koho text-gray-700 group"><span class="font-koho font-semibold text-primary-500 group-hover:text-secondary-500 transition ease-in-out duration-300">Lara&nbsp;<span class="font-koho line-through italic text-secondary-500 group-hover:text-primary-500 transition ease-in-out duration-300">Z</span>eus</span></span>'
-            .($part) ?? '<span class="font-koho text-base tracking-wide text-gray-500">{$part}</span>';
+            return '<span class="title-font text-gray-700 group"><span class="title-font font-semibold text-primary-500 group-hover:text-secondary-500 transition ease-in-out duration-300">Lara&nbsp;<span class="title-font line-through italic text-secondary-500 group-hover:text-primary-500 transition ease-in-out duration-300">Z</span>eus</span></span>'
+            .($part) ?? '<span class="title-font text-base tracking-wide text-gray-500">{$part}</span>';
         });
 
         Blade::directive('stillStats', function ($code) {

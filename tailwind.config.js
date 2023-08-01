@@ -6,7 +6,6 @@ module.exports = {
     content: [
         //App
         './resources/views/**/*.blade.php',
-        './app/Filament/**/*.php',
 
         './vendor/lara-zeus/core/resources/views/**/*.blade.php',
         './vendor/lara-zeus/core/src/CoreServiceProvider.php',
@@ -28,10 +27,10 @@ module.exports = {
         './vendor/lara-zeus/rhea/resources/views/**/*.blade.php',
 
         // filament
-        './vendor/filament/forms/resources/view/**/*.blade.php',
-        './vendor/filament/filament/resources/view/**/*.blade.php',
-        './vendor/filament/support/resources/view/**/*.blade.php',
         './vendor/awcodes/filament-tiptap-editor/resources/**/*.blade.php',
+        './app/Filament/**/*.php',
+        './resources/views/filament/**/*.blade.php',
+        './vendor/filament/**/*.blade.php',
     ],
     darkMode: 'class',
     theme: {

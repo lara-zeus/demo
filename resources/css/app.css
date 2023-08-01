@@ -4,22 +4,22 @@
 @import '../../vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
 /*@import '../../vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';*/
 
-@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Blaka+Hollow&family=El+Messiri:wght@400;500;600;700&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lalezar&family=Reem+Kufi+Fun:wght@400;500;600;700&family=Reem+Kufi+Ink&family=Reggae+One&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 [dir=rtl] {
-    font-family: 'El Messiri', cursive;
+    /*font-family: 'Karla', sans-serif;*/
+    /*font-family: 'El Messiri', cursive;*/
+    font-family: 'Almarai', cursive;
 }
 
 [dir=rtl] .title-font {
-    font-family: 'El Messiri', cursive;
+    font-family: 'Almarai', cursive;
 }
 
 [dir=ltr] {
-    font-family: 'KoHo', 'sans-serif';
+    font-family: 'Karla', sans-serif;
 }
 
 [dir=ltr] .title-font {
