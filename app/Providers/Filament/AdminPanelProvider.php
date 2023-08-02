@@ -3,8 +3,11 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
+use Awcodes\FilamentQuickCreate\QuickCreatePlugin;
 use Awcodes\FilamentVersions\VersionsPlugin;
 use Awcodes\FilamentVersions\VersionsWidget;
+use Awcodes\Overlook\OverlookPlugin;
+use Awcodes\Overlook\Widgets\OverlookWidget;
 use Filament\FontProviders\GoogleFontProvider;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -37,7 +40,9 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
-            //->topNavigation()
+            ->topNavigation()
+            //->maxContentWidth('full')
+            //->sidebarCollapsibleOnDesktop()
             ->font('Karla', provider: GoogleFontProvider::class)
             ->id('admin')
             ->path('admin')
@@ -48,8 +53,17 @@ class AdminPanelProvider extends PanelProvider
                 'custom' => Color::hex('#45B39D'),
                 'secondary' => Color::hex('#F1948A'),
             ])
-            ->sidebarCollapsibleOnDesktop()
             ->plugins([
+                OverlookPlugin::make()
+                    ->sort(2)
+                    ->columns([
+                        'default' => 1,
+                        'sm' => 2,
+                        'md' => 3,
+                        'lg' => 4,
+                        'xl' => 5,
+                        '2xl' => null,
+                    ]),
                 VersionsPlugin::make()
                     ->widgetColumnSpan('full')
                     ->items([
@@ -63,8 +77,10 @@ class AdminPanelProvider extends PanelProvider
                 ThunderPlugin::make(),
                 RainPlugin::make(),
                 RheaPlugin::make(),
+                QuickCreatePlugin::make(),
                 //FilamentNavigationPlugin::make(),
             ])
+            ->favicon(asset('favicon.ico'))
             ->navigationGroups([
                 'App',
                 'Wind',
@@ -112,6 +128,7 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
                 VersionsWidget::class,
+                OverlookWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
