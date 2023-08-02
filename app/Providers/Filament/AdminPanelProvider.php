@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Pages\Auth\Login;
 use Filament\FontProviders\GoogleFontProvider;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -34,10 +35,11 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
+            //->topNavigation()
             ->font('Karla', provider: GoogleFontProvider::class)
             ->id('admin')
             ->path('admin')
-            ->login()
+            ->login(Login::class)
             ->colors([
                 'gray' => Color::Stone,
                 'primary' => Color::hex('#45B39D'),
@@ -47,7 +49,7 @@ class AdminPanelProvider extends PanelProvider
             ->sidebarCollapsibleOnDesktop()
             ->plugins([
                 SpatieLaravelTranslatablePlugin::make()
-                    ->defaultLocales(['en', 'ar', 'fr']),
+                    ->defaultLocales(['en']),
                 WindPlugin::make(),
                 SkyPlugin::make(),
                 BoltPlugin::make(),
