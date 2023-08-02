@@ -3,6 +3,8 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
+use Awcodes\FilamentVersions\VersionsPlugin;
+use Awcodes\FilamentVersions\VersionsWidget;
 use Filament\FontProviders\GoogleFontProvider;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -48,6 +50,11 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->sidebarCollapsibleOnDesktop()
             ->plugins([
+                VersionsPlugin::make()
+                    ->widgetColumnSpan('full')
+                    ->items([
+                        new MyCustomVersionProvider(),
+                    ]),
                 SpatieLaravelTranslatablePlugin::make()
                     ->defaultLocales(['en']),
                 WindPlugin::make(),
@@ -104,6 +111,7 @@ class AdminPanelProvider extends PanelProvider
             ->widgets([
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
+                VersionsWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,

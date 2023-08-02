@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74b0d6565904be905d50290bdf780937",
+    "content-hash": "672903e272d22c17c6e49c4f03b7aa0b",
     "packages": [
         {
             "name": "andreiio/blade-iconoir",
@@ -179,6 +179,70 @@
                 "source": "https://github.com/archtechx/laravel-seo/tree/v0.7.0"
             },
             "time": "2023-03-03T13:19:18+00:00"
+        },
+        {
+            "name": "awcodes/filament-versions",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/awcodes/filament-versions.git",
+                "reference": "3f727cf224f4c4c417d9bca267347a00bde16cd3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/awcodes/filament-versions/zipball/3f727cf224f4c4c417d9bca267347a00bde16cd3",
+                "reference": "3f727cf224f4c4c417d9bca267347a00bde16cd3",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.14.2"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.10"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Awcodes\\FilamentVersions\\FilamentVersionsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Awcodes\\FilamentVersions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Weston",
+                    "email": "awcodes1@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A mostly useless package to display framework versions at the bottom of the navigation panel.",
+            "keywords": [
+                "filament",
+                "framework",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/awcodes/filament-versions/issues",
+                "source": "https://github.com/awcodes/filament-versions/tree/v2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/awcodes",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-08-01T17:57:24+00:00"
         },
         {
             "name": "beyondcode/laravel-comments",
@@ -2751,24 +2815,24 @@
         },
         {
             "name": "guava/filament-icon-picker",
-            "version": "dev-filament-v3-alpha",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LukasFreyCZ/filament-icon-picker.git",
-                "reference": "79937632c684a2b28060c7532e557c9e9d5821a7"
+                "reference": "8e19257770b0489d1a1446dce4868008429ddcd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LukasFreyCZ/filament-icon-picker/zipball/79937632c684a2b28060c7532e557c9e9d5821a7",
-                "reference": "79937632c684a2b28060c7532e557c9e9d5821a7",
+                "url": "https://api.github.com/repos/LukasFreyCZ/filament-icon-picker/zipball/8e19257770b0489d1a1446dce4868008429ddcd8",
+                "reference": "8e19257770b0489d1a1446dce4868008429ddcd8",
                 "shasum": ""
             },
             "require": {
+                "filament/filament": "^3.0",
                 "illuminate/contracts": "^9.0|^10.0",
                 "php": "^8.0"
             },
             "require-dev": {
-                "filament/filament": "v3.0.0-alpha108",
                 "orchestra/testbench": "^7.0|^8.0"
             },
             "type": "library",
@@ -2797,7 +2861,7 @@
             "description": "A filament plugin that adds an icon picker field.",
             "support": {
                 "issues": "https://github.com/LukasFreyCZ/filament-icon-picker/issues",
-                "source": "https://github.com/LukasFreyCZ/filament-icon-picker/tree/filament-v3-alpha"
+                "source": "https://github.com/LukasFreyCZ/filament-icon-picker/tree/2.0.1"
             },
             "funding": [
                 {
@@ -2805,7 +2869,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-15T16:14:48+00:00"
+            "time": "2023-07-21T21:08:41+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -3687,27 +3751,22 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "2.x-dev",
+            "version": "v2.0.0-beta7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "68b7061fcf28bfb3b26ca40f586e74465af8205e"
+                "reference": "8f2f76a7052b48a2254ade46f1bc153e92df120f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/68b7061fcf28bfb3b26ca40f586e74465af8205e",
-                "reference": "68b7061fcf28bfb3b26ca40f586e74465af8205e",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/8f2f76a7052b48a2254ade46f1bc153e92df120f",
+                "reference": "8f2f76a7052b48a2254ade46f1bc153e92df120f",
                 "shasum": ""
             },
             "require": {
-                "archtechx/laravel-seo": "^0.7",
-                "calebporzio/sushi": "^2.4",
                 "codeat3/blade-clarity-icons": "^1.7",
-                "codeat3/blade-iconpark": "^1.5",
-                "filament/filament": "^3.0@beta",
-                "filament/spatie-laravel-translatable-plugin": "^3.0@beta",
-                "guava/filament-icon-picker": "dev-filament-v3-alpha",
-                "lara-zeus/core": "3.x-dev",
+                "guava/filament-icon-picker": "^2.0",
+                "lara-zeus/core": "^3.0",
                 "php": "^8.0"
             },
             "require-dev": {
@@ -3777,20 +3836,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-01T17:44:05+00:00"
+            "time": "2023-08-02T14:24:45+00:00"
         },
         {
             "name": "lara-zeus/core",
-            "version": "3.x-dev",
+            "version": "v3.0.0-beta6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "c54bd0eaba75cb6f5f22172d0be71604940eab6e"
+                "reference": "791f28456f92eb692a6f068e33467185abfb4c19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/c54bd0eaba75cb6f5f22172d0be71604940eab6e",
-                "reference": "c54bd0eaba75cb6f5f22172d0be71604940eab6e",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/791f28456f92eb692a6f068e33467185abfb4c19",
+                "reference": "791f28456f92eb692a6f068e33467185abfb4c19",
                 "shasum": ""
             },
             "require": {
@@ -3860,24 +3919,24 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-02T03:54:35+00:00"
+            "time": "2023-08-02T14:19:49+00:00"
         },
         {
             "name": "lara-zeus/rain",
-            "version": "2.x-dev",
+            "version": "v2.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/rain.git",
-                "reference": "3fb0b8cbc875def4564ca2bdb6f6a0c8c94f1671"
+                "reference": "d0b6b636e59e6862a21ae119b2e92b1669ecbe11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/3fb0b8cbc875def4564ca2bdb6f6a0c8c94f1671",
-                "reference": "3fb0b8cbc875def4564ca2bdb6f6a0c8c94f1671",
+                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/d0b6b636e59e6862a21ae119b2e92b1669ecbe11",
+                "reference": "d0b6b636e59e6862a21ae119b2e92b1669ecbe11",
                 "shasum": ""
             },
             "require": {
-                "lara-zeus/core": "3.x-dev",
+                "lara-zeus/core": "^3.0",
                 "php": "^8.0.2"
             },
             "require-dev": {
@@ -3940,26 +3999,25 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-29T14:56:04+00:00"
+            "time": "2023-08-02T14:27:12+00:00"
         },
         {
             "name": "lara-zeus/rhea",
-            "version": "2.x-dev",
+            "version": "v2.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/rhea.git",
-                "reference": "db810d2225584a66a769d4b8185384655dd84a80"
+                "reference": "682f98e2aab4ecbb357f51580f26dd0d05a80aae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/rhea/zipball/db810d2225584a66a769d4b8185384655dd84a80",
-                "reference": "db810d2225584a66a769d4b8185384655dd84a80",
+                "url": "https://api.github.com/repos/lara-zeus/rhea/zipball/682f98e2aab4ecbb357f51580f26dd0d05a80aae",
+                "reference": "682f98e2aab4ecbb357f51580f26dd0d05a80aae",
                 "shasum": ""
             },
             "require": {
                 "jgrossi/corcel": "^7.0",
-                "lara-zeus/core": "3.x-dev",
-                "lara-zeus/sky": "3.x-dev",
+                "lara-zeus/sky": "^3.0",
                 "php": "^8.0"
             },
             "require-dev": {
@@ -4024,20 +4082,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-01T17:44:20+00:00"
+            "time": "2023-08-02T14:28:05+00:00"
         },
         {
             "name": "lara-zeus/sky",
-            "version": "3.x-dev",
+            "version": "v3.0.0-beta16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "497dee0680eb755f08e76452c108a67994a77fef"
+                "reference": "4ed57d9c24467a488c405d0d65aa0fd7dba0e8ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/497dee0680eb755f08e76452c108a67994a77fef",
-                "reference": "497dee0680eb755f08e76452c108a67994a77fef",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/4ed57d9c24467a488c405d0d65aa0fd7dba0e8ca",
+                "reference": "4ed57d9c24467a488c405d0d65aa0fd7dba0e8ca",
                 "shasum": ""
             },
             "require": {
@@ -4045,7 +4103,7 @@
                 "ext-json": "*",
                 "filament/spatie-laravel-media-library-plugin": "^3.0@beta",
                 "filament/spatie-laravel-tags-plugin": "^3.0@beta",
-                "lara-zeus/core": "3.x-dev",
+                "lara-zeus/core": "^3.0",
                 "php": "^8.1",
                 "ryangjchandler/filament-navigation": "dev-filament3",
                 "spatie/laravel-medialibrary": "^10.0.0",
@@ -4115,26 +4173,26 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-01T17:02:19+00:00"
+            "time": "2023-08-02T14:23:18+00:00"
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "2.x-dev",
+            "version": "v2.0.0-beta4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "b2f451b449e8f27d0d9d3661fafc9af5b2eda1c2"
+                "reference": "fec3a7381107dd56089456a9398a84a2cb74ffaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/b2f451b449e8f27d0d9d3661fafc9af5b2eda1c2",
-                "reference": "b2f451b449e8f27d0d9d3661fafc9af5b2eda1c2",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/fec3a7381107dd56089456a9398a84a2cb74ffaf",
+                "reference": "fec3a7381107dd56089456a9398a84a2cb74ffaf",
                 "shasum": ""
             },
             "require": {
                 "beyondcode/laravel-comments": "dev-lara-10",
                 "codeat3/blade-clarity-icons": "^1.7",
-                "lara-zeus/bolt": "2.x-dev",
+                "lara-zeus/bolt": "^2.0",
                 "php": "^8.0"
             },
             "require-dev": {
@@ -4221,24 +4279,24 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-07-29T14:55:42+00:00"
+            "time": "2023-08-02T14:26:07+00:00"
         },
         {
             "name": "lara-zeus/wind",
-            "version": "3.x-dev",
+            "version": "v3.0.0-beta8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "137e24974cf8e2b518d9923678912922e24a7965"
+                "reference": "c607b59c4ba2cc724d69ebd01a7377511eb11c7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/137e24974cf8e2b518d9923678912922e24a7965",
-                "reference": "137e24974cf8e2b518d9923678912922e24a7965",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/c607b59c4ba2cc724d69ebd01a7377511eb11c7c",
+                "reference": "c607b59c4ba2cc724d69ebd01a7377511eb11c7c",
                 "shasum": ""
             },
             "require": {
-                "lara-zeus/core": "3.x-dev",
+                "lara-zeus/core": "^3.0",
                 "php": "^8.0.2"
             },
             "require-dev": {
@@ -4299,7 +4357,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-01T17:42:59+00:00"
+            "time": "2023-08-02T14:21:21+00:00"
         },
         {
             "name": "laravel/framework",
@@ -7753,16 +7811,16 @@
         },
         {
             "name": "sentry/sentry-laravel",
-            "version": "3.7.1",
+            "version": "3.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-laravel.git",
-                "reference": "d1b21a9552db12016d3aeb15f6e6188a03a5dd87"
+                "reference": "37e5817f22091356457ee2368d7ac4888f1aaeca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-laravel/zipball/d1b21a9552db12016d3aeb15f6e6188a03a5dd87",
-                "reference": "d1b21a9552db12016d3aeb15f6e6188a03a5dd87",
+                "url": "https://api.github.com/repos/getsentry/sentry-laravel/zipball/37e5817f22091356457ee2368d7ac4888f1aaeca",
+                "reference": "37e5817f22091356457ee2368d7ac4888f1aaeca",
                 "shasum": ""
             },
             "require": {
@@ -7827,7 +7885,7 @@
             ],
             "support": {
                 "issues": "https://github.com/getsentry/sentry-laravel/issues",
-                "source": "https://github.com/getsentry/sentry-laravel/tree/3.7.1"
+                "source": "https://github.com/getsentry/sentry-laravel/tree/3.7.2"
             },
             "funding": [
                 {
@@ -7839,7 +7897,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-08-01T10:02:58+00:00"
+            "time": "2023-08-02T12:25:07+00:00"
         },
         {
             "name": "spatie/color",
@@ -16501,12 +16559,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "lara-zeus/bolt": 20,
-        "lara-zeus/rain": 20,
-        "lara-zeus/rhea": 20,
-        "lara-zeus/sky": 20,
-        "lara-zeus/thunder": 20,
-        "lara-zeus/wind": 20,
         "livewire/livewire": 10,
         "pestphp/pest-plugin-laravel": 20,
         "pestphp/pest-plugin-livewire": 20
