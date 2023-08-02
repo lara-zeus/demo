@@ -3,6 +3,7 @@
 namespace App\Providers\Filament;
 
 use Awcodes\FilamentVersions\Providers\Contracts\VersionProvider;
+use Composer\InstalledVersions;
 
 class MyCustomVersionProvider implements VersionProvider
 {
@@ -13,6 +14,6 @@ class MyCustomVersionProvider implements VersionProvider
 
     public function getVersion(): string
     {
-        return \Composer\InstalledVersions::getVersion('lara-zeus/core');
+        return \Composer\InstalledVersions::getPrettyVersion('lara-zeus/core');
     }
 }
