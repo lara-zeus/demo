@@ -112,38 +112,6 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/thunder.git"
-        },
-        {
-            "type": "path",
-            "url": "../core"
-        },
-        {
-            "type": "path",
-            "url": "../wind"
-        },
-        {
-            "type": "path",
-            "url": "../sky"
-        },
-        {
-            "type": "path",
-            "url": "../bolt"
-        },
-        {
-            "type": "path",
-            "url": "../thunder"
-        },
-        {
-            "type": "path",
-            "url": "../rain"
-        },
-        {
-            "type": "path",
-            "url": "../artemis"
-        },
-        {
-            "type": "path",
-            "url": "../rhea"
         }
     ]
 }
