@@ -47,7 +47,7 @@ module.exports = {
                 secondary: {  DEFAULT: '#F1948A',  50: '#FDF2F0',  100: '#FCE7E5',  200: '#F9D2CE',  300: '#F6BEB8',  400: '#F4A9A1',  500: '#F1948A',  600: '#EB6658',  700: '#E53826',  800: '#BC2717',  900: '#8A1C11',  950: '#71170E'},
                 //primary: colors.green,
                 //secondary: colors.yellow,
-                //custom: colors.primary,
+                //custom: colors.pink,
                 danger: colors.red,
                 success: colors.green,
                 warning: colors.yellow,

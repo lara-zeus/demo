@@ -1,29 +1,29 @@
+@import '../../vendor/filament/filament/resources/css/theme.css';
+@import '../../vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
 @import '~tippy.js/dist/tippy.css';
 @import '~tippy.js/themes/light.css';
 
-@import '../../vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
+/* Sky search result highlight */
+span.highlight {
+    @apply bg-primary-200 text-primary-700 px-2
+}
+
 /*@import '../../vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';*/
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 [dir=rtl] {
-    /*font-family: 'Karla', sans-serif;*/
-    /*font-family: 'El Messiri', cursive;*/
-    font-family: 'Almarai', cursive;
+    font-family: 'Almarai','Karla', sans-serif !important;
 }
 
 [dir=rtl] .title-font {
-    font-family: 'Almarai', cursive;
+    font-family: 'Almarai', sans-serif !important;
 }
 
 [dir=ltr] {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Karla', 'Almarai', sans-serif !important;
 }
 
 [dir=ltr] .title-font {
-    font-family: 'Reggae One', sans-serif;
+    font-family: 'Reggae One', 'Almarai', sans-serif !important;
     @apply font-semibold
 }
 

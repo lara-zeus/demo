@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{ __('filament::layout.direction') ?? 'ltr' }}" class="antialiased filament js-focus-visible">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{ app()->getLocale() === 'ar' ? "rtl" : 'ltr' }}" class="antialiased filament js-focus-visible">
 <head>
 
     <meta charset="utf-8">
@@ -20,7 +20,6 @@
     @stack('styles')
 
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/zeus/frontend.css') }}">
 
     <style>
         [x-cloak] {
@@ -28,7 +27,7 @@
         }
     </style>
 </head>
-<body class="font-sans antialiased bg-gray-50 text-gray-900 dark:text-gray-100 dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
+<body class="antialiased bg-gray-50 text-gray-900 dark:text-gray-100 dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
 
 <header x-data="{ open: false }" class="bg-white dark:bg-black py-4">
     <x-nav/>

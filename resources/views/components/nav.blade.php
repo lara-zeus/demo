@@ -1,8 +1,7 @@
 <nav class="container mx-auto">
     <div class="flex justify-between px-2">
         <a href="{{ url('/') }}" class="flex items-center gap-2">
-            <img class="w-7" src="{{ asset('images/zeus-logo.png') }}"
-                 alt="{{ config('zeus.wind.name', config('app.name', 'Laravel')) }}">
+            <img class="w-7" src="{{ asset('images/zeus-logo.png') }}" alt="{{ config('zeus.wind.name', config('app.name', 'Laravel')) }}">
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">@zeus</span>
         </a>
         <button @click="open = !open" type="button"
@@ -143,6 +142,10 @@
 
             <x-lang-switcher/>
             <x-dark-mode/>
+
+            <a href="https://github.com/lara-zeus" class="font-semibold leading-6" target="_blank" rel="noreferrer">
+                @svg('ri-github-fill','h-8 w-8 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
+            </a>
         </div>
     </div>
     <div x-show="open" @click.away="open = false" x-cloak class="" id="mobile-menu"

@@ -15,7 +15,6 @@
             <span>{{ __('built as') }}</span>
                 <a class="text-secondary-500 dark:text-secondary-100 flex items-center justify-center gap-2 underline decoration-wavy underline-offset-4 decoration-primary-500 hover:decoration-secondary-500 transition ease-in-out" href="https://filamentphp.com/plugins" target="_blank">
                    {{ __('filament plugin') }}
-                    <img src="https://filamentphp.com/images/dog.svg" alt="Dog" class="h-10 object-center">
                 </a>
         </span>
     </div>

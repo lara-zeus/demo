@@ -17,7 +17,7 @@
             @foreach(config('app.locales') as $local => $localInfo)
                 <x-filament::dropdown.list.item
                     class="font-semibold"
-                        :color="(app()->getLocale() === $local) ? 'secondary' : 'secondary'"
+                        :color="(app()->getLocale() === $local) ? 'primary' : null"
                         :icon="'heroicon-m-chevron-right'"
                         :href="url('lang/'.$local)"
                         tag="a"
