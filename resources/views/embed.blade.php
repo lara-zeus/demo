@@ -4,7 +4,7 @@
             any text
         </div>
         <div class="w-1/3 mx-auto">
-            <livewire:bolt.fill-form slug="feedback" />
+            <livewire:bolt.fill-form slug="feedback"/>
         </div>
         <div>
             any text

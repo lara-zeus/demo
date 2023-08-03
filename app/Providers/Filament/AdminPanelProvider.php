@@ -40,9 +40,9 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
-            ->topNavigation()
+            //->topNavigation()
             //->maxContentWidth('full')
-            //->sidebarCollapsibleOnDesktop()
+            ->sidebarCollapsibleOnDesktop()
             ->font('Karla', provider: GoogleFontProvider::class)
             ->id('admin')
             ->path('admin')
@@ -53,6 +53,7 @@ class AdminPanelProvider extends PanelProvider
                 'custom' => Color::hex('#45B39D'),
                 'secondary' => Color::hex('#F1948A'),
             ])
+
             ->plugins([
                 OverlookPlugin::make()
                     ->sort(2)
@@ -65,6 +66,7 @@ class AdminPanelProvider extends PanelProvider
                         '2xl' => null,
                     ]),
                 VersionsPlugin::make()
+                    //->hasNavigationView(false)
                     ->widgetColumnSpan('full')
                     ->items([
                         new MyCustomVersionProvider(),
@@ -80,6 +82,7 @@ class AdminPanelProvider extends PanelProvider
                 QuickCreatePlugin::make(),
                 //FilamentNavigationPlugin::make(),
             ])
+
             ->favicon(asset('favicon.ico'))
             ->navigationGroups([
                 'App',
@@ -90,6 +93,7 @@ class AdminPanelProvider extends PanelProvider
                 'Rain',
                 'Rhea',
             ])
+
             ->renderHook(
                 'zeus-forms.before',
                 fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
@@ -118,6 +122,7 @@ class AdminPanelProvider extends PanelProvider
                 'panels::footer',
                 fn(): View => view('filament.hooks.footer'),
             )
+
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')

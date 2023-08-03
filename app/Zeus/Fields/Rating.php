@@ -10,6 +10,8 @@ class Rating extends FieldsContract
 
     public int $sort = 99;
 
+    public bool $disabled = true;
+
     public function title(): string
     {
         return __('Rating');
