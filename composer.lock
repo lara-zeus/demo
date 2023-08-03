@@ -3972,16 +3972,16 @@
         },
         {
             "name": "lara-zeus/core",
-            "version": "v3.0.0-beta8",
+            "version": "v3.0.0-beta9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "8959ccb84e57fa3f47d42d2c57916a41cd540bef"
+                "reference": "9cbbfe853bf9374b037ad5577a6aac3c18a08499"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/8959ccb84e57fa3f47d42d2c57916a41cd540bef",
-                "reference": "8959ccb84e57fa3f47d42d2c57916a41cd540bef",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/9cbbfe853bf9374b037ad5577a6aac3c18a08499",
+                "reference": "9cbbfe853bf9374b037ad5577a6aac3c18a08499",
                 "shasum": ""
             },
             "require": {
@@ -4051,7 +4051,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-03T12:57:50+00:00"
+            "time": "2023-08-03T15:19:17+00:00"
         },
         {
             "name": "lara-zeus/rain",
