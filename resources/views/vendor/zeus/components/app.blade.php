@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{ __('filament::layout.direction') ?? 'ltr' }}"
-      class="antialiased filament js-focus-visible">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{ __('filament::layout.direction') ?? 'ltr' }}" class="antialiased filament js-focus-visible">
 <head>
 
     <meta charset="utf-8">
@@ -19,6 +18,7 @@
     @livewireStyles
     @filamentStyles
     @stack('styles')
+
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/zeus/frontend.css') }}">
 
@@ -81,8 +81,8 @@
 </footer>
 
 @stack('scripts')
-@filamentScripts
 @livewireScripts
+@filamentScripts
 @livewire('notifications')
 
 <script>
