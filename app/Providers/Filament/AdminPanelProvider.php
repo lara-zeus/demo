@@ -8,7 +8,6 @@ use Awcodes\FilamentVersions\VersionsPlugin;
 use Awcodes\FilamentVersions\VersionsWidget;
 use Awcodes\Overlook\OverlookPlugin;
 use Awcodes\Overlook\Widgets\OverlookWidget;
-use Filament\FontProviders\GoogleFontProvider;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -32,7 +31,7 @@ use LaraZeus\Rhea\RheaPlugin;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\WindPlugin;
-use RyanChandler\FilamentNavigation\FilamentNavigationPlugin;
+use RyanChandler\FilamentNavigation\FilamentNavigation;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -43,10 +42,13 @@ class AdminPanelProvider extends PanelProvider
             //->topNavigation()
             //->maxContentWidth('full')
             ->sidebarCollapsibleOnDesktop()
-            ->font('Karla', provider: GoogleFontProvider::class)
+            //->font('Karla', provider: GoogleFontProvider::class)
+            //->font('Almarai', provider: GoogleFontProvider::class)
+            //->font('Reggae One', provider: GoogleFontProvider::class)
             ->id('admin')
             ->path('admin')
             ->login(Login::class)
+            ->profile()
             ->colors([
                 'gray' => Color::Stone,
                 'primary' => Color::hex('#45B39D'),
@@ -79,7 +81,7 @@ class AdminPanelProvider extends PanelProvider
                 RainPlugin::make(),
                 RheaPlugin::make(),
                 QuickCreatePlugin::make(),
-                //FilamentNavigationPlugin::make(),
+                FilamentNavigation::make(),
             ])
 
             ->favicon(asset('favicon.ico'))

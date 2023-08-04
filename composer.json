@@ -21,6 +21,7 @@
         "graham-campbell/github": "^12.2",
         "guzzlehttp/guzzle": "^7.5",
         "jeremykenedy/laravel-packagist": "^1.0",
+        "filament/filament": "*",
         "lara-zeus/bolt": "^2.0",
         "lara-zeus/core": "^3.0",
         "lara-zeus/rain": "^2.0",
@@ -68,8 +69,7 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi",
-            "@php artisan filament:upgrade"
+            "@php artisan package:discover --ansi"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
@@ -102,16 +102,12 @@
     "prefer-stable": true,
     "repositories": [
         {
-            "type": "git",
-            "url": "git@github.com:atmonshi/filament-navigation.git"
+            "type": "github",
+            "url": "git@github.com:lara-zeus/thunder.git"
         },
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/laravel-comments.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/thunder.git"
         }
     ]
 }

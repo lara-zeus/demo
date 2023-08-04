@@ -102,10 +102,6 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/laravel-comments.git"
-        },
-        {
-            "type": "github",
-            "url": "https://github.com/atmonshi/filament-navigation"
         }
     ]
 }

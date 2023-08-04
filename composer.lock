@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79c1703e2a8d8670be2d4c3e8f6aa22b",
+    "content-hash": "b0b7d68e920732c0fa7c607d224ee620",
     "packages": [
         {
             "name": "andreiio/blade-iconoir",
@@ -3972,16 +3972,16 @@
         },
         {
             "name": "lara-zeus/core",
-            "version": "v3.0.0-beta9",
+            "version": "v3.0.0-beta10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "9cbbfe853bf9374b037ad5577a6aac3c18a08499"
+                "reference": "fb10d640847906b2efdf53f385eef7f9a138234d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/9cbbfe853bf9374b037ad5577a6aac3c18a08499",
-                "reference": "9cbbfe853bf9374b037ad5577a6aac3c18a08499",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/fb10d640847906b2efdf53f385eef7f9a138234d",
+                "reference": "fb10d640847906b2efdf53f385eef7f9a138234d",
                 "shasum": ""
             },
             "require": {
@@ -4051,7 +4051,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-03T15:19:17+00:00"
+            "time": "2023-08-04T14:02:34+00:00"
         },
         {
             "name": "lara-zeus/rain",
@@ -4218,16 +4218,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.0.0-beta16",
+            "version": "v3.0.0-beta18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "4ed57d9c24467a488c405d0d65aa0fd7dba0e8ca"
+                "reference": "7889f595e87872f8783106ce16052694e1717d3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/4ed57d9c24467a488c405d0d65aa0fd7dba0e8ca",
-                "reference": "4ed57d9c24467a488c405d0d65aa0fd7dba0e8ca",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/7889f595e87872f8783106ce16052694e1717d3b",
+                "reference": "7889f595e87872f8783106ce16052694e1717d3b",
                 "shasum": ""
             },
             "require": {
@@ -4237,7 +4237,7 @@
                 "filament/spatie-laravel-tags-plugin": "^3.0@beta",
                 "lara-zeus/core": "^3.0",
                 "php": "^8.1",
-                "ryangjchandler/filament-navigation": "dev-filament3",
+                "ryangjchandler/filament-navigation": "^1.0",
                 "spatie/laravel-medialibrary": "^10.0.0",
                 "spatie/laravel-sluggable": "^3.3",
                 "spatie/laravel-tags": "^4.4"
@@ -4305,27 +4305,26 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-02T14:23:18+00:00"
+            "time": "2023-08-04T15:09:03+00:00"
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v2.0.0-beta4",
+            "version": "v2.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "fec3a7381107dd56089456a9398a84a2cb74ffaf"
+                "reference": "703dc953279de3c8c4894f042ea1e210ff915bb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/fec3a7381107dd56089456a9398a84a2cb74ffaf",
-                "reference": "fec3a7381107dd56089456a9398a84a2cb74ffaf",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/703dc953279de3c8c4894f042ea1e210ff915bb3",
+                "reference": "703dc953279de3c8c4894f042ea1e210ff915bb3",
                 "shasum": ""
             },
             "require": {
                 "beyondcode/laravel-comments": "dev-lara-10",
-                "codeat3/blade-clarity-icons": "^1.7",
                 "lara-zeus/bolt": "^2.0",
-                "php": "^8.0"
+                "php": "^8.1"
             },
             "require-dev": {
                 "laravel/pint": "^1.0",
@@ -4411,7 +4410,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-08-02T14:26:07+00:00"
+            "time": "2023-08-04T15:05:32+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -7703,26 +7702,33 @@
         },
         {
             "name": "ryangjchandler/filament-navigation",
-            "version": "dev-filament3",
+            "version": "v1.0.0-beta2",
             "source": {
                 "type": "git",
-                "url": "git@github.com:atmonshi/filament-navigation.git",
-                "reference": "6f929b769b5cc17030e18a9dad5cffa44e0a37f9"
+                "url": "https://github.com/ryangjchandler/filament-navigation.git",
+                "reference": "4bbeadfc6fc9bb5d907599bbdcd6415000db2f79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ryangjchandler/filament-navigation/zipball/4bbeadfc6fc9bb5d907599bbdcd6415000db2f79",
+                "reference": "4bbeadfc6fc9bb5d907599bbdcd6415000db2f79",
+                "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "^3.5.1",
-                "filament/filament": "^3.0@beta",
-                "illuminate/contracts": "^9.0|^10.0",
-                "php": "^8.1"
+                "filament/filament": "^3.0",
+                "illuminate/contracts": "^10.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.9.2"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.8",
-                "nunomaduro/collision": "^6.0|^7.0",
+                "nunomaduro/collision": "^7.0",
                 "nunomaduro/larastan": "^2.0.1",
-                "orchestra/canvas": "^7.1|^8.0",
-                "orchestra/testbench": "^7.0|^8.0",
-                "pestphp/pest": "^1.21",
-                "pestphp/pest-plugin-laravel": "^1.1",
+                "orchestra/canvas": "^8.0",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan-deprecation-rules": "^1.0",
                 "phpstan/phpstan-phpunit": "^1.0",
@@ -7734,10 +7740,7 @@
                 "laravel": {
                     "providers": [
                         "RyanChandler\\FilamentNavigation\\FilamentNavigationServiceProvider"
-                    ],
-                    "aliases": {
-                        "FilamentNavigation": "RyanChandler\\FilamentNavigation\\Facades\\FilamentNavigation"
-                    }
+                    ]
                 }
             },
             "autoload": {
@@ -7746,25 +7749,7 @@
                     "RyanChandler\\FilamentNavigation\\Database\\Factories\\": "database/factories"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "RyanChandler\\FilamentNavigation\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "analyse": [
-                    "vendor/bin/phpstan analyse"
-                ],
-                "test": [
-                    "vendor/bin/pest"
-                ],
-                "test-coverage": [
-                    "vendor/bin/pest coverage"
-                ],
-                "format": [
-                    "vendor/bin/php-cs-fixer fix --config=.php_cs.dist.php --allow-risky=yes"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -7782,7 +7767,17 @@
                 "laravel",
                 "ryangjchandler"
             ],
-            "time": "2023-07-26T16:25:58+00:00"
+            "support": {
+                "issues": "https://github.com/ryangjchandler/filament-navigation/issues",
+                "source": "https://github.com/ryangjchandler/filament-navigation/tree/v1.0.0-beta2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ryangjchandler",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-08-04T14:20:37+00:00"
         },
         {
             "name": "sentry/sdk",
@@ -12125,16 +12120,16 @@
         },
         {
             "name": "brianium/paratest",
-            "version": "v7.2.3",
+            "version": "v7.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paratestphp/paratest.git",
-                "reference": "ec6713d48856b7e8af64b2f94b084fb861bcc71b"
+                "reference": "a310a310973226f5c25de806987bfc11aa99ab91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paratestphp/paratest/zipball/ec6713d48856b7e8af64b2f94b084fb861bcc71b",
-                "reference": "ec6713d48856b7e8af64b2f94b084fb861bcc71b",
+                "url": "https://api.github.com/repos/paratestphp/paratest/zipball/a310a310973226f5c25de806987bfc11aa99ab91",
+                "reference": "a310a310973226f5c25de806987bfc11aa99ab91",
                 "shasum": ""
             },
             "require": {
@@ -12145,13 +12140,13 @@
                 "fidry/cpu-core-counter": "^0.4.1 || ^0.5.1",
                 "jean85/pretty-package-versions": "^2.0.5",
                 "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
-                "phpunit/php-code-coverage": "^10.1.2",
+                "phpunit/php-code-coverage": "^10.1.3",
                 "phpunit/php-file-iterator": "^4.0.2",
                 "phpunit/php-timer": "^6.0",
-                "phpunit/phpunit": "^10.2.6",
+                "phpunit/phpunit": "^10.3.1",
                 "sebastian/environment": "^6.0.1",
-                "symfony/console": "^6.3.0",
-                "symfony/process": "^6.3.0"
+                "symfony/console": "^6.3.2",
+                "symfony/process": "^6.3.2"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^12.0.0",
@@ -12204,7 +12199,7 @@
             ],
             "support": {
                 "issues": "https://github.com/paratestphp/paratest/issues",
-                "source": "https://github.com/paratestphp/paratest/tree/v7.2.3"
+                "source": "https://github.com/paratestphp/paratest/tree/v7.2.4"
             },
             "funding": [
                 {
@@ -12216,7 +12211,7 @@
                     "type": "paypal"
                 }
             ],
-            "time": "2023-07-20T10:18:35+00:00"
+            "time": "2023-08-04T09:22:30+00:00"
         },
         {
             "name": "composer/semver",
@@ -13536,38 +13531,35 @@
         },
         {
             "name": "nunomaduro/collision",
-            "version": "v7.7.0",
+            "version": "v7.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/collision.git",
-                "reference": "69a07197d055456d29911116fca3bc2c985f524b"
+                "reference": "1813f0a3470f2ac171443bc37b324c2a693005f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/69a07197d055456d29911116fca3bc2c985f524b",
-                "reference": "69a07197d055456d29911116fca3bc2c985f524b",
+                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/1813f0a3470f2ac171443bc37b324c2a693005f9",
+                "reference": "1813f0a3470f2ac171443bc37b324c2a693005f9",
                 "shasum": ""
             },
             "require": {
-                "filp/whoops": "^2.15.2",
+                "filp/whoops": "^2.15.3",
                 "nunomaduro/termwind": "^1.15.1",
                 "php": "^8.1.0",
-                "symfony/console": "^6.3.0"
-            },
-            "conflict": {
-                "phpunit/phpunit": "<10.1.2"
+                "symfony/console": "^6.3.2"
             },
             "require-dev": {
-                "brianium/paratest": "^7.2.2",
-                "laravel/framework": "^10.14.1",
-                "laravel/pint": "^1.10.3",
-                "laravel/sail": "^1.23.0",
+                "brianium/paratest": "^7.2.4",
+                "laravel/framework": "^10.17.1",
+                "laravel/pint": "^1.10.5",
+                "laravel/sail": "^1.23.1",
                 "laravel/sanctum": "^3.2.5",
                 "laravel/tinker": "^2.8.1",
-                "nunomaduro/larastan": "^2.6.3",
-                "orchestra/testbench-core": "^8.5.8",
-                "pestphp/pest": "^2.8.1",
-                "phpunit/phpunit": "^10.2.2",
+                "nunomaduro/larastan": "^2.6.4",
+                "orchestra/testbench-core": "^8.5.9",
+                "pestphp/pest": "^2.12.1",
+                "phpunit/phpunit": "^10.3.1",
                 "sebastian/environment": "^6.0.1",
                 "spatie/laravel-ignition": "^2.2.0"
             },
@@ -13628,7 +13620,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-06-29T09:10:16+00:00"
+            "time": "2023-08-04T10:26:10+00:00"
         },
         {
             "name": "nunomaduro/larastan",
@@ -13728,29 +13720,29 @@
         },
         {
             "name": "pestphp/pest",
-            "version": "v2.12.0",
+            "version": "v2.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest.git",
-                "reference": "8a589022d95bdfc8c0bbd4447b190992ffedd603"
+                "reference": "3742e74adf08415cef3912c10304e9184c1ee90d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest/zipball/8a589022d95bdfc8c0bbd4447b190992ffedd603",
-                "reference": "8a589022d95bdfc8c0bbd4447b190992ffedd603",
+                "url": "https://api.github.com/repos/pestphp/pest/zipball/3742e74adf08415cef3912c10304e9184c1ee90d",
+                "reference": "3742e74adf08415cef3912c10304e9184c1ee90d",
                 "shasum": ""
             },
             "require": {
-                "brianium/paratest": "^7.2.3",
-                "nunomaduro/collision": "^7.7.0",
+                "brianium/paratest": "^7.2.4",
+                "nunomaduro/collision": "^7.8.0",
                 "nunomaduro/termwind": "^1.15.1",
                 "pestphp/pest-plugin": "^2.0.1",
                 "pestphp/pest-plugin-arch": "^2.2.3",
                 "php": "^8.1.0",
-                "phpunit/phpunit": "^10.2.7"
+                "phpunit/phpunit": "^10.3.1"
             },
             "conflict": {
-                "phpunit/phpunit": ">10.2.7",
+                "phpunit/phpunit": ">10.3.1",
                 "webmozart/assert": "<1.11.0"
             },
             "require-dev": {
@@ -13814,7 +13806,7 @@
             ],
             "support": {
                 "issues": "https://github.com/pestphp/pest/issues",
-                "source": "https://github.com/pestphp/pest/tree/v2.12.0"
+                "source": "https://github.com/pestphp/pest/tree/v2.12.1"
             },
             "funding": [
                 {
@@ -13826,7 +13818,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-02T22:04:35+00:00"
+            "time": "2023-08-04T10:23:55+00:00"
         },
         {
             "name": "pestphp/pest-plugin",
@@ -15039,16 +15031,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.2.7",
+            "version": "10.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "a215d9ee8bac1733796e4ddff3306811f14414e5"
+                "reference": "d442ce7c4104d5683c12e67e4dcb5058159e9804"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a215d9ee8bac1733796e4ddff3306811f14414e5",
-                "reference": "a215d9ee8bac1733796e4ddff3306811f14414e5",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d442ce7c4104d5683c12e67e4dcb5058159e9804",
+                "reference": "d442ce7c4104d5683c12e67e4dcb5058159e9804",
                 "shasum": ""
             },
             "require": {
@@ -15088,7 +15080,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "10.2-dev"
+                    "dev-main": "10.3-dev"
                 }
             },
             "autoload": {
@@ -15120,7 +15112,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.2.7"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.3.1"
             },
             "funding": [
                 {
@@ -15136,7 +15128,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-02T06:46:08+00:00"
+            "time": "2023-08-04T06:48:08+00:00"
         },
         {
             "name": "psy/psysh",
