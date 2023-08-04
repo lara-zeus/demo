@@ -11,6 +11,26 @@
     border: solid 1px red;
 }
 
+.fi-topbar nav {
+    @apply !bg-gradient-to-tr from-secondary-50 via-secondary-50 to-primary-50/50
+}
+
+.fi-sidebar-header {
+    @apply !px-2 py-4 !bg-gradient-to-tr from-primary-50/50 via-secondary-50 to-secondary-50
+}
+
+.fi-sidebar-group:not(:first-child) {
+    @apply bg-secondary-50/25 border border-secondary-500/25 rounded-lg
+}
+
+.fi-sidebar-group > div > span {
+    @apply text-secondary-800/90
+}
+
+.fi-sidebar-open {
+    @apply !bg-white dark:!bg-gray-900
+}
+
 /*
  Margin and rounding are personal preferences,
  overflow-x-auto is recommended.

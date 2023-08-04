@@ -35,7 +35,6 @@ module.exports = {
         './vendor/awcodes/filament-versions/resources/**/*.blade.php',
         './vendor/awcodes/overlook/resources/**/*.blade.php',
         './vendor/awcodes/filament-quick-create/resources/**/*.blade.php',
-
     ],
     darkMode: 'class',
     theme: {

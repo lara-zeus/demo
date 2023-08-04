@@ -66,7 +66,6 @@ class AdminPanelProvider extends PanelProvider
                         '2xl' => null,
                     ]),
                 VersionsPlugin::make()
-                    //->hasNavigationView(false)
                     ->widgetColumnSpan('full')
                     ->items([
                         new MyCustomVersionProvider(),
