@@ -1,11 +1,12 @@
 <x-filament-widgets::widget>
-    <x-filament::card class="space-y-4">
+    <x-filament::section class="space-y-4">
         <h2 class="font-bold text-xl">📢 Help me keep @zeus going</h2>
         <p>
             I work as part-time on these projects,
             and any type of help and support is really appreciated.
         </p>
-        <h3 class="font-bold text-lg">
+
+        <h3 class="font-bold text-lg my-6">
             📍Here is how you can help
         </h3>
 
@@ -27,5 +28,5 @@
             </x-list.item>
         </x-list.index>
 
-    </x-filament::card>
+    </x-filament::section>
 </x-filament-widgets::widget>
