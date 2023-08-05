@@ -55,7 +55,6 @@ class AdminPanelProvider extends PanelProvider
                 'custom' => Color::hex('#45B39D'),
                 'secondary' => Color::hex('#F1948A'),
             ])
-
             ->plugins([
                 OverlookPlugin::make()
                     ->sort(2)
@@ -83,7 +82,6 @@ class AdminPanelProvider extends PanelProvider
                 QuickCreatePlugin::make(),
                 FilamentNavigation::make(),
             ])
-
             ->favicon(asset('favicon.ico'))
             ->navigationGroups([
                 'App',
@@ -94,7 +92,6 @@ class AdminPanelProvider extends PanelProvider
                 'Rain',
                 'Rhea',
             ])
-
             ->renderHook(
                 'zeus-forms.before',
                 fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
@@ -123,7 +120,6 @@ class AdminPanelProvider extends PanelProvider
                 'panels::footer',
                 fn(): View => view('filament.hooks.footer'),
             )
-
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')

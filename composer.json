@@ -21,7 +21,6 @@
         "graham-campbell/github": "^12.2",
         "guzzlehttp/guzzle": "^7.5",
         "jeremykenedy/laravel-packagist": "^1.0",
-        "filament/filament": "*",
         "lara-zeus/bolt": "^2.0",
         "lara-zeus/core": "^3.0",
         "lara-zeus/rain": "^2.0",

@@ -36,7 +36,7 @@
 }
 
 .fi-sidebar-header {
-    @apply !px-2 py-4 !bg-gradient-to-tr from-primary-50/50 via-secondary-50 to-secondary-50
+    @apply !px-2 py-4 !bg-gradient-to-tr from-primary-50/50 via-secondary-50 to-secondary-50 justify-center
 }
 
 .fi-sidebar-group:not(:first-child) {
