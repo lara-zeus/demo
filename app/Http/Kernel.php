@@ -3,6 +3,7 @@
 namespace App\Http;
 
 use App\Http\Middleware\SetLang;
+use App\Http\Middleware\SetTheme;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -23,6 +24,7 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \Illuminate\Http\Middleware\HandleCors::class,
         SetLang::class,
+        SetTheme::class,
         \Torchlight\Middleware\RenderTorchlight::class,
     ];
 

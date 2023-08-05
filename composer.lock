@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "911c901f1c985375084ff611918ababd",
+    "content-hash": "45617f70a70dc0705fb9aa96e5e0f666",
     "packages": [
         {
             "name": "andreiio/blade-iconoir",
@@ -1212,6 +1212,67 @@
                 }
             ],
             "time": "2023-03-12T12:17:29+00:00"
+        },
+        {
+            "name": "davidhsianturi/blade-bootstrap-icons",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidhsianturi/blade-bootstrap-icons.git",
+                "reference": "255040a0058683dd5a0fd36dfa0857a91a95137f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidhsianturi/blade-bootstrap-icons/zipball/255040a0058683dd5a0fd36dfa0857a91a95137f",
+                "reference": "255040a0058683dd5a0fd36dfa0857a91a95137f",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.0",
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Davidhsianturi\\BladeBootstrapIcons\\BladeBootstrapIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Davidhsianturi\\BladeBootstrapIcons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David H. Sianturi",
+                    "email": "davidhsianturi@gmail.com",
+                    "homepage": "https://davidhsianturi.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A package to easily make use of Bootstrap Icons in your Laravel Blade views.",
+            "homepage": "https://github.com/davidhsianturi/blade-bootstrap-icons",
+            "keywords": [
+                "Bootstrap Icons",
+                "blade",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/davidhsianturi/blade-bootstrap-icons/issues",
+                "source": "https://github.com/davidhsianturi/blade-bootstrap-icons/tree/v1.4.0"
+            },
+            "time": "2023-03-17T14:49:47+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -3880,6 +3941,83 @@
                 }
             ],
             "time": "2023-03-10T11:40:14+00:00"
+        },
+        {
+            "name": "lara-zeus/artemis",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:lara-zeus/artemis.git",
+                "reference": "a2ef682844a96a1ea148c973af6f806379f22c61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/a2ef682844a96a1ea148c973af6f806379f22c61",
+                "reference": "a2ef682844a96a1ea148c973af6f806379f22c61",
+                "shasum": ""
+            },
+            "require": {
+                "lara-zeus/core": "^3.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^6.0",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^7.0 || ^8.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Artemis\\ArtemisServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Artemis\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php coder",
+                    "email": "wh7r.com@gmail.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "artistic themes for lara zeus sky",
+            "homepage": "https://larazeus.com/artemis",
+            "keywords": [
+                "cms",
+                "lara-zeus",
+                "laravel",
+                "laravel cms",
+                "menu",
+                "news",
+                "pages",
+                "posts",
+                "sky",
+                "wordpress alternative",
+                "wordpress laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/artemis/issues",
+                "source": "https://github.com/lara-zeus/artemis"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/atmonshi"
+                }
+            ],
+            "time": "2023-08-05T21:42:26+00:00"
         },
         {
             "name": "lara-zeus/bolt",
@@ -16688,6 +16826,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "lara-zeus/artemis": 20,
         "livewire/livewire": 10,
         "pestphp/pest-plugin-laravel": 20,
         "pestphp/pest-plugin-livewire": 20

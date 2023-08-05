@@ -29,3 +29,9 @@ Route::get('lang/{lang}', function ($lang) {
 
     return redirect()->back();
 });
+
+Route::get('theme/{theme}', function ($theme) {
+    session()->put('current_theme', $theme);
+
+    return redirect()->back();
+});

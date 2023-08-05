@@ -16,11 +16,13 @@
         "codeat3/blade-carbon-icons": "^2.13",
         "codeat3/blade-clarity-icons": "^1.8",
         "codeat3/blade-iconpark": "^1.5",
+        "davidhsianturi/blade-bootstrap-icons": "^1.4",
         "doctrine/dbal": "^3.0",
         "garygreen/pretty-routes": "^1.0",
         "graham-campbell/github": "^12.2",
         "guzzlehttp/guzzle": "^7.5",
         "jeremykenedy/laravel-packagist": "^1.0",
+        "lara-zeus/artemis": "1.x-dev",
         "lara-zeus/bolt": "^2.0",
         "lara-zeus/core": "^3.0",
         "lara-zeus/rain": "^2.0",
@@ -103,6 +105,10 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/thunder.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/artemis.git"
         },
         {
             "type": "github",
