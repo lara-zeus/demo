@@ -140,7 +140,7 @@
                 {{ __('Admin') }}
             </x-filament::button>
 
-            <x-theme-switcher/>
+            {{--<x-theme-switcher/>--}}
             <x-lang-switcher/>
             <x-dark-mode/>
 
