@@ -113,7 +113,7 @@ class AdminPanelProvider extends PanelProvider
                 fn(): View => view('filament.hooks.db-notice'),
             )
             ->renderHook(
-                'panels::global-search.end',
+                'panels::user-menu.before',
                 fn(): View => view('filament.hooks.lang-switcher'),
             )
             ->renderHook(

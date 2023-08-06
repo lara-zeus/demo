@@ -1,9 +1,11 @@
 <div class="relative mx-2 gap-4 items-center justify-center flex">
-    <div x-tooltip.raw="Like the project? consider sponsoring me 😇">
-        <iframe src="https://github.com/sponsors/atmonshi/button"
-                loading="lazy"
-                title="Sponsor atmonshi" height="32" width="114"
-                style="border: 0; border-radius: 6px;"></iframe>
-    </div>
     <x-lang-switcher/>
+    <div x-tooltip.raw="Like the project? consider sponsoring me 😇">
+        <x-filament::button
+            color="secondary"
+            icon="iconsax-two-lovely"
+            title="Sponsor atmonshi" tag="a" href="https://github.com/sponsors/atmonshi">
+            <span>Sponsor</span>
+        </x-filament::button>
+    </div>
 </div>
