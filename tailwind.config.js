@@ -17,11 +17,12 @@ module.exports = {
         './vendor/lara-zeus/sky/src/Models/PostStatus.php',
 
         './vendor/lara-zeus/bolt/resources/views/**/*.blade.php',
+
         './vendor/lara-zeus/thunder/resources/views/**/*.blade.php',
+
         './vendor/lara-zeus/artemis/resources/views/**/*.blade.php',
 
         './vendor/lara-zeus/rain/resources/views/**/*.blade.php',
-        './vendor/lara-zeus/rain/src/Models/Columns.php',
         './vendor/lara-zeus/rain/src/Models/Columns.php',
 
         './vendor/lara-zeus/rhea/resources/views/**/*.blade.php',
