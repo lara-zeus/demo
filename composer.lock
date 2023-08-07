@@ -4019,12 +4019,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/artemis.git",
-                "reference": "8f7126b011bf02604b3306a61a554b91821630e6"
+                "reference": "1851e57f70214cc8ddb04b238f1f34e659656a59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/8f7126b011bf02604b3306a61a554b91821630e6",
-                "reference": "8f7126b011bf02604b3306a61a554b91821630e6",
+                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/1851e57f70214cc8ddb04b238f1f34e659656a59",
+                "reference": "1851e57f70214cc8ddb04b238f1f34e659656a59",
                 "shasum": ""
             },
             "require": {
@@ -4088,7 +4088,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-08-07T01:37:59+00:00"
+            "time": "2023-08-07T01:46:18+00:00"
         },
         {
             "name": "lara-zeus/bolt",
