@@ -26,3 +26,16 @@
         </div>
     </a>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        setTimeout(() => {
+            const activeSidebarItem = document.querySelector('.fi-sidebar-item-active');
+            const sidebarWrapper = document.querySelector('.fi-sidebar-nav')
+
+            sidebarWrapper.style.scrollBehavior = 'smooth';
+
+            sidebarWrapper.scrollTo(0, activeSidebarItem.offsetTop - 250)
+        }, 50)
+    });
+</script>

@@ -8,7 +8,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 [dir=rtl] {
     font-family: 'Almarai','Karla', sans-serif !important;
 }
@@ -35,6 +34,15 @@
     @apply !bg-gradient-to-tr from-secondary-50 via-secondary-50 to-primary-50/50;
     @apply dark:from-gray-900 dark:via-gray-900 dark:to-secondary-900/50;
 }
+.fi-sidebar-header{
+    @apply !z-50;
+}
+.fi-sidebar{
+    @apply !shadow-2xl;
+}
+.fi-topbar{
+    @apply !shadow-lg;
+}
 
 .fi-sidebar-header {
     @apply !px-2 py-4 justify-center;
@@ -44,7 +52,7 @@
 
 .fi-sidebar-group:not(:first-child) {
     @apply bg-secondary-50/25 border border-secondary-500/25 rounded-lg;
-    @apply dark:bg-gray-700/25 dark:border-gray-700/25;
+    @apply dark:bg-gray-700/25 dark:border-gray-700/25 !shadow;
 }
 
 .fi-sidebar-group > div > span {
