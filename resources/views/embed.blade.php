@@ -8,7 +8,7 @@
                 $form = \LaraZeus\Bolt\Models\Form::first()
             @endphp
             @if($form !== null)
-                <livewire:bolt.fill-form slug="feedback" :inline="$form->slug"/>
+                <livewire:bolt.fill-form :slug="$form->slug" :inline="true"/>
             @endif
         </div>
         <div>
