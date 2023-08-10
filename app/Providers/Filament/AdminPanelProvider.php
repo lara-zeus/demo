@@ -43,6 +43,7 @@ class AdminPanelProvider extends PanelProvider
             //->topNavigation()
             //->maxContentWidth('full')
             ->sidebarCollapsibleOnDesktop()
+
             //->font('Karla', provider: GoogleFontProvider::class)
             //->font('Almarai', provider: GoogleFontProvider::class)
             //->font('Reggae One', provider: GoogleFontProvider::class)
