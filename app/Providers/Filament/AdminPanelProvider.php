@@ -50,12 +50,14 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login(Login::class)
             ->profile()
+
             ->colors([
                 'gray' => Color::Stone,
                 'primary' => Color::hex('#45B39D'),
                 'custom' => Color::hex('#45B39D'),
                 'secondary' => Color::hex('#F1948A'),
             ])
+
             ->plugins([
                 OverlookPlugin::make()
                     ->sort(2)
@@ -83,6 +85,7 @@ class AdminPanelProvider extends PanelProvider
                 QuickCreatePlugin::make(),
                 FilamentNavigation::make(),
             ])
+
             ->favicon(asset('favicon.ico'))
             ->navigationGroups([
                 'App',
