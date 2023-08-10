@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "filament/filament": "^3.0",
         "andreiio/blade-iconoir": "^2.5",
         "andreiio/blade-remix-icon": "^2.3",
         "archtechx/laravel-seo": "^0.7",
