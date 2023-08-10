@@ -39,6 +39,7 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
+            ->homeUrl('/')
             //->topNavigation()
             //->maxContentWidth('full')
             ->sidebarCollapsibleOnDesktop()
