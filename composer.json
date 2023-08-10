@@ -36,7 +36,6 @@
         "laravel/sanctum": "^3.2",
         "livewire/livewire": "^3.0@beta",
         "ryangjchandler/blade-tabler-icons": "^2.0",
-        "saade/blade-iconsax": "^1.1",
         "sentry/sentry-laravel": "^3.3",
         "torchlight/torchlight-laravel": "^0.5.13"
     },

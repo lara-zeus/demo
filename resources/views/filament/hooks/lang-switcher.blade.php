@@ -3,7 +3,7 @@
     <div x-tooltip.raw="Like the project? consider sponsoring me 😇">
         <x-filament::button
             color="secondary"
-            icon="iconsax-two-lovely"
+            icon="heroicon-o-heart"
             title="Sponsor atmonshi" tag="a" href="https://github.com/sponsors/atmonshi">
             <span>Sponsor</span>
         </x-filament::button>
