@@ -98,6 +98,11 @@ class UserResource extends Resource
         return false;
     }
 
+    public static function canEdit(Model $record): bool
+    {
+        return false;
+    }
+
     public static function getPages(): array
     {
         return [

@@ -7,6 +7,7 @@ use LaraZeus\Sky\Models\Faq;
 use LaraZeus\Sky\Models\Library;
 use LaraZeus\Sky\Models\Post;
 use LaraZeus\Sky\Models\Tag;
+use LaraZeus\Sky\SkyPlugin;
 use RyanChandler\FilamentNavigation\Models\Navigation;
 
 class SkySeeder extends Seeder
@@ -52,10 +53,10 @@ class SkySeeder extends Seeder
         ]);
         $faq->syncTagsWithType([$faqTag], 'faq');
 
-        config('zeus-sky.models.tag')::create([
+        SkyPlugin::get()->getTagModel()::create([
             'name' => ['en' => 'support docs', 'ar' => 'الدعم الفني'], 'type' => 'library',
         ]);
-        config('zeus-sky.models.tag')::create(['name' => ['en' => 'how to', 'ar' => 'كيف'], 'type' => 'library']);
+        SkyPlugin::get()->getTagModel()::create(['name' => ['en' => 'how to', 'ar' => 'كيف'], 'type' => 'library']);
 
         Library::factory()
             ->count(8)
