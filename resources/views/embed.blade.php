@@ -4,7 +4,12 @@
             any text
         </div>
         <div class="w-1/3 mx-auto">
-            <livewire:bolt.fill-form slug="feedback" :inline="true"/>
+            @php
+                $form = \LaraZeus\Bolt\Models\Form::first()
+            @endphp
+            @if($form !== null)
+                <livewire:bolt.fill-form slug="feedback" :inline="$form->slug"/>
+            @endif
         </div>
         <div>
             any text
