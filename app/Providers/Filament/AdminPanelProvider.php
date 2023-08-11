@@ -26,10 +26,14 @@ use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use LaraZeus\Bolt\BoltPlugin;
+use LaraZeus\Bolt\Filament\Resources\ResponseResource;
 use LaraZeus\Rain\RainPlugin;
 use LaraZeus\Rhea\RheaPlugin;
 use LaraZeus\Sky\SkyPlugin;
+use LaraZeus\Thunder\Filament\Resources\OperationsResource;
+use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
+use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
 use RyanChandler\FilamentNavigation\FilamentNavigation;
 
@@ -84,7 +88,13 @@ class AdminPanelProvider extends PanelProvider
                 ThunderPlugin::make(),
                 RainPlugin::make(),
                 RheaPlugin::make(),
-                QuickCreatePlugin::make(),
+                QuickCreatePlugin::make()
+                    ->excludes([
+                        ResponseResource::class,
+                        LetterResource::class,
+                        OperationsResource::class,
+                        TicketResource::class,
+                    ]),
                 FilamentNavigation::make(),
             ])
 

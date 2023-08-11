@@ -99,10 +99,6 @@
     "prefer-stable": true,
     "repositories": [
         {
-            "type": "git",
-            "url": "git@github.com:atmonshi/filament-navigation.git"
-        },
-        {
             "type": "path",
             "url": "../laravel-comments"
         },
