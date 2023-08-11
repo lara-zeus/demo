@@ -6,13 +6,13 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "filament/filament": "^3.0",
         "andreiio/blade-iconoir": "^2.5",
         "andreiio/blade-remix-icon": "^2.3",
         "archtechx/laravel-seo": "^0.7",
         "awcodes/filament-quick-create": "^3.0",
         "awcodes/filament-versions": "^2.0",
         "awcodes/overlook": "^2.0",
+        "filament/filament": "^3.0",
         "codeat3/blade-akar-icons": "^1.21",
         "codeat3/blade-carbon-icons": "^2.13",
         "codeat3/blade-clarity-icons": "^1.8",
@@ -34,7 +34,7 @@
         "lara-zeus/wind": "^3.0",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
-        "livewire/livewire": "^3.0@beta",
+        "livewire/livewire": "dev-main as v3.0.0-beta.7",
         "ryangjchandler/blade-tabler-icons": "^2.0",
         "sentry/sentry-laravel": "^3.3",
         "torchlight/torchlight-laravel": "^0.5.13"
@@ -106,15 +106,15 @@
     "repositories": [
         {
             "type": "github",
+            "url": "git@github.com:lara-zeus/laravel-comments.git"
+        },
+        {
+            "type": "github",
             "url": "git@github.com:lara-zeus/thunder.git"
         },
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/artemis.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/laravel-comments.git"
         }
     ]
 }
