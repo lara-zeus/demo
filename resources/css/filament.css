@@ -45,8 +45,9 @@
 }
 
 .fi-sidebar-group:not(:first-child) {
-    @apply bg-secondary-50/25 border border-secondary-500/25 rounded-lg;
-    @apply dark:bg-gray-700/25 dark:border-gray-700/25 !shadow;
+    @apply !bg-gradient-to-tr from-primary-50/25 via-secondary-50/50 to-secondary-50/50;
+    @apply dark:bg-gray-700/25 dark:border-gray-700/25 !shadow rounded-3xl rounded-tl-none;
+    @apply border border-secondary-500/25;
 }
 
 .fi-sidebar-group > div > span {

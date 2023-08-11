@@ -44,50 +44,33 @@ class AdminPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->homeUrl('/')
-            //->topNavigation()
-            //->maxContentWidth('full')
-            ->sidebarCollapsibleOnDesktop()
-
-            //->font('Karla', provider: GoogleFontProvider::class)
-            //->font('Almarai', provider: GoogleFontProvider::class)
-            //->font('Reggae One', provider: GoogleFontProvider::class)
             ->id('admin')
             ->path('admin')
+
             ->login(Login::class)
             ->profile()
-
-            ->colors([
-                'gray' => Color::Stone,
-                'primary' => Color::hex('#45B39D'),
-                'custom' => Color::hex('#45B39D'),
-                'secondary' => Color::hex('#F1948A'),
-            ])
 
             ->plugins([
                 OverlookPlugin::make()
                     ->sort(5)
-                    ->columns([
-                        'default' => 1,
-                        'sm' => 2,
-                        'md' => 3,
-                        'lg' => 4,
-                        'xl' => 5,
-                        '2xl' => null,
-                    ]),
+                    ->excludes([
+                        ResponseResource::class,
+                        LetterResource::class,
+                        OperationsResource::class,
+                        TicketResource::class,
+                    ])
+                    ->alphabetical(),
+
                 VersionsPlugin::make()
                     ->widgetSort(4)
                     ->widgetColumnSpan('full')
                     ->items([
                         new MyCustomVersionProvider(),
                     ]),
+
                 SpatieLaravelTranslatablePlugin::make()
-                    ->defaultLocales(['en']),
-                WindPlugin::make(),
-                SkyPlugin::make(),
-                BoltPlugin::make(),
-                ThunderPlugin::make(),
-                RainPlugin::make(),
-                RheaPlugin::make(),
+                    ->defaultLocales(array_keys(config('app.locales'))),
+
                 QuickCreatePlugin::make()
                     ->excludes([
                         ResponseResource::class,
@@ -95,10 +78,27 @@ class AdminPanelProvider extends PanelProvider
                         OperationsResource::class,
                         TicketResource::class,
                     ]),
+
+                WindPlugin::make(),
+                SkyPlugin::make(),
+                BoltPlugin::make(),
+                ThunderPlugin::make(),
+                RainPlugin::make(),
+                RheaPlugin::make(),
                 FilamentNavigation::make(),
             ])
 
+            //->topNavigation()
+            ->maxContentWidth('full')
+            ->sidebarCollapsibleOnDesktop()
+            ->colors([
+                'gray' => Color::Stone,
+                'primary' => Color::hex('#45B39D'),
+                'custom' => Color::hex('#45B39D'),
+                'secondary' => Color::hex('#F1948A'),
+            ])
             ->favicon(asset('favicon.ico'))
+
             ->navigationGroups([
                 'App',
                 'Wind',
