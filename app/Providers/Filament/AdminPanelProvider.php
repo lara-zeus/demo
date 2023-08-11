@@ -61,7 +61,7 @@ class AdminPanelProvider extends PanelProvider
 
             ->plugins([
                 OverlookPlugin::make()
-                    ->sort(2)
+                    ->sort(5)
                     ->columns([
                         'default' => 1,
                         'sm' => 2,
@@ -71,6 +71,7 @@ class AdminPanelProvider extends PanelProvider
                         '2xl' => null,
                     ]),
                 VersionsPlugin::make()
+                    ->widgetSort(4)
                     ->widgetColumnSpan('full')
                     ->items([
                         new MyCustomVersionProvider(),

@@ -14,7 +14,7 @@ class GitStarsChart extends LineChartWidget
 
     protected static ?string $maxHeight = '200px';
 
-    protected static ?int $sort = 10;
+    protected static ?int $sort = 99;
 
     protected function getData(): array
     {

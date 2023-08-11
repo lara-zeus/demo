@@ -2,8 +2,8 @@
     <x-filament::section class="space-y-4">
         <h2 class="font-bold text-xl">🔥 Welcome to @zeus Demo App</h2>
         <p>
-            this admin panel will include a demo for all zeus packages.
-            feel free to look around before start using.
+            This admin panel will include a demo for all zeus packages.
+            Feel free to look around before start using.
         </p>
 
         <h3 class="font-bold text-lg my-6">📖 Learn More About @zeus:</h3>
