@@ -8,10 +8,10 @@
         "php": "^8.1",
         "andreiio/blade-iconoir": "^2.5",
         "andreiio/blade-remix-icon": "^2.3",
-        "filament/filament": "^3.0-stable",
         "archtechx/laravel-seo": "^0.7",
         "awcodes/filament-quick-create": "^3.0",
         "awcodes/filament-versions": "^2.0",
+        "awcodes/light-switch": "^1.0",
         "awcodes/overlook": "^2.0",
         "codeat3/blade-akar-icons": "^1.21",
         "codeat3/blade-carbon-icons": "^2.13",
@@ -20,6 +20,7 @@
         "codeat3/blade-rpg-awesome-icons": "^1.4",
         "davidhsianturi/blade-bootstrap-icons": "^1.4",
         "doctrine/dbal": "^3.0",
+        "filament/filament": "^3.0-stable",
         "garygreen/pretty-routes": "^1.0",
         "graham-campbell/github": "^12.2",
         "guzzlehttp/guzzle": "^7.5",
@@ -101,7 +102,6 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
     "repositories": [
         {
             "type": "github",

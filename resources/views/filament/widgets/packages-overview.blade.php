@@ -7,15 +7,19 @@
 
         <x-list.index>
             <x-list.item url="https://github.com/awcodes/filament-quick-create">
-                ⚡️ filament quick create
+                ⚡️ Filament Quick Create
             </x-list.item>
 
             <x-list.item url="https://github.com/awcodes/filament-versions">
-                ⚡️ filament versions
+                ⚡️ Filament Versions
             </x-list.item>
 
             <x-list.item url="https://github.com/awcodes/overlook">
-                ⚡️ overlook
+                ⚡️ Overlook
+            </x-list.item>
+
+            <x-list.item url="https://github.com/awcodes/light-switch">
+                ⚡️ Light Switch
             </x-list.item>
         </x-list.index>
 

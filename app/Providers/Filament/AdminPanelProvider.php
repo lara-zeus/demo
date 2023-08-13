@@ -6,6 +6,7 @@ use App\Filament\Pages\Auth\Login;
 use Awcodes\FilamentQuickCreate\QuickCreatePlugin;
 use Awcodes\FilamentVersions\VersionsPlugin;
 use Awcodes\FilamentVersions\VersionsWidget;
+use Awcodes\LightSwitch\LightSwitchPlugin;
 use Awcodes\Overlook\OverlookPlugin;
 use Awcodes\Overlook\Widgets\OverlookWidget;
 use Filament\Http\Middleware\Authenticate;
@@ -51,6 +52,7 @@ class AdminPanelProvider extends PanelProvider
             ->profile()
 
             ->plugins([
+                LightSwitchPlugin::make(),
                 OverlookPlugin::make()
                     ->sort(5)
                     ->excludes([
