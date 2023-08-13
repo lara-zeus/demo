@@ -69,7 +69,8 @@ class AdminPanelProvider extends PanelProvider
                     ]),
 
                 SpatieLaravelTranslatablePlugin::make()
-                    ->defaultLocales(array_keys(config('app.locales'))),
+                    //->defaultLocales(array_keys(config('app.locales')))
+                    ->defaultLocales(['en']),
 
                 QuickCreatePlugin::make()
                     ->excludes([
@@ -81,7 +82,10 @@ class AdminPanelProvider extends PanelProvider
 
                 WindPlugin::make(),
                 SkyPlugin::make(),
-                BoltPlugin::make(),
+                BoltPlugin::make()
+                ->extensions([
+                    \LaraZeus\Thunder\Extensions\Thunder::class
+                ]),
                 ThunderPlugin::make(),
                 RainPlugin::make(),
                 RheaPlugin::make(),
