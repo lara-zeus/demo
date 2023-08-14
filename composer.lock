@@ -4400,12 +4400,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "1089d94570eec12997d936fb17a68b4936b1e623"
+                "reference": "6863a7e32509150c2cf8ef7e4b82bba3e5b2a9ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/1089d94570eec12997d936fb17a68b4936b1e623",
-                "reference": "1089d94570eec12997d936fb17a68b4936b1e623",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/6863a7e32509150c2cf8ef7e4b82bba3e5b2a9ae",
+                "reference": "6863a7e32509150c2cf8ef7e4b82bba3e5b2a9ae",
                 "shasum": ""
             },
             "require": {
@@ -4482,7 +4482,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-14T14:01:33+00:00"
+            "time": "2023-08-14T16:39:38+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -5010,12 +5010,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "e5e7704f07b3d0df6dc0c650c362000d602646c5"
+                "reference": "8bea6888cce328cfbf1ffeef623aa6abbbc1059b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/e5e7704f07b3d0df6dc0c650c362000d602646c5",
-                "reference": "e5e7704f07b3d0df6dc0c650c362000d602646c5",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/8bea6888cce328cfbf1ffeef623aa6abbbc1059b",
+                "reference": "8bea6888cce328cfbf1ffeef623aa6abbbc1059b",
                 "shasum": ""
             },
             "require": {
@@ -5203,7 +5203,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-08-14T14:15:37+00:00"
+            "time": "2023-08-14T15:09:19+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -5387,12 +5387,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "b26e0dd0e1b8baad815e78d5b68d75859387dc6e"
+                "reference": "0c9013545a572ae81b8283833324a996a9a43048"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/b26e0dd0e1b8baad815e78d5b68d75859387dc6e",
-                "reference": "b26e0dd0e1b8baad815e78d5b68d75859387dc6e",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/0c9013545a572ae81b8283833324a996a9a43048",
+                "reference": "0c9013545a572ae81b8283833324a996a9a43048",
                 "shasum": ""
             },
             "require": {
@@ -5455,7 +5455,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-08-08T14:27:52+00:00"
+            "time": "2023-08-14T14:15:43+00:00"
         },
         {
             "name": "league/commonmark",
