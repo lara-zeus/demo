@@ -184,6 +184,7 @@ class AdminPanelProvider extends PanelProvider
 
             SpatieLaravelTranslatablePlugin::make()
                 ->defaultLocales(['en']),
+
             FilamentNavigation::make(),
 
             WindPlugin::make(),

@@ -61,4 +61,14 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
             get: fn () => $this->getFilamentAvatarUrl(),
         );
     }
+
+    public function canImpersonate()
+    {
+        return $this->id === 1;
+    }
+
+    public function canBeImpersonated()
+    {
+        return $this->id !== 1;
+    }
 }

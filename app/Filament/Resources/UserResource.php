@@ -14,6 +14,7 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use STS\FilamentImpersonate\Tables\Actions\Impersonate;
 
 class UserResource extends Resource
 {
@@ -58,27 +59,17 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('id')
-                    ->sortable(),
                 TextColumn::make('name')
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('email')
                     ->sortable()
-                    ->searchable(),
-                IconColumn::make('email_verified_at')
-                    ->boolean()
-                    ->sortable()
-                    ->searchable(),
-                TextColumn::make('created_at')
-                    ->dateTime('M j, Y')
-                    ->sortable(),
-                TextColumn::make('updated_at')
-                    ->dateTime('M j, Y')
-                    ->sortable(),
+                    ->searchable()
             ])
             ->actions([
                 EditAction::make(),
+                Impersonate::make()
+                    ->redirectTo(url('/admin')),
             ])
             ->filters([
                 Filter::make('verified')

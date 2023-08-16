@@ -28,14 +28,14 @@ module.exports = {
         './vendor/lara-zeus/rhea/resources/views/**/*.blade.php',
 
         // filament
-        './vendor/awcodes/filament-tiptap-editor/resources/**/*.blade.php',
         './app/Filament/**/*.php',
         './resources/views/filament/**/*.blade.php',
         './vendor/filament/**/*.blade.php',
 
+        './vendor/awcodes/filament-tiptap-editor/resources/**/*.blade.php',
         './vendor/awcodes/filament-versions/resources/**/*.blade.php',
-        './vendor/awcodes/overlook/resources/**/*.blade.php',
         './vendor/awcodes/filament-quick-create/resources/**/*.blade.php',
+        './vendor/awcodes/overlook/resources/**/*.blade.php',
     ],
     darkMode: 'class',
     theme: {
