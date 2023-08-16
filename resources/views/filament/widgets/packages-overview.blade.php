@@ -25,6 +25,10 @@
             <x-list.item url="https://github.com/njxqlus/filament-progressbar">
                 ⚡️ Filament Progressbar
             </x-list.item>
+
+            <x-list.item url="https://github.com/awcodes/filament-gravatar">
+                ⚡️ Filament Gravatar
+            </x-list.item>
         </x-list.index>
 
     </x-filament::section>

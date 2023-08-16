@@ -3,6 +3,8 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
+use Awcodes\FilamentGravatar\GravatarPlugin;
+use Awcodes\FilamentGravatar\GravatarProvider;
 use Awcodes\FilamentQuickCreate\QuickCreatePlugin;
 use Awcodes\FilamentVersions\VersionsPlugin;
 use Awcodes\FilamentVersions\VersionsWidget;
@@ -31,6 +33,7 @@ use LaraZeus\Bolt\Filament\Resources\ResponseResource;
 use LaraZeus\Rain\RainPlugin;
 use LaraZeus\Rhea\RheaPlugin;
 use LaraZeus\Sky\SkyPlugin;
+use LaraZeus\Thunder\Extensions\Thunder;
 use LaraZeus\Thunder\Filament\Resources\OperationsResource;
 use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
@@ -51,51 +54,13 @@ class AdminPanelProvider extends PanelProvider
             ->login(Login::class)
             ->profile()
 
-            ->plugins([
-                LightSwitchPlugin::make(),
-                OverlookPlugin::make()
-                    ->sort(5)
-                    ->excludes([
-                        ResponseResource::class,
-                        LetterResource::class,
-                        OperationsResource::class,
-                        TicketResource::class,
-                    ])
-                    ->alphabetical(),
-
-                VersionsPlugin::make()
-                    ->widgetSort(4)
-                    ->widgetColumnSpan('full')
-                    ->items([
-                        new MyCustomVersionProvider(),
-                    ]),
-
-                SpatieLaravelTranslatablePlugin::make()
-                    ->defaultLocales(['en']),
-
-                /*QuickCreatePlugin::make()
-                    ->excludes([
-                        ResponseResource::class,
-                        LetterResource::class,
-                        OperationsResource::class,
-                        TicketResource::class,
-                    ]),*/
-
-                WindPlugin::make(),
-                SkyPlugin::make(),
-                BoltPlugin::make()
-                    ->extensions([
-                        \LaraZeus\Thunder\Extensions\Thunder::class,
-                    ]),
-                ThunderPlugin::make(),
-                RainPlugin::make(),
-                RheaPlugin::make(),
-                FilamentNavigation::make(),
-            ])
+            ->plugins($this->getPlugins())
+            ->defaultAvatarProvider(GravatarProvider::class)
 
             //->topNavigation()
-            ->maxContentWidth('full')
             ->sidebarCollapsibleOnDesktop()
+
+            ->maxContentWidth('full')
             ->colors([
                 'gray' => Color::Stone,
                 'primary' => Color::hex('#45B39D'),
@@ -163,6 +128,7 @@ class AdminPanelProvider extends PanelProvider
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
+
             ->pages([
                 Pages\Dashboard::class,
             ])
@@ -186,5 +152,49 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ]);
+    }
+
+    public function getPlugins(): array
+    {
+        return [
+            GravatarPlugin::make(),
+            LightSwitchPlugin::make(),
+            OverlookPlugin::make()
+                ->sort(5)
+                ->excludes([
+                    ResponseResource::class,
+                    LetterResource::class,
+                    OperationsResource::class,
+                    TicketResource::class,
+                ])
+                ->alphabetical(),
+            VersionsPlugin::make()
+                ->widgetSort(4)
+                ->widgetColumnSpan('full')
+                ->items([
+                    new MyCustomVersionProvider(),
+                ]),
+            QuickCreatePlugin::make()
+                ->excludes([
+                    ResponseResource::class,
+                    LetterResource::class,
+                    OperationsResource::class,
+                    TicketResource::class,
+                ]),
+
+            SpatieLaravelTranslatablePlugin::make()
+                ->defaultLocales(['en']),
+            FilamentNavigation::make(),
+
+            WindPlugin::make(),
+            SkyPlugin::make(),
+            BoltPlugin::make()
+                ->extensions([
+                    Thunder::class,
+                ]),
+            ThunderPlugin::make(),
+            RainPlugin::make(),
+            RheaPlugin::make(),
+        ];
     }
 }
