@@ -73,13 +73,13 @@ class AdminPanelProvider extends PanelProvider
                 SpatieLaravelTranslatablePlugin::make()
                     ->defaultLocales(['en']),
 
-                QuickCreatePlugin::make()
+                /*QuickCreatePlugin::make()
                     ->excludes([
                         ResponseResource::class,
                         LetterResource::class,
                         OperationsResource::class,
                         TicketResource::class,
-                    ]),
+                    ]),*/
 
                 WindPlugin::make(),
                 SkyPlugin::make(),
