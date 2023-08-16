@@ -84,9 +84,9 @@ class AdminPanelProvider extends PanelProvider
                 WindPlugin::make(),
                 SkyPlugin::make(),
                 BoltPlugin::make()
-                ->extensions([
-                    \LaraZeus\Thunder\Extensions\Thunder::class
-                ]),
+                    ->extensions([
+                        \LaraZeus\Thunder\Extensions\Thunder::class,
+                    ]),
                 ThunderPlugin::make(),
                 RainPlugin::make(),
                 RheaPlugin::make(),
@@ -114,7 +114,23 @@ class AdminPanelProvider extends PanelProvider
                 'Rhea',
             ])
 
+            /*->renderHook(
+                'zeus-form-section.before',
+                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
+            )
             ->renderHook(
+                'zeus-form-field.before',
+                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
+            )
+            ->renderHook(
+                'zeus-form-field.after',
+                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
+            )
+            ->renderHook(
+                'zeus-form-section.after',
+                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
+            )*/
+            /*->renderHook(
                 'zeus-forms.before',
                 fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
             )
@@ -129,18 +145,19 @@ class AdminPanelProvider extends PanelProvider
             ->renderHook(
                 'zeus-form.after',
                 fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-form.after']),
-            )
+            )*/
+
             ->renderHook(
                 'panels::content.start',
-                fn(): View => view('filament.hooks.db-notice'),
+                fn (): View => view('filament.hooks.db-notice'),
             )
             ->renderHook(
                 'panels::user-menu.before',
-                fn(): View => view('filament.hooks.lang-switcher'),
+                fn (): View => view('filament.hooks.lang-switcher'),
             )
             ->renderHook(
                 'panels::footer',
-                fn(): View => view('filament.hooks.footer'),
+                fn (): View => view('filament.hooks.footer'),
             )
 
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')

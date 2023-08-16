@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
+use Filament\Support\Facades\FilamentView;
+use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
@@ -16,6 +18,34 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $hooks = [
+            'Zeus-forms.before',
+            'Zeus-forms.after',
+            'Zeus-form.before',
+            'Zeus-form.after',
+            'Zeus-form-section.before',
+            'Zeus-form-section.after',
+            'Zeus-form-field.before',
+            'Zeus-form-field.after',
+        ];
+
+        // why this loop won't work?!
+        foreach ($hooks as $key => $hook) {
+            FilamentView::registerRenderHook(
+                "$hook",
+                fn (): View => view('filament.hooks.placeholder', ['data' => "$hook"]),
+            );
+        }
+
+        /*FilamentView::registerRenderHook(
+            'zeus-form-section.before',
+            fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-form-section.before']),
+        );
+        FilamentView::registerRenderHook(
+            'zeus-form-section.after',
+            fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-form-section.after']),
+        );*/
+
         FilamentAsset::register([
             Css::make('example-external-stylesheet', asset('css/flag-icons.css')),
             Css::make('filament-stylesheet', asset('css/filament.css')),
@@ -32,7 +62,7 @@ class AppServiceProvider extends ServiceProvider
         });
 
         Blade::directive('stillStats', function ($code) {
-            if (!app()->isLocal()) {
+            if (! app()->isLocal()) {
                 return '<!-- stats --><script async defer data-website-id="'.$code.'" src="https://stats.still-code.com/script.js"></script>';
             }
 

@@ -3,7 +3,6 @@
 namespace App\Providers\Filament;
 
 use Awcodes\FilamentVersions\Providers\Contracts\VersionProvider;
-use Composer\InstalledVersions;
 
 class MyCustomVersionProvider implements VersionProvider
 {

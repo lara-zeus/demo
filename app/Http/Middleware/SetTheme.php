@@ -31,6 +31,7 @@ class SetTheme
                     CoreServiceProvider::setThemePath($pkg);
                 }
             }
+
             return $next($request);
         });
     }

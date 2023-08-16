@@ -37,7 +37,7 @@
             sidebarWrapper.style.scrollBehavior = 'smooth';
 
             sidebarWrapper.scrollTo(0, activeSidebarItem.offsetTop - 250)
-        }, 50)
+        }, 1)
     });
 </script>
 

@@ -35,6 +35,7 @@
         "lara-zeus/wind": "^3.0",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
+        "njxqlus/filament-progressbar": "dev-main",
         "ryangjchandler/blade-tabler-icons": "^2.0",
         "sentry/sentry-laravel": "^3.3",
         "torchlight/torchlight-laravel": "^0.5.13"
