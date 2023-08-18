@@ -50,16 +50,14 @@ class AdminPanelProvider extends PanelProvider
             ->homeUrl('/')
             ->id('admin')
             ->path('admin')
-
             ->login(Login::class)
             ->profile()
-
             ->plugins($this->getPlugins())
             ->defaultAvatarProvider(GravatarProvider::class)
 
             //->topNavigation()
             ->sidebarCollapsibleOnDesktop()
-
+            
             ->maxContentWidth('full')
             ->colors([
                 'gray' => Color::Stone,
@@ -68,7 +66,6 @@ class AdminPanelProvider extends PanelProvider
                 'secondary' => Color::hex('#F1948A'),
             ])
             ->favicon(asset('favicon.ico'))
-
             ->navigationGroups([
                 'App',
                 'Wind',
@@ -114,21 +111,19 @@ class AdminPanelProvider extends PanelProvider
 
             ->renderHook(
                 'panels::content.start',
-                fn (): View => view('filament.hooks.db-notice'),
+                fn(): View => view('filament.hooks.db-notice'),
             )
             ->renderHook(
                 'panels::user-menu.before',
-                fn (): View => view('filament.hooks.lang-switcher'),
+                fn(): View => view('filament.hooks.lang-switcher'),
             )
             ->renderHook(
                 'panels::footer',
-                fn (): View => view('filament.hooks.footer'),
+                fn(): View => view('filament.hooks.footer'),
             )
-
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
-
             ->pages([
                 Pages\Dashboard::class,
             ])
