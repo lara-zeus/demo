@@ -57,7 +57,7 @@ class AdminPanelProvider extends PanelProvider
 
             //->topNavigation()
             ->sidebarCollapsibleOnDesktop()
-            
+
             ->maxContentWidth('full')
             ->colors([
                 'gray' => Color::Stone,
@@ -178,7 +178,7 @@ class AdminPanelProvider extends PanelProvider
                 ]),
 
             SpatieLaravelTranslatablePlugin::make()
-                ->defaultLocales(['en']),
+                ->defaultLocales(['en','pt']),
 
             FilamentNavigation::make(),
 
