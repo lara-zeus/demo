@@ -8,7 +8,6 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
@@ -81,17 +80,17 @@ class UserResource extends Resource
 
     public static function canDelete(Model $record): bool
     {
-        return false;
+        return app()->isLocal();
     }
 
     public static function canDeleteAny(): bool
     {
-        return false;
+        return app()->isLocal();
     }
 
     public static function canEdit(Model $record): bool
     {
-        return false;
+        return app()->isLocal();
     }
 
     public static function getPages(): array
