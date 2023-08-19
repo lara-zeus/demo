@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/zeus/frontend.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/zeus-artemis/css/daisyui.css') }}">
     <link rel="stylesheet" href="{{ mix('css/flag-icons.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/daisyui.css') }}">
 
     @livewireStyles
     @filamentStyles
@@ -36,7 +37,7 @@
     @include($artemisTheme.'.layouts.nav')
 </div>
 
-@if(isset($header) || isset($breadcrumps))
+@if(isset($header) || isset($breadcrumbs))
     <div class="container mx-auto py-4 my-4">
         <div class="alert shadow-lg flex flex-col items-start">
             @if(isset($header))
@@ -45,14 +46,14 @@
                 </div>
             @endif
 
-            @if(isset($breadcrumps))
+            @if(isset($breadcrumbs))
                 <nav class="text-gray-400 font-bold my-2" aria-label="Breadcrumb">
                     <ol class="list-none p-0 inline-flex">
                         <li class="flex items-center">
                             <a href="{{ route('blogs') }}">Home</a>
                             @svg('iconpark-rightsmall-o','fill-current w-4 h-4 mx-3')
                         </li>
-                        {{ $breadcrumps }}
+                        {{ $breadcrumbs }}
                     </ol>
                 </nav>
             @endif
@@ -77,7 +78,7 @@
     </div>
 </footer>
 
-<script src="{{ asset('vendor/zeus/app.js') }}" defer></script>
+{{--<script src="{{ asset('vendor/zeus/app.js') }}" defer></script>--}}
 <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 
 @stack('scripts')

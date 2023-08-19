@@ -67,6 +67,15 @@
                     >
                         {{ __('Library') }}
                     </x-filament::dropdown.list.item>
+                </x-filament::dropdown.list>
+            </x-filament::dropdown>
+            <x-filament::dropdown placement="bottom-start" teleport="true">
+                <x-slot name="trigger"
+                        class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
+                    {{ __('Apps') }}
+                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
+                </x-slot>
+                <x-filament::dropdown.list>
                     <x-filament::dropdown.list.item
                         class="dark:text-gray-200 text-gray-700"
                         :color="'gray'"
@@ -76,17 +85,6 @@
                     >
                         {{ __('Contact us') }}
                     </x-filament::dropdown.list.item>
-                </x-filament::dropdown.list>
-            </x-filament::dropdown>
-
-            <x-filament::dropdown placement="bottom-start" teleport="true">
-                <x-slot name="trigger"
-                        class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
-                    {{ __('Forms') }}
-                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
-                </x-slot>
-
-                <x-filament::dropdown.list>
                     <x-filament::dropdown.list.item
                         class="dark:text-gray-200 text-gray-700"
                         :color="'gray'"
@@ -100,30 +98,33 @@
                         class="dark:text-gray-200 text-gray-700"
                         :color="'gray'"
                         :icon="'heroicon-m-chevron-right'"
-                        :href="url('bolt/entries')"
-                        tag="a"
-                    >
-                        {{ __('My Entries') }}
-                    </x-filament::dropdown.list.item>
-                </x-filament::dropdown.list>
-            </x-filament::dropdown>
-
-            <x-filament::dropdown placement="bottom-start" teleport="true">
-                <x-slot name="trigger" class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
-                    {{ __('Tickets') }}
-                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
-                </x-slot>
-
-                <x-filament::dropdown.list>
-                    <x-filament::dropdown.list.item
-                        class="dark:text-gray-200 text-gray-700"
-                        :color="'gray'"
-                        :icon="'heroicon-m-chevron-right'"
                         :href="url('thunder')"
                         tag="a"
                     >
                         {{ __('All Tickets') }}
                     </x-filament::dropdown.list.item>
+                </x-filament::dropdown.list>
+            </x-filament::dropdown>
+            <x-filament::button tag="a" size="xs" href="{{ url('/admin') }}">
+                {{ __('Admin') }}
+            </x-filament::button>
+            <x-filament::dropdown placement="bottom-start" teleport="true">
+                <x-slot name="trigger" class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
+                    <img x-tooltip="'User Profile'" src="{{ \Filament\Facades\Filament::getUserAvatarUrl(auth()->user()) }}" alt="avatar" class="object-cover w-10 h-10 rounded-full sm:block">
+                </x-slot>
+
+                <x-filament::dropdown.list>
+
+                    <x-filament::dropdown.list.item
+                        class="dark:text-gray-200 text-gray-700"
+                        :color="'gray'"
+                        :icon="'heroicon-m-chevron-right'"
+                        :href="url('rain/new-page')"
+                        tag="a"
+                    >
+                        {{ __('User Dashboard') }}
+                    </x-filament::dropdown.list.item>
+
                     <x-filament::dropdown.list.item
                         class="dark:text-gray-200 text-gray-700"
                         :color="'gray'"
@@ -133,12 +134,18 @@
                     >
                         {{ __('My Tickets') }}
                     </x-filament::dropdown.list.item>
+
+                    <x-filament::dropdown.list.item
+                        class="dark:text-gray-200 text-gray-700"
+                        :color="'gray'"
+                        :icon="'heroicon-m-chevron-right'"
+                        :href="url('bolt/entries')"
+                        tag="a"
+                    >
+                        {{ __('My Entries') }}
+                    </x-filament::dropdown.list.item>
                 </x-filament::dropdown.list>
             </x-filament::dropdown>
-
-            <x-filament::button tag="a" size="sm" href="{{ url('/admin') }}">
-                {{ __('Admin') }}
-            </x-filament::button>
 
             {{--<x-theme-switcher/>--}}
             <x-lang-switcher/>

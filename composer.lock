@@ -4558,12 +4558,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/artemis.git",
-                "reference": "a1830514474fb3eb54bbc579d5c800334d0b8359"
+                "reference": "db63e4fd145dbfa430c0d8cbd672564a9d86239e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/a1830514474fb3eb54bbc579d5c800334d0b8359",
-                "reference": "a1830514474fb3eb54bbc579d5c800334d0b8359",
+                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/db63e4fd145dbfa430c0d8cbd672564a9d86239e",
+                "reference": "db63e4fd145dbfa430c0d8cbd672564a9d86239e",
                 "shasum": ""
             },
             "require": {
@@ -4627,20 +4627,20 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-08-10T12:55:46+00:00"
+            "time": "2023-08-19T05:15:07+00:00"
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v2.0.0-beta18",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "7a5199784c5a6fc463aad531c9073d9b6a83c280"
+                "reference": "31dc0dc000c6846214b114cc209f0828881edad2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/7a5199784c5a6fc463aad531c9073d9b6a83c280",
-                "reference": "7a5199784c5a6fc463aad531c9073d9b6a83c280",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/31dc0dc000c6846214b114cc209f0828881edad2",
+                "reference": "31dc0dc000c6846214b114cc209f0828881edad2",
                 "shasum": ""
             },
             "require": {
@@ -4717,20 +4717,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-16T21:49:17+00:00"
+            "time": "2023-08-19T20:02:25+00:00"
         },
         {
             "name": "lara-zeus/core",
-            "version": "v3.0.0-beta13",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "518386b67683147d80c09f27f3f8b3ae1c49f514"
+                "reference": "06cca2264e8ac4f1b9412f04272fe07151b5d451"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/518386b67683147d80c09f27f3f8b3ae1c49f514",
-                "reference": "518386b67683147d80c09f27f3f8b3ae1c49f514",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/06cca2264e8ac4f1b9412f04272fe07151b5d451",
+                "reference": "06cca2264e8ac4f1b9412f04272fe07151b5d451",
                 "shasum": ""
             },
             "require": {
@@ -4800,20 +4800,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-17T13:24:19+00:00"
+            "time": "2023-08-19T19:55:32+00:00"
         },
         {
             "name": "lara-zeus/rain",
-            "version": "v2.0.0-beta8",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/rain.git",
-                "reference": "c92dd205840e92282a55ff9351136b90ef7607ad"
+                "reference": "6a6c0daa1cbb4c927470f93a12546df3d6b6375f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/c92dd205840e92282a55ff9351136b90ef7607ad",
-                "reference": "c92dd205840e92282a55ff9351136b90ef7607ad",
+                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/6a6c0daa1cbb4c927470f93a12546df3d6b6375f",
+                "reference": "6a6c0daa1cbb4c927470f93a12546df3d6b6375f",
                 "shasum": ""
             },
             "require": {
@@ -4880,20 +4880,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-11T13:35:05+00:00"
+            "time": "2023-08-19T20:05:02+00:00"
         },
         {
             "name": "lara-zeus/rhea",
-            "version": "v2.0.0-beta6",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/rhea.git",
-                "reference": "85875ee00c9a49155c50b090163faaf0c857ecee"
+                "reference": "c2f28df7395471780b3db0578806bb8434141fcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/rhea/zipball/85875ee00c9a49155c50b090163faaf0c857ecee",
-                "reference": "85875ee00c9a49155c50b090163faaf0c857ecee",
+                "url": "https://api.github.com/repos/lara-zeus/rhea/zipball/c2f28df7395471780b3db0578806bb8434141fcc",
+                "reference": "c2f28df7395471780b3db0578806bb8434141fcc",
                 "shasum": ""
             },
             "require": {
@@ -4963,7 +4963,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-06T23:31:32+00:00"
+            "time": "2023-08-19T02:13:41+00:00"
         },
         {
             "name": "lara-zeus/sky",
@@ -5060,16 +5060,16 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v2.0.0-beta9",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "eee6de51c2d1ab121d5f9a29cdb30947f7fba966"
+                "reference": "c18ae86b3e76562458b7eedd45e077d2bd330b7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/eee6de51c2d1ab121d5f9a29cdb30947f7fba966",
-                "reference": "eee6de51c2d1ab121d5f9a29cdb30947f7fba966",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/c18ae86b3e76562458b7eedd45e077d2bd330b7a",
+                "reference": "c18ae86b3e76562458b7eedd45e077d2bd330b7a",
                 "shasum": ""
             },
             "require": {
@@ -5161,20 +5161,20 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-08-18T13:41:09+00:00"
+            "time": "2023-08-19T20:03:37+00:00"
         },
         {
             "name": "lara-zeus/wind",
-            "version": "v3.0.0-beta11",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "3f614ec7b2a9526009c97813d898038589cdc87d"
+                "reference": "36e79af3e0a602437435f6639f412e8223e6137f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/3f614ec7b2a9526009c97813d898038589cdc87d",
-                "reference": "3f614ec7b2a9526009c97813d898038589cdc87d",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/36e79af3e0a602437435f6639f412e8223e6137f",
+                "reference": "36e79af3e0a602437435f6639f412e8223e6137f",
                 "shasum": ""
             },
             "require": {
@@ -5239,7 +5239,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-16T21:48:09+00:00"
+            "time": "2023-08-19T20:00:14+00:00"
         },
         {
             "name": "laravel/framework",
@@ -13106,25 +13106,25 @@
         },
         {
             "name": "torchlight/torchlight-laravel",
-            "version": "v0.5.13",
+            "version": "v0.5.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/torchlight-api/torchlight-laravel.git",
-                "reference": "fe2b0dd48397632fa2e1272c22136b7ab3a79767"
+                "reference": "6a47c9dfdc5dc11ce0ef0672337119026189326d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/torchlight-api/torchlight-laravel/zipball/fe2b0dd48397632fa2e1272c22136b7ab3a79767",
-                "reference": "fe2b0dd48397632fa2e1272c22136b7ab3a79767",
+                "url": "https://api.github.com/repos/torchlight-api/torchlight-laravel/zipball/6a47c9dfdc5dc11ce0ef0672337119026189326d",
+                "reference": "6a47c9dfdc5dc11ce0ef0672337119026189326d",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.2",
-                "illuminate/cache": "^7.26.0|^8.0|^9.0|^10.0",
-                "illuminate/console": "^7.26.0|^8.0|^9.0|^10.0",
-                "illuminate/http": "^7.26.0|^8.0|^9.0|^10.0",
-                "illuminate/support": "^7.26.0|^8.0|^9.0|^10.0",
-                "illuminate/view": "^7.26.0|^8.0|^9.0|^10.0",
+                "illuminate/cache": "^8.0|^9.0|^10.0",
+                "illuminate/console": "^8.0|^9.0|^10.0",
+                "illuminate/http": "^8.0|^9.0|^10.0",
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "illuminate/view": "^8.0|^9.0|^10.0",
                 "php": "^7.3|^8.0",
                 "ramsey/uuid": "^3.7|^4.0"
             },
@@ -13165,9 +13165,9 @@
             ],
             "support": {
                 "issues": "https://github.com/torchlight-api/torchlight-laravel/issues",
-                "source": "https://github.com/torchlight-api/torchlight-laravel/tree/v0.5.13"
+                "source": "https://github.com/torchlight-api/torchlight-laravel/tree/v0.5.14"
             },
-            "time": "2023-02-14T02:49:05+00:00"
+            "time": "2023-08-18T21:14:06+00:00"
         },
         {
             "name": "ueberdosis/tiptap-php",

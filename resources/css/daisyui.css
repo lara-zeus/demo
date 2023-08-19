@@ -1,0 +1,18 @@
+@config "../../tailwind-daisyui.config.js";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* Sky search result highlight */
+    span.highlight {
+        @apply bg-primary-200 text-primary-700 px-2
+    }
+}
+
+@layer utilities {
+    /* debug tool 😜 */
+    .bord {
+        border: solid 1px chocolate;
+    }
+}

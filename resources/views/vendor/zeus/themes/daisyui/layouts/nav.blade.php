@@ -11,11 +11,10 @@
         </a>
     </div>
     <div class="flex-none">
-        <ul class="menu menu-horizontal px-1">
+        <ul class="menu menu-horizontal">
             <li>
                 <x-filament::dropdown placement="bottom-start" teleport="true">
-                    <x-slot name="trigger"
-                            class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
+                    <x-slot name="trigger" class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
                         {{ __('Site') }}
                         @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
                     </x-slot>
@@ -58,15 +57,6 @@
                         >
                             {{ __('Library') }}
                         </x-filament::dropdown.list.item>
-                        <x-filament::dropdown.list.item
-                            class="dark:text-gray-200 text-gray-700"
-                            :color="'gray'"
-                            :icon="'heroicon-m-chevron-right'"
-                            :href="url('wind/contact-us')"
-                            tag="a"
-                        >
-                            {{ __('Contact us') }}
-                        </x-filament::dropdown.list.item>
                     </x-filament::dropdown.list>
                 </x-filament::dropdown>
             </li>
@@ -74,7 +64,7 @@
                 <x-filament::dropdown placement="bottom-start" teleport="true">
                     <x-slot name="trigger"
                             class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
-                        {{ __('Forms') }}
+                        {{ __('Apps') }}
                         @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
                     </x-slot>
 
@@ -92,26 +82,6 @@
                             class="dark:text-gray-200 text-gray-700"
                             :color="'gray'"
                             :icon="'heroicon-m-chevron-right'"
-                            :href="url('bolt/entries')"
-                            tag="a"
-                        >
-                            {{ __('My Entries') }}
-                        </x-filament::dropdown.list.item>
-                    </x-filament::dropdown.list>
-                </x-filament::dropdown>
-            </li>
-            <li>
-                <x-filament::dropdown placement="bottom-start" teleport="true">
-                    <x-slot name="trigger" class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
-                        {{ __('Tickets') }}
-                        @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
-                    </x-slot>
-
-                    <x-filament::dropdown.list>
-                        <x-filament::dropdown.list.item
-                            class="dark:text-gray-200 text-gray-700"
-                            :color="'gray'"
-                            :icon="'heroicon-m-chevron-right'"
                             :href="url('thunder')"
                             tag="a"
                         >
@@ -121,20 +91,21 @@
                             class="dark:text-gray-200 text-gray-700"
                             :color="'gray'"
                             :icon="'heroicon-m-chevron-right'"
-                            :href="url('thunder/tickets')"
+                            :href="url('wind/contact-us')"
                             tag="a"
                         >
-                            {{ __('My Tickets') }}
+                            {{ __('Contact us') }}
                         </x-filament::dropdown.list.item>
                     </x-filament::dropdown.list>
                 </x-filament::dropdown>
             </li>
             <li>
-                <a class="" href="{{ url('/admin') }}">
+                <a href="{{ url('/admin') }}">
                     {{ __('Admin') }}
                 </a>
             </li>
 
+            @include($artemisTheme.'.layouts.user-switcher')
             @include($artemisTheme.'.layouts.theme-switcher')
             @include($artemisTheme.'.layouts.lang-switcher')
             @include($artemisTheme.'.layouts.color-switcher')

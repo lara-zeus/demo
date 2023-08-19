@@ -31,20 +31,19 @@
         }
     </style>
 </head>
-<body
-    class="antialiased bg-gray-50 text-gray-900 dark:text-gray-100 dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
+<body class="antialiased bg-gray-50 text-gray-900 dark:text-gray-100 dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
 
 <header x-data="{ open: false }" class="bg-white dark:bg-black py-4">
     <x-nav/>
 </header>
 
-@if(isset($header) || isset($breadcrumps))
+@if(isset($header) || isset($breadcrumbs))
     <header class="bg-gray-100 dark:bg-gray-800">
         <div class="container mx-auto py-2 px-3">
-            @if(isset($breadcrumps))
+            @if(isset($breadcrumbs))
                 <nav class="text-gray-400 font-bold my-1" aria-label="Breadcrumb">
                     <ol class="list-none p-0 inline-flex">
-                        {{ $breadcrumps }}
+                        {{ $breadcrumbs }}
                     </ol>
                 </nav>
             @endif
