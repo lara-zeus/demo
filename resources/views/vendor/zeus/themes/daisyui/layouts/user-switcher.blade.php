@@ -1,7 +1,11 @@
 <li title="Change Theme" class="dropdown">
     <details>
         <summary>
-            <img x-tooltip="'User Profile'" src="{{ \Filament\Facades\Filament::getUserAvatarUrl(auth()->user()) }}" class="h-5 w-5" alt="avatar">
+            @auth()
+                <img x-tooltip="'User Profile'" src="{{ \Filament\Facades\Filament::getUserAvatarUrl(auth()->user()) }}" class="h-5 w-5" alt="avatar">
+            @else
+                Guest
+            @endauth
         </summary>
         <ul class="z-50 dropdown-content bg-base-200 text-base-content rounded-box w-56 overflow-y-auto shadow">
             <div class="grid grid-cols-1 gap-3 p-3" tabindex="0">

@@ -110,7 +110,11 @@
             </x-filament::button>
             <x-filament::dropdown placement="bottom-start" teleport="true">
                 <x-slot name="trigger" class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
-                    <img x-tooltip="'User Profile'" src="{{ \Filament\Facades\Filament::getUserAvatarUrl(auth()->user()) }}" alt="avatar" class="object-cover w-10 h-10 rounded-full sm:block">
+                    @auth()
+                        <img x-tooltip="'User Profile'" src="{{ \Filament\Facades\Filament::getUserAvatarUrl(auth()->user()) }}" alt="avatar" class="object-cover w-10 h-10 rounded-full sm:block">
+                    @else
+                        Guest
+                    @endauth
                 </x-slot>
 
                 <x-filament::dropdown.list>
