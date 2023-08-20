@@ -36,8 +36,9 @@
             @svg('iconoir-left-round-arrow','rtl:hidden w-9 h-9 text-secondary-500')
             @svg('iconoir-right-round-arrow','ltr:hidden w-9 h-9 text-secondary-500')
             <a href="https://larazeus.com/"
-               class="text-gray-700 dark:text-gray-100 text-lg transition ease-in-out underline decoration-wavy underline-offset-4 decoration-primary-500 hover:decoration-secondary-500">Back
-                To @zeus Site</a>
+               class="text-gray-700 dark:text-gray-100 text-lg transition ease-in-out underline decoration-wavy underline-offset-4 decoration-primary-500 hover:decoration-secondary-500">
+                {{ __('Back To Site') }} @zeus
+            </a>
         </div>
     </div>
 </x-app>
