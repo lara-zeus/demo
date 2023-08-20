@@ -4,7 +4,6 @@
         <span class="text-primary-500">Wind</span>
     @endslot
     @slot('desc')
-        {{ app()->getLocale() }}
         {{ __('Wind, is a package provides a simple contact form manger, with the ability to store the messages in the database, and you can reply to them from the dashboard') }}.
     @endslot
     @slot('btns')
