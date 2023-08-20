@@ -4804,16 +4804,16 @@
         },
         {
             "name": "lara-zeus/rain",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/rain.git",
-                "reference": "6a6c0daa1cbb4c927470f93a12546df3d6b6375f"
+                "reference": "72606be5fa2eabf37809017749c6b1c87a5dcea1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/6a6c0daa1cbb4c927470f93a12546df3d6b6375f",
-                "reference": "6a6c0daa1cbb4c927470f93a12546df3d6b6375f",
+                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/72606be5fa2eabf37809017749c6b1c87a5dcea1",
+                "reference": "72606be5fa2eabf37809017749c6b1c87a5dcea1",
                 "shasum": ""
             },
             "require": {
@@ -4880,7 +4880,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-19T20:05:02+00:00"
+            "time": "2023-08-20T13:12:12+00:00"
         },
         {
             "name": "lara-zeus/rhea",
@@ -6320,16 +6320,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.0.0-beta.9",
+            "version": "v3.0.0-beta.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "e3547a6cab69c6a50444c9681042aa6b7b31442a"
+                "reference": "526bda01304b16908d029f2010504957d8c46e05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/e3547a6cab69c6a50444c9681042aa6b7b31442a",
-                "reference": "e3547a6cab69c6a50444c9681042aa6b7b31442a",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/526bda01304b16908d029f2010504957d8c46e05",
+                "reference": "526bda01304b16908d029f2010504957d8c46e05",
                 "shasum": ""
             },
             "require": {
@@ -6381,7 +6381,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.0.0-beta.9"
+                "source": "https://github.com/livewire/livewire/tree/v3.0.0-beta.10"
             },
             "funding": [
                 {
@@ -6389,7 +6389,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-15T03:56:30+00:00"
+            "time": "2023-08-19T04:25:59+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
