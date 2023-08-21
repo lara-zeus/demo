@@ -11,6 +11,7 @@ use Awcodes\FilamentVersions\VersionsWidget;
 use Awcodes\LightSwitch\LightSwitchPlugin;
 use Awcodes\Overlook\OverlookPlugin;
 use Awcodes\Overlook\Widgets\OverlookWidget;
+use BezhanSalleh\FilamentShield\FilamentShieldPlugin;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -177,6 +178,8 @@ class AdminPanelProvider extends PanelProvider
                     OperationsResource::class,
                     TicketResource::class,
                 ]),
+
+            FilamentShieldPlugin::make(),
 
             SpatieLaravelTranslatablePlugin::make()
                 ->defaultLocales(['en','pt']),
