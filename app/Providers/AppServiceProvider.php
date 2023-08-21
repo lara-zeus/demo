@@ -18,33 +18,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $hooks = [
-            'Zeus-forms.before',
-            'Zeus-forms.after',
-            'Zeus-form.before',
-            'Zeus-form.after',
-            'Zeus-form-section.before',
-            'Zeus-form-section.after',
-            'Zeus-form-field.before',
-            'Zeus-form-field.after',
-        ];
-
-        // why this loop won't work?!
-        foreach ($hooks as $key => $hook) {
-            FilamentView::registerRenderHook(
-                "$hook",
-                fn (): View => view('filament.hooks.placeholder', ['data' => "$hook"]),
-            );
-        }
-
-        /*FilamentView::registerRenderHook(
-            'zeus-form-section.before',
-            fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-form-section.before']),
-        );
-        FilamentView::registerRenderHook(
-            'zeus-form-section.after',
-            fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-form-section.after']),
-        );*/
+        $this->hooksRenderer();
 
         FilamentAsset::register([
             Css::make('example-external-stylesheet', asset('css/flag-icons.css')),
@@ -68,5 +42,26 @@ class AppServiceProvider extends ServiceProvider
 
             return '<!-- no tags for you -->';
         });
+    }
+
+    public function hooksRenderer()
+    {
+        $hooks = [
+            'zeus-forms.before',
+            'zeus-forms.after',
+            'zeus-form.before',
+            'zeus-form.after',
+            'zeus-form-section.before',
+            'zeus-form-section.after',
+            'zeus-form-field.before',
+            'zeus-form-field.after',
+        ];
+
+        foreach ($hooks as $key => $hook) {
+            FilamentView::registerRenderHook(
+                "$hook",
+                fn (): View => view('filament.hooks.placeholder', ['data' => "$hook"]),
+            );
+        }
     }
 }
