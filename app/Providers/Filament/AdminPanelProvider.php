@@ -204,7 +204,7 @@ class AdminPanelProvider extends PanelProvider
                     TicketResource::class,
                 ]),
 
-            FilamentShieldPlugin::make(),
+            //FilamentShieldPlugin::make(),
 
             SpatieLaravelTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt']),
