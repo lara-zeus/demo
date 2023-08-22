@@ -11,6 +11,7 @@ use Awcodes\FilamentVersions\VersionsWidget;
 use Awcodes\LightSwitch\LightSwitchPlugin;
 use Awcodes\Overlook\OverlookPlugin;
 use Awcodes\Overlook\Widgets\OverlookWidget;
+use Filament\Facades\Filament;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -30,11 +31,19 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use LaraZeus\Bolt\BoltPlugin;
 use LaraZeus\Bolt\Filament\Resources\ResponseResource;
+use LaraZeus\Hermes\Filament\Resources\BranchResource;
+use LaraZeus\Hermes\Filament\Resources\HermesResource;
+use LaraZeus\Hermes\Filament\Resources\MenuItemLabelsResource;
+use LaraZeus\Hermes\Filament\Resources\MenuResource;
+use LaraZeus\Hermes\Filament\Resources\MenuSectionResource;
+use LaraZeus\Hermes\HermesPlugin;
 use LaraZeus\Rain\RainPlugin;
 use LaraZeus\Rhea\RheaPlugin;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\Thunder\Extensions\Thunder;
+use LaraZeus\Thunder\Filament\Resources\OfficeResource;
 use LaraZeus\Thunder\Filament\Resources\OperationsResource;
+use LaraZeus\Thunder\Filament\Resources\ThunderResource;
 use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\Filament\Resources\LetterResource;
@@ -57,9 +66,7 @@ class AdminPanelProvider extends PanelProvider
 
             //->topNavigation()
             ->sidebarCollapsibleOnDesktop()
-
             ->maxContentWidth('full')
-
             ->colors([
                 'gray' => Color::Stone,
                 'primary' => Color::hex('#45B39D'),
@@ -76,7 +83,6 @@ class AdminPanelProvider extends PanelProvider
                 'Rain',
                 'Rhea',
             ])
-
             /*->renderHook(
                 'zeus-form-section.before',
                 fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
@@ -110,6 +116,25 @@ class AdminPanelProvider extends PanelProvider
                 fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-form.after']),
             )*/
 
+            ->renderHook(
+                'panels::page.start',
+                fn(array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
+                scopes: [
+                    BranchResource::class,
+                    MenuItemLabelsResource::class,
+                    MenuResource::class,
+                    MenuSectionResource::class,
+                ],
+            )
+            ->renderHook(
+                'panels::page.start',
+                fn(array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
+                scopes: [
+                    OfficeResource::class,
+                    OperationsResource::class,
+                    TicketResource::class,
+                ],
+            )
             ->renderHook(
                 'panels::content.start',
                 fn(): View => view('filament.hooks.db-notice'),
@@ -179,7 +204,7 @@ class AdminPanelProvider extends PanelProvider
                 ]),
 
             SpatieLaravelTranslatablePlugin::make()
-                ->defaultLocales(['en','pt']),
+                ->defaultLocales(['en', 'pt']),
 
             FilamentNavigation::make(),
 
@@ -192,6 +217,7 @@ class AdminPanelProvider extends PanelProvider
             ThunderPlugin::make(),
             RainPlugin::make(),
             RheaPlugin::make(),
+            HermesPlugin::make(),
         ];
     }
 }

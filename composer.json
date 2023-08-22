@@ -31,6 +31,7 @@
         "lara-zeus/core": "^3.0",
         "lara-zeus/rain": "^2.0",
         "lara-zeus/rhea": "^2.0",
+        "lara-zeus/hermes": "^1.0",
         "lara-zeus/sky": "^3.0",
         "lara-zeus/thunder": "^2.0",
         "lara-zeus/wind": "^3.0",
@@ -112,12 +113,40 @@
             "url": "git@github.com:lara-zeus/laravel-comments.git"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/thunder.git"
+            "type": "path",
+            "url": "../core"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/artemis.git"
+            "type": "path",
+            "url": "../wind"
+        },
+        {
+            "type": "path",
+            "url": "../sky"
+        },
+        {
+            "type": "path",
+            "url": "../bolt"
+        },
+        {
+            "type": "path",
+            "url": "../thunder"
+        },
+        {
+            "type": "path",
+            "url": "../rain"
+        },
+        {
+            "type": "path",
+            "url": "../artemis"
+        },
+        {
+            "type": "path",
+            "url": "../rhea"
+        },
+        {
+            "type": "path",
+            "url": "../hermes"
         }
     ]
 }
