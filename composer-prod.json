@@ -9,10 +9,12 @@
         "andreiio/blade-iconoir": "^2.5",
         "andreiio/blade-remix-icon": "^2.3",
         "archtechx/laravel-seo": "^0.7",
+        "awcodes/filament-gravatar": "^2.0",
         "awcodes/filament-quick-create": "^3.0",
         "awcodes/filament-versions": "^2.0",
         "awcodes/light-switch": "^1.0",
         "awcodes/overlook": "^2.0",
+        "bezhansalleh/filament-shield": "^3.0@beta",
         "codeat3/blade-akar-icons": "^1.21",
         "codeat3/blade-carbon-icons": "^2.13",
         "codeat3/blade-clarity-icons": "^1.8",
@@ -30,13 +32,16 @@
         "lara-zeus/core": "^3.0",
         "lara-zeus/rain": "^2.0",
         "lara-zeus/rhea": "^2.0",
+        "lara-zeus/hermes": "^1.0",
         "lara-zeus/sky": "^3.0",
         "lara-zeus/thunder": "^2.0",
         "lara-zeus/wind": "^3.0",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
+        "njxqlus/filament-progressbar": "dev-main",
         "ryangjchandler/blade-tabler-icons": "^2.0",
         "sentry/sentry-laravel": "^3.3",
+        "stechstudio/filament-impersonate": "^3.5",
         "torchlight/torchlight-laravel": "^0.5.13"
     },
     "require-dev": {
@@ -102,6 +107,7 @@
         }
     },
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "repositories": [
         {
             "type": "github",
@@ -114,6 +120,10 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/artemis.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/hermes.git"
         }
     ]
 }

@@ -31,6 +31,10 @@
         {
             "type": "path",
             "url": "../rhea"
+        },
+        {
+            "type": "path",
+            "url": "../hermes"
         }
     ]
 }

@@ -112,6 +112,18 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/laravel-comments.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/thunder.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/artemis.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/hermes.git"
         }
     ]
 }

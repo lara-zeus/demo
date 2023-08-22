@@ -1,7 +1,7 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/filament.css": "/css/filament.css",
-    "/css/app.css": "/css/app.css",
-    "/css/daisyui.css": "/css/daisyui.css",
-    "/css/flag-icons.css": "/css/flag-icons.css"
+    "/js/app.js": "/js/app.js?id=6d18b22d6669c38c33d8621a7c2fe131",
+    "/css/filament.css": "/css/filament.css?id=09c784ae7d152862339b4afdeb54c6a8",
+    "/css/app.css": "/css/app.css?id=7b00368d61f7d5b19901fe2d19cec50a",
+    "/css/daisyui.css": "/css/daisyui.css?id=ca6d28acccf5abfcc3b09f4497d201eb",
+    "/css/flag-icons.css": "/css/flag-icons.css?id=b25f918b02d08796bc5624f273d84778"
 }
