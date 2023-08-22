@@ -44,22 +44,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array<class-string, class-string>
      */
     protected $policies = [
-        Category::class => CategoryPolicy::class,
-        Collection::class => CollectionPolicy::class,
-        Department::class => DepartmentPolicy::class,
-        Faq::class => FaqPolicy::class,
-        Form::class => FormPolicy::class,
-        Layout::class => LayoutPolicy::class,
-        Letter::class => LetterPolicy::class,
-        Library::class => LibraryPolicy::class,
-        Navigation::class => NavigationPolicy::class,
-        Office::class => OfficePolicy::class,
-        Operations::class => OperationsPolicy::class,
-        Post::class => PostPolicy::class,
-        Response::class => ResponsePolicy::class,
-        Role::class => RolePolicy::class,
-        Tag::class => TagPolicy::class,
-        Ticket::class => TicketPolicy::class,
+       //
     ];
 
     /**
