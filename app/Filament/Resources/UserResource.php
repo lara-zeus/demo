@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\UserResource\Pages;
 use App\Models\User;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -51,6 +52,10 @@ class UserResource extends Resource
             TextInput::make('password')
                 ->password()
                 ->maxLength(255),
+            Select::make('roles')
+                ->relationship('roles','name')
+                ->preload()
+                ->multiple(),
         ]);
     }
 
