@@ -14,6 +14,7 @@
         "awcodes/filament-versions": "^2.0",
         "awcodes/light-switch": "^1.0",
         "awcodes/overlook": "^2.0",
+        "bezhansalleh/filament-shield": "^3.0@beta",
         "codeat3/blade-akar-icons": "^1.21",
         "codeat3/blade-carbon-icons": "^2.13",
         "codeat3/blade-clarity-icons": "^1.8",
@@ -112,12 +113,36 @@
             "url": "git@github.com:lara-zeus/laravel-comments.git"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/thunder.git"
+            "type": "path",
+            "url": "../core"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/artemis.git"
+            "type": "path",
+            "url": "../wind"
+        },
+        {
+            "type": "path",
+            "url": "../sky"
+        },
+        {
+            "type": "path",
+            "url": "../bolt"
+        },
+        {
+            "type": "path",
+            "url": "../thunder"
+        },
+        {
+            "type": "path",
+            "url": "../rain"
+        },
+        {
+            "type": "path",
+            "url": "../artemis"
+        },
+        {
+            "type": "path",
+            "url": "../rhea"
         }
     ]
 }
