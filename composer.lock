@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be32a77f6a0832c52928e5099473bb2a",
+    "content-hash": "53be6ad50672cb58f9680d9b4d8b0828",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -4893,12 +4893,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/hermes.git",
-                "reference": "fe51644b14a1e66a9b82dd2f9f1c008d9907583d"
+                "reference": "0c7c0c72a61cd59e82c23cccc88beafb2496570e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/fe51644b14a1e66a9b82dd2f9f1c008d9907583d",
-                "reference": "fe51644b14a1e66a9b82dd2f9f1c008d9907583d",
+                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/0c7c0c72a61cd59e82c23cccc88beafb2496570e",
+                "reference": "0c7c0c72a61cd59e82c23cccc88beafb2496570e",
                 "shasum": ""
             },
             "require": {
@@ -4991,7 +4991,7 @@
                 "issues": "https://github.com/lara-zeus/hermes/issues",
                 "source": "https://github.com/lara-zeus/hermes"
             },
-            "time": "2023-08-22T20:47:34+00:00"
+            "time": "2023-08-22T21:31:19+00:00"
         },
         {
             "name": "lara-zeus/rain",
