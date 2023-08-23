@@ -28,6 +28,7 @@
         @include('items.thunder')
         @include('items.rhea')
         @include('items.artemis')
+        @include('items.hermes')
         @include('items.soon')
     </div>
 
