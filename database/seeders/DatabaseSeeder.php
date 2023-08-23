@@ -34,6 +34,7 @@ class DatabaseSeeder extends Seeder
             BoltSeeder::class,
             ThunderSeeder::class,
             RainSeeder::class,
+            HermesSeeder::class,
         ]);
     }
 }
