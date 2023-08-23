@@ -1,9 +1,10 @@
-<div class="{{--bg-secondary-100 dark:bg-gray-800--}}
-            bg-gradient-to-bl from-secondary-200 to-secondary-100
+<div class="
+            dark:bg-gradient-to-bl dark:from-secondary-500 dark:to-gray-900 dark:via-gray-900
+            bg-gradient-to-bl from-primary-200 to-primary-50 via-primary-50 to-60%
             w-full px-3 py-4 my-4 rounded-lg
             shadow-md hover:shadow-lg duration-200 transition ease-in-out
             flex items-center justify-center gap-2">
-    @svg('heroicon-o-heart','w-10 h-10 text-secondary-500 dark:text-secondary-300')
+    @svg('heroicon-o-heart','w-10 h-10 text-secondary-500 dark:text-secondary-500')
 
     <div class="w-full">
         <div class="my-2">
