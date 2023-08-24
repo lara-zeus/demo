@@ -201,7 +201,7 @@ class AdminPanelProvider extends PanelProvider
                 ]),
 
             SpatieLaravelTranslatablePlugin::make()
-                ->defaultLocales(['en', 'pt']),
+                ->defaultLocales(['en', 'pt','ko']),
 
             FilamentNavigation::make(),
 
