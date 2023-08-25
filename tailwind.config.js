@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 import preset from './vendor/filament/filament/tailwind.config.preset'
 
 module.exports = {
-    presets: [preset],
+    //presets: [preset],
     content: [
         //App
         './resources/views/**/*.blade.php',
@@ -36,6 +36,7 @@ module.exports = {
         './vendor/awcodes/filament-versions/resources/**/*.blade.php',
         './vendor/awcodes/filament-quick-create/resources/**/*.blade.php',
         './vendor/awcodes/overlook/resources/**/*.blade.php',
+        './vendor/ryangjchandler/filament-navigation/resources/**/*.blade.php',
     ],
     darkMode: 'class',
     theme: {
@@ -57,5 +58,7 @@ module.exports = {
     },
     plugins: [
         require('tailwindcss-debug-screens'),
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
     ],
 }

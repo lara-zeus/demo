@@ -29,7 +29,7 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function(){
+    var scrollToSection = function (event) {
         setTimeout(() => {
             const activeSidebarItem = document.querySelector('.fi-sidebar-item-active');
             const sidebarWrapper = document.querySelector('.fi-sidebar-nav')
@@ -38,7 +38,10 @@
 
             sidebarWrapper.scrollTo(0, activeSidebarItem.offsetTop - 250)
         }, 1)
-    });
+    };
+
+    document.addEventListener('livewire:navigated', scrollToSection);
+    document.addEventListener('DOMContentLoaded', scrollToSection);
 </script>
 
 @stillStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
