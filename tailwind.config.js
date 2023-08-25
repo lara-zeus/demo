@@ -27,6 +27,9 @@ module.exports = {
 
         './vendor/lara-zeus/rhea/resources/views/**/*.blade.php',
 
+        // hermes
+        './vendor/lara-zeus/hermes/resources/views/**/*.blade.php',
+
         // filament
         './app/Filament/**/*.php',
         './resources/views/filament/**/*.blade.php',

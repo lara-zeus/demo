@@ -85,6 +85,7 @@
 @livewireScripts
 @filamentScripts
 @livewire('notifications')
+@livewire('livewire-ui-modal')
 
 <script>
     const theme = localStorage.getItem('theme')
