@@ -53,7 +53,7 @@ class UserResource extends Resource
                 ->password()
                 ->maxLength(255),
             Select::make('roles')
-                ->relationship('roles','name')
+                ->relationship('roles', 'name')
                 ->preload()
                 ->multiple(),
         ]);
@@ -68,7 +68,7 @@ class UserResource extends Resource
                     ->searchable(),
                 TextColumn::make('email')
                     ->sortable()
-                    ->searchable()
+                    ->searchable(),
             ])
             ->actions([
                 EditAction::make(),

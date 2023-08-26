@@ -115,7 +115,7 @@ class AdminPanelProvider extends PanelProvider
 
             ->renderHook(
                 'panels::page.start',
-                fn(array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
+                fn (array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
                 scopes: [
                     BranchResource::class,
                     MenuItemLabelsResource::class,
@@ -125,7 +125,7 @@ class AdminPanelProvider extends PanelProvider
             )
             ->renderHook(
                 'panels::page.start',
-                fn(array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
+                fn (array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
                 scopes: [
                     OfficeResource::class,
                     OperationsResource::class,
@@ -134,15 +134,15 @@ class AdminPanelProvider extends PanelProvider
             )
             ->renderHook(
                 'panels::content.start',
-                fn(): View => view('filament.hooks.db-notice'),
+                fn (): View => view('filament.hooks.db-notice'),
             )
             ->renderHook(
                 'panels::user-menu.before',
-                fn(): View => view('filament.hooks.lang-switcher'),
+                fn (): View => view('filament.hooks.lang-switcher'),
             )
             ->renderHook(
                 'panels::footer',
-                fn(): View => view('filament.hooks.footer'),
+                fn (): View => view('filament.hooks.footer'),
             )
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -201,7 +201,7 @@ class AdminPanelProvider extends PanelProvider
                 ]),
 
             SpatieLaravelTranslatablePlugin::make()
-                ->defaultLocales(['en', 'pt','ko']),
+                ->defaultLocales(['en', 'pt', 'ko']),
 
             FilamentNavigation::make(),
 

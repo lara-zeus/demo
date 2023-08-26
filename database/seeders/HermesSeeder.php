@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use LaraZeus\Hermes\Models\Branch;
-use LaraZeus\Hermes\Models\Menu;
 use LaraZeus\Hermes\Models\MenuItemLabels;
 use LaraZeus\Hermes\Models\MenuSection;
 
