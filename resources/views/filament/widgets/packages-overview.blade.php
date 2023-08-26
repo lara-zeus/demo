@@ -59,6 +59,10 @@
             <x-list.item url="https://github.com/andrewdwallo/filament-selectify">
                 ⚡️ Filament Selectify
             </x-list.item>
+
+            <x-list.item url="https://github.com/pxlrbt/filament-spotlight">
+                ⚡️ Filament Spotlight
+            </x-list.item>
         </x-list.index>
 
     </x-filament::section>

@@ -45,6 +45,7 @@ use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
+use pxlrbt\FilamentSpotlight\SpotlightPlugin;
 use RyanChandler\FilamentNavigation\FilamentNavigation;
 
 class AdminPanelProvider extends PanelProvider
@@ -176,6 +177,7 @@ class AdminPanelProvider extends PanelProvider
     {
         return [
             GravatarPlugin::make(),
+            SpotlightPlugin::make(),
             LightSwitchPlugin::make(),
             OverlookPlugin::make()
                 ->sort(5)
