@@ -20,9 +20,10 @@ class CreateMenuSectionsTable extends Migration
             $table->string('description')->nullable();
             $table->string('cover')->nullable();
             $table->integer('order')->default(1);
-            $table->timestamps();
-            $table->integer('is_active')->default(1);
+            $table->boolean('is_active')->default(1);
             $table->string('cover_focal_point')->nullable();
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 

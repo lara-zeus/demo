@@ -5023,12 +5023,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/hermes.git",
-                "reference": "435b0976a0dca7dcd41824839e7ce1f88d3e522b"
+                "reference": "7abc3ddbe01cc12177bf390815d745f615feafe1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/435b0976a0dca7dcd41824839e7ce1f88d3e522b",
-                "reference": "435b0976a0dca7dcd41824839e7ce1f88d3e522b",
+                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/7abc3ddbe01cc12177bf390815d745f615feafe1",
+                "reference": "7abc3ddbe01cc12177bf390815d745f615feafe1",
                 "shasum": ""
             },
             "require": {
@@ -5126,7 +5126,7 @@
                 "issues": "https://github.com/lara-zeus/hermes/issues",
                 "source": "https://github.com/lara-zeus/hermes"
             },
-            "time": "2023-08-28T19:12:02+00:00"
+            "time": "2023-08-28T21:30:17+00:00"
         },
         {
             "name": "lara-zeus/rain",

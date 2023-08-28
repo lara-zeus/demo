@@ -23,8 +23,9 @@ class CreateBranchesTable extends Migration
             $table->string('image')->nullable();
             $table->string('map')->nullable();
             $table->integer('order')->default(1);
-            $table->softDeletes();
+            $table->boolean('is_active')->default(1);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

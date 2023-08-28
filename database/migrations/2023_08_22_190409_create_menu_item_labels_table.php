@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('description');
             $table->string('color');
             $table->string('icon');
-            $table->string('is_active');
+            $table->boolean('is_active')->default(1);
             $table->timestamps();
         });
     }

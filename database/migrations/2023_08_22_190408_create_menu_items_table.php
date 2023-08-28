@@ -18,13 +18,14 @@ class CreateMenuItemsTable extends Migration
             $table->foreignIdFor(\LaraZeus\Hermes\Models\MenuSection::class);
             $table->string('name');
             $table->string('description')->nullable();
-            $table->text('price')->nullable();
+            $table->text('prices')->nullable();
             $table->text('images')->nullable();
-            $table->timestamps();
             $table->boolean('sort')->default(0);
             $table->integer('calories')->nullable();
             $table->text('labels')->nullable();
             $table->boolean('is_pinned')->default(0);
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 
