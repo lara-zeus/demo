@@ -25,8 +25,8 @@ class HermesSeeder extends Seeder
 
         DB::table('menu_item_labels')
             ->insertGetId([
-                'name' => 'Hot',
-                'description' => 'Hot one',
+                'name' => 'chef choice',
+                'description' => 'chef choice',
                 'color' => '#e6a21e',
                 'icon' => 'tabler-rubber-stamp',
             ]);
