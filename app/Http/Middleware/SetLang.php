@@ -21,7 +21,7 @@ class SetLang
                 }
             }
 
-            app()->setLocale(session('current_lang'));
+            app()->setLocale(session('current_lang', 'en'));
 
             return $next($request);
         });
