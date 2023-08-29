@@ -1,5 +1,4 @@
-<div class="px-4 py-4
-    bg-gradient-to-br from-transparent via-transparent to-secondary-50
+<div class="fi-section px-4 py-4
     dark:from-gray-700 dark:via-transparent dark:to-gray-600
     shadow-lg dark:hover:shadow-gray-800 rounded-3xl hover:shadow-xl transition ease-in-out duration-300
     flex gap-2 items-center justify-center border border-gray-100 dark:border-gray-700 h-72 2xl:h-full">

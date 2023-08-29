@@ -1,5 +1,4 @@
-<div class="px-4 py-4 border border-secondary-200 dark:border-gray-700
-    bg-gradient-to-br from-white dark:from-gray-900 to-gray-50 dark:to-gray-800
+<div class="fi-section px-4 py-4 border border-secondary-200 dark:border-gray-700
     shadow-lg hover:shadow-xl dark:hover:shadow-lg dark:hover:shadow-gray-800
     rounded-2xl transition ease-in-out duration-300
     flex flex-col gap-2 items-center sm:items-start">

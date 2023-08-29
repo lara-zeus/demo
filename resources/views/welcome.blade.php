@@ -21,14 +21,14 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-4 mx-4">
-        @include('items.wind')
-        @include('items.sky')
         @include('items.bolt')
-        @include('items.rain')
         @include('items.thunder')
+        @include('items.hermes')
+        @include('items.sky')
+        @include('items.wind')
+        @include('items.rain')
         @include('items.rhea')
         @include('items.artemis')
-        @include('items.hermes')
         @include('items.soon')
     </div>
 

@@ -10,9 +10,8 @@
         <a href="{{ url('/admin/branches') }}" class="shadow transition ease-in-out whitespace-nowrap text-base font-medium rounded-md text-white bg-secondary-500 hover:bg-secondary-500 px-4 py-2 dark:bg-secondary-600 dark:hover:bg-secondary-800">
             {{ __('Admin Panel') }}
         </a>
-
-        {{--<a href="{{ url('artemis') }}" class="rounded-md shadow w-full flex items-center justify-center text-base font-medium text-white bg-secondary-500 hover:bg-secondary-500 px-4 py-2">
-            Read More
-        </a>--}}
+        <a href="{{ url('hermes') }}" class="shadow transition ease-in-out whitespace-nowrap text-base font-medium rounded-md text-white bg-primary-500 hover:bg-primary-700 px-4 py-2">
+            {{ __('Our Menu') }}
+        </a>
     @endslot
 </x-item>

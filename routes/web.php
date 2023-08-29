@@ -27,11 +27,11 @@ Route::get('lang/{lang}', function ($lang) {
     session()->put('current_lang', $lang);
     app()->setLocale($lang);
 
-    return redirect()->back();
+    return redirect(url()->previousPath());
 });
 
 Route::get('theme/{theme}', function ($theme) {
     session()->put('current_theme', $theme);
 
-    return redirect()->back();
+    return redirect(url()->previousPath());
 });

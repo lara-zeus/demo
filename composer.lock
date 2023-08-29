@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7aee8c0edfea597e68b9de995fd6bf1",
+    "content-hash": "67ed09c5e49685790b1f7e3ac2375a36",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -7378,87 +7378,6 @@
                 "source": "https://github.com/nette/utils/tree/v4.0.1"
             },
             "time": "2023-07-30T15:42:21+00:00"
-        },
-        {
-            "name": "njxqlus/filament-progressbar",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/njxqlus/filament-progressbar.git",
-                "reference": "200503b551ccf60e657665baeaa8b04ee4ec51cb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/njxqlus/filament-progressbar/zipball/200503b551ccf60e657665baeaa8b04ee4ec51cb",
-                "reference": "200503b551ccf60e657665baeaa8b04ee4ec51cb",
-                "shasum": ""
-            },
-            "require": {
-                "filament/filament": "^3.0",
-                "illuminate/contracts": "^10.0",
-                "php": "^8.1",
-                "spatie/laravel-package-tools": "^1.15.0"
-            },
-            "require-dev": {
-                "laravel/pint": "^1.0",
-                "nunomaduro/collision": "^7.9",
-                "nunomaduro/larastan": "^2.0.1",
-                "orchestra/testbench": "^8.0",
-                "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-arch": "^2.0",
-                "pestphp/pest-plugin-laravel": "^2.0",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Njxqlus\\FilamentProgressbar\\FilamentProgressbarServiceProvider"
-                    ],
-                    "aliases": {
-                        "FilamentProgressbar": "Njxqlus\\FilamentProgressbar\\Facades\\FilamentProgressbar"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Njxqlus\\FilamentProgressbar\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mikael Ahabalyants",
-                    "email": "njxqlus@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "This Filament component shows a progress bar at the top of the page when we navigate from one page to another",
-            "homepage": "https://github.com/njxqlus/filament-progressbar",
-            "keywords": [
-                "filament",
-                "laravel",
-                "njxqlus",
-                "pace-js",
-                "progressbar"
-            ],
-            "support": {
-                "issues": "https://github.com/njxqlus/filament-progressbar/issues",
-                "source": "https://github.com/njxqlus/filament-progressbar"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/njxqlus",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-08-28T06:33:37+00:00"
         },
         {
             "name": "nunomaduro/termwind",
@@ -18843,7 +18762,6 @@
     "stability-flags": {
         "bezhansalleh/filament-shield": 10,
         "lara-zeus/artemis": 20,
-        "njxqlus/filament-progressbar": 20,
         "pestphp/pest-plugin-laravel": 20,
         "pestphp/pest-plugin-livewire": 20
     },
