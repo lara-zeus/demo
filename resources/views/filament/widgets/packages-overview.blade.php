@@ -63,6 +63,10 @@
             <x-list.item url="https://github.com/pxlrbt/filament-spotlight">
                 ⚡️ Filament Spotlight
             </x-list.item>
+
+            <x-list.item url="https://wire-elements.dev">
+                ⚡️ Wire Elements
+            </x-list.item>
         </x-list.index>
 
     </x-filament::section>
