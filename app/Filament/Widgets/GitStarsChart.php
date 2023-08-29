@@ -2,11 +2,11 @@
 
 namespace App\Filament\Widgets;
 
-use Filament\Widgets\LineChartWidget;
+use Filament\Widgets\ChartWidget;
 use GrahamCampbell\GitHub\Facades\GitHub;
 use jeremykenedy\LaravelPackagist\App\Services\PackagistApiServices;
 
-class GitStarsChart extends LineChartWidget
+class GitStarsChart extends ChartWidget
 {
     protected static ?string $heading = 'Github Repositories Stats';
 
@@ -16,9 +16,13 @@ class GitStarsChart extends LineChartWidget
 
     protected static ?int $sort = 99;
 
+    protected function getType(): string
+    {
+        return 'line';
+    }
+
     protected function getData(): array
     {
-
         $repos = config('app.repos');
         $stars = $downloads = [];
 

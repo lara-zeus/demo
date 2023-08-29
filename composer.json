@@ -23,6 +23,7 @@
         "davidhsianturi/blade-bootstrap-icons": "^1.4",
         "doctrine/dbal": "^3.0",
         "filament/filament": "^3.0-stable",
+        "njxqlus/filament-progressbar": "dev-main",
         "garygreen/pretty-routes": "^1.0",
         "graham-campbell/github": "^12.2",
         "guzzlehttp/guzzle": "^7.5",
