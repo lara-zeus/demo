@@ -24,14 +24,16 @@ Route::post('/forms', function () {
 Route::view('embed', 'embed');
 
 Route::get('lang/{lang}', function ($lang) {
-    session()->put('current_lang', $lang);
-    app()->setLocale($lang);
+    if (array_key_exists($lang, config('app.locales'))) {
+        session()->put('current_lang', $lang);
+    } else {
+        session()->put('current_lang', 'en');
+    }
 
     return redirect(url()->previousPath());
 });
 
 Route::get('theme/{theme}', function ($theme) {
     session()->put('current_theme', $theme);
-
     return redirect(url()->previousPath());
 });
