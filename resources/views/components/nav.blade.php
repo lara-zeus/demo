@@ -21,7 +21,7 @@
             </svg>
         </button>
 
-        <div class="z-50 hidden sm:flex items-center justify-center gap-4">
+        <div class="z-40 hidden sm:flex items-center justify-center gap-4">
             <x-filament::dropdown placement="bottom-start" teleport="true">
                 <x-slot name="trigger"
                         class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">

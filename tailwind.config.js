@@ -42,6 +42,7 @@ module.exports = {
         './vendor/ryangjchandler/filament-navigation/resources/**/*.blade.php',
 
         './vendor/wire-elements/spotlight/resources/views/spotlight.blade.php',
+        './vendor/awcodes/filament-curator/resources/**/*.blade.php',
     ],
     darkMode: 'class',
     theme: {

@@ -3,6 +3,7 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
+use Awcodes\Curator\CuratorPlugin;
 use Awcodes\FilamentGravatar\GravatarPlugin;
 use Awcodes\FilamentGravatar\GravatarProvider;
 use Awcodes\FilamentQuickCreate\QuickCreatePlugin;
@@ -81,42 +82,11 @@ class AdminPanelProvider extends PanelProvider
                 'Rain',
                 'Rhea',
             ])
-            /*->renderHook(
-                'zeus-form-section.before',
-                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
-            )
-            ->renderHook(
-                'zeus-form-field.before',
-                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
-            )
-            ->renderHook(
-                'zeus-form-field.after',
-                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
-            )
-            ->renderHook(
-                'zeus-form-section.after',
-                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
-            )*/
-            /*->renderHook(
-                'zeus-forms.before',
-                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.before']),
-            )
-            ->renderHook(
-                'zeus-forms.after',
-                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-forms.after']),
-            )
-            ->renderHook(
-                'zeus-form.before',
-                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-form.before']),
-            )
-            ->renderHook(
-                'zeus-form.after',
-                fn(): View => view('filament.hooks.placeholder', ['data' => 'zeus-form.after']),
-            )*/
 
+            // hermes
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
                 scopes: [
                     BranchResource::class,
                     MenuItemLabelsResource::class,
@@ -124,26 +94,30 @@ class AdminPanelProvider extends PanelProvider
                     MenuSectionResource::class,
                 ],
             )
+            // thunder
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
                 scopes: [
                     OfficeResource::class,
                     OperationsResource::class,
                     TicketResource::class,
                 ],
             )
+            //db notice
             ->renderHook(
                 'panels::content.start',
-                fn (): View => view('filament.hooks.db-notice'),
+                fn(): View => view('filament.hooks.db-notice'),
             )
+            // lang
             ->renderHook(
                 'panels::user-menu.before',
-                fn (): View => view('filament.hooks.lang-switcher'),
+                fn(): View => view('filament.hooks.lang-switcher'),
             )
+            // footer
             ->renderHook(
                 'panels::footer',
-                fn (): View => view('filament.hooks.footer'),
+                fn(): View => view('filament.hooks.footer'),
             )
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -176,6 +150,14 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
+            CuratorPlugin::make()
+                ->label(fn(): string => __('Media'))
+                ->pluralLabel(fn(): string => __('Media'))
+                ->navigationIcon('heroicon-o-photo')
+                ->navigationGroup(fn(): string => __('Hermes'))
+                ->navigationSort(99)
+                ->navigationCountBadge(),
+
             GravatarPlugin::make(),
             SpotlightPlugin::make(),
             LightSwitchPlugin::make(),
