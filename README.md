@@ -9,4 +9,4 @@
 - [Starter kit](https://github.com/lara-zeus/zeus)
 - [Zeus Github](https://github.com/lara-zeus)
 - [Zeus website](https://larazeus.com)
-- [Demo](https://larazeus.com/demo)
+- [Demo](https://demo.larazeus.com)
