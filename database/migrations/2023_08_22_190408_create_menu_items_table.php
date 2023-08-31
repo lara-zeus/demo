@@ -24,6 +24,7 @@ class CreateMenuItemsTable extends Migration
             $table->integer('calories')->nullable();
             $table->text('labels')->nullable();
             $table->boolean('is_pinned')->default(0);
+            $table->string('prep_time')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

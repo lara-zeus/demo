@@ -154,6 +154,7 @@ class HermesSeeder extends Seeder
                 ]),
                 'images' => 'https://picsum.photos/600/600?random='.rand(1, 99),
                 'calories' => 10,
+                'prep_time' => '04:04',
                 'labels' => json_encode([1, 2]),
                 'is_pinned' => true,
             ]);
