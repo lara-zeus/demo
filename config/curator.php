@@ -14,8 +14,8 @@ return [
         'imgix',
     ],
     'curation_presets' => [
-        \Awcodes\Curator\Curations\ThumbnailPreset::class,
-        //\LaraZeus\Hermes\Concerns\ThumbnailPreset::class,
+        //\Awcodes\Curator\Curations\ThumbnailPreset::class,
+        \LaraZeus\Hermes\Concerns\BranchThumbnailPreset::class,
     ],
     'directory' => 'media',
     'disk' => env('FILAMENT_FILESYSTEM_DISK', 'public'),

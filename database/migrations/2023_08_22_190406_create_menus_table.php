@@ -24,6 +24,7 @@ return new class extends Migration
             $table->time('end_time')->nullable();
             $table->timestamps();
             $table->softDeletes();
+            $table->index(['branch_id', 'is_active', 'deleted_at']);
         });
     }
 
