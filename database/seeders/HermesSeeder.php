@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
+use Faker\Generator;
+use Illuminate\Container\Container;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Container\Container;
-use Faker\Generator;
 use Intervention\Image\Facades\Image;
 
 class HermesSeeder extends Seeder
@@ -124,7 +124,7 @@ class HermesSeeder extends Seeder
         $breakfastMenuSection_1 = DB::table('menu_sections')
             ->insertGetId([
                 'menu_id' => $breakfastMenu,
-                'cover' => 'https://picsum.photos/600/600?random='.rand(1, 99),
+                'cover' => 'https://picsum.photos/600/600?random=' . rand(1, 99),
                 'name' => json_encode(['en' => 'Drinks']),
                 'description' => json_encode(['en' => 'all drinks']),
             ]);
@@ -132,7 +132,7 @@ class HermesSeeder extends Seeder
         $breakfastMenuSection_2 = DB::table('menu_sections')
             ->insertGetId([
                 'menu_id' => $breakfastMenu,
-                'cover' => 'https://picsum.photos/600/600?random='.rand(1, 99),
+                'cover' => 'https://picsum.photos/600/600?random=' . rand(1, 99),
                 'name' => json_encode(['en' => 'sandwiches']),
                 'description' => json_encode(['en' => 'all our sandwiches']),
             ]);
@@ -150,9 +150,9 @@ class HermesSeeder extends Seeder
                     [
                         'type' => 'large',
                         'price' => 20,
-                    ]
+                    ],
                 ]),
-                'images' => 'https://picsum.photos/600/600?random='.rand(1, 99),
+                'images' => 'https://picsum.photos/600/600?random=' . rand(1, 99),
                 'calories' => 10,
                 'prep_time' => '04:04',
                 'labels' => json_encode([1, 2]),
@@ -172,9 +172,9 @@ class HermesSeeder extends Seeder
                     [
                         'type' => 'large',
                         'price' => 20,
-                    ]
+                    ],
                 ]),
-                'images' => 'https://picsum.photos/600/600?random='.rand(1, 99),
+                'images' => 'https://picsum.photos/600/600?random=' . rand(1, 99),
                 'calories' => 20,
             ]);
 
@@ -191,9 +191,9 @@ class HermesSeeder extends Seeder
                     [
                         'type' => 'large',
                         'price' => 20,
-                    ]
+                    ],
                 ]),
-                'images' => 'https://picsum.photos/600/600?random='.rand(1, 99),
+                'images' => 'https://picsum.photos/600/600?random=' . rand(1, 99),
                 'calories' => 20,
             ]);
     }
@@ -201,22 +201,22 @@ class HermesSeeder extends Seeder
     public function getImage(): int
     {
         $randName = $this->faker->randomNumber();
-        $imgUrl = 'https://picsum.photos/1300/700?random='.$randName;
+        $imgUrl = 'https://picsum.photos/1300/700?random=' . $randName;
         $getImageContent = file_get_contents($imgUrl);
-        $fileName = 'branch'.$randName.'.jpg';
+        $fileName = 'branch' . $randName . '.jpg';
         $directory = 'branches';
         $disk = 'public';
 
-        if (!Storage::disk($disk)->exists($directory.'/'.$fileName)) {
-            Storage::disk($disk)->put($directory.'/'.$fileName, $getImageContent);
+        if (! Storage::disk($disk)->exists($directory . '/' . $fileName)) {
+            Storage::disk($disk)->put($directory . '/' . $fileName, $getImageContent);
         }
 
-        $data = Image::make(Storage::disk($disk)->path($directory.'/'.$fileName));
+        $data = Image::make(Storage::disk($disk)->path($directory . '/' . $fileName));
 
         return DB::table('curator_media')
             ->insertGetId([
                 'name' => $data->filename,
-                'path' => $directory.'/'.$fileName,
+                'path' => $directory . '/' . $fileName,
                 'ext' => $data->extension,
                 'type' => $data->mime(),
                 'alt' => $this->faker->words(rand(3, 8), true),

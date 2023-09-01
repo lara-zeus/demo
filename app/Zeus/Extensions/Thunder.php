@@ -13,7 +13,7 @@ class Thunder implements Extension
         return 'Ext Name';
     }
 
-    public function canView(Form $form, array $data): bool|array|null
+    public function canView(Form $form, array $data): bool | array | null
     {
         // abort_if ...
         // get the ext app and return it back, so you can receive it in the render

@@ -21,9 +21,9 @@ class SetTheme
                     config(['zeus.layout' => $getTheme]);
                     config(['zeus.theme' => session('current_theme')]);
 
-                    $viewPath = 'zeus::themes.'.config('zeus.theme');
-                    View::share('artemis'.'Theme', $viewPath);
-                    App::singleton('artemis'.'Theme', function () use ($viewPath) {
+                    $viewPath = 'zeus::themes.' . config('zeus.theme');
+                    View::share('artemis' . 'Theme', $viewPath);
+                    App::singleton('artemis' . 'Theme', function () use ($viewPath) {
                         return $viewPath;
                     });
 

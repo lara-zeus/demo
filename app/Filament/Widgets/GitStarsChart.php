@@ -10,7 +10,7 @@ class GitStarsChart extends ChartWidget
 {
     protected static ?string $heading = 'Github Repositories Stats';
 
-    protected int|string|array $columnSpan = 'full';
+    protected int | string | array $columnSpan = 'full';
 
     protected static ?string $maxHeight = '200px';
 
@@ -29,7 +29,7 @@ class GitStarsChart extends ChartWidget
         foreach ($repos as $repo) {
             $getStars = GitHub::repo()->show('lara-zeus', $repo);
             $stars[$repo] = $getStars['stargazers_count'];
-            $downloads[$repo] = PackagistApiServices::getPackageTotalDownloads('lara-zeus/'.$repo);
+            $downloads[$repo] = PackagistApiServices::getPackageTotalDownloads('lara-zeus/' . $repo);
         }
 
         return [

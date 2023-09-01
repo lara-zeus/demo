@@ -16,7 +16,7 @@ Route::post('/forms', function () {
     ]);
 
     return response()->json([
-        'message' => 'your code is '.$code,
+        'message' => 'your code is ' . $code,
         'state' => 'faild',
     ]);
 });
@@ -35,5 +35,6 @@ Route::get('lang/{lang}', function ($lang) {
 
 Route::get('theme/{theme}', function ($theme) {
     session()->put('current_theme', $theme);
+
     return redirect(url()->previousPath());
 });

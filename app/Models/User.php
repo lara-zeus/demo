@@ -15,7 +15,11 @@ use LaraZeus\Thunder\Concerns\ManageOffice;
 
 class User extends Authenticatable implements FilamentUser, HasAvatar
 {
-    use HasApiTokens, HasFactory, Notifiable, HasFilamentShield, ManageOffice;
+    use HasApiTokens;
+    use HasFactory;
+    use HasFilamentShield;
+    use ManageOffice;
+    use Notifiable;
 
     /**
      * The attributes that are mass assignable.

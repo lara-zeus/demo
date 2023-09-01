@@ -4916,16 +4916,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v2.0.5",
+            "version": "v2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "7fb6290f4c7d18d3f41f330e0744d41025c508bc"
+                "reference": "a9526de8574c5e101d29aa6eb8b688b20b4526aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/7fb6290f4c7d18d3f41f330e0744d41025c508bc",
-                "reference": "7fb6290f4c7d18d3f41f330e0744d41025c508bc",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/a9526de8574c5e101d29aa6eb8b688b20b4526aa",
+                "reference": "a9526de8574c5e101d29aa6eb8b688b20b4526aa",
                 "shasum": ""
             },
             "require": {
@@ -5007,7 +5007,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-30T01:04:24+00:00"
+            "time": "2023-09-01T15:49:22+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -5098,12 +5098,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/hermes.git",
-                "reference": "5ecbc8ba174fec3b412a0ce6c66798b387a56daa"
+                "reference": "b64b60da5f956713a9ec19b4808bdc4c2661de41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/5ecbc8ba174fec3b412a0ce6c66798b387a56daa",
-                "reference": "5ecbc8ba174fec3b412a0ce6c66798b387a56daa",
+                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/b64b60da5f956713a9ec19b4808bdc4c2661de41",
+                "reference": "b64b60da5f956713a9ec19b4808bdc4c2661de41",
                 "shasum": ""
             },
             "require": {
@@ -5203,7 +5203,7 @@
                 "issues": "https://github.com/lara-zeus/hermes/issues",
                 "source": "https://github.com/lara-zeus/hermes"
             },
-            "time": "2023-09-01T11:38:52+00:00"
+            "time": "2023-09-01T15:42:15+00:00"
         },
         {
             "name": "lara-zeus/rain",
@@ -5370,16 +5370,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.0.0-beta25",
+            "version": "v3.0.0-beta26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "83d687b9193f7ffa18fdf1147132d61d3fb57b45"
+                "reference": "edd33fa27fce1e2770e9653dc4f87c47148108ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/83d687b9193f7ffa18fdf1147132d61d3fb57b45",
-                "reference": "83d687b9193f7ffa18fdf1147132d61d3fb57b45",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/edd33fa27fce1e2770e9653dc4f87c47148108ed",
+                "reference": "edd33fa27fce1e2770e9653dc4f87c47148108ed",
                 "shasum": ""
             },
             "require": {
@@ -5459,7 +5459,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-23T17:11:23+00:00"
+            "time": "2023-09-01T18:30:22+00:00"
         },
         {
             "name": "lara-zeus/thunder",

@@ -86,7 +86,7 @@ class AdminPanelProvider extends PanelProvider
             // hermes
             ->renderHook(
                 'panels::page.start',
-                fn(array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
+                fn (array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
                 scopes: [
                     BranchResource::class,
                     MenuItemLabelsResource::class,
@@ -97,7 +97,7 @@ class AdminPanelProvider extends PanelProvider
             // thunder
             ->renderHook(
                 'panels::page.start',
-                fn(array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
+                fn (array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
                 scopes: [
                     OfficeResource::class,
                     OperationsResource::class,
@@ -107,17 +107,17 @@ class AdminPanelProvider extends PanelProvider
             //db notice
             ->renderHook(
                 'panels::content.start',
-                fn(): View => view('filament.hooks.db-notice'),
+                fn (): View => view('filament.hooks.db-notice'),
             )
             // lang
             ->renderHook(
                 'panels::user-menu.before',
-                fn(): View => view('filament.hooks.lang-switcher'),
+                fn (): View => view('filament.hooks.lang-switcher'),
             )
             // footer
             ->renderHook(
                 'panels::footer',
-                fn(): View => view('filament.hooks.footer'),
+                fn (): View => view('filament.hooks.footer'),
             )
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -151,10 +151,10 @@ class AdminPanelProvider extends PanelProvider
     {
         return [
             CuratorPlugin::make()
-                ->label(fn(): string => __('Media'))
-                ->pluralLabel(fn(): string => __('Media'))
+                ->label(fn (): string => __('Media'))
+                ->pluralLabel(fn (): string => __('Media'))
                 ->navigationIcon('heroicon-o-photo')
-                ->navigationGroup(fn(): string => __('Hermes'))
+                ->navigationGroup(fn (): string => __('Hermes'))
                 ->navigationSort(99)
                 ->navigationCountBadge(),
 

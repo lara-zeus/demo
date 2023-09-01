@@ -28,7 +28,7 @@ class PostFactory extends Factory
                 'publish', 'future', 'publish', 'draft', 'publish', 'private', 'publish', 'publish', 'publish',
             ]), // , 'future', 'draft', 'private'
             'post_type' => $this->faker->randomElement(['page', 'post']),
-            'featured_image' => 'https://picsum.photos/1200/1300?random='.$this->faker->randomNumber(),
+            'featured_image' => 'https://picsum.photos/1200/1300?random=' . $this->faker->randomNumber(),
         ];
     }
 }

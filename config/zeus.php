@@ -30,7 +30,7 @@ return [
     /**
      * this will be setup the default seo site description. read more about it in 'laravel-seo'.
      */
-    'site_description' => 'All about '.config('app.name', 'Laravel'),
+    'site_description' => 'All about ' . config('app.name', 'Laravel'),
 
     /**
      * Num of recent pages/posts displayed on frontend.
