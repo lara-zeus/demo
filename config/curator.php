@@ -45,4 +45,11 @@ return [
     'should_preserve_filenames' => false,
     'should_register_navigation' => true,
     'visibility' => 'public',
+    'created_for' => [
+        [
+            'resource' => \LaraZeus\Hermes\Filament\Resources\BranchResource::class,
+            'component' => 'image',
+            'title' => 'name',
+        ],
+    ],
 ];

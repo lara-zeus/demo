@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('menu_item_labels', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('description');
+            $table->string('description')->nullable();
             $table->string('color');
             $table->string('icon');
             $table->boolean('is_active')->default(1);
