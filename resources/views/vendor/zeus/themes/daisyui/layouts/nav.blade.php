@@ -15,8 +15,8 @@
             <div tabindex="0" class="dropdown-content z-[1] card card-compact w-64 p-2 shadow bg-base-200 text-base-content">
                 <ul class="menu w-full rounded-box">
                     <li><a href="{{ url('sky') }}">{{ __('Blog') }}</a></li>
-                    <li><a href="url('sky/faq')">{{ __('Faq') }}</a></li>
-                    <li><a href="url('sky/library')">{{ __('Library') }}</a></li>
+                    <li><a href="{{ url('sky/faq') }}">{{ __('Faq') }}</a></li>
+                    <li><a href="{{ url('sky/library') }}">{{ __('Library') }}</a></li>
                 </ul>
             </div>
         </div>

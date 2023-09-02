@@ -19,7 +19,7 @@
         "alpinejs": "^3.12.2",
         "autoprefixer": "^10.4.15",
         "cropperjs": "^1.6.0",
-        "daisyui": "^3.5.1",
+        "daisyui": "^3.6.4",
         "laravel-mix": "^6.0.6",
         "postcss": "^8.4.28",
         "tailwindcss": "^3.3.3",
