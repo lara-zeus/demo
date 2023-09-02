@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
 
         FilamentAsset::register([
             Css::make('example-external-stylesheet', asset('css/flag-icons.css')),
-            Css::make('filament-stylesheet', asset('css/filament.css')),
+            Css::make('filament-stylesheet', asset('css/filament-zeus.css')),
         ]);
 
         // I know! 🤷🏽‍, please let me have my fun!!!
@@ -56,11 +56,10 @@ class AppServiceProvider extends ServiceProvider
             //'zeus-form-field.before',
             //'zeus-form-field.after',
         ];
-
         foreach ($hooks as $key => $hook) {
             FilamentView::registerRenderHook(
                 "$hook",
-                fn (): View => view('filament.hooks.placeholder', ['data' => "$hook"]),
+                fn (): View => view('filament.hooks.'.session('current_theme','zeus').'-placeholder', ['data' => "$hook"]),
             );
         }
     }

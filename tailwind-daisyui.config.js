@@ -33,6 +33,9 @@ module.exports = {
         './vendor/awcodes/filament-versions/resources/**/*.blade.php',
         './vendor/awcodes/filament-quick-create/resources/**/*.blade.php',
         './vendor/awcodes/overlook/resources/**/*.blade.php',
+        './vendor/ryangjchandler/filament-navigation/resources/**/*.blade.php',
+        './vendor/wire-elements/spotlight/resources/views/spotlight.blade.php',
+        './vendor/awcodes/filament-curator/resources/**/*.blade.php',
     ],
     darkMode: 'class',
     theme: {
@@ -40,6 +43,7 @@ module.exports = {
             colors: {
                 gray: colors.stone,
                 primary: colors.sky,
+                custom: colors.pink,
                 secondary: colors.pink,
             }
         },
@@ -58,5 +62,6 @@ module.exports = {
         require("daisyui"),
         require('tailwindcss-debug-screens'),
         require('@tailwindcss/typography'),
+        require('@tailwindcss/forms'),
     ],
 }

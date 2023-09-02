@@ -1,33 +1,18 @@
-<li title="Change Theme" class="dropdown">
-    <details>
-        <summary>
+<div class="dropdown">
+    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+        <div class="w-10 rounded-full">
             @auth()
-                <img x-tooltip="'User Profile'" src="{{ \Filament\Facades\Filament::getUserAvatarUrl(auth()->user()) }}" class="h-5 w-5" alt="avatar">
+                <img src="{{ \Filament\Facades\Filament::getUserAvatarUrl(auth()->user()) }}" alt="avatar" />
             @else
                 Guest
             @endauth
-        </summary>
-        <ul class="z-50 dropdown-content bg-base-200 text-base-content rounded-box w-56 overflow-y-auto shadow">
-            <div class="grid grid-cols-1 gap-3 p-3" tabindex="0">
-                <x-filament::dropdown.list.item
-                    class="dark:text-gray-200 text-gray-700"
-                    :color="'gray'"
-                    :icon="'heroicon-m-chevron-right'"
-                    :href="url('bolt/entries')"
-                    tag="a"
-                >
-                    {{ __('My Entries') }}
-                </x-filament::dropdown.list.item>
-                <x-filament::dropdown.list.item
-                    class="dark:text-gray-200 text-gray-700"
-                    :color="'gray'"
-                    :icon="'heroicon-m-chevron-right'"
-                    :href="url('thunder/tickets')"
-                    tag="a"
-                >
-                    {{ __('My Tickets') }}
-                </x-filament::dropdown.list.item>
-            </div>
+        </div>
+    </label>
+
+    <div tabindex="0" class="dropdown-content z-[1] card card-compact w-64 p-2 shadow bg-base-200 text-base-content">
+        <ul class="menu w-full rounded-box">
+            <li><a href="{{ url('bolt/entries') }}">{{ __('My Entries') }}</a></li>
+            <li><a href="{{ url('thunder/tickets') }}">{{ __('My Tickets') }}</a></li>
         </ul>
-    </details>
-</li>
+    </div>
+</div>

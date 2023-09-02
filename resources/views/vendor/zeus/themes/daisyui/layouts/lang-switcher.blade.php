@@ -1,25 +1,19 @@
-<li title="Change Language" class="dropdown">
-    <details>
-        <summary>
-            @svg('ri-translate', 'h-5 w-5')
-        </summary>
-        <ul class="z-50 dropdown-content bg-base-200 text-base-content rounded-box h-[70vh] max-h-96 w-56 overflow-y-auto shadow">
-            <div class="grid grid-cols-1 gap-3 p-3" tabindex="0">
-                @foreach(config('app.locales') as $local => $localInfo)
-                    <a href="{{ url('lang/'.$local) }}" class="outline-base-content overflow-hidden rounded-lg text-left">
-                        <div class="bg-base-100 text-base-content w-full cursor-pointer font-sans">
-                            <div class="grid grid-cols-5 grid-rows-3">
-                                <div class="col-span-5 row-span-3 row-start-1 flex items-center gap-2 px-4 py-3">
-                                    <span class="flag-icons flag-icons-{{ $localInfo['flag'] }}"></span>
-                                    {{ str($localInfo['native'])->title() }}
-                                </div>
-                            </div>
-                        </div>
+<div class="dropdown">
+    <label tabindex="0" class="btn btn-ghost rounded-btn">
+        @svg('ri-translate','h-5 w-5')
+        @svg('ri-arrow-down-s-fill','h-4 w-4 text-base-500 hover:text-base-500 transition-all ease-in-out duration-300')
+    </label>
+
+    <div tabindex="0" class="dropdown-content z-[1] card card-compact w-64 p-2 shadow bg-base-200 text-base-content">
+        <ul class="menu w-full rounded-box">
+            @foreach(config('app.locales') as $local => $localInfo)
+                <li>
+                    <a class="ltr:text-left rtl:text-right" href="{{ url('lang/'.$local) }}">
+                        <span class="flag-icons flag-icons-{{ $localInfo['flag'] }}"></span>
+                        {{ str($localInfo['native'])->title() }}
                     </a>
-                @endforeach
-            </div>
+                </li>
+            @endforeach
         </ul>
-    </details>
-</li>
-
-
+    </div>
+</div>

@@ -40,7 +40,6 @@ module.exports = {
         './vendor/awcodes/filament-quick-create/resources/**/*.blade.php',
         './vendor/awcodes/overlook/resources/**/*.blade.php',
         './vendor/ryangjchandler/filament-navigation/resources/**/*.blade.php',
-
         './vendor/wire-elements/spotlight/resources/views/spotlight.blade.php',
         './vendor/awcodes/filament-curator/resources/**/*.blade.php',
     ],

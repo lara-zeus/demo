@@ -3781,16 +3781,16 @@
         },
         {
             "name": "guava/filament-icon-picker",
-            "version": "2.0.1",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LukasFreyCZ/filament-icon-picker.git",
-                "reference": "8e19257770b0489d1a1446dce4868008429ddcd8"
+                "reference": "1aab5f292e8e813e3c20cf7e4bf1ffc0c2caff8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LukasFreyCZ/filament-icon-picker/zipball/8e19257770b0489d1a1446dce4868008429ddcd8",
-                "reference": "8e19257770b0489d1a1446dce4868008429ddcd8",
+                "url": "https://api.github.com/repos/LukasFreyCZ/filament-icon-picker/zipball/1aab5f292e8e813e3c20cf7e4bf1ffc0c2caff8d",
+                "reference": "1aab5f292e8e813e3c20cf7e4bf1ffc0c2caff8d",
                 "shasum": ""
             },
             "require": {
@@ -3801,6 +3801,7 @@
             "require-dev": {
                 "orchestra/testbench": "^7.0|^8.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3827,7 +3828,7 @@
             "description": "A filament plugin that adds an icon picker field.",
             "support": {
                 "issues": "https://github.com/LukasFreyCZ/filament-icon-picker/issues",
-                "source": "https://github.com/LukasFreyCZ/filament-icon-picker/tree/2.0.1"
+                "source": "https://github.com/LukasFreyCZ/filament-icon-picker/tree/main"
             },
             "funding": [
                 {
@@ -3835,7 +3836,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-21T21:08:41+00:00"
+            "time": "2023-08-30T17:29:29+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -4843,12 +4844,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/artemis.git",
-                "reference": "9187997d29bd1a2410647f02102cabcb461265a9"
+                "reference": "b3611214864f56eaf5489ebcdeb89fc96855eadc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/9187997d29bd1a2410647f02102cabcb461265a9",
-                "reference": "9187997d29bd1a2410647f02102cabcb461265a9",
+                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/b3611214864f56eaf5489ebcdeb89fc96855eadc",
+                "reference": "b3611214864f56eaf5489ebcdeb89fc96855eadc",
                 "shasum": ""
             },
             "require": {
@@ -4857,11 +4858,13 @@
             },
             "require-dev": {
                 "laravel/pint": "^1.0",
-                "nunomaduro/collision": "^6.0",
+                "nunomaduro/collision": "^7.0",
                 "nunomaduro/larastan": "^2.0.1",
-                "orchestra/testbench": "^7.0 || ^8.0",
+                "nunomaduro/phpinsights": "^2.8",
+                "orchestra/testbench": "^8.0",
                 "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.0"
+                "phpstan/phpstan-deprecation-rules": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.0"
             },
             "default-branch": true,
             "type": "library",
@@ -4887,7 +4890,7 @@
                     "role": "Owner"
                 }
             ],
-            "description": "artistic themes for lara zeus sky",
+            "description": "artistic themes for all lara zeus packages, telling a story with a design",
             "homepage": "https://larazeus.com/artemis",
             "keywords": [
                 "cms",
@@ -4912,26 +4915,26 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-08-31T04:00:51+00:00"
+            "time": "2023-09-01T23:13:12+00:00"
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v2.0.6",
+            "version": "v2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "a9526de8574c5e101d29aa6eb8b688b20b4526aa"
+                "reference": "0676a2f477e36866c285e0a6bcd77ad8da919a09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/a9526de8574c5e101d29aa6eb8b688b20b4526aa",
-                "reference": "a9526de8574c5e101d29aa6eb8b688b20b4526aa",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/0676a2f477e36866c285e0a6bcd77ad8da919a09",
+                "reference": "0676a2f477e36866c285e0a6bcd77ad8da919a09",
                 "shasum": ""
             },
             "require": {
                 "alperenersoy/filament-export": "v3.0.0-beta",
                 "codeat3/blade-clarity-icons": "^1.7",
-                "guava/filament-icon-picker": "^2.0",
+                "guava/filament-icon-picker": "dev-main",
                 "lara-zeus/core": "^3.0",
                 "php": "^8.1"
             },
@@ -5007,7 +5010,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-01T15:49:22+00:00"
+            "time": "2023-09-02T18:18:51+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -5098,18 +5101,18 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/hermes.git",
-                "reference": "b64b60da5f956713a9ec19b4808bdc4c2661de41"
+                "reference": "d0ecb96670da742d9515c8b70bbb0000251b21f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/b64b60da5f956713a9ec19b4808bdc4c2661de41",
-                "reference": "b64b60da5f956713a9ec19b4808bdc4c2661de41",
+                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/d0ecb96670da742d9515c8b70bbb0000251b21f1",
+                "reference": "d0ecb96670da742d9515c8b70bbb0000251b21f1",
                 "shasum": ""
             },
             "require": {
                 "awcodes/filament-curator": "^3.0@beta",
                 "codeat3/blade-teeny-icons": "^1.9",
-                "guava/filament-icon-picker": "^2.0",
+                "guava/filament-icon-picker": "dev-main",
                 "khsing/world": "^0.9.0",
                 "lara-zeus/core": "^3.0",
                 "maize-tech/laravel-markable": "^2.0",
@@ -5203,7 +5206,7 @@
                 "issues": "https://github.com/lara-zeus/hermes/issues",
                 "source": "https://github.com/lara-zeus/hermes"
             },
-            "time": "2023-09-01T15:42:15+00:00"
+            "time": "2023-09-02T18:09:30+00:00"
         },
         {
             "name": "lara-zeus/rain",
@@ -9504,16 +9507,16 @@
         },
         {
             "name": "ryangjchandler/filament-navigation",
-            "version": "v1.0.0-beta3",
+            "version": "v1.0.0-beta4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ryangjchandler/filament-navigation.git",
-                "reference": "b8de3d44092027a956057457544b904ccbbfea86"
+                "reference": "b37c4868a32768818265dd29eb773978e923c6eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ryangjchandler/filament-navigation/zipball/b8de3d44092027a956057457544b904ccbbfea86",
-                "reference": "b8de3d44092027a956057457544b904ccbbfea86",
+                "url": "https://api.github.com/repos/ryangjchandler/filament-navigation/zipball/b37c4868a32768818265dd29eb773978e923c6eb",
+                "reference": "b37c4868a32768818265dd29eb773978e923c6eb",
                 "shasum": ""
             },
             "require": {
@@ -9571,7 +9574,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ryangjchandler/filament-navigation/issues",
-                "source": "https://github.com/ryangjchandler/filament-navigation/tree/v1.0.0-beta3"
+                "source": "https://github.com/ryangjchandler/filament-navigation/tree/v1.0.0-beta4"
             },
             "funding": [
                 {
@@ -9579,7 +9582,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-07T15:34:17+00:00"
+            "time": "2023-09-01T23:38:44+00:00"
         },
         {
             "name": "sabberworm/php-css-parser",
