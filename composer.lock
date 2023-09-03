@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "975db33a5e07d22fc706aa6e13ab8e93",
+    "content-hash": "2b84cc52355be547ddefa60de586306d",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -4841,10 +4841,16 @@
         {
             "name": "lara-zeus/artemis",
             "version": "1.x-dev",
-            "dist": {
-                "type": "path",
-                "url": "../artemis",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:lara-zeus/artemis.git",
                 "reference": "52d5409068ba6c991ede70a7440c9dfe16176fd6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/52d5409068ba6c991ede70a7440c9dfe16176fd6",
+                "reference": "52d5409068ba6c991ede70a7440c9dfe16176fd6",
+                "shasum": ""
             },
             "require": {
                 "lara-zeus/core": "^3.0",
@@ -4860,6 +4866,7 @@
                 "phpstan/phpstan-deprecation-rules": "^1.1",
                 "phpstan/phpstan-phpunit": "^1.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -4902,9 +4909,13 @@
                 "issues": "https://github.com/lara-zeus/artemis/issues",
                 "source": "https://github.com/lara-zeus/artemis"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/atmonshi"
+                }
+            ],
+            "time": "2023-09-02T20:57:41+00:00"
         },
         {
             "name": "lara-zeus/bolt",

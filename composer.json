@@ -120,8 +120,8 @@
             "url": "git@github.com:lara-zeus/thunder.git"
         },
         {
-            "type": "path",
-            "url": "../artemis"
+            "type": "github",
+            "url": "git@github.com:lara-zeus/artemis.git"
         },
         {
             "type": "github",
