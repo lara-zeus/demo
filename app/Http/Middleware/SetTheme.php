@@ -30,6 +30,8 @@ class SetTheme
                     $pkg = str($request->path())->explode('/')->first();
                     CoreServiceProvider::setThemePath($pkg);
                 }
+            } else {
+                session()->put('current_theme','zeus');
             }
 
             return $next($request);
