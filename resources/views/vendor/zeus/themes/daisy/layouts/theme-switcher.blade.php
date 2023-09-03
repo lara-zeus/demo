@@ -7,7 +7,16 @@
     <div tabindex="0" class="dropdown-content z-[1] card card-compact w-64 p-2 shadow bg-base-200 text-base-content">
         <ul class="menu w-full rounded-box">
             @foreach(array_keys(config('zeus.themes')) as $theme)
-                <li><a href="{{ url('theme/'.$theme) }}">{{ str($theme)->title() }}</a></li>
+                <li>
+                    <a href="{{ url('theme/'.$theme) }}" class="flex items-center justify-start">
+                        @if($theme === 'zeus')
+                            @svg('rpg-lightning-bolt','w-6 h-6 text-primary-500')
+                        @else
+                            @svg('rpg-daisy','w-6 h-6 text-primary-500')
+                        @endif
+                        {{ str($theme)->title() }}
+                    </a>
+                </li>
             @endforeach
         </ul>
     </div>

@@ -1,12 +1,9 @@
 @import '../../vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';
 @import '../../vendor/awcodes/filament-curator/resources/css/plugin.css';
 @import '../../vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
-
 @import '../../node_modules/cropperjs/dist/cropper.css';
-
 @import 'tippy.js/dist/tippy.css';
-
-@config "../../tailwind-daisyui.config.js";
+@config "../../tailwind-daisy.config.js";
 
 @tailwind base;
 @tailwind components;
@@ -27,9 +24,7 @@
 }
 
 .fi-section, .fi-fo-tabs, .fi-fo-repeater-item, .fi-ta-ctn {
-    @apply !bg-gradient-to-tr from-gray-50 via-gray-50 to-gray-50;
-    @apply !rounded-2xl !rounded-tl-2xl !shadow;
-    @apply !ring-gray-500/25 !card !bg-base-100;
+    @apply !w-full card card-compact w-full bg-base-100 shadow-lg;
 }
 
 [dir=rtl] {

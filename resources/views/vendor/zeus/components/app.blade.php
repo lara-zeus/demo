@@ -24,6 +24,7 @@
     @stack('styles')
 
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/flag-icons.css') }}">
 
     <style>
         [x-cloak] {
@@ -70,15 +71,28 @@
     ];
     $packageName = (isset($urls[explode('/',request()->path())[0]])) ? $urls[explode('/',request()->path())[0]] : null;
 @endphp
-<footer class="bg-gray-100 dark:bg-gray-800 p-6 pt-20 text-center font-light">
+
+<footer class="bg-gray-100 dark:bg-gray-800 p-6 pt-10 flex flex-col items-center justify-center text-center font-light">
+
     <a href="https://larazeus.com" target="_blank">
         a gift with ❤️ &nbsp;from @zeus
     </a>
+
     @if($packageName !== null)
         <a target="_blank" href="https://github.com/{{ $packageName }}" class="block py-2 px-4 text-gray-900">
             {{ $packageName }} v:{{ \Composer\InstalledVersions::getVersion($packageName) }}
         </a>
     @endif
+
+    <div class="flex gap-2">
+        <a href="https://github.com/lara-zeus" target="_blank">
+            @svg('ri-github-fill','h-8 w-8 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
+        </a>
+
+        <a href="https://twitter.com/larazeus" target="_blank">
+            @svg('ri-twitter-line','h-8 w-8 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
+        </a>
+    </div>
 </footer>
 
 @stack('scripts')

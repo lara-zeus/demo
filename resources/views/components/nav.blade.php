@@ -154,10 +154,6 @@
             @if(app()->isLocal()) <x-theme-switcher/> @endif
             <x-lang-switcher/>
             <x-dark-mode/>
-
-            <a href="https://github.com/lara-zeus" class="font-semibold leading-6" target="_blank" rel="noreferrer">
-                @svg('ri-github-fill','h-8 w-8 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
-            </a>
         </div>
     </div>
     <div x-show="open" @click.away="open = false" x-cloak class="" id="mobile-menu"

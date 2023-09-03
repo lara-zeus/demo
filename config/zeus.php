@@ -4,7 +4,7 @@ return [
     'themes' => [
         'zeus' => 'zeus::components.app',
         //'breeze'=>'zeus::themes.breeze.layouts.app',
-        'daisyui' => 'zeus::themes.daisyui.layouts.app',
+        'daisy' => 'zeus::themes.daisy.layouts.app',
     ],
 
     /**
@@ -13,14 +13,14 @@ return [
      */
     'layout' => 'zeus::components.app',
     //'layout' => 'zeus::themes.breeze.layouts.app',
-    //'layout' => 'zeus::themes.daisyui.layouts.app',
+    //'layout' => 'zeus::themes.daisy.layouts.app',
 
     /**
      * the default theme, for now we only have one theme, and soon we will provide more free and premium themes.
      */
     'theme' => 'zeus',
     //'theme' => 'breeze',
-    //'theme' => 'daisyui',
+    //'theme' => 'daisy',
 
     /**
      * this will be set up the default seo site title. read more about it in 'laravel-seo'.

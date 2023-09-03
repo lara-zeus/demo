@@ -71,7 +71,7 @@ class Package extends Model
                 'name' => 'Artemis',
                 'icon' => 'rpg-spear-head',
                 'desc' => __('Artemis | telling a story with a design. Themes for all Lara Zeus packages (SOON)'),
-                'admin_url' => url('/admin/forms'),
+                'admin_url' => null,
                 'fe_text' => null,
                 'fe_url' => null,
             ],

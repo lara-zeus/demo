@@ -45,8 +45,8 @@
             .bord {border: solid 1px crimson}
         @endif
     </style>
-    @if(session('current_theme') === 'daisyui')
-        <link rel="stylesheet" href="{{ mix('css/daisyui.css') }}">
+    @if(session('current_theme') === 'daisy')
+        <link rel="stylesheet" href="{{ mix('css/daisy.css') }}">
     @else
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @endif

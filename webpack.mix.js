@@ -6,7 +6,7 @@ mix.js("resources/js/app.js", "public/js")
         require("tailwindcss"),
     ])
 
-    .postCss("resources/css/daisyui.css", "public/css", [
+    .postCss("resources/css/daisy.css", "public/css", [
         require("tailwindcss/nesting"),
         require("autoprefixer"),
         require("tailwindcss"),
@@ -18,7 +18,7 @@ mix.js("resources/js/app.js", "public/js")
         require("tailwindcss"),
     ])
 
-    .postCss("resources/css/filament-daisyui.css", "public/css", [
+    .postCss("resources/css/filament-daisy.css", "public/css", [
         require("tailwindcss/nesting"),
         require("autoprefixer"),
         require("tailwindcss"),
