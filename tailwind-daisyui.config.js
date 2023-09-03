@@ -41,10 +41,10 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                gray: colors.stone,
+                gray: colors.slate,
                 primary: colors.sky,
-                custom: colors.pink,
-                secondary: colors.pink,
+                custom: colors.amber,
+                secondary: colors.amber,
             }
         },
     },

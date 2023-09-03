@@ -18,6 +18,12 @@ mix.js("resources/js/app.js", "public/js")
         require("tailwindcss"),
     ])
 
+    .postCss("resources/css/filament-daisyui.css", "public/css", [
+        require("tailwindcss/nesting"),
+        require("autoprefixer"),
+        require("tailwindcss"),
+    ])
+
     .copy('resources/css/flag-icons.css','public/css/flag-icons.css');
 
 if (mix.inProduction()) {

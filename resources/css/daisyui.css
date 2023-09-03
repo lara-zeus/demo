@@ -31,3 +31,20 @@
     @apply !rounded-2xl !rounded-tl-2xl !shadow;
     @apply !ring-gray-500/25 !card !bg-base-100;
 }
+
+[dir=rtl] {
+    font-family: 'Almarai','Karla', sans-serif !important;
+}
+
+[dir=rtl] .title-font {
+    font-family: 'Almarai', sans-serif !important;
+}
+
+[dir=ltr] {
+    font-family: 'Karla', 'Almarai', sans-serif !important;
+}
+
+[dir=ltr] .title-font {
+    font-family: 'Reggae One', 'Almarai', sans-serif !important;
+    @apply font-semibold
+}

@@ -1,4 +1,4 @@
-<div class="dropdown">
+<div class="dropdown dropdown-bottom dropdown-right">
     <label tabindex="0" class="btn btn-ghost btn-circle avatar">
         <div class="w-10 rounded-full">
             @auth()

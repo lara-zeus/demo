@@ -47,7 +47,7 @@
 
         @include($artemisTheme.'.layouts.user-switcher')
 
-        <a href="https://github.com/lara-zeus" target="_blank" rel="noreferrer" class="btn btn-ghost rounded-btn">
+        <a href="https://github.com/lara-zeus" target="_blank" rel="noreferrer" class="btn btn-ghost btn-circle avatar">
             @svg('ri-github-fill','h-6 w-6')
         </a>
 

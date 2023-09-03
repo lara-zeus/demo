@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Reggae+One&display=swap');
+
+@import '../../vendor/filament/filament/resources/css/theme.css';
+@import '../../vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';
+@import '../../vendor/awcodes/filament-curator/resources/css/plugin.css';
+
+@import '../../node_modules/cropperjs/dist/cropper.css';
+
+@import 'tippy.js/dist/tippy.css';
+@config "../../tailwind-daisyui.config.js";
+
+[dir=rtl] {
+    font-family: 'Almarai', 'Karla', sans-serif !important;
+}
+
+[dir=rtl] .title-font {
+    font-family: 'Almarai', sans-serif !important;
+}
+
+[dir=ltr] {
+    font-family: 'Karla', 'Almarai', sans-serif !important;
+}
+
+[dir=ltr] .title-font {
+    font-family: 'Reggae One', 'Almarai', sans-serif !important;
+    @apply font-semibold
+}
+
+.bord {
+    border: solid 1px red;
+}
+
+.fi-topbar nav {
+    @apply !bg-primary-50;
+    @apply dark:from-gray-900 dark:via-gray-900 dark:to-secondary-900/50;
+}
+
+.fi-sidebar-header {
+    @apply !z-50;
+}
+
+.fi-sidebar {
+    @apply !shadow-lg;
+}
+
+.fi-topbar {
+    @apply !shadow-lg;
+}
+
+.fi-sidebar-header {
+    @apply !px-2 py-4 justify-center;
+    @apply !bg-primary-50;
+    @apply dark:from-secondary-900/50 dark:via-gray-900 dark:to-gray-900;
+}
+
+.fi-sidebar-group:not(:first-child) {
+    @apply !bg-primary-50;
+    @apply dark:!from-primary-800 dark:!via-gray-800 dark:!to-gray-800;
+}
+
+.fi-section, .fi-fo-tabs, .fi-fo-repeater-item, .fi-ta-ctn {
+}
+
+.fi-section
+{
+    @apply !shadow-md;
+    @apply !bg-white;
+    @apply dark:!from-primary-900/80 dark:!via-gray-900 dark:!to-gray-900;
+}
+
+.fi-sidebar-group > div > span {
+    @apply text-secondary-800/90
+}
+
+.fi-sidebar-open {
+    @apply !bg-white dark:!bg-gray-900
+}
+
+/*
+ Margin and rounding are personal preferences,
+ overflow-x-auto is recommended.
+*/
+pre {
+    @apply rounded-md overflow-x-auto;
+}
+
+/*
+ Add some vertical padding and expand the width
+ to fill its container. The horizontal padding
+ comes at the line level so that background
+ colors extend edge to edge.
+*/
+pre code.torchlight {
+    @apply block py-4;
+}
+
+/*
+ Horizontal line padding.
+*/
+pre code.torchlight .line {
+    @apply px-4;
+}
+
+pre code.torchlight .line-number {
+    @apply text-gray-50;
+}
+
+/*
+ Push the code away from the line numbers and
+ summary caret indicators.
+*/
+pre code.torchlight .line-number,
+pre code.torchlight .summary-caret {
+    @apply ltr:mr-4 rtl:ml-4;
+}

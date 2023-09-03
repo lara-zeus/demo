@@ -60,6 +60,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login(Login::class)
             ->profile()
+            ->font('Karla')
             ->plugins($this->getPlugins())
             ->defaultAvatarProvider(GravatarProvider::class)
 

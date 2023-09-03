@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentView;
@@ -20,10 +21,12 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->hooksRenderer();
 
-        FilamentAsset::register([
-            Css::make('example-external-stylesheet', asset('css/flag-icons.css')),
-            Css::make('filament-stylesheet', asset('css/filament-zeus.css')),
-        ]);
+        Filament::serving(function () {
+            FilamentAsset::register([
+                Css::make('example-external-stylesheet', asset('css/flag-icons.css')),
+                Css::make('filament-stylesheet', asset('css/filament-' . session('current_theme') . '.css')),
+            ]);
+        });
 
         // I know! 🤷🏽‍, please let me have my fun!!!
         Blade::directive('stillCode', function () {
@@ -59,7 +62,10 @@ class AppServiceProvider extends ServiceProvider
         foreach ($hooks as $key => $hook) {
             FilamentView::registerRenderHook(
                 "$hook",
-                fn (): View => view('filament.hooks.'.session('current_theme','zeus').'-placeholder', ['data' => "$hook"]),
+                fn (): View => view(
+                    'filament.hooks.' . session('current_theme', 'zeus') . '-placeholder',
+                    ['data' => "$hook"]
+                ),
             );
         }
     }

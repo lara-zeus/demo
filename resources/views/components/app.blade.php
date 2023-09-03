@@ -45,7 +45,11 @@
             .bord {border: solid 1px crimson}
         @endif
     </style>
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    @if(session('current_theme') === 'daisyui')
+        <link rel="stylesheet" href="{{ mix('css/daisyui.css') }}">
+    @else
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    @endif
     <link rel="stylesheet" href="{{ asset('css/flag-icons.css') }}">
 </head>
 

@@ -2,6 +2,7 @@
     <div class="absolute flex justify-start items-center gap-4 top-4 ltr:right-4 rtl:left-4">
         <x-lang-switcher/>
         <x-dark-mode/>
+        @if(app()->isLocal()) <x-theme-switcher/> @endif
         <a href="https://github.com/lara-zeus" class="font-semibold leading-6" target="_blank" rel="noreferrer">
             @svg('ri-github-fill','h-8 w-8 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
         </a>
@@ -21,14 +22,9 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-4 mx-4">
-        @include('items.bolt')
-        @include('items.thunder')
-        @include('items.hermes')
-        @include('items.sky')
-        @include('items.wind')
-        @include('items.rain')
-        @include('items.rhea')
-        @include('items.artemis')
+        @foreach(\App\Models\Package::get() as $package)
+            @include('items.'.session('current_theme'))
+        @endforeach
         @include('items.soon')
     </div>
 

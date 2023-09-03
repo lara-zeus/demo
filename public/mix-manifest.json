@@ -1,7 +1,8 @@
 {
-    "/js/app.js": "/js/app.js?id=267697848803de9f1849e7c963b0ae6b",
-    "/css/filament-zeus.css": "/css/filament-zeus.css?id=479a9c6870e7cd77e21391d87d52a514",
-    "/css/daisyui.css": "/css/daisyui.css?id=2449b4ae435d5ed12f50c14fa00a72eb",
-    "/css/app.css": "/css/app.css?id=cb48c1d2dc606a86dc951397ed62f05f",
-    "/css/flag-icons.css": "/css/flag-icons.css?id=b25f918b02d08796bc5624f273d84778"
+    "/js/app.js": "/js/app.js",
+    "/css/filament-daisyui.css": "/css/filament-daisyui.css",
+    "/css/filament-zeus.css": "/css/filament-zeus.css",
+    "/css/daisyui.css": "/css/daisyui.css",
+    "/css/app.css": "/css/app.css",
+    "/css/flag-icons.css": "/css/flag-icons.css"
 }
