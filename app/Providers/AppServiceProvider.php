@@ -20,11 +20,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->hooksRenderer();
-
         Filament::serving(function () {
             FilamentAsset::register([
                 Css::make('example-external-stylesheet', asset('css/flag-icons.css')),
-                Css::make('filament-stylesheet', asset('css/filament-' . session('current_theme') . '.css')),
+                Css::make('filament-stylesheet', asset('css/filament-zeus.css')),
             ]);
         });
 

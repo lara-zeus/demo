@@ -133,7 +133,6 @@ class AdminPanelProvider extends PanelProvider
                 OverlookWidget::class,
             ])
             ->middleware([
-                \Hasnayeen\Themes\Http\Middleware\SetTheme::class,
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
                 StartSession::class,
@@ -152,7 +151,6 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
-            \Hasnayeen\Themes\ThemesPlugin::make(),
             CuratorPlugin::make()
                 ->label(fn (): string => __('Media'))
                 ->pluralLabel(fn (): string => __('Media'))

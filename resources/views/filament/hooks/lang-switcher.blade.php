@@ -1,6 +1,6 @@
 <div class="relative mx-2 gap-4 items-center justify-center flex">
     <x-lang-switcher/>
-    @if(app()->isLocal()) <x-theme-switcher/> @endif
+    {{--@if(app()->isLocal()) <x-theme-switcher/> @endif--}}
     <div x-tooltip.raw="Like the project? consider sponsoring me 😇">
         <x-filament::button
             color="secondary"

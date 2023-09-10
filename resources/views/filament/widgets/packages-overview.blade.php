@@ -68,10 +68,6 @@
                 <x-list.item url="https://wire-elements.dev">
                     ⚡️ Wire Elements
                 </x-list.item>
-
-                <x-list.item url="https://github.com/Hasnayeen/themes">
-                    ⚡️ Themes
-                </x-list.item>
             </div>
         </x-list.index>
 

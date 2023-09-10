@@ -4,14 +4,14 @@ return [
     'themes' => [
         'zeus' => 'zeus::components.app',
         'daisy' => 'zeus::themes.daisy.layouts.app',
-        'breeze' => 'zeus::themes.breeze.layouts.app',
+        //'breeze' => 'zeus::themes.breeze.layouts.app',
         'another-portfolio' => 'zeus::themes.another-portfolio.layouts.app',
     ],
 
     'themes-icons' => [
         'zeus' => 'rpg-lightning-bolt',
         'daisy' => 'rpg-daisy',
-        'breeze' => 'rpg-daisy',
+        //'breeze' => 'rpg-daisy',
         'another-portfolio' => 'rpg-super-mushroom',
     ],
 
@@ -19,12 +19,12 @@ return [
      * you can use the default layout as a starting point for your blog.
      * however, if you're already using your own component, just set the path here.
      */
-    'layout' => 'zeus::themes.breeze.layouts.app',
+    'layout' => 'zeus::themes.zeus.layouts.app',
 
     /**
      * the default theme, for now we only have one theme, and soon we will provide more free and premium themes.
      */
-    'theme' => 'breeze',
+    'theme' => 'zeus',
 
     /**
      * this will be set up the default seo site title. read more about it in 'laravel-seo'.

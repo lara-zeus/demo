@@ -26,7 +26,6 @@
         "garygreen/pretty-routes": "^1.0",
         "graham-campbell/github": "^12.2",
         "guzzlehttp/guzzle": "^7.5",
-        "hasnayeen/themes": "^3.0",
         "jeremykenedy/laravel-packagist": "^1.0",
         "lara-zeus/artemis": "*",
         "lara-zeus/bolt": "^2.0",
@@ -80,7 +79,6 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
-            "@php artisan themes:upgrade",
             "@php artisan vendor:publish --tag=zeus-artemis-config --ansi --force"
         ],
         "post-update-cmd": [
@@ -122,8 +120,8 @@
             "url": "git@github.com:lara-zeus/thunder.git"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/artemis.git"
+            "type": "path",
+            "url": "../artemis"
         },
         {
             "type": "github",

@@ -1,6 +1,6 @@
-<div class="bg-white/80 dark:bg-gray-800 px-4 py-4 border border-secondary-200 dark:border-gray-700
-    shadow-lg hover:shadow-xl dark:hover:shadow-lg dark:hover:shadow-gray-800
-    rounded-2xl transition ease-in-out duration-300
+<div class="hover:scale-110 bg-white/80 dark:bg-gray-800 px-4 py-4 border border-secondary-200 dark:border-gray-700
+    shadow-lg dark:hover:shadow-lg dark:hover:shadow-gray-800
+    rounded-[2rem] rounded-bl-none rounded-tr-none transition ease-in-out duration-300
     flex flex-col gap-2 items-center sm:items-start">
     <div class="text-3xl lg:text-4xl title-font">
         <span class="flex sm:flex-none mt-4 justify-center sm:justify-start">
