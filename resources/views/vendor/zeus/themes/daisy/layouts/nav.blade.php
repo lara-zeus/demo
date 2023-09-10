@@ -32,6 +32,7 @@
                     <li><a href="{{ url('bolt') }}">{{ __('All Forms') }}</a></li>
                     <li><a href="{{ url('thunder') }}">{{ __('All Tickets') }}</a></li>
                     <li><a href="{{ url('wind/contact-us') }}">{{ __('Contact us') }}</a></li>
+                    <li><a href="{{ url('hermes') }}">{{ __('Branches & Menus') }}</a></li>
                 </ul>
             </div>
         </div>

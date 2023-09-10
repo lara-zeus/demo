@@ -103,6 +103,17 @@
                     >
                         {{ __('All Tickets') }}
                     </x-filament::dropdown.list.item>
+
+                    <x-filament::dropdown.list.item
+                        class="dark:text-gray-200 text-gray-700"
+                        :color="'gray'"
+                        :icon="'heroicon-m-chevron-right'"
+                        :href="url('hermes')"
+                        tag="a"
+                    >
+                        {{ __('Branches & Menus') }}
+                    </x-filament::dropdown.list.item>
+
                 </x-filament::dropdown.list>
             </x-filament::dropdown>
             <x-filament::button tag="a" size="xs" href="{{ url('/admin') }}">

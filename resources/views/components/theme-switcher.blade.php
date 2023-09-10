@@ -17,11 +17,10 @@
             @foreach(array_keys(config('zeus.themes')) as $theme)
                 <x-filament::dropdown.list.item
                     class="font-semibold"
-                    color="text-primary-500"
-                        :icon="($theme === 'zeus') ? 'rpg-lightning-bolt' : 'rpg-daisy'"
+                        :icon="config('zeus.themes-icons.'.$theme)"
                         :href="url('theme/'.$theme)"
                         tag="a">
-                    <div class="flex gap-2">
+                    <div class="flex gap-2 @if($theme === session('current_theme')) text-primary-500 @else text-secondary-500 @endif">
                         {{ str($theme)->title() }}
                     </div>
                 </x-filament::dropdown.list.item>

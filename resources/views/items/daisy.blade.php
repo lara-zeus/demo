@@ -1,7 +1,7 @@
 <x-item-daisy>
     @slot('title')
-        @svg($package['icon'],'h-10 w-10 text-secondary-500 sm:-mt-4')
-        <span class="text-primary-500">{{ $package['name'] }}</span>
+        @svg($package['icon'],'h-10 w-10 text-secondary-500 dark:text-secondary-400 sm:-mt-4')
+        <span class="text-primary-500 dark:text-primary-300">{{ $package['name'] }}</span>
     @endslot
     @slot('desc')
         {{ $package['desc'] }}
@@ -14,7 +14,7 @@
         @endif
 
         @if($package['fe_url'] !== null)
-            <a href="{{ $package['fe_url'] }}" class="btn btn-primary btn-outline btn-sm">
+            <a href="{{ $package['fe_url'] }}" class="btn btn-accent dark:btn-base btn-sm">
                 {{ $package['fe_text'] }}
             </a>
         @endif

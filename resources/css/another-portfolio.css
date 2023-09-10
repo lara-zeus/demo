@@ -1,0 +1,130 @@
+@import '../../vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';
+@import '../../vendor/awcodes/filament-curator/resources/css/plugin.css';
+@import '../../vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
+@import '../../node_modules/cropperjs/dist/cropper.css';
+@import 'tippy.js/dist/tippy.css';
+@import "photoswipe/dist/photoswipe.css";
+
+@config "../../tailwind-another-portfolio.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* Sky search result highlight */
+    span.highlight {
+        @apply bg-primary-200 text-primary-700 px-2
+    }
+}
+
+@layer utilities {
+    /* debug tool 😜 */
+    .bord {
+        border: solid 1px chocolate;
+    }
+}
+
+* {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+[dir=rtl] {
+    font-family: 'Almarai','Archivo Black', sans-serif !important;
+}
+
+[dir=rtl] .title-font {
+    font-family: 'Almarai', sans-serif !important;
+}
+
+[dir=ltr] {
+    font-family: 'Archivo Black', 'Almarai', sans-serif !important;
+}
+
+[dir=ltr] .title-font {
+    font-family: 'Reggae One', 'Almarai', sans-serif !important;
+    @apply font-semibold
+}
+
+
+.pswp--custom-icon-colors {
+    --pswp-icon-color: #e45d4f !important;
+}
+
+.lib-item-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.35);
+    transition: transform 0.35s ease-out;
+    transform: translate(var(--x), var(--y)) scale(0.4) rotate(var(--angle));
+    will-change: transform;
+}
+
+.lib-item-card:hover {
+    transform: scale(0.5) rotate(0deg);
+    z-index: 1;
+}
+.lib-item-card:hover:before {
+    opacity: 1;
+}
+
+.lib-item-card:before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 80%;
+    margin: 5%;
+    background: var(--image) center center no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 5px rgba(34, 34, 34, 0.35);
+    border-radius: 2px;
+    filter: sepia(0.2) brightness(0.9) contrast(1.2);
+    transition: opacity 0.35s ease-out;
+    opacity: 0.5;
+    will-change: opacity;
+}
+
+.lib-item-card:after {
+    display: block;
+    color: #555;
+    opacity: 0.75;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+figure > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+}
+
+figure a {
+    color: black;
+    text-decoration: none;
+}
+
+figcaption {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: rgba(255,255,255,.5);
+    padding: .2em .5em;
+    justify-self: start;
+}
+
+.mas-grdi {
+    column-count: 4;
+    column-gap: 10px;
+}

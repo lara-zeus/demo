@@ -70,10 +70,10 @@ class Package extends Model
             [
                 'name' => 'Artemis',
                 'icon' => 'rpg-spear-head',
-                'desc' => __('Artemis | telling a story with a design. Themes for all Lara Zeus packages (SOON)'),
+                'desc' => __('Artemis | telling a story with a design. Themes for all Lara Zeus packages'),
                 'admin_url' => null,
-                'fe_text' => null,
-                'fe_url' => null,
+                'fe_text' => __('Read More'),
+                'fe_url' => 'https://larazeus.com/artemis',
             ],
         ];
     }

@@ -1,12 +1,21 @@
 const mix = require('laravel-mix');
 
-mix.js("resources/js/app.js", "public/js")
+mix
+
+    .js("resources/js/another-portfolio.js", "public/js")
+    .js("resources/js/app.js", "public/js")
 
     .postCss("resources/css/app.css", "public/css", [
         require("tailwindcss"),
     ])
 
     .postCss("resources/css/daisy.css", "public/css", [
+        require("tailwindcss/nesting"),
+        require("autoprefixer"),
+        require("tailwindcss"),
+    ])
+
+    .postCss("resources/css/another-portfolio.css", "public/css", [
         require("tailwindcss/nesting"),
         require("autoprefixer"),
         require("tailwindcss"),
@@ -19,6 +28,12 @@ mix.js("resources/js/app.js", "public/js")
     ])
 
     .postCss("resources/css/filament-daisy.css", "public/css", [
+        require("tailwindcss/nesting"),
+        require("autoprefixer"),
+        require("tailwindcss"),
+    ])
+
+    .postCss("resources/css/filament-another-portfolio.css", "public/css", [
         require("tailwindcss/nesting"),
         require("autoprefixer"),
         require("tailwindcss"),
