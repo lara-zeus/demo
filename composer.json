@@ -50,6 +50,7 @@
         "barryvdh/laravel-debugbar": "^3.9",
         "fakerphp/faker": "^1.9.1",
         "laravel-lang/common": "^3.1",
+        "laravel/breeze": "^1.23",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.0.1",
         "laravel/tinker": "^2.7",
@@ -57,12 +58,10 @@
         "nunomaduro/collision": "^7.2",
         "nunomaduro/larastan": "^2.0",
         "pestphp/pest": "^2.0",
-        "pestphp/pest-plugin-laravel": "^2.x-dev",
+        "pestphp/pest-plugin-laravel": "^2.0",
         "pestphp/pest-plugin-livewire": "^2.x-dev",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "phpunit/phpunit": "^10.0",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
