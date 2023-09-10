@@ -53,7 +53,7 @@
     <link rel="stylesheet" href="{{ asset('css/flag-icons.css') }}">
 </head>
 
-<body class="bg-gray-50 dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
+<body class="@if(session('current_theme') === 'zeus') bg-[#F7FBF8] @else bg-gray-50 @endif dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
 
 <div x-data class="inset-0 min-h-screen flex items-center justify-center">
     <div class="container mx-auto">

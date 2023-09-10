@@ -6249,6 +6249,16 @@ span.highlight{
 .bg-white\/50{
   background-color: rgb(255 255 255 / 0.5);
 }
+.bg-\[\#F7FBF8\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 251 248 / var(--tw-bg-opacity));
+}
+.bg-white\/40{
+  background-color: rgb(255 255 255 / 0.4);
+}
+.bg-white\/80{
+  background-color: rgb(255 255 255 / 0.8);
+}
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -7515,6 +7525,21 @@ figcaption {
   background-color: rgb(47 157 137 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-secondary-400:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 179 157 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-secondary-600:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 126 111 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-secondary-700:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 101 91 / var(--tw-bg-opacity));
+}
+
 .hover\:text-custom-600:hover{
   --tw-text-opacity: 1;
   color: rgb(208 65 50 / var(--tw-text-opacity));
@@ -8349,6 +8374,14 @@ figcaption {
 
 :is(.dark .dark\:bg-white\/5){
   background-color: rgb(255 255 255 / 0.05);
+}
+
+:is(.dark .dark\:bg-gray-900\/10){
+  background-color: rgb(29 68 63 / 0.1);
+}
+
+:is(.dark .dark\:bg-gray-800\/10){
+  background-color: rgb(30 81 74 / 0.1);
 }
 
 :is(.dark .dark\:bg-gradient-to-bl){

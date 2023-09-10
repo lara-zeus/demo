@@ -8423,6 +8423,16 @@ span.highlight{
 .bg-white\/5{
   background-color: rgb(255 255 255 / 0.05);
 }
+.bg-\[\#F7FBF8\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 251 248 / var(--tw-bg-opacity));
+}
+.bg-white\/40{
+  background-color: rgb(255 255 255 / 0.4);
+}
+.bg-white\/80{
+  background-color: rgb(255 255 255 / 0.8);
+}
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -9704,6 +9714,21 @@ span.highlight{
   background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-secondary-400:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-secondary-600:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 119 6 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-secondary-700:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(180 83 9 / var(--tw-bg-opacity));
+}
+
 .hover\:text-custom-600:hover{
   --tw-text-opacity: 1;
   color: rgb(217 119 6 / var(--tw-text-opacity));
@@ -10458,6 +10483,14 @@ span.highlight{
 
 :is(.dark .dark\:bg-white\/5){
   background-color: rgb(255 255 255 / 0.05);
+}
+
+:is(.dark .dark\:bg-gray-900\/10){
+  background-color: rgb(15 23 42 / 0.1);
+}
+
+:is(.dark .dark\:bg-gray-800\/10){
+  background-color: rgb(30 41 59 / 0.1);
 }
 
 :is(.dark .dark\:bg-gradient-to-bl){

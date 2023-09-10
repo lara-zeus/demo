@@ -3316,6 +3316,16 @@ select {
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
 }
+.bg-\[\#F7FBF8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 251 248 / var(--tw-bg-opacity));
+}
+.bg-white\/40 {
+  background-color: rgb(255 255 255 / 0.4);
+}
+.bg-white\/80 {
+  background-color: rgb(255 255 255 / 0.8);
+}
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -4472,6 +4482,21 @@ select {
   background-color: rgb(241 148 138 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-secondary-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 169 161 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-secondary-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 102 88 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-secondary-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 56 38 / var(--tw-bg-opacity));
+}
+
 .hover\:text-custom-600:hover {
   --tw-text-opacity: 1;
   color: rgb(53 139 121 / var(--tw-text-opacity));
@@ -5306,6 +5331,14 @@ select {
 
 :is(.dark .dark\:bg-white\/5) {
   background-color: rgb(255 255 255 / 0.05);
+}
+
+:is(.dark .dark\:bg-gray-900\/10) {
+  background-color: rgb(28 25 23 / 0.1);
+}
+
+:is(.dark .dark\:bg-gray-800\/10) {
+  background-color: rgb(41 37 36 / 0.1);
 }
 
 :is(.dark .dark\:bg-gradient-to-bl) {
