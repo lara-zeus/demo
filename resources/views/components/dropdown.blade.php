@@ -29,7 +29,7 @@
             type="button"
             class="text-primary-500 dark:text-primary-400 hover:text-secondary-500 hover:dark:text-secondary-400"
         >
-            {{ $oppener }}
+            oprn
         </button>
 
         <!-- Panel -->
