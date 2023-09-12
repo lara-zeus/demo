@@ -88,7 +88,9 @@ return [
         'fr' => ['name' => 'French', 'native' => 'français', 'regional' => 'fr_FR', 'flag' => 'fr'],
         'pt_PT' => ['name' => 'Portuguese', 'native' => 'português Portugal', 'regional' => 'pt_PT', 'flag' => 'pt'],
         //'pt' => ['name' => 'Portuguese', 'native' => 'português', 'regional' => 'pt' , 'flag'=>'pt'],
-        'pt_BR' => ['name' => 'Brazilian Portuguese', 'native' => 'português do Brasil', 'regional' => 'pt_BR', 'flag' => 'br'],
+        'pt_BR' => [
+            'name' => 'Brazilian Portuguese', 'native' => 'português do Brasil', 'regional' => 'pt_BR', 'flag' => 'br'
+        ],
         'ko' => ['name' => 'Korean', 'native' => '한국어', 'regional' => 'ko_KR', 'flag' => 'kr'],
 
         'es' => ['name' => 'Spanish', 'native' => 'español', 'regional' => 'es_ES', 'flag' => 'es'],
@@ -104,7 +106,7 @@ return [
         'ar' => ['name' => 'Arabic', 'native' => 'العربية', 'regional' => 'ar_AE', 'flag' => 'ae'],
     ],
 
-    'repos' => ['wind', 'sky', 'bolt', 'rain', 'rhea', 'zeus'], //thunder
+    'repos' => ['sky', 'bolt', 'wind', 'rain', 'rhea', 'zeus', 'artemis'], //thunder
 
     /*
     |--------------------------------------------------------------------------
