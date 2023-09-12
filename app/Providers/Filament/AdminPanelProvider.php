@@ -38,7 +38,6 @@ use LaraZeus\Hermes\Filament\Resources\MenuSectionResource;
 use LaraZeus\Hermes\HermesPlugin;
 use LaraZeus\Rain\RainPlugin;
 use LaraZeus\Rhea\RheaPlugin;
-use LaraZeus\Sky\Editors\RichEditorEditor;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\Thunder\Extensions\Thunder;
 use LaraZeus\Thunder\Filament\Resources\OfficeResource;
