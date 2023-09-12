@@ -14,7 +14,6 @@ return [
         'imgix',
     ],
     'curation_presets' => [
-        //\Awcodes\Curator\Curations\ThumbnailPreset::class,
         \LaraZeus\Hermes\Concerns\BranchThumbnailPreset::class,
     ],
     'directory' => 'media',
@@ -30,7 +29,6 @@ return [
     'is_limited_to_directory' => false,
     'max_size' => 5000,
     'model' => \App\Models\Curator::class,
-    //'model' => \Awcodes\Curator\Models\Media::class,
     'min_size' => 0,
     'path_generator' => null,
     'resources' => [

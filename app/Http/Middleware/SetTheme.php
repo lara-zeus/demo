@@ -16,10 +16,10 @@ class SetTheme
     {
         return app(StartSession::class)->handle($request, function ($request) use ($next) {
             if (session()->has('current_theme')) {
-                if (array_key_exists(session('current_theme','zeus'), config('zeus.themes'))) {
-                    $getTheme = config('zeus.themes')[session('current_theme','zeus')];
+                if (array_key_exists(session('current_theme', 'zeus'), config('zeus.themes'))) {
+                    $getTheme = config('zeus.themes')[session('current_theme', 'zeus')];
                     config(['zeus.layout' => $getTheme]);
-                    config(['zeus.theme' => session('current_theme','zeus')]);
+                    config(['zeus.theme' => session('current_theme', 'zeus')]);
 
                     $viewPath = 'zeus::themes.' . config('zeus.theme');
                     View::share('artemis' . 'Theme', $viewPath);
@@ -31,7 +31,7 @@ class SetTheme
                     CoreServiceProvider::setThemePath($pkg);
                 }
             } else {
-                session()->put('current_theme','zeus');
+                session()->put('current_theme', 'zeus');
             }
 
             return $next($request);

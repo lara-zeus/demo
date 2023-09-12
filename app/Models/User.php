@@ -4,7 +4,6 @@ namespace App\Models;
 
 use BezhanSalleh\FilamentShield\Traits\HasFilamentShield;
 use Filament\Models\Contracts\FilamentUser;
-use Filament\Models\Contracts\HasAvatar;
 use Filament\Panel;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -13,7 +12,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use LaraZeus\Thunder\Concerns\ManageOffice;
 
-class User extends Authenticatable implements FilamentUser, HasAvatar
+class User extends Authenticatable implements FilamentUser
 {
     use HasApiTokens;
     use HasFactory;
@@ -54,11 +53,6 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
     public function canAccessPanel(Panel $panel): bool
     {
         return true;
-    }
-
-    public function getFilamentAvatarUrl(): ?string
-    {
-        return $this->avatar_url;
     }
 
     protected function avatar(): Attribute
