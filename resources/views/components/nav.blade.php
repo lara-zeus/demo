@@ -162,7 +162,7 @@
                 </x-filament::dropdown.list>
             </x-filament::dropdown>
 
-            @if(app()->isLocal()) <x-theme-switcher/> @endif
+            <x-theme-switcher/>
             <x-lang-switcher/>
             <x-dark-mode/>
         </div>

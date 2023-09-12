@@ -2,7 +2,7 @@
     <div class="absolute flex justify-start items-center gap-4 top-4 ltr:right-4 rtl:left-4">
         <x-lang-switcher/>
         <x-dark-mode/>
-        @if(app()->isLocal()) <x-theme-switcher/> @endif
+        <x-theme-switcher/>
         <a href="https://github.com/lara-zeus" class="font-semibold leading-6" target="_blank" rel="noreferrer">
             @svg('ri-github-fill','h-8 w-8 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
         </a>

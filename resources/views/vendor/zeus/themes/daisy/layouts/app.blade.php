@@ -27,11 +27,11 @@
     </style>
 </head>
 
-@php $menu = RyanChandler\FilamentNavigation\Models\Navigation::fromHandle(config('zeus-artemis.header_menu')) @endphp
+@php $menu = RyanChandler\FilamentNavigation\Models\Navigation::fromHandle(config('zeus.header_menu')) @endphp
 
 <body class="@if(app()->isLocal()) debug-screens @endif antialiased">
 
-@include($artemisTheme.'.layouts.nav')
+@include($artemisTheme.'.layouts.navigation')
 
 @if(isset($header) || isset($breadcrumbs))
     <div class="container mx-auto py-4 my-4">

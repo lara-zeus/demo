@@ -33,7 +33,7 @@
     <body x-data="{show:false}" class="antialiased bg-secondary-50 dark:bg-secondary-900">
         <div class="max-w-7xl mx-auto min-h-screen">
 
-            @include($artemisTheme.'.layouts.nav')
+            @include($artemisTheme.'.layouts.navigation')
 
             @if(isset($header) || isset($breadcrumbs))
                 <div class="bg-gray-500/10 dark:bg-gray-800 my-4">

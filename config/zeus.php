@@ -45,4 +45,6 @@ return [
      * this will be setup the default seo site color theme. read more about it in 'laravel-seo'.
      */
     'site_color' => '#F5F5F4',
+
+    'header_menu' => 'main-header-menu',
 ];

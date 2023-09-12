@@ -119,10 +119,6 @@
         },
         {
             "type": "github",
-            "url": "git@github.com:lara-zeus/artemis.git"
-        },
-        {
-            "type": "github",
             "url": "git@github.com:lara-zeus/hermes.git"
         }
     ]

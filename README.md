@@ -7,7 +7,11 @@
 ### Starter kit
 hit the ground running with our starter kit, try it now:
 
-[![Zeus Kit](https://larazeus.com/images/zeus-banner.png)](https://github.com/lara-zeus/zeus)
+## Quick start
+
+[![starter-kit](https://larazeus.com/images/starter-kit-mini.png?v=2)](https://github.com/lara-zeus/zeus)
+[![artemis](https://larazeus.com/images/artemis-mini.png?v=2)](https://github.com/lara-zeus/artemis)
+
 
 
 ### for more:
