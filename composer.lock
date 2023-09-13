@@ -5459,16 +5459,16 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "0092cfaf21a08d89b0b5e0004118434e25a0509c"
+                "reference": "2edfece0c6dadf33c368e8e838b9ee6ba410d9f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/0092cfaf21a08d89b0b5e0004118434e25a0509c",
-                "reference": "0092cfaf21a08d89b0b5e0004118434e25a0509c",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/2edfece0c6dadf33c368e8e838b9ee6ba410d9f1",
+                "reference": "2edfece0c6dadf33c368e8e838b9ee6ba410d9f1",
                 "shasum": ""
             },
             "require": {
@@ -5560,7 +5560,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-09-12T11:18:56+00:00"
+            "time": "2023-09-13T10:54:59+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -5642,16 +5642,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v10.23.0",
+            "version": "v10.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "7d6a79ce8ff52a4d0d385ac290dcc048aa514ce7"
+                "reference": "dbfd495557678759153e8d71cc2f6027686ca51e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/7d6a79ce8ff52a4d0d385ac290dcc048aa514ce7",
-                "reference": "7d6a79ce8ff52a4d0d385ac290dcc048aa514ce7",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/dbfd495557678759153e8d71cc2f6027686ca51e",
+                "reference": "dbfd495557678759153e8d71cc2f6027686ca51e",
                 "shasum": ""
             },
             "require": {
@@ -5751,7 +5751,7 @@
                 "league/flysystem-read-only": "^3.3",
                 "league/flysystem-sftp-v3": "^3.0",
                 "mockery/mockery": "^1.5.1",
-                "orchestra/testbench-core": "^8.4",
+                "orchestra/testbench-core": "^8.10",
                 "pda/pheanstalk": "^4.0",
                 "phpstan/phpstan": "^1.4.7",
                 "phpunit/phpunit": "^10.0.7",
@@ -5838,7 +5838,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-09-12T15:55:31+00:00"
+            "time": "2023-09-13T14:51:46+00:00"
         },
         {
             "name": "laravel/prompts",
