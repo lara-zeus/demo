@@ -58,16 +58,16 @@ class User extends Authenticatable implements FilamentUser
     protected function avatar(): Attribute
     {
         return Attribute::make(
-            get: fn () => $this->getFilamentAvatarUrl(),
+            get: fn () => 'https://ui-avatars.com/api/?name=' . urlencode($this->email ?? 'Guest') . '&color=FFFFFF&background=000000',
         );
     }
 
-    public function canImpersonate()
+    public function canImpersonate(): bool
     {
         return $this->id === 1;
     }
 
-    public function canBeImpersonated()
+    public function canBeImpersonated(): bool
     {
         return $this->id !== 1;
     }
