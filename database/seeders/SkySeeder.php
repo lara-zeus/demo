@@ -53,10 +53,10 @@ class SkySeeder extends Seeder
         ]);
         $faq->syncTagsWithType([$faqTag], 'faq');
 
-        SkyPlugin::get()->getTagModel()::create([
+        SkyPlugin::get()->getModel('Tag')::create([
             'name' => ['en' => 'support docs', 'ar' => 'الدعم الفني'], 'type' => 'library',
         ]);
-        SkyPlugin::get()->getTagModel()::create(['name' => ['en' => 'how to', 'ar' => 'كيف'], 'type' => 'library']);
+        SkyPlugin::get()->getModel('Tag')::create(['name' => ['en' => 'how to', 'ar' => 'كيف'], 'type' => 'library']);
 
         Library::factory()
             ->count(8)
