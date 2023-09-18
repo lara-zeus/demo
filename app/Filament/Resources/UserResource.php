@@ -52,6 +52,10 @@ class UserResource extends Resource
             TextInput::make('password')
                 ->password()
                 ->maxLength(255),
+            /*Select::make('roles')
+                ->relationship('roles', 'name')
+                ->preload()
+                ->multiple(),*/
         ]);
     }
 
