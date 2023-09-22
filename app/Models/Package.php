@@ -8,11 +8,12 @@ class Package extends Model
 {
     use \Sushi\Sushi;
 
-    public function getRows()
+    public function getRows(): array
     {
         return [
             [
                 'name' => 'Bolt',
+                'other' => null,
                 'icon' => 'akar-thunder',
                 'desc' => __('Bolt is a form builder for your users, with so many use cases'),
                 'admin_url' => url('/admin/forms'),
@@ -21,6 +22,7 @@ class Package extends Model
             ],
             [
                 'name' => 'Thunder',
+                'other' => null,
                 'icon' => 'ri-thunderstorms-line',
                 'desc' => __('Thunder is a tickets system for laravel built as filament plugin'),
                 'admin_url' => url('/admin/offices'),
@@ -29,6 +31,7 @@ class Package extends Model
             ],
             [
                 'name' => 'Hermes',
+                'other' => null,
                 'icon' => 'rpg-feather-wing',
                 'desc' => __('Hermes | restaurants and cafés menu managements'),
                 'admin_url' => url('/admin/branches'),
@@ -37,6 +40,7 @@ class Package extends Model
             ],
             [
                 'name' => 'Sky',
+                'other' => null,
                 'icon' => 'ri-cloud-windy-line',
                 'desc' => __('Sky is simple CMS for your website. It includes posts, pages, tags, and categories'),
                 'admin_url' => url('/admin/posts'),
@@ -45,6 +49,7 @@ class Package extends Model
             ],
             [
                 'name' => 'Wind',
+                'other' => null,
                 'icon' => 'akar-thunder',
                 'desc' => __('Wind, is a package provides a simple contact form manger, with the ability to store the messages in the database, and you can reply to them from the dashboard'),
                 'admin_url' => url('/admin/departments'),
@@ -53,6 +58,7 @@ class Package extends Model
             ],
             [
                 'name' => 'Rain',
+                'other' => null,
                 'icon' => 'carbon-rain-heavy',
                 'desc' => __('Rain, simple way to manage widgets for your website landing page'),
                 'admin_url' => url('/admin/layouts'),
@@ -61,6 +67,7 @@ class Package extends Model
             ],
             [
                 'name' => 'Rhea',
+                'other' => null,
                 'icon' => 'tabler-bow',
                 'desc' => __('Rhea is a tool that helps you migrate your wordpress blog to zeus sky'),
                 'admin_url' => url('/admin/importer'),
@@ -74,6 +81,23 @@ class Package extends Model
                 'admin_url' => null,
                 'fe_text' => __('Read More'),
                 'fe_url' => 'https://larazeus.com/artemis',
+                'other' => json_encode([
+                    'title' => 'Available Themes:',
+                    'urls' => [
+                        [
+                            'url' => url('theme/zeus'),
+                            'text' => 'Zeus',
+                        ],
+                        [
+                            'url' => url('theme/daisy'),
+                            'text' => 'Daisy',
+                        ],
+                        [
+                            'url' => url('theme/another-portfolio'),
+                            'text' => 'Another Portfolio',
+                        ],
+                    ],
+                ]),
             ],
         ];
     }
