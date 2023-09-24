@@ -857,16 +857,16 @@
         },
         {
             "name": "bezhansalleh/filament-shield",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bezhanSalleh/filament-shield.git",
-                "reference": "707dba90878cbc5085772fe7461f35e3466bb73e"
+                "reference": "13c8b45f8727c1b2cb71555904adba062762e496"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bezhanSalleh/filament-shield/zipball/707dba90878cbc5085772fe7461f35e3466bb73e",
-                "reference": "707dba90878cbc5085772fe7461f35e3466bb73e",
+                "url": "https://api.github.com/repos/bezhanSalleh/filament-shield/zipball/13c8b45f8727c1b2cb71555904adba062762e496",
+                "reference": "13c8b45f8727c1b2cb71555904adba062762e496",
                 "shasum": ""
             },
             "require": {
@@ -930,7 +930,7 @@
             ],
             "support": {
                 "issues": "https://github.com/bezhanSalleh/filament-shield/issues",
-                "source": "https://github.com/bezhanSalleh/filament-shield/tree/3.0.2"
+                "source": "https://github.com/bezhanSalleh/filament-shield/tree/3.0.3"
             },
             "funding": [
                 {
@@ -938,7 +938,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-21T18:02:19+00:00"
+            "time": "2023-09-23T14:01:57+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -4917,16 +4917,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v2.0.17",
+            "version": "v2.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "5bfe23a3ba492344bce7fc35552a484753d2893c"
+                "reference": "1c9347eefc1ce256d2e4f982125cd62c23c874cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/5bfe23a3ba492344bce7fc35552a484753d2893c",
-                "reference": "5bfe23a3ba492344bce7fc35552a484753d2893c",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/1c9347eefc1ce256d2e4f982125cd62c23c874cb",
+                "reference": "1c9347eefc1ce256d2e4f982125cd62c23c874cb",
                 "shasum": ""
             },
             "require": {
@@ -5006,26 +5006,29 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-17T22:41:55+00:00"
+            "time": "2023-09-24T22:58:27+00:00"
         },
         {
             "name": "lara-zeus/core",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "10d8e25a3d5c8b58fa5a7c8b5e8618335ce865db"
+                "reference": "f0a692404c20059bf177d94a801103c868e0a25d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/10d8e25a3d5c8b58fa5a7c8b5e8618335ce865db",
-                "reference": "10d8e25a3d5c8b58fa5a7c8b5e8618335ce865db",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/f0a692404c20059bf177d94a801103c868e0a25d",
+                "reference": "f0a692404c20059bf177d94a801103c868e0a25d",
                 "shasum": ""
             },
             "require": {
                 "archtechx/laravel-seo": "^0.7",
                 "calebporzio/sushi": "^2.4",
                 "codeat3/blade-iconpark": "^1.5",
+                "ext-json": "*",
+                "ext-pdo_sqlite": "*",
+                "ext-sqlite3": "*",
                 "filament/filament": "^3.0-stable",
                 "filament/spatie-laravel-translatable-plugin": "^3.0",
                 "php": "^8.1"
@@ -5089,7 +5092,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-12T14:25:12+00:00"
+            "time": "2023-09-24T15:09:17+00:00"
         },
         {
             "name": "lara-zeus/hermes",
@@ -8810,16 +8813,16 @@
         },
         {
             "name": "psr/http-client",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-client.git",
-                "reference": "0955afe48220520692d2d09f7ab7e0f93ffd6a31"
+                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-client/zipball/0955afe48220520692d2d09f7ab7e0f93ffd6a31",
-                "reference": "0955afe48220520692d2d09f7ab7e0f93ffd6a31",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/bb5906edc1c324c9a05aa0873d40117941e5fa90",
+                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90",
                 "shasum": ""
             },
             "require": {
@@ -8856,9 +8859,9 @@
                 "psr-18"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-client/tree/1.0.2"
+                "source": "https://github.com/php-fig/http-client"
             },
-            "time": "2023-04-10T20:12:12+00:00"
+            "time": "2023-09-23T14:17:50+00:00"
         },
         {
             "name": "psr/http-factory",
@@ -18120,16 +18123,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "5.1.0",
+            "version": "5.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "c3fa8483f9539b190f7cd4bfc4a07631dd1df344"
+                "reference": "64f51654862e0f5e318db7e9dcc2292c63cdbddc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/c3fa8483f9539b190f7cd4bfc4a07631dd1df344",
-                "reference": "c3fa8483f9539b190f7cd4bfc4a07631dd1df344",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/64f51654862e0f5e318db7e9dcc2292c63cdbddc",
+                "reference": "64f51654862e0f5e318db7e9dcc2292c63cdbddc",
                 "shasum": ""
             },
             "require": {
@@ -18143,7 +18146,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "5.0-dev"
+                    "dev-main": "5.1-dev"
                 }
             },
             "autoload": {
@@ -18186,7 +18189,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
                 "security": "https://github.com/sebastianbergmann/exporter/security/policy",
-                "source": "https://github.com/sebastianbergmann/exporter/tree/5.1.0"
+                "source": "https://github.com/sebastianbergmann/exporter/tree/5.1.1"
             },
             "funding": [
                 {
@@ -18194,7 +18197,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-18T07:15:37+00:00"
+            "time": "2023-09-24T13:22:09+00:00"
         },
         {
             "name": "sebastian/global-state",
