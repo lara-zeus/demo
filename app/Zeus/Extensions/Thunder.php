@@ -15,6 +15,7 @@ class Thunder implements Extension
 
     public function canView(Form $form, array $data): bool | array | null
     {
+        return true;
         // abort_if ...
         // get the ext app and return it back, so you can receive it in the render
         // return [];
@@ -22,6 +23,7 @@ class Thunder implements Extension
 
     public function render(Form $form, array $data): ?string
     {
+        return null;
         // set any data and pas it to your view
         // $data['items'] = ...
 
@@ -56,6 +58,7 @@ class Thunder implements Extension
 
     public function SubmittedRender(Form $form, array $data): ?string
     {
+        return null;
         // return view()->with('data', $data);
     }
 }

@@ -89,7 +89,7 @@ return [
         'pt_PT' => ['name' => 'Portuguese', 'native' => 'português Portugal', 'regional' => 'pt_PT', 'flag' => 'pt'],
         //'pt' => ['name' => 'Portuguese', 'native' => 'português', 'regional' => 'pt' , 'flag'=>'pt'],
         'pt_BR' => [
-            'name' => 'Brazilian Portuguese', 'native' => 'português do Brasil', 'regional' => 'pt_BR', 'flag' => 'br'
+            'name' => 'Brazilian Portuguese', 'native' => 'português do Brasil', 'regional' => 'pt_BR', 'flag' => 'br',
         ],
         'ko' => ['name' => 'Korean', 'native' => '한국어', 'regional' => 'ko_KR', 'flag' => 'kr'],
 
