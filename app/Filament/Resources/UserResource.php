@@ -4,7 +4,8 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\UserResource\Pages;
 use App\Models\User;
-use Filament\Forms\Components\Select;
+use Filament\Forms\Components\KeyValue;
+use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -47,8 +48,54 @@ class UserResource extends Resource
     public static function form(Form $form): Form
     {
         return $form->schema([
-            TextInput::make('name')->required(),
-            TextInput::make('email')->email()->required(),
+            //TextInput::make('name')->required(),
+
+            /*ImagePicker::make('name')->label('aaaaaaa laaaable'),*/
+            Repeater::make('members')
+                ->reorderableWithDragAndDrop(false)
+                ->reorderableWithButtons()
+                ->cloneable()
+
+                ->minItems(2)
+                ->maxItems(5)
+                ->defaultItems(3)
+
+                ->addActionLabel('Add member')
+
+                ->simple(
+                    TextInput::make('title')
+                ),
+            /*Repeater::make('members')
+                //->simple()
+                ->schema([
+                    TextInput::make('title'),
+                    Select::make('role')
+                        ->options([
+                            'member' => 'Member',
+                            'administrator' => 'Administrator',
+                            'owner' => 'Owner',
+                        ]),
+                ])
+                ->minItems(2)
+                ->maxItems(5)
+                ->deleteAction(
+                    fn (Action $action) => $action->requiresConfirmation(),
+                )
+                ->defaultItems(3)
+                ->columns(2)
+                ->reorderableWithDragAndDrop(false)
+                ->reorderableWithButtons()
+                ->collapsible()
+                ->cloneable()
+                ->addActionLabel('Add member')
+            ,*/
+
+            /*Tac::make('toc')
+                ->terms(text: 'terms', link: 'https://demo.test/admin/users/create')
+                ->conditions(text: 'conditions', link: 'https://demo.test/admin/users/create'),*/
+
+            TextInput::make('email')
+                ->email(),
             TextInput::make('password')
                 ->password()
                 ->maxLength(255),
@@ -77,9 +124,9 @@ class UserResource extends Resource
             ])
             ->filters([
                 Filter::make('verified')
-                    ->query(fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
+                    ->query(fn(Builder $query): Builder => $query->whereNotNull('email_verified_at')),
                 Filter::make('unverified')
-                    ->query(fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
+                    ->query(fn(Builder $query): Builder => $query->whereNull('email_verified_at')),
             ]);
     }
 

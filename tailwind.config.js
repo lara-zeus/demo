@@ -30,6 +30,9 @@ module.exports = {
         // hermes
         './vendor/lara-zeus/hermes/resources/views/**/*.blade.php',
 
+        // Bolt Pro
+        './vendor/lara-zeus/bolt-pro/resources/views/**/*.blade.php',
+
         // filament
         './app/Filament/**/*.php',
         './resources/views/filament/**/*.blade.php',
