@@ -1,0 +1,1 @@
+.headings-component:is(h1,h2,h3,h4,h5,h6){font-weight:700;letter-spacing:-.025em;line-height:1.1}h1.headings-component{font-size:2rem}h2.headings-component{font-size:1.75rem}h3.headings-component{font-size:1.5rem}h4.headings-component{font-size:1.25rem}h5.headings-component,h6.headings-component{font-size:1rem}
