@@ -45,11 +45,10 @@ class BoltProSeeder extends Seeder
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Image Picker","pt":"Image Picker","ko":"Image Picker"}',
-                'description' => 'Allow users to choose an image from the uploaded images,
-         presented in a beautiful list',
+                'description' => 'Allow users to choose an image from the uploaded images,presented in a beautiful list',
                 'type' => '\\LaraZeus\\BoltPro\\Fields\\ImagePicker',
                 'ordering' => '1',
-                'options' => '{"htmlId":"zW7BRa","is_required":true,"images":["forms\\/m4vKGKWLyQRt98n39UNQIk15F6OmO1-metaVW50aXRsZWQgZGVzaWduICgyKS5wbmc=-.png","forms\\/KOQx0obcJTJeFKA5kcbTad0sqaYOmv-metacHJlbWl1bS5wbmc=-.png","forms\\/aKyCvjMjT77FgEW5uOI5pjgTtVtMu2-metacmFpbi5wbmc=-.png","forms\\/11b3MGmAxvPBLSFJr56p0pKoO04PIC-metaNjg3NDc0NzA3MzNhMmYyZjZjNjE3MjYxN2E2NTc1NzMyZTYzNmY2ZDJmNjk2ZDYxNjc2NTczMmY3NDY4NzU2ZTY0NjU3MjJkNjI2MTZlNmU2NTcyMmU3MDZlNjczZjc2M2QzMi5wbmc=-.png"]}',
+                'options' => '{"htmlId":"zW7BRa","is_required":true,"images":["forms\/aZeqEiphnjtbHWa73ACLjpidJT3Dc5-metacmFpbi5wbmc=-.png","forms\/tqocpQqh1VO99VJ4AFeWnfYCvjrrPB-metacHJlbWl1bS5wbmc=-.png","forms\/BtAaVuoHL9WdANo2LOBxaiS0kxWEOS-metaVW50aXRsZWQgZGVzaWduICgyKS5wbmc=-.png"]}',
             ],
         );
         $section1_field_1 = DB::table('fields')->insertGetId(
