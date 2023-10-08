@@ -120,16 +120,44 @@
             "url": "git@github.com:lara-zeus/filament-export.git"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/thunder.git"
+            "type": "path",
+            "url": "../core"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/hermes.git"
+            "type": "path",
+            "url": "../wind"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/bolt-pro.git"
+            "type": "path",
+            "url": "../sky"
+        },
+        {
+            "type": "path",
+            "url": "../bolt"
+        },
+        {
+            "type": "path",
+            "url": "../thunder"
+        },
+        {
+            "type": "path",
+            "url": "../rain"
+        },
+        {
+            "type": "path",
+            "url": "../artemis"
+        },
+        {
+            "type": "path",
+            "url": "../rhea"
+        },
+        {
+            "type": "path",
+            "url": "../hermes"
+        },
+        {
+            "type": "path",
+            "url": "../bolt-pro"
         }
     ]
 }

@@ -54,7 +54,7 @@ class AppServiceProvider extends ServiceProvider
             'zeus-form.before',
             'zeus-form.after',
             'zeus-form-section.before',
-            'zeus-form-section.after',
+            //'zeus-form-section.after',
             //'zeus-form-field.before',
             //'zeus-form-field.after',
         ];
