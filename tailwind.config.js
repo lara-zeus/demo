@@ -33,6 +33,9 @@ module.exports = {
         // Bolt Pro
         './vendor/lara-zeus/bolt-pro/resources/views/**/*.blade.php',
 
+        // Bolt Preset
+        './vendor/lara-zeus/bolt-preset/resources/views/**/*.blade.php',
+
         // filament
         './app/Filament/**/*.php',
         './resources/views/filament/**/*.blade.php',
