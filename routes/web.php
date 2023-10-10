@@ -3,8 +3,6 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/pre', \LaraZeus\BoltPreset\Livewire\Preset::class);
-
 Route::view('/', 'welcome');
 Route::redirect('/login', '/admin/login')->name('login');
 
