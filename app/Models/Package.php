@@ -13,12 +13,24 @@ class Package extends Model
         return [
             [
                 'name' => 'Bolt',
-                'other' => null,
                 'icon' => 'akar-thunder',
-                'desc' => __('Bolt is a form builder for your users, with so many use cases'),
+                'desc' => __('Bolt is a form builder for your users, with so many use cases'). ' '. __('it also include Bolt Pro, Bolt Preset'),
                 'admin_url' => url('/admin/forms'),
                 'fe_text' => __('Forms'),
                 'fe_url' => route('bolt.forms.list'),
+                'other' => json_encode([
+                    'title' => 'Available Addons:',
+                    'urls' => [
+                        [
+                            'text' => 'Bolt Pro',
+                            'url' => 'https://larazeus.com/bolt-pro',
+                        ],
+                        [
+                            'text' => 'Bolt Preset',
+                            'url' => 'https://larazeus.com/bolt-preset',
+                        ],
+                    ],
+                ]),
             ],
             [
                 'name' => 'Thunder',
@@ -40,12 +52,24 @@ class Package extends Model
             ],
             [
                 'name' => 'Sky',
-                'other' => null,
                 'icon' => 'ri-cloud-windy-line',
                 'desc' => __('Sky is simple CMS for your website. It includes posts, pages, tags, and categories'),
                 'admin_url' => url('/admin/posts'),
                 'fe_text' => __('Blog'),
                 'fe_url' => route('blogs'),
+                'other' => json_encode([
+                    'title' => 'Available Addons:',
+                    'urls' => [
+                        [
+                            'text' => 'Artemis',
+                            'url' => 'https://larazeus.com/artemis',
+                        ],
+                        [
+                            'text' => 'Rhea',
+                            'url' => 'https://larazeus.com/rhea',
+                        ],
+                    ],
+                ]),
             ],
             [
                 'name' => 'Wind',

@@ -30,7 +30,7 @@
         "lara-zeus/artemis": "^1.0",
         "lara-zeus/bolt": "^2.0",
         "lara-zeus/bolt-pro": "^2.0",
-        "lara-zeus/bolt-preset": "*",
+        "lara-zeus/bolt-preset": "^2.0",
         "lara-zeus/hermes": "^1.0",
         "lara-zeus/rain": "^2.1",
         "lara-zeus/rhea": "^2.0",
@@ -118,51 +118,19 @@
         },
         {
             "type": "github",
-            "url": "git@github.com:lara-zeus/filament-export.git"
+            "url": "git@github.com:lara-zeus/thunder.git"
         },
         {
-            "type": "path",
-            "url": "../core"
+            "type": "github",
+            "url": "git@github.com:lara-zeus/hermes.git"
         },
         {
-            "type": "path",
-            "url": "../wind"
+            "type": "github",
+            "url": "git@github.com:lara-zeus/bolt-pro.git"
         },
         {
-            "type": "path",
-            "url": "../sky"
-        },
-        {
-            "type": "path",
-            "url": "../bolt"
-        },
-        {
-            "type": "path",
-            "url": "../thunder"
-        },
-        {
-            "type": "path",
-            "url": "../rain"
-        },
-        {
-            "type": "path",
-            "url": "../artemis"
-        },
-        {
-            "type": "path",
-            "url": "../rhea"
-        },
-        {
-            "type": "path",
-            "url": "../hermes"
-        },
-        {
-            "type": "path",
-            "url": "../bolt-pro"
-        },
-        {
-            "type": "path",
-            "url": "../bolt-preset"
+            "type": "github",
+            "url": "git@github.com:lara-zeus/bolt-preset.git"
         }
     ]
 }
