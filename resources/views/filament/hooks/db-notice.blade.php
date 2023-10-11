@@ -8,9 +8,6 @@
     @svg('heroicon-o-exclamation-triangle','w-10 h-10 text-amber-500 dark:text-amber-500')
 
     <div class="w-full">
-        <div class="my-2">
-            <span>currently we're working on upgrading all our packages to filament v3, so expect some issues, and we're working on it:</span>
-        </div>
         <pre><x-torchlight-code language='php'>
         DB::migrate("fresh")->weekly()->days([0,2,4])->at("4:04")
         </x-torchlight-code></pre>

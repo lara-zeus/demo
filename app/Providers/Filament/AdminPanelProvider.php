@@ -108,6 +108,7 @@ class AdminPanelProvider extends PanelProvider
                     TicketResource::class,
                 ],
             )
+            // bolt
             ->renderHook(
                 'panels::page.start',
                 fn (array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
@@ -119,10 +120,10 @@ class AdminPanelProvider extends PanelProvider
                 ],
             )
             //db notice
-            ->renderHook(
+            /*->renderHook(
                 'panels::content.start',
                 fn (): View => view('filament.hooks.db-notice'),
-            )
+            )*/
             // lang
             ->renderHook(
                 'panels::user-menu.before',
