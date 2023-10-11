@@ -4998,16 +4998,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v2.1.1",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "26343455f7ec3b34cc6888dbb203b95c372c2ca2"
+                "reference": "5460c572f2efec30f3b9e717c118b2340303690d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/26343455f7ec3b34cc6888dbb203b95c372c2ca2",
-                "reference": "26343455f7ec3b34cc6888dbb203b95c372c2ca2",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/5460c572f2efec30f3b9e717c118b2340303690d",
+                "reference": "5460c572f2efec30f3b9e717c118b2340303690d",
                 "shasum": ""
             },
             "require": {
@@ -5086,7 +5086,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-10T12:46:20+00:00"
+            "time": "2023-10-11T19:26:01+00:00"
         },
         {
             "name": "lara-zeus/bolt-preset",
@@ -5179,16 +5179,16 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v2.0.1",
+            "version": "v2.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "2d98fc60ba2229d1bd5f253cc6e01d8ce9de6643"
+                "reference": "f60d13e3d2c0c826356c61857de1b473b992fa76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/2d98fc60ba2229d1bd5f253cc6e01d8ce9de6643",
-                "reference": "2d98fc60ba2229d1bd5f253cc6e01d8ce9de6643",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/f60d13e3d2c0c826356c61857de1b473b992fa76",
+                "reference": "f60d13e3d2c0c826356c61857de1b473b992fa76",
                 "shasum": ""
             },
             "require": {
@@ -5243,7 +5243,7 @@
                     "role": "Owner"
                 }
             ],
-            "description": "Zeus Bolt Pro is a additional fields for Bolt the form builder",
+            "description": "Zeus Bolt Pro is to supercharge your forms with additional tools for Bolt the form builder",
             "homepage": "https://larazeus.com/bolt-pro",
             "keywords": [
                 "bolt",
@@ -5263,7 +5263,7 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2023-10-08T12:03:52+00:00"
+            "time": "2023-10-11T19:28:28+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -16403,16 +16403,16 @@
         },
         {
             "name": "nunomaduro/collision",
-            "version": "v7.9.0",
+            "version": "v7.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/collision.git",
-                "reference": "296d0cf9fe462837ac0da8a568b56fc026b132da"
+                "reference": "49ec67fa7b002712da8526678abd651c09f375b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/296d0cf9fe462837ac0da8a568b56fc026b132da",
-                "reference": "296d0cf9fe462837ac0da8a568b56fc026b132da",
+                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/49ec67fa7b002712da8526678abd651c09f375b2",
+                "reference": "49ec67fa7b002712da8526678abd651c09f375b2",
                 "shasum": ""
             },
             "require": {
@@ -16421,19 +16421,22 @@
                 "php": "^8.1.0",
                 "symfony/console": "^6.3.4"
             },
+            "conflict": {
+                "laravel/framework": ">=11.0.0"
+            },
             "require-dev": {
-                "brianium/paratest": "^7.2.7",
-                "laravel/framework": "^10.23.1",
-                "laravel/pint": "^1.13.1",
+                "brianium/paratest": "^7.3.0",
+                "laravel/framework": "^10.28.0",
+                "laravel/pint": "^1.13.3",
                 "laravel/sail": "^1.25.0",
                 "laravel/sanctum": "^3.3.1",
                 "laravel/tinker": "^2.8.2",
                 "nunomaduro/larastan": "^2.6.4",
-                "orchestra/testbench-core": "^8.11.0",
-                "pestphp/pest": "^2.19.1",
-                "phpunit/phpunit": "^10.3.5",
+                "orchestra/testbench-core": "^8.13.0",
+                "pestphp/pest": "^2.23.2",
+                "phpunit/phpunit": "^10.4.1",
                 "sebastian/environment": "^6.0.1",
-                "spatie/laravel-ignition": "^2.3.0"
+                "spatie/laravel-ignition": "^2.3.1"
             },
             "type": "library",
             "extra": {
@@ -16492,7 +16495,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-09-19T10:45:09+00:00"
+            "time": "2023-10-11T15:45:01+00:00"
         },
         {
             "name": "nunomaduro/larastan",
