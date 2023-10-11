@@ -28,7 +28,7 @@
         "guzzlehttp/guzzle": "^7.5",
         "jeremykenedy/laravel-packagist": "^1.0",
         "lara-zeus/artemis": "^1.0",
-        "lara-zeus/bolt": "^2.0",
+        "lara-zeus/bolt": "^2.1",
         "lara-zeus/bolt-pro": "^2.0",
         "lara-zeus/bolt-preset": "^2.0",
         "lara-zeus/hermes": "^1.0",
@@ -130,7 +130,11 @@
         },
         {
             "type": "github",
-            "url": "git@github.com:lara-zeus/bolt-preset.git"
+            "url": "git@github.com:lara-zeus/bolt-preset"
+        },
+        {
+            "type": "github",
+            "url": "https://github.com/lara-zeus/filament-export"
         }
     ]
 }

@@ -30,6 +30,9 @@ use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use LaraZeus\Bolt\BoltPlugin;
+use LaraZeus\Bolt\Filament\Resources\CategoryResource;
+use LaraZeus\Bolt\Filament\Resources\CollectionResource;
+use LaraZeus\Bolt\Filament\Resources\FormResource;
 use LaraZeus\Bolt\Filament\Resources\ResponseResource;
 use LaraZeus\Hermes\Filament\Resources\BranchResource;
 use LaraZeus\Hermes\Filament\Resources\MenuItemLabelsResource;
@@ -103,6 +106,16 @@ class AdminPanelProvider extends PanelProvider
                     OfficeResource::class,
                     OperationsResource::class,
                     TicketResource::class,
+                ],
+            )
+            ->renderHook(
+                'panels::page.start',
+                fn (array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
+                scopes: [
+                    FormResource::class,
+                    CategoryResource::class,
+                    CollectionResource::class,
+                    ResponseResource::class,
                 ],
             )
             //db notice

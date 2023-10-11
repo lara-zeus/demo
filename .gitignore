@@ -12,6 +12,7 @@ docker-compose.override.yml
 Homestead.json
 Homestead.yaml
 npm-debug.log
+auth.json
 yarn-error.log
 /.idea
 /.vscode
