@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "648a52765faee58de83b1cc3a9752ab6",
+    "content-hash": "66114d8e2d9fbab5d3858279417c0279",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -3516,21 +3516,21 @@
         },
         {
             "name": "fruitcake/php-cors",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fruitcake/php-cors.git",
-                "reference": "58571acbaa5f9f462c9c77e911700ac66f446d4e"
+                "reference": "3d158f36e7875e2f040f37bc0573956240a5a38b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruitcake/php-cors/zipball/58571acbaa5f9f462c9c77e911700ac66f446d4e",
-                "reference": "58571acbaa5f9f462c9c77e911700ac66f446d4e",
+                "url": "https://api.github.com/repos/fruitcake/php-cors/zipball/3d158f36e7875e2f040f37bc0573956240a5a38b",
+                "reference": "3d158f36e7875e2f040f37bc0573956240a5a38b",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
-                "symfony/http-foundation": "^4.4|^5.4|^6"
+                "symfony/http-foundation": "^4.4|^5.4|^6|^7"
             },
             "require-dev": {
                 "phpstan/phpstan": "^1.4",
@@ -3540,7 +3540,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -3571,7 +3571,7 @@
             ],
             "support": {
                 "issues": "https://github.com/fruitcake/php-cors/issues",
-                "source": "https://github.com/fruitcake/php-cors/tree/v1.2.0"
+                "source": "https://github.com/fruitcake/php-cors/tree/v1.3.0"
             },
             "funding": [
                 {
@@ -3583,7 +3583,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-20T15:07:15+00:00"
+            "time": "2023-10-12T05:21:21+00:00"
         },
         {
             "name": "garygreen/pretty-routes",
@@ -4998,7 +4998,7 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v2.1.2",
+            "version": "v2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
@@ -5179,23 +5179,18 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v2.0.2",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "f60d13e3d2c0c826356c61857de1b473b992fa76"
-            },
+            "version": "2.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/f60d13e3d2c0c826356c61857de1b473b992fa76",
-                "reference": "f60d13e3d2c0c826356c61857de1b473b992fa76",
-                "shasum": ""
+                "type": "path",
+                "url": "../bolt-pro",
+                "reference": "bc3e8ff7198bd63cfd3a7de7544415d22c30166e"
             },
             "require": {
                 "awcodes/shout": "^2.0",
                 "coolsam/flatpickr": "^3.0",
                 "lara-zeus/bolt": "^2.0",
                 "php": "^8.1",
+                "rupadana/filament-api-service": "^1.0",
                 "saade/filament-autograph": "^3.0"
             },
             "require-dev": {
@@ -5263,7 +5258,9 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2023-10-11T19:28:28+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/core",

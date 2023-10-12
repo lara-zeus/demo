@@ -41,7 +41,6 @@
         "laravel/sanctum": "^3.2",
         "njxqlus/filament-progressbar": "dev-main",
         "pxlrbt/filament-spotlight": "^1.0",
-        "rupadana/filament-api-service": "^1.0",
         "ryangjchandler/blade-tabler-icons": "^2.0",
         "sentry/sentry-laravel": "^3.3",
         "stechstudio/filament-impersonate": "^3.5",
@@ -126,8 +125,8 @@
             "url": "git@github.com:lara-zeus/hermes.git"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/bolt-pro.git"
+            "type": "path",
+            "url": "../bolt-pro"
         },
         {
             "type": "github",
