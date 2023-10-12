@@ -135,6 +135,10 @@
         {
             "type": "github",
             "url": "https://github.com/lara-zeus/filament-export"
+        },
+        {
+            "type": "composer",
+            "url": "https://filament-filter-sets.composer.sh"
         }
     ]
 }
