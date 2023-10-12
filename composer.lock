@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03b639fa0daceebc7467a5d59f313f81",
+    "content-hash": "66114d8e2d9fbab5d3858279417c0279",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -3516,21 +3516,21 @@
         },
         {
             "name": "fruitcake/php-cors",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fruitcake/php-cors.git",
-                "reference": "58571acbaa5f9f462c9c77e911700ac66f446d4e"
+                "reference": "3d158f36e7875e2f040f37bc0573956240a5a38b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruitcake/php-cors/zipball/58571acbaa5f9f462c9c77e911700ac66f446d4e",
-                "reference": "58571acbaa5f9f462c9c77e911700ac66f446d4e",
+                "url": "https://api.github.com/repos/fruitcake/php-cors/zipball/3d158f36e7875e2f040f37bc0573956240a5a38b",
+                "reference": "3d158f36e7875e2f040f37bc0573956240a5a38b",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
-                "symfony/http-foundation": "^4.4|^5.4|^6"
+                "symfony/http-foundation": "^4.4|^5.4|^6|^7"
             },
             "require-dev": {
                 "phpstan/phpstan": "^1.4",
@@ -3540,7 +3540,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -3571,7 +3571,7 @@
             ],
             "support": {
                 "issues": "https://github.com/fruitcake/php-cors/issues",
-                "source": "https://github.com/fruitcake/php-cors/tree/v1.2.0"
+                "source": "https://github.com/fruitcake/php-cors/tree/v1.3.0"
             },
             "funding": [
                 {
@@ -3583,7 +3583,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-20T15:07:15+00:00"
+            "time": "2023-10-12T05:21:21+00:00"
         },
         {
             "name": "garygreen/pretty-routes",
@@ -4998,7 +4998,7 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v2.1.2",
+            "version": "v2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
@@ -5179,23 +5179,18 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v2.0.2",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "f60d13e3d2c0c826356c61857de1b473b992fa76"
-            },
+            "version": "2.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/f60d13e3d2c0c826356c61857de1b473b992fa76",
-                "reference": "f60d13e3d2c0c826356c61857de1b473b992fa76",
-                "shasum": ""
+                "type": "path",
+                "url": "../bolt-pro",
+                "reference": "bc3e8ff7198bd63cfd3a7de7544415d22c30166e"
             },
             "require": {
                 "awcodes/shout": "^2.0",
                 "coolsam/flatpickr": "^3.0",
                 "lara-zeus/bolt": "^2.0",
                 "php": "^8.1",
+                "rupadana/filament-api-service": "^1.0",
                 "saade/filament-autograph": "^3.0"
             },
             "require-dev": {
@@ -5263,7 +5258,9 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2023-10-11T19:28:28+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/core",
@@ -9627,6 +9624,81 @@
             "time": "2023-04-15T23:01:58+00:00"
         },
         {
+            "name": "rupadana/filament-api-service",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rupadana/filament-api-service.git",
+                "reference": "560ffff216e83d4ab29d538ff7144610ad518172"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rupadana/filament-api-service/zipball/560ffff216e83d4ab29d538ff7144610ad518172",
+                "reference": "560ffff216e83d4ab29d538ff7144610ad518172",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "illuminate/contracts": "^10.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.14.0",
+                "spatie/laravel-query-builder": "^5.3"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^7.9",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Rupadana\\ApiService\\ApiServiceServiceProvider"
+                    ],
+                    "aliases": {
+                        "ApiService": "Rupadana\\ApiService\\Facades\\ApiService"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rupadana\\ApiService\\": "src/",
+                    "Rupadana\\ApiService\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rupadana",
+                    "email": "rupadanawayan@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple api service for supporting filamentphp",
+            "homepage": "https://github.com/rupadana/api-service",
+            "keywords": [
+                "api-service",
+                "laravel",
+                "rupadana"
+            ],
+            "support": {
+                "issues": "https://github.com/rupadana/api-service/issues",
+                "source": "https://github.com/rupadana/api-service"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/rupadana",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-10-07T16:22:18+00:00"
+        },
+        {
             "name": "ryangjchandler/blade-capture-directive",
             "version": "v0.3.0",
             "source": {
@@ -10800,6 +10872,80 @@
                 }
             ],
             "time": "2023-08-30T23:41:24+00:00"
+        },
+        {
+            "name": "spatie/laravel-query-builder",
+            "version": "5.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-query-builder.git",
+                "reference": "a91a348f2d205026ac726850c969e4da15061aa9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/a91a348f2d205026ac726850c969e4da15061aa9",
+                "reference": "a91a348f2d205026ac726850c969e4da15061aa9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^9.0|^10.0",
+                "illuminate/http": "^9.0|^10.0",
+                "illuminate/support": "^9.0|^10.0",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.11"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": "^7.0|^8.0",
+                "pestphp/pest": "^1.20",
+                "phpunit/phpunit": "^9.6.11",
+                "spatie/invade": "^2.0",
+                "spatie/laravel-ray": "^1.28"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\QueryBuilder\\QueryBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\QueryBuilder\\": "src",
+                    "Spatie\\QueryBuilder\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily build Eloquent queries from API requests",
+            "homepage": "https://github.com/spatie/laravel-query-builder",
+            "keywords": [
+                "laravel-query-builder",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-query-builder/issues",
+                "source": "https://github.com/spatie/laravel-query-builder"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                }
+            ],
+            "time": "2023-10-05T10:21:47+00:00"
         },
         {
             "name": "spatie/laravel-sluggable",
