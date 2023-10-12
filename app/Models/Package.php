@@ -14,7 +14,7 @@ class Package extends Model
             [
                 'name' => 'Bolt',
                 'icon' => 'akar-thunder',
-                'desc' => __('Bolt is a form builder for your users, with so many use cases'). ' '. __('it also include Bolt Pro, Bolt Preset'),
+                'desc' => __('Bolt is a form builder for your users, with so many use cases') . ' ' . __('it also include Bolt Pro, Bolt Preset'),
                 'admin_url' => url('/admin/forms'),
                 'fe_text' => __('Forms'),
                 'fe_url' => route('bolt.forms.list'),
