@@ -5179,16 +5179,16 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v2.0.3",
+            "version": "v2.0.5",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "82185a8446a3426482b7cfd178b9e05e2e52554b"
+                "reference": "ef7a3b106c449ff5b286e9e169b93ced37d0e471"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/82185a8446a3426482b7cfd178b9e05e2e52554b",
-                "reference": "82185a8446a3426482b7cfd178b9e05e2e52554b",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/ef7a3b106c449ff5b286e9e169b93ced37d0e471",
+                "reference": "ef7a3b106c449ff5b286e9e169b93ced37d0e471",
                 "shasum": ""
             },
             "require": {
@@ -5197,7 +5197,8 @@
                 "lara-zeus/bolt": "^2.0",
                 "php": "^8.1",
                 "rupadana/filament-api-service": "^1.0",
-                "saade/filament-autograph": "^3.0"
+                "saade/filament-autograph": "^3.0",
+                "sawirricardo/filament-nouislider": "^0.0"
             },
             "require-dev": {
                 "laravel/pint": "^1.0",
@@ -5264,7 +5265,7 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2023-10-12T12:19:37+00:00"
+            "time": "2023-10-12T16:54:11+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -10056,6 +10057,86 @@
             "time": "2021-12-11T13:40:54+00:00"
         },
         {
+            "name": "sawirricardo/filament-nouislider",
+            "version": "0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sawirricardo/filament-nouislider.git",
+                "reference": "8d8cf2bb9304082e4264372290ffa2c0e91b7e03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sawirricardo/filament-nouislider/zipball/8d8cf2bb9304082e4264372290ffa2c0e91b7e03",
+                "reference": "8d8cf2bb9304082e4264372290ffa2c0e91b7e03",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "illuminate/contracts": "^10.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.15.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.9",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Sawirricardo\\FilamentNouislider\\FilamentNouisliderServiceProvider"
+                    ],
+                    "aliases": {
+                        "FilamentNouislider": "Sawirricardo\\FilamentNouislider\\Facades\\FilamentNouislider"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sawirricardo\\FilamentNouislider\\": "src/",
+                    "Sawirricardo\\FilamentNouislider\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "sawirricardo",
+                    "email": "sawir.ricardo@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Use noUiSlider Side by side with your filament apps",
+            "homepage": "https://github.com/sawirricardo/filament-nouislider",
+            "keywords": [
+                "filament-nouislider",
+                "laravel",
+                "sawirricardo"
+            ],
+            "support": {
+                "issues": "https://github.com/sawirricardo/filament-nouislider/issues",
+                "source": "https://github.com/sawirricardo/filament-nouislider"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sawirricardo",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-10-12T16:14:30+00:00"
+        },
+        {
             "name": "sentry/sdk",
             "version": "3.5.0",
             "source": {
@@ -10214,16 +10295,16 @@
         },
         {
             "name": "sentry/sentry-laravel",
-            "version": "3.8.1",
+            "version": "3.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-laravel.git",
-                "reference": "b6142a80fa9360a10b786d2da032339602d0e362"
+                "reference": "1293e5732f8405e12f000cdf5dee78c927a18de0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-laravel/zipball/b6142a80fa9360a10b786d2da032339602d0e362",
-                "reference": "b6142a80fa9360a10b786d2da032339602d0e362",
+                "url": "https://api.github.com/repos/getsentry/sentry-laravel/zipball/1293e5732f8405e12f000cdf5dee78c927a18de0",
+                "reference": "1293e5732f8405e12f000cdf5dee78c927a18de0",
                 "shasum": ""
             },
             "require": {
@@ -10290,7 +10371,7 @@
             ],
             "support": {
                 "issues": "https://github.com/getsentry/sentry-laravel/issues",
-                "source": "https://github.com/getsentry/sentry-laravel/tree/3.8.1"
+                "source": "https://github.com/getsentry/sentry-laravel/tree/3.8.2"
             },
             "funding": [
                 {
@@ -10302,7 +10383,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-10-04T10:21:16+00:00"
+            "time": "2023-10-12T14:38:46+00:00"
         },
         {
             "name": "spatie/color",
@@ -16918,26 +16999,26 @@
         },
         {
             "name": "pestphp/pest-plugin-arch",
-            "version": "v2.4.0",
+            "version": "v2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest-plugin-arch.git",
-                "reference": "b315c03bbb7e620d7b57a670816e9bf5f3dbc7f7"
+                "reference": "59698f0a381c5bc4fa2cd5b6ed331067c4501fdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest-plugin-arch/zipball/b315c03bbb7e620d7b57a670816e9bf5f3dbc7f7",
-                "reference": "b315c03bbb7e620d7b57a670816e9bf5f3dbc7f7",
+                "url": "https://api.github.com/repos/pestphp/pest-plugin-arch/zipball/59698f0a381c5bc4fa2cd5b6ed331067c4501fdb",
+                "reference": "59698f0a381c5bc4fa2cd5b6ed331067c4501fdb",
                 "shasum": ""
             },
             "require": {
-                "nunomaduro/collision": "^7.9.0|^8.0.0",
+                "nunomaduro/collision": "^7.10.0|^8.0.0",
                 "pestphp/pest-plugin": "^2.1.1",
                 "php": "^8.1",
-                "ta-tikoma/phpunit-architecture-test": "^0.7.4"
+                "ta-tikoma/phpunit-architecture-test": "^0.7.5"
             },
             "require-dev": {
-                "pestphp/pest": "^2.22.0",
+                "pestphp/pest": "^2.23.2",
                 "pestphp/pest-dev-tools": "^2.16.0"
             },
             "type": "library",
@@ -16966,7 +17047,7 @@
                 "unit"
             ],
             "support": {
-                "source": "https://github.com/pestphp/pest-plugin-arch/tree/v2.4.0"
+                "source": "https://github.com/pestphp/pest-plugin-arch/tree/v2.4.1"
             },
             "funding": [
                 {
@@ -16978,7 +17059,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-10T14:44:21+00:00"
+            "time": "2023-10-12T15:35:38+00:00"
         },
         {
             "name": "pestphp/pest-plugin-laravel",
@@ -19560,16 +19641,16 @@
         },
         {
             "name": "ta-tikoma/phpunit-architecture-test",
-            "version": "0.7.4",
+            "version": "0.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ta-tikoma/phpunit-architecture-test.git",
-                "reference": "abe1f8a5f4635e7cbe0a8a37d6b8d20c687af0f2"
+                "reference": "9eb08437e8f0c0c75cc947a373cf49672c335827"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ta-tikoma/phpunit-architecture-test/zipball/abe1f8a5f4635e7cbe0a8a37d6b8d20c687af0f2",
-                "reference": "abe1f8a5f4635e7cbe0a8a37d6b8d20c687af0f2",
+                "url": "https://api.github.com/repos/ta-tikoma/phpunit-architecture-test/zipball/9eb08437e8f0c0c75cc947a373cf49672c335827",
+                "reference": "9eb08437e8f0c0c75cc947a373cf49672c335827",
                 "shasum": ""
             },
             "require": {
@@ -19577,7 +19658,7 @@
                 "php": "^8.1.0",
                 "phpdocumentor/reflection-docblock": "^5.3.0",
                 "phpunit/phpunit": "^10.1.1",
-                "symfony/finder": "^6.2.7"
+                "symfony/finder": "^6.2.7 || ^7.0.0"
             },
             "require-dev": {
                 "laravel/pint": "^1.9.0",
@@ -19613,9 +19694,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ta-tikoma/phpunit-architecture-test/issues",
-                "source": "https://github.com/ta-tikoma/phpunit-architecture-test/tree/0.7.4"
+                "source": "https://github.com/ta-tikoma/phpunit-architecture-test/tree/0.7.5"
             },
-            "time": "2023-08-03T06:50:14+00:00"
+            "time": "2023-10-12T15:31:50+00:00"
         },
         {
             "name": "theseer/tokenizer",
