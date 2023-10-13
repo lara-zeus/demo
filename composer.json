@@ -8,6 +8,7 @@
         "php": "^8.2",
         "andreiio/blade-iconoir": "^2.5",
         "andreiio/blade-remix-icon": "^2.3",
+        "archilex/filament-filter-sets": "^3.1",
         "archtechx/laravel-seo": "^0.7",
         "awcodes/filament-gravatar": "^2.0",
         "awcodes/filament-quick-create": "^3.0",

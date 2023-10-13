@@ -3,6 +3,7 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
+use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
 use Awcodes\Curator\CuratorPlugin;
 use Awcodes\FilamentGravatar\GravatarPlugin;
 use Awcodes\FilamentGravatar\GravatarProvider;
@@ -165,6 +166,7 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
+            AdvancedTablesPlugin::make(),
             CuratorPlugin::make()
                 ->label(fn (): string => __('Media'))
                 ->pluralLabel(fn (): string => __('Media'))
