@@ -5485,6 +5485,11 @@ span.highlight{
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
+.from-custom-50\/50{
+  --tw-gradient-from: rgb(253 244 243 / 0.5) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(253 244 243 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
 .via-amber-100{
   --tw-gradient-to: rgb(254 243 199 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #fef3c7 var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -5524,6 +5529,12 @@ span.highlight{
 }
 .to-white{
   --tw-gradient-to: #fff var(--tw-gradient-to-position);
+}
+.to-custom-200\/50{
+  --tw-gradient-to: rgb(251 209 205 / 0.5) var(--tw-gradient-to-position);
+}
+.to-custom-100\/50{
+  --tw-gradient-to: rgb(252 230 228 / 0.5) var(--tw-gradient-to-position);
 }
 .to-60\%{
   --tw-gradient-to-position: 60%;
@@ -6145,6 +6156,10 @@ span.highlight{
 .text-yellow-500{
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+.text-custom-800{
+  --tw-text-opacity: 1;
+  color: rgb(145 46 35 / var(--tw-text-opacity));
 }
 .underline{
   text-decoration-line: underline;
@@ -6831,6 +6846,11 @@ figcaption {
 .hover\:text-yellow-700:hover{
   --tw-text-opacity: 1;
   color: rgb(161 98 7 / var(--tw-text-opacity));
+}
+
+.hover\:text-custom-500:hover{
+  --tw-text-opacity: 1;
+  color: rgb(228 93 79 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
@@ -7739,6 +7759,12 @@ figcaption {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+:is(.dark .dark\:from-custom-900){
+  --tw-gradient-from: #792b23 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(121 43 35 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 :is(.dark .dark\:via-emerald-900){
   --tw-gradient-to: rgb(6 78 59 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #064e3b var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -7777,6 +7803,10 @@ figcaption {
 
 :is(.dark .dark\:to-sky-900){
   --tw-gradient-to: #0c4a6e var(--tw-gradient-to-position);
+}
+
+:is(.dark .dark\:to-custom-900){
+  --tw-gradient-to: #792b23 var(--tw-gradient-to-position);
 }
 
 :is(.dark .dark\:fill-current){
@@ -8187,6 +8217,11 @@ figcaption {
 :is(.dark .hover\:dark\:text-secondary-400):hover{
   --tw-text-opacity: 1;
   color: rgb(69 179 157 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:hover\:text-custom-400:hover){
+  --tw-text-opacity: 1;
+  color: rgb(241 148 138 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:hover\:shadow-lg:hover){
