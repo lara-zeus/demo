@@ -70,12 +70,6 @@ class AdminPanelProvider extends PanelProvider
             //->topNavigation()
             ->sidebarCollapsibleOnDesktop()
             ->maxContentWidth('full')
-            ->colors([
-                'gray' => Color::Stone,
-                'primary' => Color::hex('#45B39D'),
-                'custom' => Color::hex('#45B39D'),
-                'secondary' => Color::hex('#F1948A'),
-            ])
             ->favicon(asset('favicon.ico'))
             ->navigationGroups([
                 'App',

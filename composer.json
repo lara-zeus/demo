@@ -125,8 +125,8 @@
             "url": "git@github.com:lara-zeus/hermes.git"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/bolt-pro.git"
+            "type": "path",
+            "url": "../bolt-pro"
         },
         {
             "type": "github",
@@ -135,6 +135,10 @@
         {
             "type": "github",
             "url": "https://github.com/lara-zeus/filament-export"
+        },
+        {
+            "type": "path",
+            "url": "../bolt"
         }
     ]
 }

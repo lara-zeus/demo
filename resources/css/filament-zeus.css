@@ -3,10 +3,12 @@
 @import '../../vendor/filament/filament/resources/css/theme.css';
 /*@import '../../vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';*/
 @import '../../vendor/awcodes/filament-curator/resources/css/plugin.css';
-
 @import '../../node_modules/cropperjs/dist/cropper.css';
-
 @import 'tippy.js/dist/tippy.css';
+
+:root{
+    --c-50:var(--primary-50);--c-100:var(--primary-100);--c-200:var(--primary-200);--c-300:var(--primary-300);--c-400:var(--primary-400);--c-500:var(--primary-500);--c-600:var(--primary-600);--c-700:var(--primary-700);--c-800:var(--primary-800);--c-900:var(--primary-900);
+}
 
 [dir=rtl] {
     font-family: 'Almarai', 'Karla', sans-serif !important;

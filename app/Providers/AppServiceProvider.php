@@ -4,7 +4,9 @@ namespace App\Providers;
 
 use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;
+use Filament\Support\Colors\Color;
 use Filament\Support\Facades\FilamentAsset;
+use Filament\Support\Facades\FilamentColor;
 use Filament\Support\Facades\FilamentView;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Blade;
@@ -26,6 +28,17 @@ class AppServiceProvider extends ServiceProvider
                 Css::make('filament-stylesheet', asset('css/filament-zeus.css')),
             ]);
         });
+
+        FilamentColor::register([
+            ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
+            'primary' => Color::hex('#45B39D'),
+            'secondary' => Color::hex('#F1948A'),
+            'gray' => Color::Stone,
+            /*'danger' => Color::Red,
+            'info' => Color::Blue,
+            'success' => Color::Green,
+            'warning' => Color::Yellow,*/
+        ]);
 
         // I know! 🤷🏽‍, please let me have my fun!!!
         Blade::directive('stillCode', function () {
