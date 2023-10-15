@@ -133,10 +133,6 @@
             "url": "git@github.com:lara-zeus/bolt-pro"
         },
         {
-            "type": "path",
-            "url": "../bolt"
-        },
-        {
             "type": "github",
             "url": "https://github.com/lara-zeus/filament-export"
         }
