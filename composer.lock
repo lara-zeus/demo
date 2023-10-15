@@ -4919,16 +4919,16 @@
         },
         {
             "name": "lara-zeus/artemis",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/artemis.git",
-                "reference": "643ee8d5cfda8453dfc35dfdfabb5003324007a1"
+                "reference": "f359a8ea60a59cee998723ce391745dffa5a1d64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/643ee8d5cfda8453dfc35dfdfabb5003324007a1",
-                "reference": "643ee8d5cfda8453dfc35dfdfabb5003324007a1",
+                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/f359a8ea60a59cee998723ce391745dffa5a1d64",
+                "reference": "f359a8ea60a59cee998723ce391745dffa5a1d64",
                 "shasum": ""
             },
             "require": {
@@ -4994,7 +4994,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-26T15:16:17+00:00"
+            "time": "2023-10-15T21:30:33+00:00"
         },
         {
             "name": "lara-zeus/bolt",
@@ -5269,16 +5269,16 @@
         },
         {
             "name": "lara-zeus/core",
-            "version": "v3.0.8",
+            "version": "v3.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "759091b1c04d81583666819bd5b61952b281fef0"
+                "reference": "f0bad2b0a9f173cb084bb2f8b129b1970bef2056"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/759091b1c04d81583666819bd5b61952b281fef0",
-                "reference": "759091b1c04d81583666819bd5b61952b281fef0",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/f0bad2b0a9f173cb084bb2f8b129b1970bef2056",
+                "reference": "f0bad2b0a9f173cb084bb2f8b129b1970bef2056",
                 "shasum": ""
             },
             "require": {
@@ -5351,7 +5351,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-10T12:27:21+00:00"
+            "time": "2023-10-15T21:27:38+00:00"
         },
         {
             "name": "lara-zeus/hermes",
