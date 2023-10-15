@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/filament-export.git",
-                "reference": "c5160e0be8d72594b23fab8f8b12bc5c170be9d1"
+                "reference": "eacadfddfad485f25878ec49e78cbb8bef88da43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/filament-export/zipball/c5160e0be8d72594b23fab8f8b12bc5c170be9d1",
-                "reference": "c5160e0be8d72594b23fab8f8b12bc5c170be9d1",
+                "url": "https://api.github.com/repos/lara-zeus/filament-export/zipball/eacadfddfad485f25878ec49e78cbb8bef88da43",
+                "reference": "eacadfddfad485f25878ec49e78cbb8bef88da43",
                 "shasum": ""
             },
             "require": {
@@ -64,7 +64,7 @@
             "support": {
                 "source": "https://github.com/lara-zeus/filament-export/tree/fix-there"
             },
-            "time": "2023-09-07T13:56:20+00:00"
+            "time": "2023-10-15T18:43:23+00:00"
         },
         {
             "name": "andreiio/blade-iconoir",
