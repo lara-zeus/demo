@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "934c49c64447707dffcc0b81e86e402e",
+    "content-hash": "fb2227c9ca9c6f4eba1eec97bc8b7367",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -4998,17 +4998,11 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v2.1.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "dd528cb7cf341e543142d55dcd7465eff32f7ec9"
-            },
+            "version": "2.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/dd528cb7cf341e543142d55dcd7465eff32f7ec9",
-                "reference": "dd528cb7cf341e543142d55dcd7465eff32f7ec9",
-                "shasum": ""
+                "type": "path",
+                "url": "../bolt",
+                "reference": "9211e990ec41a797e5c69015d6e34b7b266d6b88"
             },
             "require": {
                 "alperenersoy/filament-export": "dev-fix-there",
@@ -5047,7 +5041,34 @@
                     "LaraZeus\\Bolt\\Database\\Factories\\": "database/factories/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "LaraZeus\\Bolt\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:pest": [
+                    "vendor/bin/pest --parallel"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -5061,11 +5082,11 @@
             "description": "Zeus Bolt is form builder for your users, with so many use cases",
             "homepage": "https://larazeus.com/bolt",
             "keywords": [
-                "Forms",
                 "bolt",
                 "builder",
                 "filamentphp",
                 "form",
+                "forms",
                 "generator",
                 "lara-zeus",
                 "laravel",
@@ -5076,17 +5097,9 @@
                 "issues": "https://github.com/lara-zeus/bolt/issues",
                 "source": "https://github.com/lara-zeus/bolt"
             },
-            "funding": [
-                {
-                    "url": "https://www.buymeacoffee.com/larazeus",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-10-15T19:04:24+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/bolt-preset",
