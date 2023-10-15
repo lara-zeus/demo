@@ -4998,16 +4998,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v2.1.7",
+            "version": "v2.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "378552b4f97a3873a1ec237f8dd24f9936782b9f"
+                "reference": "dd528cb7cf341e543142d55dcd7465eff32f7ec9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/378552b4f97a3873a1ec237f8dd24f9936782b9f",
-                "reference": "378552b4f97a3873a1ec237f8dd24f9936782b9f",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/dd528cb7cf341e543142d55dcd7465eff32f7ec9",
+                "reference": "dd528cb7cf341e543142d55dcd7465eff32f7ec9",
                 "shasum": ""
             },
             "require": {
@@ -5086,7 +5086,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-13T21:47:55+00:00"
+            "time": "2023-10-15T19:04:24+00:00"
         },
         {
             "name": "lara-zeus/bolt-preset",
@@ -5179,16 +5179,16 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v2.0.6",
+            "version": "v2.0.7",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "5c2031e619f5db481a66875d66d733bf5446d9f6"
+                "reference": "e693befe4433cb84a118f553ba1b34a2963e67f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/5c2031e619f5db481a66875d66d733bf5446d9f6",
-                "reference": "5c2031e619f5db481a66875d66d733bf5446d9f6",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/e693befe4433cb84a118f553ba1b34a2963e67f8",
+                "reference": "e693befe4433cb84a118f553ba1b34a2963e67f8",
                 "shasum": ""
             },
             "require": {
@@ -5265,7 +5265,7 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2023-10-13T17:37:21+00:00"
+            "time": "2023-10-15T19:06:20+00:00"
         },
         {
             "name": "lara-zeus/core",
