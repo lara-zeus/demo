@@ -66,6 +66,8 @@ class AdminPanelProvider extends PanelProvider
             ->plugins($this->getPlugins())
             ->defaultAvatarProvider(GravatarProvider::class)
 
+            ->brandLogo(fn () => view('filament.logo'))
+
             //->topNavigation()
             ->sidebarCollapsibleOnDesktop()
             ->maxContentWidth('full')

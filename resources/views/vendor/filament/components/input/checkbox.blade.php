@@ -6,7 +6,7 @@
 @php
     $hasAlpineValidClasses = filled($alpineValid);
 
-    $validInputClasses = 'text-custom-600 ring-gray-950/10 focus:ring-custom-600 checked:focus:ring-custom-500/50 dark:ring-white/20 dark:checked:bg-custom-500 dark:focus:ring-custom-500 dark:checked:focus:ring-custom-400/50 dark:disabled:ring-white/10';
+    $validInputClasses = 'text-custom-600 ring-gray-950/10 focus:ring-custom-600 checked:focus:ring-custom-500/50 dark:text-custom-500 dark:ring-white/20 dark:checked:bg-custom-500 dark:focus:ring-custom-500 dark:checked:focus:ring-custom-400/50 dark:disabled:ring-white/10';
     $invalidInputClasses = 'text-danger-600 ring-danger-600 focus:ring-danger-600 checked:focus:ring-danger-500/50 dark:ring-danger-500 dark:checked:bg-danger-500 dark:focus:ring-danger-500 dark:checked:focus:ring-danger-400/50';
 @endphp
 
