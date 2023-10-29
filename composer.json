@@ -85,6 +85,7 @@
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
             "@php artisan vendor:publish --tag=zeus-assets --ansi --force",
             "@php artisan vendor:publish --tag=zeus-artemis-assets --ansi --force",
+            "@php artisan demo:filament",
             "@php artisan filament:upgrade"
         ],
         "post-root-package-install": [
@@ -114,6 +115,10 @@
     "repositories": [
         {
             "type": "github",
+            "url": "https://github.com/lara-zeus/filament-export"
+        },
+        {
+            "type": "github",
             "url": "git@github.com:lara-zeus/laravel-comments.git"
         },
         {
@@ -131,10 +136,6 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/bolt-pro"
-        },
-        {
-            "type": "github",
-            "url": "https://github.com/lara-zeus/filament-export"
         }
     ]
 }

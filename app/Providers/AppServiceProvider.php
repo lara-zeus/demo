@@ -21,7 +21,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->hooksRenderer();
+        //$this->hooksRenderer();
+
         Filament::serving(function () {
             FilamentAsset::register([
                 Css::make('example-external-stylesheet', asset('css/flag-icons.css')),

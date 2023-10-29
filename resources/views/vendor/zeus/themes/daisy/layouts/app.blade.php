@@ -1,6 +1,7 @@
-<!DOCTYPE html data-theme>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}"
-      dir="{{ app()->getLocale() === 'ar' ? "rtl" : 'ltr' }}">
+<!DOCTYPE html>
+<html data-theme lang="{{ str_replace('_', '-', app()->getLocale()) }}"
+      dir="{{ app()->getLocale() === 'ar' ? "rtl" : 'ltr' }}"
+      class="antialiased filament js-focus-visible">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,15 +12,18 @@
     <x-seo::meta/>
     <!-- Seo Tags -->
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Almarai:wght@300;400;700;800&family=Reggae+One&display=swap"
         rel="stylesheet">
+
     @livewireStyles
+    @filamentStyles
     @stack('styles')
 
-    <link rel="stylesheet" href="{{ mix('css/flag-icons.css') }}">
     <link rel="stylesheet" href="{{ mix('css/daisy.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/flag-icons.css') }}">
 
     <style>
         * {font-family: 'KoHo', 'Almarai', sans-serif;}
@@ -33,29 +37,32 @@
 
 @include($artemisTheme.'.layouts.navigation')
 
-@if(isset($header) || isset($breadcrumbs))
-    <div class="container mx-auto py-4 my-4">
-        <div class="alert shadow-lg flex flex-col items-start ltr:text-left rtl:text-right">
-            @if(isset($header))
-                <div class="italic font-semibold text-xl text-gray-600 dark:text-gray-100">
-                    {{ $header }}
-                </div>
-            @endif
+<div class="container mx-auto my-10 card card-compact w-full bg-base-200 shadow-lg">
+    <div class="card-body">
+        <div class="flex justify-between items-center">
+            <div class="flex flex-col items-start">
+                @if(isset($header))
+                    <div class="italic font-semibold text-xl text-gray-600 dark:text-gray-100">
+                        {{ $header }}
+                    </div>
+                @endif
 
-            @if(isset($breadcrumbs))
-                <nav class="text-gray-400 font-bold my-2" aria-label="Breadcrumb">
-                    <ol class="list-none p-0 inline-flex">
-                        <li class="flex items-center">
-                            <a href="{{ route('blogs') }}">Home</a>
-                            @svg('iconpark-rightsmall-o','fill-current w-4 h-4 mx-3')
-                        </li>
-                        {{ $breadcrumbs }}
-                    </ol>
-                </nav>
-            @endif
+                @if(isset($breadcrumbs))
+                    <nav class="text-gray-400 font-bold my-2" aria-label="Breadcrumb">
+                        <ol class="list-none p-0 inline-flex">
+                            <li class="flex items-center">
+                                <a href="{{ route('blogs') }}">Home</a>
+                                @svg('iconpark-rightsmall-o','fill-current w-4 h-4 mx-3')
+                            </li>
+                            {{ $breadcrumbs }}
+                        </ol>
+                    </nav>
+                @endif
+            </div>
+            <span class="bolt-loading animate-pulse"></span>
         </div>
     </div>
-@endif
+</div>
 
 <div class="container mx-auto">
     {{ $slot }}
