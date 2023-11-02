@@ -31,7 +31,7 @@
     </style>
 </head>
 
-@php $menu = RyanChandler\FilamentNavigation\Models\Navigation::fromHandle(config('zeus.header_menu')) @endphp
+@php $menu = \LaraZeus\Sky\Models\Navigation::fromHandle(config('zeus.header_menu')) @endphp
 
 <body class="@if(app()->isLocal()) debug-screens @endif antialiased">
 
