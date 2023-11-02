@@ -37,7 +37,7 @@ class FilamentViewsDemo extends Command
             $dir = File::allFiles($package);
             foreach ($dir as $view) {
                 $file = file_get_contents($view);
-                $str = str_replace("-primary-", "-custom-", $file);
+                $str = str_replace('-primary-', '-custom-', $file);
                 file_put_contents($view, $str);
             }
         }

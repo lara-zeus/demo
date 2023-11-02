@@ -24,8 +24,10 @@ class BoltSectionsSeeder extends Seeder
             'slug' => 'dynamic-sections',
             'details' => '{"en":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, extra fields are available now, and more are on the way.<\\/a><\\/p>","pt":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, extra fields are available now, and more are on the way.<\\/a><\\/p>","ko":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, extra fields are available now, and more are on the way.<\\/a><\\/p>"}',
             'options' => '{"confirmation-message":"<p>Thank you for testing out Bolt Pro \\ud83d\\ude42, use the code: <strong>ATM23ZBP <\\/strong>to get 20% off<\\/p>","require-login":false,"show-as":"page","emails-notification":null}',
-            'name' => json_encode(['en' => 'Dynamic Sections', 'pt' => 'Dynamic Sections', 'ko' => 'Dynamic Sections'],
-                JSON_THROW_ON_ERROR),
+            'name' => json_encode(
+                ['en' => 'Dynamic Sections', 'pt' => 'Dynamic Sections', 'ko' => 'Dynamic Sections'],
+                JSON_THROW_ON_ERROR
+            ),
             'category_id' => $category,
             'user_id' => 1,
             'start_date' => null,
@@ -40,7 +42,7 @@ class BoltSectionsSeeder extends Seeder
             'name' => '{"en":"Lang","pt":"Lang","ko":"Lang"}',
             'created_at' => '2023-10-28 11:11:20',
             'aside' => '1',
-            'options' => '{"visibility":{"active":false}}'
+            'options' => '{"visibility":{"active":false}}',
         ]);
 
         $section1 = DB::table('sections')->insertGetId([
@@ -60,7 +62,6 @@ class BoltSectionsSeeder extends Seeder
             'name' => '{"en":"EN form","pt":"EN form","ko":"EN form"}',
             'created_at' => '2023-10-28 11:12:14',
         ]);
-
 
         DB::table('fields')->insertGetId([
             'section_id' => $section1,
@@ -112,20 +113,20 @@ class BoltSectionsSeeder extends Seeder
             'section_id' => $section4,
             'name' => '{"en":"select lang","pt":"select lang","ko":"select lang"}',
             'type' => '\\LaraZeus\\Bolt\\Fields\\Classes\\Radio',
-            'options' => '{"dataSource":"'.$collection.'","htmlId":"DZ80jG","hint":{"text":null,"icon":null,"color":null},"is_inline":false,"is_required":true,"column_span_full":false,"visibility":{"active":false}}',
+            'options' => '{"dataSource":"' . $collection . '","htmlId":"DZ80jG","hint":{"text":null,"icon":null,"color":null},"is_inline":false,"is_required":true,"column_span_full":false,"visibility":{"active":false}}',
             'created_at' => '2023-10-28 11:11:20',
         ]);
 
-        DB::table('sections')->where('id',$section1)->update([
-            'options' => '{"visibility":{"active":true,"fieldID":"'.$mainField.'","values":"ko"}}',
+        DB::table('sections')->where('id', $section1)->update([
+            'options' => '{"visibility":{"active":true,"fieldID":"' . $mainField . '","values":"ko"}}',
         ]);
 
-        DB::table('sections')->where('id',$section2)->update([
-            'options' => '{"visibility":{"active":true,"fieldID":"'.$mainField.'","values":"pt"}}'
+        DB::table('sections')->where('id', $section2)->update([
+            'options' => '{"visibility":{"active":true,"fieldID":"' . $mainField . '","values":"pt"}}',
         ]);
 
-        DB::table('sections')->where('id',$section3)->update([
-            'options' => '{"visibility":{"active":true,"fieldID":"'.$mainField.'","values":"en"}}'
+        DB::table('sections')->where('id', $section3)->update([
+            'options' => '{"visibility":{"active":true,"fieldID":"' . $mainField . '","values":"en"}}',
         ]);
     }
 }

@@ -39,10 +39,6 @@
         {
             "type": "path",
             "url": "../bolt-pro"
-        },
-        {
-            "type": "path",
-            "url": "../bolt-preset"
         }
     ]
 }
