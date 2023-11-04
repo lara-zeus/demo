@@ -92,8 +92,11 @@ class UserResource extends Resource
 
             TextInput::make('name')->required(),
             TextInput::make('email')
+                ->unique()
+                ->required()
                 ->email(),
             TextInput::make('password')
+                ->required()
                 ->password()
                 ->maxLength(255),
         ]);
