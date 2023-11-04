@@ -106,7 +106,7 @@ return [
         'ar' => ['name' => 'Arabic', 'native' => 'العربية', 'regional' => 'ar_AE', 'flag' => 'ae'],
     ],
 
-    'repos' => ['sky', 'bolt', 'wind', 'rain', 'rhea', 'zeus', 'artemis'], //thunder
+    'repos' => ['sky', 'bolt', 'wind', 'rain', 'rhea', 'zeus', 'artemis', 'matrix-choice'], //thunder
 
     /*
     |--------------------------------------------------------------------------
