@@ -58,7 +58,7 @@
     @apply !bg-gradient-to-tr from-primary-50/25 via-secondary-50/50 to-secondary-50/50;
     @apply dark:!from-primary-800 dark:!via-gray-800 dark:!to-gray-800;
     @apply dark:border-gray-700/25 !shadow rounded-3xl rounded-tl-none;
-    @apply border border-secondary-500/25;
+    @apply border border-secondary-500/25 my-2;
 }
 
 .fi-section, .fi-fo-tabs, .fi-fo-repeater-item, .fi-ta-ctn {
@@ -69,7 +69,7 @@
 .fi-section
 {
     @apply !shadow-md;
-    @apply !bg-gradient-to-tr from-primary-50/25 via-secondary-50/25 to-secondary-50/25;
+    /*@apply !bg-gradient-to-tr from-primary-50/25 via-secondary-50/25 to-secondary-50/25;*/
     @apply dark:!from-primary-900/80 dark:!via-gray-900 dark:!to-gray-900;
 }
 

@@ -18,16 +18,7 @@ class User extends Authenticatable implements FilamentUser
     use ManageOffice;
     use Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    protected $guarded = [];
 
     /**
      * The attributes that should be hidden for serialization.
@@ -46,6 +37,8 @@ class User extends Authenticatable implements FilamentUser
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'options' => 'array',
+        'options2' => 'array',
     ];
 
     public function canAccessPanel(Panel $panel): bool

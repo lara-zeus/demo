@@ -34,8 +34,8 @@ module.exports = {
         './vendor/lara-zeus/bolt-pro/resources/views/**/*.blade.php',
         './vendor/sawirricardo/filament-nouislider/resources/views/forms/components/nouislider.blade.php',
 
-        // Bolt Preset
-        './vendor/lara-zeus/bolt-preset/resources/views/**/*.blade.php',
+        // matrix-choice
+        './vendor/lara-zeus/matrix-choice/resources/views/**/*.blade.php',
 
         // filament
         './app/Filament/**/*.php',
