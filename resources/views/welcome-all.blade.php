@@ -1,5 +1,7 @@
 <x-app>
-    <div class="absolute flex justify-start items-center gap-4 top-4 ltr:right-4 rtl:left-4">
+    <x-banner/>
+
+    <div class="absolute flex justify-start items-center gap-4 top-16 ltr:right-4 rtl:left-4">
         <x-lang-switcher/>
         <x-dark-mode/>
         <x-theme-switcher/>
@@ -7,8 +9,14 @@
             @svg('ri-github-fill','h-8 w-8 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
         </a>
     </div>
+    <div class="absolute top-16 ltr:left-4 rtl:right-4">
+        <a href="https://larazeus.com" class="flex justify-end items-center gap-4">
+            <img class="h-10 w-auto mx-auto" src="{{ asset('images/zeus-logo.png') }}" alt="Lara-zeus packages">
+            <p class="text-2xl title-font">@zeus</p>
+        </a>
+    </div>
 
-    <div class="text-center py-6 dark:text-gray-100">
+    {{--<div class="text-center py-6 dark:text-gray-100">
         <img class="h-32 w-auto mx-auto" src="{{ asset('images/zeus-logo.png') }}" alt="Lara-zeus packages">
         <p class="text-6xl title-font">@zeus</p>
         <p class="text-xl my-4 title-font">{{ __('Demo app for all') }} @zeus {{ __('Packages') }}</p>
@@ -19,9 +27,9 @@
                {{ __('filament plugin') }}
             </a>
         </span>
-    </div>
+    </div>--}}
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-4 mx-4">
+    <div class="mt-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-4 mx-4">
         @foreach(\App\Models\Package::get() as $package)
             @include('items.'.session('current_theme','zeus'))
         @endforeach
