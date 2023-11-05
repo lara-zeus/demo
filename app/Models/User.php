@@ -38,7 +38,7 @@ class User extends Authenticatable implements FilamentUser
     protected $casts = [
         'email_verified_at' => 'datetime',
         'options' => 'array',
-        'options2' => 'array',
+        'options_two' => 'array',
     ];
 
     public function canAccessPanel(Panel $panel): bool

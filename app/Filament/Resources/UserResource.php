@@ -68,7 +68,7 @@ class UserResource extends Resource
                     'monday' => 'Monday',
                 ]),
 
-            Matrix::make('options2')
+            Matrix::make('options_two')
                 ->extraAttributes(['class' => 'bord'])
                 ->label('Tell us about your mod')
                 ->hint('wont be saved to db this is just a demo')

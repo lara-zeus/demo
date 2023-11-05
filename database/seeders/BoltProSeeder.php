@@ -117,17 +117,17 @@ class BoltProSeeder extends Seeder
                 'description' => null,
                 'type' => '\\LaraZeus\\BoltPro\\Fields\\MatrixGrid',
                 'ordering' => '8',
-                'options' => '{"htmlId":"hPZ3M2w","choice_type":"checkbox","column_data":{"1":"\\ud83d\\ude42","2":"\\ud83d\\ude10","3":"\\ud83d\\ude41"},"row_data":{"saturday":"saturday","sunday":"sunday","monday":"monday"}}',
+                'options' => '{"htmlId":"hPZ3M2w","choice_type":"checkbox","column_data":{"1":"\\ud83d\\ude42","2":"\\ud83d\\ude10","3":"\\ud83d\\ude41"},"row_data":{"saturday":"Saturday","sunday":"Sunday","monday":"Monday"}}',
             ],
         );
         DB::table('fields')->insertGetId(
             [
                 'section_id' => $section1,
-                'name' => '{"en":"Matrix Choice checkbox","pt":"Matrix Choice checkbox","ko":"Matrix Choice checkbox"}',
+                'name' => '{"en":"Matrix Choice radio","pt":"Matrix Choice radio","ko":"Matrix Choice radio"}',
                 'description' => null,
                 'type' => '\\LaraZeus\\BoltPro\\Fields\\MatrixGrid',
                 'ordering' => '9',
-                'options' => '{"htmlId":"hPZ3MW","choice_type":"radio","column_data":{"1":"\\ud83d\\ude42","2":"\\ud83d\\ude10","3":"\\ud83d\\ude41"},"row_data":{"saturday":"saturday","sunday":"sunday","monday":"monday"}}',
+                'options' => '{"htmlId":"hPZ3MW","choice_type":"radio","column_data":{"happy":"\\ud83d\\ude42","nothing":"\\ud83d\\ude10","sad":"\\ud83d\\ude41"},"row_data":{"saturday":"Saturday","sunday":"Sunday","monday":"Monday"}}',
             ],
         );
         DB::table('fields')->insertGetId(
