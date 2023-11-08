@@ -123,15 +123,15 @@
         },
         {
             "type": "github",
-            "url": "git@github.com:lara-zeus/thunder.git"
+            "url": "https://github.com/lara-zeus/thunder"
         },
         {
             "type": "github",
-            "url": "git@github.com:lara-zeus/hermes.git"
+            "url": "https://github.com/lara-zeus/hermes"
         },
         {
             "type": "github",
-            "url": "git@github.com:lara-zeus/bolt-pro"
+            "url": "https://github.com/lara-zeus/bolt-pro"
         }
     ]
 }
