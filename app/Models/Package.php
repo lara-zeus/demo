@@ -24,7 +24,7 @@ class Package extends Model
                         [
                             'text' => 'Bolt Pro',
                             'url' => 'https://larazeus.com/bolt-pro',
-                        ]
+                        ],
                     ],
                 ]),
             ],
