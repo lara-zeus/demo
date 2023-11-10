@@ -5,10 +5,10 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use LaraZeus\Sky\Models\Faq;
 use LaraZeus\Sky\Models\Library;
+use LaraZeus\Sky\Models\Navigation;
 use LaraZeus\Sky\Models\Post;
 use LaraZeus\Sky\Models\Tag;
 use LaraZeus\Sky\SkyPlugin;
-use RyanChandler\FilamentNavigation\Models\Navigation;
 
 class SkySeeder extends Seeder
 {

@@ -3,7 +3,7 @@
         <span class="group"><span class="text-secondary-400 group-hover:text-primary-400 transition ease-in-out duration-300">Lara&nbsp;<span class="line-through italic text-primary-400 group-hover:text-secondary-400 transition ease-in-out duration-300">Z</span>eus</span> Demo</span>
     </a>
     <div class="w-full flex items-center justify-end gap-2">
-        @php $menu = \RyanChandler\FilamentNavigation\Models\Navigation::fromHandle(config('zeus.header_menu')); @endphp
+        @php $menu = \LaraZeus\Sky\Models\Navigation::fromHandle(config('zeus.header_menu')); @endphp
         @if($menu !== null)
             @foreach($menu->items as $item)
                 {!! \LaraZeus\Sky\Classes\RenderNavItem::render($item,'px-3 py-2 text-lg font-karla text-primary-500 hover:text-secondary-500 dark:text-gray-400 transition-all ease-in-out duration-300') !!}

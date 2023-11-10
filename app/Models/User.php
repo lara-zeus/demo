@@ -20,16 +20,7 @@ class User extends Authenticatable implements FilamentUser
     use Notifiable;
     use HasViews;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    protected $guarded = [];
 
     /**
      * The attributes that should be hidden for serialization.
@@ -48,6 +39,8 @@ class User extends Authenticatable implements FilamentUser
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'options' => 'array',
+        'options_two' => 'array',
     ];
 
     public function canAccessPanel(Panel $panel): bool

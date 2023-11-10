@@ -40,7 +40,7 @@ class BoltProSeeder extends Seeder
             'created_at' => now(),
         ]);
 
-        $section1_field_1 = DB::table('fields')->insertGetId(
+        DB::table('fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Image Picker","pt":"Image Picker","ko":"Image Picker"}',
@@ -50,7 +50,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"zW7BRa","is_required":true,"images":["forms\/aZeqEiphnjtbHWa73ACLjpidJT3Dc5-metacmFpbi5wbmc=-.png","forms\/tqocpQqh1VO99VJ4AFeWnfYCvjrrPB-metacHJlbWl1bS5wbmc=-.png","forms\/BtAaVuoHL9WdANo2LOBxaiS0kxWEOS-metaVW50aXRsZWQgZGVzaWduICgyKS5wbmc=-.png"]}',
             ],
         );
-        $section1_field_1 = DB::table('fields')->insertGetId(
+        DB::table('fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Dynamic Textbox","pt":"Dynamic Textbox","ko":"Dynamic Textbox"}',
@@ -60,7 +60,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"0SLUFp","is_required":false,"minItems":null,"maxItems":"5","defaultItems":null}',
             ],
         );
-        $section1_field_1 = DB::table('fields')->insertGetId(
+        DB::table('fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Terms and Condetion","pt":"Terms and Condetion","ko":"Terms and Condetion"}',
@@ -70,7 +70,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"mRpIvF","column_span_full":false,"terms":{"text":"Terms","link":"https:\\/\\/demo.test"},"conditions":{"text":"Conditions","link":"https:\\/\\/demo.test"}}',
             ],
         );
-        $section1_field_1 = DB::table('fields')->insertGetId(
+        DB::table('fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Signature ","pt":"Signature ","ko":"Signature "}',
@@ -80,7 +80,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"aCTAtB","is_required":true,"background-color":"#faf1f1","pen-color":"#000000"}',
             ],
         );
-        $section1_field_1 = DB::table('fields')->insertGetId(
+        DB::table('fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Alert","pt":"Alert","ko":"Alert"}',
@@ -90,7 +90,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"content":"f sdf sdf sdf ","type":"warning","color":"#f22ade","icon":"iconoir-rocket"}',
             ],
         );
-        $section1_field_1 = DB::table('fields')->insertGetId(
+        DB::table('fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Advanced Date","pt":"Advanced Date","ko":"Advanced Date"}',
@@ -100,7 +100,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"sdfsdf","mode":"multiple"}',
             ],
         );
-        $section1_field_1 = DB::table('fields')->insertGetId(
+        DB::table('fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Icon Picker","pt":"Icon Picker","ko":"Icon Picker"}',
@@ -108,6 +108,36 @@ class BoltProSeeder extends Seeder
                 'type' => '\\LaraZeus\\BoltPro\\Fields\\IconPicker',
                 'ordering' => '7',
                 'options' => '{"htmlId":"uqM2nC","is_required":false,"column_span_full":false}',
+            ],
+        );
+        DB::table('fields')->insertGetId(
+            [
+                'section_id' => $section1,
+                'name' => '{"en":"Matrix Choice checkbox","pt":"Matrix Choice checkbox","ko":"Matrix Choice checkbox"}',
+                'description' => null,
+                'type' => '\\LaraZeus\\BoltPro\\Fields\\MatrixGrid',
+                'ordering' => '8',
+                'options' => '{"htmlId":"hPZ3M2w","choice_type":"checkbox","column_data":{"1":"\\ud83d\\ude42","2":"\\ud83d\\ude10","3":"\\ud83d\\ude41"},"row_data":{"saturday":"Saturday","sunday":"Sunday","monday":"Monday"}}',
+            ],
+        );
+        DB::table('fields')->insertGetId(
+            [
+                'section_id' => $section1,
+                'name' => '{"en":"Matrix Choice radio","pt":"Matrix Choice radio","ko":"Matrix Choice radio"}',
+                'description' => null,
+                'type' => '\\LaraZeus\\BoltPro\\Fields\\MatrixGrid',
+                'ordering' => '9',
+                'options' => '{"htmlId":"hPZ3MW","choice_type":"radio","column_data":{"happy":"\\ud83d\\ude42","nothing":"\\ud83d\\ude10","sad":"\\ud83d\\ude41"},"row_data":{"saturday":"Saturday","sunday":"Sunday","monday":"Monday"}}',
+            ],
+        );
+        DB::table('fields')->insertGetId(
+            [
+                'section_id' => $section1,
+                'name' => '{"en":"Slider","pt":"Slider","ko":"Slider"}',
+                'description' => null,
+                'type' => '\\LaraZeus\\BoltPro\\Fields\\Slider',
+                'ordering' => '10',
+                'options' => '{"htmlId":"tjWeUW","is_required":false,"start_from":"4","start_to":"6","min_value":"1","max_value":"10"}',
             ],
         );
     }

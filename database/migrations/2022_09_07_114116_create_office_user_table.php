@@ -17,7 +17,7 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->foreignId('office_id')->constrained('offices');
             $table->foreignId('user_id')->constrained('users');
-            $table->string('role')->default('EMPLOYEE'); // MANAGER, CO-MANAGER
+            $table->text('permissions'); // change_status,change_priority,manage_escalated,reply
             $table->timestamps();
         });
     }

@@ -19,3 +19,4 @@ yarn-error.log
 /pkg
 .DS_Store
 /packages
+/prod

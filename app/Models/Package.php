@@ -25,10 +25,6 @@ class Package extends Model
                             'text' => 'Bolt Pro',
                             'url' => 'https://larazeus.com/bolt-pro',
                         ],
-                        [
-                            'text' => 'Bolt Preset',
-                            'url' => 'https://larazeus.com/bolt-preset',
-                        ],
                     ],
                 ]),
             ],
@@ -57,7 +53,8 @@ class Package extends Model
                 'admin_url' => url('/admin/posts'),
                 'fe_text' => __('Blog'),
                 'fe_url' => route('blogs'),
-                'other' => json_encode([
+                'other' => null,
+                /*'other' => json_encode([
                     'title' => 'Available Addons:',
                     'urls' => [
                         [
@@ -69,7 +66,7 @@ class Package extends Model
                             'url' => 'https://larazeus.com/rhea',
                         ],
                     ],
-                ]),
+                ]),*/
             ],
             [
                 'name' => 'Wind',

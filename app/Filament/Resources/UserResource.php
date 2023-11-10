@@ -4,7 +4,6 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\UserResource\Pages;
 use App\Models\User;
-use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -14,6 +13,7 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use LaraZeus\MatrixChoice\Components\Matrix;
 use STS\FilamentImpersonate\Tables\Actions\Impersonate;
 
 class UserResource extends Resource
@@ -47,16 +47,58 @@ class UserResource extends Resource
     public static function form(Form $form): Form
     {
         return $form->schema([
+            Matrix::make('options')
+                ->label('Tell us about your mod')
+                ->hint('wont be saved to db this is just a demo')
+                ->hintColor('warning')
+                ->dehydrated(app()->isLocal())
+                ->columnSpanFull()
+                ->asRadio()
+                ->columnData([
+                    '1' => '🙂',
+                    '2' => '😐',
+                    '3' => '🙁',
+                    '4' => '🥹',
+                    '5' => '🥳',
+                    '6' => '🤪',
+                ])
+                ->rowData([
+                    'saturday' => 'Saturday',
+                    'sunday' => 'Sunday',
+                    'monday' => 'Monday',
+                ]),
+
+            Matrix::make('options_two')
+                ->extraAttributes(['class' => 'bord'])
+                ->label('Tell us about your mod')
+                ->hint('wont be saved to db this is just a demo')
+                ->hintColor('warning')
+                ->dehydrated(app()->isLocal())
+                ->columnSpanFull()
+                ->asCheckbox()
+                ->columnData([
+                    '1' => '🙂',
+                    '2' => '😐',
+                    '3' => '🙁',
+                    '4' => '🥹',
+                    '5' => '🥳',
+                    '6' => '🤪',
+                ])
+                ->rowData([
+                    'saturday' => 'Saturday',
+                    'sunday' => 'Sunday',
+                    'monday' => 'Monday',
+                ]),
+
             TextInput::make('name')->required(),
             TextInput::make('email')
+                ->unique()
+                ->required()
                 ->email(),
             TextInput::make('password')
+                ->required()
                 ->password()
                 ->maxLength(255),
-            /*Select::make('roles')
-                ->relationship('roles', 'name')
-                ->preload()
-                ->multiple(),*/
         ]);
     }
 

@@ -3,7 +3,6 @@
       dir="{{ app()->getLocale() === 'ar' ? "rtl" : 'ltr' }}"
       class="antialiased filament js-focus-visible">
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -27,35 +26,39 @@
     <link rel="stylesheet" href="{{ mix('css/flag-icons.css') }}">
 
     <style>
-        [x-cloak] {
-            display: none !important;
-        }
+        * {font-family: 'KoHo', 'Almarai', sans-serif;}
+        [x-cloak] {display: none !important;}
     </style>
 </head>
 <body class="antialiased bg-gray-50 text-gray-900 dark:text-gray-100 dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
 
-<header x-data="{ open: false }" class="bg-white dark:bg-black py-4">
+<x-banner/>
+
+<header x-data="{ open: false }" class="mt-12 bg-white dark:bg-black py-4">
     <x-nav/>
 </header>
 
-@if(isset($header) || isset($breadcrumbs))
-    <header class="bg-gray-100 dark:bg-gray-800">
-        <div class="container mx-auto py-2 px-3">
-            @if(isset($breadcrumbs))
-                <nav class="text-gray-400 font-bold my-1" aria-label="Breadcrumb">
-                    <ol class="list-none p-0 inline-flex">
-                        {{ $breadcrumbs }}
-                    </ol>
-                </nav>
-            @endif
-            @if(isset($header))
-                <div class="italic font-semibold text-xl text-gray-600 dark:text-gray-100">
-                    {{ $header }}
-                </div>
-            @endif
+<header class="bg-gray-100 dark:bg-gray-800">
+    <div class="container mx-auto py-2 px-3">
+        <div class="flex justify-between items-center">
+            <div class="w-full">
+                @if(isset($breadcrumbs))
+                    <nav class="text-gray-400 font-bold my-1" aria-label="Breadcrumb">
+                        <ol class="list-none p-0 inline-flex">
+                            {{ $breadcrumbs }}
+                        </ol>
+                    </nav>
+                @endif
+                @if(isset($header))
+                    <div class="italic font-semibold text-xl text-gray-600 dark:text-gray-100">
+                        {{ $header }}
+                    </div>
+                @endif
+            </div>
+            <span class="bolt-loading animate-pulse"></span>
         </div>
-    </header>
-@endif
+    </div>
+</header>
 
 <div class="container mx-auto py-10">
     {{ $slot }}
@@ -108,6 +111,6 @@
         document.documentElement.classList.add('dark')
     }
 </script>
-
+@stillStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
 </body>
 </html>
