@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Archilex\AdvancedTables\Concerns\HasViews;
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Panel;
 use Illuminate\Database\Eloquent\Casts\Attribute;
@@ -17,6 +18,7 @@ class User extends Authenticatable implements FilamentUser
     use HasFactory;
     use ManageOffice;
     use Notifiable;
+    use HasViews;
 
     protected $guarded = [];
 

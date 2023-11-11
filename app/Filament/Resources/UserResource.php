@@ -108,9 +108,23 @@ class UserResource extends Resource
             ->columns([
                 TextColumn::make('name')
                     ->sortable()
+                    ->toggleable()
                     ->searchable(),
                 TextColumn::make('email')
                     ->sortable()
+                    ->toggleable()
+                    ->searchable(),
+                TextColumn::make('email_verified_at')
+                    ->sortable()
+                    ->toggleable()
+                    ->searchable(),
+                TextColumn::make('created_at')
+                    ->sortable()
+                    ->toggleable()
+                    ->searchable(),
+                TextColumn::make('updated_at')
+                    ->sortable()
+                    ->toggleable()
                     ->searchable(),
             ])
             ->actions([
