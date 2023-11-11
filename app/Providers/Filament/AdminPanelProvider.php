@@ -3,6 +3,7 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
+use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
 use Awcodes\Curator\CuratorPlugin;
 use Awcodes\FilamentGravatar\GravatarPlugin;
@@ -65,8 +66,7 @@ class AdminPanelProvider extends PanelProvider
             ->font('Karla')
             ->plugins($this->getPlugins())
             ->defaultAvatarProvider(GravatarProvider::class)
-
-            ->brandLogo(fn () => view('filament.logo'))
+            ->brandLogo(fn() => view('filament.logo'))
 
             //->topNavigation()
             ->sidebarCollapsibleOnDesktop()
@@ -85,7 +85,7 @@ class AdminPanelProvider extends PanelProvider
             // hermes
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
                 scopes: [
                     BranchResource::class,
                     MenuItemLabelsResource::class,
@@ -96,7 +96,7 @@ class AdminPanelProvider extends PanelProvider
             // thunder
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
                 scopes: [
                     OfficeResource::class,
                     OperationsResource::class,
@@ -106,7 +106,7 @@ class AdminPanelProvider extends PanelProvider
             // bolt
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
                 scopes: [
                     FormResource::class,
                     CategoryResource::class,
@@ -122,14 +122,13 @@ class AdminPanelProvider extends PanelProvider
             // lang
             ->renderHook(
                 'panels::user-menu.before',
-                fn (): View => view('filament.hooks.lang-switcher'),
+                fn(): View => view('filament.hooks.lang-switcher'),
             )
             // footer
             ->renderHook(
                 'panels::footer',
-                fn (): View => view('filament.hooks.footer'),
+                fn(): View => view('filament.hooks.footer'),
             )
-
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
@@ -161,12 +160,15 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
-            AdvancedTablesPlugin::make(),
+            AdvancedTablesPlugin::make()
+                ->resourceNavigationGroup('Bolt')
+                ->resourceNavigationSort(99)
+                ->favoritesBarTheme(FavoritesBarTheme::Filament),
             CuratorPlugin::make()
-                ->label(fn (): string => __('Media'))
-                ->pluralLabel(fn (): string => __('Media'))
+                ->label(fn(): string => __('Media'))
+                ->pluralLabel(fn(): string => __('Media'))
                 ->navigationIcon('heroicon-o-photo')
-                ->navigationGroup(fn (): string => __('Hermes'))
+                ->navigationGroup(fn(): string => __('Hermes'))
                 ->navigationSort(99)
                 ->navigationCountBadge(),
 

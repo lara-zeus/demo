@@ -12,7 +12,6 @@
             <br>
             <span class="font-semibold text-xl">
                 🎉 check out, <a class="text-secondary-600" target="_blank" href="https://larazeus.com/bolt-pro">Bolt Pro</a>
-                and <a class="text-secondary-600" target="_blank" href="https://larazeus.com/bolt-preset">Bolt Preset</a>
             </span>
         </div>
     </div>

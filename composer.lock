@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ae9ee0db74e03ab3d7da7e94e703d7c",
+    "content-hash": "140ebe56b495f982b90f0d4c2f6a71fa",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -5262,16 +5262,16 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v2.0.11",
+            "version": "v2.0.13",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "4a30f22daabdca2a0fb4a29a9b6a7f553edff77c"
+                "reference": "ce2238bef493590be4385c3d587d8045f051ad62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/4a30f22daabdca2a0fb4a29a9b6a7f553edff77c",
-                "reference": "4a30f22daabdca2a0fb4a29a9b6a7f553edff77c",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/ce2238bef493590be4385c3d587d8045f051ad62",
+                "reference": "ce2238bef493590be4385c3d587d8045f051ad62",
                 "shasum": ""
             },
             "require": {
@@ -5349,7 +5349,7 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2023-11-05T14:31:21+00:00"
+            "time": "2023-11-11T21:16:20+00:00"
         },
         {
             "name": "lara-zeus/core",

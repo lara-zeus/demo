@@ -120,7 +120,7 @@
         },
         {
             "type": "github",
-            "url": "git@github.com:lara-zeus/laravel-comments.git"
+            "url": "https://github.com/lara-zeus/laravel-comments"
         },
         {
             "type": "github",
