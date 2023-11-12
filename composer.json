@@ -123,6 +123,10 @@
             "url": "https://github.com/lara-zeus/laravel-comments"
         },
         {
+            "type": "composer",
+            "url": "https://filament-filter-sets.composer.sh"
+        },
+        {
             "type": "github",
             "url": "git@github.com:lara-zeus/thunder.git"
         },
@@ -133,10 +137,6 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/bolt-pro.git"
-        },
-        {
-            "type": "composer",
-            "url": "https://filament-filter-sets.composer.sh"
         }
     ]
 }
