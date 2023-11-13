@@ -11,7 +11,8 @@
             <span class="text-lg">Want More Features?</span>
             <br>
             <span class="font-semibold text-xl">
-                🎉 check out, <a class="text-secondary-600" target="_blank" href="https://larazeus.com/bolt-pro">Bolt Pro</a>
+                🎉 check out <a class="text-secondary-600" target="_blank" href="https://larazeus.com/bolt-pro">Bolt Pro</a>.
+                Now, fully integrated with <a class="text-secondary-600" target="_blank" href="https://filamentphp.com/plugins/kenneth-sese-advanced-tables">Advanced Tables</a>
             </span>
         </div>
     </div>
