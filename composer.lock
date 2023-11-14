@@ -248,12 +248,12 @@
         },
         {
             "name": "archilex/filament-filter-sets",
-            "version": "3.5.1",
+            "version": "3.5.3",
             "dist": {
                 "type": "zip",
-                "url": "https://filament-filter-sets.composer.sh/download/9a9be699-088c-4c85-86a7-c1e126abf35a/advanced-tables-for-filament-3.5.1.zip",
-                "reference": "301dd1c9b04f4f92c45220efb407c62e2a0fad88",
-                "shasum": "ead7f01ecb2b246ba9fa8d59459acfe16c3d221b"
+                "url": "https://filament-filter-sets.composer.sh/download/9a9cc318-01d2-4062-89e7-b690aba6a347/advanced-tables-for-filament-3.5.3.zip",
+                "reference": "3622751e09162574a3f9941815631be0235427d9",
+                "shasum": "b9a5b0553a618121c9152300ba7cd81efe941575"
             },
             "require": {
                 "archilex/filament-toggle-icon-column": "^3.0",
@@ -329,7 +329,7 @@
                 "tables",
                 "views"
             ],
-            "time": "2023-11-14T06:36:35+00:00"
+            "time": "2023-11-14T16:53:08+00:00"
         },
         {
             "name": "archilex/filament-toggle-icon-column",
@@ -5166,16 +5166,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v2.1.16",
+            "version": "v2.1.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "c6797d07bfba20038ca6745beb66f1adb1d29e83"
+                "reference": "1bbbb6b7e3a6a7e2092114908960e88c41dfbdc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/c6797d07bfba20038ca6745beb66f1adb1d29e83",
-                "reference": "c6797d07bfba20038ca6745beb66f1adb1d29e83",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/1bbbb6b7e3a6a7e2092114908960e88c41dfbdc0",
+                "reference": "1bbbb6b7e3a6a7e2092114908960e88c41dfbdc0",
                 "shasum": ""
             },
             "require": {
@@ -5254,20 +5254,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-12T22:21:54+00:00"
+            "time": "2023-11-14T21:27:40+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v2.0.15",
+            "version": "v2.0.16",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "cd9d9711d76eaffe17202f09e75cb1628f5acfda"
+                "reference": "4a0d9ae598660713a7c259b26ec2afd4197c3431"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/cd9d9711d76eaffe17202f09e75cb1628f5acfda",
-                "reference": "cd9d9711d76eaffe17202f09e75cb1628f5acfda",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/4a0d9ae598660713a7c259b26ec2afd4197c3431",
+                "reference": "4a0d9ae598660713a7c259b26ec2afd4197c3431",
                 "shasum": ""
             },
             "require": {
@@ -5345,7 +5345,7 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2023-11-12T22:22:33+00:00"
+            "time": "2023-11-14T21:28:25+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -6388,16 +6388,16 @@
         },
         {
             "name": "laravel/serializable-closure",
-            "version": "v1.3.2",
+            "version": "v1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/serializable-closure.git",
-                "reference": "076fe2cf128bd54b4341cdc6d49b95b34e101e4c"
+                "reference": "3dbf8a8e914634c48d389c1234552666b3d43754"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/076fe2cf128bd54b4341cdc6d49b95b34e101e4c",
-                "reference": "076fe2cf128bd54b4341cdc6d49b95b34e101e4c",
+                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/3dbf8a8e914634c48d389c1234552666b3d43754",
+                "reference": "3dbf8a8e914634c48d389c1234552666b3d43754",
                 "shasum": ""
             },
             "require": {
@@ -6444,7 +6444,7 @@
                 "issues": "https://github.com/laravel/serializable-closure/issues",
                 "source": "https://github.com/laravel/serializable-closure"
             },
-            "time": "2023-10-17T13:38:16+00:00"
+            "time": "2023-11-08T14:08:06+00:00"
         },
         {
             "name": "lcobucci/jwt",
@@ -15412,16 +15412,16 @@
         },
         {
             "name": "dragon-code/contracts",
-            "version": "v2.20.0",
+            "version": "v2.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TheDragonCode/contracts.git",
-                "reference": "410d35bec404f465a126bb1e672f3abe1150f5d7"
+                "reference": "c69d7183a4ec35892ca208b2863d3ccad9465d7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TheDragonCode/contracts/zipball/410d35bec404f465a126bb1e672f3abe1150f5d7",
-                "reference": "410d35bec404f465a126bb1e672f3abe1150f5d7",
+                "url": "https://api.github.com/repos/TheDragonCode/contracts/zipball/c69d7183a4ec35892ca208b2863d3ccad9465d7b",
+                "reference": "c69d7183a4ec35892ca208b2863d3ccad9465d7b",
                 "shasum": ""
             },
             "require": {
@@ -15468,6 +15468,10 @@
                     "type": "boosty"
                 },
                 {
+                    "url": "https://www.donationalerts.com/r/dragon_code",
+                    "type": "donationalerts"
+                },
+                {
                     "url": "https://github.com/sponsors/TheDragonCode",
                     "type": "github"
                 },
@@ -15480,7 +15484,7 @@
                     "type": "yoomoney"
                 }
             ],
-            "time": "2023-06-02T11:06:31+00:00"
+            "time": "2023-11-14T20:01:25+00:00"
         },
         {
             "name": "dragon-code/pretty-array",
