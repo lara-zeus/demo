@@ -5,6 +5,7 @@ namespace App\Providers\Filament;
 use App\Filament\Pages\Auth\Login;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
+use Archilex\AdvancedTables\Resources\UserViewResource;
 use Awcodes\Curator\CuratorPlugin;
 use Awcodes\FilamentGravatar\GravatarPlugin;
 use Awcodes\FilamentGravatar\GravatarProvider;
@@ -193,6 +194,7 @@ class AdminPanelProvider extends PanelProvider
             QuickCreatePlugin::make()
                 ->excludes([
                     ResponseResource::class,
+                    UserViewResource::class,
                     LetterResource::class,
                     OperationsResource::class,
                     TicketResource::class,
