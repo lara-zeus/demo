@@ -94,6 +94,10 @@ class AdminPanelProvider extends PanelProvider
                     MenuSectionResource::class,
                 ],
             )
+            ->renderHook(
+                'panels::topbar.start',
+                fn(array $scopes): View => view('filament.hooks.store'),
+            )
             // thunder
             ->renderHook(
                 'panels::page.start',
