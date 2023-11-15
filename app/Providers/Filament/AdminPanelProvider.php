@@ -15,6 +15,7 @@ use Awcodes\FilamentVersions\VersionsWidget;
 use Awcodes\LightSwitch\LightSwitchPlugin;
 use Awcodes\Overlook\OverlookPlugin;
 use Awcodes\Overlook\Widgets\OverlookWidget;
+use EightyNine\Approvals\ApprovalPlugin;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -165,6 +166,8 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
+            \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
+            ApprovalPlugin::make(),
             AdvancedTablesPlugin::make()
                 ->resourceNavigationGroup('Bolt')
                 ->resourceNavigationSort(99)
