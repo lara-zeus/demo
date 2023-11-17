@@ -140,5 +140,15 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"tjWeUW","is_required":false,"start_from":"4","start_to":"6","min_value":"1","max_value":"10"}',
             ],
         );
+        DB::table('fields')->insertGetId(
+            [
+                'section_id' => $section1,
+                'name' => '{"en":"Rating","pt":"Rating","ko":"Rating"}',
+                'description' => null,
+                'type' => '\\LaraZeus\\BoltPro\\Fields\\Rating',
+                'ordering' => '11',
+                'options' => '{"htmlId":"tjDeUW","is_required":false}',
+            ],
+        );
     }
 }
