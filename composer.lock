@@ -5956,16 +5956,16 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v2.0.7",
+            "version": "v2.0.8",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "2d5aa390a56f3279aa25b1af134b6cec75c7ad5e"
+                "reference": "2fe88756f4cb89eea0df61ad1cce617684d605e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/2d5aa390a56f3279aa25b1af134b6cec75c7ad5e",
-                "reference": "2d5aa390a56f3279aa25b1af134b6cec75c7ad5e",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/2fe88756f4cb89eea0df61ad1cce617684d605e7",
+                "reference": "2fe88756f4cb89eea0df61ad1cce617684d605e7",
                 "shasum": ""
             },
             "require": {
@@ -5977,7 +5977,7 @@
             "require-dev": {
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.0.1",
+                "nunomaduro/larastan": "^2.6",
                 "nunomaduro/phpinsights": "^2.8",
                 "orchestra/testbench": "^8.0",
                 "pestphp/pest": "^2.0",
@@ -6057,7 +6057,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-11-24T13:52:02+00:00"
+            "time": "2023-11-25T12:37:38+00:00"
         },
         {
             "name": "lara-zeus/wind",
