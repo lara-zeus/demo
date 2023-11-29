@@ -34,6 +34,7 @@
         "lara-zeus/rain": "^2.1",
         "lara-zeus/rhea": "^2.0",
         "lara-zeus/sky": "^3.3",
+        "lara-zeus/helen": "*",
         "lara-zeus/thunder": "^2.0",
         "lara-zeus/wind": "^3.1",
         "lara-zeus/matrix-choice": "^3.0",
@@ -136,6 +137,14 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/bolt-pro.git"
+        },
+        {
+            "type": "path",
+            "url": "../helen"
+        },
+        {
+            "type": "path",
+            "url": "../core"
         }
     ]
 }

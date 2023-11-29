@@ -16,9 +16,9 @@ class User extends Authenticatable implements FilamentUser
 {
     use HasApiTokens;
     use HasFactory;
+    use HasViews;
     use ManageOffice;
     use Notifiable;
-    use HasViews;
 
     protected $guarded = [];
 
