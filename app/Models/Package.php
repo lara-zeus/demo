@@ -47,6 +47,15 @@ class Package extends Model
                 'fe_url' => url('hermes'),
             ],
             [
+                'name' => 'Helen',
+                'other' => null,
+                'icon' => 'clarity-crown-solid',
+                'desc' => __('Helen | short URL management with qr code generator'),
+                'admin_url' => url('/admin/links'),
+                'fe_text' => null,
+                'fe_url' => null,
+            ],
+            [
                 'name' => 'Sky',
                 'icon' => 'ri-cloud-windy-line',
                 'desc' => __('Sky is simple CMS for your website. It includes posts, pages, tags, and categories'),

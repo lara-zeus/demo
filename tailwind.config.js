@@ -37,6 +37,11 @@ module.exports = {
         // matrix-choice
         './vendor/lara-zeus/matrix-choice/resources/views/**/*.blade.php',
 
+        // helen
+        './vendor/lara-zeus/helen/resources/views/**/*.blade.php',
+        './vendor/lara-zeus/helen/src/Filament/Resources/LinksResource.php',
+        './vendor/lara-zeus/helen/src/Facades/Helen.php',
+
         // filament
         './app/Filament/**/*.php',
         './resources/views/filament/**/*.blade.php',

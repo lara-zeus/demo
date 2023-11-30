@@ -16,8 +16,10 @@ return new class extends Migration
         Schema::create('links', function (Blueprint $table) {
             $table->id();
             $table->string('url');
-            $table->string('short');
-            $table->longText('description')->nullable();
+            $table->string('short_key');
+            $table->integer('user_id')->nullable();
+            $table->longText('notes')->nullable();
+            $table->text('options')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

@@ -36,6 +36,7 @@ use LaraZeus\Bolt\Filament\Resources\CategoryResource;
 use LaraZeus\Bolt\Filament\Resources\CollectionResource;
 use LaraZeus\Bolt\Filament\Resources\FormResource;
 use LaraZeus\Bolt\Filament\Resources\ResponseResource;
+use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
 use LaraZeus\Hermes\Filament\Resources\BranchResource;
 use LaraZeus\Hermes\Filament\Resources\MenuItemLabelsResource;
@@ -68,7 +69,7 @@ class AdminPanelProvider extends PanelProvider
             ->font('Karla')
             ->plugins($this->getPlugins())
             ->defaultAvatarProvider(GravatarProvider::class)
-            ->brandLogo(fn () => view('filament.logo'))
+            ->brandLogo(fn() => view('filament.logo'))
 
             //->topNavigation()
             ->sidebarCollapsibleOnDesktop()
@@ -76,10 +77,12 @@ class AdminPanelProvider extends PanelProvider
             ->favicon(asset('favicon.ico'))
             ->navigationGroups([
                 'App',
-                'Wind',
-                'Sky',
                 'Bolt',
                 'Thunder',
+                'Hermes',
+                'Helen',
+                'Sky',
+                'Wind',
                 'Rain',
                 'Rhea',
             ])
@@ -87,7 +90,7 @@ class AdminPanelProvider extends PanelProvider
             // hermes
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
                 scopes: [
                     BranchResource::class,
                     MenuItemLabelsResource::class,
@@ -97,22 +100,30 @@ class AdminPanelProvider extends PanelProvider
             )
             ->renderHook(
                 'panels::topbar.start',
-                fn (array $scopes): View => view('filament.hooks.store'),
+                fn(array $scopes): View => view('filament.hooks.store'),
             )
             // thunder
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
                 scopes: [
                     OfficeResource::class,
                     OperationsResource::class,
                     TicketResource::class,
                 ],
             )
+            // helen
+            ->renderHook(
+                'panels::page.start',
+                fn(array $scopes): View => view('filament.hooks.helen', ['scopes' => $scopes]),
+                scopes: [
+                    LinksResource::class,
+                ],
+            )
             // bolt
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
                 scopes: [
                     FormResource::class,
                     CategoryResource::class,
@@ -128,12 +139,12 @@ class AdminPanelProvider extends PanelProvider
             // lang
             ->renderHook(
                 'panels::user-menu.before',
-                fn (): View => view('filament.hooks.lang-switcher'),
+                fn(): View => view('filament.hooks.lang-switcher'),
             )
             // footer
             ->renderHook(
                 'panels::footer',
-                fn (): View => view('filament.hooks.footer'),
+                fn(): View => view('filament.hooks.footer'),
             )
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -171,10 +182,10 @@ class AdminPanelProvider extends PanelProvider
                 ->resourceNavigationSort(99)
                 ->favoritesBarTheme(FavoritesBarTheme::Filament),
             CuratorPlugin::make()
-                ->label(fn (): string => __('Media'))
-                ->pluralLabel(fn (): string => __('Media'))
+                ->label(fn(): string => __('Media'))
+                ->pluralLabel(fn(): string => __('Media'))
                 ->navigationIcon('heroicon-o-photo')
-                ->navigationGroup(fn (): string => __('Hermes'))
+                ->navigationGroup(fn(): string => __('Hermes'))
                 ->navigationSort(99)
                 ->navigationCountBadge(),
 
@@ -210,7 +221,9 @@ class AdminPanelProvider extends PanelProvider
 
             WindPlugin::make(),
             SkyPlugin::make(),
-            HelenPlugin::make(),
+            HelenPlugin::make()
+                ->baseDomain('demo.larazeus.com')
+                ->prefix('not-so-short'),
 
             BoltPlugin::make()
                 ->extensions([

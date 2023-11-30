@@ -17,6 +17,13 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('link_id');
             $table->foreign('link_id')->references('id')->on('links');
+            $table->string('device')->nullable();
+            $table->string('browser')->nullable();
+            $table->string('platform')->nullable();
+            $table->string('country')->nullable();
+            $table->string('ip')->nullable();
+            $table->string('referrer')->nullable();
+            $table->string('domain')->nullable();
             $table->timestamps();
         });
     }
