@@ -58,33 +58,26 @@ class QrCode extends Page
         return $form
             ->statePath('data')
             ->schema([
-                Section::make()->id('main-card')
+                Section::make()
+                    ->id('main-card')
                     ->columns([
                         'default' => '1',
                         'lg' => '2',
                     ])
                     ->schema([
-                        TextInput::make('size')
-                            ->live()
-                            ->label(__('Size')),
-
-                        TextInput::make('url')
-                            ->live(onBlur: true)
-                            ->label(__('Url')),
+                        TextInput::make('size')->live(),
+                        TextInput::make('url')->live(onBlur: true),
 
                         ColorPicker::make('color')
                             ->live()
-                            ->label(__('Color'))
                             ->rgb(),
 
                         ColorPicker::make('back_color')
                             ->live()
-                            ->label(__('Back Color'))
                             ->rgb(),
 
                         Select::make('margin')
                             ->live()
-                            ->label(__('Margin'))
                             ->options([
                                 '0' => '0',
                                 '1' => '1',
@@ -95,7 +88,6 @@ class QrCode extends Page
 
                         Select::make('style')
                             ->live()
-                            ->label(__('Style'))
                             ->options([
                                 'square' => __('square'),
                                 'round' => __('round'),
@@ -109,24 +101,20 @@ class QrCode extends Page
                                 'sm' => 1,
                                 'lg' => 2,
                             ])
-                            ->reactive()
-                            ->label(__('Gradient')),
+                            ->reactive(),
 
                         Grid::make()
                             ->schema([
                                 ColorPicker::make('gradient_form')
                                     ->live()
-                                    ->label(__('Gradient From'))
                                     ->rgb(),
 
                                 ColorPicker::make('gradient_to')
                                     ->live()
-                                    ->label(__('Gradient To'))
                                     ->rgb(),
 
                                 Select::make('gradient_type')
                                     ->live()
-                                    ->label(__('Gradient Type'))
                                     ->options([
                                         'vertical' => __('vertical'),
                                         'horizontal' => __('horizontal'),
@@ -151,23 +139,19 @@ class QrCode extends Page
                             ->columnSpan([
                                 'sm' => 1,
                                 'lg' => 2,
-                            ])
-                            ->label(__('Eye Config')),
+                            ]),
 
                         Grid::make()->schema([
                             ColorPicker::make('eye_color_inner')
                                 ->live()
-                                ->label(__('Inner Eye Color'))
                                 ->rgb(),
 
                             ColorPicker::make('eye_color_outer')
                                 ->live()
-                                ->label(__('Outer Eye Color'))
                                 ->rgb(),
 
                             Select::make('eye_style')
                                 ->live()
-                                ->label(__('Eye Style'))
                                 ->options([
                                     'square' => __('square'),
                                     'circle' => __('circle'),
@@ -182,9 +166,6 @@ class QrCode extends Page
                                 'lg' => 2,
                             ])
                             ->visible(fn(\Filament\Forms\Get $get) => $get('hasEyeColor')),
-                        //TextInput::make('logo')->default('https://nadel.test/images/logo-md.png'),
-                        //TextInput::make('domain')->required()->maxLength(255)->disabled(),
-                        //RichEditor::make('description')->columnSpan(2),
                     ]),
             ]);
     }
@@ -251,10 +232,6 @@ class QrCode extends Page
             $maker = $maker->eye($data['eye_style']);
         }
 
-        /*if ($data['logo'] !== null) {
-            $maker = $maker->merge('/public/images/logo-5-110px-instagram.png', .4,false);
-        }*/
-
-        return $maker->generate('https://domain.sdfsdfsdf.ccc?qr=1')->toHtml();
+        return $maker->generate('https://larazeus.com')->toHtml();
     }
 }

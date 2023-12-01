@@ -248,12 +248,12 @@
         },
         {
             "name": "archilex/filament-filter-sets",
-            "version": "3.5.18",
+            "version": "3.5.19",
             "dist": {
                 "type": "zip",
-                "url": "https://filament-filter-sets.composer.sh/download/9abbe680-f30c-4b87-bdd2-b12328b19c83/advanced-tables-for-filament-3.5.18.zip",
-                "reference": "5a00d3e5a343cafb17cfe9580a0574ecd40867b6",
-                "shasum": "02f9f05b36b5453f6ff6477cc4cf1cbe2be0db42"
+                "url": "https://filament-filter-sets.composer.sh/download/9abd82f8-b98f-4a8d-ad3e-f5a23610db0b/advanced-tables-for-filament-3.5.19.zip",
+                "reference": "24b9ac43e36b35619096c067f6083b014119f7ba",
+                "shasum": "60052c553bf7f5dcfd4780900d2bf4095b4e9424"
             },
             "require": {
                 "archilex/filament-toggle-icon-column": "^3.0",
@@ -329,7 +329,7 @@
                 "tables",
                 "views"
             ],
-            "time": "2023-11-30T04:22:49+00:00"
+            "time": "2023-11-30T23:36:09+00:00"
         },
         {
             "name": "archilex/filament-toggle-icon-column",

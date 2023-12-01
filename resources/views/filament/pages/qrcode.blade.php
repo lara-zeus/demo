@@ -14,7 +14,7 @@
                 </div>
 
                 <x-slot name="headerEnd">
-                    <x-filament::button type="button" @click="download('{{ 'sssss' }}')">
+                    <x-filament::button type="button" @click="download('{{ 'filename' }}')">
                         Download
                     </x-filament::button>
                 </x-slot>
