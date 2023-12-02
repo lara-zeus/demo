@@ -26,6 +26,12 @@ mix
         require("tailwindcss"),
     ])
 
+    .postCss("resources/css/filament-brush.css", "public/css", [
+        require("tailwindcss/nesting"),
+        require("autoprefixer"),
+        require("tailwindcss"),
+    ])
+
     .postCss("resources/css/filament-daisy.css", "public/css", [
         require("tailwindcss/nesting"),
         require("autoprefixer"),

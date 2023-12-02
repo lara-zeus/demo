@@ -1,5 +1,6 @@
 const colors = require('tailwindcss/colors')
 import preset from './vendor/filament/filament/tailwind.config.preset'
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
     presets: [preset],
@@ -75,6 +76,26 @@ module.exports = {
         },
     },
     plugins: [
+        plugin(function({ addUtilities, addComponents, e, config }) {
+            const sketchyBorders = {
+                '.border-sketchy-sm': {
+                    borderRadius: '255px 25px 225px 25px/25px 225px 25px 255px',
+                    transition: 'all 0.3s ease-in-out'
+                },
+                '.border-sketchy-md': {
+                    borderRadius: '25px 55px 10px 45px/85px 20px 55px 20px',
+                    transition: 'all 0.3s ease-in-out'
+                },
+                '.border-sketchy-lg': {
+                    borderRadius: '5px 55px 25px 25px/85px 20px 55px 20px',
+                    transition: 'all 0.3s ease-in-out'
+                },
+            }
+
+            addUtilities(sketchyBorders, {
+                variants: ['responsive', 'hover'],
+            })
+        }),
         require('tailwindcss-debug-screens'),
     ],
 }

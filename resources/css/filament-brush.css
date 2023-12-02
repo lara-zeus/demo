@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Reggae+One&display=swap');
+
+@import '../../vendor/filament/filament/resources/css/theme.css';
+@import '../../vendor/awcodes/filament-curator/resources/css/plugin.css';
+@import '../../vendor/archilex/filament-filter-sets/resources/css/plugin.css';
+@import '../../node_modules/cropperjs/dist/cropper.css';
+@import 'tippy.js/dist/tippy.css';
+
+:root {
+    --c-50: var(--primary-50);
+    --c-100: var(--primary-100);
+    --c-200: var(--primary-200);
+    --c-300: var(--primary-300);
+    --c-400: var(--primary-400);
+    --c-500: var(--primary-500);
+    --c-600: var(--primary-600);
+    --c-700: var(--primary-700);
+    --c-800: var(--primary-800);
+    --c-900: var(--primary-900);
+}
+
+[dir=rtl] {
+    font-family: 'Almarai', 'Karla', sans-serif !important;
+}
+
+[dir=rtl] .title-font {
+    font-family: 'Almarai', sans-serif !important;
+}
+
+[dir=ltr] {
+    font-family: 'Karla', 'Almarai', sans-serif !important;
+}
+
+[dir=ltr] .title-font {
+    font-family: 'Reggae One', 'Almarai', sans-serif !important;
+    @apply font-semibold
+}
+
+.bord {
+    border: solid 1px red;
+}
+
+body {
+    @apply !hue-rotate-90;
+}
+
+.fi-topbar nav {
+    @apply dark:from-gray-900 dark:via-gray-900 dark:to-secondary-900/50;
+}
+
+.fi-active a {
+    @apply !bg-white/0 hover:!bg-white/0 hover:!text-secondary-500;
+}
+
+.fi-sidebar-item a, .fi-sidebar-item {
+    @apply !bg-white/0 hover:!bg-white/0 hover:!text-secondary-500;
+}
+
+.fi-sidebar {
+    @apply !shadow-none;
+    border-radius: 5px 55px 25px 25px/85px 20px 55px 20px !important;
+    @apply !border !border-gray-500;
+}
+
+.fi-sidebar-nav ul {
+    @apply !gap-y-2;
+}
+
+.fi-sidebar-header {
+    @apply !px-2 py-4 justify-center;
+    @apply dark:from-secondary-900/50 dark:via-gray-900 dark:to-gray-900;
+}
+
+.fi-sidebar-group:not(:first-child) {
+    @apply dark:!from-primary-800 dark:!via-gray-800 dark:!to-gray-800;
+    @apply dark:border-gray-700/25 !shadow-none rounded-3xl rounded-tl-none;
+    @apply border border-secondary-500/25 my-2;
+}
+
+.fi-sidebar-group > div > span {
+    @apply text-secondary-800/90
+}
+
+.fi-sidebar-group {
+    border-radius: 5px 55px 25px 25px/85px 20px 55px 20px !important;
+    @apply !border !border-gray-500;
+}
+
+.fi-topbar {
+    @apply !shadow-none;
+}
+
+.fi-section, .fi-fo-tabs, .fi-fo-repeater-item, .fi-ta-ctn {
+    border-radius: 255px 25px 225px 25px/25px 225px 25px 255px !important;
+    @apply !border !border-gray-500;
+}
+
+.fi-section {
+    @apply !shadow-none;
+    @apply dark:!from-primary-900/80 dark:!via-gray-900 dark:!to-gray-900;
+}
+
+pre {
+    @apply rounded-md overflow-x-auto;
+}
+
+pre code.torchlight {
+    @apply block py-4;
+}
+
+.fi-btn, .fi-input-wrp, .fi-dropdown-panel, .fi-wi-stats-overview-stat {
+    border-radius: 255px 25px 225px 25px/25px 225px 25px 255px !important;
+    @apply !shadow-none;
+}
+
+pre code.torchlight .line {
+    @apply px-4;
+}
+
+pre code.torchlight .line-number {
+    @apply text-gray-50;
+}
+
+pre code.torchlight .line-number,
+pre code.torchlight .summary-caret {
+    @apply ltr:mr-4 rtl:ml-4;
+}
