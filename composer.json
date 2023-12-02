@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "alperenersoy/filament-export": "dev-fix-there",
         "andreiio/blade-iconoir": "^2.5",
         "andreiio/blade-remix-icon": "^2.3",
         "archilex/filament-filter-sets": "^3.1",
@@ -15,6 +16,7 @@
         "awcodes/filament-versions": "^2.0",
         "awcodes/light-switch": "^1.0",
         "awcodes/overlook": "^2.0",
+        "beyondcode/laravel-comments": "dev-lara-10",
         "bezhansalleh/filament-shield": "^3.0@beta",
         "codeat3/blade-akar-icons": "^1.21",
         "codeat3/blade-carbon-icons": "^2.13",
@@ -39,6 +41,7 @@
         "lara-zeus/thunder": "^2.0",
         "lara-zeus/wind": "^3.1",
         "laravel/framework": "^10.0",
+        "laravel/pulse": "^1.0@beta",
         "laravel/sanctum": "^3.2",
         "njxqlus/filament-progressbar": "dev-main",
         "pxlrbt/filament-spotlight": "^1.0",
@@ -111,7 +114,7 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "prefer-stable": true,
     "repositories": [
         {
