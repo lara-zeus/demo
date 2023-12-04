@@ -87,7 +87,7 @@ class BoltProSeeder extends Seeder
                 'description' => 'Show a highlighted area tracks user attention',
                 'type' => '\\LaraZeus\\BoltPro\\Fields\\Alert',
                 'ordering' => '5',
-                'options' => '{"content":"f sdf sdf sdf ","type":"warning","color":"#f22ade","icon":"iconoir-rocket"}',
+                'options' => '{"htmlId":"aCTAtB","content":"f sdf sdf sdf ","type":"warning","color":"#f22ade","icon":"iconoir-rocket"}',
             ],
         );
         DB::table('fields')->insertGetId(

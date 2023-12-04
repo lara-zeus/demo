@@ -1,4 +1,4 @@
-<div class="text-center text-sm py-10 space-y-2 mt-10">
+<div class="w-full p-4 rounded-2xl text-center text-sm py-10 space-y-2 mt-10">
     <hr class="border-t border-secondary-500 mx-20 my-10" />
     <p>
         <span>

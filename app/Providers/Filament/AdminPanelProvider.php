@@ -55,6 +55,7 @@ use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
 use pxlrbt\FilamentSpotlight\SpotlightPlugin;
+use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -187,6 +188,7 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
+            FilamentBackgroundsPlugin::make(),
             AdvancedTablesPlugin::make()
                 ->resourceNavigationGroup('Bolt')
                 ->resourceNavigationSort(99)

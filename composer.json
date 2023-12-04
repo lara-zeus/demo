@@ -48,6 +48,7 @@
         "ryangjchandler/blade-tabler-icons": "^2.0",
         "sentry/sentry-laravel": "^3.3",
         "stechstudio/filament-impersonate": "^3.5",
+        "swisnl/filament-backgrounds": "^1.1",
         "torchlight/torchlight-laravel": "^0.5.13"
     },
     "require-dev": {

@@ -7,6 +7,10 @@
 
         <x-list.index>
             <div class="ltr:pl-3 rtl:pr-3 grid grid-cols-1 md:grid-cols-3 gap-2">
+                <x-list.item url="https://filamentphp.com/plugins/swisnl-backgrounds">
+                    ⚡️ Backgrounds For Login Page
+                </x-list.item>
+
                 <x-list.item url="https://filamentphp.com/plugins/kenneth-sese-advanced-tables">
                     ⚡️ Advanced Tables
                 </x-list.item>
