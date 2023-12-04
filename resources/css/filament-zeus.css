@@ -80,47 +80,27 @@
 .fi-section
 {
     @apply !shadow-md;
-    /*@apply !bg-gradient-to-tr from-primary-50/25 via-secondary-50/25 to-secondary-50/25;*/
     @apply dark:!from-primary-900/80 dark:!via-gray-900 dark:!to-gray-900;
 }
 
 .fi-simple-main{
-    @apply !shadow-2xl !bg-opacity-40 !bg-gradient-to-tr from-primary-50/10 via-secondary-50/50 to-secondary-50/10;
-    @apply /*!bg-white/50*/ rounded-2xl
+    @apply !shadow-2xl !bg-opacity-10 dark:!bg-opacity-40 rounded-2xl;
+    @apply !bg-gradient-to-tr from-primary-50/10 via-secondary-50/50 to-secondary-50/10;
+    @apply dark:from-primary-100/10 dark:via-secondary-100/30 dark:to-secondary-100/10;
 }
-/*
- Margin and rounding are personal preferences,
- overflow-x-auto is recommended.
-*/
+
 pre {
     @apply rounded-md overflow-x-auto;
 }
-
-/*
- Add some vertical padding and expand the width
- to fill its container. The horizontal padding
- comes at the line level so that background
- colors extend edge to edge.
-*/
 pre code.torchlight {
     @apply block py-4;
 }
-
-/*
- Horizontal line padding.
-*/
 pre code.torchlight .line {
     @apply px-4;
 }
-
 pre code.torchlight .line-number {
     @apply text-gray-50;
 }
-
-/*
- Push the code away from the line numbers and
- summary caret indicators.
-*/
 pre code.torchlight .line-number,
 pre code.torchlight .summary-caret {
     @apply ltr:mr-4 rtl:ml-4;
