@@ -84,6 +84,10 @@
     @apply dark:!from-primary-900/80 dark:!via-gray-900 dark:!to-gray-900;
 }
 
+.fi-simple-main{
+    @apply !shadow-2xl !bg-opacity-40 !bg-gradient-to-tr from-primary-50/10 via-secondary-50/50 to-secondary-50/10;
+    @apply /*!bg-white/50*/ rounded-2xl
+}
 /*
  Margin and rounding are personal preferences,
  overflow-x-auto is recommended.
