@@ -3,7 +3,10 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\UserResource\Pages;
+use App\Forms\Components\Qr;
 use App\Models\User;
+use Filament\Forms\Components\Grid;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -47,7 +50,11 @@ class UserResource extends Resource
     public static function form(Form $form): Form
     {
         return $form->schema([
-            Matrix::make('options')
+            Qr::make('options')
+                ->label('Destination URL')
+                ->columnSpanFull(),
+
+            /*Matrix::make('options')
                 ->label('Tell us about your mod')
                 ->hint('wont be saved to db this is just a demo')
                 ->hintColor('warning')
@@ -88,16 +95,17 @@ class UserResource extends Resource
                     'saturday' => 'Saturday',
                     'sunday' => 'Sunday',
                     'monday' => 'Monday',
-                ]),
+                ]),*/
 
             TextInput::make('name')->required(),
             TextInput::make('email')
-                ->unique()
+                ->unique(ignoreRecord:true)
                 ->required()
                 ->email(),
             TextInput::make('password')
-                ->required()
                 ->password()
+                ->visibleOn('create')
+                ->required(fn (string $operation): bool => $operation === 'create')
                 ->maxLength(255),
         ]);
     }

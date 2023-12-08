@@ -80,6 +80,7 @@ class AdminPanelProvider extends PanelProvider
             ->navigationGroups([
                 'App',
                 'Bolt',
+                'aaa',
                 'Thunder',
                 'Hermes',
                 'Helen',

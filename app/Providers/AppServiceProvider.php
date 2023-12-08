@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Livewire\FormResource\Pages\ListForms;
 use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;
 use Filament\Support\Colors\Color;
@@ -12,6 +13,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
+use LaraZeus\Bolt\Filament\Resources\FormResource;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -22,6 +24,16 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->app->bind(
+            FormResource::class,
+            \App\Livewire\FormResource::class
+        );
+
+        $this->app->bind(
+            FormResource\Pages\ListForms::class,
+            ListForms::class
+        );
+
         if ($this->app->environment('production')) {
             URL::forceScheme('https');
         }

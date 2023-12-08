@@ -9,7 +9,7 @@
 
     <div class="w-full">
         <pre><x-torchlight-code language='php'>
-        DB::migrate("fresh")->weekly()->days([0,2,4])->at("4:04")
+        DB::migrate("fresh")->weekly()->days([0,2,4,6])->at("4:04")
         </x-torchlight-code></pre>
     </div>
 </div>
