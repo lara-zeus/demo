@@ -1,5 +1,6 @@
 const colors = require('tailwindcss/colors')
 import preset from './vendor/filament/filament/tailwind.config.preset'
+
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
@@ -23,8 +24,8 @@ module.exports = {
 
         './vendor/lara-zeus/artemis/resources/views/**/*.blade.php',
 
-        './vendor/lara-zeus/rain/resources/views/**/*.blade.php',
-        './vendor/lara-zeus/rain/src/Models/Columns.php',
+        './vendor/lara-zeus/dynamic-dashboard/resources/views/**/*.blade.php',
+        './vendor/lara-zeus/dynamic-dashboard/src/Models/Columns.php',
 
         './vendor/lara-zeus/rhea/resources/views/**/*.blade.php',
 
@@ -62,9 +63,35 @@ module.exports = {
         extend: {
             colors: {
                 gray: colors.stone,
-                primary: {  DEFAULT: '#45B39D',  50: '#C6E9E2',  100: '#B8E4DB',  200: '#9AD8CC',  300: '#7DCDBD',  400: '#5FC1AE',  500: '#45B39D',  600: '#358B79',  700: '#266256',  800: '#163A32',  900: '#07110F',  950: '#000000'},
+                primary: {
+                    DEFAULT: '#45B39D',
+                    50: '#C6E9E2',
+                    100: '#B8E4DB',
+                    200: '#9AD8CC',
+                    300: '#7DCDBD',
+                    400: '#5FC1AE',
+                    500: '#45B39D',
+                    600: '#358B79',
+                    700: '#266256',
+                    800: '#163A32',
+                    900: '#07110F',
+                    950: '#000000'
+                },
                 //custom: {  DEFAULT: '#45B39D',  50: '#C6E9E2',  100: '#B8E4DB',  200: '#9AD8CC',  300: '#7DCDBD',  400: '#5FC1AE',  500: '#45B39D',  600: '#358B79',  700: '#266256',  800: '#163A32',  900: '#07110F',  950: '#000000'},
-                secondary: {  DEFAULT: '#F1948A',  50: '#FDF2F0',  100: '#FCE7E5',  200: '#F9D2CE',  300: '#F6BEB8',  400: '#F4A9A1',  500: '#F1948A',  600: '#EB6658',  700: '#E53826',  800: '#BC2717',  900: '#8A1C11',  950: '#71170E'},
+                secondary: {
+                    DEFAULT: '#F1948A',
+                    50: '#FDF2F0',
+                    100: '#FCE7E5',
+                    200: '#F9D2CE',
+                    300: '#F6BEB8',
+                    400: '#F4A9A1',
+                    500: '#F1948A',
+                    600: '#EB6658',
+                    700: '#E53826',
+                    800: '#BC2717',
+                    900: '#8A1C11',
+                    950: '#71170E'
+                },
                 //primary: colors.green,
                 //secondary: colors.yellow,
                 //custom: colors.pink,
@@ -76,7 +103,7 @@ module.exports = {
         },
     },
     plugins: [
-        plugin(function({ addUtilities, addComponents, e, config }) {
+        plugin(function ({addUtilities, addComponents, e, config}) {
             const sketchyBorders = {
                 '.border-sketchy-sm': {
                     borderRadius: '255px 25px 225px 25px/25px 225px 25px 255px',

@@ -24,7 +24,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => null,
                                 'sort' => 2,
-                                'widget' => 'LaraZeus\\Rain\\Widgets\\Classes\\HeadingWidget',
+                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\HeadingWidget',
                                 'content' => 'no title top column content',
                             ],
                         ],
@@ -33,7 +33,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'menu_slug' => 'nav-menu',
                                 'menu_dir' => 'horizontal',
-                                'widget' => 'LaraZeus\\Rain\\Widgets\\Classes\\MenuWidget',
+                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\MenuWidget',
                                 'title' => null,
                                 'sort' => 1,
                             ],
@@ -45,7 +45,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => 'left column',
                                 'sort' => 1,
-                                'widget' => 'LaraZeus\\Rain\\Widgets\\Classes\\HeadingWidget',
+                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\HeadingWidget',
                                 'content' => 'left column',
                             ],
                         ],
@@ -54,7 +54,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'menu_slug' => 'nav-menu',
                                 'menu_dir' => 'vertical',
-                                'widget' => 'LaraZeus\\Rain\\Widgets\\Classes\\MenuWidget',
+                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\MenuWidget',
                                 'title' => null,
                                 'sort' => 1,
                             ],
@@ -66,7 +66,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => null,
                                 'sort' => 1,
-                                'widget' => 'LaraZeus\\Rain\\Widgets\\Classes\\ImageWidget',
+                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\ImageWidget',
                                 'url' => 'widgets/d8snXpNRmcxggHsotkH9p8lxZQ2zeA-metaRGVtby5wbmc=-.png',
                                 'alt' => 'alt',
                             ],
@@ -77,7 +77,7 @@ class RainSeeder extends Seeder
                                 'faq_cat' => 'all-faq',
                                 'title' => null,
                                 'sort' => 2,
-                                'widget' => 'LaraZeus\\Rain\\Widgets\\Classes\\FaqWidget',
+                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\FaqWidget',
                             ],
                         ],
                         [
@@ -86,7 +86,7 @@ class RainSeeder extends Seeder
                                 'form_slug' => 'feedback',
                                 'title' => 'Form Widget',
                                 'sort' => 3,
-                                'widget' => 'LaraZeus\\Rain\\Widgets\\Classes\\FormsWidget',
+                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\FormsWidget',
                             ],
                         ],
                     ],
@@ -96,7 +96,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => 'right column',
                                 'sort' => 1,
-                                'widget' => 'LaraZeus\\Rain\\Widgets\\Classes\\HeadingWidget',
+                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\HeadingWidget',
                                 'content' => 'right column',
                             ],
                         ],
@@ -106,7 +106,7 @@ class RainSeeder extends Seeder
                                 'library_slug' => 'support-docs',
                                 'title' => null,
                                 'sort' => 2,
-                                'widget' => 'LaraZeus\\Rain\\Widgets\\Classes\\LibraryWidget',
+                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\LibraryWidget',
                             ],
                         ],
                     ],
@@ -116,7 +116,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => null,
                                 'sort' => 1,
-                                'widget' => 'LaraZeus\\Rain\\Widgets\\Classes\\HeadingWidget',
+                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\HeadingWidget',
                                 'content' => 'no title bottom column content',
                             ],
                         ],

@@ -22,8 +22,8 @@ module.exports = {
 
         './vendor/lara-zeus/artemis/resources/views/**/*.blade.php',
 
-        './vendor/lara-zeus/rain/resources/views/**/*.blade.php',
-        './vendor/lara-zeus/rain/src/Models/Columns.php',
+        './vendor/lara-zeus/dynamic-dashboard/resources/views/**/*.blade.php',
+        './vendor/lara-zeus/dynamic-dashboard/src/Models/Columns.php',
 
         './vendor/lara-zeus/rhea/resources/views/**/*.blade.php',
 

@@ -124,7 +124,7 @@
                     class="dark:text-gray-200 text-gray-500"
                     :color="'gray'"
                     :icon="'heroicon-m-chevron-right'"
-                    :href="url('rain/new-page')"
+                    :href="url('dynamic-dashboard/new-page')"
                     tag="a"
                 >
                     {{ __('User Dashboard') }}

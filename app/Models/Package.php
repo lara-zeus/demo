@@ -87,10 +87,10 @@ class Package extends Model
                 'fe_url' => route('contact'),
             ],
             [
-                'name' => 'Rain',
+                'name' => 'Dynamic Dashboard',
                 'other' => null,
                 'icon' => 'carbon-rain-heavy',
-                'desc' => __('Rain, simple way to manage widgets for your website landing page'),
+                'desc' => __('Dynamic Dashboard, simple way to manage widgets for your website landing page'),
                 'admin_url' => url('/admin/layouts'),
                 'fe_text' => __('home page'),
                 'fe_url' => route('landing-page'),
