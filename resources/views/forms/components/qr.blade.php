@@ -11,6 +11,7 @@
         <x-filament::input.wrapper>
             <x-filament::input
                 type="text"
+                x-value="state"
                 wire:model="{{ $getState }}.url"
                 />
         </x-filament::input.wrapper>

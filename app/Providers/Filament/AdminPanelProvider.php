@@ -79,7 +79,6 @@ class AdminPanelProvider extends PanelProvider
             ->navigationGroups([
                 'App',
                 'Bolt',
-                'aaa',
                 'Thunder',
                 'Hermes',
                 'Helen',
@@ -194,13 +193,13 @@ class AdminPanelProvider extends PanelProvider
                 ->resourceNavigationGroup('Bolt')
                 ->resourceNavigationSort(99)
                 ->favoritesBarTheme(FavoritesBarTheme::Filament),
-            CuratorPlugin::make()
+            /*CuratorPlugin::make()
                 ->label(fn (): string => __('Media'))
                 ->pluralLabel(fn (): string => __('Media'))
                 ->navigationIcon('heroicon-o-photo')
                 ->navigationGroup(fn (): string => __('Hermes'))
                 ->navigationSort(99)
-                ->navigationCountBadge(),
+                ->navigationCountBadge(),*/
 
             GravatarPlugin::make(),
             SpotlightPlugin::make(),

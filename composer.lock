@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b975b8d54b6e8e77591a4437c38b4cb",
+    "content-hash": "23aeb1d48b422b9706ac3f8338b56f0f",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -6236,6 +6236,87 @@
                 }
             ],
             "time": "2023-12-06T14:39:17+00:00"
+        },
+        {
+            "name": "lara-zeus/qr",
+            "version": "1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "../p/qr",
+                "reference": "c2bcf86cb248ca170a21f1a9fb4180d8a903dc39"
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "php": "^8.1",
+                "simplesoftwareio/simple-qrcode": "~4",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "nunomaduro/larastan": "^2.0.1",
+                "nunomaduro/phpinsights": "^2.8",
+                "orchestra/testbench": "^8.0",
+                "phpstan/extension-installer": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Qr\\QrServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Qr\\": "src"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "Zeus Qr Code Input to generate Qr Code with designing options for filamentPHP",
+            "homepage": "https://larazeus.com/qr",
+            "keywords": [
+                "code",
+                "coulmn",
+                "design",
+                "field",
+                "filamentphp",
+                "generator",
+                "input",
+                "lara-zeus",
+                "laravel",
+                "qr"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/qr/issues",
+                "source": "https://github.com/lara-zeus/qr"
+            },
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/rhea",
@@ -20795,7 +20876,6 @@
     "stability-flags": {
         "alperenersoy/filament-export": 20,
         "beyondcode/laravel-comments": 20,
-        "bezhansalleh/filament-shield": 10,
         "laravel/pulse": 10,
         "njxqlus/filament-progressbar": 20,
         "pestphp/pest-plugin-livewire": 20

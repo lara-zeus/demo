@@ -5,10 +5,14 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\UserResource\Pages;
 use App\Forms\Components\Qr;
 use App\Models\User;
+use Filament\Forms\Components\Actions\Action;
+use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\Fieldset;
 use Filament\Forms\Components\Grid;
-use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
+use Filament\Forms\Get;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
@@ -50,9 +54,12 @@ class UserResource extends Resource
     public static function form(Form $form): Form
     {
         return $form->schema([
-            Qr::make('options')
-                ->label('Destination URL')
-                ->columnSpanFull(),
+
+        \LaraZeus\Qr\Components\Qr::make('qr_code')
+
+            ->configureActionUsing(
+                fn($action) => $action->slideOver()
+            ),
 
             /*Matrix::make('options')
                 ->label('Tell us about your mod')
@@ -99,13 +106,13 @@ class UserResource extends Resource
 
             TextInput::make('name')->required(),
             TextInput::make('email')
-                ->unique(ignoreRecord:true)
+                ->unique(ignoreRecord: true)
                 ->required()
                 ->email(),
             TextInput::make('password')
                 ->password()
                 ->visibleOn('create')
-                ->required(fn (string $operation): bool => $operation === 'create')
+                ->required(fn(string $operation): bool => $operation === 'create')
                 ->maxLength(255),
         ]);
     }
@@ -142,9 +149,9 @@ class UserResource extends Resource
             ])
             ->filters([
                 Filter::make('verified')
-                    ->query(fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
+                    ->query(fn(Builder $query): Builder => $query->whereNotNull('email_verified_at')),
                 Filter::make('unverified')
-                    ->query(fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
+                    ->query(fn(Builder $query): Builder => $query->whereNull('email_verified_at')),
             ]);
     }
 
