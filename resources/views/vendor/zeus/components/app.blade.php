@@ -70,7 +70,7 @@
         'bolt'=>'lara-zeus/bolt',
         'sky'=>'lara-zeus/sky',
         'thunder'=>'lara-zeus/thunder',
-        'rain'=>'lara-zeus/rain',
+        'dynamic-dashboard'=>'lara-zeus/dynamic-dashboard',
     ];
     $packageName = (isset($urls[explode('/',request()->path())[0]])) ? $urls[explode('/',request()->path())[0]] : null;
 @endphp

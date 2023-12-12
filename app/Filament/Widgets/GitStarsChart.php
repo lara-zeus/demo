@@ -5,9 +5,13 @@ namespace App\Filament\Widgets;
 use Filament\Widgets\ChartWidget;
 use GrahamCampbell\GitHub\Facades\GitHub;
 use jeremykenedy\LaravelPackagist\App\Services\PackagistApiServices;
+use LaraZeus\DynamicDashboard\Concerns\InteractWithWidgets;
+use LaraZeus\DynamicDashboard\Contracts\Widget as ZeusWidget;
 
-class GitStarsChart extends ChartWidget
+class GitStarsChart extends ChartWidget implements ZeusWidget
 {
+    use InteractWithWidgets;
+
     protected static ?string $heading = 'Github Repositories Stats';
 
     protected int | string | array $columnSpan = 'full';

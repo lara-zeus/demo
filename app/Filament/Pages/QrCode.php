@@ -19,6 +19,8 @@ class QrCode extends Page
 
     protected static ?int $navigationSort = 2;
 
+    protected static ?string $navigationGroup = 'App';
+
     public array $data;
 
     public string $qrcode;
@@ -131,7 +133,7 @@ class QrCode extends Page
                                 'sm' => 1,
                                 'lg' => 2,
                             ])
-                            ->visible(fn(\Filament\Forms\Get $get) => $get('hasGradient')),
+                            ->visible(fn (\Filament\Forms\Get $get) => $get('hasGradient')),
 
                         Toggle::make('hasEyeColor')
                             ->live()
@@ -165,7 +167,7 @@ class QrCode extends Page
                                 'sm' => 1,
                                 'lg' => 2,
                             ])
-                            ->visible(fn(\Filament\Forms\Get $get) => $get('hasEyeColor')),
+                            ->visible(fn (\Filament\Forms\Get $get) => $get('hasEyeColor')),
                     ]),
             ]);
     }
