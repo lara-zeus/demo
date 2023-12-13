@@ -20,6 +20,7 @@ use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Panel;
+use Filament\Pages;
 use Filament\PanelProvider;
 use Filament\SpatieLaravelTranslatablePlugin;
 use Filament\Widgets;
@@ -160,8 +161,8 @@ class AdminPanelProvider extends PanelProvider
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->pages([
-                //Pages\Dashboard::class,
-                \LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboard::class,
+                Pages\Dashboard::class,
+                //\LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboard::class,
             ])
             ->widgets([
                 Widgets\AccountWidget::class,
