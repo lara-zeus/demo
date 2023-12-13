@@ -33,7 +33,7 @@ class FormResource extends \LaraZeus\Bolt\Filament\Resources\FormResource
                             ->label(__('Entries'))
                             ->icon('clarity-data-cluster-line')
                             ->tooltip(__('view all entries'))
-                            ->url(fn(ZeusForm $record): string => url('admin/responses?form_id='.$record->id)),
+                            ->url(fn (ZeusForm $record): string => url('admin/responses?form_id=' . $record->id)),
                     ])
                         ->dropdown(false),
 
@@ -43,14 +43,16 @@ class FormResource extends \LaraZeus\Bolt\Filament\Resources\FormResource
                             ->icon('heroicon-o-link')
                             ->tooltip(__('Get Prefilled Link - BOLT PRO'))
                             ->visible(class_exists(\LaraZeus\BoltPro\BoltProServiceProvider::class))
-                            ->url(fn(
+                            ->url(fn (
                                 ZeusForm $record
-                            ): string => \LaraZeus\Bolt\Filament\Resources\FormResource::getUrl('prefilled',
-                                [$record])),
+                            ): string => \LaraZeus\Bolt\Filament\Resources\FormResource::getUrl(
+                                'prefilled',
+                                [$record]
+                            )),
 
                         (class_exists(\LaraZeus\Helen\HelenServiceProvider::class)) => \LaraZeus\Helen\Actions\ShortUrlAction::make('get-link')
                             ->tooltip('Create short link with QR code - BOLT PRO')
-                            ->distUrl(fn(ZeusForm $record) => route('bolt.form.show', $record)),
+                            ->distUrl(fn (ZeusForm $record) => route('bolt.form.show', $record)),
                     ])
                         ->dropdown(false),
                 ]),

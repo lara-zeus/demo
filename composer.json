@@ -42,7 +42,6 @@
         "lara-zeus/thunder": "^2.0",
         "lara-zeus/wind": "^3.1",
         "laravel/framework": "^10.0",
-        "laravel/pulse": "^1.0@beta",
         "laravel/sanctum": "^3.2",
         "njxqlus/filament-progressbar": "dev-main",
         "pxlrbt/filament-spotlight": "^1.0",
@@ -146,10 +145,6 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/helen.git"
-        },
-        {
-            "type": "path",
-            "url": "../p/qr"
         }
     ]
 }

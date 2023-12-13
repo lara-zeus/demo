@@ -37,10 +37,10 @@ class Qr extends TextInput
                 })
                 ->form(function (Get $get) {
                     $formOptions = [
-                        'options'=>$get('options')
+                        'options' => $get('options'),
                     ];
 
-                    return $this->getFormSchema(array_merge($this->getDefaultOptions(),$formOptions));
+                    return $this->getFormSchema(array_merge($this->getDefaultOptions(), $formOptions));
                 })
                // ->form($this->getFormSchema())
                 ->action(function (Set $set, $data) {
@@ -150,7 +150,7 @@ class Qr extends TextInput
                                     'sm' => 1,
                                     'lg' => 2,
                                 ])
-                                ->visible(fn(\Filament\Forms\Get $get) => $get('hasGradient')),
+                                ->visible(fn (\Filament\Forms\Get $get) => $get('hasGradient')),
 
                             Toggle::make('hasEyeColor')
                                 ->live()
@@ -192,7 +192,7 @@ class Qr extends TextInput
                                     'sm' => 1,
                                     'lg' => 2,
                                 ])
-                                ->visible(fn(\Filament\Forms\Get $get) => $get('hasEyeColor')),
+                                ->visible(fn (\Filament\Forms\Get $get) => $get('hasEyeColor')),
                         ]),
 
                     Placeholder::make('Preview')
@@ -208,11 +208,11 @@ class Qr extends TextInput
                                     }, 100);");
                                 })
                         )
-                        ->content(function (Get $get, $state) use($data) {
+                        ->content(function (Get $get, $state) {
                             return new HtmlString(
-                                '111111 '.
-                                '<div id="qrcode" class="flex items-center justify-center">'.
-                                $this->qrRender($get('options'),$get('url')),
+                                '111111 ' .
+                                '<div id="qrcode" class="flex items-center justify-center">' .
+                                $this->qrRender($get('options'), $get('url')),
                                 '</div>'
                             );
                         }),
@@ -308,5 +308,4 @@ class Qr extends TextInput
         // @phpstan-ignore-next-line
         return $maker->generate(($url ?? 'https://'))->toHtml();
     }
-
 }
