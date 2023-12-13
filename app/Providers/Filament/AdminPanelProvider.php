@@ -19,8 +19,8 @@ use Awcodes\Overlook\Widgets\OverlookWidget;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
-use Filament\Panel;
 use Filament\Pages;
+use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\SpatieLaravelTranslatablePlugin;
 use Filament\Widgets;
@@ -194,13 +194,13 @@ class AdminPanelProvider extends PanelProvider
                 ->resourceNavigationGroup('Bolt')
                 ->resourceNavigationSort(99)
                 ->favoritesBarTheme(FavoritesBarTheme::Filament),
-            CuratorPlugin::make()
+            /*CuratorPlugin::make()
                 ->label(fn (): string => __('Media'))
                 ->pluralLabel(fn (): string => __('Media'))
                 ->navigationIcon('heroicon-o-photo')
                 ->navigationGroup(fn (): string => __('Hermes'))
                 ->navigationSort(99)
-                ->navigationCountBadge(),
+                ->navigationCountBadge(),*/
 
             GravatarPlugin::make(),
             SpotlightPlugin::make(),

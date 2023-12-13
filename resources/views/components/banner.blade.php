@@ -10,8 +10,9 @@
         <p class="text-lg font-semibold leading-6 text-gray-900">
             <strong class="font-semibold">Zeus Store</strong>
             @svg('bi-dot','mx-2 inline w-64h-4 fill-current')
-            Check Out our New Store, Premium Packages waiting for you.
+            {{--Check Out our New Store, Premium Packages waiting for you.--}}
             {{--Black Friday Sale, get 20% off all Zeus premium packages.--}}
+            Holidays Sale, get 20% off all Zeus premium packages.
         </p>
         <a href="https://larazeus.com/premium-packages" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">
             Learn More

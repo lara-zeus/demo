@@ -41,6 +41,7 @@ class User extends Authenticatable implements FilamentUser
         'email_verified_at' => 'datetime',
         'options' => 'array',
         'options_two' => 'array',
+        'qr_code' => 'array',
     ];
 
     public function canAccessPanel(Panel $panel): bool

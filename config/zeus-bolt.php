@@ -43,4 +43,6 @@ return [
      * if you have installed Bolt Preset, you can enable it here
      */
     'show_presets' => true,
+
+    'allow_design' => true,
 ];

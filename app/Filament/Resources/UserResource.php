@@ -20,7 +20,7 @@ class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
-    protected static ?int $navigationSort = 9;
+    protected static ?int $navigationSort = 1;
 
     protected static ?string $navigationIcon = 'heroicon-o-lock-closed';
 
@@ -47,57 +47,15 @@ class UserResource extends Resource
     public static function form(Form $form): Form
     {
         return $form->schema([
-            Matrix::make('options')
-                ->label('Tell us about your mod')
-                ->hint('wont be saved to db this is just a demo')
-                ->hintColor('warning')
-                ->dehydrated(app()->isLocal())
-                ->columnSpanFull()
-                ->asRadio()
-                ->columnData([
-                    '1' => '🙂',
-                    '2' => '😐',
-                    '3' => '🙁',
-                    '4' => '🥹',
-                    '5' => '🥳',
-                    '6' => '🤪',
-                ])
-                ->rowData([
-                    'saturday' => 'Saturday',
-                    'sunday' => 'Sunday',
-                    'monday' => 'Monday',
-                ]),
-
-            Matrix::make('options_two')
-                ->extraAttributes(['class' => 'bord'])
-                ->label('Tell us about your mod')
-                ->hint('wont be saved to db this is just a demo')
-                ->hintColor('warning')
-                ->dehydrated(app()->isLocal())
-                ->columnSpanFull()
-                ->asCheckbox()
-                ->columnData([
-                    '1' => '🙂',
-                    '2' => '😐',
-                    '3' => '🙁',
-                    '4' => '🥹',
-                    '5' => '🥳',
-                    '6' => '🤪',
-                ])
-                ->rowData([
-                    'saturday' => 'Saturday',
-                    'sunday' => 'Sunday',
-                    'monday' => 'Monday',
-                ]),
-
             TextInput::make('name')->required(),
             TextInput::make('email')
-                ->unique()
+                ->unique(ignoreRecord: true)
                 ->required()
                 ->email(),
             TextInput::make('password')
-                ->required()
                 ->password()
+                ->visibleOn('create')
+                ->required(fn (string $operation): bool => $operation === 'create')
                 ->maxLength(255),
         ]);
     }
