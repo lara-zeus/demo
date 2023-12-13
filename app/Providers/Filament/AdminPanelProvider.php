@@ -160,8 +160,8 @@ class AdminPanelProvider extends PanelProvider
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->pages([
-                //Pages\Dashboard::class,
-                \LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboard::class,
+                Pages\Dashboard::class,
+                //\LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboard::class,
             ])
             ->widgets([
                 Widgets\AccountWidget::class,
