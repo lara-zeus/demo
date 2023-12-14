@@ -3,6 +3,7 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
+use App\Filament\Pages\Matrix;
 use App\Filament\Pages\QrCode;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
@@ -90,13 +91,14 @@ class AdminPanelProvider extends PanelProvider
             ])
 
             //QR page
-            ->renderHook(
+            /*->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.qr-code-note', ['scopes' => $scopes]),
+                fn (array $scopes): View => view('filament.hooks.store', ['scopes' => $scopes]),
                 scopes: [
                     QrCode::class,
+                    Matrix::class,
                 ],
-            )
+            )*/
 
             // hermes
             ->renderHook(
