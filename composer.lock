@@ -5654,16 +5654,16 @@
         },
         {
             "name": "lara-zeus/core",
-            "version": "v3.0.12",
+            "version": "v3.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "ee1d3b05741b8e2a5db5b557c683947a763f0756"
+                "reference": "cd39e5899b668b5bcbf7c57fa38edaabf8aaf398"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/ee1d3b05741b8e2a5db5b557c683947a763f0756",
-                "reference": "ee1d3b05741b8e2a5db5b557c683947a763f0756",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/cd39e5899b668b5bcbf7c57fa38edaabf8aaf398",
+                "reference": "cd39e5899b668b5bcbf7c57fa38edaabf8aaf398",
                 "shasum": ""
             },
             "require": {
@@ -5736,7 +5736,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-08T16:19:06+00:00"
+            "time": "2023-12-14T00:35:26+00:00"
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
