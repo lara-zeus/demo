@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da2ad0c8191b812ca600ea96519def89",
+    "content-hash": "49af3a03807b124a8fc54d01c6e84cfb",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -469,16 +469,16 @@
         },
         {
             "name": "awcodes/filament-curator",
-            "version": "v3.2.4",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/filament-curator.git",
-                "reference": "3a0dd57cf004e4ac25b4667d0041f7be97b4d8bd"
+                "reference": "9db968c39c1a37b0c274bf85b51bfcafd6abbec6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/filament-curator/zipball/3a0dd57cf004e4ac25b4667d0041f7be97b4d8bd",
-                "reference": "3a0dd57cf004e4ac25b4667d0041f7be97b4d8bd",
+                "url": "https://api.github.com/repos/awcodes/filament-curator/zipball/9db968c39c1a37b0c274bf85b51bfcafd6abbec6",
+                "reference": "9db968c39c1a37b0c274bf85b51bfcafd6abbec6",
                 "shasum": ""
             },
             "require": {
@@ -532,7 +532,7 @@
             ],
             "support": {
                 "issues": "https://github.com/awcodes/filament-curator/issues",
-                "source": "https://github.com/awcodes/filament-curator/tree/v3.2.4"
+                "source": "https://github.com/awcodes/filament-curator/tree/v3.2.6"
             },
             "funding": [
                 {
@@ -540,7 +540,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-13T15:22:14+00:00"
+            "time": "2023-12-16T15:52:39+00:00"
         },
         {
             "name": "awcodes/filament-gravatar",
@@ -4176,16 +4176,16 @@
         },
         {
             "name": "guava/filament-icon-picker",
-            "version": "2.0.2",
+            "version": "dev-fix-relationship",
             "source": {
                 "type": "git",
-                "url": "https://github.com/LukasFreyCZ/filament-icon-picker.git",
-                "reference": "2953a4ea77aa729a0ce6a09fbacdd3af7fa11e6f"
+                "url": "https://github.com/atmonshi/filament-icon-picker.git",
+                "reference": "4ed970c80906c07eadb00085ae4d46417a1be07c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LukasFreyCZ/filament-icon-picker/zipball/2953a4ea77aa729a0ce6a09fbacdd3af7fa11e6f",
-                "reference": "2953a4ea77aa729a0ce6a09fbacdd3af7fa11e6f",
+                "url": "https://api.github.com/repos/atmonshi/filament-icon-picker/zipball/4ed970c80906c07eadb00085ae4d46417a1be07c",
+                "reference": "4ed970c80906c07eadb00085ae4d46417a1be07c",
                 "shasum": ""
             },
             "require": {
@@ -4209,7 +4209,6 @@
                     "Guava\\FilamentIconPicker\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4221,16 +4220,15 @@
             ],
             "description": "A filament plugin that adds an icon picker field.",
             "support": {
-                "issues": "https://github.com/LukasFreyCZ/filament-icon-picker/issues",
-                "source": "https://github.com/LukasFreyCZ/filament-icon-picker/tree/2.0.2"
+                "source": "https://github.com/atmonshi/filament-icon-picker/tree/fix-relationship"
             },
             "funding": [
                 {
-                    "url": "https://github.com/LukasFreyCZ",
-                    "type": "github"
+                    "type": "github",
+                    "url": "https://github.com/LukasFreyCZ"
                 }
             ],
-            "time": "2023-09-05T08:06:04+00:00"
+            "time": "2023-12-15T21:42:10+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -16526,27 +16524,27 @@
         },
         {
             "name": "laravel-lang/attributes",
-            "version": "2.6.1",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/attributes.git",
-                "reference": "5e8ab3534be162c7fc2171cb2ef56c9eb41f975f"
+                "reference": "a171cd492d29c4aa385bdd7e0f5785d9032e9067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/5e8ab3534be162c7fc2171cb2ef56c9eb41f975f",
-                "reference": "5e8ab3534be162c7fc2171cb2ef56c9eb41f975f",
+                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/a171cd492d29c4aa385bdd7e0f5785d9032e9067",
+                "reference": "a171cd492d29c4aa385bdd7e0f5785d9032e9067",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "laravel-lang/publisher": "^14.0 || ^15.0",
+                "laravel-lang/publisher": "^14.0 || ^15.0 || ^16.0",
                 "php": "^8.1"
             },
             "require-dev": {
                 "laravel-lang/status-generator": "^1.19 || ^2.0",
                 "phpunit/phpunit": "^10.0",
-                "symfony/var-dumper": "^6.0"
+                "symfony/var-dumper": "^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
@@ -16589,9 +16587,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/attributes/issues",
-                "source": "https://github.com/Laravel-Lang/attributes/tree/2.6.1"
+                "source": "https://github.com/Laravel-Lang/attributes/tree/2.7.0"
             },
-            "time": "2023-12-14T08:30:48+00:00"
+            "time": "2023-12-16T16:42:51+00:00"
         },
         {
             "name": "laravel-lang/common",
@@ -16668,30 +16666,27 @@
         },
         {
             "name": "laravel-lang/http-statuses",
-            "version": "3.6.3",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/http-statuses.git",
-                "reference": "439ff024d4199da0facbc7948d623a235bfc10f7"
+                "reference": "4f2c0e3adb49df365b31558916c76155bb9a4b15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/http-statuses/zipball/439ff024d4199da0facbc7948d623a235bfc10f7",
-                "reference": "439ff024d4199da0facbc7948d623a235bfc10f7",
+                "url": "https://api.github.com/repos/Laravel-Lang/http-statuses/zipball/4f2c0e3adb49df365b31558916c76155bb9a4b15",
+                "reference": "4f2c0e3adb49df365b31558916c76155bb9a4b15",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "laravel-lang/publisher": "^14.1 || ^15.0",
+                "laravel-lang/publisher": "^14.1 || ^15.0 || ^16.0",
                 "php": "^8.1"
-            },
-            "conflict": {
-                "laravel-lang/publisher": "<14.0"
             },
             "require-dev": {
                 "laravel-lang/status-generator": "^1.19 || ^2.0",
                 "phpunit/phpunit": "^10.0",
-                "symfony/var-dumper": "^6.0"
+                "symfony/var-dumper": "^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
@@ -16732,9 +16727,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/http-statuses/issues",
-                "source": "https://github.com/Laravel-Lang/http-statuses/tree/3.6.3"
+                "source": "https://github.com/Laravel-Lang/http-statuses/tree/3.7.0"
             },
-            "time": "2023-12-01T11:29:46+00:00"
+            "time": "2023-12-16T16:53:47+00:00"
         },
         {
             "name": "laravel-lang/lang",
@@ -18430,16 +18425,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.24.4",
+            "version": "1.24.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "6bd0c26f3786cd9b7c359675cb789e35a8e07496"
+                "reference": "fedf211ff14ec8381c9bf5714e33a7a552dd1acc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/6bd0c26f3786cd9b7c359675cb789e35a8e07496",
-                "reference": "6bd0c26f3786cd9b7c359675cb789e35a8e07496",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/fedf211ff14ec8381c9bf5714e33a7a552dd1acc",
+                "reference": "fedf211ff14ec8381c9bf5714e33a7a552dd1acc",
                 "shasum": ""
             },
             "require": {
@@ -18471,9 +18466,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.24.4"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.24.5"
             },
-            "time": "2023-11-26T18:29:22+00:00"
+            "time": "2023-12-16T09:33:33+00:00"
         },
         {
             "name": "phpstan/phpstan",
@@ -20569,11 +20564,19 @@
             "time": "2023-11-20T00:12:19+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "guava/filament-icon-picker",
+            "version": "dev-fix-relationship",
+            "alias": "2.0",
+            "alias_normalized": "2.0.0.0"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "alperenersoy/filament-export": 20,
         "beyondcode/laravel-comments": 20,
+        "guava/filament-icon-picker": 20,
         "njxqlus/filament-progressbar": 20,
         "pestphp/pest-plugin-livewire": 20
     },
