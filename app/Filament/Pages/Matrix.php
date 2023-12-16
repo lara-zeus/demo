@@ -39,8 +39,6 @@ class Matrix extends Page
                     ->schema([
                         \LaraZeus\MatrixChoice\Components\Matrix::make('question')
                             ->label('Tell us about your mod')
-                            ->asRadio()
-                            // or
                             ->asCheckbox()
                             ->columnData([
                                 '🙂',
@@ -51,11 +49,21 @@ class Matrix extends Page
                                 'Saturday',
                                 'Sunday',
                                 'Monday',
-                            ])
+                            ]),
 
-                            //set the row selection optional
-                            ->rowSelectRequired(false)
-                        ,
+                        \LaraZeus\MatrixChoice\Components\Matrix::make('question')
+                            ->label('Tell us about your mod')
+                            ->asRadio()
+                            ->columnData([
+                                '🙂',
+                                '😐',
+                                '🙁',
+                            ])
+                            ->rowData([
+                                'Saturday',
+                                'Sunday',
+                                'Monday',
+                            ]),
                     ]),
             ]);
     }
