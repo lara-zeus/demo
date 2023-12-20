@@ -26,5 +26,8 @@
                 {{ $slot }}
             </div>
         </div>
+
+        FOOTER
+
     </body>
 </html>

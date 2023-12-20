@@ -6,6 +6,7 @@
 @import '../../vendor/archilex/filament-filter-sets/resources/css/plugin.css';
 @import '../../node_modules/cropperjs/dist/cropper.css';
 @import 'tippy.js/dist/tippy.css';
+@import "carbon.css";
 
 @config "../../tailwind-daisy.config.js";
 

@@ -68,6 +68,15 @@
     {{ $slot }}
 </div>
 
+<div class="doc-list my-10">
+    <script async type="text/javascript" id="_carbonads_js"
+            src="//cdn.carbonads.com/carbon.js?serve=CWYIVK3J&placement=larazeuscom">
+    </script>
+    <div class="text-center my-4 text-sm">
+        Running @zeus packages and the website doesn't come for free. You can help support us by checking out relevant sponsors from the banner above.
+    </div>
+</div>
+
 <footer class="mt-10 footer items-center p-4 bg-base-200 text-base-content">
     <div class="items-center grid-flow-col">
         <img alt="Lara Zeus" loading="lazy" width="40" height="20" decoding="async" src="https://larazeus.com/images/zeus-logo.png">

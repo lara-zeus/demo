@@ -4,6 +4,7 @@
 @import '../../node_modules/cropperjs/dist/cropper.css';
 @import 'tippy.js/dist/tippy.css';
 @import "photoswipe/dist/photoswipe.css";
+@import "carbon.css";
 
 @config "../../tailwind-another-portfolio.config.js";
 
