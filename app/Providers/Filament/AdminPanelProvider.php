@@ -3,8 +3,6 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
-use App\Filament\Pages\Matrix;
-use App\Filament\Pages\QrCode;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
 use Archilex\AdvancedTables\Resources\UserViewResource;
@@ -89,16 +87,6 @@ class AdminPanelProvider extends PanelProvider
                 'Dynamic Dashboard',
                 'Rhea',
             ])
-
-            //QR page
-            /*->renderHook(
-                'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.store', ['scopes' => $scopes]),
-                scopes: [
-                    QrCode::class,
-                    Matrix::class,
-                ],
-            )*/
 
             // hermes
             ->renderHook(
