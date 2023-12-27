@@ -33,7 +33,6 @@
         "lara-zeus/bolt-pro": "^2.0",
         "lara-zeus/dynamic-dashboard": "^3.0",
         "lara-zeus/helen": "^1.0",
-        "guava/filament-icon-picker": "dev-fix-relationship as 2.0",
         "lara-zeus/hermes": "^1.0",
         "lara-zeus/matrix-choice": "^3.0",
         "lara-zeus/qr": "^1.0",
@@ -145,10 +144,6 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/helen.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:atmonshi/filament-icon-picker.git"
         }
     ]
 }
