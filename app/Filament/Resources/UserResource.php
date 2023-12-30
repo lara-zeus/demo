@@ -95,7 +95,7 @@ class UserResource extends Resource
                     ->sortable()
                     ->toggleable()
                     ->searchable(),*/
-                
+
                 TextColumn::make('email')
                     ->sortable()
                     ->toggleable()
