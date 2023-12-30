@@ -70,15 +70,15 @@ class UserResource extends Resource
             ->columns([
 
                 Popover::make('name')
+                    // most of filament methods will works
                     ->sortable()
                     ->searchable()
-                    //
+                    ->toggleable()
+                    // main options
                     ->trigger('click')
                     ->placement('right')
-                    ->offset([0, 20])
+                    ->offset([0, 10])
                     ->maxWidth('none')
-
-                    //
                     ->icon('heroicon-o-chevron-right')
 
                     // direct HTML content

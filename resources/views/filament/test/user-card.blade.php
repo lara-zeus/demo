@@ -5,8 +5,8 @@
     </div>--}}
 
     <div class="flex flex-col items-center">
-        <img alt="avatar"
-            class="-mt-20 fi-avatar object-cover object-center !w-24 !h-24 mb-3 rounded-full shadow-lg"
+        <img alt="avatar" lazy
+            class="bg-white -mt-16 fi-avatar object-cover object-center !w-24 !h-24 mb-3 rounded-full shadow-xl"
             src="https://picsum.photos/200/300?random={{ $record->id }}"
         />
 
