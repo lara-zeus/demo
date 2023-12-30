@@ -13,6 +13,11 @@ class DemoStats extends ChartWidget
         return rand(1,99);
     }
 
+    public static function canView(): bool
+    {
+        return false;
+    }
+
     protected function getData(): array
     {
         return [
