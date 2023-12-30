@@ -70,7 +70,7 @@ class UserResource extends Resource
             ->columns([
 
                 Popover::make('name')
-                    // most of filament methods will works
+                    // most of filament methods will work
                     ->sortable()
                     ->searchable()
                     ->toggleable()
@@ -91,20 +91,11 @@ class UserResource extends Resource
                     //->content(fn($record) => new HtmlString(Blade::render('@livewire(\App\Filament\Widgets\DemoStats::class, ["lazy" => true])')))
                 ,
 
-
-                /*Popover::make('email')
-                    ->sortable()
-                    ->searchable()
-                    ->trigger('click')
-                    ->placement('top')
-                    ->offset([0, 10])
-                    ->maxWidth('none')
-                    ->content(fn($record) => new HtmlString($record->name.'<br>'.$record->email)),*/
-
                 /*TextColumn::make('name')
                     ->sortable()
                     ->toggleable()
                     ->searchable(),*/
+                
                 TextColumn::make('email')
                     ->sortable()
                     ->toggleable()
