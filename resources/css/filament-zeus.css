@@ -106,3 +106,32 @@ pre code.torchlight .line-number,
 pre code.torchlight .summary-caret {
     @apply ltr:mr-4 rtl:ml-4;
 }
+
+
+
+/*popover*/
+.fi-popover{
+    @apply w-full;
+}
+.fi-popover-trigger{
+    @apply justify-between;
+}
+
+/*
+Thanks to @awcodes for sharing this trick
+https://discord.com/channels/883083792112300104/883084832387760148/1176631687782858782
+*/
+.fi-ta-row {
+    .fi-ta-cell:last-of-type {
+        @apply relative right-0 top-0 bottom-0;
+        > div {
+            @apply bg-white dark:bg-gray-900;
+        }
+    }
+    &:hover .fi-ta-cell:last-of-type {
+        position: sticky;
+        > div {
+            @apply shadow-md rounded-full py-2;
+        }
+    }
+}

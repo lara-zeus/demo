@@ -3,16 +3,20 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\UserResource\Pages;
+use App\Filament\Tables\Columns\Popover;
 use App\Models\User;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
+use Filament\Tables\Actions\Action;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\HtmlString;
 use LaraZeus\MatrixChoice\Components\Matrix;
 use STS\FilamentImpersonate\Tables\Actions\Impersonate;
 
@@ -55,7 +59,7 @@ class UserResource extends Resource
             TextInput::make('password')
                 ->password()
                 ->visibleOn('create')
-                ->required(fn (string $operation): bool => $operation === 'create')
+                ->required(fn(string $operation): bool => $operation === 'create')
                 ->maxLength(255),
         ]);
     }
@@ -64,18 +68,53 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('name')
+
+                Popover::make('name')
+                    ->sortable()
+                    ->searchable()
+                    //
+                    ->trigger('click')
+                    ->placement('right')
+                    ->offset([0, 20])
+                    ->maxWidth('none')
+
+                    //
+                    ->icon('heroicon-o-chevron-right')
+
+                    // direct HTML content
+                    //->content(fn($record) => new HtmlString($record->name.'<br>'.$record->email))
+
+                    // or blade content
+                    ->content(fn($record) => view('filament.test.user-card', ['record' => $record]))
+
+                    // or livewire component
+                    //->content(fn($record) => new HtmlString(Blade::render('@livewire(\App\Filament\Widgets\DemoStats::class, ["lazy" => true])')))
+                ,
+
+
+                /*Popover::make('email')
+                    ->sortable()
+                    ->searchable()
+                    ->trigger('click')
+                    ->placement('top')
+                    ->offset([0, 10])
+                    ->maxWidth('none')
+                    ->content(fn($record) => new HtmlString($record->name.'<br>'.$record->email)),*/
+
+                /*TextColumn::make('name')
                     ->sortable()
                     ->toggleable()
-                    ->searchable(),
+                    ->searchable(),*/
                 TextColumn::make('email')
                     ->sortable()
                     ->toggleable()
+                    ->icon('heroicon-o-envelope')
                     ->searchable(),
                 TextColumn::make('email_verified_at')
                     ->sortable()
                     ->toggleable()
                     ->searchable(),
+
                 TextColumn::make('created_at')
                     ->sortable()
                     ->toggleable()
@@ -90,11 +129,12 @@ class UserResource extends Resource
                 Impersonate::make()
                     ->redirectTo(url('/admin')),
             ])
+            ->defaultSort('id', 'desc')
             ->filters([
                 Filter::make('verified')
-                    ->query(fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
+                    ->query(fn(Builder $query): Builder => $query->whereNotNull('email_verified_at')),
                 Filter::make('unverified')
-                    ->query(fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
+                    ->query(fn(Builder $query): Builder => $query->whereNull('email_verified_at')),
             ]);
     }
 
