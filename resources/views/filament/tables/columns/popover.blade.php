@@ -4,8 +4,8 @@
         $getTrigger = $getTrigger();
         $getPlacement = $getPlacement();
         $getOffset = $getOffset();
-        $getMaxWidth = $getMaxWidth();
-        $getIcon = $getIcon();
+        $getPopOverMaxWidth = $getPopOverMaxWidth();
+        $getIcon = $getIcon($getState);
     @endphp
     <template x-ref="template">
         <div class="fi-popover-content">
@@ -19,7 +19,7 @@
             trigger: '{{ $getTrigger }}',
             placement: '{{ $getPlacement }}',
             offset: @js($getOffset),
-            maxWidth: '{{ $getMaxWidth }}',
+            maxWidth: '{{ $getPopOverMaxWidth }}',
 
             content: () => $refs.template.innerHTML,
             appendTo: $root,

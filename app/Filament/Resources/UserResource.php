@@ -4,12 +4,17 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\UserResource\Pages;
 use App\Filament\Tables\Columns\Popover;
+use App\Filament\Infolists\Components\Popover as PopoverInfolists;
 use App\Models\User;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
+use Filament\Infolists\Components\Section;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
-use Filament\Tables\Actions\Action;
+use Filament\Tables\Actions\ActionGroup;
 use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
@@ -17,7 +22,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\HtmlString;
-use LaraZeus\MatrixChoice\Components\Matrix;
 use STS\FilamentImpersonate\Tables\Actions\Impersonate;
 
 class UserResource extends Resource
@@ -48,6 +52,39 @@ class UserResource extends Resource
         return 'App';
     }
 
+    public static function infolist(Infolist $infolist): Infolist
+    {
+        return $infolist->schema([
+            Section::make('User Info')
+                ->columns()
+                ->schema([
+                    PopoverInfolists::make('name')
+                        // most of filament methods will work
+
+                        // main options
+                        ->trigger('click')
+                        ->placement('right')
+                        ->offset([0, 10])
+                        ->popOverMaxWidth('none')
+                        ->icon('heroicon-o-chevron-right')
+
+                        // direct HTML content
+                        //->content(fn($record) => new HtmlString($record->name.'<br>'.$record->email))
+
+                        // or blade content
+                        ->content(fn($record) => view('filament.test.user-card', ['record' => $record]))
+
+                        // or livewire component
+                        //->content(fn($record) => new HtmlString(Blade::render('@livewire(\App\Filament\Widgets\DemoStats::class, ["lazy" => true])')))
+                    ,
+
+
+                    //TextEntry::make('name'),
+                    TextEntry::make('email'),
+                ])
+        ]);
+    }
+
     public static function form(Form $form): Form
     {
         return $form->schema([
@@ -68,7 +105,6 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-
                 Popover::make('name')
                     // most of filament methods will work
                     ->sortable()
@@ -78,7 +114,7 @@ class UserResource extends Resource
                     ->trigger('click')
                     ->placement('right')
                     ->offset([0, 10])
-                    ->maxWidth('none')
+                    ->popOverMaxWidth('none')
                     ->icon('heroicon-o-chevron-right')
 
                     // direct HTML content
@@ -106,6 +142,9 @@ class UserResource extends Resource
                     ->toggleable()
                     ->searchable(),
 
+                TextColumn::make('remember_token')
+                    ->toggleable(),
+
                 TextColumn::make('created_at')
                     ->sortable()
                     ->toggleable()
@@ -116,9 +155,13 @@ class UserResource extends Resource
                     ->searchable(),
             ])
             ->actions([
-                EditAction::make(),
-                Impersonate::make()
-                    ->redirectTo(url('/admin')),
+                ActionGroup::make([
+                    ViewAction::make(),
+                    EditAction::make(),
+                    Impersonate::make()
+                        ->grouped()
+                        ->redirectTo(url('/admin')),
+                ])
             ])
             ->defaultSort('id', 'desc')
             ->filters([
@@ -149,6 +192,7 @@ class UserResource extends Resource
         return [
             'index' => Pages\ListUsers::route('/'),
             'create' => Pages\CreateUser::route('/create'),
+            'view' => Pages\ViewUser::route('/{record}'),
             'edit' => Pages\EditUser::route('/{record}/edit'),
         ];
     }
