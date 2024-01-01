@@ -146,10 +146,6 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/helen.git"
-        },
-        {
-            "type": "path",
-            "url": "../p/popover"
         }
     ]
 }

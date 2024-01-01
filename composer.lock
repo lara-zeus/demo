@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d144d8239eae02c48c6aad3b7025bf6",
+    "content-hash": "5d88c8ba77b0cbe9e6228a80bc8cb37c",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -6175,11 +6175,17 @@
         },
         {
             "name": "lara-zeus/popover",
-            "version": "1.x-dev",
-            "dist": {
-                "type": "path",
-                "url": "../p/popover",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/popover.git",
                 "reference": "cd4cd913d369d5a399ba782cb23c3193b0d17e3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/popover/zipball/cd4cd913d369d5a399ba782cb23c3193b0d17e3e",
+                "reference": "cd4cd913d369d5a399ba782cb23c3193b0d17e3e",
+                "shasum": ""
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -6207,20 +6213,7 @@
                     "LaraZeus\\Popover\\": "src"
                 }
             },
-            "scripts": {
-                "analyse": [
-                    "vendor/bin/phpstan analyse"
-                ],
-                "format": [
-                    "vendor/bin/pint"
-                ],
-                "pint": [
-                    "vendor/bin/pint"
-                ],
-                "test:phpstan": [
-                    "vendor/bin/phpstan analyse"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6231,7 +6224,7 @@
                     "role": "Owner"
                 }
             ],
-            "description": "Zeus Popover is filamentphp component to show a Popover with custom content in tables and infolist\n",
+            "description": "Zeus Popover is filamentphp component to show a Popover with custom content in tables and infolist",
             "homepage": "https://larazeus.com/popover",
             "keywords": [
                 "code",
@@ -6252,9 +6245,7 @@
                 "issues": "https://github.com/lara-zeus/popover/issues",
                 "source": "https://github.com/lara-zeus/popover"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2024-01-01T18:23:18+00:00"
         },
         {
             "name": "lara-zeus/qr",
