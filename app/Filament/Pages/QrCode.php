@@ -41,7 +41,7 @@ class QrCode extends Page
                         Qr::make('qr-code')
                             ->actionIcon('heroicon-o-adjustments-vertical')
                             ->asSlideOver()
-                            ->optionsColumn('options')
+                            ->optionsColumn('options'),
                     ]),
             ]);
     }

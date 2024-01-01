@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da2ad0c8191b812ca600ea96519def89",
+    "content-hash": "1d144d8239eae02c48c6aad3b7025bf6",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -469,16 +469,16 @@
         },
         {
             "name": "awcodes/filament-curator",
-            "version": "v3.4.0",
+            "version": "v3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/filament-curator.git",
-                "reference": "697a17feb5784433882b20e54469c220d1a62709"
+                "reference": "3cd719f4e08257f9cdef5292393a030ff5a09389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/filament-curator/zipball/697a17feb5784433882b20e54469c220d1a62709",
-                "reference": "697a17feb5784433882b20e54469c220d1a62709",
+                "url": "https://api.github.com/repos/awcodes/filament-curator/zipball/3cd719f4e08257f9cdef5292393a030ff5a09389",
+                "reference": "3cd719f4e08257f9cdef5292393a030ff5a09389",
                 "shasum": ""
             },
             "require": {
@@ -538,7 +538,7 @@
             ],
             "support": {
                 "issues": "https://github.com/awcodes/filament-curator/issues",
-                "source": "https://github.com/awcodes/filament-curator/tree/v3.4.0"
+                "source": "https://github.com/awcodes/filament-curator/tree/v3.4.1"
             },
             "funding": [
                 {
@@ -546,7 +546,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-28T21:03:52+00:00"
+            "time": "2024-01-01T13:57:59+00:00"
         },
         {
             "name": "awcodes/filament-gravatar",
@@ -1807,6 +1807,72 @@
                 }
             ],
             "time": "2023-03-10T12:20:30+00:00"
+        },
+        {
+            "name": "codeat3/blade-grommet-icons",
+            "version": "1.8.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codeat3/blade-grommet-icons.git",
+                "reference": "763ac12dadc0f05090ffc87b8a7b10fa9337fdc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codeat3/blade-grommet-icons/zipball/763ac12dadc0f05090ffc87b8a7b10fa9337fdc3",
+                "reference": "763ac12dadc0f05090ffc87b8a7b10fa9337fdc3",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.1",
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "codeat3/blade-icon-generation-helpers": "^0.3",
+                "codeat3/phpcs-styles": "^1.0",
+                "orchestra/testbench": "^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Codeat3\\BladeGrommetIcons\\BladeGrommetIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Codeat3\\BladeGrommetIcons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Swapnil Sarwe"
+                }
+            ],
+            "description": "A package to easily make use of Grommet Icons in your Laravel Blade views.",
+            "homepage": "https://github.com/codeat3/blade-grommet-icons",
+            "keywords": [
+                "Grommet",
+                "blade",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/codeat3/blade-grommet-icons/issues",
+                "source": "https://github.com/codeat3/blade-grommet-icons/tree/1.8.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/swapnilsarwe",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-09-25T10:49:02+00:00"
         },
         {
             "name": "codeat3/blade-iconpark",
@@ -6108,6 +6174,89 @@
             "time": "2023-12-06T14:39:17+00:00"
         },
         {
+            "name": "lara-zeus/popover",
+            "version": "1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "../p/popover",
+                "reference": "cd4cd913d369d5a399ba782cb23c3193b0d17e3e"
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "nunomaduro/larastan": "^2.0.1",
+                "nunomaduro/phpinsights": "^2.8",
+                "orchestra/testbench": "^8.0",
+                "phpstan/extension-installer": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Popover\\PopoverServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Popover\\": "src"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "Zeus Popover is filamentphp component to show a Popover with custom content in tables and infolist\n",
+            "homepage": "https://larazeus.com/popover",
+            "keywords": [
+                "code",
+                "coulmn",
+                "design",
+                "field",
+                "filamentphp",
+                "generator",
+                "input",
+                "lara-zeus",
+                "laravel",
+                "popover",
+                "tippy",
+                "tooltip",
+                "ui"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/popover/issues",
+                "source": "https://github.com/lara-zeus/popover"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "lara-zeus/qr",
             "version": "1.0.4",
             "source": {
@@ -7822,16 +7971,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.3.3",
+            "version": "v3.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "6dd3bec8c711cd792742be4620057637e261e6f7"
+                "reference": "470290c99b001d61751b4fe7e56327db4370cb87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/6dd3bec8c711cd792742be4620057637e261e6f7",
-                "reference": "6dd3bec8c711cd792742be4620057637e261e6f7",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/470290c99b001d61751b4fe7e56327db4370cb87",
+                "reference": "470290c99b001d61751b4fe7e56327db4370cb87",
                 "shasum": ""
             },
             "require": {
@@ -7884,7 +8033,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.3.3"
+                "source": "https://github.com/livewire/livewire/tree/v3.3.4"
             },
             "funding": [
                 {
@@ -7892,7 +8041,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-20T05:34:05+00:00"
+            "time": "2024-01-01T17:22:47+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -8621,12 +8770,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/njxqlus/filament-progressbar.git",
-                "reference": "33eae1e1184f5e0e9d15f2ccd568bf8a0ef4703e"
+                "reference": "1ff4c1562471b772a3a591112f10cdfb4e49809e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/njxqlus/filament-progressbar/zipball/33eae1e1184f5e0e9d15f2ccd568bf8a0ef4703e",
-                "reference": "33eae1e1184f5e0e9d15f2ccd568bf8a0ef4703e",
+                "url": "https://api.github.com/repos/njxqlus/filament-progressbar/zipball/1ff4c1562471b772a3a591112f10cdfb4e49809e",
+                "reference": "1ff4c1562471b772a3a591112f10cdfb4e49809e",
                 "shasum": ""
             },
             "require": {
@@ -8694,7 +8843,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-09T04:48:58+00:00"
+            "time": "2024-01-01T03:52:13+00:00"
         },
         {
             "name": "nunomaduro/termwind",

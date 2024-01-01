@@ -3,8 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\UserResource\Pages;
-use App\Filament\Tables\Columns\Popover;
-use App\Filament\Infolists\Components\Popover as PopoverInfolists;
 use App\Models\User;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
@@ -22,6 +20,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\HtmlString;
+use LaraZeus\Popover\Infolists\PopoverEntry;
+use LaraZeus\Popover\Tables\PopoverColumn;
 use STS\FilamentImpersonate\Tables\Actions\Impersonate;
 
 class UserResource extends Resource
@@ -58,30 +58,18 @@ class UserResource extends Resource
             Section::make('User Info')
                 ->columns()
                 ->schema([
-                    PopoverInfolists::make('name')
-                        // most of filament methods will work
-
+                    PopoverEntry::make('name')
                         // main options
                         ->trigger('click')
                         ->placement('right')
                         ->offset([0, 10])
                         ->popOverMaxWidth('none')
                         ->icon('heroicon-o-chevron-right')
-
-                        // direct HTML content
-                        //->content(fn($record) => new HtmlString($record->name.'<br>'.$record->email))
-
-                        // or blade content
-                        ->content(fn($record) => view('filament.test.user-card', ['record' => $record]))
-
-                        // or livewire component
-                        //->content(fn($record) => new HtmlString(Blade::render('@livewire(\App\Filament\Widgets\DemoStats::class, ["lazy" => true])')))
-                    ,
-
+                        ->content(fn ($record) => view('filament.test.user-card', ['record' => $record])),
 
                     //TextEntry::make('name'),
                     TextEntry::make('email'),
-                ])
+                ]),
         ]);
     }
 
@@ -96,7 +84,7 @@ class UserResource extends Resource
             TextInput::make('password')
                 ->password()
                 ->visibleOn('create')
-                ->required(fn(string $operation): bool => $operation === 'create')
+                ->required(fn (string $operation): bool => $operation === 'create')
                 ->maxLength(255),
         ]);
     }
@@ -105,7 +93,7 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-                Popover::make('name')
+                PopoverColumn::make('name')
                     // most of filament methods will work
                     ->sortable()
                     ->searchable()
@@ -121,10 +109,10 @@ class UserResource extends Resource
                     //->content(fn($record) => new HtmlString($record->name.'<br>'.$record->email))
 
                     // or blade content
-                    ->content(fn($record) => view('filament.test.user-card', ['record' => $record]))
+                    ->content(fn ($record) => view('filament.test.user-card', ['record' => $record]))
 
-                    // or livewire component
-                    //->content(fn($record) => new HtmlString(Blade::render('@livewire(\App\Filament\Widgets\DemoStats::class, ["lazy" => true])')))
+                // or livewire component
+                //->content(fn($record) => new HtmlString(Blade::render('@livewire(\App\Filament\Widgets\DemoStats::class, ["lazy" => true])')))
                 ,
 
                 /*TextColumn::make('name')
@@ -161,14 +149,14 @@ class UserResource extends Resource
                     Impersonate::make()
                         ->grouped()
                         ->redirectTo(url('/admin')),
-                ])
+                ]),
             ])
             ->defaultSort('id', 'desc')
             ->filters([
                 Filter::make('verified')
-                    ->query(fn(Builder $query): Builder => $query->whereNotNull('email_verified_at')),
+                    ->query(fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
                 Filter::make('unverified')
-                    ->query(fn(Builder $query): Builder => $query->whereNull('email_verified_at')),
+                    ->query(fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
             ]);
     }
 
