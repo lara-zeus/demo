@@ -2,43 +2,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../core"
-        },
-        {
-            "type": "path",
-            "url": "../wind"
-        },
-        {
-            "type": "path",
-            "url": "../sky"
-        },
-        {
-            "type": "path",
-            "url": "../bolt"
-        },
-        {
-            "type": "path",
-            "url": "../thunder"
-        },
-        {
-            "type": "path",
-            "url": "../dynamic-dashboard"
-        },
-        {
-            "type": "path",
-            "url": "../artemis"
-        },
-        {
-            "type": "path",
-            "url": "../rhea"
-        },
-        {
-            "type": "path",
-            "url": "../hermes"
-        },
-        {
-            "type": "path",
-            "url": "../bolt-pro"
+            "url": "../p/*"
         }
     ]
 }

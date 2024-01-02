@@ -8,7 +8,7 @@ use Filament\Pages\Page;
 
 class Matrix extends Page
 {
-    protected static ?string $navigationIcon = 'heroicon-m-qr-code';
+    protected static ?string $navigationIcon = 'carbon-scatter-matrix';
 
     protected static string $view = 'filament.pages.qrcode';
 

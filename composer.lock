@@ -469,16 +469,16 @@
         },
         {
             "name": "awcodes/filament-curator",
-            "version": "v3.4.1",
+            "version": "v3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/filament-curator.git",
-                "reference": "3cd719f4e08257f9cdef5292393a030ff5a09389"
+                "reference": "1dae1562fa5a6ddc478edc552a660274baa6c725"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/filament-curator/zipball/3cd719f4e08257f9cdef5292393a030ff5a09389",
-                "reference": "3cd719f4e08257f9cdef5292393a030ff5a09389",
+                "url": "https://api.github.com/repos/awcodes/filament-curator/zipball/1dae1562fa5a6ddc478edc552a660274baa6c725",
+                "reference": "1dae1562fa5a6ddc478edc552a660274baa6c725",
                 "shasum": ""
             },
             "require": {
@@ -538,7 +538,7 @@
             ],
             "support": {
                 "issues": "https://github.com/awcodes/filament-curator/issues",
-                "source": "https://github.com/awcodes/filament-curator/tree/v3.4.1"
+                "source": "https://github.com/awcodes/filament-curator/tree/v3.4.2"
             },
             "funding": [
                 {
@@ -546,7 +546,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-01T13:57:59+00:00"
+            "time": "2024-01-02T16:00:47+00:00"
         },
         {
             "name": "awcodes/filament-gravatar",
@@ -3155,16 +3155,16 @@
         },
         {
             "name": "fakerphp/faker",
-            "version": "v1.23.0",
+            "version": "v1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "e3daa170d00fde61ea7719ef47bb09bb8f1d9b01"
+                "reference": "bfb4fe148adbf78eff521199619b93a52ae3554b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/e3daa170d00fde61ea7719ef47bb09bb8f1d9b01",
-                "reference": "e3daa170d00fde61ea7719ef47bb09bb8f1d9b01",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/bfb4fe148adbf78eff521199619b93a52ae3554b",
+                "reference": "bfb4fe148adbf78eff521199619b93a52ae3554b",
                 "shasum": ""
             },
             "require": {
@@ -3190,11 +3190,6 @@
                 "ext-mbstring": "Required for multibyte Unicode string functionality."
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "v1.21-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Faker\\": "src/Faker/"
@@ -3217,9 +3212,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v1.23.0"
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.23.1"
             },
-            "time": "2023-06-12T08:44:38+00:00"
+            "time": "2024-01-02T13:46:09+00:00"
         },
         {
             "name": "filament/actions",
@@ -5726,16 +5721,16 @@
         },
         {
             "name": "lara-zeus/core",
-            "version": "v3.0.14",
+            "version": "v3.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "7ca85a82737e4659f9f16f1db71b3ad787924279"
+                "reference": "039b8e8197a095ff09d0a6cd884e2bbec5fb2ab2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/7ca85a82737e4659f9f16f1db71b3ad787924279",
-                "reference": "7ca85a82737e4659f9f16f1db71b3ad787924279",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/039b8e8197a095ff09d0a6cd884e2bbec5fb2ab2",
+                "reference": "039b8e8197a095ff09d0a6cd884e2bbec5fb2ab2",
                 "shasum": ""
             },
             "require": {
@@ -5808,7 +5803,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-15T01:40:14+00:00"
+            "time": "2024-01-01T21:57:14+00:00"
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
@@ -5892,16 +5887,16 @@
         },
         {
             "name": "lara-zeus/helen",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/helen.git",
-                "reference": "c20066152b7ea79566e902b98d6c692f3edd4836"
+                "reference": "f025fcf36a4d92c979043fece66ffbf37b93421c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/helen/zipball/c20066152b7ea79566e902b98d6c692f3edd4836",
-                "reference": "c20066152b7ea79566e902b98d6c692f3edd4836",
+                "url": "https://api.github.com/repos/lara-zeus/helen/zipball/f025fcf36a4d92c979043fece66ffbf37b93421c",
+                "reference": "f025fcf36a4d92c979043fece66ffbf37b93421c",
                 "shasum": ""
             },
             "require": {
@@ -5978,7 +5973,7 @@
                 "issues": "https://github.com/lara-zeus/helen/issues",
                 "source": "https://github.com/lara-zeus/helen"
             },
-            "time": "2023-12-15T01:48:28+00:00"
+            "time": "2024-01-02T20:36:58+00:00"
         },
         {
             "name": "lara-zeus/hermes",
@@ -6175,16 +6170,16 @@
         },
         {
             "name": "lara-zeus/popover",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/popover.git",
-                "reference": "cd4cd913d369d5a399ba782cb23c3193b0d17e3e"
+                "reference": "cfd84343b0ceb10118b8a2b024607248959d5bf2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/popover/zipball/cd4cd913d369d5a399ba782cb23c3193b0d17e3e",
-                "reference": "cd4cd913d369d5a399ba782cb23c3193b0d17e3e",
+                "url": "https://api.github.com/repos/lara-zeus/popover/zipball/cfd84343b0ceb10118b8a2b024607248959d5bf2",
+                "reference": "cfd84343b0ceb10118b8a2b024607248959d5bf2",
                 "shasum": ""
             },
             "require": {
@@ -6245,20 +6240,30 @@
                 "issues": "https://github.com/lara-zeus/popover/issues",
                 "source": "https://github.com/lara-zeus/popover"
             },
-            "time": "2024-01-01T18:23:18+00:00"
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/larazeus",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/atmonshi",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-01-02T19:38:36+00:00"
         },
         {
             "name": "lara-zeus/qr",
-            "version": "1.0.4",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/qr.git",
-                "reference": "d6bb63eb1b49a03af9286517c7930c953116836f"
+                "reference": "13647ff8d2a41b350c8d89b270b4aed56d580253"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/qr/zipball/d6bb63eb1b49a03af9286517c7930c953116836f",
-                "reference": "d6bb63eb1b49a03af9286517c7930c953116836f",
+                "url": "https://api.github.com/repos/lara-zeus/qr/zipball/13647ff8d2a41b350c8d89b270b4aed56d580253",
+                "reference": "13647ff8d2a41b350c8d89b270b4aed56d580253",
                 "shasum": ""
             },
             "require": {
@@ -6327,7 +6332,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-29T11:32:55+00:00"
+            "time": "2024-01-02T20:24:37+00:00"
         },
         {
             "name": "lara-zeus/rhea",
@@ -7962,35 +7967,35 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "470290c99b001d61751b4fe7e56327db4370cb87"
+                "reference": "1ef880fbcdc7b6e5e405cc9135a62cd5fdbcd06a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/470290c99b001d61751b4fe7e56327db4370cb87",
-                "reference": "470290c99b001d61751b4fe7e56327db4370cb87",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/1ef880fbcdc7b6e5e405cc9135a62cd5fdbcd06a",
+                "reference": "1ef880fbcdc7b6e5e405cc9135a62cd5fdbcd06a",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "^10.0",
-                "illuminate/support": "^10.0",
-                "illuminate/validation": "^10.0",
+                "illuminate/database": "^10.0|^11.0",
+                "illuminate/support": "^10.0|^11.0",
+                "illuminate/validation": "^10.0|^11.0",
                 "league/mime-type-detection": "^1.9",
                 "php": "^8.1",
-                "symfony/http-kernel": "^6.2"
+                "symfony/http-kernel": "^6.2|^7.0"
             },
             "require-dev": {
                 "calebporzio/sushi": "^2.1",
-                "laravel/framework": "^10.0",
+                "laravel/framework": "^10.0|^11.0",
                 "laravel/prompts": "^0.1.6",
                 "mockery/mockery": "^1.3.1",
-                "orchestra/testbench": "^8.0",
-                "orchestra/testbench-dusk": "^8.0",
-                "phpunit/phpunit": "^9.0",
-                "psy/psysh": "@stable"
+                "orchestra/testbench": "^8.0|^9.0",
+                "orchestra/testbench-dusk": "^8.0|^9.0",
+                "phpunit/phpunit": "^10.4",
+                "psy/psysh": "^0.11.22|^0.12"
             },
             "type": "library",
             "extra": {
@@ -8024,7 +8029,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.3.4"
+                "source": "https://github.com/livewire/livewire/tree/v3.3.5"
             },
             "funding": [
                 {
@@ -8032,7 +8037,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-01T17:22:47+00:00"
+            "time": "2024-01-02T14:29:17+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -16675,16 +16680,16 @@
         },
         {
             "name": "laravel-lang/attributes",
-            "version": "2.8.1",
+            "version": "2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/attributes.git",
-                "reference": "e85a26f09b4b54f24a8c84baf44c40a7c8214008"
+                "reference": "f846e8cd2079082725b4f2066fe5595aeea10183"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/e85a26f09b4b54f24a8c84baf44c40a7c8214008",
-                "reference": "e85a26f09b4b54f24a8c84baf44c40a7c8214008",
+                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/f846e8cd2079082725b4f2066fe5595aeea10183",
+                "reference": "f846e8cd2079082725b4f2066fe5595aeea10183",
                 "shasum": ""
             },
             "require": {
@@ -16738,9 +16743,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/attributes/issues",
-                "source": "https://github.com/Laravel-Lang/attributes/tree/2.8.1"
+                "source": "https://github.com/Laravel-Lang/attributes/tree/2.9.1"
             },
-            "time": "2023-12-31T00:42:12+00:00"
+            "time": "2024-01-02T09:45:55+00:00"
         },
         {
             "name": "laravel-lang/common",

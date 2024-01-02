@@ -128,7 +128,7 @@ pre code.torchlight .summary-caret {
 Thanks to @awcodes for sharing this trick
 https://discord.com/channels/883083792112300104/883084832387760148/1176631687782858782
 */
-.fi-ta-row {
+/*.fi-ta-row {
     .fi-ta-cell:last-of-type {
         @apply relative right-0 top-0 bottom-0;
         > div {
@@ -141,4 +141,4 @@ https://discord.com/channels/883083792112300104/883084832387760148/1176631687782
             @apply shadow-md rounded-full py-2;
         }
     }
-}
+}*/

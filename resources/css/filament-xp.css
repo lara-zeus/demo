@@ -1244,15 +1244,16 @@ https://discord.com/channels/883083792112300104/883084832387760148/1176631687782
 }
 
 .fi-sidebar {
-
+    @apply !bg-[#5368E3];
 }
 
 .fi-sidebar-nav ul {
 
 }
 
+/* F1F0FF B6C7FE*/
 .fi-sidebar-header {
-    @apply title-bar;
+    /*@apply title-bar;*/
 }
 
 .fi-sidebar-group:not(:first-child) {
@@ -1260,9 +1261,42 @@ https://discord.com/channels/883083792112300104/883084832387760148/1176631687782
 }
 
 .fi-sidebar-group > div > span {
+    @apply title-bar-text;
 }
 
-.fi-sidebar-group {
+.fi-sidebar-group{
+    /*@apply window;*/
+    @apply !rounded-t-md;
+    @apply !bg-gradient-to-l from-[#B4C7FB] to-[#B4C7FB];
+}
+
+.fi-sidebar-group-label{
+    @apply !text-[#0D327D];
+}
+.fi-sidebar-item-button, .fi-sidebar-item{
+    @apply hover:!bg-white/0
+}
+.fi-sidebar-group > div{
+    @apply !rounded-t-md;
+    @apply !bg-gradient-to-l to-[#F1F0FF] from-[#B6C7FE];
+}
+.fi-sidebar-group-collapse-button{
+    @apply title-bar-controls;
+}
+.fi-sidebar-item {
+    @apply title-bar-text;
+}
+
+.fi-sidebar-item-label{
+    @apply !text-[#0D327D]
+}
+.fi-active a {
+    @apply !bg-white/0;
+}
+
+.fi-sidebar-group-items {
+    /*@apply !window-body;*/
+
 }
 
 .fi-sidebar-open {
