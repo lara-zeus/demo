@@ -120,16 +120,16 @@
     "prefer-stable": true,
     "repositories": [
         {
+            "type": "composer",
+            "url": "https://filament-filter-sets.composer.sh"
+        },
+        {
             "type": "github",
             "url": "https://github.com/lara-zeus/filament-export"
         },
         {
             "type": "github",
             "url": "https://github.com/lara-zeus/laravel-comments"
-        },
-        {
-            "type": "composer",
-            "url": "https://filament-filter-sets.composer.sh"
         },
         {
             "type": "github",

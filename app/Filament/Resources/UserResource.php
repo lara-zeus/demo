@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\UserResource\Pages;
 use App\Models\User;
+use App\Tables\Columns\RightClick;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Forms\Get;
@@ -11,6 +12,7 @@ use Filament\Infolists\Components\Section;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
+use Filament\Tables\Actions\Action;
 use Filament\Tables\Actions\ActionGroup;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\ViewAction;
@@ -67,7 +69,7 @@ class UserResource extends Resource
                     ->popOverMaxWidth('none')
                     ->icon('heroicon-o-chevron-right')
                     //->content(fn ($record) => view('filament.test.user-card', ['record' => $record]))
-                    ->content(Qr::render(data:'dataOrUrl')), //, downloadable:false
+                    ->content(Qr::render(data: 'dataOrUrl')), //, downloadable:false
 
                 //TextEntry::make('name'),
                 TextEntry::make('email'),
@@ -95,6 +97,43 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
+                /*RightClick::make('name')
+                    ->actions(fn(User $record): array => [
+                        Action::make('edit')
+                            ->icon('heroicon-o-pencil-square')
+                            ->color('info')
+                            ->grouped()
+                            ->requiresConfirmation(),
+                        Action::make('view')
+                            ->icon('heroicon-o-eye')
+                            ->color('info')
+                            ->grouped()
+                            ->requiresConfirmation(),
+                        Action::make('delete')
+                            ->icon('heroicon-o-trash')
+                            ->color('danger')
+                            ->grouped()
+                            ->requiresConfirmation(),
+                        Action::make('permissions')
+                            ->icon('heroicon-o-key')
+                            ->color('warning')
+                            ->grouped()
+                            ->requiresConfirmation(),
+                        Action::make('Impersonate')
+                            ->icon('heroicon-o-user')
+                            ->color('secondary')
+                            ->grouped()
+                            ->requiresConfirmation()
+
+
+
+                        //ViewAction::make()->record($record),
+                        //EditAction::make(),
+                        /*Impersonate::make()
+                            ->grouped()
+                            ->redirectTo(url('/admin')),* /
+                    ]),*/
+
                 PopoverColumn::make('name')
                     // most of filament methods will work
                     ->sortable()
