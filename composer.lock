@@ -10877,16 +10877,16 @@
         },
         {
             "name": "ryangjchandler/blade-tabler-icons",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ryangjchandler/blade-tabler-icons.git",
-                "reference": "e911146f6ea809712242106bcfec0dc381905f6a"
+                "reference": "0bb9dfff74ff38a1374b2d4f0ce1cb0585ea96ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ryangjchandler/blade-tabler-icons/zipball/e911146f6ea809712242106bcfec0dc381905f6a",
-                "reference": "e911146f6ea809712242106bcfec0dc381905f6a",
+                "url": "https://api.github.com/repos/ryangjchandler/blade-tabler-icons/zipball/0bb9dfff74ff38a1374b2d4f0ce1cb0585ea96ee",
+                "reference": "0bb9dfff74ff38a1374b2d4f0ce1cb0585ea96ee",
                 "shasum": ""
             },
             "require": {
@@ -10933,9 +10933,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ryangjchandler/blade-tabler-icons/issues",
-                "source": "https://github.com/ryangjchandler/blade-tabler-icons/tree/v2.1.0"
+                "source": "https://github.com/ryangjchandler/blade-tabler-icons/tree/v2.2.0"
             },
-            "time": "2023-08-15T09:10:31+00:00"
+            "time": "2024-01-07T23:33:22+00:00"
         },
         {
             "name": "saade/filament-autograph",
