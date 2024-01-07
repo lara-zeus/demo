@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use App\Livewire\FormResource\Pages\ListForms;
 use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;
 use Filament\Support\Colors\Color;
@@ -13,7 +12,6 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
-use LaraZeus\Bolt\Filament\Resources\FormResource;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,16 +22,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->bind(
-            FormResource::class,
-            \App\Livewire\FormResource::class
-        );
-
-        $this->app->bind(
-            FormResource\Pages\ListForms::class,
-            ListForms::class
-        );
-
         if ($this->app->environment('production')) {
             URL::forceScheme('https');
         }
@@ -49,14 +37,13 @@ class AppServiceProvider extends ServiceProvider
 
         FilamentColor::register([
             ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
-            //'primary' => Color::Sky,
             'primary' => Color::hex('#45B39D'),
             'secondary' => Color::hex('#F1948A'),
             'gray' => Color::Stone,
-            /*'danger' => Color::Red,
+            'danger' => Color::Red,
             'info' => Color::Blue,
             'success' => Color::Green,
-            'warning' => Color::Yellow,*/
+            'warning' => Color::Yellow,
         ]);
 
         // I know! 🤷🏽‍, please let me have my fun!!!

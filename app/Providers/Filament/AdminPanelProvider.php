@@ -22,6 +22,7 @@ use Filament\Pages;
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\SpatieLaravelTranslatablePlugin;
+use Filament\Support\Colors\Color;
 use Filament\Widgets;
 use Illuminate\Contracts\View\View;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
@@ -35,7 +36,6 @@ use LaraZeus\Bolt\BoltPlugin;
 use LaraZeus\Bolt\Filament\Resources\CategoryResource;
 use LaraZeus\Bolt\Filament\Resources\CollectionResource;
 use LaraZeus\Bolt\Filament\Resources\FormResource;
-use LaraZeus\Bolt\Filament\Resources\ResponseResource;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
@@ -71,6 +71,17 @@ class AdminPanelProvider extends PanelProvider
             ->plugins($this->getPlugins())
             ->defaultAvatarProvider(GravatarProvider::class)
             ->brandLogo(fn () => view('filament.logo'))
+
+            ->colors([
+                ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
+                'primary' => Color::hex('#45B39D'),
+                'secondary' => Color::hex('#F1948A'),
+                'gray' => Color::Stone,
+                'danger' => Color::Red,
+                'info' => Color::Blue,
+                'success' => Color::Green,
+                'warning' => Color::Yellow,
+            ])
 
             //->topNavigation()
             ->sidebarCollapsibleOnDesktop()
@@ -129,7 +140,6 @@ class AdminPanelProvider extends PanelProvider
                     FormResource::class,
                     CategoryResource::class,
                     CollectionResource::class,
-                    ResponseResource::class,
                 ],
             )
             //db notice
@@ -198,7 +208,6 @@ class AdminPanelProvider extends PanelProvider
             OverlookPlugin::make()
                 ->sort(5)
                 ->excludes([
-                    ResponseResource::class,
                     LetterResource::class,
                     OperationsResource::class,
                     TicketResource::class,
@@ -212,7 +221,6 @@ class AdminPanelProvider extends PanelProvider
                 ]),
             QuickCreatePlugin::make()
                 ->excludes([
-                    ResponseResource::class,
                     UserViewResource::class,
                     LetterResource::class,
                     OperationsResource::class,

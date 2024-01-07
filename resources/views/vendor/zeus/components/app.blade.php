@@ -98,11 +98,11 @@
 
     <div class="flex gap-2">
         <a href="https://github.com/lara-zeus" target="_blank">
-            @svg('ri-github-fill','h-8 w-8 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
+            @svg('ri-github-fill','h-8 w-8 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
         </a>
 
         <a href="https://twitter.com/larazeus" target="_blank">
-            @svg('ri-twitter-line','h-8 w-8 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
+            @svg('ri-twitter-line','h-8 w-8 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
         </a>
     </div>
 </footer>

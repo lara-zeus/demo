@@ -1,20 +1,20 @@
 <div class="w-full mx-auto mb-10 pt-32 gap-4 flex justify-between items-center px-10 py-4">
     <a href="{{ url('/') }}" class="w-1/4 text-secondary-400 text-xl whitespace-nowrap">
-        <span class="group"><span class="text-secondary-400 group-hover:text-primary-400 transition ease-in-out duration-300">Lara&nbsp;<span class="line-through italic text-primary-400 group-hover:text-secondary-400 transition ease-in-out duration-300">Z</span>eus</span> Demo</span>
+        <span class="group"><span class="text-secondary-400 group-hover:text-custom-400 transition ease-in-out duration-300">Lara&nbsp;<span class="line-through italic text-custom-400 group-hover:text-secondary-400 transition ease-in-out duration-300">Z</span>eus</span> Demo</span>
     </a>
     <div class="w-full flex items-center justify-end gap-2">
         @php $menu = \LaraZeus\Sky\Models\Navigation::fromHandle(config('zeus.header_menu')); @endphp
         @if($menu !== null)
             @foreach($menu->items as $item)
-                {!! \LaraZeus\Sky\Classes\RenderNavItem::render($item,'px-3 py-2 text-lg font-karla text-primary-500 hover:text-secondary-500 dark:text-gray-400 transition-all ease-in-out duration-300') !!}
+                {!! \LaraZeus\Sky\Classes\RenderNavItem::render($item,'px-3 py-2 text-lg font-karla text-custom-500 hover:text-secondary-500 dark:text-gray-400 transition-all ease-in-out duration-300') !!}
             @endforeach
         @endif
 
         <x-filament::dropdown placement="bottom-start" teleport="true">
             <x-slot name="trigger"
-                    class="dark:text-primary-200 text-primary-500 flex items-center justify-center gap-1">
+                    class="dark:text-custom-200 text-custom-500 flex items-center justify-center gap-1">
                 {{ __('Site') }}
-                @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
+                @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
             </x-slot>
 
             <x-filament::dropdown.header
@@ -59,9 +59,9 @@
         </x-filament::dropdown>
         <x-filament::dropdown placement="bottom-start" teleport="true">
             <x-slot name="trigger"
-                    class="dark:text-primary-200 text-primary-500 flex items-center justify-center gap-1">
+                    class="dark:text-custom-200 text-custom-500 flex items-center justify-center gap-1">
                 {{ __('Apps') }}
-                @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
+                @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
             </x-slot>
             <x-filament::dropdown.list>
                 <x-filament::dropdown.list.item
@@ -110,7 +110,7 @@
         </x-filament::button>
 
         <x-filament::dropdown placement="bottom-start" teleport="true">
-            <x-slot name="trigger" class="dark:text-primary-200 text-primary-500 flex items-center justify-center gap-1">
+            <x-slot name="trigger" class="dark:text-custom-200 text-custom-500 flex items-center justify-center gap-1">
                 @auth()
                     <img x-tooltip="'User Profile'" src="{{ \Filament\Facades\Filament::getUserAvatarUrl(auth()->user()) }}" alt="avatar" class="object-cover w-10 h-10 rounded-full sm:block">
                 @else

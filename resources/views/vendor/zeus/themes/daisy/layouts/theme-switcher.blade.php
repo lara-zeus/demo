@@ -9,7 +9,7 @@
             @foreach(array_keys(config('zeus.themes')) as $theme)
                 <li>
                     <a href="{{ url('theme/'.$theme) }}" class="flex items-center justify-start">
-                        @svg(config('zeus.themes-icons.'.$theme),'w-6 h-6 text-primary-500')
+                        @svg(config('zeus.themes-icons.'.$theme),'w-6 h-6 text-custom-500')
                         {{ str($theme)->title() }}
                     </a>
                 </li>

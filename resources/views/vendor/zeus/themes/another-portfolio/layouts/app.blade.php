@@ -39,7 +39,7 @@
                 <div class="bg-gray-500/10 dark:bg-gray-800 my-4">
                     <div class="max-w-7xl mx-auto py-2 px-10">
                         @if(isset($header))
-                            <div class="italic font-semibold text-xl text-primary-600 dark:text-gray-100">
+                            <div class="italic font-semibold text-xl text-custom-600 dark:text-gray-100">
                                 {{ $header }}
                             </div>
                         @endif

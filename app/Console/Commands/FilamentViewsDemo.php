@@ -13,14 +13,15 @@ class FilamentViewsDemo extends Command
 
     public function handle(): void
     {
-        $this->callSilent('vendor:publish', ['--tag' => 'filament-views', '--force' => true]);
-        $this->callSilent('vendor:publish', ['--tag' => 'filament-actions-views', '--force' => true]);
-        $this->callSilent('vendor:publish', ['--tag' => 'filament-forms-views', '--force' => true]);
-        $this->callSilent('vendor:publish', ['--tag' => 'filament-infolists-views', '--force' => true]);
-        $this->callSilent('vendor:publish', ['--tag' => 'filament-notifications-views', '--force' => true]);
-        $this->callSilent('vendor:publish', ['--tag' => 'filament-panels-views', '--force' => true]);
-        $this->callSilent('vendor:publish', ['--tag' => 'filament-tables-views', '--force' => true]);
-        $this->callSilent('vendor:publish', ['--tag' => 'filament-widgets-views', '--force' => true]);
+        $this->call('vendor:publish', ['--tag' => 'filament-views', '--force' => true]);
+        $this->call('vendor:publish', ['--tag' => 'filament-actions-views', '--force' => true]);
+        $this->call('vendor:publish', ['--tag' => 'filament-forms-views', '--force' => true]);
+        $this->call('vendor:publish', ['--tag' => 'filament-infolists-views', '--force' => true]);
+        $this->call('vendor:publish', ['--tag' => 'filament-notifications-views', '--force' => true]);
+        $this->call('vendor:publish', ['--tag' => 'filament-panels-views', '--force' => true]);
+        $this->call('vendor:publish', ['--tag' => 'filament-tables-views', '--force' => true]);
+        $this->call('vendor:publish', ['--tag' => 'filament-widgets-views', '--force' => true]);
+        $this->call('vendor:publish', ['--tag' => 'zeus-matrix-choice-views', '--force' => true]);
 
         $filamentViews = [
             resource_path('views/vendor/filament'),
@@ -31,6 +32,7 @@ class FilamentViewsDemo extends Command
             resource_path('views/vendor/filament-panels'),
             resource_path('views/vendor/filament-tables'),
             resource_path('views/vendor/filament-widgets'),
+            resource_path('views/vendor/zeus-matrix-choice'),
         ];
 
         foreach ($filamentViews as $package) {

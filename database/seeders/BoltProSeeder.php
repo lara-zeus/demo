@@ -22,7 +22,7 @@ class BoltProSeeder extends Seeder
         $form = DB::table('forms')->insertGetId([
             'description' => '{"en":"all new fields in bolt pro","pt":"all new fields in bolt pro","ko":"all new fields in bolt pro"}',
             'slug' => 'bolt-pro',
-            'details' => '{"en":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, 7 fields are available now, and more are on the way.<\\/a><\\/p>","pt":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, 7 fields are available now, and more are on the way.<\\/a><\\/p>","ko":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, 7 fields are available now, and more are on the way.<\\/a><\\/p>"}',
+            'details' => '{"en":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, 10 fields are available now, and more are on the way.<\\/a><\\/p>","pt":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, 10 fields are available now, and more are on the way.<\\/a><\\/p>","ko":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, 10 fields are available now, and more are on the way.<\\/a><\\/p>"}',
             'options' => '{"confirmation-message":"<p>Thank you for testing out Bolt Pro \\ud83d\\ude42, use the code: <strong>ATM23ZBP <\\/strong>to get 20% off<\\/p>","require-login":false,"show-as":"page","emails-notification":null}',
             'name' => json_encode(['en' => 'Bolt Pro', 'pt' => 'Bolt Pro', 'ko' => 'Bolt Pro'], JSON_THROW_ON_ERROR),
             'category_id' => $category,
