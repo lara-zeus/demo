@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "34a8df30e72eb0a25dea798d71e09c13",
+    "content-hash": "f9bc55edf38f0d78a8bf7dabe796ec03",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -5692,16 +5692,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v2.1.30",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "3099ab3dfde7c8332bb9cb45b0fbeb7a218edda6"
+                "reference": "eeb4f494e31f99f0da4a55640f3c00d5a50a5734"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/3099ab3dfde7c8332bb9cb45b0fbeb7a218edda6",
-                "reference": "3099ab3dfde7c8332bb9cb45b0fbeb7a218edda6",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/eeb4f494e31f99f0da4a55640f3c00d5a50a5734",
+                "reference": "eeb4f494e31f99f0da4a55640f3c00d5a50a5734",
                 "shasum": ""
             },
             "require": {
@@ -5780,40 +5780,42 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-08T13:40:13+00:00"
+            "time": "2024-01-08T18:29:58+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v2.0.20",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "23b764e03504e643a37e538fdf06a7066a4678ff"
+                "reference": "f467c247b236a4b5f05c8b28149813defe3104de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/23b764e03504e643a37e538fdf06a7066a4678ff",
-                "reference": "23b764e03504e643a37e538fdf06a7066a4678ff",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/f467c247b236a4b5f05c8b28149813defe3104de",
+                "reference": "f467c247b236a4b5f05c8b28149813defe3104de",
                 "shasum": ""
             },
             "require": {
                 "awcodes/shout": "^2.0",
                 "coolsam/flatpickr": "^3.0",
                 "ibrahimbougaoua/filament-rating-star": "^0.0.1",
-                "lara-zeus/bolt": "^2.0",
-                "lara-zeus/matrix-choice": "^3.0",
+                "lara-zeus/bolt": "^3.0",
+                "lara-zeus/matrix-choice": "^3.2",
                 "php": "^8.1",
                 "rupadana/filament-api-service": "^1.0",
                 "saade/filament-autograph": "^3.0",
                 "sawirricardo/filament-nouislider": "^0.0"
             },
             "require-dev": {
+                "larastan/larastan": "^2.2",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.0.1",
-                "nunomaduro/phpinsights": "^2.8",
                 "orchestra/testbench": "^8.0",
-                "phpstan/extension-installer": "^1.1"
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "pestphp/pest-plugin-livewire": "2.x-dev",
+                "phpunit/phpunit": "^10.1"
             },
             "type": "library",
             "extra": {
@@ -5872,20 +5874,20 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2023-12-15T01:35:11+00:00"
+            "time": "2024-01-08T19:50:14+00:00"
         },
         {
             "name": "lara-zeus/core",
-            "version": "v3.0.15",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "039b8e8197a095ff09d0a6cd884e2bbec5fb2ab2"
+                "reference": "b9a4f3e491e7662c413a6d22672c231e356261bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/039b8e8197a095ff09d0a6cd884e2bbec5fb2ab2",
-                "reference": "039b8e8197a095ff09d0a6cd884e2bbec5fb2ab2",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/b9a4f3e491e7662c413a6d22672c231e356261bb",
+                "reference": "b9a4f3e491e7662c413a6d22672c231e356261bb",
                 "shasum": ""
             },
             "require": {
@@ -5895,19 +5897,20 @@
                 "ext-json": "*",
                 "ext-pdo_sqlite": "*",
                 "ext-sqlite3": "*",
-                "filament/filament": "^3.0",
-                "filament/spatie-laravel-translatable-plugin": "^3.0",
+                "filament/filament": "^3.1",
+                "filament/spatie-laravel-translatable-plugin": "^3.1",
                 "php": "^8.1"
             },
             "require-dev": {
+                "larastan/larastan": "^2.2",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.0.1",
-                "orchestra/testbench": "^7.0 || ^8.0",
+                "orchestra/testbench": "^8.0",
                 "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-laravel": "2.x-dev",
+                "pestphp/pest-plugin-laravel": "^2.0",
                 "pestphp/pest-plugin-livewire": "2.x-dev",
                 "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
                 "phpstan/phpstan-deprecation-rules": "^1.0",
                 "phpstan/phpstan-phpunit": "^1.0",
                 "phpunit/phpunit": "^10.1"
@@ -5958,7 +5961,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-01T21:57:14+00:00"
+            "time": "2024-01-08T19:26:14+00:00"
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
@@ -6042,34 +6045,35 @@
         },
         {
             "name": "lara-zeus/helen",
-            "version": "1.0.5",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/helen.git",
-                "reference": "f025fcf36a4d92c979043fece66ffbf37b93421c"
+                "reference": "2d90f68e2dc56369e2bcc8f809fb877ae60ddd1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/helen/zipball/f025fcf36a4d92c979043fece66ffbf37b93421c",
-                "reference": "f025fcf36a4d92c979043fece66ffbf37b93421c",
+                "url": "https://api.github.com/repos/lara-zeus/helen/zipball/2d90f68e2dc56369e2bcc8f809fb877ae60ddd1e",
+                "reference": "2d90f68e2dc56369e2bcc8f809fb877ae60ddd1e",
                 "shasum": ""
             },
             "require": {
                 "flowframe/laravel-trend": "^0.1.5",
                 "jenssegers/agent": "^2.6",
-                "lara-zeus/core": "^3.0",
+                "lara-zeus/core": "^3.1",
                 "lara-zeus/qr": "^1.0",
                 "php": "^8.1",
                 "simplesoftwareio/simple-qrcode": "~4"
             },
             "require-dev": {
+                "larastan/larastan": "^2.2",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.0",
-                "nunomaduro/phpinsights": "^2.8",
                 "orchestra/testbench": "^8.0",
                 "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.1"
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
             },
             "type": "library",
             "extra": {
@@ -6128,27 +6132,33 @@
                 "issues": "https://github.com/lara-zeus/helen/issues",
                 "source": "https://github.com/lara-zeus/helen"
             },
-            "time": "2024-01-02T20:36:58+00:00"
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/atmonshi"
+                }
+            ],
+            "time": "2024-01-08T20:03:42+00:00"
         },
         {
             "name": "lara-zeus/hermes",
-            "version": "v1.0.1",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/hermes.git",
-                "reference": "a957aef721d778f8caa46d001a669642d23fd73d"
+                "reference": "64286875b7bfa1db48a4f6154b992762fbd5a80a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/a957aef721d778f8caa46d001a669642d23fd73d",
-                "reference": "a957aef721d778f8caa46d001a669642d23fd73d",
+                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/64286875b7bfa1db48a4f6154b992762fbd5a80a",
+                "reference": "64286875b7bfa1db48a4f6154b992762fbd5a80a",
                 "shasum": ""
             },
             "require": {
-                "awcodes/filament-curator": "^3.0@beta",
+                "awcodes/filament-curator": "^3.4",
                 "codeat3/blade-teeny-icons": "^1.9",
                 "guava/filament-icon-picker": "^2.0",
-                "lara-zeus/core": "^3.0",
+                "lara-zeus/core": "^3.1",
                 "maize-tech/laravel-markable": "^2.0",
                 "mallardduck/blade-boxicons": "^2.4",
                 "owenvoke/blade-fontawesome": "^2.4",
@@ -6156,17 +6166,18 @@
                 "wire-elements/modal": "^2.0"
             },
             "require-dev": {
+                "larastan/larastan": "^2.2",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.0.1",
-                "nunomaduro/phpinsights": "^2.8",
                 "orchestra/testbench": "^8.0",
                 "pestphp/pest": "^2.0",
                 "pestphp/pest-plugin-arch": "^2.0",
                 "pestphp/pest-plugin-laravel": "^2.0",
                 "pestphp/pest-plugin-livewire": "^2.1",
                 "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.1"
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
             },
             "type": "library",
             "extra": {
@@ -6237,20 +6248,20 @@
                 "issues": "https://github.com/lara-zeus/hermes/issues",
                 "source": "https://github.com/lara-zeus/hermes"
             },
-            "time": "2024-01-03T16:40:00+00:00"
+            "time": "2024-01-08T20:07:40+00:00"
         },
         {
             "name": "lara-zeus/matrix-choice",
-            "version": "v3.1.0",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/matrix-choice.git",
-                "reference": "13c4d079a0b7d84b9099a9874e5c8e5dfebfd343"
+                "reference": "8fa151faaa8c0184756ac03ee6f29e0d253f5aec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/matrix-choice/zipball/13c4d079a0b7d84b9099a9874e5c8e5dfebfd343",
-                "reference": "13c4d079a0b7d84b9099a9874e5c8e5dfebfd343",
+                "url": "https://api.github.com/repos/lara-zeus/matrix-choice/zipball/8fa151faaa8c0184756ac03ee6f29e0d253f5aec",
+                "reference": "8fa151faaa8c0184756ac03ee6f29e0d253f5aec",
                 "shasum": ""
             },
             "require": {
@@ -6259,12 +6270,14 @@
                 "spatie/laravel-package-tools": "^1.16"
             },
             "require-dev": {
+                "larastan/larastan": "^2.2",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.0.1",
-                "nunomaduro/phpinsights": "^2.8",
                 "orchestra/testbench": "^8.0",
-                "phpstan/extension-installer": "^1.1"
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
             },
             "type": "library",
             "extra": {
@@ -6321,7 +6334,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-06T14:39:17+00:00"
+            "time": "2024-01-08T19:48:07+00:00"
         },
         {
             "name": "lara-zeus/popover",
@@ -6574,41 +6587,43 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.3.6",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "a82d1251d31c23ee0e2d5c8609aacff35ba9330c"
+                "reference": "1d52d67b2795408cbb43986a11717c89e27af366"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/a82d1251d31c23ee0e2d5c8609aacff35ba9330c",
-                "reference": "a82d1251d31c23ee0e2d5c8609aacff35ba9330c",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/1d52d67b2795408cbb43986a11717c89e27af366",
+                "reference": "1d52d67b2795408cbb43986a11717c89e27af366",
                 "shasum": ""
             },
             "require": {
                 "andrewdwallo/filament-selectify": "^2.0",
                 "doctrine/dbal": "^3.5.1",
                 "ext-json": "*",
-                "filament/spatie-laravel-media-library-plugin": "^3.0",
-                "filament/spatie-laravel-tags-plugin": "^3.0",
-                "lara-zeus/core": "^3.0",
+                "filament/spatie-laravel-media-library-plugin": "^3.1",
+                "filament/spatie-laravel-tags-plugin": "^3.1",
+                "lara-zeus/core": "^3.1",
                 "php": "^8.1",
                 "spatie/laravel-medialibrary": "^10.0.0",
                 "spatie/laravel-sluggable": "^3.3",
                 "spatie/laravel-tags": "^4.4"
             },
             "require-dev": {
+                "larastan/larastan": "^2.2",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.0.1",
-                "nunomaduro/phpinsights": "^2.8",
                 "orchestra/testbench": "^8.0",
                 "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-arch": "^2.0",
                 "pestphp/pest-plugin-laravel": "^2.0",
-                "pestphp/pest-plugin-livewire": "^2.1",
-                "phpstan/extension-installer": "^1.1"
+                "pestphp/pest-plugin-livewire": "2.x-dev",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^10.1"
             },
             "type": "library",
             "extra": {
@@ -6660,39 +6675,41 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-15T01:58:08+00:00"
+            "time": "2024-01-08T19:39:31+00:00"
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v2.0.10",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "dcc2792a0a666969715cd04aa256b5c001243bf5"
+                "reference": "10bb5f2ed9032789feac140538c53ae21e50c972"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/dcc2792a0a666969715cd04aa256b5c001243bf5",
-                "reference": "dcc2792a0a666969715cd04aa256b5c001243bf5",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/10bb5f2ed9032789feac140538c53ae21e50c972",
+                "reference": "10bb5f2ed9032789feac140538c53ae21e50c972",
                 "shasum": ""
             },
             "require": {
                 "alperenersoy/filament-export": "dev-fix-there",
                 "beyondcode/laravel-comments": "dev-lara-10",
-                "lara-zeus/bolt": "^2.1",
+                "lara-zeus/bolt": "^3.0",
                 "php": "^8.1"
             },
             "require-dev": {
+                "larastan/larastan": "^2.2",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.6",
-                "nunomaduro/phpinsights": "^2.8",
                 "orchestra/testbench": "^8.0",
                 "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-arch": "^2.0",
                 "pestphp/pest-plugin-laravel": "^2.0",
-                "pestphp/pest-plugin-livewire": "^2.1",
-                "phpstan/extension-installer": "^1.1"
+                "pestphp/pest-plugin-livewire": "2.x-dev",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^10.1"
             },
             "type": "library",
             "extra": {
@@ -6765,38 +6782,39 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2023-12-15T02:00:12+00:00"
+            "time": "2024-01-08T19:58:45+00:00"
         },
         {
             "name": "lara-zeus/wind",
-            "version": "v3.1.4",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "430a63d15354f048c11eef6322a77257d4b5f45e"
+                "reference": "5ee23b2dad23a2763da3908c938f997b32cb5880"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/430a63d15354f048c11eef6322a77257d4b5f45e",
-                "reference": "430a63d15354f048c11eef6322a77257d4b5f45e",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/5ee23b2dad23a2763da3908c938f997b32cb5880",
+                "reference": "5ee23b2dad23a2763da3908c938f997b32cb5880",
                 "shasum": ""
             },
             "require": {
-                "lara-zeus/core": "^3.0",
+                "lara-zeus/core": "^3.1",
                 "php": "^8.1"
             },
             "require-dev": {
+                "larastan/larastan": "^2.2",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.0.1",
-                "nunomaduro/phpinsights": "^2.8",
                 "orchestra/testbench": "^8.0",
                 "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-arch": "^2.0",
                 "pestphp/pest-plugin-laravel": "^2.0",
-                "pestphp/pest-plugin-livewire": "^2.1",
+                "pestphp/pest-plugin-livewire": "2.x-dev",
                 "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.1"
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^10.1"
             },
             "type": "library",
             "extra": {
@@ -6843,7 +6861,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-18T09:28:27+00:00"
+            "time": "2024-01-08T19:34:27+00:00"
         },
         {
             "name": "laravel/framework",
