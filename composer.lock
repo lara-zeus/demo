@@ -5692,16 +5692,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "461e5890a65c00cd1bb4f031052f413e21011a39"
+                "reference": "1689e2a45e036d82a7ac90301491e5c984a916ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/461e5890a65c00cd1bb4f031052f413e21011a39",
-                "reference": "461e5890a65c00cd1bb4f031052f413e21011a39",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/1689e2a45e036d82a7ac90301491e5c984a916ec",
+                "reference": "1689e2a45e036d82a7ac90301491e5c984a916ec",
                 "shasum": ""
             },
             "require": {
@@ -5781,20 +5781,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-08T18:47:19+00:00"
+            "time": "2024-01-08T22:48:40+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "f467c247b236a4b5f05c8b28149813defe3104de"
+                "reference": "5d5696f918c609e3c4280448e339276126af7793"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/f467c247b236a4b5f05c8b28149813defe3104de",
-                "reference": "f467c247b236a4b5f05c8b28149813defe3104de",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/5d5696f918c609e3c4280448e339276126af7793",
+                "reference": "5d5696f918c609e3c4280448e339276126af7793",
                 "shasum": ""
             },
             "require": {
@@ -5809,14 +5809,12 @@
                 "sawirricardo/filament-nouislider": "^0.0"
             },
             "require-dev": {
-                "larastan/larastan": "^2.2",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.0",
+                "nunomaduro/larastan": "^2.0.1",
+                "nunomaduro/phpinsights": "^2.8",
                 "orchestra/testbench": "^8.0",
-                "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-laravel": "^2.0",
-                "pestphp/pest-plugin-livewire": "2.x-dev",
-                "phpunit/phpunit": "^10.1"
+                "phpstan/extension-installer": "^1.1"
             },
             "type": "library",
             "extra": {
@@ -5875,7 +5873,7 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2024-01-08T19:50:14+00:00"
+            "time": "2024-01-08T22:51:57+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -17858,16 +17856,16 @@
         },
         {
             "name": "nunomaduro/larastan",
-            "version": "v2.8.0",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/larastan/larastan.git",
-                "reference": "d60c1a6d49fcbb54b78922a955a55820abdbe3c7"
+                "reference": "b7cc6a29c457a7d4f3de90466392ae9ad3e17022"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/larastan/larastan/zipball/d60c1a6d49fcbb54b78922a955a55820abdbe3c7",
-                "reference": "d60c1a6d49fcbb54b78922a955a55820abdbe3c7",
+                "url": "https://api.github.com/repos/larastan/larastan/zipball/b7cc6a29c457a7d4f3de90466392ae9ad3e17022",
+                "reference": "b7cc6a29c457a7d4f3de90466392ae9ad3e17022",
                 "shasum": ""
             },
             "require": {
@@ -17935,7 +17933,7 @@
             ],
             "support": {
                 "issues": "https://github.com/larastan/larastan/issues",
-                "source": "https://github.com/larastan/larastan/tree/v2.8.0"
+                "source": "https://github.com/larastan/larastan/tree/v2.8.1"
             },
             "funding": [
                 {
@@ -17956,7 +17954,7 @@
                 }
             ],
             "abandoned": "larastan/larastan",
-            "time": "2024-01-02T22:09:07+00:00"
+            "time": "2024-01-08T09:11:17+00:00"
         },
         {
             "name": "pestphp/pest",
