@@ -138,7 +138,7 @@ class AdminPanelProvider extends PanelProvider
             // hera
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.helen', ['scopes' => $scopes]),
+                fn (array $scopes): View => view('filament.hooks.hera', ['scopes' => $scopes]),
                 scopes: [
                     SeoScanResource::class,
                 ],
