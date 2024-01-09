@@ -47,6 +47,14 @@ class Package extends Model
                 'fe_url' => url('hermes'),
             ],
             [
+                'name' => 'Hera',
+                'other' => null,
+                'icon' => 'rpg-chain',
+                'desc' => __('Hera | SEO scanner with reports and scores'),
+                'admin_url' => url('/admin/seo-scans'),
+                'fe_text' => null,
+                'fe_url' => null,
+            ],[
                 'name' => 'Helen',
                 'other' => null,
                 'icon' => 'clarity-crown-solid',

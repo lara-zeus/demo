@@ -39,6 +39,8 @@ use LaraZeus\Bolt\Filament\Resources\FormResource;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
+use LaraZeus\Hera\Filament\Resources\SeoScanResource;
+use LaraZeus\Hera\HeraPlugin;
 use LaraZeus\Hermes\Filament\Resources\BranchResource;
 use LaraZeus\Hermes\Filament\Resources\MenuItemLabelsResource;
 use LaraZeus\Hermes\Filament\Resources\MenuResource;
@@ -93,6 +95,7 @@ class AdminPanelProvider extends PanelProvider
                 'Thunder',
                 'Hermes',
                 'Helen',
+                'Hera',
                 'Sky',
                 'Wind',
                 'Dynamic Dashboard',
@@ -130,6 +133,14 @@ class AdminPanelProvider extends PanelProvider
                 fn (array $scopes): View => view('filament.hooks.helen', ['scopes' => $scopes]),
                 scopes: [
                     LinksResource::class,
+                ],
+            )
+            // hera
+            ->renderHook(
+                'panels::page.start',
+                fn (array $scopes): View => view('filament.hooks.helen', ['scopes' => $scopes]),
+                scopes: [
+                    SeoScanResource::class,
                 ],
             )
             // bolt
@@ -232,6 +243,7 @@ class AdminPanelProvider extends PanelProvider
 
             WindPlugin::make(),
             SkyPlugin::make(),
+            HeraPlugin::make(),
             HelenPlugin::make()
                 ->baseDomain('demo.larazeus.com')
                 ->prefix('not-so-short'),

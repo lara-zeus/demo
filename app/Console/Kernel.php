@@ -18,6 +18,11 @@ class Kernel extends ConsoleKernel
             ->weekly()
             ->days([0, 2, 4, 6])
             ->at('4:00');
+
+        $schedule->command('php artisan seo:scan --quiet')
+            ->weekly()
+            ->days([0, 2, 4, 6])
+            ->at('4:10');
     }
 
     /**
