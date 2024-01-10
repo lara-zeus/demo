@@ -6040,16 +6040,16 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.0.2",
+            "version": "v3.0.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "5d5696f918c609e3c4280448e339276126af7793"
+                "reference": "e84db46609f7bd2fe79517044ef85c65a36f4bb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/5d5696f918c609e3c4280448e339276126af7793",
-                "reference": "5d5696f918c609e3c4280448e339276126af7793",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/e84db46609f7bd2fe79517044ef85c65a36f4bb6",
+                "reference": "e84db46609f7bd2fe79517044ef85c65a36f4bb6",
                 "shasum": ""
             },
             "require": {
@@ -6128,7 +6128,7 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2024-01-08T22:51:57+00:00"
+            "time": "2024-01-10T18:25:35+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -6685,16 +6685,16 @@
         },
         {
             "name": "lara-zeus/popover",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/popover.git",
-                "reference": "67ca80dda816e8de9867a754f6ec888de3217e67"
+                "reference": "80fbed3fce35c3a271d13e2537db1c39b9001df6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/popover/zipball/67ca80dda816e8de9867a754f6ec888de3217e67",
-                "reference": "67ca80dda816e8de9867a754f6ec888de3217e67",
+                "url": "https://api.github.com/repos/lara-zeus/popover/zipball/80fbed3fce35c3a271d13e2537db1c39b9001df6",
+                "reference": "80fbed3fce35c3a271d13e2537db1c39b9001df6",
                 "shasum": ""
             },
             "require": {
@@ -6765,7 +6765,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-09T13:56:18+00:00"
+            "time": "2024-01-10T19:22:51+00:00"
         },
         {
             "name": "lara-zeus/qr",
