@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eae768629815e79900f193a3dccfe119",
+    "content-hash": "d98c9413ff6db496447e2ebc27d4e901",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -1075,16 +1075,16 @@
         },
         {
             "name": "beyondcode/laravel-comments",
-            "version": "dev-lara-10",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lara-zeus/laravel-comments.git",
-                "reference": "f0b5e047cdc3a9f1c0bd3a2564762392752319af"
+                "url": "https://github.com/beyondcode/laravel-comments.git",
+                "reference": "b5569cce2bf41c2667f5999f39f51caa1a509a7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/laravel-comments/zipball/f0b5e047cdc3a9f1c0bd3a2564762392752319af",
-                "reference": "f0b5e047cdc3a9f1c0bd3a2564762392752319af",
+                "url": "https://api.github.com/repos/beyondcode/laravel-comments/zipball/b5569cce2bf41c2667f5999f39f51caa1a509a7b",
+                "reference": "b5569cce2bf41c2667f5999f39f51caa1a509a7b",
                 "shasum": ""
             },
             "require": {
@@ -1108,19 +1108,7 @@
                     "BeyondCode\\Comments\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "BeyondCode\\Comments\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "test-coverage": [
-                    "vendor/bin/phpunit --coverage-html coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1140,9 +1128,10 @@
                 "laravel-comments"
             ],
             "support": {
-                "source": "https://github.com/lara-zeus/laravel-comments/tree/lara-10"
+                "issues": "https://github.com/beyondcode/laravel-comments/issues",
+                "source": "https://github.com/beyondcode/laravel-comments/tree/1.4.0"
             },
-            "time": "2023-04-10T22:52:26+00:00"
+            "time": "2023-11-20T16:06:20+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -7027,21 +7016,21 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v3.0.0",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "10bb5f2ed9032789feac140538c53ae21e50c972"
+                "reference": "1c8a21661373e0b5d1b8036cac247fc848926730"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/10bb5f2ed9032789feac140538c53ae21e50c972",
-                "reference": "10bb5f2ed9032789feac140538c53ae21e50c972",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/1c8a21661373e0b5d1b8036cac247fc848926730",
+                "reference": "1c8a21661373e0b5d1b8036cac247fc848926730",
                 "shasum": ""
             },
             "require": {
                 "alperenersoy/filament-export": "dev-fix-there",
-                "beyondcode/laravel-comments": "dev-lara-10",
+                "beyondcode/laravel-comments": "^1.4",
                 "lara-zeus/bolt": "^3.0",
                 "php": "^8.1"
             },
@@ -7130,7 +7119,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-01-08T19:58:45+00:00"
+            "time": "2024-01-11T22:34:50+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -21554,7 +21543,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "alperenersoy/filament-export": 20,
-        "beyondcode/laravel-comments": 20,
         "njxqlus/filament-progressbar": 20,
         "pestphp/pest-plugin-livewire": 20
     },

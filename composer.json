@@ -16,7 +16,6 @@
         "awcodes/filament-versions": "^2.0",
         "awcodes/light-switch": "^1.0",
         "awcodes/overlook": "^2.0",
-        "beyondcode/laravel-comments": "dev-lara-10",
         "codeat3/blade-akar-icons": "^1.21",
         "codeat3/blade-carbon-icons": "^2.13",
         "codeat3/blade-clarity-icons": "^1.8",
@@ -130,10 +129,6 @@
         {
             "type": "github",
             "url": "https://github.com/lara-zeus/filament-export"
-        },
-        {
-            "type": "github",
-            "url": "https://github.com/lara-zeus/laravel-comments"
         },
         {
             "type": "github",
