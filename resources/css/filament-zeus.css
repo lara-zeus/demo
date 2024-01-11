@@ -8,8 +8,17 @@
 @import 'tippy.js/dist/tippy.css';
 @import "carbon.css";
 
-:root{
-    --c-50:var(--primary-50);--c-100:var(--primary-100);--c-200:var(--primary-200);--c-300:var(--primary-300);--c-400:var(--primary-400);--c-500:var(--primary-500);--c-600:var(--primary-600);--c-700:var(--primary-700);--c-800:var(--primary-800);--c-900:var(--primary-900);
+:root {
+    --c-50: var(--primary-50);
+    --c-100: var(--primary-100);
+    --c-200: var(--primary-200);
+    --c-300: var(--primary-300);
+    --c-400: var(--primary-400);
+    --c-500: var(--primary-500);
+    --c-600: var(--primary-600);
+    --c-700: var(--primary-700);
+    --c-800: var(--primary-800);
+    --c-900: var(--primary-900);
 }
 
 [dir=rtl] {
@@ -33,7 +42,17 @@
     border: solid 1px red;
 }
 
-.fi-topbar nav {
+.fi-topbar-with-navigation {
+    @apply w-full mx-auto flex h-16 items-center gap-x-4 bg-white shadow-sm ring-1 ring-gray-950/5 /*px-0 md:px-0 lg:px-0*/ dark:bg-gray-900 dark:ring-white/10;
+    @apply px-4 md:px-6 lg:px-8;
+}
+
+.fi-topbar-with-navigation nav {
+    @apply max-w-7xl mx-auto bg-white dark:bg-gray-900 !ring-0 !shadow-none /*!px-0 md:!px-0 lg:!px-0*/;
+    @apply px-4 md:px-6 lg:px-8;
+}
+
+/*.fi-topbar nav {
     @apply !bg-gradient-to-tr from-secondary-50 via-secondary-50 to-primary-50/50;
     @apply dark:from-gray-900 dark:via-gray-900 dark:to-secondary-900/50;
 }
@@ -107,14 +126,14 @@ pre code.torchlight .summary-caret {
     @apply ltr:mr-4 rtl:ml-4;
 }
 
-/*popover*/
+!*popover*!
 .fi-popover{
     @apply w-full;
 }
 .fi-popover-trigger{
     @apply justify-between;
 }
-.fi-popover .tippy-box/*[data-theme~=light]*/{
+.fi-popover .tippy-box!*[data-theme~=light]*!{
     @apply dark:border-gray-700/25 !shadow rounded-3xl rounded-tl-none;
     @apply border border-secondary-500/25 my-2;
     @apply !bg-gradient-to-tr from-secondary-50 via-secondary-50 to-primary-50/50;
@@ -122,7 +141,7 @@ pre code.torchlight .summary-caret {
 }
 .fi-popover .tippy-box[data-placement^=right]>.tippy-arrow:before{
     @apply border-r-secondary-500/25;
-}
+}*/
 
 /*
 Thanks to @awcodes for sharing this trick

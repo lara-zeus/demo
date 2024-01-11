@@ -63,6 +63,9 @@ module.exports = {
         extend: {
             colors: {
                 gray: colors.stone,
+
+                'dodger-blue': {  DEFAULT: '#2B80FF',  50: '#E3EEFF',  100: '#CEE2FF',  200: '#A5C9FF',  300: '#7DB1FF',  400: '#5498FF',  500: '#2B80FF',  600: '#0061F2',  700: '#004ABA',  800: '#003482',  900: '#001E4A',  950: '#00122E'},
+
                 primary: {
                     DEFAULT: '#45B39D',
                     50: '#C6E9E2',
