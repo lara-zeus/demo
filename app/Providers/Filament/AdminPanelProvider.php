@@ -74,6 +74,9 @@ class AdminPanelProvider extends PanelProvider
             ->defaultAvatarProvider(GravatarProvider::class)
             ->brandLogo(fn () => view('filament.logo'))
 
+            ->topNavigation()
+            //->topbar(false)
+
             ->colors([
                 ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
                 'primary' => Color::hex('#45B39D'),
@@ -87,19 +90,19 @@ class AdminPanelProvider extends PanelProvider
 
             //->topNavigation()
             ->sidebarCollapsibleOnDesktop()
-            ->maxContentWidth('full')
+            //->maxContentWidth('full')
             ->favicon(asset('favicon.ico'))
             ->navigationGroups([
                 'App',
-                'Bolt',
+                //'Bolt',
                 'Thunder',
                 'Hermes',
                 'Helen',
                 'Hera',
-                'Sky',
-                'Wind',
-                'Dynamic Dashboard',
-                'Rhea',
+                //'Sky',
+                //'Wind',
+                //'Dynamic Dashboard',
+                //'Rhea',
             ])
 
             // hermes
@@ -113,10 +116,10 @@ class AdminPanelProvider extends PanelProvider
                     MenuSectionResource::class,
                 ],
             )
-            ->renderHook(
+            /*->renderHook(
                 'panels::topbar.start',
                 fn (array $scopes): View => view('filament.hooks.store'),
-            )
+            )*/
             // thunder
             ->renderHook(
                 'panels::page.start',
@@ -159,10 +162,10 @@ class AdminPanelProvider extends PanelProvider
                 fn (): View => view('filament.hooks.db-notice'),
             )*/
             // lang
-            ->renderHook(
+            /*->renderHook(
                 'panels::user-menu.before',
                 fn (): View => view('filament.hooks.lang-switcher'),
-            )
+            )*/
             // footer
             ->renderHook(
                 'panels::footer',
@@ -241,8 +244,8 @@ class AdminPanelProvider extends PanelProvider
             SpatieLaravelTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt', 'ko']),
 
-            WindPlugin::make(),
-            SkyPlugin::make(),
+            //WindPlugin::make(),
+            //SkyPlugin::make(),
             HeraPlugin::make(),
             HelenPlugin::make()
                 ->baseDomain('demo.larazeus.com')
@@ -253,9 +256,9 @@ class AdminPanelProvider extends PanelProvider
                     Thunder::class,
                 ]),
 
-            ThunderPlugin::make(),
-            DynamicDashboardPlugin::make(),
-            RheaPlugin::make(),
+            //ThunderPlugin::make(),
+            //DynamicDashboardPlugin::make(),
+            //RheaPlugin::make(),
             HermesPlugin::make(),
         ];
     }
