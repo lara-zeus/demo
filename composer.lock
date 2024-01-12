@@ -6029,16 +6029,16 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "05e3978f2a59037bf011947f22fcb5d37fe814d7"
+                "reference": "1e58676a32f45a21593d2373e548086d61b5040e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/05e3978f2a59037bf011947f22fcb5d37fe814d7",
-                "reference": "05e3978f2a59037bf011947f22fcb5d37fe814d7",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/1e58676a32f45a21593d2373e548086d61b5040e",
+                "reference": "1e58676a32f45a21593d2373e548086d61b5040e",
                 "shasum": ""
             },
             "require": {
@@ -6118,7 +6118,7 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2024-01-11T18:50:26+00:00"
+            "time": "2024-01-12T06:42:27+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -6759,16 +6759,16 @@
         },
         {
             "name": "lara-zeus/qr",
-            "version": "1.1.0",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/qr.git",
-                "reference": "13647ff8d2a41b350c8d89b270b4aed56d580253"
+                "reference": "de6b10c4001fb0dd3d9688000b0d235f06fe8dbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/qr/zipball/13647ff8d2a41b350c8d89b270b4aed56d580253",
-                "reference": "13647ff8d2a41b350c8d89b270b4aed56d580253",
+                "url": "https://api.github.com/repos/lara-zeus/qr/zipball/de6b10c4001fb0dd3d9688000b0d235f06fe8dbf",
+                "reference": "de6b10c4001fb0dd3d9688000b0d235f06fe8dbf",
                 "shasum": ""
             },
             "require": {
@@ -6837,7 +6837,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-02T20:24:37+00:00"
+            "time": "2024-01-12T09:42:10+00:00"
         },
         {
             "name": "lara-zeus/rhea",
