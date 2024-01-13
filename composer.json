@@ -131,8 +131,24 @@
             "url": "https://github.com/lara-zeus/filament-export"
         },
         {
-            "type": "path",
-            "url": "../p/*"
+            "type": "github",
+            "url": "git@github.com:lara-zeus/thunder.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/hera.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/hermes.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/bolt-pro.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/helen.git"
         }
     ]
 }
