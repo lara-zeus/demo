@@ -21,6 +21,7 @@ module.exports = {
         './vendor/lara-zeus/bolt/resources/views/**/*.blade.php',
 
         './vendor/lara-zeus/thunder/resources/views/**/*.blade.php',
+        './vendor/lara-zeus/thunder/src/Models/TicketsStatus.php',
 
         './vendor/lara-zeus/artemis/resources/views/**/*.blade.php',
 
