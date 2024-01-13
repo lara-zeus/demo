@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('operations', function (Blueprint $table) {
+        Schema::create(config('zeus-thunder.table-prefix').'operations', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->foreignId('ticket_id')->constrained('tickets');
-            $table->foreignId('office_id')->constrained('offices');
-            $table->foreignId('from_office_id')->nullable()->constrained('offices');
+            $table->foreignId('ticket_id')->constrained(config('zeus-thunder.table-prefix').'tickets');
+            $table->foreignId('office_id')->constrained(config('zeus-thunder.table-prefix').'offices');
+            $table->foreignId('from_office_id')->constrained(config('zeus-thunder.table-prefix').'offices');
             $table->foreignId('user_id')->constrained('users');
-            $table->string('operation');
-            $table->string('status', 50)->nullable(); //todo for what?
+            $table->string('action');
+            $table->string('operation', 50)->nullable(); //todo for what?
             $table->text('notes')->nullable();
             $table->timestamps();
         });
@@ -33,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('operations');
+        Schema::dropIfExists(config('zeus-thunder.table-prefix').'operations');
     }
 };

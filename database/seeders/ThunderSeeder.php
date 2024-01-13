@@ -5,14 +5,13 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-use LaraZeus\Bolt\Models\Response;
 
 class ThunderSeeder extends Seeder
 {
     /**
      * @throws \JsonException
      */
-    public function run()
+    public function run(): void
     {
         $collection = DB::table('collections')->insertGetId([
             'name' => 'all printers list',
@@ -62,6 +61,7 @@ class ThunderSeeder extends Seeder
                 'emails-notification' => null,
                 'web-hook' => null,
             ], JSON_THROW_ON_ERROR),
+            'extensions' => 'LaraZeus\\Thunder\\Extensions\\Thunder',
             'category_id' => $category,
             'user_id' => 1,
             'start_date' => null,
@@ -70,17 +70,16 @@ class ThunderSeeder extends Seeder
             'is_active' => 1,
             'description' => json_encode(['en' => 'for all printer issues, your printer dosent work? we are here for you', 'ar' => 'لحل كافة مشاكل الطابعات'], JSON_THROW_ON_ERROR),
             'created_at' => now(),
-            'extensions' => 'LaraZeus\Thunder\Extensions\Thunder',
         ]);
 
-        $office = DB::table('offices')->insertGetId([
+        $office = DB::table(config('zeus-thunder.table-prefix').'offices')->insertGetId([
             'name' => json_encode([
                 'en' => 'printers department',
                 'ar' => 'مشاكل الطابعات',
             ]),
             'slug' => 'printers-department',
             'form_ids' => json_encode([$form]),
-            'description' => json_encode(['en' => 'printer issues', 'ar' => 'مشاكل الطابعات'], JSON_THROW_ON_ERROR),
+            'description' => json_encode(['en' => 'all printers issues', 'ar' => 'كافة المشاكل المتعلقة بالطابعات'], JSON_THROW_ON_ERROR),
             'options' => json_encode([
                 'assigning-mechanism' => 'manually',
                 'is_internal' => false,
@@ -143,8 +142,8 @@ class ThunderSeeder extends Seeder
             'section_id' => $section2,
             'ordering' => 2,
             'options' => json_encode([
-                'htmlId' => Str::random(6),
                 'dataSource' => '3',
+                'htmlId' => Str::random(6),
                 'is_required' => true,
             ], JSON_THROW_ON_ERROR),
             'type' => '\LaraZeus\Bolt\Fields\Classes\Select',
@@ -154,7 +153,7 @@ class ThunderSeeder extends Seeder
         $response_1 = DB::table('responses')->insertGetId([
             'form_id' => $form,
             'user_id' => 3,
-            'status' => 'NEW',
+            'status' => 'OPEN',
             'notes' => null,
             'created_at' => now(),
         ]);
@@ -188,7 +187,7 @@ class ThunderSeeder extends Seeder
             'created_at' => now(),
         ]);
 
-        $ticket = DB::table('tickets')->insertGetId([
+        $ticket = DB::table(config('zeus-thunder.table-prefix').'tickets')->insertGetId([
             'ticket_no' => Str::random(6),
             'office_id' => $office,
             'response_id' => $response_1,
@@ -198,7 +197,5 @@ class ThunderSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-
-        Response::find($response_1)->update(['extension_item_id' => $ticket]);
     }
 }

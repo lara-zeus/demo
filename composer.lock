@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d98c9413ff6db496447e2ebc27d4e901",
+    "content-hash": "7d2ccce2d6f122bca26ff70b3a129162",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -5773,17 +5773,11 @@
         },
         {
             "name": "lara-zeus/accordion",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/accordion.git",
-                "reference": "206caace18bc09ddd63f19ec439b823ef8282a33"
-            },
+            "version": "1.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/accordion/zipball/206caace18bc09ddd63f19ec439b823ef8282a33",
-                "reference": "206caace18bc09ddd63f19ec439b823ef8282a33",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/accordion",
+                "reference": "206caace18bc09ddd63f19ec439b823ef8282a33"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -5811,7 +5805,20 @@
                     "LaraZeus\\Accordion\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -5843,31 +5850,17 @@
                 "issues": "https://github.com/lara-zeus/accordion/issues",
                 "source": "https://github.com/lara-zeus/accordion"
             },
-            "funding": [
-                {
-                    "url": "https://www.buymeacoffee.com/larazeus",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-01-07T23:21:38+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/artemis",
-            "version": "v1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/artemis.git",
-                "reference": "3bc37b5ecac8478ffd89e53cc12b989f6629afd6"
-            },
+            "version": "1.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/3bc37b5ecac8478ffd89e53cc12b989f6629afd6",
-                "reference": "3bc37b5ecac8478ffd89e53cc12b989f6629afd6",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/artemis",
+                "reference": "4ea5a89513958d99cd055dcace7082438a727ced"
             },
             "require": {
                 "lara-zeus/core": "^3.0",
@@ -5896,7 +5889,6 @@
                     "LaraZeus\\Artemis\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5910,10 +5902,10 @@
             "description": "artistic themes for all lara zeus packages, telling a story with a design",
             "homepage": "https://larazeus.com/artemis",
             "keywords": [
-                "Laravel CMS",
                 "cms",
                 "lara-zeus",
                 "laravel",
+                "laravel cms",
                 "menu",
                 "news",
                 "pages",
@@ -5926,27 +5918,17 @@
                 "issues": "https://github.com/lara-zeus/artemis/issues",
                 "source": "https://github.com/lara-zeus/artemis"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-12-15T01:32:33+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "87702dc9d95294dd160a65811a1d76b141034325"
-            },
+            "version": "3.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/87702dc9d95294dd160a65811a1d76b141034325",
-                "reference": "87702dc9d95294dd160a65811a1d76b141034325",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/bolt",
+                "reference": "22b078edb426025fabb2a6fd308535c0ba651e44"
             },
             "require": {
                 "alperenersoy/filament-export": "dev-fix-there",
@@ -5986,7 +5968,34 @@
                     "LaraZeus\\Bolt\\Database\\Factories\\": "database/factories/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "LaraZeus\\Bolt\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:pest": [
+                    "vendor/bin/pest --parallel"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -6000,11 +6009,11 @@
             "description": "Zeus Bolt is form builder for your users, with so many use cases",
             "homepage": "https://larazeus.com/bolt",
             "keywords": [
-                "Forms",
                 "bolt",
                 "builder",
                 "filamentphp",
                 "form",
+                "forms",
                 "generator",
                 "lara-zeus",
                 "laravel",
@@ -6015,31 +6024,17 @@
                 "issues": "https://github.com/lara-zeus/bolt/issues",
                 "source": "https://github.com/lara-zeus/bolt"
             },
-            "funding": [
-                {
-                    "url": "https://www.buymeacoffee.com/larazeus",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-01-13T13:58:34+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.0.9",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "9e34329d12e8033ab9afc9c29a3af7838fa65b39"
-            },
+            "version": "3.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/9e34329d12e8033ab9afc9c29a3af7838fa65b39",
-                "reference": "9e34329d12e8033ab9afc9c29a3af7838fa65b39",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/bolt-pro",
+                "reference": "9e34329d12e8033ab9afc9c29a3af7838fa65b39"
             },
             "require": {
                 "awcodes/shout": "^2.0",
@@ -6118,21 +6113,17 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2024-01-13T14:00:57+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/core",
-            "version": "v3.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/core.git",
-                "reference": "6ca96b96b50449657613c6123ca164ad9e935b1c"
-            },
+            "version": "3.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/6ca96b96b50449657613c6123ca164ad9e935b1c",
-                "reference": "6ca96b96b50449657613c6123ca164ad9e935b1c",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/core",
+                "reference": "1d6c7c6f5c5e44c9e960ccc25febf5c1fda660f1"
             },
             "require": {
                 "archtechx/laravel-seo": "^0.7",
@@ -6175,7 +6166,26 @@
                     "LaraZeus\\Core\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "LaraZeus\\Core\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:pest": [
+                    "vendor/bin/pest --parallel"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "@test:pest",
+                    "@test:phpstan"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -6199,27 +6209,17 @@
                 "issues": "https://github.com/lara-zeus/core/issues",
                 "source": "https://github.com/lara-zeus/core"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-01-09T03:41:53+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
-            "version": "v3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/dynamic-dashboard.git",
-                "reference": "f37846c0a77a2e97c16a871a7f3112c27fa3b19a"
-            },
+            "version": "3.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/dynamic-dashboard/zipball/f37846c0a77a2e97c16a871a7f3112c27fa3b19a",
-                "reference": "f37846c0a77a2e97c16a871a7f3112c27fa3b19a",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/rain",
+                "reference": "8b232d51196cab70d90b48ffeff64ccc691e095e"
             },
             "require": {
                 "lara-zeus/core": "^3.0",
@@ -6254,7 +6254,26 @@
                     "LaraZeus\\DynamicDashboard\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "LaraZeus\\DynamicDashboard\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:pest": [
+                    "vendor/bin/pest --parallel"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "@test:pest",
+                    "@test:phpstan"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -6279,27 +6298,17 @@
                 "issues": "https://github.com/lara-zeus/dynamic-dashboard/issues",
                 "source": "https://github.com/lara-zeus/dynamic-dashboard"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-12-11T21:04:45+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/helen",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:lara-zeus/helen.git",
-                "reference": "2d90f68e2dc56369e2bcc8f809fb877ae60ddd1e"
-            },
+            "version": "2.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/helen/zipball/2d90f68e2dc56369e2bcc8f809fb877ae60ddd1e",
-                "reference": "2d90f68e2dc56369e2bcc8f809fb877ae60ddd1e",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/helen",
+                "reference": "826b65e3722c1f22961f6c84059eecb5ef695a4e"
             },
             "require": {
                 "flowframe/laravel-trend": "^0.1.5",
@@ -6376,27 +6385,17 @@
                 "issues": "https://github.com/lara-zeus/helen/issues",
                 "source": "https://github.com/lara-zeus/helen"
             },
-            "funding": [
-                {
-                    "type": "github",
-                    "url": "https://github.com/atmonshi"
-                }
-            ],
-            "time": "2024-01-08T20:03:42+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/hera",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:lara-zeus/hera.git",
-                "reference": "403b9155fb346991050cf06fed9a3f2ca923f7f5"
-            },
+            "version": "1.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/hera/zipball/403b9155fb346991050cf06fed9a3f2ca923f7f5",
-                "reference": "403b9155fb346991050cf06fed9a3f2ca923f7f5",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/hera",
+                "reference": "403b9155fb346991050cf06fed9a3f2ca923f7f5"
             },
             "require": {
                 "lara-zeus/core": "^3.1",
@@ -6469,27 +6468,17 @@
                 "issues": "https://github.com/lara-zeus/hera/issues",
                 "source": "https://github.com/lara-zeus/hera"
             },
-            "funding": [
-                {
-                    "type": "github",
-                    "url": "https://github.com/atmonshi"
-                }
-            ],
-            "time": "2024-01-09T03:54:03+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/hermes",
-            "version": "v2.0.0",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:lara-zeus/hermes.git",
-                "reference": "64286875b7bfa1db48a4f6154b992762fbd5a80a"
-            },
+            "version": "2.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/64286875b7bfa1db48a4f6154b992762fbd5a80a",
-                "reference": "64286875b7bfa1db48a4f6154b992762fbd5a80a",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/hermes",
+                "reference": "64286875b7bfa1db48a4f6154b992762fbd5a80a"
             },
             "require": {
                 "awcodes/filament-curator": "^3.4",
@@ -6585,21 +6574,17 @@
                 "issues": "https://github.com/lara-zeus/hermes/issues",
                 "source": "https://github.com/lara-zeus/hermes"
             },
-            "time": "2024-01-08T20:07:40+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/matrix-choice",
-            "version": "v3.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/matrix-choice.git",
-                "reference": "8fa151faaa8c0184756ac03ee6f29e0d253f5aec"
-            },
+            "version": "3.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/matrix-choice/zipball/8fa151faaa8c0184756ac03ee6f29e0d253f5aec",
-                "reference": "8fa151faaa8c0184756ac03ee6f29e0d253f5aec",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/matrix-choice",
+                "reference": "6fdfc7a953867e1e738f3d71610a126f18c638e2"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -6629,7 +6614,20 @@
                     "LaraZeus\\MatrixChoice\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -6643,12 +6641,12 @@
             "description": "Zeus Matrix Choice multiple choice grid component form for filamentPHP",
             "homepage": "https://larazeus.com/matrix-choice",
             "keywords": [
-                "Forms",
                 "builder",
                 "choice",
                 "feilds",
                 "filamentphp",
                 "form",
+                "forms",
                 "generator",
                 "grid",
                 "lara-zeus",
@@ -6661,31 +6659,17 @@
                 "issues": "https://github.com/lara-zeus/matrix-choice/issues",
                 "source": "https://github.com/lara-zeus/matrix-choice"
             },
-            "funding": [
-                {
-                    "url": "https://www.buymeacoffee.com/larazeus",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-01-08T19:48:07+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/popover",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/popover.git",
-                "reference": "80fbed3fce35c3a271d13e2537db1c39b9001df6"
-            },
+            "version": "1.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/popover/zipball/80fbed3fce35c3a271d13e2537db1c39b9001df6",
-                "reference": "80fbed3fce35c3a271d13e2537db1c39b9001df6",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/popover",
+                "reference": "bfdd3f4d0d680750ad7beadc07f44968627f5926"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -6713,7 +6697,20 @@
                     "LaraZeus\\Popover\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -6724,7 +6721,7 @@
                     "role": "Owner"
                 }
             ],
-            "description": "Zeus Popover is filamentphp component to show a Popover with custom content in tables and infolist",
+            "description": "Zeus Popover is filamentphp component to show a Popover with custom content in tables and infolist\n",
             "homepage": "https://larazeus.com/popover",
             "keywords": [
                 "code",
@@ -6745,31 +6742,17 @@
                 "issues": "https://github.com/lara-zeus/popover/issues",
                 "source": "https://github.com/lara-zeus/popover"
             },
-            "funding": [
-                {
-                    "url": "https://www.buymeacoffee.com/larazeus",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-01-10T19:22:51+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/qr",
-            "version": "1.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/qr.git",
-                "reference": "de6b10c4001fb0dd3d9688000b0d235f06fe8dbf"
-            },
+            "version": "1.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/qr/zipball/de6b10c4001fb0dd3d9688000b0d235f06fe8dbf",
-                "reference": "de6b10c4001fb0dd3d9688000b0d235f06fe8dbf",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/qr",
+                "reference": "687db0f33de72d70f6af92d477829a92de329b9e"
             },
             "require": {
                 "filament/filament": "^3.0",
@@ -6798,7 +6781,20 @@
                     "LaraZeus\\Qr\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -6827,31 +6823,17 @@
                 "issues": "https://github.com/lara-zeus/qr/issues",
                 "source": "https://github.com/lara-zeus/qr"
             },
-            "funding": [
-                {
-                    "url": "https://www.buymeacoffee.com/larazeus",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-01-12T09:42:10+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/rhea",
-            "version": "v2.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/rhea.git",
-                "reference": "18bbe5ef469ab81b9238cf61ab00cb88e47b0d53"
-            },
+            "version": "2.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/rhea/zipball/18bbe5ef469ab81b9238cf61ab00cb88e47b0d53",
-                "reference": "18bbe5ef469ab81b9238cf61ab00cb88e47b0d53",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/rhea",
+                "reference": "0cf772c4dccae657abbcc5a5f9064e12550725c7"
             },
             "require": {
                 "jgrossi/corcel": "^7.0",
@@ -6882,7 +6864,6 @@
                     "LaraZeus\\Rhea\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6896,11 +6877,11 @@
             "description": "migrate your wordpress blog to zeus sky",
             "homepage": "https://larazeus.com/rhea",
             "keywords": [
-                "Laravel CMS",
                 "cms",
                 "filamentphp",
                 "lara-zeus",
                 "laravel",
+                "laravel cms",
                 "menu",
                 "news",
                 "pages",
@@ -6914,27 +6895,17 @@
                 "issues": "https://github.com/lara-zeus/rhea/issues",
                 "source": "https://github.com/lara-zeus/rhea"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-01-13T12:17:07+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "1d52d67b2795408cbb43986a11717c89e27af366"
-            },
+            "version": "3.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/1d52d67b2795408cbb43986a11717c89e27af366",
-                "reference": "1d52d67b2795408cbb43986a11717c89e27af366",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/sky",
+                "reference": "ba8afeaf895cff96c3659594bea2d45f80f918b0"
             },
             "require": {
                 "andrewdwallo/filament-selectify": "^2.0",
@@ -6975,7 +6946,26 @@
                     "LaraZeus\\Sky\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "LaraZeus\\Sky\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:pest": [
+                    "vendor/bin/pest --parallel"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "@test:pest",
+                    "@test:phpstan"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -6989,11 +6979,11 @@
             "description": "Lara-zeus sky is simple CMS for your website. It includes posts, pages, tags, and categories.",
             "homepage": "https://larazeus.com/sky",
             "keywords": [
-                "Laravel CMS",
                 "cms",
                 "filamentphp",
                 "lara-zeus",
                 "laravel",
+                "laravel cms",
                 "menu",
                 "news",
                 "pages",
@@ -7006,27 +6996,17 @@
                 "issues": "https://github.com/lara-zeus/sky/issues",
                 "source": "https://github.com/lara-zeus/sky"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-01-08T19:39:31+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v3.0.3",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "655a25fb73c7c566eb4ca9b559bc97d59d6eb509"
-            },
+            "version": "3.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/655a25fb73c7c566eb4ca9b559bc97d59d6eb509",
-                "reference": "655a25fb73c7c566eb4ca9b559bc97d59d6eb509",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/thunder",
+                "reference": "c140013dfc5bb88abf09ccef79b57a7a80f243c3"
             },
             "require": {
                 "alperenersoy/filament-export": "dev-fix-there",
@@ -7113,27 +7093,17 @@
                 "issues": "https://github.com/lara-zeus/thunder/issues",
                 "source": "https://github.com/lara-zeus/thunder"
             },
-            "funding": [
-                {
-                    "type": "github",
-                    "url": "https://github.com/atmonshi"
-                }
-            ],
-            "time": "2024-01-12T21:55:10+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lara-zeus/wind",
-            "version": "v3.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "5ee23b2dad23a2763da3908c938f997b32cb5880"
-            },
+            "version": "3.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/5ee23b2dad23a2763da3908c938f997b32cb5880",
-                "reference": "5ee23b2dad23a2763da3908c938f997b32cb5880",
-                "shasum": ""
+                "type": "path",
+                "url": "../p/wind",
+                "reference": "fca24e6e9da3cd68a95aa6e8abc0999cf4c61cdb"
             },
             "require": {
                 "lara-zeus/core": "^3.1",
@@ -7166,7 +7136,26 @@
                     "LaraZeus\\Wind\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "LaraZeus\\Wind\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:pest": [
+                    "vendor/bin/pest --parallel"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "@test:pest",
+                    "@test:phpstan"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -7180,10 +7169,10 @@
             "description": "Zeus Wind is simple contact form for your website with easy to use dashboard, works as a plugin for Filament Admin Panel",
             "homepage": "https://larazeus.com/wind",
             "keywords": [
-                "Forms",
                 "contact",
                 "filamentphp",
                 "form",
+                "forms",
                 "lara-zeus",
                 "laravel",
                 "mailing"
@@ -7192,13 +7181,9 @@
                 "issues": "https://github.com/lara-zeus/wind/issues",
                 "source": "https://github.com/lara-zeus/wind"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-01-08T19:34:27+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "laravel/framework",
@@ -17501,16 +17486,16 @@
         },
         {
             "name": "laravel-lang/attributes",
-            "version": "2.9.1",
+            "version": "2.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/attributes.git",
-                "reference": "f846e8cd2079082725b4f2066fe5595aeea10183"
+                "reference": "871cc7aec0aba1e676235605c322903bedc85167"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/f846e8cd2079082725b4f2066fe5595aeea10183",
-                "reference": "f846e8cd2079082725b4f2066fe5595aeea10183",
+                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/871cc7aec0aba1e676235605c322903bedc85167",
+                "reference": "871cc7aec0aba1e676235605c322903bedc85167",
                 "shasum": ""
             },
             "require": {
@@ -17564,9 +17549,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/attributes/issues",
-                "source": "https://github.com/Laravel-Lang/attributes/tree/2.9.1"
+                "source": "https://github.com/Laravel-Lang/attributes/tree/2.9.2"
             },
-            "time": "2024-01-02T09:45:55+00:00"
+            "time": "2024-01-13T14:39:47+00:00"
         },
         {
             "name": "laravel-lang/common",

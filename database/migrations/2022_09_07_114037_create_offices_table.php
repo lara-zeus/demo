@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('offices', function (Blueprint $table) {
+        Schema::create(config('zeus-thunder.table-prefix').'offices', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
+            $table->text('name');
             $table->string('slug');
             $table->text('form_ids')->nullable();
             $table->text('faq_ids')->nullable();
             $table->longText('description')->nullable();
-            $table->longText('options')->nullable(); // internal,assigning_mechanism, allow_escalation_after,
+            $table->longText('options')->nullable();
             $table->unsignedInteger('ordering')->default(1);
             $table->boolean('is_active')->default(true);
             $table->timestamps();
@@ -35,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('offices');
+        Schema::dropIfExists(config('zeus-thunder.table-prefix').'offices');
     }
 };
