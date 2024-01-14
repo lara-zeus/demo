@@ -76,9 +76,11 @@
 @endphp
 
 <div class="doc-list my-10">
-    <script async type="text/javascript" id="_carbonads_js"
-            src="//cdn.carbonads.com/carbon.js?serve=CWYIVK3J&placement=larazeuscom">
-    </script>
+    @if(app()->isProduction())
+        <script async type="text/javascript" id="_carbonads_js"
+                src="//cdn.carbonads.com/carbon.js?serve=CWYIVK3J&placement=larazeuscom">
+        </script>
+    @endif
     <div class="text-center my-4 text-sm">
         Running @zeus packages and the website doesn't come for free. You can help support us by checking out relevant sponsors from the banner above.
     </div>
