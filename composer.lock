@@ -5936,16 +5936,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.9",
+            "version": "v3.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "c60187fcf44adf72b8b19f2418e877748c832356"
+                "reference": "4231f960a6781b318adc251feb0ae833cb6d4872"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/c60187fcf44adf72b8b19f2418e877748c832356",
-                "reference": "c60187fcf44adf72b8b19f2418e877748c832356",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/4231f960a6781b318adc251feb0ae833cb6d4872",
+                "reference": "4231f960a6781b318adc251feb0ae833cb6d4872",
                 "shasum": ""
             },
             "require": {
@@ -5955,7 +5955,8 @@
                 "guava/filament-icon-picker": "^2.0",
                 "lara-zeus/accordion": "^1.0",
                 "lara-zeus/core": "^3.0",
-                "php": "^8.1"
+                "php": "^8.1",
+                "ryangjchandler/blade-tabler-icons": "^2.2"
             },
             "require-dev": {
                 "laravel/pint": "^1.0",
@@ -6025,20 +6026,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-13T19:34:49+00:00"
+            "time": "2024-01-15T00:08:45+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.0.9",
+            "version": "v3.0.10",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "9e34329d12e8033ab9afc9c29a3af7838fa65b39"
+                "reference": "f0ef7e35aeab30e9cd0cdcd4173260111fca2556"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/9e34329d12e8033ab9afc9c29a3af7838fa65b39",
-                "reference": "9e34329d12e8033ab9afc9c29a3af7838fa65b39",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/f0ef7e35aeab30e9cd0cdcd4173260111fca2556",
+                "reference": "f0ef7e35aeab30e9cd0cdcd4173260111fca2556",
                 "shasum": ""
             },
             "require": {
@@ -6118,7 +6119,7 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2024-01-13T14:00:57+00:00"
+            "time": "2024-01-15T00:11:54+00:00"
         },
         {
             "name": "lara-zeus/core",

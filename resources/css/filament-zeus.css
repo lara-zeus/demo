@@ -8,6 +8,13 @@
 @import 'tippy.js/dist/tippy.css';
 @import "carbon.css";
 
+.field-type .choices__list--single{
+    @apply !w-full;
+}
+.field-type .choices__list--single .tip, .field-type .choices__list--single .field-desc{
+    @apply /*mr-6*/ !hidden;
+}
+
 :root{
     --c-50:var(--primary-50);--c-100:var(--primary-100);--c-200:var(--primary-200);--c-300:var(--primary-300);--c-400:var(--primary-400);--c-500:var(--primary-500);--c-600:var(--primary-600);--c-700:var(--primary-700);--c-800:var(--primary-800);--c-900:var(--primary-900);
 }
