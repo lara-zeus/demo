@@ -10,9 +10,11 @@ use Filament\Infolists\Components\Section;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
+use Filament\Support\Enums\Alignment;
 use Filament\Tables\Actions\ActionGroup;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\ViewAction;
+use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
@@ -82,7 +84,7 @@ class UserResource extends Resource
             TextInput::make('password')
                 ->password()
                 ->visibleOn('create')
-                ->required(fn (string $operation): bool => $operation === 'create')
+                ->required(fn(string $operation): bool => $operation === 'create')
                 ->maxLength(255),
         ]);
     }
@@ -128,54 +130,62 @@ class UserResource extends Resource
                             ->redirectTo(url('/admin')),* /
                     ]),*/
 
-                PopoverColumn::make('name')
-                    // most of filament methods will work
-                    ->sortable()
-                    ->searchable()
-                    ->toggleable()
-                    // main options
-                    ->trigger('click')
-                    ->placement('right')
-                    ->offset([0, 10])
-                    ->popOverMaxWidth('none')
-                    ->icon('heroicon-o-chevron-right')
+                ColumnGroup::make('main-info', [
+                    PopoverColumn::make('name')
+                        // most of filament methods will work
+                        ->sortable()
+                        ->searchable()
+                        ->toggleable()
+                        // main options
+                        ->trigger('click')
+                        ->placement('right')
+                        ->offset([0, 10])
+                        ->popOverMaxWidth('none')
+                        ->icon('heroicon-o-chevron-right')
 
-                    // direct HTML content
-                    //->content(fn($record) => new HtmlString($record->name.'<br>'.$record->email))
+                        // direct HTML content
+                        //->content(fn($record) => new HtmlString($record->name.'<br>'.$record->email))
 
-                    // or blade content
-                    ->content(fn ($record) => view('filament.test.user-card', ['record' => $record]))
+                        // or blade content
+                        ->content(fn($record) => view('filament.test.user-card', ['record' => $record]))
 
-                // or livewire component
-                //->content(fn($record) => new HtmlString(Blade::render('@livewire(\App\Filament\Widgets\DemoStats::class, ["lazy" => true])')))
-                ,
+                    // or livewire component
+                    //->content(fn($record) => new HtmlString(Blade::render('@livewire(\App\Filament\Widgets\DemoStats::class, ["lazy" => true])')))
+                    ,
 
-                /*TextColumn::make('name')
-                    ->sortable()
-                    ->toggleable()
-                    ->searchable(),*/
+                    /*TextColumn::make('name')
+                        ->sortable()
+                        ->toggleable()
+                        ->searchable(),*/
 
-                TextColumn::make('email')
-                    ->sortable()
-                    ->toggleable()
-                    ->icon('heroicon-o-envelope')
-                    ->searchable(),
-                TextColumn::make('email_verified_at')
-                    ->sortable()
-                    ->toggleable()
-                    ->searchable(),
+                    TextColumn::make('email')
+                        ->sortable()
+                        ->toggleable()
+                        ->icon('heroicon-o-envelope')
+                        ->searchable(),
+                ])
+                    ->alignment(Alignment::Center)
+                    ->wrapHeader(),
+                ColumnGroup::make('other-info', [
+                    TextColumn::make('email_verified_at')
+                        ->sortable()
+                        ->toggleable()
+                        ->searchable(),
 
-                TextColumn::make('remember_token')
-                    ->toggleable(),
+                    /*TextColumn::make('remember_token')
+                        ->toggleable(),*/
 
-                TextColumn::make('created_at')
-                    ->sortable()
-                    ->toggleable()
-                    ->searchable(),
-                TextColumn::make('updated_at')
-                    ->sortable()
-                    ->toggleable()
-                    ->searchable(),
+                    TextColumn::make('created_at')
+                        ->sortable()
+                        ->toggleable()
+                        ->searchable(),
+                    TextColumn::make('updated_at')
+                        ->sortable()
+                        ->toggleable()
+                        ->searchable(),
+                ])
+                    ->alignment(Alignment::Center)
+                    ->wrapHeader(),
             ])
             ->actions([
                 ActionGroup::make([
@@ -189,9 +199,9 @@ class UserResource extends Resource
             ->defaultSort('id', 'desc')
             ->filters([
                 Filter::make('verified')
-                    ->query(fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
+                    ->query(fn(Builder $query): Builder => $query->whereNotNull('email_verified_at')),
                 Filter::make('unverified')
-                    ->query(fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
+                    ->query(fn(Builder $query): Builder => $query->whereNull('email_verified_at')),
             ]);
     }
 

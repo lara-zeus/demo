@@ -2,19 +2,20 @@
 
 namespace App\Filament\Pages;
 
+use App\Filament\Clusters\ComponentsDemo;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
 
 class Matrix extends Page
 {
+    protected static ?string $cluster = ComponentsDemo::class;
+
     protected static ?string $navigationIcon = 'carbon-scatter-matrix';
 
     protected static string $view = 'filament.pages.qrcode';
 
     protected static ?int $navigationSort = 3;
-
-    protected static ?string $navigationGroup = 'App';
 
     public array $data;
 
@@ -27,7 +28,7 @@ class Matrix extends Page
 
     public function getTitle(): string
     {
-        return 'Matrix Grid (Demo)';
+        return 'Matrix Grid';
     }
 
     public function form(Form $form): Form

@@ -8,15 +8,26 @@
 @import 'tippy.js/dist/tippy.css';
 @import "carbon.css";
 
-.field-type .choices__list--single{
+.field-type .choices__list--single {
     @apply !w-full;
 }
-.field-type .choices__list--single .tip, .field-type .choices__list--single .field-desc{
-    @apply /*mr-6*/ !hidden;
+
+.field-type .choices__list--single .tip, .field-type .choices__list--single .field-desc {
+    @apply /*mr-6*/
+    !hidden;
 }
 
-:root{
-    --c-50:var(--primary-50);--c-100:var(--primary-100);--c-200:var(--primary-200);--c-300:var(--primary-300);--c-400:var(--primary-400);--c-500:var(--primary-500);--c-600:var(--primary-600);--c-700:var(--primary-700);--c-800:var(--primary-800);--c-900:var(--primary-900);
+:root {
+    --c-50: var(--primary-50);
+    --c-100: var(--primary-100);
+    --c-200: var(--primary-200);
+    --c-300: var(--primary-300);
+    --c-400: var(--primary-400);
+    --c-500: var(--primary-500);
+    --c-600: var(--primary-600);
+    --c-700: var(--primary-700);
+    --c-800: var(--primary-800);
+    --c-900: var(--primary-900);
 }
 
 [dir=rtl] {
@@ -52,20 +63,37 @@
 .fi-sidebar {
     @apply !shadow-2xl;
 }
-.fi-sidebar-nav ul{
+
+.fi-sidebar-nav ul {
     @apply !gap-y-2;
 }
+
 .fi-sidebar-header {
     @apply !px-2 py-4 justify-center;
     @apply !bg-gradient-to-tr from-primary-50/50 via-secondary-50 to-secondary-50;
     @apply dark:from-secondary-900/50 dark:via-gray-900 dark:to-gray-900;
 }
 
-.fi-sidebar-group:not(:first-child) {
+.fi-sidebar-group {
     @apply !bg-gradient-to-tr from-primary-50/25 via-secondary-50/50 to-secondary-50/50;
     @apply dark:!from-primary-800 dark:!via-gray-800 dark:!to-gray-800;
     @apply dark:border-gray-700/25 !shadow rounded-3xl rounded-tl-none;
-    @apply border border-secondary-500/25 my-2;
+    @apply border border-secondary-500/25 my-2 p-2;
+}
+
+.fi-sidebar-group-paid {
+    @apply !bg-gradient-to-tr from-primary-50/25 via-secondary-50/50 to-secondary-50/50;
+    @apply dark:!from-primary-800 dark:!via-gray-800 dark:!to-gray-800;
+    @apply dark:border-gray-700/25 !shadow-md !shadow-sky-50 rounded-3xl rounded-tl-none;
+    @apply border border-sky-500/50 my-2 p-2;
+}
+
+.fi-sidebar-item-active a, .fi-sidebar-item-active a .fi-sidebar-item-label {
+    @apply !bg-gray-50/0 !font-semibold !text-base;
+}
+
+.fi-sidebar-group-label a[href*="example"] {
+    background-color: silver;
 }
 
 .fi-sidebar-group > div > span {
@@ -85,13 +113,12 @@
     @apply !ring-secondary-500/25;
 }
 
-.fi-section
-{
+.fi-section {
     @apply !shadow-md;
     @apply dark:!from-primary-900/80 dark:!via-gray-900 dark:!to-gray-900;
 }
 
-.fi-simple-main{
+.fi-simple-main {
     @apply !shadow-2xl !bg-opacity-10 dark:!bg-opacity-40 rounded-2xl;
     @apply !bg-gradient-to-tr from-primary-50/10 via-secondary-50/50 to-secondary-50/10;
     @apply dark:from-primary-100/10 dark:via-secondary-100/30 dark:to-secondary-100/10;
@@ -100,34 +127,42 @@
 pre {
     @apply rounded-md overflow-x-auto;
 }
+
 pre code.torchlight {
     @apply block py-4;
 }
+
 pre code.torchlight .line {
     @apply px-4;
 }
+
 pre code.torchlight .line-number {
     @apply text-gray-50;
 }
+
 pre code.torchlight .line-number,
 pre code.torchlight .summary-caret {
     @apply ltr:mr-4 rtl:ml-4;
 }
 
 /*popover*/
-.fi-popover{
+.fi-popover {
     @apply w-full;
 }
-.fi-popover-trigger{
+
+.fi-popover-trigger {
     @apply justify-between;
 }
-.fi-popover .tippy-box/*[data-theme~=light]*/{
+
+.fi-popover .tippy-box /*[data-theme~=light]*/
+{
     @apply dark:border-gray-700/25 !shadow rounded-3xl rounded-tl-none;
     @apply border border-secondary-500/25 my-2;
     @apply !bg-gradient-to-tr from-secondary-50 via-secondary-50 to-primary-50/50;
     @apply dark:from-primary-100/10 dark:via-secondary-100/30 dark:to-secondary-100/10;
 }
-.fi-popover .tippy-box[data-placement^=right]>.tippy-arrow:before{
+
+.fi-popover .tippy-box[data-placement^=right] > .tippy-arrow:before {
     @apply border-r-secondary-500/25;
 }
 

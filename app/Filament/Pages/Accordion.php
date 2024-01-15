@@ -2,6 +2,7 @@
 
 namespace App\Filament\Pages;
 
+use App\Filament\Clusters\ComponentsDemo;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
@@ -10,13 +11,13 @@ use LaraZeus\Accordion\Forms\Accordions;
 
 class Accordion extends Page
 {
+    protected static ?string $cluster = ComponentsDemo::class;
+
     protected static ?string $navigationIcon = 'vaadin-accordion-menu';
 
     protected static string $view = 'filament.pages.accordion';
 
     protected static ?int $navigationSort = 4;
-
-    protected static ?string $navigationGroup = 'App';
 
     public array $data;
 
@@ -27,7 +28,7 @@ class Accordion extends Page
 
     public function getTitle(): string
     {
-        return 'Accordion (Demo)';
+        return 'Accordion';
     }
 
     public function form(Form $form): Form

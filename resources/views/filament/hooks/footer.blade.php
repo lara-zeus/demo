@@ -21,7 +21,7 @@
         </a>.
     </p>
     <p>
-        <a href="https://larazeus.com/" target="_blank">@zeus</a>
+        <a class="" href="https://larazeus.com/" target="_blank">@zeus</a>
     </p>
 
     <a href="https://filamentphp.com/" target="_blank" class="block p-2 transition duration-300 will-change-transform hover:scale-105 motion-reduce:transition-none">
@@ -39,27 +39,5 @@
         </div>
     </a>
 </div>
-
-<script>
-    var scrollToSection = function (event) {
-        setTimeout(() => {
-            const activeSidebarItem = document.querySelector('.fi-sidebar-item-active');
-            const sidebarWrapper = document.querySelector('.fi-sidebar-nav')
-
-            if (
-                typeof(sidebarWrapper) != 'undefined' && sidebarWrapper != null
-                && typeof(activeSidebarItem) != 'undefined' && activeSidebarItem != null
-            )
-            {
-                sidebarWrapper.style.scrollBehavior = 'smooth';
-                sidebarWrapper.scrollTo(0, activeSidebarItem.offsetTop - 250)
-            }
-
-        }, 1)
-    };
-
-    document.addEventListener('livewire:navigated', scrollToSection);
-    document.addEventListener('DOMContentLoaded', scrollToSection);
-</script>
 
 @stillStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)

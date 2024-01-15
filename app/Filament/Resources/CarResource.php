@@ -2,27 +2,22 @@
 
 namespace App\Filament\Resources;
 
+use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Resources\CarResource\Pages;
-use App\Filament\Resources\CarResource\RelationManagers;
 use App\Models\Car;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class CarResource extends Resource
 {
+    protected static ?string $cluster = ComponentsDemo::class;
+
     protected static ?string $model = Car::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
-    public static function getNavigationGroup(): ?string
-    {
-        return 'App';
-    }
 
     public static function form(Form $form): Form
     {
