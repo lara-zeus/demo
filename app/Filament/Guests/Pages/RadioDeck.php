@@ -17,9 +17,11 @@ class RadioDeck extends Page
 
     protected static ?int $navigationSort = 2;
 
-    public $data = [];
+    protected static ?string $navigationGroup = 'Plugins';
 
-    public function mount()
+    public array $data = [];
+
+    public function mount(): void
     {
         $this->form->fill();
     }

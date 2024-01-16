@@ -2,13 +2,9 @@
 
 namespace App\Filament\Guests\Pages;
 
-use Filament\Forms\Form;
 use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
 use Filament\Support\Colors\Color;
-use Filament\Support\Enums\Alignment;
-use Filament\Support\Enums\IconPosition;
-use Filament\Support\Enums\IconSize;
 use JaOcero\ActivityTimeline\Components\ActivityDate;
 use JaOcero\ActivityTimeline\Components\ActivityDescription;
 use JaOcero\ActivityTimeline\Components\ActivityIcon;
@@ -21,11 +17,13 @@ class ActivityTimeline extends Page
 
     protected static ?string $navigationIcon = 'mdi-timeline-outline';
 
+    protected static ?string $navigationGroup = 'Plugins';
+
     protected static ?int $navigationSort = 3;
 
-    public $data = [];
+    public array $data = [];
 
-    public function mount()
+    public function mount(): void
     {
         $this->form->fill();
     }
@@ -58,8 +56,8 @@ class ActivityTimeline extends Page
                         'description' => 'Idea for my article.',
                         'status' => 'ideation',
                         'created_at' => now()->subDays(7),
-                    ]
-                ]
+                    ],
+                ],
             ])
             ->schema([
 
@@ -82,14 +80,14 @@ class ActivityTimeline extends Page
                             ->date('F j, Y', 'Asia/Manila')
                             ->placeholder('No date is set.'),
                         ActivityIcon::make('status')
-                            ->icon(fn (string | null $state): string | null => match ($state) {
+                            ->icon(fn (?string $state): ?string => match ($state) {
                                 'ideation' => 'heroicon-m-light-bulb',
                                 'drafting' => 'heroicon-m-bolt',
                                 'reviewing' => 'heroicon-m-document-magnifying-glass',
                                 'published' => 'heroicon-m-rocket-launch',
                                 default => null,
                             })
-                            ->color(fn (string | null $state): string | null => match ($state) {
+                            ->color(fn (?string $state): ?string => match ($state) {
                                 'ideation' => 'purple',
                                 'drafting' => 'info',
                                 'reviewing' => 'warning',
@@ -101,7 +99,7 @@ class ActivityTimeline extends Page
                     ->showItemsLabel('View Old') // Show "View Old" as link label
                     ->showItemsIcon('heroicon-m-chevron-down') // Show button icon
                     ->showItemsColor('gray') // Show button color and it supports all colors
-                    ->aside(true)
+                    ->aside(true),
             ]);
     }
 }
