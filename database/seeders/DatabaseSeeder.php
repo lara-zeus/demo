@@ -32,10 +32,7 @@ class DatabaseSeeder extends Seeder
             WindSeeder::class,
             SkySeeder::class,
             BoltSeeder::class,
-            BoltProSeeder::class,
-            ThunderSeeder::class,
             RainSeeder::class,
-            HermesSeeder::class,
             BoltSectionsSeeder::class,
         ]);
     }

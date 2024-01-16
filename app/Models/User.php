@@ -10,7 +10,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use LaraZeus\Thunder\Concerns\ManageOffice;
 use Filament\Models\Contracts\HasAvatar;
 
 class User extends Authenticatable implements FilamentUser, HasAvatar
@@ -18,7 +17,6 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
     use HasApiTokens;
     use HasFactory;
     use HasViews;
-    use ManageOffice;
     use Notifiable;
 
     protected $guarded = [];

@@ -7,6 +7,13 @@
 ### Starter kit
 hit the ground running with our starter kit, try it now:
 
+## install
+
+this branch is for local, to install:
+clone the repo
+composer install
+php artisan migrate --seed
+
 ## Quick start
 
 [![starter-kit](https://larazeus.com/images/starter-kit-mini.png?v=2)](https://github.com/lara-zeus/zeus)
