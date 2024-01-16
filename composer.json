@@ -53,6 +53,7 @@
         "njxqlus/filament-progressbar": "dev-main",
         "pxlrbt/filament-spotlight": "^1.0",
         "ryangjchandler/blade-tabler-icons": "^2.0",
+        "saade/blade-iconsax": "^1.1",
         "sentry/sentry-laravel": "^3.3",
         "stechstudio/filament-impersonate": "^3.5",
         "swisnl/filament-backgrounds": "^1.1",

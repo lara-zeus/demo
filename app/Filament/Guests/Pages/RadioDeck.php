@@ -11,9 +11,9 @@ use Filament\Support\Enums\IconSize;
 
 class RadioDeck extends Page
 {
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
-
     protected static string $view = 'filament.guests.pages.radio-deck';
+
+    protected static ?string $navigationIcon = 'iconsax-lin-radio';
 
     protected static ?int $navigationSort = 2;
 
