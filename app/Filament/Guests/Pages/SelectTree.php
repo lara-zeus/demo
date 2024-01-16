@@ -72,7 +72,7 @@ class SelectTree extends Page
                             ->disabledOptions([2, 3, 4])
                         ,
 
-                        Placeholder::make('br')->content(new HtmlString('<br><br><br><br><br><br><br><br>')),
+                        Placeholder::make('br')->hiddenLabel()->content(new HtmlString('<br><br><br><br><br><br><br><br>')),
 
                         \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories')
                             ->placeholder(__('Please select a category'))
