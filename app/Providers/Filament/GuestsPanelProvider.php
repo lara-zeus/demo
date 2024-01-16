@@ -10,6 +10,7 @@ use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
 use Filament\Widgets;
+use Illuminate\Contracts\View\View;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -25,9 +26,15 @@ class GuestsPanelProvider extends PanelProvider
         return $panel
             ->id('guests')
             ->path('guests')
+            ->brandName('Plugins Showcase')
             ->colors([
                 'primary' => Color::Amber,
             ])
+            ->theme(asset('css/filament-guests.css'))
+            ->renderHook(
+                'panels::footer',
+                fn(): View => view('filament.hooks.footer-guests'),
+            )
             ->discoverResources(in: app_path('Filament/Guests/Resources'), for: 'App\\Filament\\Guests\\Resources')
             ->discoverPages(in: app_path('Filament/Guests/Pages'), for: 'App\\Filament\\Guests\\Pages')
             ->pages([
@@ -35,8 +42,7 @@ class GuestsPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Guests/Widgets'), for: 'App\\Filament\\Guests\\Widgets')
             ->widgets([
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
+                //Widgets\FilamentInfoWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
@@ -48,9 +54,6 @@ class GuestsPanelProvider extends PanelProvider
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
-            ])
-            ->authMiddleware([
-                Authenticate::class,
             ]);
     }
 }
