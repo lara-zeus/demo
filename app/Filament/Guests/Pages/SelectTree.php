@@ -17,7 +17,7 @@ class SelectTree extends Page
 
     protected static ?string $navigationGroup = 'Plugins';
 
-    public array $data = [];
+    public ?array $data = [];
 
     public function mount(): void
     {

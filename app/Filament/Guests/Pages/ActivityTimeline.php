@@ -21,7 +21,7 @@ class ActivityTimeline extends Page
 
     protected static ?int $navigationSort = 3;
 
-    public array $data = [];
+    public ?array $data = [];
 
     public function mount(): void
     {
