@@ -90,23 +90,33 @@ class AdminPanelProvider extends PanelProvider
             ->sidebarCollapsibleOnDesktop()
             ->maxContentWidth('full')
             ->favicon(asset('favicon.ico'))
+
             ->navigationGroups([
-                'App',
-                'Bolt',
-                'Thunder',
-                'Hermes',
-                'Helen',
-                'Hera',
-                'Sky',
-                'Wind',
-                'Dynamic Dashboard',
-                'Rhea',
-            ])
-            /*->navigationGroups([
+                NavigationGroup::make()->label('App'),
+
+                NavigationGroup::make()->label('Bolt'),
                 NavigationGroup::make()
-                    ->label('App')
-                    ->extraAttributes(['class' => 'fi-sidebar-group-paid']),
-            ])*/
+                    ->label('Thunder')
+                    //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                ,
+                NavigationGroup::make()
+                    ->label('Hermes')
+                    //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                ,
+                NavigationGroup::make()
+                    ->label('Helen')
+                    //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                ,
+                NavigationGroup::make()
+                    ->label('Hera')
+                    //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                ,
+
+                NavigationGroup::make()->label('Sky'),
+                NavigationGroup::make()->label('Wind'),
+                NavigationGroup::make()->label('Dynamic Dashboard'),
+                NavigationGroup::make()->label('Rhea'),
+            ])
             ->unsavedChangesAlerts()
 
             // hermes
@@ -179,8 +189,8 @@ class AdminPanelProvider extends PanelProvider
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
-            //
             ->discoverClusters(in: app_path('Filament/Clusters'), for: 'App\\Filament\\Clusters')
+            //
             ->pages([
                 Pages\Dashboard::class,
                 //\LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboard::class,
@@ -246,6 +256,7 @@ class AdminPanelProvider extends PanelProvider
                     LetterResource::class,
                     OperationsResource::class,
                     TicketResource::class,
+                    MenuSectionResource::class,
                 ]),
 
             SpatieLaravelTranslatablePlugin::make()

@@ -2,7 +2,6 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Resources\CarResource\Pages;
 use App\Models\Car;
 use Filament\Forms;
@@ -13,9 +12,9 @@ use Filament\Tables\Table;
 
 class CarResource extends Resource
 {
-    protected static ?string $cluster = ComponentsDemo::class;
-
     protected static ?string $model = Car::class;
+
+    protected static ?string $navigationGroup = 'App';
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -44,9 +43,6 @@ class CarResource extends Resource
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
-            ->filters([
-                //
-            ])
             ->actions([
                 Tables\Actions\EditAction::make(),
             ])
@@ -55,13 +51,6 @@ class CarResource extends Resource
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
-    }
-
-    public static function getRelations(): array
-    {
-        return [
-            //
-        ];
     }
 
     public static function getPages(): array
