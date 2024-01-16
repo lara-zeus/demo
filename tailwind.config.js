@@ -60,6 +60,8 @@ module.exports = {
         './vendor/archilex/filament-filter-sets/**/*.php',
         './vendor/bezhansalleh/filament-panel-switch/resources/views/panel-switch-menu.blade.php',
         './vendor/jaocero/radio-deck/resources/views/**/*.blade.php',
+        './vendor/jaocero/activity-timeline/resources/views/**/*.blade.php',
+
     ],
     darkMode: 'class',
     theme: {

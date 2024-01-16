@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c17065dad7de9bbb6cabb8a7f0af08b",
+    "content-hash": "923534dfb52d9a585b540a680c686659",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -5366,6 +5366,80 @@
             "time": "2023-04-03T12:47:32+00:00"
         },
         {
+            "name": "jaocero/activity-timeline",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/199ocero/activity-timeline.git",
+                "reference": "665e03a3ed12b3981755217fa8b011ff161f9b80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/199ocero/activity-timeline/zipball/665e03a3ed12b3981755217fa8b011ff161f9b80",
+                "reference": "665e03a3ed12b3981755217fa8b011ff161f9b80",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "illuminate/contracts": "^10.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.15.0"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^7.9",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JaOcero\\ActivityTimeline\\ActivityTimelineServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JaOcero\\ActivityTimeline\\": "src/",
+                    "JaOcero\\ActivityTimeline\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jay-Are Ocero",
+                    "email": "199ocero@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Activity Timeline plugin conveniently presents upcoming, ongoing, and past activities, offering a comprehensive view of events.",
+            "homepage": "https://github.com/jaocero/activity-timeline",
+            "keywords": [
+                "activity-timeline",
+                "filament-infolists",
+                "filamentphp",
+                "jaocero",
+                "laravel",
+                "timeline"
+            ],
+            "support": {
+                "issues": "https://github.com/jaocero/activity-timeline/issues",
+                "source": "https://github.com/jaocero/activity-timeline"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/jaocero",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-01-14T10:31:26+00:00"
+        },
+        {
             "name": "jaocero/radio-deck",
             "version": "v1.1.2",
             "source": {
@@ -10573,6 +10647,77 @@
                 }
             ],
             "time": "2023-11-12T21:59:55+00:00"
+        },
+        {
+            "name": "postare/blade-mdi",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/postare/blade-mdi.git",
+                "reference": "3beb49cb5445ece04c3ceaa1b1cfa0ce1d1c1ff0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/postare/blade-mdi/zipball/3beb49cb5445ece04c3ceaa1b1cfa0ce1d1c1ff0",
+                "reference": "3beb49cb5445ece04c3ceaa1b1cfa0ce1d1c1ff0",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.5",
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.0|^8.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Postare\\BladeMdi\\BladeMdiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Postare\\BladeMdi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inerba",
+                    "homepage": "https://github.com/inerba",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Material Design Icons for Laravel Blade views.",
+            "homepage": "https://github.com/renoki-co/blade-mdi",
+            "keywords": [
+                "blade",
+                "design",
+                "icons",
+                "kit",
+                "laravel",
+                "material",
+                "mdi",
+                "php",
+                "ui"
+            ],
+            "support": {
+                "source": "https://github.com/postare/blade-mdi/tree/v1.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/renoki-co",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-30T08:35:22+00:00"
         },
         {
             "name": "psr/cache",

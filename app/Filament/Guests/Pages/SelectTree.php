@@ -26,10 +26,10 @@ class SelectTree extends Page
     {
         return $form
             ->model(SelectTreeBlog::class)
+            ->statePath('data')
             ->schema([
                 Section::make()
                     ->columns(2)
-                    ->statePath('data')
                     ->schema([
                         \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories_1')
                             ->label('with count')

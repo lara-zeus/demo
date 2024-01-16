@@ -17,11 +17,20 @@ class RadioDeck extends Page
 
     protected static ?int $navigationSort = 2;
 
+    public $data = [];
+
+    public function mount()
+    {
+        $this->form->fill();
+    }
+
     public function form(Form $form): Form
     {
         return $form
+            ->statePath('data')
             ->schema([
-                \JaOcero\RadioDeck\Forms\Components\RadioDeck::make('Select OS')
+                \JaOcero\RadioDeck\Forms\Components\RadioDeck::make('select-os-1')
+                    ->label('Select OS')
                     ->options([
                         'ios' => 'iOS',
                         'android' => 'Android',
@@ -53,7 +62,8 @@ class RadioDeck extends Page
                     ->color('primary') // supports all color custom or not
                     ->columns(3),
 
-                \JaOcero\RadioDeck\Forms\Components\RadioDeck::make('custom color')
+                \JaOcero\RadioDeck\Forms\Components\RadioDeck::make('select-os-2')
+                    ->label('custom color')
                     ->options([
                         'ios' => 'iOS',
                         'android' => 'Android',
@@ -85,7 +95,8 @@ class RadioDeck extends Page
                     ->color(Color::hex('#45B39D'))
                     ->columns(3),
 
-                \JaOcero\RadioDeck\Forms\Components\RadioDeck::make('custom icon size and alignment')
+                \JaOcero\RadioDeck\Forms\Components\RadioDeck::make('select-os-3')
+                    ->label('custom icon size and alignment')
                     ->options([
                         'ios' => 'iOS',
                         'android' => 'Android',
