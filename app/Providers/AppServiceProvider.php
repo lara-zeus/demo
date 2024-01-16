@@ -2,11 +2,13 @@
 
 namespace App\Providers;
 
+use BezhanSalleh\PanelSwitch\PanelSwitch;
 use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;
 use Filament\Support\Colors\Color;
 use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentColor;
+use Filament\Support\Facades\FilamentIcon;
 use Filament\Support\Facades\FilamentView;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Blade;
@@ -26,12 +28,36 @@ class AppServiceProvider extends ServiceProvider
             URL::forceScheme('https');
         }
 
+        FilamentIcon::register([
+            'panels::panel-switch-modern-icon' => 'iconpark-switchbutton',
+        ]);
+
+        PanelSwitch::configureUsing(function (PanelSwitch $panelSwitch) {
+            $panelSwitch
+                ->canSwitchPanels(true)
+                ->visible(true)
+                ->modalHeading('Available Panels')
+                ->slideOver()
+                ->modalWidth('sm')
+                ->labels([
+                    'admin' => 'Zeus Plugins',
+                    'guests' => __('Community Plugins Showcase'),
+                ])
+                ->icons([
+                    'admin' => 'heroicon-o-bolt',
+                    'validPanelId2' => 'heroicon-o-users',
+                ])
+                ->iconSize(20)
+                ->renderHook('panels::user-menu.before');
+
+        });
+
         //$this->hooksRenderer();
 
         Filament::serving(function () {
             FilamentAsset::register([
-                Css::make('example-external-stylesheet', asset('css/flag-icons.css')),
-                Css::make('filament-stylesheet', asset('css/filament-zeus.css')),
+                Css::make('flags', asset('css/flag-icons.css')),
+                //Css::make('filament-stylesheet', asset('css/filament-zeus.css')),
             ]);
         });
 

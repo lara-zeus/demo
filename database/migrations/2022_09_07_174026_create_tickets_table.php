@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(config('zeus-thunder.table-prefix').'tickets', function (Blueprint $table) {
+        Schema::create(config('zeus-thunder.table-prefix') . 'tickets', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('ticket_no', 20);
 
-            $table->foreignId('office_id')->constrained(config('zeus-thunder.table-prefix').'offices');
+            $table->foreignId('office_id')->constrained(config('zeus-thunder.table-prefix') . 'offices');
             $table->foreignId('category_id')->nullable()->constrained('categories')->nullOnDelete();
             $table->foreignId('response_id')->nullable()->constrained('responses')->nullOnDelete();
             $table->foreignId('user_id')->nullable()->constrained('users');
@@ -43,6 +43,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('zeus-thunder.table-prefix').'tickets');
+        Schema::dropIfExists(config('zeus-thunder.table-prefix') . 'tickets');
     }
 };

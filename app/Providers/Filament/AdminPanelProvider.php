@@ -3,12 +3,8 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
-use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
-use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
-use Archilex\AdvancedTables\Resources\UserViewResource;
 use Awcodes\FilamentGravatar\GravatarPlugin;
 use Awcodes\FilamentGravatar\GravatarProvider;
-use Awcodes\FilamentQuickCreate\QuickCreatePlugin;
 use Awcodes\FilamentVersions\VersionsPlugin;
 use Awcodes\FilamentVersions\VersionsWidget;
 use Awcodes\LightSwitch\LightSwitchPlugin;
@@ -50,6 +46,7 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
+            ->theme(asset('css/filament-zeus.css'))
             ->homeUrl('/')
             ->id('admin')
             ->path('admin')
@@ -58,7 +55,7 @@ class AdminPanelProvider extends PanelProvider
             ->font('Karla')
             ->plugins($this->getPlugins())
             ->defaultAvatarProvider(GravatarProvider::class)
-            ->brandLogo(fn() => view('filament.logo'))
+            ->brandLogo(fn () => view('filament.logo'))
             ->colors([
                 ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
                 'primary' => Color::hex('#45B39D'),
@@ -82,19 +79,19 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()->label('Bolt'),
                 NavigationGroup::make()
                     ->label('Thunder')
-                    //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
                 ,
                 NavigationGroup::make()
                     ->label('Hermes')
-                    //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
                 ,
                 NavigationGroup::make()
                     ->label('Helen')
-                    //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
                 ,
                 NavigationGroup::make()
                     ->label('Hera')
-                    //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
                 ,
 
                 NavigationGroup::make()->label('Sky'),
@@ -106,12 +103,12 @@ class AdminPanelProvider extends PanelProvider
 
             ->renderHook(
                 'panels::topbar.start',
-                fn(array $scopes): View => view('filament.hooks.store'),
+                fn (array $scopes): View => view('filament.hooks.store'),
             )
             // bolt
             ->renderHook(
                 'panels::page.start',
-                fn(array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
+                fn (array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
                 scopes: [
                     FormResource::class,
                     CategoryResource::class,
@@ -121,12 +118,12 @@ class AdminPanelProvider extends PanelProvider
             // lang
             ->renderHook(
                 'panels::user-menu.before',
-                fn(): View => view('filament.hooks.lang-switcher'),
+                fn (): View => view('filament.hooks.lang-switcher'),
             )
             // footer
             ->renderHook(
                 'panels::footer',
-                fn(): View => view('filament.hooks.footer'),
+                fn (): View => view('filament.hooks.footer'),
             )
             //
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
@@ -164,11 +161,6 @@ class AdminPanelProvider extends PanelProvider
     {
         return [
             FilamentBackgroundsPlugin::make(),
-            AdvancedTablesPlugin::make()
-                ->resourceNavigationGroup('Bolt')
-                ->resourceNavigationSort(99)
-                ->favoritesBarTheme(FavoritesBarTheme::Filament),
-
             GravatarPlugin::make(),
             SpotlightPlugin::make(),
             LightSwitchPlugin::make(),

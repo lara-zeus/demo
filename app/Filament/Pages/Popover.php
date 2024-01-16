@@ -4,20 +4,19 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Models\User;
-use Filament\Pages\Page;
-use Filament\Tables\Columns\TextColumn;
-use LaraZeus\Popover\Tables\PopoverColumn;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
+use Filament\Pages\Page;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
-
+use LaraZeus\Popover\Tables\PopoverColumn;
 
 class Popover extends Page implements HasForms, HasTable
 {
-    use InteractsWithTable;
     use InteractsWithForms;
+    use InteractsWithTable;
 
     protected static ?string $cluster = ComponentsDemo::class;
 
@@ -51,7 +50,7 @@ class Popover extends Page implements HasForms, HasTable
                     ->offset([0, 10])
                     ->popOverMaxWidth('none')
                     ->icon('heroicon-o-chevron-right')
-                    ->content(fn($record) => view('filament.test.user-card', ['record' => $record])),
+                    ->content(fn ($record) => view('filament.test.user-card', ['record' => $record])),
 
                 TextColumn::make('email')
                     ->sortable()
@@ -60,5 +59,4 @@ class Popover extends Page implements HasForms, HasTable
                     ->searchable(),
             ]);
     }
-
 }

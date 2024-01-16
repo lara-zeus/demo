@@ -12,7 +12,7 @@ class PackagesOverview extends Widget implements ZeusWidget
 
     protected static string $view = 'filament.widgets.packages-overview';
 
-    protected static ?int $sort = 3;
+    protected static ?int $sort = 4;
 
     protected int | string | array $columnSpan = 'full';
 }

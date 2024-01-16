@@ -84,7 +84,7 @@ class UserResource extends Resource
             TextInput::make('password')
                 ->password()
                 ->visibleOn('create')
-                ->required(fn(string $operation): bool => $operation === 'create')
+                ->required(fn (string $operation): bool => $operation === 'create')
                 ->maxLength(255),
         ]);
     }
@@ -147,7 +147,7 @@ class UserResource extends Resource
                         //->content(fn($record) => new HtmlString($record->name.'<br>'.$record->email))
 
                         // or blade content
-                        ->content(fn($record) => view('filament.test.user-card', ['record' => $record]))
+                        ->content(fn ($record) => view('filament.test.user-card', ['record' => $record]))
 
                     // or livewire component
                     //->content(fn($record) => new HtmlString(Blade::render('@livewire(\App\Filament\Widgets\DemoStats::class, ["lazy" => true])')))
@@ -199,9 +199,9 @@ class UserResource extends Resource
             ->defaultSort('id', 'desc')
             ->filters([
                 Filter::make('verified')
-                    ->query(fn(Builder $query): Builder => $query->whereNotNull('email_verified_at')),
+                    ->query(fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
                 Filter::make('unverified')
-                    ->query(fn(Builder $query): Builder => $query->whereNull('email_verified_at')),
+                    ->query(fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
             ]);
     }
 

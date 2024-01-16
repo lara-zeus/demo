@@ -26,4 +26,3 @@ class Car extends DataSourceContract
         return \App\Models\Car::class;
     }
 }
-

@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Reggae+One&display=swap');
 
 @import '../../vendor/filament/filament/resources/css/theme.css';
-/*@import '../../vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';*/
-@import '../../vendor/awcodes/filament-curator/resources/css/plugin.css';
-@import '../../vendor/archilex/filament-filter-sets/resources/css/plugin.css';
 @import '../../node_modules/cropperjs/dist/cropper.css';
 @import 'tippy.js/dist/tippy.css';
 @import "carbon.css";

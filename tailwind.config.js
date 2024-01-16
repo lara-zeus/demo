@@ -50,14 +50,15 @@ module.exports = {
         './resources/views/filament/**/*.blade.php',
         './vendor/filament/**/*.blade.php',
 
-        './vendor/awcodes/filament-tiptap-editor/resources/**/*.blade.php',
         './vendor/awcodes/filament-versions/resources/**/*.blade.php',
         './vendor/awcodes/filament-quick-create/resources/**/*.blade.php',
         './vendor/awcodes/overlook/resources/**/*.blade.php',
         './vendor/ryangjchandler/filament-navigation/resources/**/*.blade.php',
         './vendor/wire-elements/spotlight/resources/views/spotlight.blade.php',
-        './vendor/awcodes/filament-curator/resources/**/*.blade.php',
-        './vendor/archilex/filament-filter-sets/**/*.php',
+        './vendor/bezhansalleh/filament-panel-switch/resources/views/panel-switch-menu.blade.php',
+        './vendor/jaocero/radio-deck/resources/views/**/*.blade.php',
+        './vendor/jaocero/activity-timeline/resources/views/**/*.blade.php',
+
     ],
     darkMode: 'class',
     theme: {
