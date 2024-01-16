@@ -18,4 +18,4 @@ hit the ground running with our starter kit, try it now:
 
 - [Github](https://github.com/lara-zeus)
 - [website](https://larazeus.com)
-- [Demo](https://larazeus.com/demo)
+- [Demo](https://demo.larazeus.com)
