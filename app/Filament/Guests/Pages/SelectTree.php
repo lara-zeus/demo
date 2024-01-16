@@ -15,6 +15,13 @@ class SelectTree extends Page
 
     protected static ?int $navigationSort = 1;
 
+    public $data = [];
+
+    public function mount()
+    {
+        $this->form->fill();
+    }
+
     public function form(Form $form): Form
     {
         return $form
@@ -22,8 +29,9 @@ class SelectTree extends Page
             ->schema([
                 Section::make()
                     ->columns(2)
+                    ->statePath('data')
                     ->schema([
-                        \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories')
+                        \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories_1')
                             ->label('with count')
                             ->placeholder(__('Please select a category'))
                             ->enableBranchNode()
@@ -32,7 +40,7 @@ class SelectTree extends Page
                             ->searchable()
                             ->relationship('categories', 'name', 'parent_id'),
 
-                        \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories')
+                        \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories_2')
                             ->placeholder(__('Please select a category'))
                             ->label('independent')
                             ->enableBranchNode()
@@ -41,7 +49,7 @@ class SelectTree extends Page
                             ->relationship('categories', 'name', 'parent_id')
                             ->independent(false),
 
-                        \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories')
+                        \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories_3')
                             ->placeholder(__('Please select a category'))
                             ->label('expand selected')
                             ->enableBranchNode()
@@ -50,7 +58,7 @@ class SelectTree extends Page
                             ->relationship('categories', 'name', 'parent_id')
                             ->expandSelected(false),
 
-                        \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories')
+                        \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories_4')
                             ->placeholder(__('Please select a category'))
                             ->label('expand selected')
                             ->enableBranchNode()
@@ -59,7 +67,7 @@ class SelectTree extends Page
                             ->relationship('categories', 'name', 'parent_id')
                             ->defaultOpenLevel(2),
 
-                        \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories')
+                        \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories_5')
                             ->placeholder(__('Please select a category'))
                             ->label('disabled options')
                             ->enableBranchNode()
