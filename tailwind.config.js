@@ -59,6 +59,7 @@ module.exports = {
         './vendor/awcodes/filament-curator/resources/**/*.blade.php',
         './vendor/archilex/filament-filter-sets/**/*.php',
         './vendor/bezhansalleh/filament-panel-switch/resources/views/panel-switch-menu.blade.php',
+        './vendor/jaocero/radio-deck/resources/views/**/*.blade.php',
     ],
     darkMode: 'class',
     theme: {

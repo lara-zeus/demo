@@ -9,7 +9,7 @@ class SelectTreeCategory extends Model
 {
     protected $fillable = [
         'name',
-        'parent_id'
+        'parent_id',
     ];
 
     public function children(): HasMany

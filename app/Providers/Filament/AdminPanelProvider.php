@@ -74,7 +74,7 @@ class AdminPanelProvider extends PanelProvider
             ->font('Karla')
             ->plugins($this->getPlugins())
             ->defaultAvatarProvider(GravatarProvider::class)
-            ->brandLogo(fn() => view('filament.logo'))
+            ->brandLogo(fn () => view('filament.logo'))
             ->colors([
                 ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
                 'primary' => Color::hex('#45B39D'),
@@ -98,19 +98,19 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()->label('Bolt'),
                 NavigationGroup::make()
                     ->label('Thunder')
-                    //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
                 ,
                 NavigationGroup::make()
                     ->label('Hermes')
-                    //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
                 ,
                 NavigationGroup::make()
                     ->label('Helen')
-                    //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
                 ,
                 NavigationGroup::make()
                     ->label('Hera')
-                    //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
                 ,
 
                 NavigationGroup::make()->label('Sky'),
@@ -123,7 +123,7 @@ class AdminPanelProvider extends PanelProvider
             // hermes
             ->renderHook(
                 'panels::page.start',
-                fn(array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
+                fn (array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
                 scopes: [
                     BranchResource::class,
                     MenuItemLabelsResource::class,
@@ -133,12 +133,12 @@ class AdminPanelProvider extends PanelProvider
             )
             ->renderHook(
                 'panels::topbar.start',
-                fn(array $scopes): View => view('filament.hooks.store'),
+                fn (array $scopes): View => view('filament.hooks.store'),
             )
             // thunder
             ->renderHook(
                 'panels::page.start',
-                fn(array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
+                fn (array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
                 scopes: [
                     OfficeResource::class,
                     OperationsResource::class,
@@ -148,7 +148,7 @@ class AdminPanelProvider extends PanelProvider
             // helen
             ->renderHook(
                 'panels::page.start',
-                fn(array $scopes): View => view('filament.hooks.helen', ['scopes' => $scopes]),
+                fn (array $scopes): View => view('filament.hooks.helen', ['scopes' => $scopes]),
                 scopes: [
                     LinksResource::class,
                 ],
@@ -156,7 +156,7 @@ class AdminPanelProvider extends PanelProvider
             // hera
             ->renderHook(
                 'panels::page.start',
-                fn(array $scopes): View => view('filament.hooks.hera', ['scopes' => $scopes]),
+                fn (array $scopes): View => view('filament.hooks.hera', ['scopes' => $scopes]),
                 scopes: [
                     SeoScanResource::class,
                 ],
@@ -164,7 +164,7 @@ class AdminPanelProvider extends PanelProvider
             // bolt
             ->renderHook(
                 'panels::page.start',
-                fn(array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
+                fn (array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
                 scopes: [
                     FormResource::class,
                     CategoryResource::class,
@@ -179,12 +179,12 @@ class AdminPanelProvider extends PanelProvider
             // lang
             ->renderHook(
                 'panels::user-menu.before',
-                fn(): View => view('filament.hooks.lang-switcher'),
+                fn (): View => view('filament.hooks.lang-switcher'),
             )
             // footer
             ->renderHook(
                 'panels::footer',
-                fn(): View => view('filament.hooks.footer'),
+                fn (): View => view('filament.hooks.footer'),
             )
             //
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
@@ -227,10 +227,10 @@ class AdminPanelProvider extends PanelProvider
                 ->resourceNavigationSort(99)
                 ->favoritesBarTheme(FavoritesBarTheme::Filament),
             CuratorPlugin::make()
-                ->label(fn(): string => __('Media'))
-                ->pluralLabel(fn(): string => __('Media'))
+                ->label(fn (): string => __('Media'))
+                ->pluralLabel(fn (): string => __('Media'))
                 ->navigationIcon('heroicon-o-photo')
-                ->navigationGroup(fn(): string => __('Hermes'))
+                ->navigationGroup(fn (): string => __('Hermes'))
                 ->navigationSort(99)
                 ->navigationCountBadge(),
 

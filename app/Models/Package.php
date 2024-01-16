@@ -54,7 +54,7 @@ class Package extends Model
                 'admin_url' => url('/admin/seo-scans'),
                 'fe_text' => null,
                 'fe_url' => null,
-            ],[
+            ], [
                 'name' => 'Helen',
                 'other' => null,
                 'icon' => 'clarity-crown-solid',

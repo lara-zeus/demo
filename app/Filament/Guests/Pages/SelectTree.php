@@ -3,18 +3,17 @@
 namespace App\Filament\Guests\Pages;
 
 use App\Models\Guests\SelectTreeBlog;
-use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
-use Illuminate\Support\HtmlString;
-use LaraZeus\Sky\Models\Post;
 
 class SelectTree extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
     protected static string $view = 'filament.guests.pages.select-tree';
+
+    protected static ?int $navigationSort = 1;
 
     public function form(Form $form): Form
     {
@@ -49,8 +48,7 @@ class SelectTree extends Page
                             ->emptyLabel(__('Oops, no results have been found!'))
                             ->searchable()
                             ->relationship('categories', 'name', 'parent_id')
-                            ->expandSelected(false)
-                        ,
+                            ->expandSelected(false),
 
                         \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories')
                             ->placeholder(__('Please select a category'))
@@ -59,8 +57,7 @@ class SelectTree extends Page
                             ->emptyLabel(__('Oops, no results have been found!'))
                             ->searchable()
                             ->relationship('categories', 'name', 'parent_id')
-                            ->defaultOpenLevel(2)
-                        ,
+                            ->defaultOpenLevel(2),
 
                         \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories')
                             ->placeholder(__('Please select a category'))
@@ -69,21 +66,7 @@ class SelectTree extends Page
                             ->emptyLabel(__('Oops, no results have been found!'))
                             ->searchable()
                             ->relationship('categories', 'name', 'parent_id')
-                            ->disabledOptions([2, 3, 4])
-                        ,
-
-                        Placeholder::make('br')->hiddenLabel()->content(new HtmlString('<br><br><br><br><br><br><br><br>')),
-
-                        \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories')
-                            ->placeholder(__('Please select a category'))
-                            ->label('always open')
-                            ->enableBranchNode()
-                            ->emptyLabel(__('Oops, no results have been found!'))
-                            ->searchable()
-                            ->columnSpanFull()
-                            ->relationship('categories', 'name', 'parent_id')
-                            ->alwaysOpen()
-                        ,
+                            ->disabledOptions([2, 3, 4]),
                     ]),
             ]);
     }

@@ -72,7 +72,7 @@ class ThunderSeeder extends Seeder
             'created_at' => now(),
         ]);
 
-        $office = DB::table(config('zeus-thunder.table-prefix').'offices')->insertGetId([
+        $office = DB::table(config('zeus-thunder.table-prefix') . 'offices')->insertGetId([
             'name' => json_encode([
                 'en' => 'printers department',
                 'ar' => 'مشاكل الطابعات',
@@ -187,7 +187,7 @@ class ThunderSeeder extends Seeder
             'created_at' => now(),
         ]);
 
-        $ticket = DB::table(config('zeus-thunder.table-prefix').'tickets')->insertGetId([
+        $ticket = DB::table(config('zeus-thunder.table-prefix') . 'tickets')->insertGetId([
             'ticket_no' => Str::random(6),
             'office_id' => $office,
             'response_id' => $response_1,

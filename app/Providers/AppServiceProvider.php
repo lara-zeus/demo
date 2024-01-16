@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use BezhanSalleh\PanelSwitch\PanelSwitch;
 use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;
 use Filament\Support\Colors\Color;
@@ -13,7 +14,6 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
-use BezhanSalleh\PanelSwitch\PanelSwitch;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -39,7 +39,7 @@ class AppServiceProvider extends ServiceProvider
                 ->modalWidth('sm')
                 ->labels([
                     'admin' => 'Zeus Plugins',
-                    'guests' => __('Community Plugins Showcase')
+                    'guests' => __('Community Plugins Showcase'),
                 ])
                 ->icons([
                     'admin' => 'heroicon-o-bolt',
@@ -77,12 +77,12 @@ class AppServiceProvider extends ServiceProvider
 
         Blade::directive('zeus', function ($part = null) {
             return '<span class="title-font text-gray-700 group"><span class="title-font font-semibold text-primary-500 group-hover:text-secondary-500 transition ease-in-out duration-300">Lara&nbsp;<span class="title-font line-through italic text-secondary-500 group-hover:text-primary-500 transition ease-in-out duration-300">Z</span>eus</span></span>'
-            .($part) ?? '<span class="title-font text-base tracking-wide text-gray-500">{$part}</span>';
+            . ($part) ?? '<span class="title-font text-base tracking-wide text-gray-500">{$part}</span>';
         });
 
         Blade::directive('stillStats', function ($code) {
-            if (!app()->isLocal()) {
-                return '<!-- stats --><script async defer data-website-id="'.$code.'" src="https://stats.still-code.com/script.js"></script>';
+            if (! app()->isLocal()) {
+                return '<!-- stats --><script async defer data-website-id="' . $code . '" src="https://stats.still-code.com/script.js"></script>';
             }
 
             return '<!-- no tags for you -->';
@@ -104,8 +104,8 @@ class AppServiceProvider extends ServiceProvider
         foreach ($hooks as $key => $hook) {
             FilamentView::registerRenderHook(
                 "$hook",
-                fn(): View => view(
-                    'filament.hooks.'.session('current_theme', 'zeus').'-placeholder',
+                fn (): View => view(
+                    'filament.hooks.' . session('current_theme', 'zeus') . '-placeholder',
                     ['data' => "$hook"]
                 ),
             );

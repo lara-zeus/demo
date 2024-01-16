@@ -30,6 +30,7 @@
         "garygreen/pretty-routes": "^1.0",
         "graham-campbell/github": "^12.2",
         "guzzlehttp/guzzle": "^7.5",
+        "jaocero/radio-deck": "^1.1",
         "jeremykenedy/laravel-packagist": "^1.0",
         "lara-zeus/accordion": "^1.0",
         "lara-zeus/artemis": "^1.0",

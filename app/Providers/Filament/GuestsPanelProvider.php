@@ -2,7 +2,6 @@
 
 namespace App\Providers\Filament;
 
-use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Pages;
@@ -33,7 +32,7 @@ class GuestsPanelProvider extends PanelProvider
             ->theme(asset('css/filament-guests.css'))
             ->renderHook(
                 'panels::footer',
-                fn(): View => view('filament.hooks.footer-guests'),
+                fn (): View => view('filament.hooks.footer-guests'),
             )
             ->discoverResources(in: app_path('Filament/Guests/Resources'), for: 'App\\Filament\\Guests\\Resources')
             ->discoverPages(in: app_path('Filament/Guests/Pages'), for: 'App\\Filament\\Guests\\Pages')
