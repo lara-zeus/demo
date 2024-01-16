@@ -7,11 +7,13 @@ use Filament\Support\Assets\Css;
 use Filament\Support\Colors\Color;
 use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentColor;
+use Filament\Support\Facades\FilamentIcon;
 use Filament\Support\Facades\FilamentView;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
+use BezhanSalleh\PanelSwitch\PanelSwitch;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,12 +28,34 @@ class AppServiceProvider extends ServiceProvider
             URL::forceScheme('https');
         }
 
+        FilamentIcon::register([
+            'panels::panel-switch-modern-icon' => 'iconpark-switchbutton',
+        ]);
+
+        PanelSwitch::configureUsing(function (PanelSwitch $panelSwitch) {
+            $panelSwitch
+                ->modalHeading('Available Panels')
+                ->slideOver()
+                ->modalWidth('sm')
+                ->labels([
+                    'admin' => 'Zeus Plugins',
+                    'guests' => __('Community Plugins Showcase')
+                ])
+                ->icons([
+                    'admin' => 'heroicon-o-bolt',
+                    'validPanelId2' => 'heroicon-o-users',
+                ])
+                ->iconSize(20)
+                ->renderHook('panels::user-menu.before');
+
+        });
+
         //$this->hooksRenderer();
 
         Filament::serving(function () {
             FilamentAsset::register([
-                Css::make('example-external-stylesheet', asset('css/flag-icons.css')),
-                Css::make('filament-stylesheet', asset('css/filament-zeus.css')),
+                Css::make('flags', asset('css/flag-icons.css')),
+                //Css::make('filament-stylesheet', asset('css/filament-zeus.css')),
             ]);
         });
 
@@ -53,12 +77,12 @@ class AppServiceProvider extends ServiceProvider
 
         Blade::directive('zeus', function ($part = null) {
             return '<span class="title-font text-gray-700 group"><span class="title-font font-semibold text-primary-500 group-hover:text-secondary-500 transition ease-in-out duration-300">Lara&nbsp;<span class="title-font line-through italic text-secondary-500 group-hover:text-primary-500 transition ease-in-out duration-300">Z</span>eus</span></span>'
-            . ($part) ?? '<span class="title-font text-base tracking-wide text-gray-500">{$part}</span>';
+            .($part) ?? '<span class="title-font text-base tracking-wide text-gray-500">{$part}</span>';
         });
 
         Blade::directive('stillStats', function ($code) {
-            if (! app()->isLocal()) {
-                return '<!-- stats --><script async defer data-website-id="' . $code . '" src="https://stats.still-code.com/script.js"></script>';
+            if (!app()->isLocal()) {
+                return '<!-- stats --><script async defer data-website-id="'.$code.'" src="https://stats.still-code.com/script.js"></script>';
             }
 
             return '<!-- no tags for you -->';
@@ -80,8 +104,8 @@ class AppServiceProvider extends ServiceProvider
         foreach ($hooks as $key => $hook) {
             FilamentView::registerRenderHook(
                 "$hook",
-                fn (): View => view(
-                    'filament.hooks.' . session('current_theme', 'zeus') . '-placeholder',
+                fn(): View => view(
+                    'filament.hooks.'.session('current_theme', 'zeus').'-placeholder',
                     ['data' => "$hook"]
                 ),
             );

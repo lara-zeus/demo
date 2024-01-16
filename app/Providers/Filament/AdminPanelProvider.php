@@ -65,6 +65,7 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
+            ->theme(asset('css/filament-zeus.css'))
             ->homeUrl('/')
             ->id('admin')
             ->path('admin')

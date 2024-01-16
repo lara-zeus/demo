@@ -58,6 +58,7 @@ module.exports = {
         './vendor/wire-elements/spotlight/resources/views/spotlight.blade.php',
         './vendor/awcodes/filament-curator/resources/**/*.blade.php',
         './vendor/archilex/filament-filter-sets/**/*.php',
+        './vendor/bezhansalleh/filament-panel-switch/resources/views/panel-switch-menu.blade.php',
     ],
     darkMode: 'class',
     theme: {
