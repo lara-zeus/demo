@@ -40,12 +40,12 @@ class AppServiceProvider extends ServiceProvider
                 ->slideOver()
                 ->modalWidth('sm')
                 ->labels([
-                    'admin' => 'Zeus Plugins',
-                    'guests' => __('Community Plugins Showcase'),
+                    'admin' => 'Zeus',
+                    'guests' => __('Showcase'),
                 ])
                 ->icons([
                     'admin' => 'heroicon-o-bolt',
-                    'validPanelId2' => 'heroicon-o-users',
+                    'guests' => 'ri-artboard-line',
                 ])
                 ->iconSize(20)
                 ->renderHook('panels::user-menu.before');
