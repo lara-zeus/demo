@@ -1,7 +1,7 @@
 <x-filament-widgets::widget>
     <x-filament::section>
-        <div class="prose">
-            Hi there!🤙
+        <div class="prose dark:prose-invert">
+            <h3>Hi there!🤙</h3>
 
             <p>
                 <a href="https://filamentphp.com/" target="_blank">FilamentPHP</a> is home to a wide range of amazing plugins across various areas.

@@ -675,16 +675,16 @@
         },
         {
             "name": "awcodes/filament-quick-create",
-            "version": "v3.2.0",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/filament-quick-create.git",
-                "reference": "31d4dfccc9aec71765cfd0686ffd8f090757e72a"
+                "reference": "7daae99a08986595d5386a5c9b12db340bb6e066"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/filament-quick-create/zipball/31d4dfccc9aec71765cfd0686ffd8f090757e72a",
-                "reference": "31d4dfccc9aec71765cfd0686ffd8f090757e72a",
+                "url": "https://api.github.com/repos/awcodes/filament-quick-create/zipball/7daae99a08986595d5386a5c9b12db340bb6e066",
+                "reference": "7daae99a08986595d5386a5c9b12db340bb6e066",
                 "shasum": ""
             },
             "require": {
@@ -728,7 +728,7 @@
             ],
             "support": {
                 "issues": "https://github.com/awcodes/filament-quick-create/issues",
-                "source": "https://github.com/awcodes/filament-quick-create/tree/v3.2.0"
+                "source": "https://github.com/awcodes/filament-quick-create/tree/v3.3.0"
             },
             "funding": [
                 {
@@ -736,7 +736,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-01T14:43:01+00:00"
+            "time": "2024-01-16T15:04:25+00:00"
         },
         {
             "name": "awcodes/filament-versions",
@@ -7643,16 +7643,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v10.40.0",
+            "version": "v10.41.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "7a9470071dac9579ebf29ad1b9d73e4b8eb586fc"
+                "reference": "da31969bd35e6ee0bbcd9e876f88952dc754b012"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/7a9470071dac9579ebf29ad1b9d73e4b8eb586fc",
-                "reference": "7a9470071dac9579ebf29ad1b9d73e4b8eb586fc",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/da31969bd35e6ee0bbcd9e876f88952dc754b012",
+                "reference": "da31969bd35e6ee0bbcd9e876f88952dc754b012",
                 "shasum": ""
             },
             "require": {
@@ -7844,7 +7844,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-01-09T11:46:47+00:00"
+            "time": "2024-01-16T15:23:58+00:00"
         },
         {
             "name": "laravel/prompts",
