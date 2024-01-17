@@ -11,7 +11,7 @@
             <span>Restaurants and cafes menu management</span>
             <br>
             <span class="font-semibold text-xl">
-                🎉 Hermes is available in beta, <a class="text-secondary-600" target="_blank" href="https://larazeus.com/hermes">get it here</a>
+                🎉 Hermes is available, <a class="text-secondary-600" target="_blank" href="https://larazeus.com/hermes">get it here</a>
             </span>
         </div>
     </div>

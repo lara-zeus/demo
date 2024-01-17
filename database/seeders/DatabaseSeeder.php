@@ -38,6 +38,7 @@ class DatabaseSeeder extends Seeder
             HermesSeeder::class,
             BoltSectionsSeeder::class,
             SelectTreeSeeder::class,
+            OperationsTableSeeder::class,
         ]);
     }
 }

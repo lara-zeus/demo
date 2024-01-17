@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc811591be73ef24ad1ce8966c2c64eb",
+    "content-hash": "0596c0a2ec4459b75e9e17f0570189ff",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -314,12 +314,12 @@
         },
         {
             "name": "archilex/filament-filter-sets",
-            "version": "3.5.26",
+            "version": "3.5.27",
             "dist": {
                 "type": "zip",
-                "url": "https://filament-filter-sets.composer.sh/download/9b1a8d25-7629-4a88-8c99-10f61b5e87fd/advanced-tables-for-filament-3.5.26.zip",
-                "reference": "10926e452a9fd31a22975431187c2abbd1415794",
-                "shasum": "8d13c0629ba091ac235bf0bcceb995c4d8bfc12c"
+                "url": "https://filament-filter-sets.composer.sh/download/9b1dbde4-1b55-46da-9ebc-b08570dc34dd/advanced-tables-for-filament-3.5.27.zip",
+                "reference": "174a991ddef126041a6be752bd8afe199ce443c9",
+                "shasum": "b3f30c9b80d01bfa140b6fd403c4832ee03b1a45"
             },
             "require": {
                 "archilex/filament-toggle-icon-column": "^3.0",
@@ -395,7 +395,7 @@
                 "tables",
                 "views"
             ],
-            "time": "2024-01-16T05:36:36+00:00"
+            "time": "2024-01-17T19:40:23+00:00"
         },
         {
             "name": "archilex/filament-toggle-icon-column",
@@ -6213,16 +6213,16 @@
         },
         {
             "name": "lara-zeus/accordion",
-            "version": "1.0.2",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/accordion.git",
-                "reference": "9a337deca03a451402793c97531e7836890e8859"
+                "reference": "8b08bd0cdf441a6e74b57f0992aff8a79d8829fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/accordion/zipball/9a337deca03a451402793c97531e7836890e8859",
-                "reference": "9a337deca03a451402793c97531e7836890e8859",
+                "url": "https://api.github.com/repos/lara-zeus/accordion/zipball/8b08bd0cdf441a6e74b57f0992aff8a79d8829fc",
+                "reference": "8b08bd0cdf441a6e74b57f0992aff8a79d8829fc",
                 "shasum": ""
             },
             "require": {
@@ -6238,6 +6238,7 @@
                 "orchestra/testbench": "^8.0",
                 "phpstan/extension-installer": "^1.1"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -6293,7 +6294,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-17T11:40:36+00:00"
+            "time": "2024-01-17T18:35:45+00:00"
         },
         {
             "name": "lara-zeus/artemis",
@@ -7457,21 +7458,22 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "629b19bdaf4ab72b4ad5ddf63513384635be6a56"
+                "reference": "61a155f292dc312c63c3cc445eb147439e9a716a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/629b19bdaf4ab72b4ad5ddf63513384635be6a56",
-                "reference": "629b19bdaf4ab72b4ad5ddf63513384635be6a56",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/61a155f292dc312c63c3cc445eb147439e9a716a",
+                "reference": "61a155f292dc312c63c3cc445eb147439e9a716a",
                 "shasum": ""
             },
             "require": {
                 "alperenersoy/filament-export": "dev-fix-there",
                 "beyondcode/laravel-comments": "^1.4",
+                "lara-zeus/accordion": "1.x-dev",
                 "lara-zeus/bolt": "^3.0",
                 "php": "^8.1"
             },
@@ -7560,7 +7562,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-01-13T19:36:34+00:00"
+            "time": "2024-01-17T20:26:57+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -9581,16 +9583,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v4.0.3",
+            "version": "v4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "a9d127dd6a203ce6d255b2e2db49759f7506e015"
+                "reference": "d3ad0aa3b9f934602cb3e3902ebccf10be34d218"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/a9d127dd6a203ce6d255b2e2db49759f7506e015",
-                "reference": "a9d127dd6a203ce6d255b2e2db49759f7506e015",
+                "url": "https://api.github.com/repos/nette/utils/zipball/d3ad0aa3b9f934602cb3e3902ebccf10be34d218",
+                "reference": "d3ad0aa3b9f934602cb3e3902ebccf10be34d218",
                 "shasum": ""
             },
             "require": {
@@ -9661,9 +9663,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v4.0.3"
+                "source": "https://github.com/nette/utils/tree/v4.0.4"
             },
-            "time": "2023-10-29T21:02:13+00:00"
+            "time": "2024-01-17T16:50:36+00:00"
         },
         {
             "name": "njxqlus/filament-progressbar",
@@ -19173,6 +19175,69 @@
             ],
             "abandoned": "larastan/larastan",
             "time": "2024-01-08T09:11:17+00:00"
+        },
+        {
+            "name": "orangehill/iseed",
+            "version": "v3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orangehill/iseed.git",
+                "reference": "92b98c8bda6280afa0fac016b1b49caf6f57f18d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orangehill/iseed/zipball/92b98c8bda6280afa0fac016b1b49caf6f57f18d",
+                "reference": "92b98c8bda6280afa0fac016b1b49caf6f57f18d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "php": "^7.2|^8.0.2"
+            },
+            "require-dev": {
+                "illuminate/filesystem": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "laravel/framework": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "mockery/mockery": "^1.0.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Orangehill\\Iseed\\IseedServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Orangehill\\Iseed": "src/"
+                },
+                "classmap": [
+                    "src/Orangehill/Iseed/Exceptions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tihomir Opacic",
+                    "email": "tihomir.opacic@orangehilldev.com"
+                }
+            ],
+            "description": "Generate a new Laravel database seed file based on data from the existing database table.",
+            "keywords": [
+                "artisan",
+                "generators",
+                "laravel",
+                "seed"
+            ],
+            "support": {
+                "issues": "https://github.com/orangehill/iseed/issues",
+                "source": "https://github.com/orangehill/iseed/tree/v3.0.3"
+            },
+            "time": "2023-03-27T06:14:43+00:00"
         },
         {
             "name": "pestphp/pest",

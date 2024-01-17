@@ -10,7 +10,7 @@
                 :label="__('Contact Us')"
                 icon="clarity-contract-line"
             >
-                <div class="bg-white p-4 *:py-2">
+                <div class="dark:bg-gray-900 bg-white p-4 *:py-2">
                     <p>title</p>
                     <p>title</p>
                 </div>
@@ -20,7 +20,7 @@
                 :label="__('Call Us')"
                 icon="clarity-envelope-line"
             >
-                <div class="bg-white p-4 *:py-2">
+                <div class="dark:bg-gray-900 items-center justify-center bg-white p-4 *:py-2">
                     <p>info</p>
                     <p>info</p>
                     <p>info</p>
@@ -31,7 +31,7 @@
                 :label="__('Find Us')"
                 icon="clarity-map-outline-badged"
             >
-                <div class="bg-white p-4 *:py-2">
+                <div class="dark:bg-gray-900 items-center justify-center bg-white p-4 *:py-2">
                     <p>map</p>
                 </div>
             </x-zeus-accordion::accordion.item>

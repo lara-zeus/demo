@@ -1,3 +1,4 @@
+{{--
 <div class="
             dark:bg-gradient-to-bl dark:from-sky-700 dark:to-sky-900 dark:via-sky-900
             bg-gradient-to-bl from-sky-200 to-sky-100 via-sky-100 to-60%
@@ -11,8 +12,9 @@
             <span>Ticketing System</span>
             <br>
             <span class="font-semibold text-xl">
-                🎉 Thunder is available in beta, <a class="text-secondary-600" target="_blank" href="https://larazeus.com/thunder">get it here</a>
+                🎉 Thunder is available, <a class="text-secondary-600" target="_blank" href="https://larazeus.com/thunder">get it here</a>
             </span>
         </div>
     </div>
 </div>
+--}}
