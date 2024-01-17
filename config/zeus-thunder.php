@@ -35,5 +35,5 @@ return [
         'Abilities' => \LaraZeus\Thunder\Enums\Abilities::class,
     ],
 
-    'default-status' => 'NEW',
+    'default-status' => 'OPEN',
 ];

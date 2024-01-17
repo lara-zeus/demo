@@ -5439,16 +5439,16 @@
         },
         {
             "name": "jaocero/activity-timeline",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/199ocero/activity-timeline.git",
-                "reference": "665e03a3ed12b3981755217fa8b011ff161f9b80"
+                "reference": "89f0f0ca39386b24c12721eccc9421eb43cc154c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/199ocero/activity-timeline/zipball/665e03a3ed12b3981755217fa8b011ff161f9b80",
-                "reference": "665e03a3ed12b3981755217fa8b011ff161f9b80",
+                "url": "https://api.github.com/repos/199ocero/activity-timeline/zipball/89f0f0ca39386b24c12721eccc9421eb43cc154c",
+                "reference": "89f0f0ca39386b24c12721eccc9421eb43cc154c",
                 "shasum": ""
             },
             "require": {
@@ -5509,7 +5509,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-14T10:31:26+00:00"
+            "time": "2024-01-17T11:23:35+00:00"
         },
         {
             "name": "jaocero/radio-deck",
@@ -6213,16 +6213,16 @@
         },
         {
             "name": "lara-zeus/accordion",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/accordion.git",
-                "reference": "206caace18bc09ddd63f19ec439b823ef8282a33"
+                "reference": "9a337deca03a451402793c97531e7836890e8859"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/accordion/zipball/206caace18bc09ddd63f19ec439b823ef8282a33",
-                "reference": "206caace18bc09ddd63f19ec439b823ef8282a33",
+                "url": "https://api.github.com/repos/lara-zeus/accordion/zipball/9a337deca03a451402793c97531e7836890e8859",
+                "reference": "9a337deca03a451402793c97531e7836890e8859",
                 "shasum": ""
             },
             "require": {
@@ -6293,7 +6293,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-07T23:21:38+00:00"
+            "time": "2024-01-17T11:40:36+00:00"
         },
         {
             "name": "lara-zeus/artemis",
