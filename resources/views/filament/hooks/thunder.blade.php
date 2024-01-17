@@ -1,4 +1,3 @@
-{{--
 <div class="
             dark:bg-gradient-to-bl dark:from-sky-700 dark:to-sky-900 dark:via-sky-900
             bg-gradient-to-bl from-sky-200 to-sky-100 via-sky-100 to-60%
@@ -17,4 +16,3 @@
         </div>
     </div>
 </div>
---}}
