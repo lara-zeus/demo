@@ -7458,16 +7458,16 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v3.1.1",
+            "version": "v3.1.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "61a155f292dc312c63c3cc445eb147439e9a716a"
+                "reference": "340d79b10e869d9976c365428b8f24b49d42cc5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/61a155f292dc312c63c3cc445eb147439e9a716a",
-                "reference": "61a155f292dc312c63c3cc445eb147439e9a716a",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/340d79b10e869d9976c365428b8f24b49d42cc5d",
+                "reference": "340d79b10e869d9976c365428b8f24b49d42cc5d",
                 "shasum": ""
             },
             "require": {
@@ -7562,7 +7562,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-01-17T20:26:57+00:00"
+            "time": "2024-01-18T01:02:14+00:00"
         },
         {
             "name": "lara-zeus/wind",
