@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Filament\DemoWidgets\MiniChart;
 use App\Filament\Resources\UserResource\Pages;
 use App\Models\User;
 use Filament\Forms\Components\TextInput;
@@ -20,6 +21,7 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use LaraZeus\InlineChart\Tables\Columns\InlineChart;
 use LaraZeus\Popover\Infolists\PopoverEntry;
 use LaraZeus\Popover\Tables\PopoverColumn;
 use LaraZeus\Qr\Facades\Qr;
@@ -61,7 +63,7 @@ class UserResource extends Resource
                     // main options
                     ->trigger('click')
                     ->placement('right')
-                    ->offset([0, 10])
+                    //->offset(10)
                     ->popOverMaxWidth('none')
                     ->icon('heroicon-o-chevron-right')
                     //->content(fn ($record) => view('filament.test.user-card', ['record' => $record]))
@@ -131,15 +133,21 @@ class UserResource extends Resource
                     ]),*/
 
                 ColumnGroup::make('main-info', [
+                    InlineChart::make('Activities')
+                        ->chart(MiniChart::class)
+                        ->maxWidth('!w-[150px]')
+                        ->description('last 7 days activities')
+                        ->toggleable(),
                     PopoverColumn::make('name')
                         // most of filament methods will work
                         ->sortable()
                         ->searchable()
                         ->toggleable()
+                        ->description('sdfsdfsdf sfsdfsdf')
                         // main options
                         ->trigger('click')
                         ->placement('right')
-                        ->offset([0, 10])
+                        //->offset(10)
                         ->popOverMaxWidth('none')
                         ->icon('heroicon-o-chevron-right')
 
@@ -218,6 +226,13 @@ class UserResource extends Resource
     public static function canEdit(Model $record): bool
     {
         return app()->isLocal();
+    }
+
+    public static function getWidgets(): array
+    {
+        return [
+            MiniChart::class,
+        ];
     }
 
     public static function getPages(): array

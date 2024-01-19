@@ -44,6 +44,7 @@
         "lara-zeus/hermes": "^2.0",
         "lara-zeus/matrix-choice": "^3.2",
         "lara-zeus/popover": "^1.0",
+        "lara-zeus/inline-chart": "^1.0",
         "lara-zeus/qr": "^1.0",
         "lara-zeus/rhea": "^2.0",
         "lara-zeus/sky": "^3.4",

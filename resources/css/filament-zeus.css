@@ -92,6 +92,10 @@
     @apply !bg-gray-50/0 !font-semibold !text-base;
 }
 
+/*.fi-sidebar-item-icon {
+    @apply !text-sky-500;
+}*/
+
 .fi-sidebar-group-label a[href*="example"] {
     background-color: silver;
 }
@@ -154,7 +158,7 @@ pre code.torchlight .summary-caret {
     @apply justify-between;
 }
 
-.fi-popover .tippy-box /*[data-theme~=light]*/
+/*.fi-popover .tippy-box !*[data-theme~=light]*!
 {
     @apply dark:border-gray-700/25 !shadow rounded-3xl rounded-tl-none;
     @apply border border-secondary-500/25 my-2;
@@ -164,7 +168,7 @@ pre code.torchlight .summary-caret {
 
 .fi-popover .tippy-box[data-placement^=right] > .tippy-arrow:before {
     @apply border-r-secondary-500/25;
-}
+}*/
 
 /*
 Thanks to @awcodes for sharing this trick

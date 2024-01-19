@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\DemoWidgets\MiniChart;
 use App\Filament\Pages\Auth\Login;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
@@ -98,19 +99,23 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()->label('Bolt'),
                 NavigationGroup::make()
                     ->label('Thunder')
-                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid'])
                 ,
                 NavigationGroup::make()
                     ->label('Hermes')
-                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid'])
                 ,
                 NavigationGroup::make()
                     ->label('Helen')
-                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid'])
                 ,
                 NavigationGroup::make()
                     ->label('Hera')
-                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
+                ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid'])
                 ,
 
                 NavigationGroup::make()->label('Sky'),
