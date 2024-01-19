@@ -133,39 +133,10 @@ class UserResource extends Resource
                     ]),*/
 
                 ColumnGroup::make('main-info', [
-                    InlineChart::make('Activities')
-                        ->chart(MiniChart::class)
-                        ->maxWidth('!w-[150px]')
-                        ->description('last 7 days activities')
-                        ->toggleable(),
-                    PopoverColumn::make('name')
-                        // most of filament methods will work
-                        ->sortable()
-                        ->searchable()
-                        ->toggleable()
-                        ->description('sdfsdfsdf sfsdfsdf')
-                        // main options
-                        ->trigger('click')
-                        ->placement('right')
-                        //->offset(10)
-                        ->popOverMaxWidth('none')
-                        ->icon('heroicon-o-chevron-right')
-
-                        // direct HTML content
-                        //->content(fn($record) => new HtmlString($record->name.'<br>'.$record->email))
-
-                        // or blade content
-                        ->content(fn ($record) => view('filament.test.user-card', ['record' => $record]))
-
-                    // or livewire component
-                    //->content(fn($record) => new HtmlString(Blade::render('@livewire(\App\Filament\Widgets\DemoStats::class, ["lazy" => true])')))
-                    ,
-
-                    /*TextColumn::make('name')
+                    TextColumn::make('name')
                         ->sortable()
                         ->toggleable()
-                        ->searchable(),*/
-
+                        ->searchable(),
                     TextColumn::make('email')
                         ->sortable()
                         ->toggleable()

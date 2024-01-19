@@ -84,8 +84,8 @@
 .fi-sidebar-group-paid {
     @apply !bg-gradient-to-tr from-primary-50/25 via-secondary-50/50 to-secondary-50/50;
     @apply dark:!from-primary-800 dark:!via-gray-800 dark:!to-gray-800;
-    @apply dark:border-gray-700/25 !shadow-lg !shadow-amber-50 rounded-3xl rounded-tl-none;
-    @apply border border-amber-500/70 my-2 p-2;
+    @apply dark:border-gray-700/25 !shadow-lg !shadow-primary-100/40 rounded-3xl rounded-tl-none;
+    @apply border border-primary-500/50 my-2 p-2;
 }
 
 .fi-sidebar-item-active a, .fi-sidebar-item-active a .fi-sidebar-item-label {

@@ -3,6 +3,7 @@
 namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
+use App\Filament\DemoWidgets\MiniChart;
 use App\Models\User;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
@@ -13,27 +14,27 @@ use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
 use LaraZeus\Popover\Tables\PopoverColumn;
 
-class Popover extends Page implements HasForms, HasTable
+class InlineChart extends Page implements HasForms, HasTable
 {
     use InteractsWithForms;
     use InteractsWithTable;
 
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'grommet-tip';
+    protected static ?string $navigationIcon = 'heroicon-o-chart-bar-square';
 
-    protected static string $view = 'filament.pages.popover';
+    protected static string $view = 'filament.pages.inline-chart';
 
-    protected static ?int $navigationSort = 3;
+    protected static ?int $navigationSort = 5;
 
     public static function getNavigationLabel(): string
     {
-        return 'Popover';
+        return 'Inline Chart';
     }
 
     public function getTitle(): string
     {
-        return 'Popover';
+        return 'Inline Chart';
     }
 
     public function table(Table $table): Table
@@ -41,16 +42,14 @@ class Popover extends Page implements HasForms, HasTable
         return $table
             ->query(User::query())
             ->columns([
-                PopoverColumn::make('name')
+                \LaraZeus\InlineChart\Tables\Columns\InlineChart::make('name')
                     ->sortable()
                     ->searchable()
                     ->toggleable()
-                    ->trigger('click')
-                    ->placement('right')
-                    ->offset([0, 10])
-                    ->popOverMaxWidth('none')
+                    ->chart(MiniChart::class)
+                    ->maxWidth('!w-[150px]')
                     ->icon('heroicon-o-chevron-right')
-                    ->content(fn ($record) => view('filament.test.user-card', ['record' => $record])),
+                    ,
 
                 TextColumn::make('email')
                     ->sortable()

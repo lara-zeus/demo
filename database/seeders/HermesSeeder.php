@@ -99,13 +99,13 @@ class HermesSeeder extends Seeder
             'tiktok' => 'tiktok',
         ];
 
-        $imageID = $this->getImage();
+        ///$imageID = $this->getImage();
 
         $branch = DB::table('branches')
             ->insertGetId([
                 'name' => json_encode(['en' => 'Main Branch']),
                 'description' => json_encode(['en' => 'our Main Branch']),
-                'image' => $imageID,
+                'image' => 1,
                 'address' => json_encode($address),
                 'hours' => json_encode($houes),
                 'social' => json_encode($social),

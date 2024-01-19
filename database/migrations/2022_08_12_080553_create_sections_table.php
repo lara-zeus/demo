@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSectionsTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,15 @@ class CreateSectionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('sections', function (Blueprint $table) {
+        Schema::create(config('zeus-bolt.table-prefix').'sections', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('form_id')->constrained('forms');
+            $table->foreignId('form_id')->constrained(config('zeus-bolt.table-prefix').'forms');
             $table->text('name')->nullable();
             $table->integer('ordering')->default(1);
+            $table->integer('columns')->default(1);
+            $table->text('description')->nullable();
+            $table->string('icon')->nullable();
+            $table->boolean('aside')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });
@@ -30,6 +34,6 @@ class CreateSectionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sections');
+        Schema::dropIfExists(config('zeus-bolt.table-prefix').'sections');
     }
-}
+};

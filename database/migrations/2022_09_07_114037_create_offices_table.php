@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(config('zeus-thunder.table-prefix') . 'offices', function (Blueprint $table) {
+        Schema::create(config('zeus-thunder.table-prefix').'offices', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('name');
             $table->string('slug');
@@ -35,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('zeus-thunder.table-prefix') . 'offices');
+        Schema::dropIfExists(config('zeus-thunder.table-prefix').'offices');
     }
 };

@@ -13,18 +13,18 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(config('zeus-thunder.table-prefix') . 'tickets', function (Blueprint $table) {
+        Schema::create(config('zeus-thunder.table-prefix').'tickets', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('ticket_no', 20);
 
-            $table->foreignId('office_id')->constrained(config('zeus-thunder.table-prefix') . 'offices');
-            $table->foreignId('category_id')->nullable()->constrained('categories')->nullOnDelete();
-            $table->foreignId('response_id')->nullable()->constrained('responses')->nullOnDelete();
+            $table->foreignId('office_id')->constrained(config('zeus-thunder.table-prefix').'offices');
+            $table->foreignId('category_id')->nullable()->constrained(config('zeus-bolt.table-prefix').'categories')->nullOnDelete();
+            $table->foreignId('response_id')->nullable()->constrained(config('zeus-bolt.table-prefix').'responses')->nullOnDelete();
             $table->foreignId('user_id')->nullable()->constrained('users');
             $table->foreignId('assignee_id')->nullable()->constrained('users'); // todo multiple?
 
             $table->string('status')->default('OPEN');
-            $table->string('priority')->default('NORMAL'); // todo config
+            $table->string('priority')->default('NORMAL');
 
             $table->string('subject', 200)->nullable();
             $table->longText('content')->nullable();
@@ -43,6 +43,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('zeus-thunder.table-prefix') . 'tickets');
+        Schema::dropIfExists(config('zeus-thunder.table-prefix').'tickets');
     }
 };

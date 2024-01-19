@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFieldResponsesTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateFieldResponsesTable extends Migration
      */
     public function up()
     {
-        Schema::create('field_responses', function (Blueprint $table) {
+        Schema::create(config('zeus-bolt.table-prefix').'field_responses', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('form_id')->constrained('forms');
-            $table->foreignId('field_id')->constrained('fields');
-            $table->foreignId('response_id')->constrained('responses');
+            $table->foreignId('form_id')->constrained(config('zeus-bolt.table-prefix').'forms');
+            $table->foreignId('field_id')->constrained(config('zeus-bolt.table-prefix').'fields');
+            $table->foreignId('response_id')->constrained(config('zeus-bolt.table-prefix').'responses');
             $table->longText('response');
             $table->timestamps();
             $table->softDeletes();
@@ -31,6 +31,6 @@ class CreateFieldResponsesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('field_responses');
+        Schema::dropIfExists(config('zeus-bolt.table-prefix').'field_responses');
     }
-}
+};

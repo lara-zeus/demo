@@ -15,7 +15,7 @@ class Matrix extends Page
 
     protected static string $view = 'filament.pages.qrcode';
 
-    protected static ?int $navigationSort = 3;
+    protected static ?int $navigationSort = 1;
 
     public array $data;
 
