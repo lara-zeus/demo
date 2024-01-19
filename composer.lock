@@ -7200,16 +7200,16 @@
         },
         {
             "name": "lara-zeus/popover",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/popover.git",
-                "reference": "80fbed3fce35c3a271d13e2537db1c39b9001df6"
+                "reference": "cba5b5ced35e765088c1f43f8d45022accff9263"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/popover/zipball/80fbed3fce35c3a271d13e2537db1c39b9001df6",
-                "reference": "80fbed3fce35c3a271d13e2537db1c39b9001df6",
+                "url": "https://api.github.com/repos/lara-zeus/popover/zipball/cba5b5ced35e765088c1f43f8d45022accff9263",
+                "reference": "cba5b5ced35e765088c1f43f8d45022accff9263",
                 "shasum": ""
             },
             "require": {
@@ -7280,7 +7280,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-10T19:22:51+00:00"
+            "time": "2024-01-19T22:46:29+00:00"
         },
         {
             "name": "lara-zeus/qr",
@@ -13118,16 +13118,16 @@
         },
         {
             "name": "spatie/laravel-tags",
-            "version": "4.5.1",
+            "version": "4.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-tags.git",
-                "reference": "fcc6c532fa0ce0d1eefe886fd44dcedcca3173aa"
+                "reference": "627587878731650c52d79e2132cfd1410a18d428"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-tags/zipball/fcc6c532fa0ce0d1eefe886fd44dcedcca3173aa",
-                "reference": "fcc6c532fa0ce0d1eefe886fd44dcedcca3173aa",
+                "url": "https://api.github.com/repos/spatie/laravel-tags/zipball/627587878731650c52d79e2132cfd1410a18d428",
+                "reference": "627587878731650c52d79e2132cfd1410a18d428",
                 "shasum": ""
             },
             "require": {
@@ -13176,7 +13176,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-tags/issues",
-                "source": "https://github.com/spatie/laravel-tags/tree/4.5.1"
+                "source": "https://github.com/spatie/laravel-tags/tree/4.5.2"
             },
             "funding": [
                 {
@@ -13184,7 +13184,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-31T08:43:55+00:00"
+            "time": "2024-01-19T22:10:13+00:00"
         },
         {
             "name": "spatie/laravel-translatable",
