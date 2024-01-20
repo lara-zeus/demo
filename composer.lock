@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef731fcb3538ca09e2b82ea473e73b08",
+    "content-hash": "7a8cbca77a1289cba23dda4e82e4172d",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -5439,16 +5439,16 @@
         },
         {
             "name": "jaocero/activity-timeline",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/199ocero/activity-timeline.git",
-                "reference": "4f53e01f216cc90edaa9ff739c9a2f5a3951b13b"
+                "reference": "f34683fbeae3a165499e2abc63b9916306cbce1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/199ocero/activity-timeline/zipball/4f53e01f216cc90edaa9ff739c9a2f5a3951b13b",
-                "reference": "4f53e01f216cc90edaa9ff739c9a2f5a3951b13b",
+                "url": "https://api.github.com/repos/199ocero/activity-timeline/zipball/f34683fbeae3a165499e2abc63b9916306cbce1e",
+                "reference": "f34683fbeae3a165499e2abc63b9916306cbce1e",
                 "shasum": ""
             },
             "require": {
@@ -5509,7 +5509,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-19T10:10:57+00:00"
+            "time": "2024-01-20T14:11:41+00:00"
         },
         {
             "name": "jaocero/radio-deck",
@@ -6213,16 +6213,16 @@
         },
         {
             "name": "lara-zeus/accordion",
-            "version": "1.x-dev",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/accordion.git",
-                "reference": "1b6f14abb1f221870e72bbf8f797aa71397d18cb"
+                "reference": "8b08bd0cdf441a6e74b57f0992aff8a79d8829fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/accordion/zipball/1b6f14abb1f221870e72bbf8f797aa71397d18cb",
-                "reference": "1b6f14abb1f221870e72bbf8f797aa71397d18cb",
+                "url": "https://api.github.com/repos/lara-zeus/accordion/zipball/8b08bd0cdf441a6e74b57f0992aff8a79d8829fc",
+                "reference": "8b08bd0cdf441a6e74b57f0992aff8a79d8829fc",
                 "shasum": ""
             },
             "require": {
@@ -6238,7 +6238,6 @@
                 "orchestra/testbench": "^8.0",
                 "phpstan/extension-installer": "^1.1"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -6294,7 +6293,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-19T20:06:51+00:00"
+            "time": "2024-01-17T18:35:45+00:00"
         },
         {
             "name": "lara-zeus/artemis",
@@ -6377,16 +6376,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.12",
+            "version": "v3.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "f2234a2c58635eb9aa753a86272afa2260967137"
+                "reference": "97ca113467c4235dea135f21d4f9d63eddc978b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/f2234a2c58635eb9aa753a86272afa2260967137",
-                "reference": "f2234a2c58635eb9aa753a86272afa2260967137",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/97ca113467c4235dea135f21d4f9d63eddc978b4",
+                "reference": "97ca113467c4235dea135f21d4f9d63eddc978b4",
                 "shasum": ""
             },
             "require": {
@@ -6395,7 +6394,7 @@
                 "flowframe/laravel-trend": "^0.1.5",
                 "guava/filament-icon-picker": "^2.0",
                 "lara-zeus/accordion": "^1.0",
-                "lara-zeus/core": "^3.0",
+                "lara-zeus/core": "^3.1",
                 "php": "^8.1",
                 "ryangjchandler/blade-tabler-icons": "^2.2"
             },
@@ -6467,7 +6466,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-19T21:06:20+00:00"
+            "time": "2024-01-20T16:28:57+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
@@ -7541,23 +7540,25 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v3.1.4",
+            "version": "v3.1.8",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "2747e02f70de38077e0ba044176cec15cbbb8da6"
+                "reference": "61c903d18f6823bb3b06999fa9ba90a174e6d35b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/2747e02f70de38077e0ba044176cec15cbbb8da6",
-                "reference": "2747e02f70de38077e0ba044176cec15cbbb8da6",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/61c903d18f6823bb3b06999fa9ba90a174e6d35b",
+                "reference": "61c903d18f6823bb3b06999fa9ba90a174e6d35b",
                 "shasum": ""
             },
             "require": {
                 "alperenersoy/filament-export": "dev-fix-there",
                 "beyondcode/laravel-comments": "^1.4",
-                "lara-zeus/accordion": "1.x-dev",
+                "jaocero/activity-timeline": "^1.2",
+                "lara-zeus/accordion": "^1.0",
                 "lara-zeus/bolt": "^3.0",
+                "lara-zeus/inline-chart": "^1.0",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -7645,7 +7646,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-01-19T21:09:22+00:00"
+            "time": "2024-01-20T16:30:55+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -19324,29 +19325,29 @@
         },
         {
             "name": "pestphp/pest",
-            "version": "v2.31.0",
+            "version": "v2.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest.git",
-                "reference": "3457841a9b124653edcfef1d5da24e6afe176f79"
+                "reference": "ac5d6c1f6754b4a6b4d16d825e5ebd4725a4f779"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest/zipball/3457841a9b124653edcfef1d5da24e6afe176f79",
-                "reference": "3457841a9b124653edcfef1d5da24e6afe176f79",
+                "url": "https://api.github.com/repos/pestphp/pest/zipball/ac5d6c1f6754b4a6b4d16d825e5ebd4725a4f779",
+                "reference": "ac5d6c1f6754b4a6b4d16d825e5ebd4725a4f779",
                 "shasum": ""
             },
             "require": {
                 "brianium/paratest": "^7.3.1",
-                "nunomaduro/collision": "^7.10.0|^8.0.1",
+                "nunomaduro/collision": "^7.10.0|^8.1.0",
                 "nunomaduro/termwind": "^1.15.1|^2.0.0",
                 "pestphp/pest-plugin": "^2.1.1",
                 "pestphp/pest-plugin-arch": "^2.6.1",
                 "php": "^8.1.0",
-                "phpunit/phpunit": "^10.5.5"
+                "phpunit/phpunit": "^10.5.7"
             },
             "conflict": {
-                "phpunit/phpunit": ">10.5.5",
+                "phpunit/phpunit": ">10.5.7",
                 "sebastian/exporter": "<5.1.0",
                 "webmozart/assert": "<1.11.0"
             },
@@ -19377,7 +19378,8 @@
                         "Pest\\Plugins\\Snapshot",
                         "Pest\\Plugins\\Verbose",
                         "Pest\\Plugins\\Version",
-                        "Pest\\Plugins\\Parallel"
+                        "Pest\\Plugins\\Parallel",
+                        "Pest\\Plugins\\JUnit"
                     ]
                 },
                 "phpstan": {
@@ -19416,7 +19418,7 @@
             ],
             "support": {
                 "issues": "https://github.com/pestphp/pest/issues",
-                "source": "https://github.com/pestphp/pest/tree/v2.31.0"
+                "source": "https://github.com/pestphp/pest/tree/v2.32.0"
             },
             "funding": [
                 {
@@ -19428,7 +19430,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-11T15:33:20+00:00"
+            "time": "2024-01-20T13:48:00+00:00"
         },
         {
             "name": "pestphp/pest-plugin",
@@ -20597,16 +20599,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.5",
+            "version": "10.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "ed21115d505b4b4f7dc7b5651464e19a2c7f7856"
+                "reference": "e5c5b397a95cb0db013270a985726fcae93e61b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ed21115d505b4b4f7dc7b5651464e19a2c7f7856",
-                "reference": "ed21115d505b4b4f7dc7b5651464e19a2c7f7856",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e5c5b397a95cb0db013270a985726fcae93e61b8",
+                "reference": "e5c5b397a95cb0db013270a985726fcae93e61b8",
                 "shasum": ""
             },
             "require": {
@@ -20678,7 +20680,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.5"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.7"
             },
             "funding": [
                 {
@@ -20694,7 +20696,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-27T15:13:52+00:00"
+            "time": "2024-01-14T16:40:30+00:00"
         },
         {
             "name": "psy/psysh",

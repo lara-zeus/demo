@@ -48,7 +48,7 @@
         "lara-zeus/qr": "^1.0",
         "lara-zeus/rhea": "^2.0",
         "lara-zeus/sky": "^3.4",
-        "lara-zeus/thunder": "^3.1.1",
+        "lara-zeus/thunder": "^3.1",
         "lara-zeus/wind": "^3.2",
         "laravel/framework": "^10.0",
         "laravel/prompts": "^0.1.15",
