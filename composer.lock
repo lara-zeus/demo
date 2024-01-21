@@ -183,70 +183,6 @@
             "time": "2023-12-11T21:15:36+00:00"
         },
         {
-            "name": "andrewdwallo/filament-selectify",
-            "version": "v2.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/andrewdwallo/filament-selectify.git",
-                "reference": "fcd32d3b1f516e53d610c69a529f9e8730f99afb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/andrewdwallo/filament-selectify/zipball/fcd32d3b1f516e53d610c69a529f9e8730f99afb",
-                "reference": "fcd32d3b1f516e53d610c69a529f9e8730f99afb",
-                "shasum": ""
-            },
-            "require": {
-                "filament/forms": "^3.0",
-                "php": "^8.1",
-                "spatie/laravel-package-tools": "^1.15.0"
-            },
-            "require-dev": {
-                "laravel/pint": "^1.0",
-                "nunomaduro/collision": "^7.9",
-                "orchestra/testbench": "^8.0",
-                "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-arch": "^2.0",
-                "pestphp/pest-plugin-laravel": "^2.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Wallo\\FilamentSelectify\\FilamentSelectifyServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Wallo\\FilamentSelectify\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andrew Wallo",
-                    "email": "andrewdwallo@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "This is my package filament-selectify",
-            "homepage": "https://github.com/andrewdwallo/filament-selectify",
-            "keywords": [
-                "andrewdwallo",
-                "filament-selectify",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/andrewdwallo/filament-selectify/issues",
-                "source": "https://github.com/andrewdwallo/filament-selectify/tree/v2.0.6"
-            },
-            "time": "2023-10-20T05:27:17+00:00"
-        },
-        {
             "name": "anourvalar/eloquent-serialize",
             "version": "1.2.17",
             "source": {
@@ -3641,16 +3577,16 @@
         },
         {
             "name": "filament/actions",
-            "version": "v3.2.6",
+            "version": "v3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/actions.git",
-                "reference": "6060641d19b841c5f29fd303330c13578fb211f9"
+                "reference": "8958c8b4bbef3e06cc63b10de93e1ad7d40182df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/actions/zipball/6060641d19b841c5f29fd303330c13578fb211f9",
-                "reference": "6060641d19b841c5f29fd303330c13578fb211f9",
+                "url": "https://api.github.com/repos/filamentphp/actions/zipball/8958c8b4bbef3e06cc63b10de93e1ad7d40182df",
+                "reference": "8958c8b4bbef3e06cc63b10de93e1ad7d40182df",
                 "shasum": ""
             },
             "require": {
@@ -3690,20 +3626,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-01-19T14:01:23+00:00"
+            "time": "2024-01-21T12:10:40+00:00"
         },
         {
             "name": "filament/filament",
-            "version": "v3.2.6",
+            "version": "v3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/panels.git",
-                "reference": "ebef3fec0014891adc2466def38e4e7ec685b82a"
+                "reference": "cc814b9046cda68be53286038c0aa90bd6eb9525"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/panels/zipball/ebef3fec0014891adc2466def38e4e7ec685b82a",
-                "reference": "ebef3fec0014891adc2466def38e4e7ec685b82a",
+                "url": "https://api.github.com/repos/filamentphp/panels/zipball/cc814b9046cda68be53286038c0aa90bd6eb9525",
+                "reference": "cc814b9046cda68be53286038c0aa90bd6eb9525",
                 "shasum": ""
             },
             "require": {
@@ -3755,20 +3691,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-01-19T14:01:29+00:00"
+            "time": "2024-01-21T12:10:46+00:00"
         },
         {
             "name": "filament/forms",
-            "version": "v3.2.6",
+            "version": "v3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/forms.git",
-                "reference": "ac0cb821bf61a34b280e31edeeb8bb134581eb7a"
+                "reference": "17e36ef57e8ab2060bbc65ba24afe5149c4f270d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/forms/zipball/ac0cb821bf61a34b280e31edeeb8bb134581eb7a",
-                "reference": "ac0cb821bf61a34b280e31edeeb8bb134581eb7a",
+                "url": "https://api.github.com/repos/filamentphp/forms/zipball/17e36ef57e8ab2060bbc65ba24afe5149c4f270d",
+                "reference": "17e36ef57e8ab2060bbc65ba24afe5149c4f270d",
                 "shasum": ""
             },
             "require": {
@@ -3811,20 +3747,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-01-19T14:01:23+00:00"
+            "time": "2024-01-21T12:10:43+00:00"
         },
         {
             "name": "filament/infolists",
-            "version": "v3.2.6",
+            "version": "v3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/infolists.git",
-                "reference": "3270453ce6301bba874fb205774a73da8ec51aa6"
+                "reference": "0eb661c396fac32e8ff681069b6c7ff9e7e2681c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/infolists/zipball/3270453ce6301bba874fb205774a73da8ec51aa6",
-                "reference": "3270453ce6301bba874fb205774a73da8ec51aa6",
+                "url": "https://api.github.com/repos/filamentphp/infolists/zipball/0eb661c396fac32e8ff681069b6c7ff9e7e2681c",
+                "reference": "0eb661c396fac32e8ff681069b6c7ff9e7e2681c",
                 "shasum": ""
             },
             "require": {
@@ -3862,11 +3798,11 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-01-19T14:01:24+00:00"
+            "time": "2024-01-21T00:40:02+00:00"
         },
         {
             "name": "filament/notifications",
-            "version": "v3.2.6",
+            "version": "v3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/notifications.git",
@@ -3918,7 +3854,7 @@
         },
         {
             "name": "filament/spatie-laravel-media-library-plugin",
-            "version": "v3.2.6",
+            "version": "v3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-media-library-plugin.git",
@@ -3955,7 +3891,7 @@
         },
         {
             "name": "filament/spatie-laravel-tags-plugin",
-            "version": "v3.2.6",
+            "version": "v3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-tags-plugin.git",
@@ -3992,16 +3928,16 @@
         },
         {
             "name": "filament/spatie-laravel-translatable-plugin",
-            "version": "v3.2.6",
+            "version": "v3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-translatable-plugin.git",
-                "reference": "1db2f8a46f23608b17531b3d5476681a35d9ac9c"
+                "reference": "84e8f79bbd1ef70c7141a9bc8cdc4965ff8e7c7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/spatie-laravel-translatable-plugin/zipball/1db2f8a46f23608b17531b3d5476681a35d9ac9c",
-                "reference": "1db2f8a46f23608b17531b3d5476681a35d9ac9c",
+                "url": "https://api.github.com/repos/filamentphp/spatie-laravel-translatable-plugin/zipball/84e8f79bbd1ef70c7141a9bc8cdc4965ff8e7c7c",
+                "reference": "84e8f79bbd1ef70c7141a9bc8cdc4965ff8e7c7c",
                 "shasum": ""
             },
             "require": {
@@ -4033,20 +3969,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-01-15T20:39:09+00:00"
+            "time": "2024-01-21T00:40:02+00:00"
         },
         {
             "name": "filament/support",
-            "version": "v3.2.6",
+            "version": "v3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/support.git",
-                "reference": "bba54ccc077198761c90ba1a498099d4130cb11c"
+                "reference": "37663c414646ea7435121a3fef3d5d2d4f45a81f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/support/zipball/bba54ccc077198761c90ba1a498099d4130cb11c",
-                "reference": "bba54ccc077198761c90ba1a498099d4130cb11c",
+                "url": "https://api.github.com/repos/filamentphp/support/zipball/37663c414646ea7435121a3fef3d5d2d4f45a81f",
+                "reference": "37663c414646ea7435121a3fef3d5d2d4f45a81f",
                 "shasum": ""
             },
             "require": {
@@ -4090,20 +4026,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-01-19T14:01:22+00:00"
+            "time": "2024-01-21T00:39:58+00:00"
         },
         {
             "name": "filament/tables",
-            "version": "v3.2.6",
+            "version": "v3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/tables.git",
-                "reference": "11605d47690cdd04226e1770d07902cf84c38f6f"
+                "reference": "f2fdc714813c2be3e9145c1c2758e63528443166"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/tables/zipball/11605d47690cdd04226e1770d07902cf84c38f6f",
-                "reference": "11605d47690cdd04226e1770d07902cf84c38f6f",
+                "url": "https://api.github.com/repos/filamentphp/tables/zipball/f2fdc714813c2be3e9145c1c2758e63528443166",
+                "reference": "f2fdc714813c2be3e9145c1c2758e63528443166",
                 "shasum": ""
             },
             "require": {
@@ -4143,11 +4079,11 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-01-19T14:01:23+00:00"
+            "time": "2024-01-21T00:40:18+00:00"
         },
         {
             "name": "filament/widgets",
-            "version": "v3.2.6",
+            "version": "v3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/widgets.git",
@@ -7448,20 +7384,19 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.4.0",
+            "version": "v3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "1d52d67b2795408cbb43986a11717c89e27af366"
+                "reference": "931c830bae1a7fccf6197d7088ba4cc808320c3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/1d52d67b2795408cbb43986a11717c89e27af366",
-                "reference": "1d52d67b2795408cbb43986a11717c89e27af366",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/931c830bae1a7fccf6197d7088ba4cc808320c3f",
+                "reference": "931c830bae1a7fccf6197d7088ba4cc808320c3f",
                 "shasum": ""
             },
             "require": {
-                "andrewdwallo/filament-selectify": "^2.0",
                 "doctrine/dbal": "^3.5.1",
                 "ext-json": "*",
                 "filament/spatie-laravel-media-library-plugin": "^3.1",
@@ -7536,7 +7471,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-08T19:39:31+00:00"
+            "time": "2024-01-20T19:46:43+00:00"
         },
         {
             "name": "lara-zeus/thunder",
@@ -19990,16 +19925,16 @@
         },
         {
             "name": "phpmyadmin/sql-parser",
-            "version": "5.8.2",
+            "version": "5.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpmyadmin/sql-parser.git",
-                "reference": "f1720ae19abe6294cb5599594a8a57bc3c8cc287"
+                "reference": "011fa18a4e55591fac6545a821921dd1d61c6984"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpmyadmin/sql-parser/zipball/f1720ae19abe6294cb5599594a8a57bc3c8cc287",
-                "reference": "f1720ae19abe6294cb5599594a8a57bc3c8cc287",
+                "url": "https://api.github.com/repos/phpmyadmin/sql-parser/zipball/011fa18a4e55591fac6545a821921dd1d61c6984",
+                "reference": "011fa18a4e55591fac6545a821921dd1d61c6984",
                 "shasum": ""
             },
             "require": {
@@ -20030,6 +19965,7 @@
             "bin": [
                 "bin/highlight-query",
                 "bin/lint-query",
+                "bin/sql-parser",
                 "bin/tokenize-query"
             ],
             "type": "library",
@@ -20073,7 +20009,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2023-09-19T12:34:29+00:00"
+            "time": "2024-01-20T20:34:02+00:00"
         },
         {
             "name": "phpstan/extension-installer",
