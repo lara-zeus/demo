@@ -41,6 +41,7 @@
         "lara-zeus/dynamic-dashboard": "^3.0",
         "lara-zeus/helen": "^2.0",
         "lara-zeus/hera": "^1.0",
+        "lara-zeus/boredom": "*",
         "lara-zeus/hermes": "^2.0",
         "lara-zeus/matrix-choice": "^3.2",
         "lara-zeus/popover": "^1.0",

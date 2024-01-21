@@ -2,7 +2,6 @@
 
 namespace App\Providers\Filament;
 
-use App\Filament\DemoWidgets\MiniChart;
 use App\Filament\Pages\Auth\Login;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
@@ -38,6 +37,9 @@ use LaraZeus\Bolt\BoltPlugin;
 use LaraZeus\Bolt\Filament\Resources\CategoryResource;
 use LaraZeus\Bolt\Filament\Resources\CollectionResource;
 use LaraZeus\Bolt\Filament\Resources\FormResource;
+use LaraZeus\Boredom\BoringAvatarPlugin;
+use LaraZeus\Boredom\BoringAvatarsProvider;
+use LaraZeus\Boredom\Enums\Variants;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
@@ -67,6 +69,9 @@ class AdminPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->theme(asset('css/filament-zeus.css'))
+            ->defaultAvatarProvider(
+                BoringAvatarsProvider::class
+            )
             ->homeUrl('/')
             ->id('admin')
             ->path('admin')
@@ -226,6 +231,11 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
+            BoringAvatarPlugin::make()
+              //  ->colors(['0A0310','49007E','FF005B','FF7D10','FFB238'])
+              //  ->square()
+              //  ->variant(Variants::MARBLE)
+            ,
             FilamentBackgroundsPlugin::make(),
             AdvancedTablesPlugin::make()
                 ->resourceNavigationGroup('Bolt')

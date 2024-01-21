@@ -16,6 +16,7 @@ use Filament\Tables\Actions\ActionGroup;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Columns\ColumnGroup;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
@@ -133,6 +134,7 @@ class UserResource extends Resource
                     ]),*/
 
                 ColumnGroup::make('main-info', [
+                    ImageColumn::make('avatar_url'),
                     TextColumn::make('name')
                         ->sortable()
                         ->toggleable()

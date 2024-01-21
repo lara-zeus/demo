@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use LaraZeus\Boredom\Concerns\HasBoringAvatar;
 use LaraZeus\Thunder\Concerns\ManageOffice;
 
 class User extends Authenticatable implements FilamentUser, HasAvatar
@@ -20,6 +21,7 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
     use HasViews;
     use ManageOffice;
     use Notifiable;
+    use HasBoringAvatar;
 
     protected $guarded = [];
 
@@ -50,17 +52,17 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
         return true;
     }
 
-    protected function avatar(): Attribute
+    /*protected function avatar(): Attribute
     {
         return Attribute::make(
             get: fn () => 'https://ui-avatars.com/api/?name=' . urlencode($this->email ?? 'Guest') . '&color=FFFFFF&background=000000',
         );
-    }
+    }*/
 
-    public function getFilamentAvatarUrl(): ?string
+    /*public function getFilamentAvatarUrl(): ?string
     {
         return $this->avatar;
-    }
+    }*/
 
     public function canImpersonate(): bool
     {
