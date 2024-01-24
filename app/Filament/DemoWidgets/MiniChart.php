@@ -6,6 +6,8 @@ use LaraZeus\InlineChart\InlineChartWidget;
 
 class MiniChart extends InlineChartWidget
 {
+    protected static ?string $pollingInterval = null;
+
     protected function getData(): array
     {
         return [

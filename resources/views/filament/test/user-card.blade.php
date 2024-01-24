@@ -1,7 +1,6 @@
 <div class="w-[300px] px-2 py-4">
-
     {{--<div>
-        @livewire(\App\Filament\Widgets\DemoStats::class,['lazy' => true])
+        @livewire(\App\Livewire\UserCard::class, ['lazy' => true], key("something-{$record->id}"))
     </div>--}}
 
     <div class="flex flex-col items-center">

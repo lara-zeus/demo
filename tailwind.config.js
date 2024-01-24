@@ -8,12 +8,12 @@ module.exports = {
     content: [
         //App
         './resources/views/**/*.blade.php',
-
         './vendor/lara-zeus/core/resources/views/**/*.blade.php',
         './vendor/lara-zeus/core/src/CoreServiceProvider.php',
 
         './vendor/lara-zeus/wind/resources/views/**/*.blade.php',
         './vendor/lara-zeus/wind/src/Filament/Resources/LetterResource.php',
+        './vendor/lara-zeus/wind/src/Livewire/ContactsForm.php',
 
         './vendor/lara-zeus/sky/resources/views/**/*.blade.php',
         './vendor/lara-zeus/sky/src/Models/PostStatus.php',
@@ -62,7 +62,6 @@ module.exports = {
         './vendor/bezhansalleh/filament-panel-switch/resources/views/panel-switch-menu.blade.php',
         './vendor/jaocero/radio-deck/resources/views/**/*.blade.php',
         './vendor/jaocero/activity-timeline/resources/views/**/*.blade.php',
-
     ],
     darkMode: 'class',
     theme: {

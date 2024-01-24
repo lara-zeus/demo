@@ -1,13 +1,13 @@
 {
-    "/js/another-portfolio.js": "/js/another-portfolio.js?id=77fd4510bd1962db925f3774f9bf0fdf",
-    "/js/app.js": "/js/app.js?id=d41d8cd98f00b204e9800998ecf8427e",
-    "/css/filament-zeus.css": "/css/filament-zeus.css?id=949b19c914c273671dfe07b17d9711c1",
-    "/css/filament-guests.css": "/css/filament-guests.css?id=7e85bf695bdc3fb9651855cb00fdce8b",
-    "/css/filament-another-portfolio.css": "/css/filament-another-portfolio.css?id=6f1693f07ab17fb9887fb0b69ea4421f",
-    "/css/filament-daisy.css": "/css/filament-daisy.css?id=0ca79843da54984a7952e282d16c92b2",
-    "/css/filament-brush.css": "/css/filament-brush.css?id=d263484e1daa1d22a1cf7205ba874ea0",
-    "/css/another-portfolio.css": "/css/another-portfolio.css?id=7b431a0798b42aa485b3f6905a31ba4a",
-    "/css/app.css": "/css/app.css?id=4c99698a6d394a75c9c5384af5c95694",
-    "/css/daisy.css": "/css/daisy.css?id=1a2743711fbecf47cd7c3c84921b9d90",
-    "/css/flag-icons.css": "/css/flag-icons.css?id=b25f918b02d08796bc5624f273d84778"
+    "/js/another-portfolio.js": "/js/another-portfolio.js",
+    "/js/app.js": "/js/app.js",
+    "/css/filament-zeus.css": "/css/filament-zeus.css",
+    "/css/filament-guests.css": "/css/filament-guests.css",
+    "/css/filament-another-portfolio.css": "/css/filament-another-portfolio.css",
+    "/css/filament-daisy.css": "/css/filament-daisy.css",
+    "/css/filament-brush.css": "/css/filament-brush.css",
+    "/css/another-portfolio.css": "/css/another-portfolio.css",
+    "/css/app.css": "/css/app.css",
+    "/css/daisy.css": "/css/daisy.css",
+    "/css/flag-icons.css": "/css/flag-icons.css"
 }
