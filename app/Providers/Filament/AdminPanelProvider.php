@@ -33,6 +33,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use LaraZeus\Athena\AthenaPlugin;
 use LaraZeus\Bolt\BoltPlugin;
 use LaraZeus\Bolt\Filament\Resources\CategoryResource;
 use LaraZeus\Bolt\Filament\Resources\CollectionResource;
@@ -287,6 +288,7 @@ class AdminPanelProvider extends PanelProvider
                 ]),
 
             ThunderPlugin::make(),
+            AthenaPlugin::make(),
             DynamicDashboardPlugin::make(),
             RheaPlugin::make(),
             HermesPlugin::make(),

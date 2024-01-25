@@ -41,6 +41,7 @@
         "lara-zeus/dynamic-dashboard": "^3.0",
         "lara-zeus/helen": "^2.0",
         "lara-zeus/hera": "^1.0",
+        "lara-zeus/athena": "*",
         "lara-zeus/boredom": "*",
         "lara-zeus/hermes": "^2.0",
         "lara-zeus/matrix-choice": "^3.2",
@@ -141,24 +142,8 @@
             "url": "https://github.com/lara-zeus/filament-export"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/thunder.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/hera.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/hermes.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/bolt-pro.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/helen.git"
+            "type": "path",
+            "url": "../p/*"
         }
     ]
 }

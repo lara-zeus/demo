@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('compenies', function (Blueprint $table) {
+        /*Schema::create('compenies', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->timestamps();
@@ -19,7 +19,7 @@ return new class extends Migration
 
         Schema::table('cars', function (Blueprint $table) {
             $table->integer('compeny_id')->nullable();
-        });
+        });*/
     }
 
     /**
