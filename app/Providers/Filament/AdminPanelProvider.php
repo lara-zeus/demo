@@ -128,7 +128,7 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()->label('Dynamic Dashboard'),
                 NavigationGroup::make()->label('Rhea'),
             ])
-            ->unsavedChangesAlerts()
+            //->unsavedChangesAlerts()
 
             // hermes
             ->renderHook(
