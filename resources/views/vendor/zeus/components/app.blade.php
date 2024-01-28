@@ -109,11 +109,11 @@
     </div>
 </footer>
 
-@stack('scripts')
 @livewireScripts
 @filamentScripts
 @livewire('notifications')
 @livewire('livewire-ui-modal')
+@stack('scripts')
 
 <script>
     const theme = localStorage.getItem('theme')

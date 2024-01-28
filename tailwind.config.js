@@ -23,6 +23,8 @@ module.exports = {
         './vendor/lara-zeus/thunder/resources/views/**/*.blade.php',
         './vendor/lara-zeus/thunder/src/Models/TicketsStatus.php',
 
+        './vendor/lara-zeus/athena/resources/views/**/*.blade.php',
+
         './vendor/lara-zeus/artemis/resources/views/**/*.blade.php',
 
         './vendor/lara-zeus/dynamic-dashboard/resources/views/**/*.blade.php',

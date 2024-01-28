@@ -34,13 +34,13 @@ use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use LaraZeus\Athena\AthenaPlugin;
+use LaraZeus\Athena\Extensions\Athena;
 use LaraZeus\Bolt\BoltPlugin;
 use LaraZeus\Bolt\Filament\Resources\CategoryResource;
 use LaraZeus\Bolt\Filament\Resources\CollectionResource;
 use LaraZeus\Bolt\Filament\Resources\FormResource;
 use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
-use LaraZeus\Boredom\Enums\Variants;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
@@ -55,12 +55,13 @@ use LaraZeus\Rhea\RheaPlugin;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\Thunder\Extensions\Thunder;
 use LaraZeus\Thunder\Filament\Resources\OfficeResource;
-use LaraZeus\Thunder\Filament\Resources\OperationsResource;
 use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
 use pxlrbt\FilamentSpotlight\SpotlightPlugin;
+use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
+use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
@@ -129,7 +130,7 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()->label('Dynamic Dashboard'),
                 NavigationGroup::make()->label('Rhea'),
             ])
-            ->unsavedChangesAlerts()
+            //->unsavedChangesAlerts()
 
             // hermes
             ->renderHook(
@@ -152,7 +153,6 @@ class AdminPanelProvider extends PanelProvider
                 fn (array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
                 scopes: [
                     OfficeResource::class,
-                    OperationsResource::class,
                     TicketResource::class,
                 ],
             )
@@ -253,7 +253,6 @@ class AdminPanelProvider extends PanelProvider
                 ->sort(5)
                 ->excludes([
                     LetterResource::class,
-                    OperationsResource::class,
                     TicketResource::class,
                 ])
                 ->alphabetical(),
@@ -267,7 +266,6 @@ class AdminPanelProvider extends PanelProvider
                 ->excludes([
                     UserViewResource::class,
                     LetterResource::class,
-                    OperationsResource::class,
                     TicketResource::class,
                     MenuSectionResource::class,
                 ]),
@@ -282,9 +280,20 @@ class AdminPanelProvider extends PanelProvider
                 ->baseDomain('demo.larazeus.com')
                 ->prefix('not-so-short'),
 
+            FilamentFullCalendarPlugin::make()
+           //     ->schedulerLicenseKey('')
+                ->selectable()
+                ->editable()
+                //->timezone()
+                //->locale()
+                //->plugins()
+                //->config()
+            ,
+
             BoltPlugin::make()
                 ->extensions([
                     Thunder::class,
+                    Athena::class,
                 ]),
 
             ThunderPlugin::make(),

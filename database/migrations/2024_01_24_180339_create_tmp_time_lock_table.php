@@ -17,6 +17,7 @@ return new class extends Migration {
             $table->foreignId('service_id')->nullable()->constrained(config('zeus-athena.table-prefix').'services')->nullOnDelete();
             $table->dateTime('appointment');
             $table->dateTime('start_time_lock');
+            $table->timestamps();
         });
     }
 

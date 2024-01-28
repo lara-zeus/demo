@@ -6606,6 +6606,9 @@ span.highlight{
 .h-96{
   height: 24rem;
 }
+.h-\[100dvh\]{
+  height: 100dvh;
+}
 .h-\[16em\]{
   height: 16em;
 }
@@ -6614,6 +6617,9 @@ span.highlight{
 }
 .h-auto{
   height: auto;
+}
+.h-dvh{
+  height: 100dvh;
 }
 .h-full{
   height: 100%;
