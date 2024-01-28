@@ -110,6 +110,5 @@ class OperationsTableSeeder extends Seeder
             ],
         ]);
 
-
     }
 }

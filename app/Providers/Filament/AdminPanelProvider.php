@@ -39,7 +39,6 @@ use LaraZeus\Bolt\Filament\Resources\CollectionResource;
 use LaraZeus\Bolt\Filament\Resources\FormResource;
 use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
-use LaraZeus\Boredom\Enums\Variants;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
@@ -104,24 +103,20 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()->label('Bolt'),
                 NavigationGroup::make()
                     ->label('Thunder')
-                ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ,
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
                 NavigationGroup::make()
                     ->label('Hermes')
-                ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ,
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
                 NavigationGroup::make()
                     ->label('Helen')
-                ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ,
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
                 NavigationGroup::make()
                     ->label('Hera')
-                ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ,
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
 
                 NavigationGroup::make()->label('Sky'),
                 NavigationGroup::make()->label('Wind'),
