@@ -32,49 +32,49 @@ class Accordion extends Page
     {
         return $infolist
             ->state([
-                'name'=>'Lara Zeus',
-                'email'=>'info@larazeus.com',
-                'personal-email'=>'info@larazeus.com',
-                'personal-phone'=>'9999999999',
-                'work-email'=>'info@larazeus.com',
-                'work-phone'=>'9999999999',
+                'name' => 'Lara Zeus',
+                'email' => 'info@larazeus.com',
+                'personal-email' => 'info@larazeus.com',
+                'personal-phone' => '9999999999',
+                'work-email' => 'info@larazeus.com',
+                'work-phone' => '9999999999',
             ])
             ->schema([
                 \Filament\Infolists\Components\Section::make()
-                ->schema([
-                    \LaraZeus\Accordion\Infolists\Accordions::make('Options')
-                        ->activeAccordion(2)
-                        ->isolated()
-                        ->columnSpanFull()
-                        ->accordions([
-                            \LaraZeus\Accordion\Infolists\Accordion::make('main-data')
-                                ->columns()
-                                ->badge('New Badge')
-                                ->badgeColor('info')
-                                ->label('User Details')
-                                ->icon('iconpark-commentone')
-                                ->schema([
-                                    TextEntry::make('name'),
-                                    TextEntry::make('email'),
-                                ]),
-                            \LaraZeus\Accordion\Infolists\Accordion::make('user-data')
-                                ->label('User Personal Contact')
-                                ->icon('iconpark-comments')
-                                ->columns()
-                                ->schema([
-                                    TextEntry::make('personal-email'),
-                                    TextEntry::make('personal-phone'),
-                                ]),
-                            \LaraZeus\Accordion\Infolists\Accordion::make('work-data')
-                                ->columns()
-                                ->label('User Work Contact')
-                                ->icon('iconpark-communication')
-                                ->schema([
-                                    TextEntry::make('work-email'),
-                                    TextEntry::make('work-phone'),
-                                ]),
-                        ]),
-                ])
+                    ->schema([
+                        \LaraZeus\Accordion\Infolists\Accordions::make('Options')
+                            ->activeAccordion(2)
+                            ->isolated()
+                            ->columnSpanFull()
+                            ->accordions([
+                                \LaraZeus\Accordion\Infolists\Accordion::make('main-data')
+                                    ->columns()
+                                    ->badge('New Badge')
+                                    ->badgeColor('info')
+                                    ->label('User Details')
+                                    ->icon('iconpark-commentone')
+                                    ->schema([
+                                        TextEntry::make('name'),
+                                        TextEntry::make('email'),
+                                    ]),
+                                \LaraZeus\Accordion\Infolists\Accordion::make('user-data')
+                                    ->label('User Personal Contact')
+                                    ->icon('iconpark-comments')
+                                    ->columns()
+                                    ->schema([
+                                        TextEntry::make('personal-email'),
+                                        TextEntry::make('personal-phone'),
+                                    ]),
+                                \LaraZeus\Accordion\Infolists\Accordion::make('work-data')
+                                    ->columns()
+                                    ->label('User Work Contact')
+                                    ->icon('iconpark-communication')
+                                    ->schema([
+                                        TextEntry::make('work-email'),
+                                        TextEntry::make('work-phone'),
+                                    ]),
+                            ]),
+                    ]),
             ]);
     }
 
