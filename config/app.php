@@ -106,7 +106,7 @@ return [
         'ar' => ['name' => 'Arabic', 'native' => 'العربية', 'regional' => 'ar_AE', 'flag' => 'ae'],
     ],
 
-    'repos' => ['sky', 'bolt', 'wind', 'dynamic-dashboard', 'rhea', 'zeus', 'artemis', 'matrix-choice', 'qr', 'popover', 'inline-chart', 'accordion'],
+    'repos' => ['sky', 'bolt', 'wind', 'dynamic-dashboard', 'rhea', 'zeus', 'artemis', 'matrix-choice', 'qr', 'popover', 'inline-chart', 'accordion','quantity'],
 
     /*
     |--------------------------------------------------------------------------
