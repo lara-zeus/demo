@@ -75,7 +75,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login(Login::class)
-            ->profile()
+            ->profile(isSimple: false)
             ->font('Karla')
             ->plugins($this->getPlugins())
             ->defaultAvatarProvider(GravatarProvider::class)

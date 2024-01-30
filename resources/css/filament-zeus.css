@@ -83,19 +83,15 @@
 }
 
 .fi-sidebar-group-paid {
-    @apply !bg-gradient-to-tr from-primary-50/25 via-secondary-50/50 to-secondary-50/50;
-    @apply dark:!from-primary-800 dark:!via-gray-800 dark:!to-gray-800;
-    @apply dark:border-gray-700/25 !shadow-md dark:!shadow-secondary-100/40 !shadow-primary-100/40 rounded-3xl rounded-tl-none;
-    @apply border border-primary-500/50 my-2 p-2;
+    @apply !bg-gradient-to-tr from-amber-50/25 via-amber-50/50 to-secondary-50/50;
+    @apply dark:!from-amber-800 dark:!via-gray-800 dark:!to-gray-800;
+    @apply dark:border-gray-700/25 !shadow-md dark:!shadow-secondary-100/60 !shadow-amber-100/40 rounded-3xl rounded-tl-none;
+    @apply border border-amber-500/60 my-2 p-2;
 }
 
 .fi-sidebar-item-active a, .fi-sidebar-item-active a .fi-sidebar-item-label {
     @apply !bg-gray-50/0 !font-semibold !text-base;
 }
-
-/*.fi-sidebar-item-icon {
-    @apply !text-sky-500;
-}*/
 
 .fi-sidebar-group-label a[href*="example"] {
     background-color: silver;
@@ -128,48 +124,6 @@
     @apply !bg-gradient-to-tr from-primary-50/10 via-secondary-50/50 to-secondary-50/10;
     @apply dark:from-primary-100/10 dark:via-secondary-100/30 dark:to-secondary-100/10;
 }
-
-pre {
-    @apply rounded-md overflow-x-auto;
-}
-
-pre code.torchlight {
-    @apply block py-4;
-}
-
-pre code.torchlight .line {
-    @apply px-4;
-}
-
-pre code.torchlight .line-number {
-    @apply text-gray-50;
-}
-
-pre code.torchlight .line-number,
-pre code.torchlight .summary-caret {
-    @apply ltr:mr-4 rtl:ml-4;
-}
-
-/*popover*/
-.fi-popover {
-    @apply w-full;
-}
-
-.fi-popover-trigger {
-    @apply justify-between;
-}
-
-/*.fi-popover .tippy-box !*[data-theme~=light]*!
-{
-    @apply dark:border-gray-700/25 !shadow rounded-3xl rounded-tl-none;
-    @apply border border-secondary-500/25 my-2;
-    @apply !bg-gradient-to-tr from-secondary-50 via-secondary-50 to-primary-50/50;
-    @apply dark:from-primary-100/10 dark:via-secondary-100/30 dark:to-secondary-100/10;
-}
-
-.fi-popover .tippy-box[data-placement^=right] > .tippy-arrow:before {
-    @apply border-r-secondary-500/25;
-}*/
 
 /*
 Thanks to @awcodes for sharing this trick
