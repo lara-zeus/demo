@@ -78,7 +78,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login(Login::class)
-            ->profile()
+            ->profile(isSimple: false)
             ->font('Karla')
             ->plugins($this->getPlugins())
             ->defaultAvatarProvider(GravatarProvider::class)
@@ -106,24 +106,20 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()->label('Bolt'),
                 NavigationGroup::make()
                     ->label('Thunder')
-                ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ,
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
                 NavigationGroup::make()
                     ->label('Hermes')
-                ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ,
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
                 NavigationGroup::make()
                     ->label('Helen')
-                ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ,
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
                 NavigationGroup::make()
                     ->label('Hera')
-                ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid'])
-                ,
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
 
                 NavigationGroup::make()->label('Sky'),
                 NavigationGroup::make()->label('Wind'),

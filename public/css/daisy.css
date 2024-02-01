@@ -6247,6 +6247,9 @@ span.highlight{
 .m-1{
   margin: 0.25rem;
 }
+.m-2{
+  margin: 0.5rem;
+}
 .m-4{
   margin: 1rem;
 }
@@ -6444,11 +6447,11 @@ span.highlight{
 .mr-1{
   margin-right: 0.25rem;
 }
-.mr-3{
-  margin-right: 0.75rem;
-}
 .ms-1{
   margin-inline-start: 0.25rem;
+}
+.ms-3{
+  margin-inline-start: 0.75rem;
 }
 .ms-auto{
   margin-inline-start: auto;
@@ -6632,6 +6635,9 @@ span.highlight{
 }
 .max-h-96{
   max-height: 24rem;
+}
+.max-h-\[calc\(100vh\/2\)\]{
+  max-height: calc(100vh / 2);
 }
 .max-h-full{
   max-height: 100%;
@@ -9986,8 +9992,8 @@ span.highlight{
   }
 }
 
-:is(.dark .dark\:inline-flex){
-  display: inline-flex;
+:is(.dark .dark\:flex){
+  display: flex;
 }
 
 :is(.dark .dark\:hidden){
@@ -11052,10 +11058,6 @@ span.highlight{
     display: none;
   }
 
-  .sm\:h-16{
-    height: 4rem;
-  }
-
   .sm\:h-\[20em\]{
     height: 20em;
   }
@@ -11066,10 +11068,6 @@ span.highlight{
 
   .sm\:w-14{
     width: 3.5rem;
-  }
-
-  .sm\:w-16{
-    width: 4rem;
   }
 
   .sm\:w-2\/3{

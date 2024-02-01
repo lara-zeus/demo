@@ -40,13 +40,13 @@ mix
         require("tailwindcss"),
     ])*/
 
-    .postCss("resources/css/filament-brush.css", "public/css", [
+    /*.postCss("resources/css/filament-brush.css", "public/css", [
         require("tailwindcss/nesting"),
         require("autoprefixer"),
         require("tailwindcss"),
-    ])
+    ])*/
 
-    .postCss("resources/css/filament-daisy.css", "public/css", [
+    /*.postCss("resources/css/filament-daisy.css", "public/css", [
         require("tailwindcss/nesting"),
         require("autoprefixer"),
         require("tailwindcss"),
@@ -56,7 +56,7 @@ mix
         require("tailwindcss/nesting"),
         require("autoprefixer"),
         require("tailwindcss"),
-    ])
+    ])*/
 
     .copy('resources/css/flag-icons.css','public/css/flag-icons.css');
 

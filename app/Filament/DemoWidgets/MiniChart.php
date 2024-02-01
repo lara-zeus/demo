@@ -15,13 +15,13 @@ class MiniChart extends InlineChartWidget
                 [
                     'label' => 'created',
                     'data' => [
-                        rand(1,7),
-                        rand(1,7),
-                        rand(1,7),
-                        rand(1,7),
-                        rand(1,7),
-                        rand(1,7),
-                        rand(1,7),
+                        rand(1, 7),
+                        rand(1, 7),
+                        rand(1, 7),
+                        rand(1, 7),
+                        rand(1, 7),
+                        rand(1, 7),
+                        rand(1, 7),
                     ],
 
                     'backgroundColor' => '#45B39D',
@@ -31,20 +31,20 @@ class MiniChart extends InlineChartWidget
                 [
                     'label' => 'updated',
                     'data' => [
-                        rand(1,7),
-                        rand(1,7),
-                        rand(1,7),
-                        rand(1,7),
-                        rand(1,7),
-                        rand(1,7),
-                        rand(1,7),
+                        rand(1, 7),
+                        rand(1, 7),
+                        rand(1, 7),
+                        rand(1, 7),
+                        rand(1, 7),
+                        rand(1, 7),
+                        rand(1, 7),
                     ],
                     'backgroundColor' => '#F1948A',
                     'borderColor' => '#F1948A',
                     'cubicInterpolationMode' => 'monotone',
                 ],
             ],
-            'labels' => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul',],
+            'labels' => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
         ];
     }
 

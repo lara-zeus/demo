@@ -12,7 +12,6 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
-use LaraZeus\Popover\Tables\PopoverColumn;
 
 class InlineChart extends Page implements HasForms, HasTable
 {
@@ -48,8 +47,7 @@ class InlineChart extends Page implements HasForms, HasTable
                     ->toggleable()
                     ->chart(MiniChart::class)
                     ->maxWidth('!w-[150px]')
-                    ->icon('heroicon-o-chevron-right')
-                    ,
+                    ->icon('heroicon-o-chevron-right'),
 
                 TextColumn::make('email')
                     ->sortable()

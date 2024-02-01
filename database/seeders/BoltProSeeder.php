@@ -12,14 +12,14 @@ class BoltProSeeder extends Seeder
      */
     public function run()
     {
-        $category = DB::table(config('zeus-bolt.table-prefix').'categories')->insertGetId([
+        $category = DB::table(config('zeus-bolt.table-prefix') . 'categories')->insertGetId([
             'name' => json_encode(['en' => 'Bolt Pro'], JSON_THROW_ON_ERROR),
             'description' => json_encode(['en' => 'Bolt Pro'], JSON_THROW_ON_ERROR),
             'slug' => 'bolt-pro',
             'created_at' => now(),
         ]);
 
-        $form = DB::table(config('zeus-bolt.table-prefix').'forms')->insertGetId([
+        $form = DB::table(config('zeus-bolt.table-prefix') . 'forms')->insertGetId([
             'description' => '{"en":"all new fields in bolt pro","pt":"all new fields in bolt pro","ko":"all new fields in bolt pro"}',
             'slug' => 'bolt-pro',
             'details' => '{"en":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, 10 fields are available now, and more are on the way.<\\/a><\\/p>","pt":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, 10 fields are available now, and more are on the way.<\\/a><\\/p>","ko":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, 10 fields are available now, and more are on the way.<\\/a><\\/p>"}',
@@ -34,13 +34,13 @@ class BoltProSeeder extends Seeder
             'created_at' => now(),
         ]);
 
-        $section1 = DB::table(config('zeus-bolt.table-prefix').'sections')->insertGetId([
+        $section1 = DB::table(config('zeus-bolt.table-prefix') . 'sections')->insertGetId([
             'name' => json_encode(['en' => 'All Bolt Pro Fields'], JSON_THROW_ON_ERROR),
             'form_id' => $form,
             'created_at' => now(),
         ]);
 
-        DB::table(config('zeus-bolt.table-prefix').'fields')->insertGetId(
+        DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Image Picker","pt":"Image Picker","ko":"Image Picker"}',
@@ -50,7 +50,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"zW7BRa","is_required":true,"images":["forms\/aZeqEiphnjtbHWa73ACLjpidJT3Dc5-metacmFpbi5wbmc=-.png","forms\/tqocpQqh1VO99VJ4AFeWnfYCvjrrPB-metacHJlbWl1bS5wbmc=-.png","forms\/BtAaVuoHL9WdANo2LOBxaiS0kxWEOS-metaVW50aXRsZWQgZGVzaWduICgyKS5wbmc=-.png"]}',
             ],
         );
-        DB::table(config('zeus-bolt.table-prefix').'fields')->insertGetId(
+        DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Dynamic Textbox","pt":"Dynamic Textbox","ko":"Dynamic Textbox"}',
@@ -60,7 +60,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"0SLUFp","is_required":false,"minItems":null,"maxItems":"5","defaultItems":null}',
             ],
         );
-        DB::table(config('zeus-bolt.table-prefix').'fields')->insertGetId(
+        DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Terms and Condetion","pt":"Terms and Condetion","ko":"Terms and Condetion"}',
@@ -70,7 +70,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"mRpIvF","column_span_full":false,"terms":{"text":"Terms","link":"https:\\/\\/demo.test"},"conditions":{"text":"Conditions","link":"https:\\/\\/demo.test"}}',
             ],
         );
-        DB::table(config('zeus-bolt.table-prefix').'fields')->insertGetId(
+        DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Signature ","pt":"Signature ","ko":"Signature "}',
@@ -80,7 +80,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"aCTAtB","is_required":true,"background-color":"#faf1f1","pen-color":"#000000"}',
             ],
         );
-        DB::table(config('zeus-bolt.table-prefix').'fields')->insertGetId(
+        DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Alert","pt":"Alert","ko":"Alert"}',
@@ -90,7 +90,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"aCTAtB","content":"f sdf sdf sdf ","type":"warning","color":"#f22ade","icon":"iconoir-rocket"}',
             ],
         );
-        DB::table(config('zeus-bolt.table-prefix').'fields')->insertGetId(
+        DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Advanced Date","pt":"Advanced Date","ko":"Advanced Date"}',
@@ -100,7 +100,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"sdfsdf","mode":"multiple"}',
             ],
         );
-        DB::table(config('zeus-bolt.table-prefix').'fields')->insertGetId(
+        DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Icon Picker","pt":"Icon Picker","ko":"Icon Picker"}',
@@ -110,7 +110,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"uqM2nC","is_required":false,"column_span_full":false}',
             ],
         );
-        DB::table(config('zeus-bolt.table-prefix').'fields')->insertGetId(
+        DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Matrix Choice checkbox","pt":"Matrix Choice checkbox","ko":"Matrix Choice checkbox"}',
@@ -120,7 +120,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"hPZ3M2w","choice_type":"checkbox","column_data":{"1":"\\ud83d\\ude42","2":"\\ud83d\\ude10","3":"\\ud83d\\ude41"},"row_data":{"saturday":"Saturday","sunday":"Sunday","monday":"Monday"}}',
             ],
         );
-        DB::table(config('zeus-bolt.table-prefix').'fields')->insertGetId(
+        DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Matrix Choice radio","pt":"Matrix Choice radio","ko":"Matrix Choice radio"}',
@@ -130,7 +130,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"hPZ3MW","choice_type":"radio","column_data":{"happy":"\\ud83d\\ude42","nothing":"\\ud83d\\ude10","sad":"\\ud83d\\ude41"},"row_data":{"saturday":"Saturday","sunday":"Sunday","monday":"Monday"}}',
             ],
         );
-        DB::table(config('zeus-bolt.table-prefix').'fields')->insertGetId(
+        DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Slider","pt":"Slider","ko":"Slider"}',
@@ -140,7 +140,7 @@ class BoltProSeeder extends Seeder
                 'options' => '{"htmlId":"tjWeUW","is_required":false,"start_from":"4","start_to":"6","min_value":"1","max_value":"10"}',
             ],
         );
-        DB::table(config('zeus-bolt.table-prefix').'fields')->insertGetId(
+        DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId(
             [
                 'section_id' => $section1,
                 'name' => '{"en":"Rating","pt":"Rating","ko":"Rating"}',

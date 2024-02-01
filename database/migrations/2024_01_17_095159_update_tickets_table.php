@@ -28,7 +28,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table(config('zeus-thunder.table-prefix') . 'tickets', function (Blueprint $table) {
-            $table->foreignId('category_id')->nullable()->constrained(config('zeus-bolt.table-prefix').'categories')->nullOnDelete();
+            $table->foreignId('category_id')->nullable()->constrained(config('zeus-bolt.table-prefix') . 'categories')->nullOnDelete();
             $table->dropColumn('escalated_at');
         });
     }

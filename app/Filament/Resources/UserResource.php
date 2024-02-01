@@ -22,9 +22,7 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use LaraZeus\InlineChart\Tables\Columns\InlineChart;
 use LaraZeus\Popover\Infolists\PopoverEntry;
-use LaraZeus\Popover\Tables\PopoverColumn;
 use LaraZeus\Qr\Facades\Qr;
 use STS\FilamentImpersonate\Tables\Actions\Impersonate;
 
@@ -80,6 +78,7 @@ class UserResource extends Resource
     {
         return $form->schema([
             TextInput::make('name')->required(),
+
             TextInput::make('email')
                 ->unique(ignoreRecord: true)
                 ->required()

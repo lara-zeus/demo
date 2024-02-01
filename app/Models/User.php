@@ -17,11 +17,11 @@ use LaraZeus\Thunder\Concerns\ManageOffice;
 class User extends Authenticatable implements FilamentUser, HasAvatar
 {
     use HasApiTokens;
+    use HasBoringAvatar;
     use HasFactory;
     use HasViews;
     use ManageOffice;
     use Notifiable;
-    use HasBoringAvatar;
 
     protected $guarded = [];
 
