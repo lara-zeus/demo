@@ -121,6 +121,11 @@ class AdminPanelProvider extends PanelProvider
                     ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
                     ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
 
+                NavigationGroup::make()
+                    ->label('Athena')
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
+
                 NavigationGroup::make()->label('Sky'),
                 NavigationGroup::make()->label('Wind'),
                 NavigationGroup::make()->label('Dynamic Dashboard'),
