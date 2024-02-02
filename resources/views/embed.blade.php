@@ -7,7 +7,11 @@
                     $form = \LaraZeus\Bolt\Models\Form::first()
                 @endphp
                 @if($form !== null)
-                    <livewire:bolt.fill-form :slug="$form->slug" :inline="true"/>
+                    <livewire:bolt.fill-form
+                        extensionSlug="printers-department"
+                        slug="printer-issues"
+                        :inline="true"
+                    />
                 @endif
             </div>
             <div class="w-1/2 mx-auto">
