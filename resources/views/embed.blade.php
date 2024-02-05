@@ -4,12 +4,13 @@
             <div class="w-1/2 mx-auto">
                 <h3>Embed with LW</h3>
                 @php
-                    $form = \LaraZeus\Bolt\Models\Form::first()
+                    $form = \LaraZeus\Bolt\Models\Form::first();
+                    $office = \LaraZeus\Thunder\Models\Office::first();
                 @endphp
                 @if($form !== null)
                     <livewire:bolt.fill-form
-                        extensionSlug="printers-department"
-                        slug="printer-issues"
+                        :extensionSlug="$office"
+                        :slug="$office->form->slug"
                         :inline="true"
                     />
                 @endif
