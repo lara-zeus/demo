@@ -3,9 +3,9 @@
 namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
+use Filament\Actions\Action;
 use Filament\Forms\Components\View;
 use Filament\Pages\Page;
-use Filament\Actions\Action;
 
 class Embed extends Page
 {
@@ -31,9 +31,9 @@ class Embed extends Page
             ->form([
                 View::make('bolt')
                     ->columnSpanFull()
-                    ->view('filament.pages.bolt')
+                    ->view('filament.pages.bolt'),
             ])
-            ->action(fn()=>dd('ya we heard that issue a million time'));
+            ->action(fn () => dd('ya we heard that issue a million time'));
     }
 
     public static function getNavigationLabel(): string
