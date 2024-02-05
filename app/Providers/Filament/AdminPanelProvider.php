@@ -74,6 +74,7 @@ class AdminPanelProvider extends PanelProvider
             ->homeUrl('/')
             ->id('admin')
             ->path('admin')
+            ->emailVerification()
             ->login(Login::class)
             ->profile(isSimple: false)
             ->font('Karla')
