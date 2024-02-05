@@ -7496,16 +7496,16 @@
         },
         {
             "name": "lara-zeus/qr",
-            "version": "1.1.6",
+            "version": "1.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/qr.git",
-                "reference": "9b54255475db8414a7184011cc5588b899223fd8"
+                "reference": "d0e4d981417f09a3a134c44d5a86bf707046d18f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/qr/zipball/9b54255475db8414a7184011cc5588b899223fd8",
-                "reference": "9b54255475db8414a7184011cc5588b899223fd8",
+                "url": "https://api.github.com/repos/lara-zeus/qr/zipball/d0e4d981417f09a3a134c44d5a86bf707046d18f",
+                "reference": "d0e4d981417f09a3a134c44d5a86bf707046d18f",
                 "shasum": ""
             },
             "require": {
@@ -7574,7 +7574,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-28T06:09:37+00:00"
+            "time": "2024-02-05T21:29:00+00:00"
         },
         {
             "name": "lara-zeus/quantity",
