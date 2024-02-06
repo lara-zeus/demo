@@ -10,11 +10,14 @@
 @import "carbon.css";
 @import "filament/zeus.css";
 
-
-
-
 .compact-timeline .fi-timeline-item-heading {
     @apply flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col !important;
+}
+.compact-timeline .fi-timeline-section-content {
+    @apply p-0 !important;
+}
+.compact-timeline {
+    @apply ring-0 !important;
 }
 
 .field-type .choices__list--single {
