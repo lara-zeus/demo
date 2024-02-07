@@ -28,9 +28,6 @@
     @apply !hidden;
 }
 
-
-
-
 :root {
     --c-50: var(--primary-50);
     --c-100: var(--primary-100);
