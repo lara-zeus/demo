@@ -6599,16 +6599,16 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.0.13",
+            "version": "v3.0.14",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "42ff13a24b1e15cf41d6f7ce5a95c80135edf4d5"
+                "reference": "f29e74cf53c912816376b8577e4f3c357b58d314"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/42ff13a24b1e15cf41d6f7ce5a95c80135edf4d5",
-                "reference": "42ff13a24b1e15cf41d6f7ce5a95c80135edf4d5",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/f29e74cf53c912816376b8577e4f3c357b58d314",
+                "reference": "f29e74cf53c912816376b8577e4f3c357b58d314",
                 "shasum": ""
             },
             "require": {
@@ -6618,6 +6618,7 @@
                 "ibrahimbougaoua/filament-rating-star": "^0.0.1",
                 "lara-zeus/bolt": "^3.0",
                 "lara-zeus/matrix-choice": "^3.2",
+                "lara-zeus/quantity": "^1.0",
                 "laravel/prompts": "^0.1.15",
                 "php": "^8.1",
                 "rupadana/filament-api-service": "^1.0",
@@ -6691,7 +6692,7 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2024-01-28T16:46:43+00:00"
+            "time": "2024-02-07T13:16:20+00:00"
         },
         {
             "name": "lara-zeus/boredom",
