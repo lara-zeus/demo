@@ -3,12 +3,12 @@
 namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
+use Filament\Forms\Components\Actions\Action;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Forms\Get;
 use Filament\Pages\Page;
 use LaraZeus\Quantity\Components\Quantity as QuantityAlias;
-use Filament\Forms\Components\Actions\Action;
 
 class Quantity extends Page
 {
@@ -77,8 +77,8 @@ class Quantity extends Page
                                 Action::make('copyCostToPrice')
                                     ->icon('heroicon-m-clipboard')
                                     ->requiresConfirmation()
-                                ->modalHeading('nothing will happen after ...')
-                                ->modalDescription('just want to let you know')
+                                    ->modalHeading('nothing will happen after ...')
+                                    ->modalDescription('just want to let you know')
                             )
                             ->live()
                             ->stacked()
