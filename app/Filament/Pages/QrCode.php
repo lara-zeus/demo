@@ -3,6 +3,7 @@
 namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
+use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
@@ -18,9 +19,14 @@ class QrCode extends Page
 
     protected static ?int $navigationSort = 2;
 
-    public array $data;
+    public ?array $data;
 
     public string $qrcode;
+
+    public function mount(): void
+    {
+        $this->form->fill();
+    }
 
     public static function getNavigationLabel(): string
     {
@@ -39,6 +45,10 @@ class QrCode extends Page
             ->schema([
                 Section::make()
                     ->schema([
+                        Placeholder::make('')->content('Use it as a direct form'),
+                        ...\LaraZeus\Qr\Facades\Qr::getFormSchema('text', 'text-options'),
+
+                        Placeholder::make('')->content('Use it as an action'),
                         Qr::make('qr-code')
                             ->actionIcon('heroicon-o-adjustments-vertical')
                             ->asSlideOver()
