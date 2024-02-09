@@ -49,9 +49,9 @@ class Popover extends Page implements HasForms, HasTable
                     //->offset(10)
                     ->popOverMaxWidth('none')
                     ->icon('heroicon-o-chevron-right')
-                    ->content(fn ($record) => view('filament.test.user-card', ['record' => $record,'type' => 'name'])),
+                    ->content(fn ($record) => view('filament.test.user-card', ['record' => $record, 'type' => 'name'])),
 
-               PopoverColumn::make('email')
+                PopoverColumn::make('email')
                     ->sortable()
                     ->searchable()
                     ->toggleable()
@@ -59,7 +59,7 @@ class Popover extends Page implements HasForms, HasTable
                     ->placement('right')
                     ->popOverMaxWidth('none')
                     ->icon('heroicon-o-chevron-right')
-                    ->content(fn ($record) => view('filament.test.user-card', ['record' => $record,'type' => 'email'])),
+                    ->content(fn ($record) => view('filament.test.user-card', ['record' => $record, 'type' => 'email'])),
             ]);
     }
 }
