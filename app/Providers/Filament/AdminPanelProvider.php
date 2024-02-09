@@ -71,6 +71,7 @@ class AdminPanelProvider extends PanelProvider
             ->defaultAvatarProvider(
                 BoringAvatarsProvider::class
             )
+            ->databaseNotifications()
             ->homeUrl('/')
             ->id('admin')
             ->path('admin')

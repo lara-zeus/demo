@@ -34,7 +34,6 @@
         "jaocero/radio-deck": "^1.1",
         "jeremykenedy/laravel-packagist": "^1.0",
         "lara-zeus/accordion": "^1.0",
-        "filament/filament": "3.2.27",
         "lara-zeus/artemis": "^1.0",
         "lara-zeus/bolt": "^3.0",
         "lara-zeus/bolt-pro": "^3.0",
@@ -136,10 +135,6 @@
         {
             "type": "composer",
             "url": "https://filament-filter-sets.composer.sh"
-        },
-        {
-            "type": "github",
-            "url": "https://github.com/lara-zeus/filament-export"
         },
         {
             "type": "github",
