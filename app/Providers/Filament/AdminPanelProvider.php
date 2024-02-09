@@ -53,7 +53,6 @@ use LaraZeus\Rhea\RheaPlugin;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\Thunder\Extensions\Thunder;
 use LaraZeus\Thunder\Filament\Resources\OfficeResource;
-use LaraZeus\Thunder\Filament\Resources\OperationsResource;
 use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\Filament\Resources\LetterResource;
@@ -149,7 +148,6 @@ class AdminPanelProvider extends PanelProvider
                 fn (array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
                 scopes: [
                     OfficeResource::class,
-                    OperationsResource::class,
                     TicketResource::class,
                 ],
             )
@@ -250,7 +248,6 @@ class AdminPanelProvider extends PanelProvider
                 ->sort(5)
                 ->excludes([
                     LetterResource::class,
-                    OperationsResource::class,
                     TicketResource::class,
                 ])
                 ->alphabetical(),
@@ -264,7 +261,6 @@ class AdminPanelProvider extends PanelProvider
                 ->excludes([
                     UserViewResource::class,
                     LetterResource::class,
-                    OperationsResource::class,
                     TicketResource::class,
                     MenuSectionResource::class,
                 ]),
