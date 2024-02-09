@@ -127,6 +127,9 @@
         >
             <div
                 x-ref="modalContainer"
+                @if ($closeByClickingAway)
+                    x-on:click.self="{{ $closeEventHandler }}"
+                @endif
                 {{
                     $attributes->class([
                         'relative grid min-h-full grid-rows-[1fr_auto_1fr] justify-items-center sm:grid-rows-[1fr_auto_3fr]',
@@ -142,14 +145,7 @@
                             $watch('isOpen', () => (isShown = isOpen))
                         })
                     "
-                    @if ($closeByClickingAway)
-                        x-on:click.outside="{{ $closeEventHandler }}"
-                    @endif
-                    @if (filled($id))
-                        x-on:keydown.window.escape="$dispatch('{{ $closeEventName }}', { id: '{{ $id }}' })"
-                    @else
-                        x-on:keydown.window.escape="close()"
-                    @endif
+                    x-on:keydown.window.escape="{{ $closeEventHandler }}"
                     x-show="isShown"
                     x-transition:enter="duration-300"
                     x-transition:leave="duration-300"
