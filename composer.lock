@@ -820,16 +820,16 @@
         },
         {
             "name": "awcodes/overlook",
-            "version": "v2.1.0",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/overlook.git",
-                "reference": "1d5401da249cea3e0c29160e2f33e6ba97963f60"
+                "reference": "e9a0ba3bef6c164e2ebfdd4c772fb23be72ee7f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/overlook/zipball/1d5401da249cea3e0c29160e2f33e6ba97963f60",
-                "reference": "1d5401da249cea3e0c29160e2f33e6ba97963f60",
+                "url": "https://api.github.com/repos/awcodes/overlook/zipball/e9a0ba3bef6c164e2ebfdd4c772fb23be72ee7f8",
+                "reference": "e9a0ba3bef6c164e2ebfdd4c772fb23be72ee7f8",
                 "shasum": ""
             },
             "require": {
@@ -883,7 +883,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-07T14:44:16+00:00"
+            "time": "2024-02-09T14:04:23+00:00"
         },
         {
             "name": "awcodes/shout",
@@ -6805,16 +6805,16 @@
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/dynamic-dashboard.git",
-                "reference": "f37846c0a77a2e97c16a871a7f3112c27fa3b19a"
+                "reference": "0409839d915ca4129615daf9c25b0dd28d1e5736"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/dynamic-dashboard/zipball/f37846c0a77a2e97c16a871a7f3112c27fa3b19a",
-                "reference": "f37846c0a77a2e97c16a871a7f3112c27fa3b19a",
+                "url": "https://api.github.com/repos/lara-zeus/dynamic-dashboard/zipball/0409839d915ca4129615daf9c25b0dd28d1e5736",
+                "reference": "0409839d915ca4129615daf9c25b0dd28d1e5736",
                 "shasum": ""
             },
             "require": {
@@ -6881,7 +6881,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-11T21:04:45+00:00"
+            "time": "2024-02-09T15:27:46+00:00"
         },
         {
             "name": "lara-zeus/helen",
@@ -7354,16 +7354,16 @@
         },
         {
             "name": "lara-zeus/popover",
-            "version": "1.0.4",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/popover.git",
-                "reference": "cba5b5ced35e765088c1f43f8d45022accff9263"
+                "reference": "577c5eec44425f5fce876531036605591b91eac1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/popover/zipball/cba5b5ced35e765088c1f43f8d45022accff9263",
-                "reference": "cba5b5ced35e765088c1f43f8d45022accff9263",
+                "url": "https://api.github.com/repos/lara-zeus/popover/zipball/577c5eec44425f5fce876531036605591b91eac1",
+                "reference": "577c5eec44425f5fce876531036605591b91eac1",
                 "shasum": ""
             },
             "require": {
@@ -7434,7 +7434,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-19T22:46:29+00:00"
+            "time": "2024-02-09T17:12:55+00:00"
         },
         {
             "name": "lara-zeus/qr",
@@ -7684,16 +7684,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.4.1",
+            "version": "v3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "931c830bae1a7fccf6197d7088ba4cc808320c3f"
+                "reference": "88bc20d1340cc670a1763ea2eafd5c70ba487582"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/931c830bae1a7fccf6197d7088ba4cc808320c3f",
-                "reference": "931c830bae1a7fccf6197d7088ba4cc808320c3f",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/88bc20d1340cc670a1763ea2eafd5c70ba487582",
+                "reference": "88bc20d1340cc670a1763ea2eafd5c70ba487582",
                 "shasum": ""
             },
             "require": {
@@ -7771,7 +7771,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-20T19:46:43+00:00"
+            "time": "2024-02-09T16:07:47+00:00"
         },
         {
             "name": "lara-zeus/thunder",
@@ -13811,16 +13811,16 @@
         },
         {
             "name": "swisnl/filament-backgrounds",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swisnl/filament-backgrounds.git",
-                "reference": "fa7cc68573c6a0d20c9fa69c683779127eae38e1"
+                "reference": "d0d99983dcc7f615e95844fe70c9ca18c593ee0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swisnl/filament-backgrounds/zipball/fa7cc68573c6a0d20c9fa69c683779127eae38e1",
-                "reference": "fa7cc68573c6a0d20c9fa69c683779127eae38e1",
+                "url": "https://api.github.com/repos/swisnl/filament-backgrounds/zipball/d0d99983dcc7f615e95844fe70c9ca18c593ee0a",
+                "reference": "d0d99983dcc7f615e95844fe70c9ca18c593ee0a",
                 "shasum": ""
             },
             "require": {
@@ -13883,7 +13883,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-29T08:49:36+00:00"
+            "time": "2024-02-09T14:54:54+00:00"
         },
         {
             "name": "symfony/cache",
@@ -22317,16 +22317,16 @@
         },
         {
             "name": "spatie/laravel-ignition",
-            "version": "2.4.1",
+            "version": "2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-ignition.git",
-                "reference": "005e1e7b1232f3b22d7e7be3f602693efc7dba67"
+                "reference": "351504f4570e32908839fc5a2dc53bf77d02f85e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/005e1e7b1232f3b22d7e7be3f602693efc7dba67",
-                "reference": "005e1e7b1232f3b22d7e7be3f602693efc7dba67",
+                "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/351504f4570e32908839fc5a2dc53bf77d02f85e",
+                "reference": "351504f4570e32908839fc5a2dc53bf77d02f85e",
                 "shasum": ""
             },
             "require": {
@@ -22405,7 +22405,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-12T13:14:58+00:00"
+            "time": "2024-02-09T16:08:40+00:00"
         },
         {
             "name": "symfony/polyfill-php81",
