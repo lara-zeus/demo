@@ -33,7 +33,7 @@ class ListGroup extends Page
     {
         return $infolist
             ->state([
-                []
+                [],
             ])
             ->schema([
                 \Filament\Infolists\Components\Section::make()
@@ -60,7 +60,6 @@ class ListGroup extends Page
                                     ->label('Support'),
                             ]),
 
-
                         ListEntry::make('items')
                             ->columnSpanFull()
                             ->list()
@@ -77,7 +76,7 @@ class ListGroup extends Page
                                     ->url('#')
                                     ->label('Support'),
                             ]),
-                            /*->state([
+                        /*->state([
                                 [
                                     'id' => 1,
                                     'label' => 'label1',
