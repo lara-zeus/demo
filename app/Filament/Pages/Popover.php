@@ -7,7 +7,6 @@ use App\Models\User;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Pages\Page;
-use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
@@ -50,13 +49,17 @@ class Popover extends Page implements HasForms, HasTable
                     //->offset(10)
                     ->popOverMaxWidth('none')
                     ->icon('heroicon-o-chevron-right')
-                    ->content(fn ($record) => view('filament.test.user-card', ['record' => $record])),
+                    ->content(fn ($record) => view('filament.test.user-card', ['record' => $record, 'type' => 'name'])),
 
-                TextColumn::make('email')
+                PopoverColumn::make('email')
                     ->sortable()
+                    ->searchable()
                     ->toggleable()
-                    ->icon('heroicon-o-envelope')
-                    ->searchable(),
+                    ->trigger('click')
+                    ->placement('right')
+                    ->popOverMaxWidth('none')
+                    ->icon('heroicon-o-chevron-right')
+                    ->content(fn ($record) => view('filament.test.user-card', ['record' => $record, 'type' => 'email'])),
             ]);
     }
 }

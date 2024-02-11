@@ -7,8 +7,6 @@ use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
 use Archilex\AdvancedTables\Resources\UserViewResource;
 use Awcodes\Curator\CuratorPlugin;
-use Awcodes\FilamentGravatar\GravatarPlugin;
-use Awcodes\FilamentGravatar\GravatarProvider;
 use Awcodes\FilamentQuickCreate\QuickCreatePlugin;
 use Awcodes\FilamentVersions\VersionsPlugin;
 use Awcodes\FilamentVersions\VersionsWidget;
@@ -66,6 +64,9 @@ use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
+    /**
+     * @throws \Exception
+     */
     public function panel(Panel $panel): Panel
     {
         return $panel
@@ -74,6 +75,7 @@ class AdminPanelProvider extends PanelProvider
             ->defaultAvatarProvider(
                 BoringAvatarsProvider::class
             )
+            ->databaseNotifications()
             ->homeUrl('/')
             ->id('admin')
             ->path('admin')
@@ -81,7 +83,6 @@ class AdminPanelProvider extends PanelProvider
             ->profile(isSimple: false)
             ->font('Karla')
             ->plugins($this->getPlugins())
-            ->defaultAvatarProvider(GravatarProvider::class)
             ->brandLogo(fn () => view('filament.logo'))
             ->colors([
                 ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
@@ -246,8 +247,6 @@ class AdminPanelProvider extends PanelProvider
                 ->navigationGroup(fn (): string => __('Hermes'))
                 ->navigationSort(99)
                 ->navigationCountBadge(),
-
-            GravatarPlugin::make(),
             SpotlightPlugin::make(),
             LightSwitchPlugin::make(),
             OverlookPlugin::make()

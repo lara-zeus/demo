@@ -44,6 +44,7 @@ module.exports = {
         // matrix-choice
         './vendor/lara-zeus/matrix-choice/resources/views/**/*.blade.php',
         './vendor/lara-zeus/accordion/resources/views/**/*.blade.php',
+        './vendor/lara-zeus/list-group/resources/views/**/*.blade.php',
 
         // helen
         './vendor/lara-zeus/helen/resources/views/**/*.blade.php',

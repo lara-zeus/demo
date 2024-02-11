@@ -1,3 +1,4 @@
 <div>
-    my user card here
+    {{ $record->id }}<br>
+    {{ $record->name }}<br>
 </div>

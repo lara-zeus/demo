@@ -4152,6 +4152,9 @@ span.highlight{
 .row-start-1{
   grid-row-start: 1;
 }
+.row-start-2{
+  grid-row-start: 2;
+}
 .-m-0{
   margin: -0px;
 }
@@ -4433,6 +4436,12 @@ span.highlight{
 .mt-px{
   margin-top: 1px;
 }
+.line-clamp-\[--line-clamp\]{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--line-clamp);
+}
 .block{
   display: block;
 }
@@ -4591,9 +4600,6 @@ span.highlight{
 }
 .\!w-24{
   width: 6rem !important;
-}
-.\!w-\[150px\]{
-  width: 150px !important;
 }
 .\!w-full{
   width: 100% !important;
@@ -5025,6 +5031,9 @@ span.highlight{
 }
 .grid-rows-3{
   grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+.grid-rows-\[1fr_auto_1fr\]{
+  grid-template-rows: 1fr auto 1fr;
 }
 .flex-row{
   flex-direction: row;
@@ -9431,6 +9440,10 @@ figcaption {
 
   .sm\:grid-cols-\[repeat\(auto-fit\2c minmax\(0\2c 1fr\)\)\]{
     grid-template-columns: repeat(auto-fit,minmax(0,1fr));
+  }
+
+  .sm\:grid-rows-\[1fr_auto_3fr\]{
+    grid-template-rows: 1fr auto 3fr;
   }
 
   .sm\:flex-row{

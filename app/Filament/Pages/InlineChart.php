@@ -46,7 +46,7 @@ class InlineChart extends Page implements HasForms, HasTable
                     ->searchable()
                     ->toggleable()
                     ->chart(MiniChart::class)
-                    ->maxWidth('!w-[150px]')
+                    ->maxWidth(150)
                     ->icon('heroicon-o-chevron-right'),
 
                 TextColumn::make('email')
