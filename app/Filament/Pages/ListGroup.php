@@ -32,9 +32,6 @@ class ListGroup extends Page
     public function infolist(Infolist $infolist): Infolist
     {
         return $infolist
-            ->state([
-                []
-            ])
             ->schema([
                 \Filament\Infolists\Components\Section::make()
                     ->schema([
