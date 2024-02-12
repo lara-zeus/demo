@@ -33,6 +33,9 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use LaraZeus\Athena\AthenaPlugin;
 use LaraZeus\Athena\Extensions\Athena;
+use LaraZeus\Athena\Filament\Pages\Calendar;
+use LaraZeus\Athena\Filament\Resources\RequestResource;
+use LaraZeus\Athena\Filament\Resources\ServiceResource;
 use LaraZeus\Bolt\BoltPlugin;
 use LaraZeus\Bolt\Filament\Resources\CategoryResource;
 use LaraZeus\Bolt\Filament\Resources\CollectionResource;
@@ -143,6 +146,17 @@ class AdminPanelProvider extends PanelProvider
                     MenuItemLabelsResource::class,
                     MenuResource::class,
                     MenuSectionResource::class,
+                ],
+            )
+
+            // athena
+            ->renderHook(
+                'panels::page.start',
+                fn (array $scopes): View => view('filament.hooks.athena', ['scopes' => $scopes]),
+                scopes: [
+                    RequestResource::class,
+                    ServiceResource::class,
+                    Calendar::class,
                 ],
             )
             ->renderHook(

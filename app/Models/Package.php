@@ -38,6 +38,15 @@ class Package extends Model
                 'fe_url' => route('thunder.offices.list'),
             ],
             [
+                'name' => 'Athena',
+                'other' => null,
+                'icon' => 'tabler-calendar-heart',
+                'desc' => __('Athena | Booking and Appointments Managements'),
+                'admin_url' => url('/admin/services'),
+                'fe_text' => 'Book an Appointments',
+                'fe_url' => url('athena'),
+            ],
+            [
                 'name' => 'Hermes',
                 'other' => null,
                 'icon' => 'rpg-feather-wing',
@@ -45,15 +54,6 @@ class Package extends Model
                 'admin_url' => url('/admin/branches'),
                 'fe_text' => __('Our Menu'),
                 'fe_url' => url('hermes'),
-            ],
-            [
-                'name' => 'Athena',
-                'other' => null,
-                'icon' => 'tabler-calendar-event',
-                'desc' => __('Hera | Appointments Managements'),
-                'admin_url' => url('/admin/services'),
-                'fe_text' => 'Book an Appointments',
-                'fe_url' => url('athena'),
             ],
             [
                 'name' => 'Hera',

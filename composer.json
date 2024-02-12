@@ -41,7 +41,7 @@
         "lara-zeus/dynamic-dashboard": "^3.0",
         "lara-zeus/helen": "^2.0",
         "lara-zeus/hera": "^1.0",
-        "lara-zeus/athena": "*",
+        "lara-zeus/athena": "^1.0",
         "lara-zeus/hermes": "^2.0",
         "lara-zeus/inline-chart": "^1.0",
         "lara-zeus/matrix-choice": "^3.2",
@@ -138,8 +138,28 @@
             "url": "https://filament-filter-sets.composer.sh"
         },
         {
-            "type": "path",
-            "url": "../p/*"
+            "type": "github",
+            "url": "git@github.com:lara-zeus/thunder.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/hera.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/hermes.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/bolt-pro.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/helen.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/athena.git"
         }
     ]
 }
