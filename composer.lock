@@ -5464,16 +5464,16 @@
         },
         {
             "name": "jaocero/radio-deck",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/199ocero/radio-deck.git",
-                "reference": "ab3d6850497079a2d6d4a4a6b9c28872a158177c"
+                "reference": "556112a5b1cd1b4fa8867e1b93cef8a81fba5579"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/199ocero/radio-deck/zipball/ab3d6850497079a2d6d4a4a6b9c28872a158177c",
-                "reference": "ab3d6850497079a2d6d4a4a6b9c28872a158177c",
+                "url": "https://api.github.com/repos/199ocero/radio-deck/zipball/556112a5b1cd1b4fa8867e1b93cef8a81fba5579",
+                "reference": "556112a5b1cd1b4fa8867e1b93cef8a81fba5579",
                 "shasum": ""
             },
             "require": {
@@ -5537,7 +5537,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-19T12:14:57+00:00"
+            "time": "2024-02-12T11:58:24+00:00"
         },
         {
             "name": "jaybizzle/crawler-detect",
@@ -6327,16 +6327,16 @@
         },
         {
             "name": "lara-zeus/athena",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/athena.git",
-                "reference": "3b23252f26293cefe8cd521b440f85d05207e65c"
+                "reference": "79e95d67e7bcaee9db774d631e8b18872022e79f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/3b23252f26293cefe8cd521b440f85d05207e65c",
-                "reference": "3b23252f26293cefe8cd521b440f85d05207e65c",
+                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/79e95d67e7bcaee9db774d631e8b18872022e79f",
+                "reference": "79e95d67e7bcaee9db774d631e8b18872022e79f",
                 "shasum": ""
             },
             "require": {
@@ -6422,7 +6422,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-02-12T11:22:21+00:00"
+            "time": "2024-02-12T12:05:32+00:00"
         },
         {
             "name": "lara-zeus/bolt",

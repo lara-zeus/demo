@@ -62,7 +62,6 @@ use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
 use pxlrbt\FilamentSpotlight\SpotlightPlugin;
 use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
-use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
@@ -298,10 +297,10 @@ class AdminPanelProvider extends PanelProvider
            //     ->schedulerLicenseKey('')
                 ->selectable()
                 ->editable()
-                //->timezone()
-                //->locale()
-                //->plugins()
-                //->config()
+            //->timezone()
+            //->locale()
+            //->plugins()
+            //->config()
             ,
 
             BoltPlugin::make()

@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(config('zeus-athena.table-prefix').'requests', function (Blueprint $table) {
+        Schema::create(config('zeus-athena.table-prefix') . 'requests', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('service_id')->constrained(config('zeus-athena.table-prefix').'services');
+            $table->foreignId('service_id')->constrained(config('zeus-athena.table-prefix') . 'services');
             $table->foreignId('user_id')->constrained('users');
-            $table->foreignId('response_id')->nullable()->constrained(config('zeus-bolt.table-prefix').'responses')->nullOnDelete();
+            $table->foreignId('response_id')->nullable()->constrained(config('zeus-bolt.table-prefix') . 'responses')->nullOnDelete();
             $table->string('appointment_no');
             $table->string('status');
             $table->timestamps();
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('zeus-athena.table-prefix').'requests');
+        Schema::dropIfExists(config('zeus-athena.table-prefix') . 'requests');
     }
 };
