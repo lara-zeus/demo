@@ -18,6 +18,8 @@ return new class extends Migration {
             $table->foreignId('form_id')->nullable()->constrained(config('zeus-bolt.table-prefix').'forms')->nullOnDelete();
 
             $table->text('name');
+            $table->string('slug');
+            $table->string('color')->nullable();
             $table->text('description')->nullable();
 
             $table->integer('slots_time_minutes')->default(5);

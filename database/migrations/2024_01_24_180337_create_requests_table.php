@@ -19,10 +19,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users');
             $table->foreignId('response_id')->nullable()->constrained(config('zeus-bolt.table-prefix').'responses')->nullOnDelete();
             $table->string('appointment_no');
-            $table->string('appointment');
             $table->string('status');
-            $table->string('user_note'); // todo or chat?
-            $table->string('admin_note');
             $table->timestamps();
         });
     }
