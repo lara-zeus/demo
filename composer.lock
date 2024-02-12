@@ -7248,16 +7248,16 @@
         },
         {
             "name": "lara-zeus/list-group",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/list-group.git",
-                "reference": "1cf7dca568978f40babb79c1ce8f390a4fc10957"
+                "reference": "0832212eb3207866bf1e8a1b879513753c2422ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/list-group/zipball/1cf7dca568978f40babb79c1ce8f390a4fc10957",
-                "reference": "1cf7dca568978f40babb79c1ce8f390a4fc10957",
+                "url": "https://api.github.com/repos/lara-zeus/list-group/zipball/0832212eb3207866bf1e8a1b879513753c2422ab",
+                "reference": "0832212eb3207866bf1e8a1b879513753c2422ab",
                 "shasum": ""
             },
             "require": {
@@ -7331,7 +7331,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-11T11:05:48+00:00"
+            "time": "2024-02-12T23:03:41+00:00"
         },
         {
             "name": "lara-zeus/matrix-choice",
@@ -7505,16 +7505,16 @@
         },
         {
             "name": "lara-zeus/qr",
-            "version": "1.1.8",
+            "version": "1.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/qr.git",
-                "reference": "aa9ddb4d11c85923309f4b892f68de5f0c8f7f51"
+                "reference": "7c474c3acb34cecbf2200a2484f029f98670fcb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/qr/zipball/aa9ddb4d11c85923309f4b892f68de5f0c8f7f51",
-                "reference": "aa9ddb4d11c85923309f4b892f68de5f0c8f7f51",
+                "url": "https://api.github.com/repos/lara-zeus/qr/zipball/7c474c3acb34cecbf2200a2484f029f98670fcb9",
+                "reference": "7c474c3acb34cecbf2200a2484f029f98670fcb9",
                 "shasum": ""
             },
             "require": {
@@ -7583,7 +7583,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-09T12:42:40+00:00"
+            "time": "2024-02-12T23:17:37+00:00"
         },
         {
             "name": "lara-zeus/quantity",
