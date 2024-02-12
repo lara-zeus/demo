@@ -33,7 +33,6 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use LaraZeus\Athena\AthenaPlugin;
 use LaraZeus\Athena\Extensions\Athena;
-use LaraZeus\Athena\Filament\Pages\Calendar;
 use LaraZeus\Athena\Filament\Resources\RequestResource;
 use LaraZeus\Athena\Filament\Resources\ServiceResource;
 use LaraZeus\Bolt\BoltPlugin;
