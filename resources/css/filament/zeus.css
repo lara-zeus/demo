@@ -71,6 +71,9 @@
     @apply dark:from-primary-100/10 dark:via-secondary-100/30 dark:to-secondary-100/10;
 }
 
+.fi-dropdown-trigger button:hover{
+    @apply !bg-white/0;
+}
 /*
 Thanks to @awcodes for sharing this trick
 https://discord.com/channels/883083792112300104/883084832387760148/1176631687782858782
