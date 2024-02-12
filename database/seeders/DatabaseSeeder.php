@@ -39,6 +39,7 @@ class DatabaseSeeder extends Seeder
             BoltSectionsSeeder::class,
             SelectTreeSeeder::class,
             OperationsTableSeeder::class,
+            AthenaSeeder::class,
         ]);
     }
 }

@@ -15,21 +15,22 @@ return new class extends Migration
     {
         Schema::create(config('zeus-athena.table-prefix') . 'services', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('category_id')->nullable()->constrained(config('zeus-bolt.table-prefix') . 'categories')->nullOnDelete();
-            $table->foreignId('form_id')->nullable()->constrained(config('zeus-bolt.table-prefix') . 'forms')->nullOnDelete();
+            $table->foreignId('category_id')->nullable()->constrained(config('zeus-bolt.table-prefix').'categories')->nullOnDelete();
+            $table->foreignId('form_id')->nullable()->constrained(config('zeus-bolt.table-prefix').'forms')->nullOnDelete();
 
             $table->text('name');
             $table->string('slug');
             $table->string('color')->nullable();
             $table->text('description')->nullable();
 
-            $table->integer('slots_time_minutes')->default(5);
+            $table->integer('slots_period_minutes')->default(5);
             $table->integer('min_time_slots')->default(1);
             $table->integer('max_time_slots')->default(1);
             $table->integer('req_per_slot')->default(1);
+            $table->integer('allow_multiple')->default(0);
             $table->integer('days_to_req')->default(30);
             $table->integer('days_before_req')->default(0);
-            $table->integer('days_after_req')->default(0);
+            $table->integer('days_between_requests')->default(0);
             $table->integer('hours_to_cancel')->default(24);
             $table->integer('ordering')->default(1);
             $table->string('req_acceptance_mode')->default('AUTO'); //MANUAL

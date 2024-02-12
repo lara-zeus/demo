@@ -6327,16 +6327,16 @@
         },
         {
             "name": "lara-zeus/athena",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/athena.git",
-                "reference": "7dab8679f0496ee0447607c220e7c2da9c651cb9"
+                "reference": "be297e316e6d19e5f2418ede3f4f0f86a7d1f3ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/7dab8679f0496ee0447607c220e7c2da9c651cb9",
-                "reference": "7dab8679f0496ee0447607c220e7c2da9c651cb9",
+                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/be297e316e6d19e5f2418ede3f4f0f86a7d1f3ca",
+                "reference": "be297e316e6d19e5f2418ede3f4f0f86a7d1f3ca",
                 "shasum": ""
             },
             "require": {
@@ -6422,7 +6422,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-02-12T13:27:18+00:00"
+            "time": "2024-02-12T17:01:49+00:00"
         },
         {
             "name": "lara-zeus/bolt",
@@ -17809,16 +17809,16 @@
         },
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v3.10.0",
+            "version": "v3.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "f390a22e8914f4b1a1daf4a5722d9a34c87a52a0"
+                "reference": "665069c452c30f64c07b6e7ede68c338b96678c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/f390a22e8914f4b1a1daf4a5722d9a34c87a52a0",
-                "reference": "f390a22e8914f4b1a1daf4a5722d9a34c87a52a0",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/665069c452c30f64c07b6e7ede68c338b96678c7",
+                "reference": "665069c452c30f64c07b6e7ede68c338b96678c7",
                 "shasum": ""
             },
             "require": {
@@ -17877,7 +17877,7 @@
             ],
             "support": {
                 "issues": "https://github.com/barryvdh/laravel-debugbar/issues",
-                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.10.0"
+                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.10.1"
             },
             "funding": [
                 {
@@ -17889,7 +17889,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-12T10:42:32+00:00"
+            "time": "2024-02-12T14:22:59+00:00"
         },
         {
             "name": "brianium/paratest",
