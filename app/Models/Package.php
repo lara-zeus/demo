@@ -47,6 +47,15 @@ class Package extends Model
                 'fe_url' => url('hermes'),
             ],
             [
+                'name' => 'Athena',
+                'other' => null,
+                'icon' => 'tabler-calendar-event',
+                'desc' => __('Hera | Appointments Managements'),
+                'admin_url' => url('/admin/services'),
+                'fe_text' => 'Book an Appointments',
+                'fe_url' => url('athena'),
+            ],
+            [
                 'name' => 'Hera',
                 'other' => null,
                 'icon' => 'rpg-chain',
@@ -54,7 +63,8 @@ class Package extends Model
                 'admin_url' => url('/admin/seo-scans'),
                 'fe_text' => null,
                 'fe_url' => null,
-            ], [
+            ],
+            [
                 'name' => 'Helen',
                 'other' => null,
                 'icon' => 'clarity-crown-solid',

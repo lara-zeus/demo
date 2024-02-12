@@ -31,6 +31,8 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use LaraZeus\Athena\AthenaPlugin;
+use LaraZeus\Athena\Extensions\Athena;
 use LaraZeus\Bolt\BoltPlugin;
 use LaraZeus\Bolt\Filament\Resources\CategoryResource;
 use LaraZeus\Bolt\Filament\Resources\CollectionResource;
@@ -56,6 +58,8 @@ use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
 use pxlrbt\FilamentSpotlight\SpotlightPlugin;
+use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
+use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
@@ -115,6 +119,11 @@ class AdminPanelProvider extends PanelProvider
                     ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
                 NavigationGroup::make()
                     ->label('Hera')
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
+
+                NavigationGroup::make()
+                    ->label('Athena')
                     ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
                     ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
 
@@ -271,12 +280,24 @@ class AdminPanelProvider extends PanelProvider
                 ->baseDomain('demo.larazeus.com')
                 ->prefix('not-so-short'),
 
+            FilamentFullCalendarPlugin::make()
+           //     ->schedulerLicenseKey('')
+                ->selectable()
+                ->editable()
+                //->timezone()
+                //->locale()
+                //->plugins()
+                //->config()
+            ,
+
             BoltPlugin::make()
                 ->extensions([
                     Thunder::class,
+                    Athena::class,
                 ]),
 
             ThunderPlugin::make(),
+            AthenaPlugin::make(),
             DynamicDashboardPlugin::make(),
             RheaPlugin::make(),
             HermesPlugin::make(),

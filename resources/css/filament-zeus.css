@@ -7,6 +7,7 @@
 /*@import '../../vendor/lara-zeus/core/resources/css/filament.css';*/
 @import '../../node_modules/cropperjs/dist/cropper.css';
 @import 'tippy.js/dist/tippy.css';
+@import 'tippy.js/themes/light.css';
 @import "carbon.css";
 @import "filament/zeus.css";
 
