@@ -2252,16 +2252,16 @@
         },
         {
             "name": "codewithdennis/filament-select-tree",
-            "version": "v3.1.26",
+            "version": "v3.1.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeWithDennis/filament-select-tree.git",
-                "reference": "db8ca2e01c5b20bc039d153fe358d42cc9097dcb"
+                "reference": "5a1b15dd27fff191e10db5b0c28c0a1104fef9c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/db8ca2e01c5b20bc039d153fe358d42cc9097dcb",
-                "reference": "db8ca2e01c5b20bc039d153fe358d42cc9097dcb",
+                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/5a1b15dd27fff191e10db5b0c28c0a1104fef9c5",
+                "reference": "5a1b15dd27fff191e10db5b0c28c0a1104fef9c5",
                 "shasum": ""
             },
             "require": {
@@ -2319,7 +2319,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-06T14:42:39+00:00"
+            "time": "2024-02-12T18:46:51+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -20505,16 +20505,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.57",
+            "version": "1.10.58",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "1627b1d03446904aaa77593f370c5201d2ecc34e"
+                "reference": "a23518379ec4defd9e47cbf81019526861623ec2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/1627b1d03446904aaa77593f370c5201d2ecc34e",
-                "reference": "1627b1d03446904aaa77593f370c5201d2ecc34e",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a23518379ec4defd9e47cbf81019526861623ec2",
+                "reference": "a23518379ec4defd9e47cbf81019526861623ec2",
                 "shasum": ""
             },
             "require": {
@@ -20563,7 +20563,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-24T11:51:34+00:00"
+            "time": "2024-02-12T20:02:57+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",

@@ -158,7 +158,7 @@ class AdminPanelProvider extends PanelProvider
             )
 
             // athena
-            ->renderHook(
+            /*->renderHook(
                 'panels::page.start',
                 fn(array $scopes): View => view('filament.hooks.athena', ['scopes' => $scopes]),
                 scopes: [
@@ -166,7 +166,7 @@ class AdminPanelProvider extends PanelProvider
                     ServiceResource::class,
                     Calendar::class,
                 ],
-            )
+            )*/
             ->renderHook(
                 'panels::topbar.start',
                 fn(array $scopes): View => view('filament.hooks.store'),

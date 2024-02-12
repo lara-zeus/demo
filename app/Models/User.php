@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use LaraZeus\Athena\Models\BelongToAthena;
+use LaraZeus\Athena\Models\Concerns\BelongToAthena;
 use LaraZeus\Boredom\Concerns\HasBoringAvatar;
 use LaraZeus\Thunder\Concerns\ManageOffice;
 
