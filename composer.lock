@@ -6327,16 +6327,16 @@
         },
         {
             "name": "lara-zeus/athena",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/athena.git",
-                "reference": "1e6003285164eace437deda5582332454ddfd4ce"
+                "reference": "7dab8679f0496ee0447607c220e7c2da9c651cb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/1e6003285164eace437deda5582332454ddfd4ce",
-                "reference": "1e6003285164eace437deda5582332454ddfd4ce",
+                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/7dab8679f0496ee0447607c220e7c2da9c651cb9",
+                "reference": "7dab8679f0496ee0447607c220e7c2da9c651cb9",
                 "shasum": ""
             },
             "require": {
@@ -6422,7 +6422,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-02-12T13:14:23+00:00"
+            "time": "2024-02-12T13:27:18+00:00"
         },
         {
             "name": "lara-zeus/bolt",
@@ -7587,16 +7587,16 @@
         },
         {
             "name": "lara-zeus/quantity",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/quantity.git",
-                "reference": "7b1d19d6b3608b6aee776f655b8c6f36469259ef"
+                "reference": "ac52d89a95eaf5e31ab765e3b019b0fd0f18cd0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/quantity/zipball/7b1d19d6b3608b6aee776f655b8c6f36469259ef",
-                "reference": "7b1d19d6b3608b6aee776f655b8c6f36469259ef",
+                "url": "https://api.github.com/repos/lara-zeus/quantity/zipball/ac52d89a95eaf5e31ab765e3b019b0fd0f18cd0a",
+                "reference": "ac52d89a95eaf5e31ab765e3b019b0fd0f18cd0a",
                 "shasum": ""
             },
             "require": {
@@ -7664,7 +7664,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-09T13:14:12+00:00"
+            "time": "2024-02-12T13:27:22+00:00"
         },
         {
             "name": "lara-zeus/rhea",
