@@ -156,7 +156,7 @@ class AdminPanelProvider extends PanelProvider
                 scopes: [
                     RequestResource::class,
                     ServiceResource::class,
-                    Calendar::class,
+                    //Calendar::class,
                 ],
             )
             ->renderHook(
