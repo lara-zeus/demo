@@ -105,7 +105,6 @@ class AdminPanelProvider extends PanelProvider
             ->navigationGroups([
                 NavigationGroup::make()->label('App')
                     ->icon('tabler-brand-appgallery'),
-
                 NavigationGroup::make()
                     ->icon('akar-thunder')
                     ->label('Bolt'),
@@ -129,17 +128,20 @@ class AdminPanelProvider extends PanelProvider
                     ->label('Hera')
                     ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
                     ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
-
                 NavigationGroup::make()
                     ->icon('tabler-calendar-heart')
                     ->label('Athena')
                     ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
                     ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
 
-                NavigationGroup::make()->label('Sky'),
-                NavigationGroup::make()->label('Wind'),
-                NavigationGroup::make()->label('Dynamic Dashboard'),
-                NavigationGroup::make()->label('Rhea'),
+                NavigationGroup::make()->label('Sky')
+                    ->icon('ri-cloud-windy-line'),
+                NavigationGroup::make()->label('Wind')
+                    ->icon('ri-windy-line'),
+                NavigationGroup::make()->label('Dynamic Dashboard')
+                    ->icon('carbon-rain-heavy'),
+                NavigationGroup::make()->label('Rhea')
+                    ->icon('tabler-bow'),
             ])
             //->unsavedChangesAlerts()
 
