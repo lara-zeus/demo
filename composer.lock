@@ -6327,16 +6327,16 @@
         },
         {
             "name": "lara-zeus/athena",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/athena.git",
-                "reference": "6e9107289ee2724ea3f2bf1a478b85ff86cc2be5"
+                "reference": "f6828aaa9d660df924b467fda3de3481965011ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/6e9107289ee2724ea3f2bf1a478b85ff86cc2be5",
-                "reference": "6e9107289ee2724ea3f2bf1a478b85ff86cc2be5",
+                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/f6828aaa9d660df924b467fda3de3481965011ee",
+                "reference": "f6828aaa9d660df924b467fda3de3481965011ee",
                 "shasum": ""
             },
             "require": {
@@ -6422,7 +6422,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-02-12T12:15:41+00:00"
+            "time": "2024-02-12T13:04:52+00:00"
         },
         {
             "name": "lara-zeus/bolt",
