@@ -49,6 +49,11 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
         'qr_code' => 'array',
     ];
 
+    public function isSuperAdmin(): bool
+    {
+        return str_ends_with($this->email, '@larazeus.com');
+    }
+
     public function canAccessPanel(Panel $panel): bool
     {
         return true;

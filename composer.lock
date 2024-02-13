@@ -5946,27 +5946,27 @@
         },
         {
             "name": "kirschbaum-development/eloquent-power-joins",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kirschbaum-development/eloquent-power-joins.git",
-                "reference": "9238fcb53d777265ee9d8d139810e2cadecde079"
+                "reference": "13feb3692ab6c0475b2c05de131d5f5822fb250a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kirschbaum-development/eloquent-power-joins/zipball/9238fcb53d777265ee9d8d139810e2cadecde079",
-                "reference": "9238fcb53d777265ee9d8d139810e2cadecde079",
+                "url": "https://api.github.com/repos/kirschbaum-development/eloquent-power-joins/zipball/13feb3692ab6c0475b2c05de131d5f5822fb250a",
+                "reference": "13feb3692ab6c0475b2c05de131d5f5822fb250a",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "^8.0|^9.0|^10.0",
-                "illuminate/support": "^8.0|^9.0|^10.0",
+                "illuminate/database": "^8.0|^9.0|^10.0|^11.0",
+                "illuminate/support": "^8.0|^9.0|^10.0|^11.0",
                 "php": "^8.0"
             },
             "require-dev": {
                 "laravel/legacy-factories": "^1.0@dev",
-                "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0|^8.0",
-                "phpunit/phpunit": "^8.0|^9.0"
+                "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^8.0|^9.0|^10.0"
             },
             "type": "library",
             "extra": {
@@ -6002,9 +6002,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kirschbaum-development/eloquent-power-joins/issues",
-                "source": "https://github.com/kirschbaum-development/eloquent-power-joins/tree/3.4.0"
+                "source": "https://github.com/kirschbaum-development/eloquent-power-joins/tree/3.5.0"
             },
-            "time": "2023-12-07T10:44:41+00:00"
+            "time": "2024-02-13T15:40:14+00:00"
         },
         {
             "name": "knplabs/github-api",
@@ -6426,16 +6426,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.21",
+            "version": "v3.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "e5aa12dbef2410f77b710566eaecf13c82107f0b"
+                "reference": "867a565996e681fe2f9e51e433b2bbd04b78c358"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/e5aa12dbef2410f77b710566eaecf13c82107f0b",
-                "reference": "e5aa12dbef2410f77b710566eaecf13c82107f0b",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/867a565996e681fe2f9e51e433b2bbd04b78c358",
+                "reference": "867a565996e681fe2f9e51e433b2bbd04b78c358",
                 "shasum": ""
             },
             "require": {
@@ -6516,7 +6516,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-10T18:38:40+00:00"
+            "time": "2024-02-13T15:32:34+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
@@ -7842,16 +7842,16 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v3.1.26",
+            "version": "v3.1.27",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "e96f18100491d8a27cdecde6e050cbf09844aed0"
+                "reference": "95fa010621b64c6dcda4f00013d128b3ce06ed15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/e96f18100491d8a27cdecde6e050cbf09844aed0",
-                "reference": "e96f18100491d8a27cdecde6e050cbf09844aed0",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/95fa010621b64c6dcda4f00013d128b3ce06ed15",
+                "reference": "95fa010621b64c6dcda4f00013d128b3ce06ed15",
                 "shasum": ""
             },
             "require": {
@@ -7948,7 +7948,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-02-10T09:34:37+00:00"
+            "time": "2024-02-13T16:02:39+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -8031,16 +8031,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v10.43.0",
+            "version": "v10.44.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "4f7802dfc9993cb57cf69615491ce1a7eb2e9529"
+                "reference": "1199dbe361787bbe9648131a79f53921b4148cf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/4f7802dfc9993cb57cf69615491ce1a7eb2e9529",
-                "reference": "4f7802dfc9993cb57cf69615491ce1a7eb2e9529",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/1199dbe361787bbe9648131a79f53921b4148cf6",
+                "reference": "1199dbe361787bbe9648131a79f53921b4148cf6",
                 "shasum": ""
             },
             "require": {
@@ -8088,6 +8088,7 @@
             "conflict": {
                 "carbonphp/carbon-doctrine-types": ">=3.0",
                 "doctrine/dbal": ">=4.0",
+                "phpunit/phpunit": ">=11.0.0",
                 "tightenco/collect": "<5.5.33"
             },
             "provide": {
@@ -8232,7 +8233,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-01-30T16:25:02+00:00"
+            "time": "2024-02-13T16:01:16+00:00"
         },
         {
             "name": "laravel/prompts",
