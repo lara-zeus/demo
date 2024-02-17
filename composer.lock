@@ -256,12 +256,12 @@
         },
         {
             "name": "archilex/filament-filter-sets",
-            "version": "3.6.3",
+            "version": "3.6.4",
             "dist": {
                 "type": "zip",
-                "url": "https://filament-filter-sets.composer.sh/download/9b49b0a6-ac05-4849-ae24-4c6bc543603a/advanced-tables-for-filament-3.6.3.zip",
-                "reference": "46944e7eac376369593cf8479e641533314280af",
-                "shasum": "0e1b9a4e18a75df3bb8d29411df89eb9b87ad35e"
+                "url": "https://filament-filter-sets.composer.sh/download/9b5a2129-eafb-4aee-9990-d276b9b1053b/advanced-tables-for-filament-3.6.4.zip",
+                "reference": "bedc64bf8307170b890d09c659bc338fd95b971d",
+                "shasum": "06fadb11afd55a96435811f3a49ac062e578228e"
             },
             "require": {
                 "archilex/filament-toggle-icon-column": "^3.0",
@@ -337,7 +337,7 @@
                 "tables",
                 "views"
             ],
-            "time": "2024-02-08T15:59:48+00:00"
+            "time": "2024-02-16T20:07:38+00:00"
         },
         {
             "name": "archilex/filament-toggle-icon-column",
@@ -4619,16 +4619,16 @@
         },
         {
             "name": "guava/filament-icon-picker",
-            "version": "2.0.4",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lukas-frey/filament-icon-picker.git",
-                "reference": "b032aef727a26d9e0107304f308197a34d26db6a"
+                "reference": "db899b45137c936f5c064f9f130c7026e9bcf83a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lukas-frey/filament-icon-picker/zipball/b032aef727a26d9e0107304f308197a34d26db6a",
-                "reference": "b032aef727a26d9e0107304f308197a34d26db6a",
+                "url": "https://api.github.com/repos/lukas-frey/filament-icon-picker/zipball/db899b45137c936f5c064f9f130c7026e9bcf83a",
+                "reference": "db899b45137c936f5c064f9f130c7026e9bcf83a",
                 "shasum": ""
             },
             "require": {
@@ -4665,7 +4665,7 @@
             "description": "A filament plugin that adds an icon picker field.",
             "support": {
                 "issues": "https://github.com/lukas-frey/filament-icon-picker/issues",
-                "source": "https://github.com/lukas-frey/filament-icon-picker/tree/2.0.4"
+                "source": "https://github.com/lukas-frey/filament-icon-picker/tree/2.1.0"
             },
             "funding": [
                 {
@@ -4673,7 +4673,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-27T07:45:49+00:00"
+            "time": "2024-02-16T19:06:03+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -7751,16 +7751,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.4.2",
+            "version": "v3.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "88bc20d1340cc670a1763ea2eafd5c70ba487582"
+                "reference": "28f1917d9e06ecaa588ec49b6bbb224dff33c8cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/88bc20d1340cc670a1763ea2eafd5c70ba487582",
-                "reference": "88bc20d1340cc670a1763ea2eafd5c70ba487582",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/28f1917d9e06ecaa588ec49b6bbb224dff33c8cf",
+                "reference": "28f1917d9e06ecaa588ec49b6bbb224dff33c8cf",
                 "shasum": ""
             },
             "require": {
@@ -7838,20 +7838,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-09T16:07:47+00:00"
+            "time": "2024-02-17T05:14:59+00:00"
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v3.1.29",
+            "version": "v3.1.30",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "26131355785fe0122fb0a0c576beb3683549d7bd"
+                "reference": "dbbcfed65487e66851becc07acc66ec15bee464d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/26131355785fe0122fb0a0c576beb3683549d7bd",
-                "reference": "26131355785fe0122fb0a0c576beb3683549d7bd",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/dbbcfed65487e66851becc07acc66ec15bee464d",
+                "reference": "dbbcfed65487e66851becc07acc66ec15bee464d",
                 "shasum": ""
             },
             "require": {
@@ -7948,7 +7948,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-02-16T17:36:20+00:00"
+            "time": "2024-02-17T10:16:01+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -19660,16 +19660,16 @@
         },
         {
             "name": "pestphp/pest",
-            "version": "v2.33.6",
+            "version": "v2.34.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest.git",
-                "reference": "5b0f88c22716452be59202cfe7c5a24fbb2fb7de"
+                "reference": "602b696348efdf4da83c9719de3062462cc1d146"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest/zipball/5b0f88c22716452be59202cfe7c5a24fbb2fb7de",
-                "reference": "5b0f88c22716452be59202cfe7c5a24fbb2fb7de",
+                "url": "https://api.github.com/repos/pestphp/pest/zipball/602b696348efdf4da83c9719de3062462cc1d146",
+                "reference": "602b696348efdf4da83c9719de3062462cc1d146",
                 "shasum": ""
             },
             "require": {
@@ -19752,7 +19752,7 @@
             ],
             "support": {
                 "issues": "https://github.com/pestphp/pest/issues",
-                "source": "https://github.com/pestphp/pest/tree/v2.33.6"
+                "source": "https://github.com/pestphp/pest/tree/v2.34.0"
             },
             "funding": [
                 {
@@ -19764,7 +19764,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-12T08:55:32+00:00"
+            "time": "2024-02-17T10:06:53+00:00"
         },
         {
             "name": "pestphp/pest-plugin",
@@ -19909,33 +19909,38 @@
         },
         {
             "name": "pestphp/pest-plugin-laravel",
-            "version": "v2.2.0",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest-plugin-laravel.git",
-                "reference": "77a2838c1d3b09d147211e76a48987ba9a758279"
+                "reference": "2f6ea6233bb74ec65d969ecdea56bdbd3d1e2f0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest-plugin-laravel/zipball/77a2838c1d3b09d147211e76a48987ba9a758279",
-                "reference": "77a2838c1d3b09d147211e76a48987ba9a758279",
+                "url": "https://api.github.com/repos/pestphp/pest-plugin-laravel/zipball/2f6ea6233bb74ec65d969ecdea56bdbd3d1e2f0e",
+                "reference": "2f6ea6233bb74ec65d969ecdea56bdbd3d1e2f0e",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^10.18.0|^11.0",
-                "pestphp/pest": "^2.13.0",
+                "laravel/framework": "^10.44.0|^11.0",
+                "pestphp/pest": "^2.33.6",
                 "php": "^8.1.0"
             },
             "require-dev": {
-                "laravel/dusk": "^7.9.3",
-                "orchestra/testbench": "^8.6.3",
-                "pestphp/pest-dev-tools": "^2.14.0"
+                "laravel/dusk": "^7.12.3",
+                "orchestra/testbench": "^8.21.1|^9.0.0",
+                "pestphp/pest-dev-tools": "^2.16.0"
             },
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
                         "Pest\\Laravel\\PestServiceProvider"
+                    ]
+                },
+                "pest": {
+                    "plugins": [
+                        "Pest\\Laravel\\Plugin"
                     ]
                 }
             },
@@ -19962,7 +19967,7 @@
                 "unit"
             ],
             "support": {
-                "source": "https://github.com/pestphp/pest-plugin-laravel/tree/v2.2.0"
+                "source": "https://github.com/pestphp/pest-plugin-laravel/tree/v2.3.0"
             },
             "funding": [
                 {
@@ -19974,7 +19979,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-10T15:37:09+00:00"
+            "time": "2024-02-17T10:04:08+00:00"
         },
         {
             "name": "pestphp/pest-plugin-livewire",
