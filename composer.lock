@@ -256,12 +256,12 @@
         },
         {
             "name": "archilex/filament-filter-sets",
-            "version": "3.6.4",
+            "version": "3.6.5",
             "dist": {
                 "type": "zip",
-                "url": "https://filament-filter-sets.composer.sh/download/9b5a2129-eafb-4aee-9990-d276b9b1053b/advanced-tables-for-filament-3.6.4.zip",
-                "reference": "bedc64bf8307170b890d09c659bc338fd95b971d",
-                "shasum": "06fadb11afd55a96435811f3a49ac062e578228e"
+                "url": "https://filament-filter-sets.composer.sh/download/9b5ec935-5825-47a7-a643-4c46548f5d20/advanced-tables-for-filament-3.6.5.zip",
+                "reference": "b031240821f69255f5fdf307e3756d0323230d4f",
+                "shasum": "09bc5007035d5d86b3d172f1256c3de33c26d491"
             },
             "require": {
                 "archilex/filament-toggle-icon-column": "^3.0",
@@ -337,7 +337,7 @@
                 "tables",
                 "views"
             ],
-            "time": "2024-02-16T20:07:38+00:00"
+            "time": "2024-02-19T03:40:51+00:00"
         },
         {
             "name": "archilex/filament-toggle-icon-column",
@@ -760,16 +760,16 @@
         },
         {
             "name": "awcodes/overlook",
-            "version": "v2.1.1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/overlook.git",
-                "reference": "e9a0ba3bef6c164e2ebfdd4c772fb23be72ee7f8"
+                "reference": "afc72512cb12d2abb0a46308c3ff1b2754751f4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/overlook/zipball/e9a0ba3bef6c164e2ebfdd4c772fb23be72ee7f8",
-                "reference": "e9a0ba3bef6c164e2ebfdd4c772fb23be72ee7f8",
+                "url": "https://api.github.com/repos/awcodes/overlook/zipball/afc72512cb12d2abb0a46308c3ff1b2754751f4e",
+                "reference": "afc72512cb12d2abb0a46308c3ff1b2754751f4e",
                 "shasum": ""
             },
             "require": {
@@ -823,7 +823,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-09T14:04:23+00:00"
+            "time": "2024-02-17T17:08:57+00:00"
         },
         {
             "name": "awcodes/shout",
@@ -2252,16 +2252,16 @@
         },
         {
             "name": "codewithdennis/filament-select-tree",
-            "version": "v3.1.30",
+            "version": "v3.1.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeWithDennis/filament-select-tree.git",
-                "reference": "f6bf2f66c7a8f067a6a8d445edd80adcfbccd0ba"
+                "reference": "480765ca3b423f6d375e204a097bfb02e899555e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/f6bf2f66c7a8f067a6a8d445edd80adcfbccd0ba",
-                "reference": "f6bf2f66c7a8f067a6a8d445edd80adcfbccd0ba",
+                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/480765ca3b423f6d375e204a097bfb02e899555e",
+                "reference": "480765ca3b423f6d375e204a097bfb02e899555e",
                 "shasum": ""
             },
             "require": {
@@ -2319,7 +2319,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-15T17:57:47+00:00"
+            "time": "2024-02-17T20:33:32+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -3107,16 +3107,16 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "2930cd5ef353871c821d5c43ed030d39ac8cfe65"
+                "reference": "5817d0659c5b50c9b950feb9af7b9668e2c436bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/2930cd5ef353871c821d5c43ed030d39ac8cfe65",
-                "reference": "2930cd5ef353871c821d5c43ed030d39ac8cfe65",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/5817d0659c5b50c9b950feb9af7b9668e2c436bc",
+                "reference": "5817d0659c5b50c9b950feb9af7b9668e2c436bc",
                 "shasum": ""
             },
             "require": {
@@ -3178,7 +3178,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/inflector/issues",
-                "source": "https://github.com/doctrine/inflector/tree/2.0.9"
+                "source": "https://github.com/doctrine/inflector/tree/2.0.10"
             },
             "funding": [
                 {
@@ -3194,7 +3194,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-15T18:05:13+00:00"
+            "time": "2024-02-18T20:23:39+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -7587,16 +7587,16 @@
         },
         {
             "name": "lara-zeus/quantity",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/quantity.git",
-                "reference": "ac52d89a95eaf5e31ab765e3b019b0fd0f18cd0a"
+                "reference": "75d73089995f68167ace7e666b87ca5b3b33e525"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/quantity/zipball/ac52d89a95eaf5e31ab765e3b019b0fd0f18cd0a",
-                "reference": "ac52d89a95eaf5e31ab765e3b019b0fd0f18cd0a",
+                "url": "https://api.github.com/repos/lara-zeus/quantity/zipball/75d73089995f68167ace7e666b87ca5b3b33e525",
+                "reference": "75d73089995f68167ace7e666b87ca5b3b33e525",
                 "shasum": ""
             },
             "require": {
@@ -7664,7 +7664,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-12T13:27:22+00:00"
+            "time": "2024-02-18T04:25:40+00:00"
         },
         {
             "name": "lara-zeus/rhea",
@@ -7751,16 +7751,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.4.3",
+            "version": "v3.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "28f1917d9e06ecaa588ec49b6bbb224dff33c8cf"
+                "reference": "0ee65add501a364e146b349d8601572de59671ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/28f1917d9e06ecaa588ec49b6bbb224dff33c8cf",
-                "reference": "28f1917d9e06ecaa588ec49b6bbb224dff33c8cf",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/0ee65add501a364e146b349d8601572de59671ec",
+                "reference": "0ee65add501a364e146b349d8601572de59671ec",
                 "shasum": ""
             },
             "require": {
@@ -7838,20 +7838,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-17T05:14:59+00:00"
+            "time": "2024-02-19T16:39:55+00:00"
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v3.1.30",
+            "version": "v3.1.31",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "dbbcfed65487e66851becc07acc66ec15bee464d"
+                "reference": "614126fd61189f2cafff14d8fe1cb50972ee9c51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/dbbcfed65487e66851becc07acc66ec15bee464d",
-                "reference": "dbbcfed65487e66851becc07acc66ec15bee464d",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/614126fd61189f2cafff14d8fe1cb50972ee9c51",
+                "reference": "614126fd61189f2cafff14d8fe1cb50972ee9c51",
                 "shasum": ""
             },
             "require": {
@@ -7948,7 +7948,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-02-17T10:16:01+00:00"
+            "time": "2024-02-19T18:29:54+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -9262,16 +9262,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.4.4",
+            "version": "v3.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "c0489d4a76382f6dcf6e2702112f86aa089d0c8d"
+                "reference": "266ee3dcaef540f666d4eee19a314025aba5c6e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/c0489d4a76382f6dcf6e2702112f86aa089d0c8d",
-                "reference": "c0489d4a76382f6dcf6e2702112f86aa089d0c8d",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/266ee3dcaef540f666d4eee19a314025aba5c6e4",
+                "reference": "266ee3dcaef540f666d4eee19a314025aba5c6e4",
                 "shasum": ""
             },
             "require": {
@@ -9325,7 +9325,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.4.4"
+                "source": "https://github.com/livewire/livewire/tree/v3.4.5"
             },
             "funding": [
                 {
@@ -9333,7 +9333,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-28T19:07:11+00:00"
+            "time": "2024-02-19T14:52:03+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -17894,16 +17894,16 @@
         },
         {
             "name": "brianium/paratest",
-            "version": "v7.4.1",
+            "version": "v7.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paratestphp/paratest.git",
-                "reference": "b2830e330011d59a799c0002e118f5b4bbdb9604"
+                "reference": "cf4e141f6e778646384a7044c42ce792f1637e40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paratestphp/paratest/zipball/b2830e330011d59a799c0002e118f5b4bbdb9604",
-                "reference": "b2830e330011d59a799c0002e118f5b4bbdb9604",
+                "url": "https://api.github.com/repos/paratestphp/paratest/zipball/cf4e141f6e778646384a7044c42ce792f1637e40",
+                "reference": "cf4e141f6e778646384a7044c42ce792f1637e40",
                 "shasum": ""
             },
             "require": {
@@ -17911,13 +17911,13 @@
                 "ext-pcre": "*",
                 "ext-reflection": "*",
                 "ext-simplexml": "*",
-                "fidry/cpu-core-counter": "^1.0.0",
+                "fidry/cpu-core-counter": "^1.1.0",
                 "jean85/pretty-package-versions": "^2.0.5",
                 "php": "~8.2.0 || ~8.3.0",
                 "phpunit/php-code-coverage": "^10.1.11 || ^11.0.0",
                 "phpunit/php-file-iterator": "^4.1.0 || ^5.0.0",
                 "phpunit/php-timer": "^6.0.0 || ^7.0.0",
-                "phpunit/phpunit": "^10.5.9 || ^11.0.2",
+                "phpunit/phpunit": "^10.5.9 || ^11.0.3",
                 "sebastian/environment": "^6.0.1 || ^7.0.0",
                 "symfony/console": "^6.4.3 || ^7.0.3",
                 "symfony/process": "^6.4.3 || ^7.0.3"
@@ -17926,11 +17926,11 @@
                 "doctrine/coding-standard": "^12.0.0",
                 "ext-pcov": "*",
                 "ext-posix": "*",
-                "phpstan/phpstan": "^1.10.57",
+                "phpstan/phpstan": "^1.10.58",
                 "phpstan/phpstan-deprecation-rules": "^1.1.4",
                 "phpstan/phpstan-phpunit": "^1.3.15",
                 "phpstan/phpstan-strict-rules": "^1.5.2",
-                "squizlabs/php_codesniffer": "^3.8.1",
+                "squizlabs/php_codesniffer": "^3.9.0",
                 "symfony/filesystem": "^6.4.3 || ^7.0.3"
             },
             "bin": [
@@ -17972,7 +17972,7 @@
             ],
             "support": {
                 "issues": "https://github.com/paratestphp/paratest/issues",
-                "source": "https://github.com/paratestphp/paratest/tree/v7.4.1"
+                "source": "https://github.com/paratestphp/paratest/tree/v7.4.2"
             },
             "funding": [
                 {
@@ -17984,7 +17984,7 @@
                     "type": "paypal"
                 }
             ],
-            "time": "2024-02-06T13:50:28+00:00"
+            "time": "2024-02-19T15:13:11+00:00"
         },
         {
             "name": "composer/semver",
