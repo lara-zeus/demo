@@ -12,12 +12,14 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use LaraZeus\Athena\Models\Concerns\BelongToAthena;
+use LaraZeus\Bolt\Models\Concerns\BelongToBolt;
 use LaraZeus\Boredom\Concerns\HasBoringAvatar;
 use LaraZeus\Thunder\Concerns\ManageOffice;
 
 class User extends Authenticatable implements FilamentUser, HasAvatar
 {
     use BelongToAthena;
+    use BelongToBolt;
     use HasApiTokens;
     use HasBoringAvatar;
     use HasFactory;
