@@ -6248,16 +6248,16 @@
         },
         {
             "name": "lara-zeus/artemis",
-            "version": "v1.0.5",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/artemis.git",
-                "reference": "3bc37b5ecac8478ffd89e53cc12b989f6629afd6"
+                "reference": "6c5cb3a6cc0e075c4f121872be32e84fc14df69f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/3bc37b5ecac8478ffd89e53cc12b989f6629afd6",
-                "reference": "3bc37b5ecac8478ffd89e53cc12b989f6629afd6",
+                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/6c5cb3a6cc0e075c4f121872be32e84fc14df69f",
+                "reference": "6c5cb3a6cc0e075c4f121872be32e84fc14df69f",
                 "shasum": ""
             },
             "require": {
@@ -6265,9 +6265,9 @@
                 "php": "^8.1"
             },
             "require-dev": {
+                "larastan/larastan": "^2.0",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.0.1",
                 "nunomaduro/phpinsights": "^2.8",
                 "orchestra/testbench": "^8.0",
                 "phpstan/extension-installer": "^1.1",
@@ -6323,7 +6323,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-15T01:32:33+00:00"
+            "time": "2024-03-02T03:31:40+00:00"
         },
         {
             "name": "lara-zeus/athena",
@@ -6962,22 +6962,22 @@
         },
         {
             "name": "lara-zeus/hera",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/hera.git",
-                "reference": "d200aadbac42becdb907323b37468615050dcbcf"
+                "reference": "6b7e5f9cfb53995be4737277962b4500e6f8f15f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/hera/zipball/d200aadbac42becdb907323b37468615050dcbcf",
-                "reference": "d200aadbac42becdb907323b37468615050dcbcf",
+                "url": "https://api.github.com/repos/lara-zeus/hera/zipball/6b7e5f9cfb53995be4737277962b4500e6f8f15f",
+                "reference": "6b7e5f9cfb53995be4737277962b4500e6f8f15f",
                 "shasum": ""
             },
             "require": {
                 "lara-zeus/core": "^3.1",
                 "php": "^8.1",
-                "vormkracht10/laravel-seo-scanner": "^3.6"
+                "vormkracht10/laravel-seo-scanner": "^3.11"
             },
             "require-dev": {
                 "larastan/larastan": "^2.2",
@@ -7051,7 +7051,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-01-25T11:59:16+00:00"
+            "time": "2024-03-02T03:39:46+00:00"
         },
         {
             "name": "lara-zeus/hermes",

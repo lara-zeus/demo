@@ -4,6 +4,7 @@ namespace App\Filament\Widgets;
 
 use Filament\Widgets\ChartWidget;
 use GrahamCampbell\GitHub\Facades\GitHub;
+use Illuminate\Support\Carbon;
 use jeremykenedy\LaravelPackagist\App\Services\PackagistApiServices;
 use LaraZeus\DynamicDashboard\Concerns\InteractWithWidgets;
 use LaraZeus\DynamicDashboard\Contracts\Widget as ZeusWidget;
@@ -31,9 +32,13 @@ class GitStarsChart extends ChartWidget implements ZeusWidget
         $stars = $downloads = [];
 
         foreach ($repos as $repo) {
-            $getStars = GitHub::repo()->show('lara-zeus', $repo);
+            $getStars = cache()->remember('git-stars-'.$repo, Carbon::parse('1 day'), function () use($repo) {
+                return GitHub::repo()->show('lara-zeus', $repo);
+            });
             $stars[$repo] = $getStars['stargazers_count'];
-            $downloads[$repo] = PackagistApiServices::getPackageTotalDownloads('lara-zeus/' . $repo);
+            $downloads[$repo] = cache()->remember('git-downloads-'.$repo, Carbon::parse('1 day'), function () use($repo) {
+                return PackagistApiServices::getPackageTotalDownloads('lara-zeus/' . $repo);
+            });
         }
 
         return [
