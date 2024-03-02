@@ -6327,16 +6327,16 @@
         },
         {
             "name": "lara-zeus/athena",
-            "version": "1.0.10",
+            "version": "1.0.13",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/athena.git",
-                "reference": "bf7476fb4634bdde434ab3d3c03b83d71f31c53a"
+                "reference": "a09fcd13f3a5731afbc338126506f3f6ef5c4d9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/bf7476fb4634bdde434ab3d3c03b83d71f31c53a",
-                "reference": "bf7476fb4634bdde434ab3d3c03b83d71f31c53a",
+                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/a09fcd13f3a5731afbc338126506f3f6ef5c4d9a",
+                "reference": "a09fcd13f3a5731afbc338126506f3f6ef5c4d9a",
                 "shasum": ""
             },
             "require": {
@@ -6422,20 +6422,20 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-02-16T17:34:39+00:00"
+            "time": "2024-03-02T02:18:38+00:00"
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.24",
+            "version": "v3.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "5a30eeb3018299aa161813678a3d262960c31dc8"
+                "reference": "32267d090e0b300e8e3732a30f95f071b196bbae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/5a30eeb3018299aa161813678a3d262960c31dc8",
-                "reference": "5a30eeb3018299aa161813678a3d262960c31dc8",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/32267d090e0b300e8e3732a30f95f071b196bbae",
+                "reference": "32267d090e0b300e8e3732a30f95f071b196bbae",
                 "shasum": ""
             },
             "require": {
@@ -6516,7 +6516,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-01T15:36:12+00:00"
+            "time": "2024-03-02T01:05:33+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
