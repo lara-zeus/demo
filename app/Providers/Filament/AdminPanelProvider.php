@@ -213,7 +213,7 @@ class AdminPanelProvider extends PanelProvider
             )*/
             // lang
             ->renderHook(
-                'panels::user-menu.before',
+                'panels::user-menu.profile.after',
                 fn(): View => view('filament.hooks.lang-switcher'),
             )
             // footer
@@ -285,11 +285,13 @@ class AdminPanelProvider extends PanelProvider
                     new MyCustomVersionProvider(),
                 ]),
             QuickCreatePlugin::make()
+                ->sortBy('navigation')
                 ->excludes([
                     UserViewResource::class,
                     LetterResource::class,
                     TicketResource::class,
                     MenuSectionResource::class,
+                    RequestResource::class,
                 ]),
 
             SpatieLaravelTranslatablePlugin::make()
