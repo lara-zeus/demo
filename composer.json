@@ -9,10 +9,11 @@
         "andreiio/blade-iconoir": "^2.5",
         "andreiio/blade-remix-icon": "^2.3",
         "archilex/filament-filter-sets": "^3.5",
-        "archtechx/laravel-seo": "^0.7",
+        "archtechx/laravel-seo": "^0.10",
         "awcodes/filament-quick-create": "^3.0",
         "awcodes/filament-versions": "^2.0",
         "awcodes/light-switch": "^1.0",
+        "laravel/framework": "^11.0",
         "awcodes/overlook": "^2.0",
         "bezhansalleh/filament-panel-switch": "^1.0",
         "codeat3/blade-akar-icons": "^1.21",
@@ -25,14 +26,25 @@
         "codeat3/blade-rpg-awesome-icons": "^1.4",
         "codeat3/blade-vaadin-icons": "^1.4",
         "codewithdennis/filament-select-tree": "^3.1",
-        "davidhsianturi/blade-bootstrap-icons": "^1.4",
         "doctrine/dbal": "^3.0",
         "garygreen/pretty-routes": "^1.0",
-        "graham-campbell/github": "^12.2",
+        "graham-campbell/github": "dev-laravel-11",
+        "torchlight/torchlight-laravel": "dev-l11-compatibility",
         "guzzlehttp/guzzle": "^7.5",
         "jaocero/activity-timeline": "^1.1",
         "jaocero/radio-deck": "^1.1",
         "jeremykenedy/laravel-packagist": "^1.0",
+        "davidhsianturi/blade-bootstrap-icons": "dev-l11-compatibility",
+        "laravel/prompts": "^0.1.15",
+        "laravel/sanctum": "^4.0",
+        "njxqlus/filament-progressbar": "dev-main",
+        "postare/blade-mdi": "dev-laravel-11",
+        "pxlrbt/filament-spotlight": "^1.0",
+        "saade/blade-iconsax": "dev-l11-compatibility",
+        "sentry/sentry-laravel": "^4.3",
+        "ryangjchandler/blade-tabler-icons": "dev-l11-compatibility",
+        "swisnl/filament-backgrounds": "^1.1",
+        "lara-zeus/chronos": "^1.0",
         "lara-zeus/accordion": "^1.0",
         "lara-zeus/artemis": "^1.0",
         "lara-zeus/athena": "^1.0",
@@ -52,38 +64,26 @@
         "lara-zeus/rhea": "^2.0",
         "lara-zeus/sky": "^3.4",
         "lara-zeus/thunder": "^3.1",
-        "lara-zeus/wind": "^3.2",
-        "laravel/framework": "^10.0",
-        "laravel/prompts": "^0.1.15",
-        "laravel/sanctum": "^3.2",
-        "njxqlus/filament-progressbar": "dev-main",
-        "postare/blade-mdi": "^1.1",
-        "pxlrbt/filament-spotlight": "^1.0",
-        "ryangjchandler/blade-tabler-icons": "^2.0",
-        "saade/blade-iconsax": "^1.1",
-        "sentry/sentry-laravel": "^3.3",
-        "stechstudio/filament-impersonate": "^3.5",
-        "swisnl/filament-backgrounds": "^1.1",
-        "torchlight/torchlight-laravel": "^0.5.13"
+        "lara-zeus/wind": "^3.2"
     },
     "require-dev": {
+        "laravel/tinker": "^2.9",
+        "fakerphp/faker": "^1.23",
+        "laravel/pint": "^1.13",
+        "laravel/sail": "^1.26",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.0",
+        "phpunit/phpunit": "^10.5",
+        "spatie/laravel-ignition": "^2.4",
         "barryvdh/laravel-debugbar": "^3.9",
-        "fakerphp/faker": "^1.9.1",
         "laravel-lang/common": "^3.1",
-        "laravel/breeze": "^1.23",
-        "laravel/pint": "^1.0",
-        "laravel/sail": "^1.0.1",
-        "laravel/tinker": "^2.7",
-        "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^7.2",
         "larastan/larastan": "^2.0",
-        "orangehill/iseed": "^3.0",
+        "orangehill/iseed": "dev-laravel-11",
         "pestphp/pest": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0",
         "pestphp/pest-plugin-livewire": "^2.x-dev",
         "phpstan/extension-installer": "^1.1",
-        "phpstan/phpstan-deprecation-rules": "^1.0",
-        "spatie/laravel-ignition": "^2.0"
+        "phpstan/phpstan-deprecation-rules": "^1.0"
     },
     "autoload": {
         "psr-4": {
@@ -139,28 +139,36 @@
             "url": "https://filament-filter-sets.composer.sh"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/thunder.git"
+            "type": "path",
+            "url": "../p/*"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/hera.git"
+            "type": "vcs",
+            "url": "https://github.com/laravel-shift/blade-iconsax.git"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/hermes.git"
+            "type": "vcs",
+            "url": "https://github.com/laravel-shift/blade-tabler-icons.git"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/bolt-pro.git"
+            "type": "vcs",
+            "url": "https://github.com/atmonshi/blade-mdi"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/helen.git"
+            "type": "vcs",
+            "url": "https://github.com/laravel-shift/blade-bootstrap-icons.git"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/athena.git"
+            "type": "vcs",
+            "url": "https://github.com/laravel-shift/torchlight-laravel.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/atmonshi/iseed"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/atmonshi/Laravel-GitHub"
         }
     ]
 }
