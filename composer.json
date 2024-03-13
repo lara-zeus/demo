@@ -42,7 +42,7 @@
         "pxlrbt/filament-spotlight": "^1.0",
         "saade/blade-iconsax": "dev-l11-compatibility",
         "sentry/sentry-laravel": "^4.3",
-        "ryangjchandler/blade-tabler-icons": "dev-l11-compatibility",
+        "ryangjchandler/blade-tabler-icons": "^2.3",
         "swisnl/filament-backgrounds": "^1.1",
         "lara-zeus/chronos": "^1.0",
         "lara-zeus/accordion": "^1.0",
@@ -145,10 +145,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/laravel-shift/blade-iconsax.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/laravel-shift/blade-tabler-icons.git"
         },
         {
             "type": "vcs",
