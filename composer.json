@@ -13,6 +13,21 @@
         "awcodes/filament-quick-create": "^3.0",
         "awcodes/filament-versions": "^2.0",
         "awcodes/light-switch": "^1.0",
+
+        "lara-zeus/boredom": "^1.0",
+        "lara-zeus/accordion": "^1.0",
+        "lara-zeus/inline-chart": "^1.0",
+        "lara-zeus/list-group": "^1.0",
+        "lara-zeus/matrix-choice": "^3.2",
+        "lara-zeus/popover": "^1.0",
+        "lara-zeus/qr": "^1.0",
+        "lara-zeus/quantity": "^1.0",
+        "lara-zeus/wind": "^3.2",
+        "lara-zeus/sky": "^3.4",
+        "lara-zeus/artemis": "^1.0",
+        "lara-zeus/dynamic-dashboard": "^3.0",
+        "lara-zeus/hera": "^1.0",
+
         "laravel/framework": "^11.0",
         "awcodes/overlook": "^2.0",
         "bezhansalleh/filament-panel-switch": "^1.0",
@@ -37,34 +52,13 @@
         "davidhsianturi/blade-bootstrap-icons": "dev-l11-compatibility",
         "laravel/prompts": "^0.1.15",
         "laravel/sanctum": "^4.0",
-        "njxqlus/filament-progressbar": "dev-main",
+        "njxqlus/filament-progressbar": "^1.0",
         "postare/blade-mdi": "dev-laravel-11",
         "pxlrbt/filament-spotlight": "^1.0",
-        "saade/blade-iconsax": "dev-l11-compatibility",
+        "saade/blade-iconsax": "^1.2",
         "sentry/sentry-laravel": "^4.3",
         "ryangjchandler/blade-tabler-icons": "^2.3",
-        "swisnl/filament-backgrounds": "^1.1",
-        "lara-zeus/chronos": "^1.0",
-        "lara-zeus/accordion": "^1.0",
-        "lara-zeus/artemis": "^1.0",
-        "lara-zeus/athena": "^1.0",
-        "lara-zeus/bolt": "^3.0",
-        "lara-zeus/bolt-pro": "^3.0",
-        "lara-zeus/boredom": "^1.0",
-        "lara-zeus/dynamic-dashboard": "^3.0",
-        "lara-zeus/helen": "^2.0",
-        "lara-zeus/hera": "^1.0",
-        "lara-zeus/hermes": "^2.0",
-        "lara-zeus/inline-chart": "^1.0",
-        "lara-zeus/list-group": "^1.0",
-        "lara-zeus/matrix-choice": "^3.2",
-        "lara-zeus/popover": "^1.0",
-        "lara-zeus/qr": "^1.0",
-        "lara-zeus/quantity": "^1.0",
-        "lara-zeus/rhea": "^2.0",
-        "lara-zeus/sky": "^3.4",
-        "lara-zeus/thunder": "^3.1",
-        "lara-zeus/wind": "^3.2"
+        "swisnl/filament-backgrounds": "^1.1"
     },
     "require-dev": {
         "laravel/tinker": "^2.9",
@@ -139,14 +133,6 @@
             "url": "https://filament-filter-sets.composer.sh"
         },
         {
-            "type": "path",
-            "url": "../p/*"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/laravel-shift/blade-iconsax.git"
-        },
-        {
             "type": "vcs",
             "url": "https://github.com/atmonshi/blade-mdi"
         },
@@ -165,6 +151,18 @@
         {
             "type": "vcs",
             "url": "https://github.com/atmonshi/Laravel-GitHub"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/hera.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/hermes.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/helen.git"
         }
     ]
 }
