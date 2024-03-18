@@ -6,7 +6,6 @@ use App\Filament\Clusters\ComponentsDemo;
 use App\Models\User;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
-use Filament\Infolists\Components\TextEntry;
 use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
 use Filament\Tables\Concerns\InteractsWithTable;
@@ -79,16 +78,13 @@ class Popover extends Page implements HasForms, HasTable
                             ->placement('top-start')
                             ->popOverMaxWidth('none')
                             ->icon('heroicon-o-chevron-right')
-                            ->content(fn ($record) => view('filament.test.user-card', ['record' => $record, 'type' => 'name']))
-                        ,
+                            ->content(fn ($record) => view('filament.test.user-card', ['record' => $record, 'type' => 'name'])),
                         PopoverEntry::make('email')
                             ->placement('bottom')
                             ->popOverMaxWidth('none')
                             ->icon('heroicon-o-chevron-right')
-                            ->content(fn ($record) => view('filament.test.user-card', ['record' => $record, 'type' => 'name']))
-                        ,
+                            ->content(fn ($record) => view('filament.test.user-card', ['record' => $record, 'type' => 'name'])),
                     ]),
             ]);
     }
-
 }

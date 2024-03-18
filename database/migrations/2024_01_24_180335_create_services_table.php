@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create(config('zeus-athena.table-prefix') . 'services', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('category_id')->nullable()->constrained(config('zeus-bolt.table-prefix').'categories')->nullOnDelete();
-            $table->foreignId('form_id')->nullable()->constrained(config('zeus-bolt.table-prefix').'forms')->nullOnDelete();
+            $table->foreignId('category_id')->nullable()->constrained(config('zeus-bolt.table-prefix') . 'categories')->nullOnDelete();
+            $table->foreignId('form_id')->nullable()->constrained(config('zeus-bolt.table-prefix') . 'forms')->nullOnDelete();
 
             $table->text('name');
             $table->string('slug');

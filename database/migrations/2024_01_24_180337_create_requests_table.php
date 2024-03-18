@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create(config('zeus-athena.table-prefix') . 'requests', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('service_id')->constrained(config('zeus-athena.table-prefix').'services');
+            $table->foreignId('service_id')->constrained(config('zeus-athena.table-prefix') . 'services');
             $table->foreignId('user_id')->constrained('users');
-            $table->foreignId('response_id')->nullable()->constrained(config('zeus-bolt.table-prefix').'responses')->nullOnDelete();
+            $table->foreignId('response_id')->nullable()->constrained(config('zeus-bolt.table-prefix') . 'responses')->nullOnDelete();
             $table->string('appointment_no');
             $table->string('status')->default('NEW');
             $table->timestamps();
