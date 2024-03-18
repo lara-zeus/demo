@@ -54,7 +54,7 @@ class AthenaSeeder extends Seeder
             'form_id' => $form,
             'description' => 'keep your car clean and skip the queue',
             'color' => '#d62525',
-
+            'user_id' => '1',
             'slots_period_minutes' => 40,
             'min_time_slots' => 1,
             'max_time_slots' => 5,
