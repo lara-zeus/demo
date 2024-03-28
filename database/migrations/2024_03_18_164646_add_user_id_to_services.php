@@ -13,12 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(config('zeus-athena.table-prefix') . 'assigns', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('service_id')->constrained(config('zeus-athena.table-prefix') . 'services');
+        Schema::table(config('zeus-athena.table-prefix') . 'services', function (Blueprint $table) {
             $table->foreignId('user_id')->constrained('users');
-            $table->integer('is_manager');
-            $table->timestamps();
         });
     }
 
@@ -29,6 +25,11 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('zeus-athena.table-prefix') . 'assigns');
+        Schema::table(config('zeus-athena.table-prefix') . 'services', function (Blueprint $table) {
+            Schema::disableForeignKeyConstraints();
+            $table->dropForeign(['user_id']);
+            Schema::enableForeignKeyConstraints();
+            $table->dropColumn('user_id');
+        });
     }
 };

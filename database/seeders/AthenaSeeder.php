@@ -13,17 +13,19 @@ class AthenaSeeder extends Seeder
      */
     public function run(): void
     {
-        $category = DB::table(config('zeus-bolt.table-prefix').'categories')->insertGetId([
-            'name' => json_encode(['en' => 'Appointments Forms', 'ar' => 'نماذج الحجوزات والمواعيد'],
-                JSON_THROW_ON_ERROR),
+        $category = DB::table(config('zeus-bolt.table-prefix') . 'categories')->insertGetId([
+            'name' => json_encode(
+                ['en' => 'Appointments Forms', 'ar' => 'نماذج الحجوزات والمواعيد'],
+                JSON_THROW_ON_ERROR
+            ),
             'description' => json_encode([
-                'en' => 'all Appointments Forms Forms', 'ar' => 'كافة نماذج الحجوزات والمواعيد'
+                'en' => 'all Appointments Forms Forms', 'ar' => 'كافة نماذج الحجوزات والمواعيد',
             ], JSON_THROW_ON_ERROR),
             'slug' => 'appointments-forms',
             'created_at' => now(),
         ]);
 
-        $form = DB::table(config('zeus-bolt.table-prefix').'forms')->insertGetId([
+        $form = DB::table(config('zeus-bolt.table-prefix') . 'forms')->insertGetId([
             'name' => json_encode(['en' => 'general appointment', 'ar' => 'حجز موعد عام'], JSON_THROW_ON_ERROR),
             'slug' => 'general-appointment',
             'options' => json_encode([
@@ -41,18 +43,18 @@ class AthenaSeeder extends Seeder
             'ordering' => 1,
             'is_active' => 1,
             'description' => json_encode([
-                'en' => 'all Appointments Forms Forms', 'ar' => 'كافة نماذج الحجوزات والمواعيد'
+                'en' => 'all Appointments Forms Forms', 'ar' => 'كافة نماذج الحجوزات والمواعيد',
             ], JSON_THROW_ON_ERROR),
             'created_at' => now(),
         ]);
 
-        $service = DB::table(config('zeus-athena.table-prefix').'services')->insertGetId([
+        $service = DB::table(config('zeus-athena.table-prefix') . 'services')->insertGetId([
             'name' => 'car washer',
             'slug' => 'car-washer',
             'form_id' => $form,
             'description' => 'keep your car clean and skip the queue',
             'color' => '#d62525',
-
+            'user_id' => '1',
             'slots_period_minutes' => 40,
             'min_time_slots' => 1,
             'max_time_slots' => 5,
@@ -75,22 +77,22 @@ class AthenaSeeder extends Seeder
             'created_at' => now(),
         ]);
 
-        DB::table(config('zeus-athena.table-prefix').'tmp_time_lock')->insert([
-            ['service_id' => '1','appointment' => '2024-02-16 15:20:00','start_time_lock' => '2024-02-12 16:48:20'],
-            ['service_id' => '1','appointment' => '2024-02-18 18:20:00','start_time_lock' => '2024-02-12 16:48:20'],
-            ['service_id' => '1','appointment' => '2024-02-18 19:00:00','start_time_lock' => '2024-02-12 16:48:20'],
-            ['service_id' => '1','appointment' => '2024-02-26 08:40:00','start_time_lock' => '2024-02-12 16:48:20'],
-            ['service_id' => '1','appointment' => '2024-02-26 13:20:00','start_time_lock' => '2024-02-12 16:48:20'],
-            ['service_id' => '1','appointment' => '2024-02-26 14:00:00','start_time_lock' => '2024-02-12 16:48:20'],
+        DB::table(config('zeus-athena.table-prefix') . 'tmp_time_lock')->insert([
+            ['service_id' => '1', 'appointment' => '2024-02-16 15:20:00', 'start_time_lock' => '2024-02-12 16:48:20'],
+            ['service_id' => '1', 'appointment' => '2024-02-18 18:20:00', 'start_time_lock' => '2024-02-12 16:48:20'],
+            ['service_id' => '1', 'appointment' => '2024-02-18 19:00:00', 'start_time_lock' => '2024-02-12 16:48:20'],
+            ['service_id' => '1', 'appointment' => '2024-02-26 08:40:00', 'start_time_lock' => '2024-02-12 16:48:20'],
+            ['service_id' => '1', 'appointment' => '2024-02-26 13:20:00', 'start_time_lock' => '2024-02-12 16:48:20'],
+            ['service_id' => '1', 'appointment' => '2024-02-26 14:00:00', 'start_time_lock' => '2024-02-12 16:48:20'],
         ]);
 
-        $section1 = DB::table(config('zeus-bolt.table-prefix').'sections')->insertGetId([
+        $section1 = DB::table(config('zeus-bolt.table-prefix') . 'sections')->insertGetId([
             'name' => json_encode(['en' => 'info', 'ar' => 'بيانات'], JSON_THROW_ON_ERROR),
             'form_id' => $form,
             'created_at' => now(),
         ]);
 
-        $section1_field_1 = DB::table(config('zeus-bolt.table-prefix').'fields')->insertGetId([
+        $section1_field_1 = DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId([
             'name' => json_encode(['en' => 'your name', 'ar' => 'اسمك'], JSON_THROW_ON_ERROR),
             'section_id' => $section1,
             'ordering' => 1,
@@ -103,7 +105,7 @@ class AthenaSeeder extends Seeder
             'created_at' => now(),
         ]);
 
-        $response_1 = DB::table(config('zeus-bolt.table-prefix').'responses')->insertGetId([
+        $response_1 = DB::table(config('zeus-bolt.table-prefix') . 'responses')->insertGetId([
             'form_id' => $form,
             'user_id' => 1,
             'status' => 'OPEN',
@@ -111,7 +113,7 @@ class AthenaSeeder extends Seeder
             'created_at' => now(),
         ]);
 
-        $response_1_field_1 = DB::table(config('zeus-bolt.table-prefix').'field_responses')->insertGetId([
+        $response_1_field_1 = DB::table(config('zeus-bolt.table-prefix') . 'field_responses')->insertGetId([
             'form_id' => $form,
             'field_id' => $section1_field_1,
             'response_id' => $response_1,
@@ -119,7 +121,7 @@ class AthenaSeeder extends Seeder
             'created_at' => now(),
         ]);
 
-        DB::table(config('zeus-athena.table-prefix').'requests')->insertGetId([
+        DB::table(config('zeus-athena.table-prefix') . 'requests')->insertGetId([
             'appointment_no' => Str::random(6),
             'service_id' => $service,
             'response_id' => $response_1,
@@ -129,13 +131,13 @@ class AthenaSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
-        DB::table(config('zeus-athena.table-prefix').'requests_periods')->insert([
-            ['service_id' => '1','request_id' => '1','appointment' => '2024-02-16 15:20:00'],
-            ['service_id' => '1','request_id' => '1','appointment' => '2024-02-18 18:20:00'],
-            ['service_id' => '1','request_id' => '1','appointment' => '2024-02-18 19:00:00'],
-            ['service_id' => '1','request_id' => '1','appointment' => '2024-02-26 08:40:00'],
-            ['service_id' => '1','request_id' => '1','appointment' => '2024-02-26 13:20:00'],
-            ['service_id' => '1','request_id' => '1','appointment' => '2024-02-26 14:00:00'],
+        DB::table(config('zeus-athena.table-prefix') . 'requests_periods')->insert([
+            ['service_id' => '1', 'request_id' => '1', 'appointment' => '2024-02-16 15:20:00'],
+            ['service_id' => '1', 'request_id' => '1', 'appointment' => '2024-02-18 18:20:00'],
+            ['service_id' => '1', 'request_id' => '1', 'appointment' => '2024-02-18 19:00:00'],
+            ['service_id' => '1', 'request_id' => '1', 'appointment' => '2024-02-26 08:40:00'],
+            ['service_id' => '1', 'request_id' => '1', 'appointment' => '2024-02-26 13:20:00'],
+            ['service_id' => '1', 'request_id' => '1', 'appointment' => '2024-02-26 14:00:00'],
         ]);
     }
 }

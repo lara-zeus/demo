@@ -77,4 +77,9 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
     {
         return $this->id !== 1;
     }
+
+    public function isServicesManager(): bool
+    {
+        return $this->email === 'info@larazeus.com';
+    }
 }

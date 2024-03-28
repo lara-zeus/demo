@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create(config('zeus-athena.table-prefix') . 'tmp_time_lock', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('service_id')->nullable()->constrained(config('zeus-athena.table-prefix').'services')->nullOnDelete();
+            $table->foreignId('service_id')->nullable()->constrained(config('zeus-athena.table-prefix') . 'services')->nullOnDelete();
             $table->dateTime('appointment');
             $table->dateTime('start_time_lock');
             $table->timestamps();

@@ -11,7 +11,7 @@
             <span>Booking and Appointments Managements</span>
             <br>
             <span class="font-semibold text-xl">
-                🎉 Athena is available now in beta, <a class="text-secondary-600" target="_blank" href="https://larazeus.com/athena">get it here</a>
+                🎉 Athena is available now, <a class="text-secondary-600" target="_blank" href="https://larazeus.com/athena">get it here</a>
             </span>
         </div>
     </div>

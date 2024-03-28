@@ -32,11 +32,11 @@ class GitStarsChart extends ChartWidget implements ZeusWidget
         $stars = $downloads = [];
 
         foreach ($repos as $repo) {
-            $getStars = cache()->remember('git-stars-'.$repo, Carbon::parse('1 day'), function () use($repo) {
+            $getStars = cache()->remember('git-stars-' . $repo, Carbon::parse('1 day'), function () use ($repo) {
                 return GitHub::repo()->show('lara-zeus', $repo);
             });
             $stars[$repo] = $getStars['stargazers_count'];
-            $downloads[$repo] = cache()->remember('git-downloads-'.$repo, Carbon::parse('1 day'), function () use($repo) {
+            $downloads[$repo] = cache()->remember('git-downloads-' . $repo, Carbon::parse('1 day'), function () use ($repo) {
                 return PackagistApiServices::getPackageTotalDownloads('lara-zeus/' . $repo);
             });
         }
