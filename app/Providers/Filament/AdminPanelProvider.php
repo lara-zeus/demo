@@ -159,7 +159,7 @@ class AdminPanelProvider extends PanelProvider
             )
 
             // athena
-            /*->renderHook(
+            ->renderHook(
                 'panels::page.start',
                 fn(array $scopes): View => view('filament.hooks.athena', ['scopes' => $scopes]),
                 scopes: [
@@ -167,7 +167,7 @@ class AdminPanelProvider extends PanelProvider
                     ServiceResource::class,
                     Calendar::class,
                 ],
-            )*/
+            )
             ->renderHook(
                 'panels::topbar.start',
                 fn(array $scopes): View => view('filament.hooks.store'),
@@ -263,13 +263,13 @@ class AdminPanelProvider extends PanelProvider
                 ->resourceNavigationGroup('Bolt')
                 ->resourceNavigationSort(99)
                 ->favoritesBarTheme(FavoritesBarTheme::Filament),
-            /*CuratorPlugin::make()
+            CuratorPlugin::make()
                 ->label(fn(): string => __('Media'))
                 ->pluralLabel(fn(): string => __('Media'))
                 ->navigationIcon('heroicon-o-photo')
                 ->navigationGroup(fn(): string => __('Hermes'))
                 ->navigationSort(99)
-                ->navigationCountBadge(),*/
+                ->navigationCountBadge(),
             SpotlightPlugin::make(),
             LightSwitchPlugin::make(),
             OverlookPlugin::make()
@@ -306,15 +306,9 @@ class AdminPanelProvider extends PanelProvider
                 ->baseDomain('demo.larazeus.com')
                 ->prefix('not-so-short'),
 
-            /*FilamentFullCalendarPlugin::make()
-                //     ->schedulerLicenseKey('')
+            FilamentFullCalendarPlugin::make()
                 ->selectable()
-                ->editable()*/
-            //->timezone()
-            //->locale()
-            //->plugins()
-            //->config()
-            //,
+                ->editable(),
 
             BoltPlugin::make()
                 ->extensions([
@@ -323,10 +317,10 @@ class AdminPanelProvider extends PanelProvider
                 ]),
 
             ThunderPlugin::make(),
-            //AthenaPlugin::make(),
+            AthenaPlugin::make(),
             DynamicDashboardPlugin::make(),
             //RheaPlugin::make(),
-            //HermesPlugin::make(),
+            HermesPlugin::make(),
         ];
     }
 }
