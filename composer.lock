@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "816fa08256cc825ecd013df791ca00d4",
+    "content-hash": "03e2731e461f96a8d67a47e6b47ab857",
     "packages": [
         {
             "name": "andreiio/blade-iconoir",
@@ -2399,21 +2399,20 @@
         },
         {
             "name": "coolsam/flatpickr",
-            "version": "v3.1.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/savannabits/filament-flatpickr.git",
-                "reference": "67f88f078fe39df24ecf2883a781f69fdb6fc4b3"
+                "reference": "c1a74870e9056988ad001955ac7674c090f11ac0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/savannabits/filament-flatpickr/zipball/67f88f078fe39df24ecf2883a781f69fdb6fc4b3",
-                "reference": "67f88f078fe39df24ecf2883a781f69fdb6fc4b3",
+                "url": "https://api.github.com/repos/savannabits/filament-flatpickr/zipball/c1a74870e9056988ad001955ac7674c090f11ac0",
+                "reference": "c1a74870e9056988ad001955ac7674c090f11ac0",
                 "shasum": ""
             },
             "require": {
-                "filament/filament": "^3.0",
-                "illuminate/contracts": "^10.0|^11.0",
+                "illuminate/contracts": "^10.0",
                 "php": "^8.1",
                 "spatie/laravel-package-tools": "^1.14.0"
             },
@@ -2421,7 +2420,7 @@
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.9",
                 "nunomaduro/larastan": "^2.0.1",
-                "orchestra/testbench": "^8.0|^9.0",
+                "orchestra/testbench": "^8.0",
                 "pestphp/pest": "^2.0",
                 "pestphp/pest-plugin-arch": "^2.0",
                 "pestphp/pest-plugin-laravel": "^2.0",
@@ -2467,9 +2466,9 @@
             ],
             "support": {
                 "issues": "https://github.com/savannabits/filament-flatpickr/issues",
-                "source": "https://github.com/savannabits/filament-flatpickr/tree/v3.1.0"
+                "source": "https://github.com/savannabits/filament-flatpickr/tree/v3.0.1"
             },
-            "time": "2024-03-21T12:14:34+00:00"
+            "time": "2023-08-10T21:09:37+00:00"
         },
         {
             "name": "danharrin/date-format-converter",
@@ -5147,16 +5146,16 @@
         },
         {
             "name": "ibrahimbougaoua/filament-rating-star",
-            "version": "v1.0.0",
+            "version": "v0.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ibrahimBougaoua/filament-rating-star.git",
-                "reference": "4236c897f3dc591b6e4ab2277c38e3d8583f08d6"
+                "reference": "585e23a5bf4cb636462070f5d834918f45bf652e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ibrahimBougaoua/filament-rating-star/zipball/4236c897f3dc591b6e4ab2277c38e3d8583f08d6",
-                "reference": "4236c897f3dc591b6e4ab2277c38e3d8583f08d6",
+                "url": "https://api.github.com/repos/ibrahimBougaoua/filament-rating-star/zipball/585e23a5bf4cb636462070f5d834918f45bf652e",
+                "reference": "585e23a5bf4cb636462070f5d834918f45bf652e",
                 "shasum": ""
             },
             "require": {
@@ -5215,9 +5214,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ibrahimBougaoua/filament-rating-star/issues",
-                "source": "https://github.com/ibrahimBougaoua/filament-rating-star/tree/v1.0.0"
+                "source": "https://github.com/ibrahimBougaoua/filament-rating-star/tree/v0.0.1"
             },
-            "time": "2024-02-06T10:13:58+00:00"
+            "time": "2023-08-24T21:40:05+00:00"
         },
         {
             "name": "intervention/image",
@@ -6519,23 +6518,23 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.1.3",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "1b0cdf59f4a695369b7c94e35a0e74cfa1b2058f"
+                "reference": "2ba9d092f8ab79329d231e7f2a5447f3a012d2f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/1b0cdf59f4a695369b7c94e35a0e74cfa1b2058f",
-                "reference": "1b0cdf59f4a695369b7c94e35a0e74cfa1b2058f",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/2ba9d092f8ab79329d231e7f2a5447f3a012d2f7",
+                "reference": "2ba9d092f8ab79329d231e7f2a5447f3a012d2f7",
                 "shasum": ""
             },
             "require": {
-                "arbermustafa/filament-locationpickr-field": "^2.0",
+                "arbermustafa/filament-locationpickr-field": "^2.0.0",
                 "awcodes/shout": "^2.0",
-                "coolsam/flatpickr": "^3.1",
-                "ibrahimbougaoua/filament-rating-star": "*",
+                "coolsam/flatpickr": "^3.0",
+                "ibrahimbougaoua/filament-rating-star": "^0.0.1",
                 "lara-zeus/bolt": "^3.0",
                 "lara-zeus/matrix-choice": "^3.2",
                 "lara-zeus/quantity": "^1.0",
@@ -6544,7 +6543,7 @@
                 "saade/filament-autograph": "^3.0",
                 "sawirricardo/filament-nouislider": "^0.0",
                 "tapp/filament-timezone-field": "^3.0",
-                "ysfkaya/filament-phone-input": "^2.3"
+                "ysfkaya/filament-phone-input": "^2.2"
             },
             "require-dev": {
                 "laravel/pint": "^1.0",
@@ -6611,7 +6610,7 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2024-03-21T15:16:29+00:00"
+            "time": "2024-03-21T13:58:27+00:00"
         },
         {
             "name": "lara-zeus/boredom",
