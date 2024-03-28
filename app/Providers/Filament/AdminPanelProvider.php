@@ -42,6 +42,7 @@ use LaraZeus\Bolt\Filament\Resources\CollectionResource;
 use LaraZeus\Bolt\Filament\Resources\FormResource;
 use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
+use LaraZeus\Chronos\ChronosPlugin;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
@@ -297,6 +298,7 @@ class AdminPanelProvider extends PanelProvider
             SpatieLaravelTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt', 'ko']),
 
+            //ChronosPlugin::make(),
             WindPlugin::make(),
             SkyPlugin::make(),
             HeraPlugin::make(),
@@ -318,7 +320,7 @@ class AdminPanelProvider extends PanelProvider
             ThunderPlugin::make(),
             AthenaPlugin::make(),
             DynamicDashboardPlugin::make(),
-            RheaPlugin::make(),
+            //RheaPlugin::make(),
             HermesPlugin::make(),
         ];
     }
