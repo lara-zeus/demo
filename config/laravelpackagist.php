@@ -9,8 +9,8 @@ return [
     */
     'caching' => [
         'enabled' => env('PACKAGIST_CACHE_ENABLED', true),
-        'vendorListCacheTime' => env('PACKAGIST_VENDOR_LIST_CACHE_TIME_MINUTES', 100),
-        'vendorItemCacheTime' => env('PACKAGIST_VENDOR_ITEM_CACHE_TIME_MINUTES', 100),
+        'vendorListCacheTime' => (int) env('PACKAGIST_VENDOR_LIST_CACHE_TIME_MINUTES', 100),
+        'vendorItemCacheTime' => (int) env('PACKAGIST_VENDOR_ITEM_CACHE_TIME_MINUTES', 100),
     ],
 
     /*
