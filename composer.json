@@ -62,11 +62,11 @@
         "sentry/sentry-laravel": "^4.3",
         "stechstudio/filament-impersonate": "^3.8",
         "swisnl/filament-backgrounds": "^1.1",
-        "torchlight/torchlight-laravel": "dev-l11-compatibility"
+        "torchlight/torchlight-laravel": "dev-l11-compatibility",
+        "fakerphp/faker": "^1.23"
     },
     "require-dev": {
         "laravel/tinker": "^2.9",
-        "fakerphp/faker": "^1.23",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
         "mockery/mockery": "^1.6",

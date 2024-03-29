@@ -11,7 +11,7 @@ use Intervention\Image\Facades\Image;
 
 class HermesSeeder extends Seeder
 {
-    protected $faker;
+    protected mixed $faker;
 
     public function __construct()
     {
