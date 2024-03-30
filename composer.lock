@@ -256,12 +256,12 @@
         },
         {
             "name": "archilex/filament-filter-sets",
-            "version": "3.6.9",
+            "version": "3.6.12",
             "dist": {
                 "type": "zip",
-                "url": "https://filament-filter-sets.composer.sh/download/9b9b43fa-7867-49c6-86fb-78680b32d8ec/advanced-tables-for-filament-3.6.9.zip",
-                "reference": "0d3fdd580474ca64ca59504723dd0b5f87e11de2",
-                "shasum": "8e008a2ec7e16f608c0db05baaba9808c0e7e900"
+                "url": "https://filament-filter-sets.composer.sh/download/9bb010bb-4847-4a3e-9526-737ca41f0e9d/advanced-tables-for-filament-3.6.12.zip",
+                "reference": "cfed12e32652ce6a796b83410342855625b60735",
+                "shasum": "8966f4268a4a43d58d195160ab614b02e9024a54"
             },
             "require": {
                 "archilex/filament-toggle-icon-column": "^3.0",
@@ -337,7 +337,7 @@
                 "tables",
                 "views"
             ],
-            "time": "2024-03-20T05:13:49+00:00"
+            "time": "2024-03-30T13:22:54+00:00"
         },
         {
             "name": "archilex/filament-toggle-icon-column",
@@ -827,16 +827,16 @@
         },
         {
             "name": "awcodes/shout",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/shout.git",
-                "reference": "5329bdb635f215bd7f37097d5052a64396834040"
+                "reference": "10fa7dac88feda1671acf10e3b527d6370c6474e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/shout/zipball/5329bdb635f215bd7f37097d5052a64396834040",
-                "reference": "5329bdb635f215bd7f37097d5052a64396834040",
+                "url": "https://api.github.com/repos/awcodes/shout/zipball/10fa7dac88feda1671acf10e3b527d6370c6474e",
+                "reference": "10fa7dac88feda1671acf10e3b527d6370c6474e",
                 "shasum": ""
             },
             "require": {
@@ -889,7 +889,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-14T14:07:24+00:00"
+            "time": "2024-03-29T20:28:36+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -7507,16 +7507,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.4.7",
+            "version": "v3.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "90fa533f35054aa3330fa5bdb77ad67b9a5ea0b2"
+                "reference": "ef90dde48f62d0dc61c9560385822d1ce0054455"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/90fa533f35054aa3330fa5bdb77ad67b9a5ea0b2",
-                "reference": "90fa533f35054aa3330fa5bdb77ad67b9a5ea0b2",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/ef90dde48f62d0dc61c9560385822d1ce0054455",
+                "reference": "ef90dde48f62d0dc61c9560385822d1ce0054455",
                 "shasum": ""
             },
             "require": {
@@ -7593,20 +7593,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-07T13:51:20+00:00"
+            "time": "2024-03-30T18:03:12+00:00"
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v3.1.33",
+            "version": "v3.1.34",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "3535a994ef389484e8a7459558b32b4bf590487c"
+                "reference": "daaa308b199252eecd96c6bdeb3bad366e4637b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/3535a994ef389484e8a7459558b32b4bf590487c",
-                "reference": "3535a994ef389484e8a7459558b32b4bf590487c",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/daaa308b199252eecd96c6bdeb3bad366e4637b0",
+                "reference": "daaa308b199252eecd96c6bdeb3bad366e4637b0",
                 "shasum": ""
             },
             "require": {
@@ -7702,7 +7702,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-03-13T23:19:29+00:00"
+            "time": "2024-03-30T17:45:39+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -10332,16 +10332,16 @@
         },
         {
             "name": "php-http/discovery",
-            "version": "1.19.2",
+            "version": "1.19.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/discovery.git",
-                "reference": "61e1a1eb69c92741f5896d9e05fb8e9d7e8bb0cb"
+                "reference": "0700efda8d7526335132360167315fdab3aeb599"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/discovery/zipball/61e1a1eb69c92741f5896d9e05fb8e9d7e8bb0cb",
-                "reference": "61e1a1eb69c92741f5896d9e05fb8e9d7e8bb0cb",
+                "url": "https://api.github.com/repos/php-http/discovery/zipball/0700efda8d7526335132360167315fdab3aeb599",
+                "reference": "0700efda8d7526335132360167315fdab3aeb599",
                 "shasum": ""
             },
             "require": {
@@ -10365,7 +10365,8 @@
                 "php-http/httplug": "^1.0 || ^2.0",
                 "php-http/message-factory": "^1.0",
                 "phpspec/phpspec": "^5.1 || ^6.1 || ^7.3",
-                "symfony/phpunit-bridge": "^6.2"
+                "sebastian/comparator": "^3.0.5 || ^4.0.8",
+                "symfony/phpunit-bridge": "^6.4.4 || ^7.0.1"
             },
             "type": "composer-plugin",
             "extra": {
@@ -10404,9 +10405,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/discovery/issues",
-                "source": "https://github.com/php-http/discovery/tree/1.19.2"
+                "source": "https://github.com/php-http/discovery/tree/1.19.4"
             },
-            "time": "2023-11-30T16:49:05+00:00"
+            "time": "2024-03-29T13:00:05+00:00"
         },
         {
             "name": "php-http/httplug",
@@ -21537,16 +21538,16 @@
         },
         {
             "name": "spatie/ignition",
-            "version": "1.13.0",
+            "version": "1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/ignition.git",
-                "reference": "e385d778f770580c00ef200be5ab749c3c907147"
+                "reference": "889bf1dfa59e161590f677728b47bf4a6893983b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/ignition/zipball/e385d778f770580c00ef200be5ab749c3c907147",
-                "reference": "e385d778f770580c00ef200be5ab749c3c907147",
+                "url": "https://api.github.com/repos/spatie/ignition/zipball/889bf1dfa59e161590f677728b47bf4a6893983b",
+                "reference": "889bf1dfa59e161590f677728b47bf4a6893983b",
                 "shasum": ""
             },
             "require": {
@@ -21616,20 +21617,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-28T14:23:58+00:00"
+            "time": "2024-03-29T14:03:47+00:00"
         },
         {
             "name": "spatie/laravel-ignition",
-            "version": "2.4.2",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-ignition.git",
-                "reference": "351504f4570e32908839fc5a2dc53bf77d02f85e"
+                "reference": "e23f4e8ce6644dc3d68b9d8a0aed3beaca0d6ada"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/351504f4570e32908839fc5a2dc53bf77d02f85e",
-                "reference": "351504f4570e32908839fc5a2dc53bf77d02f85e",
+                "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/e23f4e8ce6644dc3d68b9d8a0aed3beaca0d6ada",
+                "reference": "e23f4e8ce6644dc3d68b9d8a0aed3beaca0d6ada",
                 "shasum": ""
             },
             "require": {
@@ -21639,7 +21640,7 @@
                 "illuminate/support": "^10.0|^11.0",
                 "php": "^8.1",
                 "spatie/flare-client-php": "^1.3.5",
-                "spatie/ignition": "^1.9",
+                "spatie/ignition": "^1.13",
                 "symfony/console": "^6.2.3|^7.0",
                 "symfony/var-dumper": "^6.2.3|^7.0"
             },
@@ -21708,7 +21709,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-09T16:08:40+00:00"
+            "time": "2024-03-29T14:14:55+00:00"
         },
         {
             "name": "symfony/polyfill-php81",
