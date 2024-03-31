@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b20a012e87260e0b75b8b26bdcc19c89",
+    "content-hash": "e3fb532b144d46a3c53e995331e30ca0",
     "packages": [
         {
             "name": "andreiio/blade-iconoir",
@@ -7507,16 +7507,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.4.8",
+            "version": "v3.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "ef90dde48f62d0dc61c9560385822d1ce0054455"
+                "reference": "f5c26f01a2d63776f6599f208a48dd7edcdccd14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/ef90dde48f62d0dc61c9560385822d1ce0054455",
-                "reference": "ef90dde48f62d0dc61c9560385822d1ce0054455",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/f5c26f01a2d63776f6599f208a48dd7edcdccd14",
+                "reference": "f5c26f01a2d63776f6599f208a48dd7edcdccd14",
                 "shasum": ""
             },
             "require": {
@@ -7593,7 +7593,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-30T18:03:12+00:00"
+            "time": "2024-03-31T00:53:49+00:00"
         },
         {
             "name": "lara-zeus/thunder",
@@ -9553,16 +9553,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "3.2.2",
+            "version": "3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "2d69b6de67e2a3c0652d0c9dfcfda8b4563c4cee"
+                "reference": "4d599a6e2351d6b6bf21737accdfe1a4ce3fdbb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/2d69b6de67e2a3c0652d0c9dfcfda8b4563c4cee",
-                "reference": "2d69b6de67e2a3c0652d0c9dfcfda8b4563c4cee",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/4d599a6e2351d6b6bf21737accdfe1a4ce3fdbb1",
+                "reference": "4d599a6e2351d6b6bf21737accdfe1a4ce3fdbb1",
                 "shasum": ""
             },
             "require": {
@@ -9655,7 +9655,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-28T12:59:49+00:00"
+            "time": "2024-03-30T18:22:00+00:00"
         },
         {
             "name": "nette/schema",
@@ -10724,17 +10724,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atmonshi/blade-mdi.git",
-                "reference": "5fc45d4506ff89caebdf58b335f28639ad685049"
+                "reference": "37c899539da608a598f5749aa9c30dd3ed189c47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atmonshi/blade-mdi/zipball/5fc45d4506ff89caebdf58b335f28639ad685049",
-                "reference": "5fc45d4506ff89caebdf58b335f28639ad685049",
+                "url": "https://api.github.com/repos/atmonshi/blade-mdi/zipball/37c899539da608a598f5749aa9c30dd3ed189c47",
+                "reference": "37c899539da608a598f5749aa9c30dd3ed189c47",
                 "shasum": ""
             },
             "require": {
                 "blade-ui-kit/blade-icons": "^1.5",
-                "illuminate/support": "^8.0|^9.0|^10.0|^11.0",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -10797,7 +10796,7 @@
                     "url": "https://github.com/renoki-co"
                 }
             ],
-            "time": "2024-02-28T16:43:17+00:00"
+            "time": "2024-03-31T18:28:43+00:00"
         },
         {
             "name": "propaganistas/laravel-phone",
@@ -11905,7 +11904,7 @@
         },
         {
             "name": "saade/filament-autograph",
-            "version": "3.x-dev",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/saade/filament-autograph.git",
@@ -11937,7 +11936,6 @@
                 "phpstan/phpstan-phpunit": "^1.0",
                 "spatie/laravel-ray": "^1.26"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -17234,16 +17232,16 @@
         },
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v3.12.2",
+            "version": "v3.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "43555503052443964ce2c1c1f3b0378e58219eb8"
+                "reference": "aac8f08b73af8c5d2ab6595c8823ddb26d1453f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/43555503052443964ce2c1c1f3b0378e58219eb8",
-                "reference": "43555503052443964ce2c1c1f3b0378e58219eb8",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/aac8f08b73af8c5d2ab6595c8823ddb26d1453f1",
+                "reference": "aac8f08b73af8c5d2ab6595c8823ddb26d1453f1",
                 "shasum": ""
             },
             "require": {
@@ -17302,7 +17300,7 @@
             ],
             "support": {
                 "issues": "https://github.com/barryvdh/laravel-debugbar/issues",
-                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.12.2"
+                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.12.3"
             },
             "funding": [
                 {
@@ -17314,7 +17312,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-13T09:50:34+00:00"
+            "time": "2024-03-31T18:35:30+00:00"
         },
         {
             "name": "brianium/paratest",
@@ -18022,16 +18020,16 @@
         },
         {
             "name": "laravel-lang/attributes",
-            "version": "2.9.5",
+            "version": "2.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/attributes.git",
-                "reference": "7d050eb68d0292164f9d1aa76c8fc080e04ff4f8"
+                "reference": "b6a9227b148114ae8df5e1b24442dc847f46ebca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/7d050eb68d0292164f9d1aa76c8fc080e04ff4f8",
-                "reference": "7d050eb68d0292164f9d1aa76c8fc080e04ff4f8",
+                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/b6a9227b148114ae8df5e1b24442dc847f46ebca",
+                "reference": "b6a9227b148114ae8df5e1b24442dc847f46ebca",
                 "shasum": ""
             },
             "require": {
@@ -18085,9 +18083,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/attributes/issues",
-                "source": "https://github.com/Laravel-Lang/attributes/tree/2.9.5"
+                "source": "https://github.com/Laravel-Lang/attributes/tree/2.10.1"
             },
-            "time": "2024-03-19T12:06:48+00:00"
+            "time": "2024-03-31T13:40:16+00:00"
         },
         {
             "name": "laravel-lang/common",

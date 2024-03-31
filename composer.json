@@ -26,6 +26,7 @@
         "coolsam/flatpickr": "3.x-dev as 3.0.1",
         "davidhsianturi/blade-bootstrap-icons": "dev-l11-compatibility",
         "doctrine/dbal": "^3.0",
+        "fakerphp/faker": "^1.23",
         "garygreen/pretty-routes": "^1.0",
         "graham-campbell/github": "^12.6",
         "guzzlehttp/guzzle": "^7.5",
@@ -62,8 +63,7 @@
         "sentry/sentry-laravel": "^4.3",
         "stechstudio/filament-impersonate": "^3.8",
         "swisnl/filament-backgrounds": "^1.1",
-        "torchlight/torchlight-laravel": "dev-l11-compatibility",
-        "fakerphp/faker": "^1.23"
+        "torchlight/torchlight-laravel": "dev-l11-compatibility"
     },
     "require-dev": {
         "laravel/tinker": "^2.9",
