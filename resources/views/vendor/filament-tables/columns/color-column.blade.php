@@ -1,13 +1,5 @@
 @php
     $canWrap = $canWrap();
-
-    $arrayState = $getState();
-
-    if ($arrayState instanceof \Illuminate\Support\Collection) {
-        $arrayState = $arrayState->all();
-    }
-
-    $arrayState = \Illuminate\Support\Arr::wrap($arrayState);
 @endphp
 
 <div
@@ -21,7 +13,7 @@
             ])
     }}
 >
-    @if (count($arrayState))
+    @if (count($arrayState = \Illuminate\Support\Arr::wrap($getState())))
         @foreach ($arrayState as $state)
             @php
                 $itemIsCopyable = $isCopyable($state);

@@ -10,7 +10,6 @@
     'color' => 'primary',
     'disabled' => false,
     'form' => null,
-    'formId' => null,
     'grouped' => false,
     'href' => null,
     'icon' => null,
@@ -149,7 +148,6 @@
         :color="$color"
         :disabled="$disabled"
         :form="$form"
-        :form-id="$formId"
         :href="$href"
         :icon="$icon"
         :icon-alias="$iconAlias"
@@ -158,7 +156,6 @@
         :label="$slot"
         :size="$size"
         :tag="$tag"
-        :target="$target"
         :tooltip="$tooltip"
         :type="$type"
         :class="
@@ -215,7 +212,6 @@
         $attributes
             ->merge([
                 'disabled' => $disabled,
-                'form' => $formId,
                 'type' => $tag === 'button' ? $type : null,
                 'wire:loading.attr' => $tag === 'button' ? 'disabled' : null,
                 'wire:target' => ($hasLoadingIndicator && $loadingIndicatorTarget) ? $loadingIndicatorTarget : null,

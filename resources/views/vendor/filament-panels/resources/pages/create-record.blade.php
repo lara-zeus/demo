@@ -5,7 +5,6 @@
     ])
 >
     <x-filament-panels::form
-        id="form"
         :wire:key="$this->getId() . '.forms.' . $this->getFormStatePath()"
         wire:submit="create"
     >

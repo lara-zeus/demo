@@ -159,7 +159,7 @@
                                 'multiple' => $isMultiple(),
                             ], escape: false)
                             ->class([
-                                'h-9 w-full rounded-lg border-none bg-transparent !bg-none',
+                                'h-9 w-full rounded-lg border-none bg-transparent',
                             ])
                     }}
                 ></select>

@@ -3,13 +3,10 @@
 
     $datalistOptions = $getDatalistOptions();
     $extraAlpineAttributes = $getExtraAlpineAttributes();
-    $hasTime = $hasTime();
     $id = $getId();
     $isDisabled = $isDisabled();
     $isPrefixInline = $isPrefixInline();
     $isSuffixInline = $isSuffixInline();
-    $maxDate = $getMaxDate();
-    $minDate = $getMinDate();
     $prefixActions = $getPrefixActions();
     $prefixIcon = $getPrefixIcon();
     $prefixLabel = $getPrefixLabel();
@@ -51,8 +48,8 @@
                             'inlinePrefix' => $isPrefixInline && (count($prefixActions) || $prefixIcon || filled($prefixLabel)),
                             'inlineSuffix' => $isSuffixInline && (count($suffixActions) || $suffixIcon || filled($suffixLabel)),
                             'list' => $datalistOptions ? $id . '-list' : null,
-                            'max' => $hasTime ? $maxDate : ($maxDate ? \Carbon\Carbon::parse($maxDate)->toDateString() : null),
-                            'min' => $hasTime ? $minDate : ($minDate ? \Carbon\Carbon::parse($minDate)->toDateString() : null),
+                            'max' => $getMaxDate(),
+                            'min' => $getMinDate(),
                             'placeholder' => $getPlaceholder(),
                             'readonly' => $isReadOnly(),
                             'required' => $isRequired() && (! $isConcealed()),
@@ -89,9 +86,17 @@
                         ->class(['fi-fo-date-time-picker'])
                 }}
             >
-                <input x-ref="maxDate" type="hidden" value="{{ $maxDate }}" />
+                <input
+                    x-ref="maxDate"
+                    type="hidden"
+                    value="{{ $getMaxDate() }}"
+                />
 
-                <input x-ref="minDate" type="hidden" value="{{ $minDate }}" />
+                <input
+                    x-ref="minDate"
+                    type="hidden"
+                    value="{{ $getMinDate() }}"
+                />
 
                 <input
                     x-ref="disabledDates"
@@ -226,7 +231,7 @@
                             </div>
                         @endif
 
-                        @if ($hasTime)
+                        @if ($hasTime())
                             <div
                                 class="flex items-center justify-center rtl:flex-row-reverse"
                             >

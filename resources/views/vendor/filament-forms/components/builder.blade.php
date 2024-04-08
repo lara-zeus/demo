@@ -237,7 +237,7 @@
             </ul>
         @endif
 
-        @if ($isAddable && $addAction->isVisible())
+        @if ($isAddable)
             <x-filament-forms::builder.block-picker
                 :action="$addAction"
                 :blocks="$blockPickerBlocks"
