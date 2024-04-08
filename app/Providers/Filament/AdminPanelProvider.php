@@ -42,7 +42,6 @@ use LaraZeus\Bolt\Filament\Resources\CollectionResource;
 use LaraZeus\Bolt\Filament\Resources\FormResource;
 use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
-use LaraZeus\Chronos\ChronosPlugin;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
@@ -161,7 +160,7 @@ class AdminPanelProvider extends PanelProvider
             // athena
             ->renderHook(
                 'panels::page.start',
-                fn(array $scopes): View => view('filament.hooks.athena', ['scopes' => $scopes]),
+                fn (array $scopes): View => view('filament.hooks.athena', ['scopes' => $scopes]),
                 scopes: [
                     RequestResource::class,
                     ServiceResource::class,
@@ -320,7 +319,7 @@ class AdminPanelProvider extends PanelProvider
             ThunderPlugin::make(),
             AthenaPlugin::make(),
             DynamicDashboardPlugin::make(),
-            //RheaPlugin::make(),
+            RheaPlugin::make(),
             HermesPlugin::make(),
         ];
     }
