@@ -2,7 +2,6 @@
 
 namespace App\Zeus\Fields;
 
-use Filament\Forms\Components\Toggle;
 use LaraZeus\Bolt\Fields\FieldsContract;
 use LaraZeus\Bolt\Models\Field;
 use LaraZeus\Bolt\Models\FieldResponse;
@@ -39,10 +38,9 @@ class Car extends FieldsContract
     public function getResponse(Field $field, FieldResponse $resp): string
     {
         return view('zeus.fields.car')
-            ->with('field',$field)
-            ->with('resp',$resp)
-            ->with('car',\App\Models\Car::find($resp->response))
+            ->with('field', $field)
+            ->with('resp', $resp)
+            ->with('car', \App\Models\Car::find($resp->response))
             ->render();
     }
 }
-
