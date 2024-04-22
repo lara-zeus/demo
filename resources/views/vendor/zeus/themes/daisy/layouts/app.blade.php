@@ -111,5 +111,10 @@
     }
 </script>
 @stillStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
+@if(!app()->isLocal())
+    <script defer src="https://api.pirsch.io/pa.js"
+            id="pianjs"
+            data-code="Uh1FIJELPPoLoE0fVHmOa1CawfHOeQlC"></script>
+@endif
 </body>
 </html>
