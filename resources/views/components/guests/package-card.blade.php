@@ -21,17 +21,19 @@
         {{ $description }}
     </x-slot>
 
-    <x-filament::link href="{{ $filament }}">
-        {{ $name }}
-    </x-filament::link>
-    Plugin
-
-    by
-    <x-filament::link href="https://github.com/{{ $vendor }}">
-        {{ $vendor }}
-    </x-filament::link>
-
     <img alt="{{ $name }} Filament Plugin"
-         class="my-10 aspect-video mx-auto w-1/2"
+         class="my-4 aspect-video mx-auto w-1/2"
          src="{{ $image }}"/>
+
+    <p class="text-center">
+        <x-filament::link href="{{ $filament }}">
+            {{ $name }}
+        </x-filament::link>
+        Plugin
+
+        by
+        <x-filament::link href="https://github.com/{{ $vendor }}">
+            {{ $vendor }}
+        </x-filament::link>
+    </p>
 </x-filament::section>
