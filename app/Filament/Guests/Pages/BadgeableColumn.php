@@ -4,26 +4,17 @@ namespace App\Filament\Guests\Pages;
 
 use App\Models\User;
 use Awcodes\FilamentBadgeableColumn\Components\Badge;
-use Awcodes\TableRepeater\Header;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Form;
-use Filament\Pages\Page;
-
-
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
-use Filament\Tables\Columns\TextColumn;
+use Filament\Pages\Page;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
-use Illuminate\Contracts\View\View;
-use Livewire\Component;
-
 
 class BadgeableColumn extends Page implements HasForms, HasTable
 {
-    use InteractsWithTable;
     use InteractsWithForms;
+    use InteractsWithTable;
 
     protected static string $view = 'filament.guests.pages.badgeable-column';
 
@@ -57,8 +48,8 @@ class BadgeableColumn extends Page implements HasForms, HasTable
                     ])
                     ->prefixBadges([
                         Badge::make('brand_name')
-                            ->label(fn(User $record) => $record->id)
-                    ])
+                            ->label(fn (User $record) => $record->id),
+                    ]),
             ]);
     }
 }

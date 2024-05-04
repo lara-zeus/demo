@@ -15,7 +15,7 @@ module.exports = {
         './vendor/awcodes/filament-table-repeater/resources/**/*.blade.php',
         './vendor/awcodes/matinee/resources/views/**/*.blade.php',
         './vendor/awcodes/filament-badgeable-column/resources/**/*.blade.php',
-
+        './vendor/awcodes/preset-color-picker/resources/**/*.blade.php',
     ],
     darkMode: 'class',
     theme: {

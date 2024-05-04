@@ -10,6 +10,7 @@ module.exports = {
         './resources/views/**/*.blade.php',
         './vendor/lara-zeus/core/resources/views/**/*.blade.php',
         './vendor/lara-zeus/core/src/CoreServiceProvider.php',
+        './vendor/awcodes/preset-color-picker/resources/**/*.blade.php',
 
         './vendor/lara-zeus/wind/resources/views/**/*.blade.php',
         './vendor/lara-zeus/wind/src/Filament/Resources/LetterResource.php',

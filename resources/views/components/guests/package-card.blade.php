@@ -22,7 +22,7 @@
     </x-slot>
 
     <img alt="{{ $name }} Filament Plugin"
-         class="my-4 aspect-video mx-auto w-1/2"
+         class="my-4 aspect-video mx-auto "
          src="{{ $image }}"/>
 
     <p class="text-center">
