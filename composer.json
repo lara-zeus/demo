@@ -28,8 +28,7 @@
         "codeat3/blade-rpg-awesome-icons": "^1.4",
         "codeat3/blade-vaadin-icons": "^1.4",
         "codewithdennis/filament-select-tree": "^3.1",
-        "coolsam/flatpickr": "3.x-dev as 3.0.1",
-        "davidhsianturi/blade-bootstrap-icons": "dev-l11-compatibility",
+        "davidhsianturi/blade-bootstrap-icons": "^1.5",
         "doctrine/dbal": "^3.0",
         "fakerphp/faker": "^1.23",
         "garygreen/pretty-routes": "^1.0",
@@ -42,7 +41,7 @@
         "lara-zeus/artemis": "^1.0",
         "lara-zeus/athena": "^1.0",
         "lara-zeus/bolt": "^3.0",
-        "lara-zeus/bolt-pro": "^3.1",
+        "lara-zeus/bolt-pro": "^3.2",
         "lara-zeus/boredom": "^1.0",
         "lara-zeus/dynamic-dashboard": "^3.0",
         "lara-zeus/helen": "^2.0",
@@ -69,7 +68,7 @@
         "sentry/sentry-laravel": "^4.3",
         "stechstudio/filament-impersonate": "^3.8",
         "swisnl/filament-backgrounds": "^1.1",
-        "torchlight/torchlight-laravel": "dev-l11-compatibility"
+        "torchlight/torchlight-laravel": "0.6.0"
     },
     "require-dev": {
         "laravel/tinker": "^2.9",
@@ -145,18 +144,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/atmonshi/blade-mdi"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/laravel-shift/blade-bootstrap-icons.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/laravel-shift/torchlight-laravel.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/AhmadFida2/filament-flatpickr"
         },
         {
             "type": "github",

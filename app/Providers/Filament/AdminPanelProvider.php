@@ -40,6 +40,7 @@ use LaraZeus\Bolt\BoltPlugin;
 use LaraZeus\Bolt\Filament\Resources\CategoryResource;
 use LaraZeus\Bolt\Filament\Resources\CollectionResource;
 use LaraZeus\Bolt\Filament\Resources\FormResource;
+use LaraZeus\BoltPro\Extensions\Grades;
 use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
@@ -314,6 +315,7 @@ class AdminPanelProvider extends PanelProvider
                 ->extensions([
                     Thunder::class,
                     Athena::class,
+                    Grades::class,
                 ]),
 
             ThunderPlugin::make(),
