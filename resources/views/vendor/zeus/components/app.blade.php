@@ -75,17 +75,6 @@
     $packageName = (isset($urls[explode('/',request()->path())[0]])) ? $urls[explode('/',request()->path())[0]] : null;
 @endphp
 
-<div class="doc-list my-10">
-    @if(app()->isProduction())
-        <script async type="text/javascript" id="_carbonads_js"
-                src="//cdn.carbonads.com/carbon.js?serve=CWYIVK3J&placement=larazeuscom">
-        </script>
-    @endif
-    <div class="text-center my-4 text-sm">
-        Running @zeus packages and the website doesn't come for free. You can help support us by checking out relevant sponsors from the banner above.
-    </div>
-</div>
-
 <footer class="bg-gray-100 dark:bg-gray-800 p-6 pt-10 flex flex-col items-center justify-center text-center font-light">
 
     <a href="https://larazeus.com" target="_blank">

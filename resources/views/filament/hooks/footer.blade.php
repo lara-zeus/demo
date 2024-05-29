@@ -1,17 +1,6 @@
 <div class="w-full text-center text-sm py-10 space-y-2 mt-10">
     <hr class="border-t border-secondary-500 mx-20 my-10" />
 
-    <div class="doc-list my-10">
-        @if(app()->isProduction())
-            <script async type="text/javascript" id="_carbonads_js"
-                    src="//cdn.carbonads.com/carbon.js?serve=CWYIVK3J&placement=larazeuscom">
-            </script>
-        @endif
-        <div class="text-center my-4 text-sm">
-            Running @zeus packages and the website doesn't come for free. You can help support us by checking out relevant sponsors from the banner above.
-        </div>
-    </div>
-
     <p>
         <span>
             Syntax highlighting by
