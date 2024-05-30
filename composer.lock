@@ -6614,16 +6614,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.42",
+            "version": "v3.0.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "e2013e60d023af499d487c2bfe190c3d490b2985"
+                "reference": "eae523e0b2c84cec5ceeabc5f23339d42d68a01a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/e2013e60d023af499d487c2bfe190c3d490b2985",
-                "reference": "e2013e60d023af499d487c2bfe190c3d490b2985",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/eae523e0b2c84cec5ceeabc5f23339d42d68a01a",
+                "reference": "eae523e0b2c84cec5ceeabc5f23339d42d68a01a",
                 "shasum": ""
             },
             "require": {
@@ -6704,20 +6704,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-05-28T23:44:31+00:00"
+            "time": "2024-05-30T01:00:11+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.2.2",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "bc2bb7b45660b1c9e20c1c71e67b8318c6e20eac"
+                "reference": "a72b221340ef9e6aa1a9b54ef899caa9ae5bc18f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/bc2bb7b45660b1c9e20c1c71e67b8318c6e20eac",
-                "reference": "bc2bb7b45660b1c9e20c1c71e67b8318c6e20eac",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/a72b221340ef9e6aa1a9b54ef899caa9ae5bc18f",
+                "reference": "a72b221340ef9e6aa1a9b54ef899caa9ae5bc18f",
                 "shasum": ""
             },
             "require": {
@@ -6800,7 +6800,7 @@
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues",
                 "source": "https://github.com/lara-zeus/bolt-pro"
             },
-            "time": "2024-05-29T16:55:56+00:00"
+            "time": "2024-05-30T00:58:05+00:00"
         },
         {
             "name": "lara-zeus/boredom",
@@ -16650,16 +16650,16 @@
         },
         {
             "name": "tapp/filament-timezone-field",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TappNetwork/filament-timezone-field.git",
-                "reference": "e01f53ae0f34cf7e15224468ee993d7e15e27ac5"
+                "reference": "74917c81e4ea309c6962e4b925d1dbbd6207c599"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TappNetwork/filament-timezone-field/zipball/e01f53ae0f34cf7e15224468ee993d7e15e27ac5",
-                "reference": "e01f53ae0f34cf7e15224468ee993d7e15e27ac5",
+                "url": "https://api.github.com/repos/TappNetwork/filament-timezone-field/zipball/74917c81e4ea309c6962e4b925d1dbbd6207c599",
+                "reference": "74917c81e4ea309c6962e4b925d1dbbd6207c599",
                 "shasum": ""
             },
             "require": {
@@ -16700,7 +16700,7 @@
                 "issues": "https://github.com/TappNetwork/filament-timezone-field/issues",
                 "source": "https://github.com/TappNetwork/filament-timezone-field"
             },
-            "time": "2024-05-22T15:02:59+00:00"
+            "time": "2024-05-29T20:43:51+00:00"
         },
         {
             "name": "thecodingmachine/safe",
