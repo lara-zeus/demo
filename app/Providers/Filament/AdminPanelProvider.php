@@ -3,6 +3,7 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
+use App\Zeus\CustomSchema\Field;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
 use Archilex\AdvancedTables\Resources\UserViewResource;
@@ -311,6 +312,11 @@ class AdminPanelProvider extends PanelProvider
                 ->editable(),
 
             BoltPlugin::make()
+                ->customSchema([
+                    'form' => \App\Zeus\CustomSchema\Form::class,
+                    'section' => \App\Zeus\CustomSchema\Section::class,
+                    'field' => \App\Zeus\CustomSchema\Field::class,
+                ])
                 ->formActionsAreSticky(true)
                 ->extensions([
                     Thunder::class,
