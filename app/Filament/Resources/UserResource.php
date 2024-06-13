@@ -23,6 +23,7 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use LaraZeus\Popover\Infolists\PopoverEntry;
+use LaraZeus\Popover\Tables\PopoverColumn;
 use LaraZeus\Qr\Facades\Qr;
 use STS\FilamentImpersonate\Tables\Actions\Impersonate;
 
@@ -132,12 +133,34 @@ class UserResource extends Resource
                             ->redirectTo(url('/admin')),* /
                     ]),*/
 
+                PopoverColumn::make('name')
+                    ->content(\LaraZeus\Qr\Facades\Qr::render(
+                        data:'dataOrUrl',
+                        options:[
+                            'margin' => '1',
+                            'color' => 'rgba(74, 74, 74, 1)',
+                            'back_color' => 'rgba(252, 252, 252, 1)',
+                            'style' => 'square',
+                            'hasGradient' => true,
+                            'gradient_type' => 'vertical',
+                            'hasEyeColor' => false,
+                            'eye_color_inner' => 'rgb(241, 148, 138)',
+                            'eye_color_outer' => 'rgb(69, 179, 157)',
+                            'eye_style' => 'square',
+
+                            'size' => '100',
+                            'type' => 'png',
+                            'gradient_form' => 'rgb(69, 179, 157,1)',
+                            'gradient_to' => 'rgb(241, 148, 138,1)',
+                        ],
+                    )),
+
                 ColumnGroup::make('main-info', [
                     ImageColumn::make('avatar_url'),
-                    TextColumn::make('name')
+                    /*TextColumn::make('name')
                         ->sortable()
                         ->toggleable()
-                        ->searchable(),
+                        ->searchable(),*/
                     TextColumn::make('email')
                         ->sortable()
                         ->toggleable()
