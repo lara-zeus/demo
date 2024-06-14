@@ -305,7 +305,7 @@ class AdminPanelProvider extends PanelProvider
             HeraPlugin::make(),
             HelenPlugin::make()
                 ->baseDomain('demo.larazeus.com')
-                ->prefix('not-so-short'),
+                ->prefix('not-so-short/'),
 
             FilamentFullCalendarPlugin::make()
                 ->selectable()
