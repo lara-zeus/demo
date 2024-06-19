@@ -111,6 +111,7 @@ class AthenaSeeder extends Seeder
             'status' => 'OPEN',
             'notes' => null,
             'created_at' => now(),
+            'extension_item_id' => 1,
         ]);
 
         $response_1_field_1 = DB::table(config('zeus-bolt.table-prefix') . 'field_responses')->insertGetId([
