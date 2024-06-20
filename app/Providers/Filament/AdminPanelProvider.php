@@ -64,6 +64,9 @@ use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
 use pxlrbt\FilamentSpotlight\SpotlightPlugin;
 use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
+use Schmeits\FilamentUmami\Widgets\UmamiWidgetStatsGrouped;
+use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableReferrers;
+use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableUrls;
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
@@ -234,6 +237,10 @@ class AdminPanelProvider extends PanelProvider
                 //\LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboard::class,
             ])
             ->widgets([
+                //UmamiWidgetStatsGrouped::class,
+                //UmamiWidgetTableReferrers::class,
+                //UmamiWidgetTableUrls::class,
+
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
                 VersionsWidget::class,
@@ -258,6 +265,7 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
+            \Schmeits\FilamentUmami\FilamentUmamiPlugin::make(),
             BoringAvatarPlugin::make(),
             FilamentBackgroundsPlugin::make(),
             AdvancedTablesPlugin::make()

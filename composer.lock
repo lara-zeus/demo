@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed0b1fd01b78fc74fc98d2b198c5241e",
+    "content-hash": "78e3c2ab5290209300f5daf9a7c822b6",
     "packages": [
         {
             "name": "andreiio/blade-iconoir",
@@ -6695,16 +6695,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.58",
+            "version": "v3.0.59",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "90df3148285537a99c91f3539aa909022e7b2ef4"
+                "reference": "c1c3300fbe8c5b72b78225e059e31ea0cd464c81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/90df3148285537a99c91f3539aa909022e7b2ef4",
-                "reference": "90df3148285537a99c91f3539aa909022e7b2ef4",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/c1c3300fbe8c5b72b78225e059e31ea0cd464c81",
+                "reference": "c1c3300fbe8c5b72b78225e059e31ea0cd464c81",
                 "shasum": ""
             },
             "require": {
@@ -6785,7 +6785,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-19T21:01:47+00:00"
+            "time": "2024-06-20T07:06:52+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
@@ -7516,16 +7516,16 @@
         },
         {
             "name": "lara-zeus/list-group",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/list-group.git",
-                "reference": "ed75fa899db579125938688df0e1f859fec973f9"
+                "reference": "8d2b3599a0a9dc625a3d9798325efac0980ffb8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/list-group/zipball/ed75fa899db579125938688df0e1f859fec973f9",
-                "reference": "ed75fa899db579125938688df0e1f859fec973f9",
+                "url": "https://api.github.com/repos/lara-zeus/list-group/zipball/8d2b3599a0a9dc625a3d9798325efac0980ffb8b",
+                "reference": "8d2b3599a0a9dc625a3d9798325efac0980ffb8b",
                 "shasum": ""
             },
             "require": {
@@ -7534,9 +7534,9 @@
                 "spatie/laravel-package-tools": "^1.16"
             },
             "require-dev": {
+                "larastan/larastan": "^2.0",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.0.1",
                 "nunomaduro/phpinsights": "^2.8",
                 "orchestra/testbench": "^8.0",
                 "phpstan/extension-installer": "^1.1"
@@ -7599,7 +7599,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-03T10:13:39+00:00"
+            "time": "2024-06-20T09:27:06+00:00"
         },
         {
             "name": "lara-zeus/matrix-choice",
@@ -8297,16 +8297,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.11.0",
+            "version": "v11.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "194102876df42f9f5bb618efa55fa7e15ebf40aa"
+                "reference": "c9b52e84bd18f155e5ba59b948c7da3e7f37e87f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/194102876df42f9f5bb618efa55fa7e15ebf40aa",
-                "reference": "194102876df42f9f5bb618efa55fa7e15ebf40aa",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/c9b52e84bd18f155e5ba59b948c7da3e7f37e87f",
+                "reference": "c9b52e84bd18f155e5ba59b948c7da3e7f37e87f",
                 "shasum": ""
             },
             "require": {
@@ -8498,7 +8498,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-06-18T17:40:27+00:00"
+            "time": "2024-06-20T10:54:53+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -9818,6 +9818,73 @@
             "time": "2023-02-16T16:52:16+00:00"
         },
         {
+            "name": "malzariey/filament-daterangepicker-filter",
+            "version": "2.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/malzariey/filament-daterangepicker-filter.git",
+                "reference": "37dca49a04593be4df207107fe62131a02954d8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/malzariey/filament-daterangepicker-filter/zipball/37dca49a04593be4df207107fe62131a02954d8a",
+                "reference": "37dca49a04593be4df207107fe62131a02954d8a",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^2.0|^3.0",
+                "illuminate/contracts": "^8.0|^9.0|^10.0|^11.0",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.16.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Malzariey\\FilamentDaterangepickerFilter\\FilamentDaterangepickerFilterServiceProvider"
+                    ],
+                    "aliases": {
+                        "FilamentDaterangepickerFilter": "Malzariey\\FilamentDaterangepickerFilter\\Facades\\FilamentDaterangepickerFilter"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Malzariey\\FilamentDaterangepickerFilter\\": "src",
+                    "Malzariey\\FilamentDaterangepickerFilter\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Majid Al-Zariey",
+                    "email": "malzariey@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This package uses daterangepciker library to filter date by a range or predefined date ranges (Today , Yesterday ...etc)",
+            "homepage": "https://github.com/malzariey/filament-daterangepicker-filter",
+            "keywords": [
+                "Malzariey",
+                "filament-daterangepicker-filter",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/malzariey/filament-daterangepicker-filter/issues",
+                "source": "https://github.com/malzariey/filament-daterangepicker-filter/tree/2.7.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Malzariey",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-06-07T06:30:43+00:00"
+        },
+        {
             "name": "masterminds/html5",
             "version": "2.9.0",
             "source": {
@@ -10049,16 +10116,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "415782b7e48223342f1a616c16c45a95b15b2318"
+                "reference": "39c8ef752db6865717cc3fba63970c16f057982c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/415782b7e48223342f1a616c16c45a95b15b2318",
-                "reference": "415782b7e48223342f1a616c16c45a95b15b2318",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/39c8ef752db6865717cc3fba63970c16f057982c",
+                "reference": "39c8ef752db6865717cc3fba63970c16f057982c",
                 "shasum": ""
             },
             "require": {
@@ -10151,7 +10218,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-06-03T17:25:54+00:00"
+            "time": "2024-06-20T15:52:59+00:00"
         },
         {
             "name": "nette/schema",
@@ -12634,6 +12701,86 @@
             "time": "2024-02-29T00:15:54+00:00"
         },
         {
+            "name": "schmeits/filament-umami-widgets",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmeits/filament-umami-widgets.git",
+                "reference": "d0ef940d1e6e61ed4402d56b5ad7b3612a8fde1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmeits/filament-umami-widgets/zipball/d0ef940d1e6e61ed4402d56b5ad7b3612a8fde1f",
+                "reference": "d0ef940d1e6e61ed4402d56b5ad7b3612a8fde1f",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "malzariey/filament-daterangepicker-filter": "^2.6",
+                "php": "^8.1|^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.15.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.9",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.1",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Schmeits\\FilamentUmami\\FilamentUmamiServiceProvider"
+                    ],
+                    "aliases": {
+                        "FilamentUmami": "Schmeits\\FilamentUmami\\Facades\\FilamentUmami"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Schmeits\\FilamentUmami\\": "src/",
+                    "Schmeits\\FilamentUmami\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tally Schmeits",
+                    "email": "tally@schmeits.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Umami Analytics Widgets for Filament",
+            "homepage": "https://github.com/schmeits/filament-umami-widgets",
+            "keywords": [
+                "filament-umami-widgets",
+                "laravel",
+                "schmeits"
+            ],
+            "support": {
+                "issues": "https://github.com/schmeits/filament-umami-widgets/issues",
+                "source": "https://github.com/schmeits/filament-umami-widgets"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/schmeits",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-06-18T13:56:45+00:00"
+        },
+        {
             "name": "sentry/sentry",
             "version": "4.8.0",
             "source": {
@@ -13267,16 +13414,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "11.7.0",
+            "version": "11.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "5d080fdaddaf4e6752ee7381d959243bbf7f0390"
+                "reference": "a60867de07ec110e8443a1deae04b3b65fe3eda5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/5d080fdaddaf4e6752ee7381d959243bbf7f0390",
-                "reference": "5d080fdaddaf4e6752ee7381d959243bbf7f0390",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/a60867de07ec110e8443a1deae04b3b65fe3eda5",
+                "reference": "a60867de07ec110e8443a1deae04b3b65fe3eda5",
                 "shasum": ""
             },
             "require": {
@@ -13360,7 +13507,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-medialibrary/issues",
-                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.7.0"
+                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.7.1"
             },
             "funding": [
                 {
@@ -13372,7 +13519,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-17T12:00:25+00:00"
+            "time": "2024-06-20T08:14:20+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",

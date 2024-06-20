@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Widgets;
+namespace App\Filament\Pages\Widgets;
 
 use Filament\Widgets\ChartWidget;
 use GrahamCampbell\GitHub\Facades\GitHub;

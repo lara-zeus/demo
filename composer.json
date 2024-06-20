@@ -65,6 +65,7 @@
         "pxlrbt/filament-spotlight": "^1.0",
         "ryangjchandler/blade-tabler-icons": "^2.3",
         "saade/blade-iconsax": "^1.2",
+        "schmeits/filament-umami-widgets": "^1.0",
         "sentry/sentry-laravel": "^4.3",
         "stechstudio/filament-impersonate": "^3.8",
         "swisnl/filament-backgrounds": "^1.1",
