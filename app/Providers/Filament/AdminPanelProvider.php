@@ -3,13 +3,6 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
-use Awcodes\FilamentGravatar\GravatarPlugin;
-use Awcodes\FilamentGravatar\GravatarProvider;
-use App\Zeus\CustomSchema\Field;
-use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
-use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
-use Archilex\AdvancedTables\Resources\UserViewResource;
-use Awcodes\Curator\CuratorPlugin;
 use Awcodes\FilamentQuickCreate\QuickCreatePlugin;
 use Awcodes\FilamentVersions\VersionsPlugin;
 use Awcodes\FilamentVersions\VersionsWidget;
@@ -34,32 +27,15 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-use LaraZeus\Athena\AthenaPlugin;
-use LaraZeus\Athena\Extensions\Athena;
-use LaraZeus\Athena\Filament\Pages\Calendar;
-use LaraZeus\Athena\Filament\Resources\RequestResource;
-use LaraZeus\Athena\Filament\Resources\ServiceResource;
 use LaraZeus\Bolt\BoltPlugin;
-use LaraZeus\Bolt\Filament\Resources\CategoryResource;
-use LaraZeus\Bolt\Filament\Resources\CollectionResource;
-use LaraZeus\Bolt\Filament\Resources\FormResource;
-use LaraZeus\BoltPro\Extensions\Grades;
 use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Rhea\RheaPlugin;
 use LaraZeus\Sky\SkyPlugin;
-use LaraZeus\Thunder\Extensions\Thunder;
-use LaraZeus\Thunder\Filament\Resources\OfficeResource;
-use LaraZeus\Thunder\Filament\Resources\TicketResource;
-use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
 use pxlrbt\FilamentSpotlight\SpotlightPlugin;
-use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
-use Schmeits\FilamentUmami\Widgets\UmamiWidgetStatsGrouped;
-use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableReferrers;
-use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableUrls;
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
@@ -193,13 +169,6 @@ class AdminPanelProvider extends PanelProvider
             \Schmeits\FilamentUmami\FilamentUmamiPlugin::make(),
             BoringAvatarPlugin::make(),
             FilamentBackgroundsPlugin::make(),
-            CuratorPlugin::make()
-                ->label(fn (): string => __('Media'))
-                ->pluralLabel(fn (): string => __('Media'))
-                ->navigationIcon('heroicon-o-photo')
-                ->navigationGroup(fn (): string => __('Hermes'))
-                ->navigationSort(99)
-                ->navigationCountBadge(),
             SpotlightPlugin::make(),
             LightSwitchPlugin::make(),
             OverlookPlugin::make()
@@ -217,7 +186,6 @@ class AdminPanelProvider extends PanelProvider
             QuickCreatePlugin::make()
                 ->sortBy('navigation')
                 ->excludes([
-                    UserViewResource::class,
                     LetterResource::class,
                 ]),
             SpatieLaravelTranslatablePlugin::make()

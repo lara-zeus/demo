@@ -101,7 +101,6 @@
 @livewireScripts
 @filamentScripts
 @livewire('notifications')
-@livewire('livewire-ui-modal')
 @stack('scripts')
 
 <script>

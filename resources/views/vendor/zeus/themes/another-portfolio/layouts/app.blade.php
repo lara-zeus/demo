@@ -75,7 +75,6 @@
         @livewireScripts
         @filamentScripts
         @livewire('notifications')
-        @livewire('livewire-ui-modal')
 
         <script>
             document.addEventListener('alpine:init', () => {
