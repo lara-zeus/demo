@@ -10,10 +10,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use LaraZeus\Bolt\Models\Concerns\BelongToBolt;
+use LaraZeus\Boredom\Concerns\HasBoringAvatar;
 
 class User extends Authenticatable implements FilamentUser, HasAvatar
 {
+    use BelongToBolt;
     use HasApiTokens;
+    use HasBoringAvatar;
     use HasFactory;
     use Notifiable;
 
@@ -49,13 +53,8 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
     protected function avatar(): Attribute
     {
         return Attribute::make(
-            get: fn () => 'https://ui-avatars.com/api/?name=' . urlencode($this->email ?? 'Guest') . '&color=FFFFFF&background=000000',
+            get: fn () => $this->avatar_url
         );
-    }
-
-    public function getFilamentAvatarUrl(): ?string
-    {
-        return $this->avatar;
     }
 
     public function canImpersonate(): bool

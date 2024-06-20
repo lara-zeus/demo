@@ -1,27 +1,16 @@
 <x-filament-panels::page>
 
-    <x-filament::section>
-        <x-slot name="heading">
-            Select Tree Filament Plugin
-        </x-slot>
-
+    <x-guests.package-card
+        name="Select Tree"
+        vendor="codewithdennis"
+        github="filament-select-tree"
+        filament="https://filamentphp.com/plugins/codewithdennis-select-tree"
+        image="https://filamentphp.com/images/content/plugins/images/codewithdennis-select-tree.webp"
+    >
         <x-slot name="description">
-            The multi-level select field lets you pick one or multiple options from a list that's neatly organized into different levels.
+            The multi-level select field lets you pick one or multiple options from a list<br> that's neatly organized into different levels.
         </x-slot>
-
-        <x-filament::link href="https://filamentphp.com/plugins/codewithdennis-select-tree">
-            Select Tree
-        </x-filament::link>
-        Plugin
-
-        by
-        <x-filament::link href="https://github.com/CodeWithDennis">
-            CodeWithDennis
-        </x-filament::link>
-
-        <img alt="Select Tree Filament Plugin" class="my-10 aspect-video mx-auto w-1/2" src="https://filamentphp.com/images/content/plugins/images/codewithdennis-select-tree.webp"/>
-
-    </x-filament::section>
+    </x-guests.package-card>
 
     {{ $this->form }}
 </x-filament-panels::page>

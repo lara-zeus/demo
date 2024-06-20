@@ -114,6 +114,16 @@
                         {{ __('Branches & Menus') }}
                     </x-filament::dropdown.list.item>
 
+                    <x-filament::dropdown.list.item
+                            class="dark:text-gray-200 text-gray-700"
+                            :color="'gray'"
+                            :icon="'heroicon-m-chevron-right'"
+                            :href="url('athena')"
+                            tag="a"
+                    >
+                        {{ __('Services') }}
+                    </x-filament::dropdown.list.item>
+
                 </x-filament::dropdown.list>
             </x-filament::dropdown>
             <x-filament::button tag="a" size="xs" href="{{ url('/admin') }}">
@@ -148,6 +158,16 @@
                         tag="a"
                     >
                         {{ __('My Tickets') }}
+                    </x-filament::dropdown.list.item>
+
+                    <x-filament::dropdown.list.item
+                        class="dark:text-gray-200 text-gray-700"
+                        :color="'gray'"
+                        :icon="'heroicon-m-chevron-right'"
+                        :href="url('athena/requests')"
+                        tag="a"
+                    >
+                        {{ __('My Appointments') }}
                     </x-filament::dropdown.list.item>
 
                     <x-filament::dropdown.list.item
@@ -210,6 +230,11 @@
                 <a href="{{ url('/thunder/tickets') }}"
                    class="whitespace-nowrap transition ease-in-out text-primary-500 dark:text-primary-200 hover:text-secondary-500 dark:hover:text-secondary-300">
                     My Tickets
+                </a>
+                <hr/>
+                <a href="{{ url('/athena/requests') }}"
+                   class="whitespace-nowrap transition ease-in-out text-primary-500 dark:text-primary-200 hover:text-secondary-500 dark:hover:text-secondary-300">
+                    My Appointments
                 </a>
                 <hr/>
                 <a href="{{ url('/admin') }}"

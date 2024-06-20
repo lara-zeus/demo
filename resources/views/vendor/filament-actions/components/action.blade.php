@@ -14,6 +14,7 @@
     :component="$dynamicComponent"
     :disabled="$isDisabled"
     :form="$action->getFormToSubmit()"
+    :form-id="$action->getFormId()"
     :href="$isDisabled ? null : $url"
     :icon="$icon ?? $action->getIcon()"
     :icon-size="$action->getIconSize()"
@@ -26,7 +27,11 @@
     :wire:click="$action->getLivewireClickHandler()"
     :wire:target="$action->getLivewireTarget()"
     :x-on:click="$action->getAlpineClickHandler()"
-    :attributes="\Filament\Support\prepare_inherited_attributes($attributes)->merge($action->getExtraAttributes(), escape: false)"
+    :attributes="
+        \Filament\Support\prepare_inherited_attributes($attributes)
+            ->merge($action->getExtraAttributes(), escape: false)
+            ->class(['fi-ac-action'])
+    "
 >
     {{ $slot }}
 </x-dynamic-component>

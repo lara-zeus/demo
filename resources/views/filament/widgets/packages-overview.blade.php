@@ -11,6 +11,10 @@
                     ⚡️ Backgrounds For Login Page
                 </x-list.item>
 
+                <x-list.item url="https://filamentphp.com/plugins/bezhansalleh-panel-switch">
+                    ⚡️ Panel Switch
+                </x-list.item>
+
                 <x-list.item url="https://filamentphp.com/plugins/kenneth-sese-advanced-tables">
                     ⚡️ Advanced Tables
                 </x-list.item>
@@ -43,10 +47,6 @@
 
                 <x-list.item url="https://github.com/njxqlus/filament-progressbar">
                     ⚡️ Filament Progressbar
-                </x-list.item>
-
-                <x-list.item url="https://github.com/awcodes/filament-gravatar">
-                    ⚡️ Filament Gravatar
                 </x-list.item>
 
                 <x-list.item url="https://github.com/ryangjchandler/filament-navigation">

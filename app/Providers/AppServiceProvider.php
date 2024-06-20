@@ -10,6 +10,7 @@ use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentColor;
 use Filament\Support\Facades\FilamentIcon;
 use Filament\Support\Facades\FilamentView;
+use Filament\Support\View\Components\Modal;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\URL;
@@ -32,6 +33,8 @@ class AppServiceProvider extends ServiceProvider
             'panels::panel-switch-modern-icon' => 'iconpark-switchbutton',
         ]);
 
+        Modal::closedByClickingAway(false);
+
         PanelSwitch::configureUsing(function (PanelSwitch $panelSwitch) {
             $panelSwitch
                 ->canSwitchPanels(true)
@@ -40,12 +43,12 @@ class AppServiceProvider extends ServiceProvider
                 ->slideOver()
                 ->modalWidth('sm')
                 ->labels([
-                    'admin' => 'Zeus Plugins',
-                    'guests' => __('Community Plugins Showcase'),
+                    'admin' => 'Zeus',
+                    'guests' => __('Showcase'),
                 ])
                 ->icons([
                     'admin' => 'heroicon-o-bolt',
-                    'validPanelId2' => 'heroicon-o-users',
+                    'guests' => 'ri-artboard-line',
                 ])
                 ->iconSize(20)
                 ->renderHook('panels::user-menu.before');

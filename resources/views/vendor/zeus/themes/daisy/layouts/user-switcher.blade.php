@@ -14,6 +14,7 @@
             <li><a href="{{ url('dynamic-dashboard') }}">{{ __('My Dashboard') }}</a></li>
             <li><a href="{{ url('bolt/entries') }}">{{ __('My Entries') }}</a></li>
             <li><a href="{{ url('thunder/tickets') }}">{{ __('My Tickets') }}</a></li>
+            <li><a href="{{ url('athena/requests') }}">{{ __('My Appointments') }}</a></li>
         </ul>
     </div>
 </div>

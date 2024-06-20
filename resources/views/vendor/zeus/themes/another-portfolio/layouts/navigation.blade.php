@@ -144,6 +144,16 @@
                     class="dark:text-gray-200 text-gray-500"
                     :color="'gray'"
                     :icon="'heroicon-m-chevron-right'"
+                    :href="url('athena/requests')"
+                    tag="a"
+                >
+                    {{ __('My Appointments') }}
+                </x-filament::dropdown.list.item>
+
+                <x-filament::dropdown.list.item
+                    class="dark:text-gray-200 text-gray-500"
+                    :color="'gray'"
+                    :icon="'heroicon-m-chevron-right'"
                     :href="url('bolt/entries')"
                     tag="a"
                 >

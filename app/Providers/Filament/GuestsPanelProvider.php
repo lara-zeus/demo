@@ -17,6 +17,9 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use LaraZeus\Boredom\BoringAvatarPlugin;
+use LaraZeus\Boredom\BoringAvatarsProvider;
+use LaraZeus\Boredom\Enums\Variants;
 
 class GuestsPanelProvider extends PanelProvider
 {
@@ -29,6 +32,9 @@ class GuestsPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Amber,
             ])
+            ->defaultAvatarProvider(
+                BoringAvatarsProvider::class
+            )
             ->theme(asset('css/filament-guests.css'))
             ->renderHook(
                 'panels::footer',
@@ -42,6 +48,13 @@ class GuestsPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Guests/Widgets'), for: 'App\\Filament\\Guests\\Widgets')
             ->widgets([
                 //Widgets\FilamentInfoWidget::class,
+            ])
+            ->plugins([
+                BoringAvatarPlugin::make()
+                //  ->colors(['0A0310','49007E','FF005B','FF7D10','FFB238'])
+                //  ->square()
+                //  ->variant(Variants::MARBLE)
+                ,
             ])
             ->middleware([
                 EncryptCookies::class,

@@ -5,6 +5,12 @@ namespace App\Providers\Filament;
 use App\Filament\Pages\Auth\Login;
 use Awcodes\FilamentGravatar\GravatarPlugin;
 use Awcodes\FilamentGravatar\GravatarProvider;
+use App\Zeus\CustomSchema\Field;
+use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
+use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
+use Archilex\AdvancedTables\Resources\UserViewResource;
+use Awcodes\Curator\CuratorPlugin;
+use Awcodes\FilamentQuickCreate\QuickCreatePlugin;
 use Awcodes\FilamentVersions\VersionsPlugin;
 use Awcodes\FilamentVersions\VersionsWidget;
 use Awcodes\LightSwitch\LightSwitchPlugin;
@@ -28,33 +34,55 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use LaraZeus\Athena\AthenaPlugin;
+use LaraZeus\Athena\Extensions\Athena;
+use LaraZeus\Athena\Filament\Pages\Calendar;
+use LaraZeus\Athena\Filament\Resources\RequestResource;
+use LaraZeus\Athena\Filament\Resources\ServiceResource;
 use LaraZeus\Bolt\BoltPlugin;
 use LaraZeus\Bolt\Filament\Resources\CategoryResource;
 use LaraZeus\Bolt\Filament\Resources\CollectionResource;
 use LaraZeus\Bolt\Filament\Resources\FormResource;
+use LaraZeus\BoltPro\Extensions\Grades;
+use LaraZeus\Boredom\BoringAvatarPlugin;
+use LaraZeus\Boredom\BoringAvatarsProvider;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Rhea\RheaPlugin;
 use LaraZeus\Sky\SkyPlugin;
+use LaraZeus\Thunder\Extensions\Thunder;
+use LaraZeus\Thunder\Filament\Resources\OfficeResource;
+use LaraZeus\Thunder\Filament\Resources\TicketResource;
+use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
 use pxlrbt\FilamentSpotlight\SpotlightPlugin;
+use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
+use Schmeits\FilamentUmami\Widgets\UmamiWidgetStatsGrouped;
+use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableReferrers;
+use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableUrls;
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
+    /**
+     * @throws \Exception
+     */
     public function panel(Panel $panel): Panel
     {
         return $panel
             ->default()
             ->theme(asset('css/filament-zeus.css'))
+            ->defaultAvatarProvider(
+                BoringAvatarsProvider::class
+            )
+            ->databaseNotifications()
             ->homeUrl('/')
             ->id('admin')
             ->path('admin')
             ->login(Login::class)
-            ->profile()
+            ->profile(isSimple: false)
             ->font('Karla')
             ->plugins($this->getPlugins())
-            ->defaultAvatarProvider(GravatarProvider::class)
             ->brandLogo(fn () => view('filament.logo'))
             ->colors([
                 ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
@@ -72,52 +100,50 @@ class AdminPanelProvider extends PanelProvider
             ->sidebarCollapsibleOnDesktop()
             ->maxContentWidth('full')
             ->favicon(asset('favicon.ico'))
-
             ->navigationGroups([
-                NavigationGroup::make()->label('App'),
-
-                NavigationGroup::make()->label('Bolt'),
+                NavigationGroup::make()->label('App')
+                    ->icon('tabler-brand-appgallery'),
                 NavigationGroup::make()
+                    ->icon('akar-thunder')
+                    ->label('Bolt'),
+                NavigationGroup::make()
+                    ->icon('vaadin-bolt')
                     ->label('Thunder')
-                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
-                ,
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
                 NavigationGroup::make()
+                    ->icon('rpg-feather-wing')
                     ->label('Hermes')
-                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
-                ,
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
                 NavigationGroup::make()
+                    ->icon('clarity-crown-solid')
                     ->label('Helen')
-                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
-                ,
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
                 NavigationGroup::make()
+                    ->icon('rpg-chain')
                     ->label('Hera')
-                //->extraAttributes(['class' => 'fi-sidebar-group-paid'])
-                ,
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
+                NavigationGroup::make()
+                    ->icon('tabler-calendar-heart')
+                    ->label('Athena')
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
 
-                NavigationGroup::make()->label('Sky'),
-                NavigationGroup::make()->label('Wind'),
-                NavigationGroup::make()->label('Dynamic Dashboard'),
-                NavigationGroup::make()->label('Rhea'),
+                NavigationGroup::make()->label('Sky')
+                    ->icon('ri-cloud-windy-line'),
+                NavigationGroup::make()->label('Wind')
+                    ->icon('ri-windy-line'),
+                NavigationGroup::make()->label('Dynamic Dashboard')
+                    ->icon('carbon-rain-heavy'),
+                NavigationGroup::make()->label('Rhea')
+                    ->icon('tabler-bow'),
             ])
-            ->unsavedChangesAlerts()
-
-            ->renderHook(
-                'panels::topbar.start',
-                fn (array $scopes): View => view('filament.hooks.store'),
-            )
-            // bolt
-            ->renderHook(
-                'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
-                scopes: [
-                    FormResource::class,
-                    CategoryResource::class,
-                    CollectionResource::class,
-                ],
-            )
             // lang
             ->renderHook(
-                'panels::user-menu.before',
+                'panels::user-menu.profile.after',
                 fn (): View => view('filament.hooks.lang-switcher'),
             )
             // footer
@@ -136,6 +162,10 @@ class AdminPanelProvider extends PanelProvider
                 //\LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboard::class,
             ])
             ->widgets([
+                //UmamiWidgetStatsGrouped::class,
+                //UmamiWidgetTableReferrers::class,
+                //UmamiWidgetTableUrls::class,
+
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
                 VersionsWidget::class,
@@ -160,8 +190,16 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
+            \Schmeits\FilamentUmami\FilamentUmamiPlugin::make(),
+            BoringAvatarPlugin::make(),
             FilamentBackgroundsPlugin::make(),
-            GravatarPlugin::make(),
+            CuratorPlugin::make()
+                ->label(fn (): string => __('Media'))
+                ->pluralLabel(fn (): string => __('Media'))
+                ->navigationIcon('heroicon-o-photo')
+                ->navigationGroup(fn (): string => __('Hermes'))
+                ->navigationSort(99)
+                ->navigationCountBadge(),
             SpotlightPlugin::make(),
             LightSwitchPlugin::make(),
             OverlookPlugin::make()
@@ -176,14 +214,19 @@ class AdminPanelProvider extends PanelProvider
                 ->items([
                     new MyCustomVersionProvider(),
                 ]),
+            QuickCreatePlugin::make()
+                ->sortBy('navigation')
+                ->excludes([
+                    UserViewResource::class,
+                    LetterResource::class,
+                ]),
             SpatieLaravelTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt', 'ko']),
 
+            //ChronosPlugin::make(),
             WindPlugin::make(),
             SkyPlugin::make(),
-
             BoltPlugin::make(),
-
             DynamicDashboardPlugin::make(),
             RheaPlugin::make(),
         ];

@@ -15,14 +15,12 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('migrate:fresh --seed --force --quiet')
-            ->weekly()
-            ->days([0, 2, 4, 6])
+            ->daily()
             ->at('4:00');
 
         $schedule->command('php artisan seo:scan --quiet')
             ->weekly()
-            ->days([0, 2, 4, 6])
-            ->at('4:10');
+            ->at('5:00');
     }
 
     /**

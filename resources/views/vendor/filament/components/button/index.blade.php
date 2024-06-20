@@ -7,9 +7,11 @@
 @props([
     'badge' => null,
     'badgeColor' => 'primary',
+    'badgeSize' => 'xs',
     'color' => 'primary',
     'disabled' => false,
     'form' => null,
+    'formId' => null,
     'grouped' => false,
     'href' => null,
     'icon' => null,
@@ -22,6 +24,7 @@
     'loadingIndicator' => true,
     'outlined' => false,
     'size' => ActionSize::Medium,
+    'spaMode' => null,
     'tag' => 'button',
     'target' => null,
     'tooltip' => null,
@@ -54,14 +57,15 @@
             'flex-1 [&:nth-child(1_of_.fi-btn)]:rounded-s-lg [&:nth-last-child(1_of_.fi-btn)]:rounded-e-lg [&:not(:nth-child(1_of_.fi-btn))]:shadow-[-1px_0_0_0_theme(colors.gray.200)] [&:not(:nth-last-child(1_of_.fi-btn))]:me-px dark:[&:not(:nth-child(1_of_.fi-btn))]:shadow-[-1px_0_0_0_theme(colors.white/20%)]' => $grouped,
             'cursor-pointer' => $tag === 'label',
             match ($color) {
-                'gray' => 'fi-color-gray',
+                'gray' => null,
                 default => 'fi-color-custom',
             },
-            // @deprecated `fi-btn-color-*` has been replaced by `fi-color-gray` and `fi-color-custom`.
+            // @deprecated `fi-btn-color-*` has been replaced by `fi-color-*` and `fi-color-custom`.
             is_string($color) ? "fi-btn-color-{$color}" : null,
-            "fi-size-{$size->value}" => $size instanceof ActionSize,
+            is_string($color) ? "fi-color-{$color}" : null,
+            ($size instanceof ActionSize) ? "fi-size-{$size->value}" : null,
             // @deprecated `fi-btn-size-*` has been replaced by `fi-size-*`.
-            "fi-btn-size-{$size->value}" => $size instanceof ActionSize,
+            ($size instanceof ActionSize) ? "fi-btn-size-{$size->value}" : null,
             match ($size) {
                 ActionSize::ExtraSmall => 'gap-1 px-2 py-1.5 text-xs',
                 ActionSize::Small => 'gap-1 px-2.5 py-1.5 text-sm',
@@ -95,7 +99,7 @@
                     'ring-1 ring-gray-950/10 dark:ring-white/20' => (($color === 'gray') || ($tag === 'label')) && (! $grouped),
                     'bg-custom-600 text-white hover:bg-custom-500 focus-visible:ring-custom-500/50 dark:bg-custom-500 dark:hover:bg-custom-400 dark:focus-visible:ring-custom-400/50' => ($color !== 'gray') && ($tag !== 'label'),
                     '[input:checked+&]:bg-custom-600 [input:checked+&]:text-white [input:checked+&]:ring-0 [input:checked+&]:hover:bg-custom-500 dark:[input:checked+&]:bg-custom-500 dark:[input:checked+&]:hover:bg-custom-400 [input:checked:focus-visible+&]:ring-custom-500/50 dark:[input:checked:focus-visible+&]:ring-custom-400/50 [input:focus-visible+&]:z-10 [input:focus-visible+&]:ring-2 [input:focus-visible+&]:ring-gray-950/10 dark:[input:focus-visible+&]:ring-white/20' => ($color !== 'gray') && ($tag === 'label'),
-                ]
+                    ]
         ),
     ]);
 
@@ -116,11 +120,11 @@
             default => $iconSize,
         },
         'text-gray-400 dark:text-gray-500' => ($color === 'gray') || ($tag === 'label'),
-        'text-white' => ($color !== 'gray') && ($tag !== 'label'),
+        'text-white' => ($color !== 'gray') && ($tag !== 'label') && (! $outlined),
         '[:checked+*>&]:text-white' => $tag === 'label',
     ]);
 
-    $badgeContainerClasses = 'fi-btn-badge-ctn absolute -top-1 start-full z-[1] -ms-1 w-max -translate-x-1/2 rounded-md bg-white rtl:translate-x-1/2 dark:bg-gray-900';
+    $badgeContainerClasses = 'fi-btn-badge-ctn absolute start-full top-0 z-[1] w-max -translate-x-1/2 -translate-y-1/2 rounded-md bg-white dark:bg-gray-900 rtl:translate-x-1/2';
 
     $labelClasses = \Illuminate\Support\Arr::toCssClasses([
         'fi-btn-label',
@@ -129,8 +133,8 @@
 
     $wireTarget = $loadingIndicator ? $attributes->whereStartsWith(['wire:target', 'wire:click'])->filter(fn ($value): bool => filled($value))->first() : null;
 
-    $hasFileUploadLoadingIndicator = $type === 'submit' && filled($form);
-    $hasLoadingIndicator = filled($wireTarget) || $hasFileUploadLoadingIndicator;
+    $hasFormProcessingLoadingIndicator = $type === 'submit' && filled($form);
+    $hasLoadingIndicator = filled($wireTarget) || $hasFormProcessingLoadingIndicator;
 
     if ($hasLoadingIndicator) {
         $loadingIndicatorTarget = html_entity_decode($wireTarget ?: $form, ENT_QUOTES);
@@ -146,6 +150,7 @@
         :color="$color"
         :disabled="$disabled"
         :form="$form"
+        :form-id="$formId"
         :href="$href"
         :icon="$icon"
         :icon-alias="$iconAlias"
@@ -154,6 +159,7 @@
         :label="$slot"
         :size="$size"
         :tag="$tag"
+        :target="$target"
         :tooltip="$tooltip"
         :type="$type"
         :class="
@@ -172,13 +178,14 @@
 
 <{{ $tag }}
     @if ($tag === 'a')
-        {{ \Filament\Support\generate_href_html($href, $target === '_blank') }}
+        {{ \Filament\Support\generate_href_html($href, $target === '_blank', $spaMode) }}
     @endif
-    @if (($keyBindings || $hasTooltip) && (! $hasFileUploadLoadingIndicator))
+    @if (($keyBindings || $hasTooltip) && (! $hasFormProcessingLoadingIndicator))
         x-data="{}"
     @endif
     @if ($keyBindings)
-        x-mousetrap.global.{{ collect($keyBindings)->map(fn (string $keyBinding): string => str_replace('+', '-', $keyBinding))->implode('.') }}
+        x-bind:id="$id('key-bindings')"
+        x-mousetrap.global.{{ collect($keyBindings)->map(fn (string $keyBinding): string => str_replace('+', '-', $keyBinding))->implode('.') }}="document.getElementById($el.id).click()"
     @endif
     @if ($hasTooltip)
         x-tooltip="{
@@ -186,32 +193,35 @@
             theme: $store.theme,
         }"
     @endif
-    @if ($hasFileUploadLoadingIndicator)
+    @if ($hasFormProcessingLoadingIndicator)
         x-data="{
             form: null,
-            isUploadingFile: false,
+            isProcessing: false,
+            processingMessage: null,
         }"
         x-init="
             form = $el.closest('form')
 
-            form?.addEventListener('file-upload-started', () => {
-                isUploadingFile = true
+            form?.addEventListener('form-processing-started', (event) => {
+                isProcessing = true
+                processingMessage = event.detail.message
             })
 
-            form?.addEventListener('file-upload-finished', () => {
-                isUploadingFile = false
+            form?.addEventListener('form-processing-finished', () => {
+                isProcessing = false
             })
         "
-        x-bind:class="{ 'enabled:opacity-70 enabled:cursor-wait': isUploadingFile }"
+        x-bind:class="{ 'enabled:opacity-70 enabled:cursor-wait': isProcessing }"
     @endif
     {{
         $attributes
             ->merge([
                 'disabled' => $disabled,
+                'form' => $formId,
                 'type' => $tag === 'button' ? $type : null,
                 'wire:loading.attr' => $tag === 'button' ? 'disabled' : null,
                 'wire:target' => ($hasLoadingIndicator && $loadingIndicatorTarget) ? $loadingIndicatorTarget : null,
-                'x-bind:disabled' => $hasFileUploadLoadingIndicator ? 'isUploadingFile' : null,
+                'x-bind:disabled' => $hasFormProcessingLoadingIndicator ? 'isProcessing' : null,
             ], escape: false)
             ->class([$buttonClasses])
             ->style([$buttonStyles])
@@ -246,28 +256,31 @@
             />
         @endif
 
-        @if ($hasFileUploadLoadingIndicator)
+        @if ($hasFormProcessingLoadingIndicator)
             <x-filament::loading-indicator
                 x-cloak="x-cloak"
-                x-show="isUploadingFile"
+                x-show="isProcessing"
                 :class="$iconClasses"
             />
         @endif
     @endif
 
     <span
-        @if ($hasFileUploadLoadingIndicator)
-            x-show="! isUploadingFile"
+        @if ($hasFormProcessingLoadingIndicator)
+            x-show="! isProcessing"
         @endif
         class="{{ $labelClasses }}"
     >
         {{ $slot }}
     </span>
 
-    @if ($hasFileUploadLoadingIndicator)
-        <span x-cloak x-show="isUploadingFile" class="{{ $labelClasses }}">
-            {{ __('filament::components/button.messages.uploading_file') }}
-        </span>
+    @if ($hasFormProcessingLoadingIndicator)
+        <span
+            x-cloak
+            x-show="isProcessing"
+            x-text="processingMessage"
+            class="{{ $labelClasses }}"
+        ></span>
     @endif
 
     @if ($iconPosition === IconPosition::After)
@@ -299,10 +312,10 @@
             />
         @endif
 
-        @if ($hasFileUploadLoadingIndicator)
+        @if ($hasFormProcessingLoadingIndicator)
             <x-filament::loading-indicator
                 x-cloak="x-cloak"
-                x-show="isUploadingFile"
+                x-show="isProcessing"
                 :class="$iconClasses"
             />
         @endif
@@ -310,7 +323,7 @@
 
     @if (filled($badge))
         <div class="{{ $badgeContainerClasses }}">
-            <x-filament::badge :color="$badgeColor" size="xs">
+            <x-filament::badge :color="$badgeColor" :size="$badgeSize">
                 {{ $badge }}
             </x-filament::badge>
         </div>

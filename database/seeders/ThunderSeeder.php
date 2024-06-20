@@ -13,7 +13,7 @@ class ThunderSeeder extends Seeder
      */
     public function run(): void
     {
-        $collection = DB::table('collections')->insertGetId([
+        $collection = DB::table(config('zeus-bolt.table-prefix') . 'collections')->insertGetId([
             'name' => 'all printers list',
             'values' => json_encode([
                 [
@@ -44,14 +44,14 @@ class ThunderSeeder extends Seeder
             ], JSON_THROW_ON_ERROR),
             'created_at' => now(),
         ]);
-        $category = DB::table('categories')->insertGetId([
+        $category = DB::table(config('zeus-bolt.table-prefix') . 'categories')->insertGetId([
             'name' => json_encode(['en' => 'support tickets Forms', 'ar' => 'نماذج الدعم الفني'], JSON_THROW_ON_ERROR),
             'description' => json_encode(['en' => 'all support tickets Forms', 'ar' => 'كافة نماذج الدعم الفني'], JSON_THROW_ON_ERROR),
             'slug' => 'general-forms',
             'created_at' => now(),
         ]);
 
-        $form = DB::table('forms')->insertGetId([
+        $form = DB::table(config('zeus-bolt.table-prefix') . 'forms')->insertGetId([
             'name' => json_encode(['en' => 'printer issues', 'ar' => 'مشاكل الطابعات'], JSON_THROW_ON_ERROR),
             'slug' => 'printer-issues',
             'options' => json_encode([
@@ -89,18 +89,18 @@ class ThunderSeeder extends Seeder
             'created_at' => now(),
         ]);
 
-        $section1 = DB::table('sections')->insertGetId([
+        $section1 = DB::table(config('zeus-bolt.table-prefix') . 'sections')->insertGetId([
             'name' => json_encode(['en' => 'location info', 'ar' => 'بيانات الموقع'], JSON_THROW_ON_ERROR),
             'form_id' => $form,
             'created_at' => now(),
         ]);
-        $section2 = DB::table('sections')->insertGetId([
+        $section2 = DB::table(config('zeus-bolt.table-prefix') . 'sections')->insertGetId([
             'name' => json_encode(['en' => 'device info', 'ar' => 'تفاصيل المشكلة'], JSON_THROW_ON_ERROR),
             'form_id' => $form,
             'created_at' => now(),
         ]);
 
-        $section1_field_1 = DB::table('fields')->insertGetId([
+        $section1_field_1 = DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId([
             'name' => json_encode(['en' => 'room number', 'ar' => 'رقم الغرفة'], JSON_THROW_ON_ERROR),
             'section_id' => $section1,
             'ordering' => 1,
@@ -112,7 +112,7 @@ class ThunderSeeder extends Seeder
             'type' => '\LaraZeus\Bolt\Fields\Classes\TextInput',
             'created_at' => now(),
         ]);
-        $section1_field_2 = DB::table('fields')->insertGetId([
+        $section1_field_2 = DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId([
             'name' => json_encode(['en' => 'floor', 'ar' => 'الدور'], JSON_THROW_ON_ERROR),
             'section_id' => $section1,
             'ordering' => 2,
@@ -124,7 +124,7 @@ class ThunderSeeder extends Seeder
             'type' => '\LaraZeus\Bolt\Fields\Classes\TextInput',
             'created_at' => now(),
         ]);
-        $section2_field_1 = DB::table('fields')->insertGetId([
+        $section2_field_1 = DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId([
             'name' => json_encode(['en' => 'have you restart the device?', 'ar' => 'هل جربت اعادة تشغيل الجهاز؟'], JSON_THROW_ON_ERROR),
             'section_id' => $section2,
             'ordering' => 2,
@@ -137,7 +137,7 @@ class ThunderSeeder extends Seeder
             'type' => '\LaraZeus\Bolt\Fields\Classes\Radio',
             'created_at' => now(),
         ]);
-        $section2_field_2 = DB::table('fields')->insertGetId([
+        $section2_field_2 = DB::table(config('zeus-bolt.table-prefix') . 'fields')->insertGetId([
             'name' => json_encode(['en' => 'select the printer model', 'ar' => 'اختر موديل الطابعة'], JSON_THROW_ON_ERROR),
             'section_id' => $section2,
             'ordering' => 2,
@@ -150,36 +150,37 @@ class ThunderSeeder extends Seeder
             'created_at' => now(),
         ]);
 
-        $response_1 = DB::table('responses')->insertGetId([
+        $response_1 = DB::table(config('zeus-bolt.table-prefix') . 'responses')->insertGetId([
             'form_id' => $form,
             'user_id' => 3,
             'status' => 'OPEN',
             'notes' => null,
             'created_at' => now(),
+            'extension_item_id' => 1,
         ]);
 
-        $response_1_field_1 = DB::table('field_responses')->insertGetId([
+        $response_1_field_1 = DB::table(config('zeus-bolt.table-prefix') . 'field_responses')->insertGetId([
             'form_id' => $form,
             'field_id' => $section1_field_1,
             'response_id' => $response_1,
             'response' => '1',
             'created_at' => now(),
         ]);
-        $response_1_field_2 = DB::table('field_responses')->insertGetId([
+        $response_1_field_2 = DB::table(config('zeus-bolt.table-prefix') . 'field_responses')->insertGetId([
             'form_id' => $form,
             'field_id' => $section1_field_2,
             'response_id' => $response_1,
             'response' => '1',
             'created_at' => now(),
         ]);
-        $response_1_field_3 = DB::table('field_responses')->insertGetId([
+        $response_1_field_3 = DB::table(config('zeus-bolt.table-prefix') . 'field_responses')->insertGetId([
             'form_id' => $form,
             'field_id' => $section2_field_1,
             'response_id' => $response_1,
             'response' => 'maybe',
             'created_at' => now(),
         ]);
-        $response_1_field_4 = DB::table('field_responses')->insertGetId([
+        $response_1_field_4 = DB::table(config('zeus-bolt.table-prefix') . 'field_responses')->insertGetId([
             'form_id' => $form,
             'field_id' => $section2_field_2,
             'response_id' => $response_1,

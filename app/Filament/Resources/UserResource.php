@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Filament\DemoWidgets\MiniChart;
 use App\Filament\Resources\UserResource\Pages;
 use App\Models\User;
 use Filament\Forms\Components\TextInput;
@@ -15,6 +16,7 @@ use Filament\Tables\Actions\ActionGroup;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Columns\ColumnGroup;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
@@ -61,7 +63,7 @@ class UserResource extends Resource
                     // main options
                     ->trigger('click')
                     ->placement('right')
-                    ->offset([0, 10])
+                    //->offset(10)
                     ->popOverMaxWidth('none')
                     ->icon('heroicon-o-chevron-right')
                     //->content(fn ($record) => view('filament.test.user-card', ['record' => $record]))
@@ -77,6 +79,7 @@ class UserResource extends Resource
     {
         return $form->schema([
             TextInput::make('name')->required(),
+
             TextInput::make('email')
                 ->unique(ignoreRecord: true)
                 ->required()
@@ -130,34 +133,34 @@ class UserResource extends Resource
                             ->redirectTo(url('/admin')),* /
                     ]),*/
 
+                PopoverColumn::make('name')
+                    ->content(\LaraZeus\Qr\Facades\Qr::render(
+                        data:'dataOrUrl',
+                        options:[
+                            'margin' => '1',
+                            'color' => 'rgba(74, 74, 74, 1)',
+                            'back_color' => 'rgba(252, 252, 252, 1)',
+                            'style' => 'square',
+                            'hasGradient' => true,
+                            'gradient_type' => 'vertical',
+                            'hasEyeColor' => false,
+                            'eye_color_inner' => 'rgb(241, 148, 138)',
+                            'eye_color_outer' => 'rgb(69, 179, 157)',
+                            'eye_style' => 'square',
+
+                            'size' => '100',
+                            'type' => 'png',
+                            'gradient_form' => 'rgb(69, 179, 157,1)',
+                            'gradient_to' => 'rgb(241, 148, 138,1)',
+                        ],
+                    )),
+
                 ColumnGroup::make('main-info', [
-                    PopoverColumn::make('name')
-                        // most of filament methods will work
-                        ->sortable()
-                        ->searchable()
-                        ->toggleable()
-                        // main options
-                        ->trigger('click')
-                        ->placement('right')
-                        ->offset([0, 10])
-                        ->popOverMaxWidth('none')
-                        ->icon('heroicon-o-chevron-right')
-
-                        // direct HTML content
-                        //->content(fn($record) => new HtmlString($record->name.'<br>'.$record->email))
-
-                        // or blade content
-                        ->content(fn ($record) => view('filament.test.user-card', ['record' => $record]))
-
-                    // or livewire component
-                    //->content(fn($record) => new HtmlString(Blade::render('@livewire(\App\Filament\Widgets\DemoStats::class, ["lazy" => true])')))
-                    ,
-
+                    ImageColumn::make('avatar_url'),
                     /*TextColumn::make('name')
                         ->sortable()
                         ->toggleable()
                         ->searchable(),*/
-
                     TextColumn::make('email')
                         ->sortable()
                         ->toggleable()
@@ -218,6 +221,13 @@ class UserResource extends Resource
     public static function canEdit(Model $record): bool
     {
         return app()->isLocal();
+    }
+
+    public static function getWidgets(): array
+    {
+        return [
+            MiniChart::class,
+        ];
     }
 
     public static function getPages(): array

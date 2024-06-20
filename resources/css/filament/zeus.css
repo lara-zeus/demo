@@ -1,0 +1,111 @@
+.fi-topbar nav {
+    @apply !bg-gradient-to-tr from-secondary-50 via-secondary-50 to-primary-50/50;
+    @apply dark:from-gray-900 dark:via-gray-900 dark:to-secondary-900/50;
+}
+
+.fi-sidebar-header {
+    @apply !z-50;
+}
+
+.fi-sidebar {
+    @apply !shadow-2xl;
+}
+
+.fi-sidebar-nav ul {
+    @apply !gap-y-2;
+}
+
+.fi-sidebar-header {
+    @apply !px-2 py-4 justify-center;
+    @apply !bg-gradient-to-tr from-primary-50/50 via-secondary-50 to-secondary-50;
+    @apply dark:from-secondary-900/50 dark:via-gray-900 dark:to-gray-900;
+}
+
+.fi-sidebar-group {
+    @apply !bg-gradient-to-tr from-primary-50/25 via-secondary-50/50 to-secondary-50/50;
+    @apply dark:!from-primary-800 dark:!via-gray-800 dark:!to-gray-800;
+    @apply dark:border-gray-700/25 !shadow rounded-3xl rounded-tl-none;
+    @apply border border-secondary-500/25 my-2 p-2;
+}
+
+.fi-sidebar-group-paid {
+    @apply !bg-gradient-to-tr from-amber-50/25 via-amber-50/50 to-secondary-50/50;
+    @apply dark:!from-amber-950 dark:!via-gray-950 dark:!to-gray-950;
+    @apply dark:border-gray-700/25 !shadow-md dark:!shadow-secondary-100/10 !shadow-amber-100/40 rounded-3xl rounded-tl-none;
+    @apply border border-amber-500/60 my-2 p-2;
+}
+
+.fi-sidebar-item-active a, .fi-sidebar-item-active a .fi-sidebar-item-label {
+    @apply !bg-gray-50/0 !font-semibold !text-base;
+}
+
+.fi-sidebar-group-label a[href*="example"] {
+    background-color: silver;
+}
+
+.fi-sidebar-group > div > span {
+    @apply text-secondary-800/90
+}
+
+.fi-sidebar-open {
+    @apply !bg-white dark:!bg-gray-900
+}
+
+.fi-topbar {
+    @apply !shadow-lg;
+}
+
+.fi-section, .fi-fo-tabs, .fi-fo-repeater-item, .fi-ta-ctn {
+    @apply !rounded-3xl !rounded-tl-none !shadow;
+    @apply !ring-secondary-500/25;
+}
+
+.fi-section {
+    @apply !shadow-md;
+    @apply dark:!from-primary-900/80 dark:!via-gray-900 dark:!to-gray-900;
+}
+
+.fi-simple-main {
+    @apply !shadow-2xl !bg-opacity-10 dark:!bg-opacity-40 rounded-2xl;
+    @apply !bg-gradient-to-tr from-primary-50/10 via-secondary-50/50 to-secondary-50/10;
+    @apply dark:from-primary-100/10 dark:via-secondary-100/30 dark:to-secondary-100/10;
+}
+
+.fi-dropdown-trigger button:hover{
+    @apply !bg-white/0;
+}
+/*
+Thanks to @awcodes for sharing this trick
+https://discord.com/channels/883083792112300104/883084832387760148/1176631687782858782
+*/
+/*.fi-ta-row {
+    .fi-ta-cell:last-of-type {
+        @apply relative right-0 top-0 bottom-0;
+        > div {
+            @apply bg-white dark:bg-gray-900;
+        }
+    }
+    &:hover .fi-ta-cell:last-of-type {
+        position: sticky;
+        > div {
+            @apply shadow-md rounded-full py-2;
+        }
+    }
+}*/
+
+.fi-modal-close-overlay{
+    @apply backdrop-blur-sm;
+}
+
+@keyframes shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
+
+.horizontal-shake {
+    animation: shaking 0.35s normal;
+    animation-iteration-count: 1
+}

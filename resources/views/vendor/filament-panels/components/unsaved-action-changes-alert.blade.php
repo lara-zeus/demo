@@ -2,6 +2,10 @@
     @script
         <script>
             window.addEventListener('beforeunload', (event) => {
+                if (typeof @this === 'undefined') {
+                    return
+                }
+
                 if (
                     [
                         ...(@js($this instanceof \Filament\Actions\Contracts\HasActions) ? $wire.mountedActions ?? [] : []),
@@ -17,7 +21,8 @@
                                       : []),
                               ]
                             : []),
-                    ].length
+                    ].length &&
+                    !$wire?.__instance?.effects?.redirect
                 ) {
                     event.preventDefault()
                     event.returnValue = true

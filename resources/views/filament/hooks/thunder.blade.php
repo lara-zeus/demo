@@ -11,7 +11,7 @@
             <span>Ticketing System</span>
             <br>
             <span class="font-semibold text-xl">
-                🎉 Thunder is available in beta, <a class="text-secondary-600" target="_blank" href="https://larazeus.com/thunder">get it here</a>
+                🎉 Thunder is available, <a class="text-secondary-600" target="_blank" href="https://larazeus.com/thunder">get it here</a>
             </span>
         </div>
     </div>

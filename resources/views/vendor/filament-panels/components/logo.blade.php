@@ -7,9 +7,9 @@
 
     $getLogoClasses = fn (bool $isDarkMode): string => \Illuminate\Support\Arr::toCssClasses([
         'fi-logo',
-        'inline-flex' => ! $hasDarkModeBrandLogo,
-        'inline-flex dark:hidden' => $hasDarkModeBrandLogo && (! $isDarkMode),
-        'hidden dark:inline-flex' => $hasDarkModeBrandLogo && $isDarkMode,
+        'flex' => ! $hasDarkModeBrandLogo,
+        'flex dark:hidden' => $hasDarkModeBrandLogo && (! $isDarkMode),
+        'hidden dark:flex' => $hasDarkModeBrandLogo && $isDarkMode,
     ]);
 
     $logoStyles = "height: {$brandLogoHeight}";
@@ -28,8 +28,7 @@
         </div>
     @elseif (filled($logo))
         <img
-            alt="{{ $brandName }}"
-            loading="lazy"
+            alt="{{ __('filament-panels::layout.logo.alt', ['name' => $brandName]) }}"
             src="{{ $logo }}"
             {{
                 $attributes
