@@ -20,9 +20,9 @@ class Statistics extends Page
     protected function getFooterWidgets(): array
     {
         return [
-            UmamiWidgetStatsGrouped::class,
-            UmamiWidgetTableReferrers::class,
-            UmamiWidgetTableUrls::class,
+            //UmamiWidgetStatsGrouped::class,
+            //UmamiWidgetTableReferrers::class,
+            //UmamiWidgetTableUrls::class,
 
             GitStarsChart::class
         ];
