@@ -21,9 +21,13 @@
         {{ $description }}
     </x-slot>
 
-    <img alt="{{ $name }} Filament Plugin"
-         class="my-4 aspect-video mx-auto "
-         src="{{ $image }}"/>
+    @if(isset($image))
+        <img alt="{{ $name }} Filament Plugin"
+             class="my-4 aspect-video mx-auto "
+             src="{{ $image }}"/>
+    @endif
+
+    {{ $slot ?? '' }}
 
     <p class="text-center">
         <x-filament::link href="{{ $filament }}">

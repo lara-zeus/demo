@@ -256,12 +256,12 @@
         },
         {
             "name": "archilex/filament-filter-sets",
-            "version": "3.7.4",
+            "version": "3.7.6",
             "dist": {
                 "type": "zip",
-                "url": "https://filament-filter-sets.composer.sh/download/9c412db6-09c3-456a-bd27-1e0bcf90e5e6/advanced-tables-for-filament-3.7.4.zip",
-                "reference": "c50d0b994cc627545dc426e9e61f5e07f84bc842",
-                "shasum": "0a23bc63b5cc4073d64e1b3b2a8b2eea98f00431"
+                "url": "https://filament-filter-sets.composer.sh/download/9c57bcf8-3384-4f8f-9e8e-704894dc3882/advanced-tables-for-filament-3.7.6.zip",
+                "reference": "291f09ad8ff0fb8ee5dec4f4ffd177a4e0f6b1a3",
+                "shasum": "b34276274956bc779137ebfbdd1d6e528d033c98"
             },
             "require": {
                 "archilex/filament-toggle-icon-column": "^3.0",
@@ -337,7 +337,7 @@
                 "tables",
                 "views"
             ],
-            "time": "2024-06-10T16:38:58+00:00"
+            "time": "2024-06-21T21:47:45+00:00"
         },
         {
             "name": "archilex/filament-toggle-icon-column",
@@ -545,16 +545,16 @@
         },
         {
             "name": "awcodes/filament-curator",
-            "version": "v3.6.1",
+            "version": "v3.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/filament-curator.git",
-                "reference": "1ceafcc12fd679c2265e0b1f7a3bb58883948445"
+                "reference": "8884a89fde1c14724ad2fb30946536e403d401f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/filament-curator/zipball/1ceafcc12fd679c2265e0b1f7a3bb58883948445",
-                "reference": "1ceafcc12fd679c2265e0b1f7a3bb58883948445",
+                "url": "https://api.github.com/repos/awcodes/filament-curator/zipball/8884a89fde1c14724ad2fb30946536e403d401f1",
+                "reference": "8884a89fde1c14724ad2fb30946536e403d401f1",
                 "shasum": ""
             },
             "require": {
@@ -614,7 +614,7 @@
             ],
             "support": {
                 "issues": "https://github.com/awcodes/filament-curator/issues",
-                "source": "https://github.com/awcodes/filament-curator/tree/v3.6.1"
+                "source": "https://github.com/awcodes/filament-curator/tree/v3.6.2"
             },
             "funding": [
                 {
@@ -622,7 +622,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-04T15:59:01+00:00"
+            "time": "2024-06-17T12:09:14+00:00"
         },
         {
             "name": "awcodes/filament-quick-create",
@@ -12702,16 +12702,16 @@
         },
         {
             "name": "schmeits/filament-umami-widgets",
-            "version": "1.0.1",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmeits/filament-umami-widgets.git",
-                "reference": "d0ef940d1e6e61ed4402d56b5ad7b3612a8fde1f"
+                "reference": "6561d91c930c55bd423f2023408da0126ccaeb32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmeits/filament-umami-widgets/zipball/d0ef940d1e6e61ed4402d56b5ad7b3612a8fde1f",
-                "reference": "d0ef940d1e6e61ed4402d56b5ad7b3612a8fde1f",
+                "url": "https://api.github.com/repos/schmeits/filament-umami-widgets/zipball/6561d91c930c55bd423f2023408da0126ccaeb32",
+                "reference": "6561d91c930c55bd423f2023408da0126ccaeb32",
                 "shasum": ""
             },
             "require": {
@@ -12778,7 +12778,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-18T13:56:45+00:00"
+            "time": "2024-06-21T14:35:45+00:00"
         },
         {
             "name": "sentry/sentry",
@@ -13414,16 +13414,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "11.7.1",
+            "version": "11.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "a60867de07ec110e8443a1deae04b3b65fe3eda5"
+                "reference": "2e08d90043df40a9c7b274bbd677997c54826b86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/a60867de07ec110e8443a1deae04b3b65fe3eda5",
-                "reference": "a60867de07ec110e8443a1deae04b3b65fe3eda5",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/2e08d90043df40a9c7b274bbd677997c54826b86",
+                "reference": "2e08d90043df40a9c7b274bbd677997c54826b86",
                 "shasum": ""
             },
             "require": {
@@ -13507,7 +13507,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-medialibrary/issues",
-                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.7.1"
+                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.7.2"
             },
             "funding": [
                 {
@@ -13519,7 +13519,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-20T08:14:20+00:00"
+            "time": "2024-06-21T08:18:41+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",
@@ -22096,16 +22096,16 @@
         },
         {
             "name": "spatie/error-solutions",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/error-solutions.git",
-                "reference": "202108314a6988ede156fba1b3ea80a784c1734a"
+                "reference": "d60d4d2ef4b7701c86134ded959667cac6215233"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/error-solutions/zipball/202108314a6988ede156fba1b3ea80a784c1734a",
-                "reference": "202108314a6988ede156fba1b3ea80a784c1734a",
+                "url": "https://api.github.com/repos/spatie/error-solutions/zipball/d60d4d2ef4b7701c86134ded959667cac6215233",
+                "reference": "d60d4d2ef4b7701c86134ded959667cac6215233",
                 "shasum": ""
             },
             "require": {
@@ -22158,7 +22158,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/error-solutions/issues",
-                "source": "https://github.com/spatie/error-solutions/tree/1.0.0"
+                "source": "https://github.com/spatie/error-solutions/tree/1.0.1"
             },
             "funding": [
                 {
@@ -22166,7 +22166,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-12T14:49:54+00:00"
+            "time": "2024-06-21T10:09:00+00:00"
         },
         {
             "name": "spatie/flare-client-php",

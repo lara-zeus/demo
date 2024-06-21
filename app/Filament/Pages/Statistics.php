@@ -17,12 +17,12 @@ class Statistics extends Page
 
     protected static string $view = 'filament.pages.statistics';
 
-    protected function getHeaderWidgets(): array
+    protected function getFooterWidgets(): array
     {
         return [
-            //UmamiWidgetStatsGrouped::class,
-            //UmamiWidgetTableReferrers::class,
-            //UmamiWidgetTableUrls::class,
+            UmamiWidgetStatsGrouped::class,
+            UmamiWidgetTableReferrers::class,
+            UmamiWidgetTableUrls::class,
 
             GitStarsChart::class
         ];
