@@ -256,12 +256,12 @@
         },
         {
             "name": "archilex/filament-filter-sets",
-            "version": "3.7.6",
+            "version": "3.7.7",
             "dist": {
                 "type": "zip",
-                "url": "https://filament-filter-sets.composer.sh/download/9c57bcf8-3384-4f8f-9e8e-704894dc3882/advanced-tables-for-filament-3.7.6.zip",
-                "reference": "291f09ad8ff0fb8ee5dec4f4ffd177a4e0f6b1a3",
-                "shasum": "b34276274956bc779137ebfbdd1d6e528d033c98"
+                "url": "https://filament-filter-sets.composer.sh/download/9c5f3f9a-fa70-449e-a37b-31a3c89339fb/advanced-tables-for-filament-3.7.7.zip",
+                "reference": "c2c0341e4b40901afc6d2a63d5db2af1025ff043",
+                "shasum": "597f7ca0be47a7be6ee7b4f01fbdb2bd93bc0e41"
             },
             "require": {
                 "archilex/filament-toggle-icon-column": "^3.0",
@@ -337,7 +337,7 @@
                 "tables",
                 "views"
             ],
-            "time": "2024-06-21T21:47:45+00:00"
+            "time": "2024-06-25T15:23:50+00:00"
         },
         {
             "name": "archilex/filament-toggle-icon-column",
@@ -1977,16 +1977,16 @@
         },
         {
             "name": "codeat3/blade-carbon-icons",
-            "version": "2.26.0",
+            "version": "2.27.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeat3/blade-carbon-icons.git",
-                "reference": "def7ff23a06d633f744dfbea65b67ec650e92d4d"
+                "reference": "26eb43c7d6fda66d7f8612796011869fcb8a1f02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeat3/blade-carbon-icons/zipball/def7ff23a06d633f744dfbea65b67ec650e92d4d",
-                "reference": "def7ff23a06d633f744dfbea65b67ec650e92d4d",
+                "url": "https://api.github.com/repos/codeat3/blade-carbon-icons/zipball/26eb43c7d6fda66d7f8612796011869fcb8a1f02",
+                "reference": "26eb43c7d6fda66d7f8612796011869fcb8a1f02",
                 "shasum": ""
             },
             "require": {
@@ -2037,7 +2037,7 @@
             ],
             "support": {
                 "issues": "https://github.com/codeat3/blade-carbon-icons/issues",
-                "source": "https://github.com/codeat3/blade-carbon-icons/tree/2.26.0"
+                "source": "https://github.com/codeat3/blade-carbon-icons/tree/2.27.0"
             },
             "funding": [
                 {
@@ -2045,7 +2045,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-17T17:28:43+00:00"
+            "time": "2024-06-24T17:03:49+00:00"
         },
         {
             "name": "codeat3/blade-clarity-icons",
@@ -5738,16 +5738,16 @@
         },
         {
             "name": "jaocero/radio-deck",
-            "version": "v1.2.7",
+            "version": "v1.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/199ocero/radio-deck.git",
-                "reference": "3965811babc43f1ca12ef5523b9a4d30d58e0093"
+                "reference": "23815595cfdb441794964f0729e0ea57eec48f5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/199ocero/radio-deck/zipball/3965811babc43f1ca12ef5523b9a4d30d58e0093",
-                "reference": "3965811babc43f1ca12ef5523b9a4d30d58e0093",
+                "url": "https://api.github.com/repos/199ocero/radio-deck/zipball/23815595cfdb441794964f0729e0ea57eec48f5e",
+                "reference": "23815595cfdb441794964f0729e0ea57eec48f5e",
                 "shasum": ""
             },
             "require": {
@@ -5808,7 +5808,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-05-30T13:40:53+00:00"
+            "time": "2024-06-25T23:06:42+00:00"
         },
         {
             "name": "jaybizzle/crawler-detect",
@@ -7773,16 +7773,16 @@
         },
         {
             "name": "lara-zeus/qr",
-            "version": "1.1.13",
+            "version": "1.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/qr.git",
-                "reference": "321338ba031d8be50c54ceeb87c88f06d34649ae"
+                "reference": "f805623b225c555c3a093fa0f474db9eac82b459"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/qr/zipball/321338ba031d8be50c54ceeb87c88f06d34649ae",
-                "reference": "321338ba031d8be50c54ceeb87c88f06d34649ae",
+                "url": "https://api.github.com/repos/lara-zeus/qr/zipball/f805623b225c555c3a093fa0f474db9eac82b459",
+                "reference": "f805623b225c555c3a093fa0f474db9eac82b459",
                 "shasum": ""
             },
             "require": {
@@ -7851,7 +7851,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-13T14:46:58+00:00"
+            "time": "2024-06-26T05:36:45+00:00"
         },
         {
             "name": "lara-zeus/quantity",
@@ -8297,16 +8297,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.11.1",
+            "version": "v11.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c9b52e84bd18f155e5ba59b948c7da3e7f37e87f"
+                "reference": "9a6d9cea83cfa6b9e8eda05c89741d0411d8ebe8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c9b52e84bd18f155e5ba59b948c7da3e7f37e87f",
-                "reference": "c9b52e84bd18f155e5ba59b948c7da3e7f37e87f",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9a6d9cea83cfa6b9e8eda05c89741d0411d8ebe8",
+                "reference": "9a6d9cea83cfa6b9e8eda05c89741d0411d8ebe8",
                 "shasum": ""
             },
             "require": {
@@ -8498,7 +8498,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-06-20T10:54:53+00:00"
+            "time": "2024-06-25T19:33:56+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -12702,16 +12702,16 @@
         },
         {
             "name": "schmeits/filament-umami-widgets",
-            "version": "1.2.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmeits/filament-umami-widgets.git",
-                "reference": "6561d91c930c55bd423f2023408da0126ccaeb32"
+                "reference": "8ef1e139fd1bb1a119fb8175a85f65b7698ba4c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmeits/filament-umami-widgets/zipball/6561d91c930c55bd423f2023408da0126ccaeb32",
-                "reference": "6561d91c930c55bd423f2023408da0126ccaeb32",
+                "url": "https://api.github.com/repos/schmeits/filament-umami-widgets/zipball/8ef1e139fd1bb1a119fb8175a85f65b7698ba4c0",
+                "reference": "8ef1e139fd1bb1a119fb8175a85f65b7698ba4c0",
                 "shasum": ""
             },
             "require": {
@@ -12778,7 +12778,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-21T14:35:45+00:00"
+            "time": "2024-06-25T09:10:06+00:00"
         },
         {
             "name": "sentry/sentry",
@@ -19091,16 +19091,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.29.3",
+            "version": "v1.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "e35b3ffe1b9ea598246d7e99197ee8799f6dc2e5"
+                "reference": "e08b594052385ab9891dd86047e52da8a953c827"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/e35b3ffe1b9ea598246d7e99197ee8799f6dc2e5",
-                "reference": "e35b3ffe1b9ea598246d7e99197ee8799f6dc2e5",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/e08b594052385ab9891dd86047e52da8a953c827",
+                "reference": "e08b594052385ab9891dd86047e52da8a953c827",
                 "shasum": ""
             },
             "require": {
@@ -19150,7 +19150,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2024-06-12T16:24:41+00:00"
+            "time": "2024-06-18T17:36:56+00:00"
         },
         {
             "name": "laravel/tinker",
