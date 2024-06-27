@@ -79,11 +79,6 @@ class UserResource extends Resource
     {
         return $form->schema([
             TextInput::make('name')->required(),
-
-            \LaraZeus\Qr\Components\Qr::make('url')
-                ->optionsColumn('options')
-                ->name('url'),
-
             TextInput::make('email')
                 ->unique(ignoreRecord: true)
                 ->required()
