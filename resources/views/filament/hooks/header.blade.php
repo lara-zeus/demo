@@ -1,9 +1,9 @@
-<style>
+{{--<style>
     #Durchblick-toggleFeedbackMode{
         left: unset !important;
         right: 20px !important;
     }
-</style>
+</style>--}}
 <script src="https://durchblick.app/widget.js"></script>
 <script>
     DurchblickWidget.init({
