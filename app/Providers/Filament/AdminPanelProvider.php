@@ -3,6 +3,7 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
+use App\Filament\Widgets\Feedback;
 use App\Zeus\CustomSchema\Field;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
@@ -23,6 +24,7 @@ use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\SpatieLaravelTranslatablePlugin;
 use Filament\Support\Colors\Color;
+use Filament\View\PanelsRenderHook;
 use Filament\Widgets;
 use Illuminate\Contracts\View\View;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
@@ -221,6 +223,11 @@ class AdminPanelProvider extends PanelProvider
                 'panels::user-menu.profile.after',
                 fn (): View => view('filament.hooks.lang-switcher'),
             )
+            // header
+            ->renderHook(
+                PanelsRenderHook::HEAD_END,
+                fn (): View => view('filament.hooks.header'),
+            )
             // footer
             ->renderHook(
                 'panels::footer',
@@ -245,6 +252,7 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\FilamentInfoWidget::class,
                 VersionsWidget::class,
                 OverlookWidget::class,
+                Feedback::class,
             ])
             ->middleware([
                 EncryptCookies::class,
