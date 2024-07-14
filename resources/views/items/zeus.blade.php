@@ -28,7 +28,7 @@
     @endslot
     @slot('btns')
         @if($package['admin_url'] !== null)
-            <a href="{{ $package['admin_url'] }}" class="shadow whitespace-nowrap font-medium rounded-md text-white bg-secondary-500 hover:bg-secondary-700 px-4 py-2 dark:bg-secondary-600 dark:hover:bg-secondary-800 transition-all ease-in-out duration-300">
+            <a href="{{ $package['admin_url'] }}" class="shadow whitespace-nowrap font-medium rounded-md text-gray-800 bg-white hover:bg-gray-500 px-4 py-2 dark:bg-gray-600 dark:hover:bg-gray-800 transition-all ease-in-out duration-300">
                 {{ __('Admin Panel') }}
             </a>
         @endif

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78e3c2ab5290209300f5daf9a7c822b6",
+    "content-hash": "3150a64220c683ac0a591a1909c90448",
     "packages": [
         {
             "name": "andreiio/blade-iconoir",
@@ -6515,6 +6515,81 @@
                 }
             ],
             "time": "2024-06-10T17:57:50+00:00"
+        },
+        {
+            "name": "lara-zeus/akin",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/akin.git",
+                "reference": "90accf1820a10d0fbe9d66890c1d927bd80a40a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/akin/zipball/90accf1820a10d0fbe9d66890c1d927bd80a40a6",
+                "reference": "90accf1820a10d0fbe9d66890c1d927bd80a40a6",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "illuminate/support": "^10.0|^11.0",
+                "php": "^8.1",
+                "ryangjchandler/blade-tabler-icons": "^2.3",
+                "spatie/laravel-package-tools": "^1.15"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "nunomaduro/larastan": "^2.0.1",
+                "nunomaduro/phpinsights": "^2.8",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "pestphp/pest-plugin-livewire": "^2.1",
+                "phpstan/extension-installer": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Akin\\AkinServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Akin\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "Lara-zeus Akin، telling a story with a design ... another filament theme.",
+            "homepage": "https://larazeus.com/akin",
+            "keywords": [
+                "akin",
+                "artemis",
+                "diana",
+                "filamentphp",
+                "lara-zeus",
+                "laravel",
+                "sky",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/akin/issues",
+                "source": "https://github.com/lara-zeus/akin"
+            },
+            "time": "2024-04-04T03:25:27+00:00"
         },
         {
             "name": "lara-zeus/artemis",

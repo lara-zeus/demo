@@ -8,8 +8,8 @@
 @import '../../node_modules/cropperjs/dist/cropper.css';
 @import 'tippy.js/dist/tippy.css';
 @import 'tippy.js/themes/light.css';
-@import "carbon.css";
-@import "filament/zeus.css";
+/*@import "filament/zeus.css";*/
+@import '../../vendor/lara-zeus/akin/resources/css/theme.css';
 
 .compact-timeline .fi-timeline-item-heading {
     @apply flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col !important;
@@ -61,4 +61,10 @@
 
 .bord {
     border: solid 1px red;
+}
+
+.fi-sidebar-group-paid {
+    @apply !bg-secondary-50 dark:!bg-primary-900;
+    @apply dark:!text-gray-100;
+    @apply my-2 p-1;
 }

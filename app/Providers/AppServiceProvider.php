@@ -66,8 +66,8 @@ class AppServiceProvider extends ServiceProvider
 
         FilamentColor::register([
             ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
-            'primary' => Color::hex('#45B39D'),
-            'secondary' => Color::hex('#F1948A'),
+            'primary' => Color::hex('#3D8AE5'),
+            'secondary' => Color::hex('#ECD249'),
             'gray' => Color::Stone,
             'danger' => Color::Red,
             'info' => Color::Blue,
