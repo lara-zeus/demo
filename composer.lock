@@ -8109,16 +8109,16 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v3.1.41",
+            "version": "v3.1.42",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "bdf824aad70efed8e15e03bd9326152fc81e65e0"
+                "reference": "ad1aeb09d5591986a2c2e34850cc114537ca4817"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/bdf824aad70efed8e15e03bd9326152fc81e65e0",
-                "reference": "bdf824aad70efed8e15e03bd9326152fc81e65e0",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/ad1aeb09d5591986a2c2e34850cc114537ca4817",
+                "reference": "ad1aeb09d5591986a2c2e34850cc114537ca4817",
                 "shasum": ""
             },
             "require": {
@@ -8214,7 +8214,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-06-19T21:14:02+00:00"
+            "time": "2024-07-17T14:36:54+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -12872,16 +12872,16 @@
         },
         {
             "name": "sentry/sentry-laravel",
-            "version": "4.7.0",
+            "version": "4.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-laravel.git",
-                "reference": "44151798253145c1abc7fe7e38210b98f926d794"
+                "reference": "d70415f19f35806acee5bcbc7403e9cb8fb5252c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-laravel/zipball/44151798253145c1abc7fe7e38210b98f926d794",
-                "reference": "44151798253145c1abc7fe7e38210b98f926d794",
+                "url": "https://api.github.com/repos/getsentry/sentry-laravel/zipball/d70415f19f35806acee5bcbc7403e9cb8fb5252c",
+                "reference": "d70415f19f35806acee5bcbc7403e9cb8fb5252c",
                 "shasum": ""
             },
             "require": {
@@ -12945,7 +12945,7 @@
             ],
             "support": {
                 "issues": "https://github.com/getsentry/sentry-laravel/issues",
-                "source": "https://github.com/getsentry/sentry-laravel/tree/4.7.0"
+                "source": "https://github.com/getsentry/sentry-laravel/tree/4.7.1"
             },
             "funding": [
                 {
@@ -12957,7 +12957,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2024-07-10T21:55:04+00:00"
+            "time": "2024-07-17T13:27:43+00:00"
         },
         {
             "name": "simplesoftwareio/simple-qrcode",
