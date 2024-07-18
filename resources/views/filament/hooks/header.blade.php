@@ -8,7 +8,7 @@
 <script>
     DurchblickWidget.init({
         apiKey: '7354e9b0e9dfe06a22617f8d',                 // required
-        publicFeedback: false,                      // optional, default: false (add ?allowFeedback=1 to the URL to enable)
+        publicFeedback: true,                      // optional, default: false (add ?allowFeedback=1 to the URL to enable)
         primaryColor: '#333',                       // optional, default: #333
         secondaryColor: '#ccc',                     // optional, default: #ccc
         dotSize: '20px',                            // optional, default: 20px
@@ -17,3 +17,6 @@
         exitFeedbackModeText: 'Feedback Mode On',   // optional, default: 'Exit feedback mode'
     });
 </script>
+
+
+
