@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use BezhanSalleh\PanelSwitch\PanelSwitch;
 use Filament\Facades\Filament;
+use Filament\Forms\Components\Select;
 use Filament\Support\Assets\Css;
 use Filament\Support\Colors\Color;
 use Filament\Support\Facades\FilamentAsset;
@@ -66,8 +67,8 @@ class AppServiceProvider extends ServiceProvider
 
         FilamentColor::register([
             ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
-            'primary' => Color::hex('#3D8AE5'),
-            'secondary' => Color::hex('#ECD249'),
+            'primary' => Color::hex('#45B39D'),
+            'secondary' => Color::hex('#F1948A'),
             'gray' => Color::Stone,
             'danger' => Color::Red,
             'info' => Color::Blue,
