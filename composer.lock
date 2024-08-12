@@ -8094,16 +8094,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.4.10",
+            "version": "v3.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "5036adb2e4260791c56925b51e162f5fc22634a6"
+                "reference": "594c7bd352153f02ec336fc1d4ecaa33db1cf68b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/5036adb2e4260791c56925b51e162f5fc22634a6",
-                "reference": "5036adb2e4260791c56925b51e162f5fc22634a6",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/594c7bd352153f02ec336fc1d4ecaa33db1cf68b",
+                "reference": "594c7bd352153f02ec336fc1d4ecaa33db1cf68b",
                 "shasum": ""
             },
             "require": {
@@ -8180,7 +8180,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-07-17T15:40:52+00:00"
+            "time": "2024-08-11T04:38:29+00:00"
         },
         {
             "name": "lara-zeus/thunder",
@@ -11973,16 +11973,16 @@
         },
         {
             "name": "pxlrbt/filament-spotlight",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pxlrbt/filament-spotlight.git",
-                "reference": "138f1cf15ba72a2b4316f10fdaa4d00cd0cbda19"
+                "reference": "2dbc1c53e11cccb34fda62059bf648ddffe86c9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pxlrbt/filament-spotlight/zipball/138f1cf15ba72a2b4316f10fdaa4d00cd0cbda19",
-                "reference": "138f1cf15ba72a2b4316f10fdaa4d00cd0cbda19",
+                "url": "https://api.github.com/repos/pxlrbt/filament-spotlight/zipball/2dbc1c53e11cccb34fda62059bf648ddffe86c9d",
+                "reference": "2dbc1c53e11cccb34fda62059bf648ddffe86c9d",
                 "shasum": ""
             },
             "require": {
@@ -12027,7 +12027,7 @@
             ],
             "support": {
                 "issues": "https://github.com/pxlrbt/filament-spotlight/issues",
-                "source": "https://github.com/pxlrbt/filament-spotlight/tree/v1.2.1"
+                "source": "https://github.com/pxlrbt/filament-spotlight/tree/v1.2.2"
             },
             "funding": [
                 {
@@ -12035,7 +12035,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-22T07:12:14+00:00"
+            "time": "2024-08-11T17:15:01+00:00"
         },
         {
             "name": "ralouphie/getallheaders",

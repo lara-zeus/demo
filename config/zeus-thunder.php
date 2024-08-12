@@ -38,4 +38,9 @@ return [
     ],
 
     'default-status' => 'OPEN',
+
+    'chat_polling'=>[
+        'enabled'=>false,
+        'time'=>'15s', // or '15000ms' or 'keep-alive'
+    ],
 ];
