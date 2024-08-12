@@ -89,7 +89,6 @@ module.exports = {
                     900: '#07110F',
                     950: '#000000'
                 },
-                //custom: {  DEFAULT: '#45B39D',  50: '#C6E9E2',  100: '#B8E4DB',  200: '#9AD8CC',  300: '#7DCDBD',  400: '#5FC1AE',  500: '#45B39D',  600: '#358B79',  700: '#266256',  800: '#163A32',  900: '#07110F',  950: '#000000'},
                 secondary: {
                     DEFAULT: '#F1948A',
                     50: '#FDF2F0',
@@ -104,9 +103,6 @@ module.exports = {
                     900: '#8A1C11',
                     950: '#71170E'
                 },
-                //primary: colors.green,
-                //secondary: colors.yellow,
-                //custom: colors.pink,
                 danger: colors.red,
                 success: colors.green,
                 warning: colors.yellow,

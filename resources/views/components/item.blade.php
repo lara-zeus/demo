@@ -2,7 +2,7 @@
 <div class="hover:scale-105 bg-white/80 dark:bg-gray-800 px-4 py-4
     hover:border-primary-200 border border-secondary-200 dark:border-gray-700
     shadow-lg dark:hover:shadow-lg dark:hover:shadow-gray-800
-    rounded-[2rem] rounded-bl-none rounded-tr-none transition ease-in-out duration-300
+    rounded-md transition ease-in-out duration-300
     flex flex-col gap-2 items-center sm:items-start">
     <div class="text-3xl title-font">
         <span class="flex sm:flex-none gap-2 justify-center sm:justify-start">

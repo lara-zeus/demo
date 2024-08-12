@@ -298,6 +298,7 @@ class AdminPanelProvider extends PanelProvider
                 ->alphabetical(),
             VersionsPlugin::make()
                 ->widgetSort(4)
+                ->hasNavigationView(false)
                 ->widgetColumnSpan('full')
                 ->items([
                     new MyCustomVersionProvider(),
@@ -326,6 +327,8 @@ class AdminPanelProvider extends PanelProvider
             FilamentFullCalendarPlugin::make()
                 ->selectable()
                 ->editable(),
+
+            \LaraZeus\Akin\AkinTheme::make(),
 
             BoltPlugin::make()
                 ->customSchema([
