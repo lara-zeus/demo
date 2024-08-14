@@ -91,7 +91,7 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
     public function avatarUrl(): Attribute
     {
         return new Attribute(
-            get: fn () => 'https://larazeus.com/avatars/'. $this->avatar_name
+            get: fn () => 'https://larazeus.com/avatars/'. urlencode($this->name).'.svg'
         );
     }
 }
