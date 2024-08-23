@@ -13,7 +13,6 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use LaraZeus\Athena\Models\Concerns\BelongToAthena;
 use LaraZeus\Bolt\Models\Concerns\BelongToBolt;
-use LaraZeus\Boredom\BoringAvatar;
 use LaraZeus\Boredom\Concerns\HasBoringAvatar;
 use LaraZeus\Thunder\Concerns\ManageOffice;
 
@@ -91,7 +90,7 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
     public function avatarUrl(): Attribute
     {
         return new Attribute(
-            get: fn () => 'https://larazeus.com/avatars/'. urlencode($this->name).'/30.svg'
+            get: fn () => 'https://larazeus.com/avatars/' . urlencode($this->name) . '/30.svg'
         );
     }
 }

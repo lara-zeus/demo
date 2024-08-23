@@ -4,7 +4,6 @@ namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
 use App\Filament\Widgets\Feedback;
-use App\Zeus\CustomSchema\Field;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
 use Archilex\AdvancedTables\Resources\UserViewResource;
@@ -301,7 +300,7 @@ class AdminPanelProvider extends PanelProvider
                 ->hasNavigationView(false)
                 ->widgetColumnSpan('full')
                 ->items([
-                    new MyCustomVersionProvider(),
+                    new MyCustomVersionProvider,
                 ]),
             QuickCreatePlugin::make()
                 ->sortBy('navigation')

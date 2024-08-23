@@ -78,7 +78,7 @@ class ThunderSeeder extends Seeder
                 'ar' => 'مشاكل الطابعات',
             ]),
             'slug' => 'printers-department',
-            'form_ids' => json_encode([$form],JSON_THROW_ON_ERROR),
+            'form_ids' => json_encode([$form], JSON_THROW_ON_ERROR),
             'description' => json_encode(['en' => 'all printers issues', 'ar' => 'كافة المشاكل المتعلقة بالطابعات'], JSON_THROW_ON_ERROR),
             'options' => json_encode([
                 'assigning-mechanism' => 'manually',

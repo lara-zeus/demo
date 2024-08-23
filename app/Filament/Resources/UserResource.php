@@ -134,8 +134,8 @@ class UserResource extends Resource
 
                 PopoverColumn::make('name')
                     ->content(\LaraZeus\Qr\Facades\Qr::render(
-                        data:'dataOrUrl',
-                        options:[
+                        data: 'dataOrUrl',
+                        options: [
                             'margin' => '1',
                             'color' => 'rgba(74, 74, 74, 1)',
                             'back_color' => 'rgba(252, 252, 252, 1)',

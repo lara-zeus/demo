@@ -24,7 +24,7 @@ class Statistics extends Page
             //UmamiWidgetTableReferrers::class,
             //UmamiWidgetTableUrls::class,
 
-            GitStarsChart::class
+            GitStarsChart::class,
         ];
     }
 }
