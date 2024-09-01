@@ -96,7 +96,6 @@ class AdminPanelProvider extends PanelProvider
                 ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
                 'primary' => Color::hex('#45B39D'),
                 'secondary' => Color::hex('#F1948A'),
-                'gray' => Color::Stone,
                 'danger' => Color::Red,
                 'info' => Color::Blue,
                 'success' => Color::Green,

@@ -74,7 +74,6 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                gray: colors.stone,
                 primary: {
                     DEFAULT: '#45B39D',
                     50: '#C6E9E2',
