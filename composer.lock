@@ -4588,16 +4588,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php-lite",
-            "version": "8.13.43",
+            "version": "8.13.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php-lite.git",
-                "reference": "68dba92b8fe981410a129f36f5fd037c8f66fa99"
+                "reference": "03fa85075310283f95a1911f4930426594ebcae7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php-lite/zipball/68dba92b8fe981410a129f36f5fd037c8f66fa99",
-                "reference": "68dba92b8fe981410a129f36f5fd037c8f66fa99",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php-lite/zipball/03fa85075310283f95a1911f4930426594ebcae7",
+                "reference": "03fa85075310283f95a1911f4930426594ebcae7",
                 "shasum": ""
             },
             "require": {
@@ -4667,7 +4667,7 @@
                 "issues": "https://github.com/giggsey/libphonenumber-for-php-lite/issues",
                 "source": "https://github.com/giggsey/libphonenumber-for-php-lite"
             },
-            "time": "2024-08-13T12:15:00+00:00"
+            "time": "2024-09-02T10:57:40+00:00"
         },
         {
             "name": "graham-campbell/bounded-cache",
@@ -7935,16 +7935,16 @@
         },
         {
             "name": "lara-zeus/quantity",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/quantity.git",
-                "reference": "55e1c628a0298c8040f8643e4dfb884983fb35d8"
+                "reference": "30558966665b990eba55b558c8a1ef4bd02cb011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/quantity/zipball/55e1c628a0298c8040f8643e4dfb884983fb35d8",
-                "reference": "55e1c628a0298c8040f8643e4dfb884983fb35d8",
+                "url": "https://api.github.com/repos/lara-zeus/quantity/zipball/30558966665b990eba55b558c8a1ef4bd02cb011",
+                "reference": "30558966665b990eba55b558c8a1ef4bd02cb011",
                 "shasum": ""
             },
             "require": {
@@ -8012,7 +8012,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-05-17T04:07:52+00:00"
+            "time": "2024-09-02T16:16:19+00:00"
         },
         {
             "name": "lara-zeus/rhea",
@@ -13497,16 +13497,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "11.9.0",
+            "version": "11.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "b103470caad6e7cd8013130e2651e637da94d4ef"
+                "reference": "ff589ea5532a33d84faeb64bfdfd59057b4148b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/b103470caad6e7cd8013130e2651e637da94d4ef",
-                "reference": "b103470caad6e7cd8013130e2651e637da94d4ef",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/ff589ea5532a33d84faeb64bfdfd59057b4148b8",
+                "reference": "ff589ea5532a33d84faeb64bfdfd59057b4148b8",
                 "shasum": ""
             },
             "require": {
@@ -13590,7 +13590,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-medialibrary/issues",
-                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.9.0"
+                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.9.1"
             },
             "funding": [
                 {
@@ -13602,7 +13602,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-08-22T09:20:42+00:00"
+            "time": "2024-09-02T06:32:15+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",

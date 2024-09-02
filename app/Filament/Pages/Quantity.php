@@ -45,6 +45,18 @@ class Quantity extends Page
                 Section::make()
                     ->schema([
 
+                        QuantityAlias::make('name9')
+                            ->label('quantity with steps')
+                            ->default(1)
+                            ->steps(2)
+                            ->required()
+                            ->helperText('steps 2')
+                            ->maxValue(1000000)
+                            ->minValue(1)
+                            ->hiddenLabel()
+                            ->live()
+                            ->columnSpanFull(),
+
                         QuantityAlias::make('name1')
                             ->label('select quantity')
                             ->default(3)
