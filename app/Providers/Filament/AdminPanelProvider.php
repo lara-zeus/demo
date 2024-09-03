@@ -45,6 +45,7 @@ use LaraZeus\Bolt\Filament\Resources\FormResource;
 use LaraZeus\BoltPro\Extensions\Grades;
 use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
+use LaraZeus\Delia\DeliaPlugin;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
@@ -272,6 +273,7 @@ class AdminPanelProvider extends PanelProvider
     {
         return [
             \Schmeits\FilamentUmami\FilamentUmamiPlugin::make(),
+            DeliaPlugin::make(),
             BoringAvatarPlugin::make(),
             FilamentBackgroundsPlugin::make(),
             AdvancedTablesPlugin::make()
