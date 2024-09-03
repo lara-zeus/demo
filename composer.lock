@@ -7133,16 +7133,16 @@
         },
         {
             "name": "lara-zeus/delia",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/delia.git",
-                "reference": "c246432b5e3aa6d6d6d8f2f53fcbc1c41604d495"
+                "reference": "450ca0fb2029dbd5048cd766914436d1d3bffcff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/delia/zipball/c246432b5e3aa6d6d6d8f2f53fcbc1c41604d495",
-                "reference": "c246432b5e3aa6d6d6d8f2f53fcbc1c41604d495",
+                "url": "https://api.github.com/repos/lara-zeus/delia/zipball/450ca0fb2029dbd5048cd766914436d1d3bffcff",
+                "reference": "450ca0fb2029dbd5048cd766914436d1d3bffcff",
                 "shasum": ""
             },
             "require": {
@@ -7215,7 +7215,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-03T14:52:41+00:00"
+            "time": "2024-09-03T17:02:05+00:00"
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
