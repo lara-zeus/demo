@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(config('zeus-delia.table-prefix').'bookmarks', function (Blueprint $table) {
+        Schema::create(config('zeus-delia.table-prefix') . 'bookmarks', function (Blueprint $table) {
             $table->bigIncrements('id');
 
             $table->string('bookmarkable_resource');
@@ -34,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('zeus-delia.table-prefix').'bookmarks');
+        Schema::dropIfExists(config('zeus-delia.table-prefix') . 'bookmarks');
     }
 };
