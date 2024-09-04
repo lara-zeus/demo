@@ -6,6 +6,7 @@ use App\Filament\Clusters\ComponentsDemo;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
+use LaraZeus\MatrixChoice\Components\Matrix as MatrixAlias;
 
 class Matrix extends Page
 {
@@ -38,7 +39,31 @@ class Matrix extends Page
             ->schema([
                 Section::make()
                     ->schema([
-                        \LaraZeus\MatrixChoice\Components\Matrix::make('question')
+                        MatrixAlias::make('options')
+                            ->disableOptionWhen(fn (string $value): bool => $value === 'm' || $value === 'p' || $value === 'users')
+                            ->rowSelectRequired(false)
+                            ->helperText('you can disable any options, like in the users row, the Manage and Approve are disabled')
+                            ->label('Resources Operations')
+                            ->asRadio()
+                            ->columnData([
+                                'c'=>'Create',
+                                'r'=>'Read',
+                                'u'=>'Update',
+                                'd'=>'Delete',
+                                'm'=>'Manage',
+                                'p'=>'Approve',
+                            ])
+                            ->rowData([
+                                'users'=>'Users',
+                                'companies'=>'Companies',
+                                'clients'=>'Clients',
+                            ]),
+
+
+                        MatrixAlias::make('question1')
+                            ->disableOptionWhen(fn (string $value): bool => $value === 0)
+                            ->rowSelectRequired(false)
+
                             ->label('Tell us about your mod')
                             ->asCheckbox()
                             ->columnData([
@@ -52,7 +77,7 @@ class Matrix extends Page
                                 'Monday',
                             ]),
 
-                        \LaraZeus\MatrixChoice\Components\Matrix::make('question')
+                        MatrixAlias::make('question2')
                             ->label('Tell us about your mod')
                             ->asRadio()
                             ->columnData([
