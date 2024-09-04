@@ -40,11 +40,12 @@ class Matrix extends Page
                 Section::make()
                     ->schema([
                         MatrixAlias::make('options')
+                            //->disabled()
                             ->disableOptionWhen(fn (string $value): bool => $value === 'm' || $value === 'p' || $value === 'users')
                             ->rowSelectRequired(false)
                             ->helperText('you can disable any options, like in the users row, the Manage and Approve are disabled')
                             ->label('Resources Operations')
-                            ->asRadio()
+                            ->asCheckbox()
                             ->columnData([
                                 'c'=>'Create',
                                 'r'=>'Read',

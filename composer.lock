@@ -7769,16 +7769,16 @@
         },
         {
             "name": "lara-zeus/matrix-choice",
-            "version": "v3.2.1",
+            "version": "v3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/matrix-choice.git",
-                "reference": "98eb2fb513a4c7df36e0c4a8b253dc78e3a1b565"
+                "reference": "17d62aef246786237a27b76dba18ddb36cfccc17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/matrix-choice/zipball/98eb2fb513a4c7df36e0c4a8b253dc78e3a1b565",
-                "reference": "98eb2fb513a4c7df36e0c4a8b253dc78e3a1b565",
+                "url": "https://api.github.com/repos/lara-zeus/matrix-choice/zipball/17d62aef246786237a27b76dba18ddb36cfccc17",
+                "reference": "17d62aef246786237a27b76dba18ddb36cfccc17",
                 "shasum": ""
             },
             "require": {
@@ -7851,7 +7851,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-05-04T20:25:27+00:00"
+            "time": "2024-09-04T18:18:18+00:00"
         },
         {
             "name": "lara-zeus/popover",
@@ -11268,16 +11268,16 @@
         },
         {
             "name": "php-http/multipart-stream-builder",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/multipart-stream-builder.git",
-                "reference": "dbaa2d3215a080da42431fe5ade9396d4fd09332"
+                "reference": "10086e6de6f53489cca5ecc45b6f468604d3460e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/multipart-stream-builder/zipball/dbaa2d3215a080da42431fe5ade9396d4fd09332",
-                "reference": "dbaa2d3215a080da42431fe5ade9396d4fd09332",
+                "url": "https://api.github.com/repos/php-http/multipart-stream-builder/zipball/10086e6de6f53489cca5ecc45b6f468604d3460e",
+                "reference": "10086e6de6f53489cca5ecc45b6f468604d3460e",
                 "shasum": ""
             },
             "require": {
@@ -11318,9 +11318,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/multipart-stream-builder/issues",
-                "source": "https://github.com/php-http/multipart-stream-builder/tree/1.4.1"
+                "source": "https://github.com/php-http/multipart-stream-builder/tree/1.4.2"
             },
-            "time": "2024-09-04T11:54:51+00:00"
+            "time": "2024-09-04T13:22:54+00:00"
         },
         {
             "name": "php-http/promise",
