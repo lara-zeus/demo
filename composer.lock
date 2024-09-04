@@ -5669,16 +5669,16 @@
         },
         {
             "name": "jaocero/activity-timeline",
-            "version": "v1.2.8",
+            "version": "v1.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/199ocero/activity-timeline.git",
-                "reference": "78ffb80e93f18eebf02b46114baa1e569db1f410"
+                "reference": "39c747959ab67cd092522c077b3eebfeb4a6dea7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/199ocero/activity-timeline/zipball/78ffb80e93f18eebf02b46114baa1e569db1f410",
-                "reference": "78ffb80e93f18eebf02b46114baa1e569db1f410",
+                "url": "https://api.github.com/repos/199ocero/activity-timeline/zipball/39c747959ab67cd092522c077b3eebfeb4a6dea7",
+                "reference": "39c747959ab67cd092522c077b3eebfeb4a6dea7",
                 "shasum": ""
             },
             "require": {
@@ -5739,7 +5739,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-05-23T01:17:59+00:00"
+            "time": "2024-09-04T12:06:28+00:00"
         },
         {
             "name": "jaocero/radio-deck",
@@ -11268,16 +11268,16 @@
         },
         {
             "name": "php-http/multipart-stream-builder",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/multipart-stream-builder.git",
-                "reference": "ad3d012c44d6a5a1686fea99cbfa560f0fb80448"
+                "reference": "dbaa2d3215a080da42431fe5ade9396d4fd09332"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/multipart-stream-builder/zipball/ad3d012c44d6a5a1686fea99cbfa560f0fb80448",
-                "reference": "ad3d012c44d6a5a1686fea99cbfa560f0fb80448",
+                "url": "https://api.github.com/repos/php-http/multipart-stream-builder/zipball/dbaa2d3215a080da42431fe5ade9396d4fd09332",
+                "reference": "dbaa2d3215a080da42431fe5ade9396d4fd09332",
                 "shasum": ""
             },
             "require": {
@@ -11318,9 +11318,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/multipart-stream-builder/issues",
-                "source": "https://github.com/php-http/multipart-stream-builder/tree/1.4.0"
+                "source": "https://github.com/php-http/multipart-stream-builder/tree/1.4.1"
             },
-            "time": "2024-09-01T11:08:55+00:00"
+            "time": "2024-09-04T11:54:51+00:00"
         },
         {
             "name": "php-http/promise",
@@ -17715,16 +17715,16 @@
         },
         {
             "name": "vormkracht10/laravel-seo-scanner",
-            "version": "v3.12.0",
+            "version": "v3.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vormkracht10/laravel-seo-scanner.git",
-                "reference": "efc6447117cf3101b02aa0a65547b32568d5c017"
+                "reference": "16378c10d6ca0e3c540d36c7cbe787b29552b141"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vormkracht10/laravel-seo-scanner/zipball/efc6447117cf3101b02aa0a65547b32568d5c017",
-                "reference": "efc6447117cf3101b02aa0a65547b32568d5c017",
+                "url": "https://api.github.com/repos/vormkracht10/laravel-seo-scanner/zipball/16378c10d6ca0e3c540d36c7cbe787b29552b141",
+                "reference": "16378c10d6ca0e3c540d36c7cbe787b29552b141",
                 "shasum": ""
             },
             "require": {
@@ -17791,7 +17791,7 @@
             ],
             "support": {
                 "issues": "https://github.com/vormkracht10/laravel-seo-scanner/issues",
-                "source": "https://github.com/vormkracht10/laravel-seo-scanner/tree/v3.12.0"
+                "source": "https://github.com/vormkracht10/laravel-seo-scanner/tree/v3.12.2"
             },
             "funding": [
                 {
@@ -17799,7 +17799,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-08-16T07:21:40+00:00"
+            "time": "2024-09-04T12:46:54+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -19260,16 +19260,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.31.2",
+            "version": "v1.31.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "b4af38e1ab16fe7aa729eddf5b810229f42d2ad3"
+                "reference": "0a7e2891a85eba2d448a9ffc6fc5ce367e924bc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/b4af38e1ab16fe7aa729eddf5b810229f42d2ad3",
-                "reference": "b4af38e1ab16fe7aa729eddf5b810229f42d2ad3",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/0a7e2891a85eba2d448a9ffc6fc5ce367e924bc1",
+                "reference": "0a7e2891a85eba2d448a9ffc6fc5ce367e924bc1",
                 "shasum": ""
             },
             "require": {
@@ -19319,7 +19319,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2024-09-03T13:44:23+00:00"
+            "time": "2024-09-03T20:05:33+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -20683,16 +20683,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.12.0",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "384af967d35b2162f69526c7276acadce534d0e1"
+                "reference": "d8ed7fffa66de1db0d2972267d8ed1d8fa0fe5a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/384af967d35b2162f69526c7276acadce534d0e1",
-                "reference": "384af967d35b2162f69526c7276acadce534d0e1",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d8ed7fffa66de1db0d2972267d8ed1d8fa0fe5a2",
+                "reference": "d8ed7fffa66de1db0d2972267d8ed1d8fa0fe5a2",
                 "shasum": ""
             },
             "require": {
@@ -20737,7 +20737,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-08-27T09:18:05+00:00"
+            "time": "2024-09-03T19:55:22+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
