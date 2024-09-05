@@ -14,6 +14,7 @@ use Awcodes\FilamentVersions\VersionsWidget;
 use Awcodes\LightSwitch\LightSwitchPlugin;
 use Awcodes\Overlook\OverlookPlugin;
 use Awcodes\Overlook\Widgets\OverlookWidget;
+use Awcodes\Recently\RecentlyPlugin;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -66,6 +67,7 @@ use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
 use pxlrbt\FilamentSpotlight\SpotlightPlugin;
 use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
+use Schmeits\FilamentUmami\FilamentUmamiPlugin;
 use Schmeits\FilamentUmami\Widgets\UmamiWidgetStatsGrouped;
 use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableReferrers;
 use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableUrls;
@@ -272,7 +274,12 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
-            \Schmeits\FilamentUmami\FilamentUmamiPlugin::make(),
+            FilamentUmamiPlugin::make(),
+            RecentlyPlugin::make()
+                ->renderUsingHook(PanelsRenderHook::USER_MENU_BEFORE)
+                //->tooltip("Zeus is keeping an eye on you! 👿")
+                ->icon('gameicon-eye')
+                ->globalSearch(condition: false),
             DeliaPlugin::make(),
             BoringAvatarPlugin::make(),
             FilamentBackgroundsPlugin::make(),

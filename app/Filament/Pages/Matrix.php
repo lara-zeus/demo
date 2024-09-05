@@ -6,6 +6,7 @@ use App\Filament\Clusters\ComponentsDemo;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
+use LaraZeus\Delia\Filament\Actions\BookmarkHeaderAction;
 use LaraZeus\MatrixChoice\Components\Matrix as MatrixAlias;
 
 class Matrix extends Page
@@ -30,6 +31,13 @@ class Matrix extends Page
     public function getTitle(): string
     {
         return 'Matrix Grid';
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            BookmarkHeaderAction::make()
+        ];
     }
 
     public function form(Form $form): Form

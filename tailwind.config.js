@@ -58,6 +58,7 @@ module.exports = {
         './resources/views/filament/**/*.blade.php',
         './vendor/filament/**/*.blade.php',
 
+        './vendor/awcodes/recently/resources/**/*.blade.php',
         './vendor/awcodes/filament-tiptap-editor/resources/**/*.blade.php',
         './vendor/awcodes/filament-versions/resources/**/*.blade.php',
         './vendor/awcodes/filament-quick-create/resources/**/*.blade.php',

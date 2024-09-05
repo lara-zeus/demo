@@ -15,11 +15,9 @@ return new class extends Migration
     {
         Schema::create(config('zeus-delia.table-prefix') . 'bookmarks', function (Blueprint $table) {
             $table->bigIncrements('id');
-
-            $table->string('bookmarkable_resource');
-            $table->string('bookmarkable_page')->nullable();
-            $table->integer('bookmarkable_id')->nullable();
-
+            $table->text('url');
+            $table->text('title');
+            $table->string('icon');
             $table->integer('user_id');
 
             $table->timestamps();

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f543b9f92f22966c3244c978d3bb2a5",
+    "content-hash": "349f50e8a4b1c6b07b3778d7265e2e4f",
     "packages": [
         {
             "name": "andreiio/blade-iconoir",
@@ -1113,6 +1113,81 @@
                 }
             ],
             "time": "2024-04-30T14:23:17+00:00"
+        },
+        {
+            "name": "awcodes/recently",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/awcodes/recently.git",
+                "reference": "dabfd96d1a3ae112a108b946f40f8dd724be02fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/awcodes/recently/zipball/dabfd96d1a3ae112a108b946f40f8dd724be02fc",
+                "reference": "dabfd96d1a3ae112a108b946f40f8dd724be02fc",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.15.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.9",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.1",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "pestphp/pest-plugin-livewire": "^2.0",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Awcodes\\Recently\\RecentlyServiceProvider"
+                    ],
+                    "aliases": {
+                        "Recently": "Awcodes\\Recently\\Facades\\Recently"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Awcodes\\Recently\\": "src/",
+                    "Awcodes\\Recently\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Weston",
+                    "email": "awcodes1@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily track and access recently viewed records in your filament panels.",
+            "homepage": "https://github.com/awcodes/recently",
+            "keywords": [
+                "awcodes",
+                "laravel",
+                "recently"
+            ],
+            "support": {
+                "issues": "https://github.com/awcodes/recently/issues",
+                "source": "https://github.com/awcodes/recently"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/awcodes",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-09-04T13:22:59+00:00"
         },
         {
             "name": "awcodes/shout",
@@ -7133,16 +7208,16 @@
         },
         {
             "name": "lara-zeus/delia",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/delia.git",
-                "reference": "450ca0fb2029dbd5048cd766914436d1d3bffcff"
+                "reference": "ad80a33dfcc2f4be66b0514e8dd6c2ba5e7d4620"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/delia/zipball/450ca0fb2029dbd5048cd766914436d1d3bffcff",
-                "reference": "450ca0fb2029dbd5048cd766914436d1d3bffcff",
+                "url": "https://api.github.com/repos/lara-zeus/delia/zipball/ad80a33dfcc2f4be66b0514e8dd6c2ba5e7d4620",
+                "reference": "ad80a33dfcc2f4be66b0514e8dd6c2ba5e7d4620",
                 "shasum": ""
             },
             "require": {
@@ -7215,7 +7290,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-03T17:02:05+00:00"
+            "time": "2024-09-05T15:32:52+00:00"
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
@@ -10618,16 +10693,16 @@
         },
         {
             "name": "nunomaduro/termwind",
-            "version": "v2.0.1",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/termwind.git",
-                "reference": "58c4c58cf23df7f498daeb97092e34f5259feb6a"
+                "reference": "e5f21eade88689536c0cdad4c3cd75f3ed26e01a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/termwind/zipball/58c4c58cf23df7f498daeb97092e34f5259feb6a",
-                "reference": "58c4c58cf23df7f498daeb97092e34f5259feb6a",
+                "url": "https://api.github.com/repos/nunomaduro/termwind/zipball/e5f21eade88689536c0cdad4c3cd75f3ed26e01a",
+                "reference": "e5f21eade88689536c0cdad4c3cd75f3ed26e01a",
                 "shasum": ""
             },
             "require": {
@@ -10637,11 +10712,11 @@
             },
             "require-dev": {
                 "ergebnis/phpstan-rules": "^2.2.0",
-                "illuminate/console": "^11.0.0",
-                "laravel/pint": "^1.14.0",
-                "mockery/mockery": "^1.6.7",
-                "pestphp/pest": "^2.34.1",
-                "phpstan/phpstan": "^1.10.59",
+                "illuminate/console": "^11.1.1",
+                "laravel/pint": "^1.15.0",
+                "mockery/mockery": "^1.6.11",
+                "pestphp/pest": "^2.34.6",
+                "phpstan/phpstan": "^1.10.66",
                 "phpstan/phpstan-strict-rules": "^1.5.2",
                 "symfony/var-dumper": "^7.0.4",
                 "thecodingmachine/phpstan-strict-rules": "^1.0.0"
@@ -10686,7 +10761,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nunomaduro/termwind/issues",
-                "source": "https://github.com/nunomaduro/termwind/tree/v2.0.1"
+                "source": "https://github.com/nunomaduro/termwind/tree/v2.1.0"
             },
             "funding": [
                 {
@@ -10702,7 +10777,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-06T16:17:14+00:00"
+            "time": "2024-09-05T15:25:50+00:00"
         },
         {
             "name": "nyholm/psr7",
@@ -12870,16 +12945,16 @@
         },
         {
             "name": "schmeits/filament-umami-widgets",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmeits/filament-umami-widgets.git",
-                "reference": "191e08d0ccb9ee2eabdb31872e10bc7d9b99b5d0"
+                "reference": "ea5d5c29165821a6639b01c11f6ebfdcb512c266"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmeits/filament-umami-widgets/zipball/191e08d0ccb9ee2eabdb31872e10bc7d9b99b5d0",
-                "reference": "191e08d0ccb9ee2eabdb31872e10bc7d9b99b5d0",
+                "url": "https://api.github.com/repos/schmeits/filament-umami-widgets/zipball/ea5d5c29165821a6639b01c11f6ebfdcb512c266",
+                "reference": "ea5d5c29165821a6639b01c11f6ebfdcb512c266",
                 "shasum": ""
             },
             "require": {
@@ -12946,7 +13021,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-27T13:01:31+00:00"
+            "time": "2024-09-05T06:47:44+00:00"
         },
         {
             "name": "sentry/sentry",
@@ -20588,22 +20663,22 @@
         },
         {
             "name": "phpstan/extension-installer",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/extension-installer.git",
-                "reference": "46c8219b3fb0deb3fc08301e8f0797d321d17dcd"
+                "reference": "85e90b3942d06b2326fba0403ec24fe912372936"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/extension-installer/zipball/46c8219b3fb0deb3fc08301e8f0797d321d17dcd",
-                "reference": "46c8219b3fb0deb3fc08301e8f0797d321d17dcd",
+                "url": "https://api.github.com/repos/phpstan/extension-installer/zipball/85e90b3942d06b2326fba0403ec24fe912372936",
+                "reference": "85e90b3942d06b2326fba0403ec24fe912372936",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^2.0",
                 "php": "^7.2 || ^8.0",
-                "phpstan/phpstan": "^1.9.0"
+                "phpstan/phpstan": "^1.9.0 || ^2.0"
             },
             "require-dev": {
                 "composer/composer": "^2.0",
@@ -20630,9 +20705,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpstan/extension-installer/issues",
-                "source": "https://github.com/phpstan/extension-installer/tree/1.4.2"
+                "source": "https://github.com/phpstan/extension-installer/tree/1.4.3"
             },
-            "time": "2024-08-26T07:38:00+00:00"
+            "time": "2024-09-04T20:21:43+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",

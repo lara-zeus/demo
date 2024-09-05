@@ -16,8 +16,13 @@ return [
      * set the default domain.
      */
     'render-hooks' => [
-        'list' => PanelsRenderHook::TOPBAR_END,
+        'list' => PanelsRenderHook::USER_MENU_BEFORE,
         'bookmark_toggle_icon' => TablesRenderHook::TOOLBAR_TOGGLE_COLUMN_TRIGGER_AFTER,
+    ],
+
+    'dropdown' => [
+        'title' => 'Bookmarks',
+        'icon' => 'heroicon-m-bookmark-square',
     ],
 
     /**
