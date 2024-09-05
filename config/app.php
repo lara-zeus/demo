@@ -106,7 +106,14 @@ return [
         'ar' => ['name' => 'Arabic', 'native' => 'العربية', 'regional' => 'ar_AE', 'flag' => 'ae'],
     ],
 
-    'repos' => ['sky', 'bolt', 'wind', 'dynamic-dashboard', 'rhea', 'zeus', 'artemis', 'matrix-choice', 'qr', 'popover', 'inline-chart', 'accordion', 'quantity', 'list-group'],
+    'repos' => [
+        'sky', 'bolt', 'wind', 'dynamic-dashboard',
+        'rhea', 'zeus', 'artemis', 'matrix-choice',
+        'qr', 'popover', 'inline-chart', 'accordion',
+        'quantity', 'list-group', 'delia','tartarus',
+        'filament-installer','pontus','boredom','core',
+        'akin','chaos','translatable','uranus'
+    ],
 
     /*
     |--------------------------------------------------------------------------
