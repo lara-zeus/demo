@@ -131,10 +131,15 @@ class UserResource extends Resource
                             ->grouped()
                             ->redirectTo(url('/admin')),* /
                     ]),*/
+                /*TextColumn::make('id')
+                    ->formatStateUsing(fn($record) => $record->name.'<br>'.$record->email)
+                    ->icon(fn($record) => $record->avatarUrl)
+                    ->html(),*/
 
+                ImageColumn::make('avatar_url'),
                 PopoverColumn::make('name')
                     ->content(\LaraZeus\Qr\Facades\Qr::render(
-                        data: 'dataOrUrl',
+                        data: 'https://larazeus.com',
                         options: [
                             'margin' => '1',
                             'color' => 'rgba(74, 74, 74, 1)',
@@ -155,11 +160,6 @@ class UserResource extends Resource
                     )),
 
                 ColumnGroup::make('main-info', [
-                    ImageColumn::make('avatar_url'),
-                    /*TextColumn::make('name')
-                        ->sortable()
-                        ->toggleable()
-                        ->searchable(),*/
                     TextColumn::make('email')
                         ->sortable()
                         ->toggleable()
