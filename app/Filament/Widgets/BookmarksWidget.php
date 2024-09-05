@@ -37,10 +37,9 @@ class BookmarksWidget extends Widget implements HasForms, HasInfolists
 
                                 return ListItem::make()
                                     ->id($item->id)
-                                    ->url($resource->getUrl())
-                                    ->icon($resource->getNavigationIcon())
-                                    ->tooltip($resource->getNavigationLabel())
-                                    ->label($resource->getNavigationLabel());
+                                    ->url($item->url)
+                                    ->icon($item->icon)
+                                    ->label($item->title);
                             });
                     }),
             ]);
