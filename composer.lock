@@ -1116,16 +1116,16 @@
         },
         {
             "name": "awcodes/recently",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/recently.git",
-                "reference": "dabfd96d1a3ae112a108b946f40f8dd724be02fc"
+                "reference": "eb86ce45949a68dae7c2bf612fc269200c2bd3a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/recently/zipball/dabfd96d1a3ae112a108b946f40f8dd724be02fc",
-                "reference": "dabfd96d1a3ae112a108b946f40f8dd724be02fc",
+                "url": "https://api.github.com/repos/awcodes/recently/zipball/eb86ce45949a68dae7c2bf612fc269200c2bd3a6",
+                "reference": "eb86ce45949a68dae7c2bf612fc269200c2bd3a6",
                 "shasum": ""
             },
             "require": {
@@ -1187,7 +1187,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-04T13:22:59+00:00"
+            "time": "2024-09-06T18:12:18+00:00"
         },
         {
             "name": "awcodes/shout",
@@ -4663,16 +4663,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php-lite",
-            "version": "8.13.44",
+            "version": "8.13.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php-lite.git",
-                "reference": "03fa85075310283f95a1911f4930426594ebcae7"
+                "reference": "4fe78c7d51e6ea49a7f286bfcc2f6aa6130088d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php-lite/zipball/03fa85075310283f95a1911f4930426594ebcae7",
-                "reference": "03fa85075310283f95a1911f4930426594ebcae7",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php-lite/zipball/4fe78c7d51e6ea49a7f286bfcc2f6aa6130088d1",
+                "reference": "4fe78c7d51e6ea49a7f286bfcc2f6aa6130088d1",
                 "shasum": ""
             },
             "require": {
@@ -4742,7 +4742,7 @@
                 "issues": "https://github.com/giggsey/libphonenumber-for-php-lite/issues",
                 "source": "https://github.com/giggsey/libphonenumber-for-php-lite"
             },
-            "time": "2024-09-02T10:57:40+00:00"
+            "time": "2024-09-06T11:22:39+00:00"
         },
         {
             "name": "graham-campbell/bounded-cache",
@@ -19464,16 +19464,16 @@
         },
         {
             "name": "maximebf/debugbar",
-            "version": "v1.22.3",
+            "version": "v1.22.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "7aa9a27a0b1158ed5ad4e7175e8d3aee9a818b96"
+                "reference": "ec4979077ff5ddf987eb2457055ee343f466c250"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/7aa9a27a0b1158ed5ad4e7175e8d3aee9a818b96",
-                "reference": "7aa9a27a0b1158ed5ad4e7175e8d3aee9a818b96",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/ec4979077ff5ddf987eb2457055ee343f466c250",
+                "reference": "ec4979077ff5ddf987eb2457055ee343f466c250",
                 "shasum": ""
             },
             "require": {
@@ -19526,9 +19526,9 @@
             ],
             "support": {
                 "issues": "https://github.com/maximebf/php-debugbar/issues",
-                "source": "https://github.com/maximebf/php-debugbar/tree/v1.22.3"
+                "source": "https://github.com/maximebf/php-debugbar/tree/v1.22.4"
             },
-            "time": "2024-04-03T19:39:26+00:00"
+            "time": "2024-09-06T17:37:59+00:00"
         },
         {
             "name": "mockery/mockery",

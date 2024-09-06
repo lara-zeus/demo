@@ -277,7 +277,7 @@ class AdminPanelProvider extends PanelProvider
             FilamentUmamiPlugin::make(),
             RecentlyPlugin::make()
                 ->renderUsingHook(PanelsRenderHook::USER_MENU_BEFORE)
-                //->tooltip("Zeus is keeping an eye on you! 👿")
+                ->tooltip("Zeus is keeping an eye on you! 👿")
                 ->icon('gameicon-eye')
                 ->globalSearch(condition: false),
             DeliaPlugin::make(),
