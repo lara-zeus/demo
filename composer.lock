@@ -7452,25 +7452,23 @@
         },
         {
             "name": "lara-zeus/helen",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/helen.git",
-                "reference": "2a1dff3444576aeb226bbf92e07111235fa783d6"
+                "reference": "fa0cd41b90e3ba28457da892b049deefa54295c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/helen/zipball/2a1dff3444576aeb226bbf92e07111235fa783d6",
-                "reference": "2a1dff3444576aeb226bbf92e07111235fa783d6",
+                "url": "https://api.github.com/repos/lara-zeus/helen/zipball/fa0cd41b90e3ba28457da892b049deefa54295c3",
+                "reference": "fa0cd41b90e3ba28457da892b049deefa54295c3",
                 "shasum": ""
             },
             "require": {
-                "flowframe/laravel-trend": "^0.2",
                 "jenssegers/agent": "^2.6",
-                "lara-zeus/core": "^3.1",
+                "lara-zeus/filament-plugin-tools": "^1.0",
                 "lara-zeus/qr": "^1.1",
-                "php": "^8.1",
-                "simplesoftwareio/simple-qrcode": "~4"
+                "php": "^8.1"
             },
             "require-dev": {
                 "larastan/larastan": "^2.2",
@@ -7518,9 +7516,8 @@
             ],
             "authors": [
                 {
-                    "name": "php coder",
-                    "email": "info@larazeus.com",
-                    "role": "Owner"
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
                 }
             ],
             "description": "Helen short URL management with qr code generator",
@@ -7545,7 +7542,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-06-14T17:50:26+00:00"
+            "time": "2024-09-07T22:19:23+00:00"
         },
         {
             "name": "lara-zeus/hera",
