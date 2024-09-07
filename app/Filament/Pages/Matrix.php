@@ -36,7 +36,7 @@ class Matrix extends Page
     protected function getHeaderActions(): array
     {
         return [
-            BookmarkHeaderAction::make()
+            BookmarkHeaderAction::make(),
         ];
     }
 
@@ -55,19 +55,18 @@ class Matrix extends Page
                             ->label('Resources Operations')
                             ->asCheckbox()
                             ->columnData([
-                                'c'=>'Create',
-                                'r'=>'Read',
-                                'u'=>'Update',
-                                'd'=>'Delete',
-                                'm'=>'Manage',
-                                'p'=>'Approve',
+                                'c' => 'Create',
+                                'r' => 'Read',
+                                'u' => 'Update',
+                                'd' => 'Delete',
+                                'm' => 'Manage',
+                                'p' => 'Approve',
                             ])
                             ->rowData([
-                                'users'=>'Users',
-                                'companies'=>'Companies',
-                                'clients'=>'Clients',
+                                'users' => 'Users',
+                                'companies' => 'Companies',
+                                'clients' => 'Clients',
                             ]),
-
 
                         MatrixAlias::make('question1')
                             ->disableOptionWhen(fn (string $value): bool => $value === 0)
