@@ -83,12 +83,16 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
     public function isServicesManager(): bool
     {
         return true;
-
-        return $this->email === 'info@larazeus.com';
     }
 
     public function avatarUrl(): Attribute
     {
+        if (app()->isLocal()) {
+            return new Attribute(
+                get: fn () => 'https://site.test/avatars/' . urlencode($this->name) . '/30.svg'
+            );
+        }
+
         return new Attribute(
             get: fn () => 'https://larazeus.com/avatars/' . urlencode($this->name) . '/30.svg'
         );

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "349f50e8a4b1c6b07b3778d7265e2e4f",
+    "content-hash": "bb197a909279759673f5e87238e439f8",
     "packages": [
         {
             "name": "andreiio/blade-iconoir",
@@ -124,16 +124,16 @@
         },
         {
             "name": "anourvalar/eloquent-serialize",
-            "version": "1.2.23",
+            "version": "1.2.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AnourValar/eloquent-serialize.git",
-                "reference": "fd7bc1dc2c98fe705647ab4b81d13ea3d599ea1f"
+                "reference": "77e3fc7da44fa96b6148a1613dd76fe954a5f279"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AnourValar/eloquent-serialize/zipball/fd7bc1dc2c98fe705647ab4b81d13ea3d599ea1f",
-                "reference": "fd7bc1dc2c98fe705647ab4b81d13ea3d599ea1f",
+                "url": "https://api.github.com/repos/AnourValar/eloquent-serialize/zipball/77e3fc7da44fa96b6148a1613dd76fe954a5f279",
+                "reference": "77e3fc7da44fa96b6148a1613dd76fe954a5f279",
                 "shasum": ""
             },
             "require": {
@@ -184,9 +184,9 @@
             ],
             "support": {
                 "issues": "https://github.com/AnourValar/eloquent-serialize/issues",
-                "source": "https://github.com/AnourValar/eloquent-serialize/tree/1.2.23"
+                "source": "https://github.com/AnourValar/eloquent-serialize/tree/1.2.24"
             },
-            "time": "2024-07-12T10:52:26+00:00"
+            "time": "2024-09-08T15:57:08+00:00"
         },
         {
             "name": "arbermustafa/filament-locationpickr-field",
@@ -8531,6 +8531,102 @@
                 }
             ],
             "time": "2024-08-02T12:44:41+00:00"
+        },
+        {
+            "name": "lara-zeus/tiles",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:lara-zeus/tiles.git",
+                "reference": "71810756588df142e9b09dc521bb0e2a478ddead"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/tiles/zipball/71810756588df142e9b09dc521bb0e2a478ddead",
+                "reference": "71810756588df142e9b09dc521bb0e2a478ddead",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.2",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Tiles\\TilesServiceProvider"
+                    ],
+                    "aliases": {
+                        "Tiles": "LaraZeus\\Tiles\\Facades\\Tiles"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Tiles\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "LaraZeus\\Tiles\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "@test:phpstan"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
+                }
+            ],
+            "description": "collection of components to present your data in an elegant way",
+            "homepage": "https://larazeus.com/tiles",
+            "keywords": [
+                "Media Objects",
+                "Media and Text",
+                "avatar with name",
+                "lara-zeus",
+                "laravel",
+                "user info",
+                "user picker"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/tiles/issues",
+                "source": "https://github.com/lara-zeus/tiles"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/atmonshi"
+                },
+                {
+                    "type": "custom",
+                    "url": "https://www.buymeacoffee.com/larazeus"
+                }
+            ],
+            "time": "2024-09-08T21:12:39+00:00"
         },
         {
             "name": "lara-zeus/wind",
