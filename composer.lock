@@ -7208,16 +7208,16 @@
         },
         {
             "name": "lara-zeus/delia",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/delia.git",
-                "reference": "c2ac74c5f1579a87285c0c22f567c4c6c62d5a3c"
+                "reference": "dba7b339a2eb4cfd7a9dd5e019573b710c7dcdc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/delia/zipball/c2ac74c5f1579a87285c0c22f567c4c6c62d5a3c",
-                "reference": "c2ac74c5f1579a87285c0c22f567c4c6c62d5a3c",
+                "url": "https://api.github.com/repos/lara-zeus/delia/zipball/dba7b339a2eb4cfd7a9dd5e019573b710c7dcdc6",
+                "reference": "dba7b339a2eb4cfd7a9dd5e019573b710c7dcdc6",
                 "shasum": ""
             },
             "require": {
@@ -7289,7 +7289,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-07T20:19:52+00:00"
+            "time": "2024-09-08T01:02:52+00:00"
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
@@ -7546,22 +7546,22 @@
         },
         {
             "name": "lara-zeus/hera",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/hera.git",
-                "reference": "c1992d4be78f25a4fa768ebdf3f9f415c1c430a7"
+                "reference": "348edb501585f3a31d9f1b821233de60166e10ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/hera/zipball/c1992d4be78f25a4fa768ebdf3f9f415c1c430a7",
-                "reference": "c1992d4be78f25a4fa768ebdf3f9f415c1c430a7",
+                "url": "https://api.github.com/repos/lara-zeus/hera/zipball/348edb501585f3a31d9f1b821233de60166e10ce",
+                "reference": "348edb501585f3a31d9f1b821233de60166e10ce",
                 "shasum": ""
             },
             "require": {
-                "lara-zeus/core": "^3.1",
+                "lara-zeus/filament-plugin-tools": "^1.0",
                 "php": "^8.1",
-                "vormkracht10/laravel-seo-scanner": "^3.11"
+                "vormkracht10/laravel-seo-scanner": "^3.12"
             },
             "require-dev": {
                 "larastan/larastan": "^2.2",
@@ -7578,10 +7578,7 @@
                 "laravel": {
                     "providers": [
                         "LaraZeus\\Hera\\HeraServiceProvider"
-                    ],
-                    "aliases": {
-                        "Hera": "Hera"
-                    }
+                    ]
                 }
             },
             "autoload": {
@@ -7609,9 +7606,8 @@
             ],
             "authors": [
                 {
-                    "name": "php coder",
-                    "email": "info@larazeus.com",
-                    "role": "Owner"
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
                 }
             ],
             "description": "Hera SEO scanner with reports and scores",
@@ -7633,9 +7629,13 @@
                 {
                     "type": "github",
                     "url": "https://github.com/atmonshi"
+                },
+                {
+                    "type": "custom",
+                    "url": "https://www.buymeacoffee.com/larazeus"
                 }
             ],
-            "time": "2024-04-05T22:55:13+00:00"
+            "time": "2024-09-08T01:19:34+00:00"
         },
         {
             "name": "lara-zeus/hermes",
