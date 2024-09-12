@@ -97,12 +97,8 @@ class AdminPanelProvider extends PanelProvider
             ->brandLogo(fn () => view('filament.logo'))
             ->colors([
                 ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
-                'primary' => Color::hex('#45B39D'),
-                'secondary' => Color::hex('#F1948A'),
-                'danger' => Color::Red,
-                'info' => Color::Blue,
-                'success' => Color::Green,
-                'warning' => Color::Yellow,
+                'primary' => Color::hex('#F1948A'),
+                'secondary' => Color::hex('#45B39D'),
             ])
 
             //->topNavigation()
