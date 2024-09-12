@@ -349,6 +349,7 @@ class AdminPanelProvider extends PanelProvider
             \LaraZeus\Akin\AkinTheme::make(),
 
             BoltPlugin::make()
+                ->hideNavigationBadges()
                 ->customSchema([
                     'form' => \App\Zeus\CustomSchema\Form::class,
                     'section' => \App\Zeus\CustomSchema\Section::class,
