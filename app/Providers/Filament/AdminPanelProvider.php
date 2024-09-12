@@ -3,6 +3,7 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\Login;
+use App\Filament\Pages\Tiles;
 use App\Filament\Widgets\Feedback;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
@@ -47,6 +48,7 @@ use LaraZeus\BoltPro\Extensions\Grades;
 use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
 use LaraZeus\Delia\DeliaPlugin;
+use LaraZeus\Delia\Filament\Resources\BookmarkResource;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
@@ -117,6 +119,11 @@ class AdminPanelProvider extends PanelProvider
                     ->label('Thunder')
                     ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
                     ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
+
+                NavigationGroup::make()
+                    ->icon('tabler-bookmarks-filled')
+                    ->label('Delia'),
+
                 NavigationGroup::make()
                     ->icon('rpg-feather-wing')
                     ->label('Hermes')
@@ -161,6 +168,14 @@ class AdminPanelProvider extends PanelProvider
                 ],
             )
 
+            // Delia
+            ->renderHook(
+                'panels::page.start',
+                fn (array $scopes): View => view('filament.hooks.tiles', ['scopes' => $scopes]),
+                scopes: [
+                    Tiles::class,
+                ],
+            )
             // athena
             ->renderHook(
                 'panels::page.start',

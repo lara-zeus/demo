@@ -39,6 +39,7 @@ class Tiles extends Page implements HasForms, HasTable
     public function mount()
     {
         $this->user = User::first();
+        $this->form->fill();
     }
 
     public static function getNavigationLabel(): string
@@ -84,6 +85,7 @@ class Tiles extends Page implements HasForms, HasTable
                             ->image(fn () => $this->user->avatar_url),
 
                         TileSelect::make('user_id')
+                            ->default(1)
                             ->model(User::class)
                             ->searchable(['name', 'email'])
                             ->titleKey('name')
