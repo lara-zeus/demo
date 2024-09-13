@@ -12,6 +12,7 @@
         "awcodes/filament-badgeable-column": "^2.3",
         "awcodes/filament-quick-create": "^3.0",
         "awcodes/filament-table-repeater": "*",
+        "filament/filament": "^3.0",
         "awcodes/filament-versions": "^2.0",
         "awcodes/light-switch": "^1.0",
         "awcodes/matinee": "^1.0",
@@ -154,6 +155,10 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/hera.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/translatable.git"
         },
         {
             "type": "github",
