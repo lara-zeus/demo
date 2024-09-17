@@ -25,24 +25,9 @@ class CarResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')->required(),
-                Repeater::make('members')
-                    ->columnSpanFull()
-                    ->schema([
-                        Forms\Components\TextInput::make('name')
-                            ->required()
-                            ->maxLength(255),
-
-                        Select::make('role')
-                            ->options([
-                                'member' => 'Member',
-                                'administrator' => 'Administrator',
-                                'owner' => 'Owner',
-                            ])
-                            ->required(),
-                    ])
-                    ->columns(2),
-
+                TextInput::make('name')
+                    ->required()
+                    ->maxLength(255),
                 Forms\Components\FileUpload::make('image')
                     ->image(),
             ]);
