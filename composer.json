@@ -50,6 +50,7 @@
         "lara-zeus/dynamic-dashboard": "^3.0",
         "lara-zeus/filament-plugin-tools": "^1.0",
         "lara-zeus/helen": "^2.0",
+        "lara-zeus/hades": "*",
         "lara-zeus/hera": "^1.0",
         "lara-zeus/hermes": "^2.0",
         "lara-zeus/inline-chart": "^1.0",

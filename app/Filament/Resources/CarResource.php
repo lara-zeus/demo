@@ -43,10 +43,8 @@ class CarResource extends Resource
                     ])
                     ->columns(2),
 
-
-
-                /*Forms\Components\FileUpload::make('image')
-                    ->image(),*/
+                Forms\Components\FileUpload::make('image')
+                    ->image(),
             ]);
     }
 
