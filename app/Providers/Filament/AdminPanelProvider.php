@@ -291,8 +291,6 @@ class AdminPanelProvider extends PanelProvider
                 ->tooltip('Zeus is keeping an eye on you! 👿')
                 ->icon('gameicon-eye')
                 ->globalSearch(condition: false),
-            DeliaPlugin::make(),
-            BoringAvatarPlugin::make(),
             FilamentBackgroundsPlugin::make(),
             AdvancedTablesPlugin::make()
                 ->resourceNavigationGroup('Bolt')
@@ -335,6 +333,8 @@ class AdminPanelProvider extends PanelProvider
                 ->defaultLocales(['en', 'pt', 'ko']),
 
             //ChronosPlugin::make(),
+            DeliaPlugin::make(),
+            BoringAvatarPlugin::make(),
             WindPlugin::make(),
             SkyPlugin::make(),
             HeraPlugin::make(),
