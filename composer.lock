@@ -6956,16 +6956,16 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.2.12",
+            "version": "v3.2.13",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "808be727c941ab01de8c42411fede9eb74dac131"
+                "reference": "766c1a545fadc9aa76b50a84bd8880f4ef1e658d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/808be727c941ab01de8c42411fede9eb74dac131",
-                "reference": "808be727c941ab01de8c42411fede9eb74dac131",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/766c1a545fadc9aa76b50a84bd8880f4ef1e658d",
+                "reference": "766c1a545fadc9aa76b50a84bd8880f4ef1e658d",
                 "shasum": ""
             },
             "require": {
@@ -7023,9 +7023,8 @@
             ],
             "authors": [
                 {
-                    "name": "php coder",
-                    "email": "info@larazeus.com",
-                    "role": "Owner"
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
                 }
             ],
             "description": "Zeus Bolt Pro is to supercharge your forms with additional tools for Bolt the form builder",
@@ -7045,10 +7044,14 @@
                 "self hosted"
             ],
             "support": {
-                "issues": "https://github.com/lara-zeus/bolt-pro/issues",
-                "source": "https://github.com/lara-zeus/bolt-pro"
+                "chat": "https://discord.com/channels/883083792112300104/1282748203376050309",
+                "contact": "https://larazeus.com/contact-us",
+                "docs": "https://larazeus.com/bolt-pro",
+                "email": "info@larazeus.com",
+                "source": "https://github.com/lara-zeus/bolt-pro/tree/v3.2.13",
+                "issues": "https://github.com/lara-zeus/bolt-pro/issues"
             },
-            "time": "2024-06-19T21:07:43+00:00"
+            "time": "2024-09-22T18:54:38+00:00"
         },
         {
             "name": "lara-zeus/boredom",
