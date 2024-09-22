@@ -119,11 +119,6 @@ class AdminPanelProvider extends PanelProvider
                     ->label('Thunder')
                     ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
                     ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
-
-                NavigationGroup::make()
-                    ->icon('tabler-bookmarks-filled')
-                    ->label('Delia'),
-
                 NavigationGroup::make()
                     ->icon('rpg-feather-wing')
                     ->label('Hermes')
@@ -144,7 +139,8 @@ class AdminPanelProvider extends PanelProvider
                     ->label('Athena')
                     ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
                     ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
-
+                NavigationGroup::make('Delia')
+                    ->icon('tabler-bookmarks-filled'),
                 NavigationGroup::make()->label('Sky')
                     ->icon('ri-cloud-windy-line'),
                 NavigationGroup::make()->label('Wind')
