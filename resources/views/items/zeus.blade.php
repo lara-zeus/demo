@@ -1,6 +1,5 @@
 <x-item>
     @slot('title')
-        @svg($package['icon'],'h-8 w-8 text-secondary-500')
         <span class="text-primary-500">{{ $package['name'] }}</span>
     @endslot
     @slot('desc')

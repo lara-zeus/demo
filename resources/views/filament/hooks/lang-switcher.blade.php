@@ -13,7 +13,7 @@
         <x-filament::dropdown.header
             class="font-semibold"
             color="gray"
-            icon="ri-translate"
+            icon="tabler-language-katakana"
             href="#"
             tag="a"
         >

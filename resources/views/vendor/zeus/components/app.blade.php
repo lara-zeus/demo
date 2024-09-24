@@ -22,8 +22,7 @@
     @filamentStyles
     @stack('styles')
 
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/flag-icons.css') }}">
+    @vite(['resources/css/app.css', 'resources/css/flag-icons.css'])
 
     <style>
         * {font-family: 'KoHo', 'Almarai', sans-serif;}
@@ -78,7 +77,7 @@
 <footer class="bg-gray-100 dark:bg-gray-800 p-6 pt-10 flex flex-col items-center justify-center text-center font-light">
 
     <a href="https://larazeus.com" target="_blank">
-        a gift with ❤️ &nbsp;from @zeus
+        a gift with ❤️ &nbsp;from @zeusz
     </a>
 
     @if($packageName !== null)
@@ -89,11 +88,11 @@
 
     <div class="flex gap-2">
         <a href="https://github.com/lara-zeus" target="_blank">
-            @svg('ri-github-fill','h-8 w-8 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
+            @svg('tabler-brand-github-filled','h-8 w-8 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
         </a>
 
         <a href="https://twitter.com/larazeus" target="_blank">
-            @svg('ri-twitter-line','h-8 w-8 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
+            @svg('tabler-brand-twitter-filled','h-8 w-8 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
         </a>
     </div>
 </footer>

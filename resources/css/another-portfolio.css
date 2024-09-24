@@ -1,11 +1,11 @@
-/*@import '../../vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';*/
-@import '../../vendor/awcodes/filament-curator/resources/css/plugin.css';
-@import '../../vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
-@import '../../node_modules/cropperjs/dist/cropper.css';
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import '/vendor/awcodes/filament-curator/resources/css/plugin.css';
+@import '/vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
+@import '/node_modules/cropperjs/dist/cropper.css';
 @import 'tippy.js/dist/tippy.css';
 @import "photoswipe/dist/photoswipe.css";
 
-@config "../../tailwind-another-portfolio.config.js";
+@config "tailwind-another-portfolio.config.js";
 
 @tailwind base;
 @tailwind components;
@@ -42,7 +42,7 @@
 }
 
 [dir=ltr] .title-font {
-    font-family: 'Reggae One', 'Almarai', sans-serif !important;
+    font-family: 'Montserrat', 'Almarai', sans-serif !important;
     @apply font-semibold
 }
 

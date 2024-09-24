@@ -1,6 +1,6 @@
 <x-filament-widgets::widget>
     <x-filament::section class="space-y-4">
-        <h2 class="font-bold text-xl">📢 Help me keep @zeus going</h2>
+        <h2 class="font-bold text-xl">📢 Help me keep @zeusz going</h2>
         <p>
             I work as part-time on these projects,
             and any type of help and support is really appreciated.

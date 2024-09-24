@@ -48,9 +48,9 @@
         @endif
     </style>
     @if(session('current_theme') === 'daisy')
-        <link rel="stylesheet" href="{{ mix('css/daisy.css') }}">
+        @vite(['resources/css/daisy.css'])
     @else
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        @vite(['resources/css/app.css'])
     @endif
     <link rel="stylesheet" href="{{ asset('css/flag-icons.css') }}">
 </head>
@@ -74,8 +74,6 @@
         document.documentElement.classList.add('dark')
     }
 </script>
-
-<script src="{{ mix('js/app.js') }}" defer></script>
 
 </body>
 </html>

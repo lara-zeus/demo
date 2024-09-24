@@ -48,7 +48,6 @@ use LaraZeus\BoltPro\Extensions\Grades;
 use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
 use LaraZeus\Delia\DeliaPlugin;
-use LaraZeus\Delia\Filament\Resources\BookmarkResource;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
@@ -84,7 +83,7 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
-            ->theme(asset('css/filament-zeus.css'))
+            ->viteTheme('resources/css/filament/admin/theme.css')
             ->defaultAvatarProvider(
                 BoringAvatarsProvider::class
             )
@@ -94,16 +93,14 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login(Login::class)
             ->profile(isSimple: false)
-            ->font('Karla')
+            ->font('Montserrat')
             ->plugins($this->getPlugins())
             ->brandLogo(fn () => view('filament.logo'))
             ->colors([
                 ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
-                'primary' => Color::hex('#F1948A'),
-                'secondary' => Color::hex('#45B39D'),
+                'primary' => Color::hex('#45B39D'),
+                'secondary' => Color::hex('#F1948A'),
             ])
-
-            //->topNavigation()
 
             ->sidebarCollapsibleOnDesktop()
             ->maxContentWidth('full')
@@ -112,25 +109,25 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()->label('App')
                     ->icon('tabler-brand-appgallery'),
                 NavigationGroup::make()
-                    ->icon('akar-thunder')
+                    ->icon('tabler-bolt')
                     ->label('Bolt'),
                 NavigationGroup::make()
-                    ->icon('vaadin-bolt')
+                    ->icon('tabler-bolt')
                     ->label('Thunder')
                     ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
                     ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
                 NavigationGroup::make()
-                    ->icon('rpg-feather-wing')
+                    ->icon('tabler-feather')
                     ->label('Hermes')
                     ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
                     ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
                 NavigationGroup::make()
-                    ->icon('clarity-crown-solid')
+                    ->icon('tabler-crown')
                     ->label('Helen')
                     ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
                     ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
                 NavigationGroup::make()
-                    ->icon('rpg-chain')
+                    ->icon('tabler-link')
                     ->label('Hera')
                     ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
                     ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
@@ -142,11 +139,11 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make('Delia')
                     ->icon('tabler-bookmarks-filled'),
                 NavigationGroup::make()->label('Sky')
-                    ->icon('ri-cloud-windy-line'),
+                    ->icon('tabler-wind'),
                 NavigationGroup::make()->label('Wind')
-                    ->icon('ri-windy-line'),
+                    ->icon('tabler-wind-electricity'),
                 NavigationGroup::make()->label('Dynamic Dashboard')
-                    ->icon('carbon-rain-heavy'),
+                    ->icon('tabler-cloud-rain'),
                 NavigationGroup::make()->label('Rhea')
                     ->icon('tabler-bow'),
             ])
@@ -285,7 +282,7 @@ class AdminPanelProvider extends PanelProvider
             RecentlyPlugin::make()
                 ->renderUsingHook(PanelsRenderHook::USER_MENU_BEFORE)
                 ->tooltip('Zeus is keeping an eye on you! 👿')
-                ->icon('gameicon-eye')
+                ->icon('tabler-eye')
                 ->globalSearch(condition: false),
             FilamentBackgroundsPlugin::make(),
             AdvancedTablesPlugin::make()

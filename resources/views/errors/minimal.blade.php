@@ -46,8 +46,7 @@
         .bord {border: solid 1px crimson}
         @endif
     </style>
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/flag-icons.css') }}">
+    @vite(['resources/css/app.css', 'resources/css/flag-icons.css'])
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
 <div class="max-w-7xl mx-auto flex items-center justify-center h-screen flex-row lg:relative">
@@ -57,7 +56,7 @@
                 <div class="flex-shrink-0 pt-10 sm:pt-16">
                     <a class="italic flex gap-2 group " href="{{ url('/') }}">
                         <img class="w-12 sm:w-14" src="{{ asset('images/zeus-logo.png') }}" alt="">
-                        <span class="text-3xl sm:text-4xl mt-2 title-font">@zeus</span>
+                        <span class="text-3xl sm:text-4xl mt-2 title-font">@zeusz</span>
                     </a>
                 </div>
                 <div class="flex-shrink-0 my-auto py-16 sm:py-32">
@@ -71,7 +70,7 @@
                                 <path d="M2 15V9C2 6.79086 3.79086 5 6 5H18C20.2091 5 22 6.79086 22 9V15C22 17.2091 20.2091 19 18 19H6C3.79086 19 2 17.2091 2 15Z" stroke="currentColor" stroke-width="1.5"></path>
                             </svg>
                             <a href="{{ url('/') }}" class="text-gray-600 underline underline-offset-2 decoration-primary-500 hover:decoration-secondary-500">
-                                Back To @zeus Site
+                                Back To @zeusz Site
                             </a>
                         </div>
                     </div>--}}

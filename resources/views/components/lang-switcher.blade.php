@@ -1,14 +1,13 @@
 <div class="relative">
     <x-filament::dropdown maxHeight="250px" placement="bottom-start" teleport="true">
         <x-slot name="trigger">
-            @svg('ri-translate', 'h-7 w-7 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
+            @svg('tabler-language-katakana', 'h-7 w-7 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
         </x-slot>
 
         <x-filament::dropdown.header class="font-semibold"
-            :color="'gray'"
-            :icon="'ri-translate'"
-            :href="'#'"
-            :tag="'a'"
+            color="gray"
+            icon="tabler-language-katakana"
+            tag="a"
         >
             {{ __('Select Language') }}
         </x-filament::dropdown.header>

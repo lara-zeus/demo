@@ -1,6 +1,6 @@
 <div class="my-20 py-20 text-center">
     <p class="flex gap-3 items-center justify-center">
-        <a class="text-lg" href="https://larazeus.com/" target="_blank">@zeus</a>
+        <a class="text-lg" href="https://larazeus.com/" target="_blank">@zeusz</a>
         <span>❤️</span>
         <a href="https://filamentphp.com/" target="_blank" class="">
             <svg fill="currentColor" viewBox="0 0 128 26" class="h-auto w-20 mx-auto">

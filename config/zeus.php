@@ -11,7 +11,6 @@ return [
     'themes-icons' => [
         'zeus' => 'rpg-lightning-bolt',
         'daisy' => 'rpg-daisy',
-        //'breeze' => 'rpg-daisy',
         'another-portfolio' => 'rpg-super-mushroom',
     ],
 

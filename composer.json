@@ -6,8 +6,6 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "andreiio/blade-iconoir": "^2.5",
-        "andreiio/blade-remix-icon": "^2.3",
         "archilex/filament-filter-sets": "^3.5",
         "awcodes/filament-badgeable-column": "^2.3",
         "awcodes/filament-quick-create": "^3.0",
@@ -21,18 +19,8 @@
         "awcodes/recently": "^1.0",
         "awcodes/shout": "^2.0",
         "bezhansalleh/filament-panel-switch": "^1.0",
-        "codeat3/blade-akar-icons": "^1.21",
-        "codeat3/blade-carbon-icons": "^2.13",
-        "codeat3/blade-clarity-icons": "^1.8",
-        "codeat3/blade-game-icons": "^1.3",
-        "codeat3/blade-grommet-icons": "^1.8",
-        "codeat3/blade-iconpark": "^1.5",
-        "codeat3/blade-rpg-awesome-icons": "^1.4",
-        "codeat3/blade-vaadin-icons": "^1.4",
         "codewithdennis/filament-select-tree": "^3.1",
-        "davidhsianturi/blade-bootstrap-icons": "^1.5",
         "doctrine/dbal": "^3.0",
-        "fakerphp/faker": "^1.23",
         "garygreen/pretty-routes": "^1.0",
         "graham-campbell/github": "^12.6",
         "guzzlehttp/guzzle": "^7.5",
@@ -68,10 +56,7 @@
         "laravel/prompts": "^0.1.15",
         "laravel/sanctum": "^4.0",
         "njxqlus/filament-progressbar": "^1.0",
-        "postare/blade-mdi": "dev-laravel-11",
         "pxlrbt/filament-spotlight": "^1.0",
-        "ryangjchandler/blade-tabler-icons": "^2.3",
-        "saade/blade-iconsax": "^1.2",
         "schmeits/filament-umami-widgets": "^1.0",
         "sentry/sentry-laravel": "^4.3",
         "stechstudio/filament-impersonate": "^3.8",
@@ -81,19 +66,12 @@
     "require-dev": {
         "laravel/tinker": "^2.9",
         "laravel/pint": "^1.13",
-        "laravel/sail": "^1.26",
-        "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.0",
-        "phpunit/phpunit": "^10.5",
         "spatie/laravel-ignition": "^2.4",
         "barryvdh/laravel-debugbar": "^3.9",
         "larastan/larastan": "^2.0",
         "laravel-lang/common": "^3.1",
         "orangehill/iseed": "^3.0",
-        "pestphp/pest": "^2.0",
-        "pestphp/pest-plugin-laravel": "^2.0",
-        "pestphp/pest-plugin-livewire": "^2.x-dev",
-        "livewire/livewire": "3.5.6",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0"
     },
@@ -102,11 +80,6 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -138,7 +111,6 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
-            "pestphp/pest-plugin": true,
             "phpstan/extension-installer": true,
             "php-http/discovery": true
         }
@@ -149,10 +121,6 @@
         {
             "type": "composer",
             "url": "https://filament-filter-sets.composer.sh"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/atmonshi/blade-mdi"
         },
         {
             "type": "github",

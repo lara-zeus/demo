@@ -1,6 +1,5 @@
 <x-item-breeze>
     @slot('title')
-        @svg($package['icon'],'h-10 w-10 text-secondary-500 dark:text-secondary-400 sm:-mt-4')
         <span class="text-primary-500 dark:text-primary-300">{{ $package['name'] }}</span>
     @endslot
     @slot('desc')

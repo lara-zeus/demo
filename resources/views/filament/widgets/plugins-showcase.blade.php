@@ -1,6 +1,6 @@
 <x-filament-widgets::widget>
     <x-filament::section
-        icon="ri-artboard-line"
+        icon="tabler-artboard-filled"
         icon-color="secondary"
         icon-size="lg"
     >

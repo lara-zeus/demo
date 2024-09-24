@@ -14,15 +14,13 @@
             <x-slot name="trigger"
                     class="dark:text-custom-200 text-custom-500 flex items-center justify-center gap-1">
                 {{ __('Site') }}
-                @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
+                @svg('tabler-chevron-down','h-4 w-4 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
             </x-slot>
 
             <x-filament::dropdown.header
                 class="dark:text-gray-200 text-gray-500"
-                :color="'primary'"
-                :icon="'ri-global-fill'"
-                :href="'#'"
-                :tag="'a'"
+                color="primary"
+                icon="tabler-artboard-filled"
             >
                 Our Site:
             </x-filament::dropdown.header>
@@ -61,7 +59,7 @@
             <x-slot name="trigger"
                     class="dark:text-custom-200 text-custom-500 flex items-center justify-center gap-1">
                 {{ __('Apps') }}
-                @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
+                @svg('tabler-chevron-down','h-4 w-4 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
             </x-slot>
             <x-filament::dropdown.list>
                 <x-filament::dropdown.list.item

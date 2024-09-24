@@ -35,7 +35,7 @@ class GuestsPanelProvider extends PanelProvider
             ->defaultAvatarProvider(
                 BoringAvatarsProvider::class
             )
-            ->theme(asset('css/filament-guests.css'))
+            ->viteTheme('resources/css/filament/guests/theme.css')
             ->renderHook(
                 'panels::footer',
                 fn (): View => view('filament.hooks.footer-guests'),

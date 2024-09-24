@@ -17,8 +17,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon/favicon-32x32.png') }}">
         <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}">
 
-        <link rel="stylesheet" href="{{ mix('css/another-portfolio.css') }}">
-        <link rel="stylesheet" href="{{ mix('css/flag-icons.css') }}">
+        @vite(['resources/css/another-portfolio.css', 'resources/css/flag-icons.css'])
 
         <style>
             [x-cloak] {
@@ -89,7 +88,7 @@
                 document.documentElement.classList.add('dark')
             }
         </script>
-        <script src="{{ mix('js/another-portfolio.js') }}"></script>
+        @vite(['resources/js/another-portfolio.js'])
         @stillStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
     </body>
 </html>

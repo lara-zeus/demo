@@ -1,14 +1,17 @@
-@import '../../vendor/filament/filament/resources/css/theme.css';
-@import '../../vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
-@import '~tippy.js/dist/tippy.css';
-@import '~tippy.js/themes/light.css';
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import '/vendor/filament/filament/resources/css/theme.css';
+@import '/vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
+@import '/node_modules/tippy.js/dist/tippy.css';
+@import '/node_modules/tippy.js/themes/light.css';
+
+@config "tailwind.config.js";
 
 /* Sky search result highlight */
 span.highlight {
     @apply bg-primary-200 text-primary-700 px-2
 }
 
-/*@import '../../vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';*/
+/*@import '/vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';*/
 
 [dir=rtl] {
     font-family: 'Almarai','Karla', sans-serif !important;
@@ -23,7 +26,7 @@ span.highlight {
 }
 
 [dir=ltr] .title-font {
-    font-family: 'Reggae One', 'Almarai', sans-serif !important;
+    font-family: 'Montserrat', 'Almarai', sans-serif !important;
     @apply font-semibold
 }
 

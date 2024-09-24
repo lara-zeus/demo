@@ -5,7 +5,6 @@
      style="transform:rotate({{$deg}}{{rand(1,15.9)}}deg);">
 
     <div class="flex items-center justify-center gap-4 font-[Kalam] text-gray-700 dark:text-gray-400">
-        @svg($package['icon'],'h-16 w-16 text-secondary-500')
         <h2 class="mt-2 text-5xl">{{ $package['name'] }}</h2>
     </div>
 

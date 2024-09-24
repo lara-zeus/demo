@@ -2,7 +2,7 @@
     <div class="flex justify-between px-2">
         <a href="{{ url('/') }}" class="flex items-center gap-2">
             <img class="w-7" src="{{ asset('images/zeus-logo.png') }}" alt="{{ config('zeus.wind.name', config('app.name', 'Laravel')) }}">
-            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">@zeus</span>
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">@zeusz</span>
         </a>
         <button @click="open = !open" type="button"
                 class="inline-flex sm:hidden items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
@@ -26,15 +26,13 @@
                 <x-slot name="trigger"
                         class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
                     {{ __('Site') }}
-                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
+                    @svg('tabler-chevron-down','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
                 </x-slot>
 
                 <x-filament::dropdown.header
                     class="dark:text-gray-200 text-gray-700"
-                    :color="'primary'"
-                    :icon="'ri-global-fill'"
-                    :href="'#'"
-                    :tag="'a'"
+                    color="primary"
+                    icon="tabler-globe-filled"
                 >
                     Our Site:
                 </x-filament::dropdown.header>
@@ -73,7 +71,7 @@
                 <x-slot name="trigger"
                         class="dark:text-primary-200 text-primary-700 flex items-center justify-center gap-1">
                     {{ __('Apps') }}
-                    @svg('ri-arrow-down-s-fill','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
+                    @svg('tabler-chevron-down','h-4 w-4 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
                 </x-slot>
                 <x-filament::dropdown.list>
                     <x-filament::dropdown.list.item

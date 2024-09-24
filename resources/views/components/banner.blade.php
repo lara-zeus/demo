@@ -15,7 +15,7 @@
     <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
         <p class="text-lg font-semibold leading-6 text-gray-900 dark:text-gray-200">
             <strong class="font-semibold">Zeus Store</strong>
-            @svg('bi-dot','mx-2 inline w-64h-4 fill-current')
+            &centerdot;
             {{--Check Out our New Store, Premium Packages waiting for you.--}}
             {{--Black Friday Sale, get 20% off all Zeus premium packages.--}}
             {{--Holidays Sale, get 20% off all Zeus premium packages.--}}

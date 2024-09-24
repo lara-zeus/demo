@@ -22,8 +22,7 @@
     @filamentStyles
     @stack('styles')
 
-    <link rel="stylesheet" href="{{ mix('css/daisy.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/flag-icons.css') }}">
+    @vite(['resources/css/daisy.css', 'resources/css/flag-icons.css'])
 
     <style>
         * {font-family: 'KoHo', 'Almarai', sans-serif;}
@@ -72,15 +71,15 @@
     <div class="items-center grid-flow-col">
         <img alt="Lara Zeus" loading="lazy" width="40" height="20" decoding="async" src="https://larazeus.com/images/zeus-logo.png">
         <a href="https://larazeus.com" target="_blank">
-            a gift with ❤️ &nbsp;from @zeus
+            a gift with ❤️ &nbsp;from @zeusz
         </a>
     </div>
     <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <a href="https://github.com/lara-zeus" target="_blank">
-            @svg('ri-github-fill','h-8 w-8 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
+            @svg('tabler-brand-github-filled','h-8 w-8 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
         </a>
         <a href="https://twitter.com/larazeus" target="_blank">
-            @svg('ri-twitter-line','h-8 w-8 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
+            @svg('tabler-brand-twitter-filled','h-8 w-8 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
         </a>
     </div>
 </footer>

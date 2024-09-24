@@ -14,7 +14,7 @@
 
     <x-filament::section>
         Lightweight, easy to configure and extend, social authentication for Filament.
-        we're using `socialment` in our <a href="https://larazeus.com/dashboard" target="_blank">@zeus website</a>.<br>
+        we're using `socialment` in our <a href="https://larazeus.com/dashboard" target="_blank">@zeusz website</a>.<br>
         You can see it in action, and currently we using Github provider
     </x-filament::section>
 

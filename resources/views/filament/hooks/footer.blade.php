@@ -10,7 +10,7 @@
         </a>.
     </p>
     <p>
-        <a class="" href="https://larazeus.com/" target="_blank">@zeus</a>
+        <a class="" href="https://larazeus.com/" target="_blank">@zeusz</a>
     </p>
 
     <a href="https://filamentphp.com/" target="_blank" class="block p-2 transition duration-300 will-change-transform hover:scale-105 motion-reduce:transition-none">

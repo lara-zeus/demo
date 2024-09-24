@@ -1,0 +1,6 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+@import '/node_modules/cropperjs/dist/cropper.css';
+@import 'tippy.js/dist/tippy.css';
+@import '/vendor/awcodes/filament-table-repeater/resources/css/plugin.css';
+
+@config 'tailwind.config.js';
