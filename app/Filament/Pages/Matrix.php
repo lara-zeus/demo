@@ -13,7 +13,7 @@ class Matrix extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'carbon-scatter-matrix';
+    protected static ?string $navigationIcon = 'tabler-list-check';
 
     protected static string $view = 'filament.pages.qrcode';
 
