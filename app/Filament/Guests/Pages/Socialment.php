@@ -8,7 +8,7 @@ class Socialment extends Page
 {
     protected static string $view = 'filament.guests.pages.socialment';
 
-    protected static ?string $navigationIcon = 'gameicon-lock';
+    protected static ?string $navigationIcon = 'tabler-lock';
 
     protected static ?int $navigationSort = 4;
 

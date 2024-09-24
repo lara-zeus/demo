@@ -26,7 +26,7 @@ class Tiles extends Page implements HasForms, HasTable
 
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'carbon-image';
+    protected static ?string $navigationIcon = 'tabler-photo-circle';
 
     protected static string $view = 'filament.pages.tiles';
 

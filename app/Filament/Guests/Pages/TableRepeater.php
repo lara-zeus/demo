@@ -11,7 +11,7 @@ class TableRepeater extends Page
 {
     protected static string $view = 'filament.guests.pages.table-repeater';
 
-    protected static ?string $navigationIcon = 'iconsax-lin-repeate-one';
+    protected static ?string $navigationIcon = 'tabler-repeat';
 
     protected static ?string $navigationGroup = 'Plugins';
 

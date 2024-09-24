@@ -21,7 +21,7 @@ class Popover extends Page implements HasForms, HasTable
 
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'grommet-tip';
+    protected static ?string $navigationIcon = 'tabler-stack-pop';
 
     protected static string $view = 'filament.pages.popover';
 

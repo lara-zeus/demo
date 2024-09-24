@@ -13,7 +13,7 @@ class RadioDeck extends Page
 {
     protected static string $view = 'filament.guests.pages.radio-deck';
 
-    protected static ?string $navigationIcon = 'iconsax-lin-radio';
+    protected static ?string $navigationIcon = 'tabler-aspect-ratio';
 
     protected static ?int $navigationSort = 2;
 

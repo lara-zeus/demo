@@ -9,7 +9,7 @@ class Shout extends Page
 {
     protected static string $view = 'filament.guests.pages.shout';
 
-    protected static ?string $navigationIcon = 'grommet-chat';
+    protected static ?string $navigationIcon = 'tabler-message-chatbot';
 
     protected static ?string $navigationGroup = 'Plugins';
 

@@ -15,7 +15,7 @@ class ActivityTimeline extends Page
 {
     protected static string $view = 'filament.guests.pages.activity-timeline';
 
-    protected static ?string $navigationIcon = 'mdi-timeline-outline';
+    protected static ?string $navigationIcon = 'tabler-timeline-event-exclamation';
 
     protected static ?string $navigationGroup = 'Plugins';
 

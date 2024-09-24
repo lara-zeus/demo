@@ -15,7 +15,7 @@ class Accordion extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'vaadin-accordion-menu';
+    protected static ?string $navigationIcon = 'tabler-table-filled';
 
     protected static string $view = 'filament.pages.accordion';
 
