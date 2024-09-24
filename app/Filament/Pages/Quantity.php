@@ -14,7 +14,7 @@ class Quantity extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'iconoir-input-field';
+    protected static ?string $navigationIcon = 'tabler-input-search';
 
     protected static string $view = 'filament.pages.quantity';
 

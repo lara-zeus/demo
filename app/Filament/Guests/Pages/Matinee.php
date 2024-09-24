@@ -9,7 +9,7 @@ class Matinee extends Page
 {
     protected static string $view = 'filament.guests.pages.matinee';
 
-    protected static ?string $navigationIcon = 'iconoir-media-image';
+    protected static ?string $navigationIcon = 'tabler-photo';
 
     protected static ?string $navigationGroup = 'Plugins';
 
