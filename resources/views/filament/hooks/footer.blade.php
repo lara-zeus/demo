@@ -10,7 +10,7 @@
         </a>.
     </p>
     <p>
-        <a class="" href="https://larazeus.com/" target="_blank">@zeusz</a>
+        <a href="https://larazeus.com/" target="_blank">@zeusz</a>
     </p>
 
     <a href="https://filamentphp.com/" target="_blank" class="block p-2 transition duration-300 will-change-transform hover:scale-105 motion-reduce:transition-none">
@@ -28,5 +28,36 @@
         </div>
     </a>
 </div>
+
+<script>
+    function makeTimer() {
+        const endTime = (Date.parse(new Date("November 29, 2024 1:00:00 GMT"))) / 1000;
+        const now = (Date.parse(new Date()) / 1000);
+
+        const timeLeft = endTime - now;
+
+        const days = Math.floor(timeLeft / 86400);
+        let hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+        let minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+        let seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+        if (hours < "10") { hours = "0" + hours; }
+        if (minutes < "10") { minutes = "0" + minutes; }
+        if (seconds < "10") { seconds = "0" + seconds; }
+
+        document.getElementById("days").innerHTML = "<span class='text-gray-600 dark:text-gray-300 text-sm sm:text-2xl'>Days</span><span class='drop-shadow-2xl'>"+days+"</span>";
+        document.getElementById("hours").innerHTML = "<span class='text-gray-600 dark:text-gray-300 text-sm sm:text-2xl'>Hours</span><span class='drop-shadow-2xl'>" + hours+"</span>";
+        document.getElementById("minutes").innerHTML = "<span class='text-gray-600 dark:text-gray-300 text-sm sm:text-2xl'>Minutes</span><span class='drop-shadow-2xl'>" + minutes+"</span>";
+        document.getElementById("seconds").innerHTML = "<span class='text-gray-600 dark:text-gray-300 text-sm sm:text-2xl'>Seconds</span><span class='drop-shadow-2xl'>" + seconds+"</span>";
+    }
+
+    setInterval(function() {
+        var element = document.getElementById('black-friday-widget');
+        if (typeof(element) != 'undefined' && element != null)
+        {
+            makeTimer();
+        }
+    }, 1000);
+</script>
 
 @stillStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
