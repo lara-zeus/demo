@@ -7850,16 +7850,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.4.11",
+            "version": "v3.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "594c7bd352153f02ec336fc1d4ecaa33db1cf68b"
+                "reference": "398c9a9f0521ec0c803dcc638f13bddecdc4aa86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/594c7bd352153f02ec336fc1d4ecaa33db1cf68b",
-                "reference": "594c7bd352153f02ec336fc1d4ecaa33db1cf68b",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/398c9a9f0521ec0c803dcc638f13bddecdc4aa86",
+                "reference": "398c9a9f0521ec0c803dcc638f13bddecdc4aa86",
                 "shasum": ""
             },
             "require": {
@@ -7905,9 +7905,8 @@
             ],
             "authors": [
                 {
-                    "name": "php coder",
-                    "email": "info@larazeus.com",
-                    "role": "Owner"
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
                 }
             ],
             "description": "Lara-zeus sky is simple CMS for your website. It includes posts, pages, tags, and categories.",
@@ -7936,7 +7935,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-08-11T04:38:29+00:00"
+            "time": "2024-09-28T10:11:16+00:00"
         },
         {
             "name": "lara-zeus/thunder",
