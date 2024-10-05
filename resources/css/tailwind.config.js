@@ -58,6 +58,9 @@ module.exports = {
         './resources/views/filament/**/*.blade.php',
         './vendor/filament/**/*.blade.php',
 
+        './vendor/lara-zeus/dynamic-dashboard/resources/views/**/*.blade.php',
+        './vendor/lara-zeus/dynamic-dashboard/src/Models/Columns.php',
+
         './vendor/awcodes/recently/resources/**/*.blade.php',
         './vendor/awcodes/filament-tiptap-editor/resources/**/*.blade.php',
         './vendor/awcodes/filament-versions/resources/**/*.blade.php',

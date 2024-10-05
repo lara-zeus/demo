@@ -140,12 +140,12 @@
         },
         {
             "name": "archilex/filament-filter-sets",
-            "version": "3.7.24",
+            "version": "3.7.25",
             "dist": {
                 "type": "zip",
-                "url": "https://filament-filter-sets.composer.sh/download/9d224f43-153c-4ed0-ad5c-438e32c9a0fb/advanced-tables-for-filament-3.7.24.zip",
-                "reference": "aa6858e10b2d0546683e3e7d3e4281ca84c799e3",
-                "shasum": "2682947e8fa22bddc5b0a70dbbcc256a421144d0"
+                "url": "https://filament-filter-sets.composer.sh/download/9d2a6e1b-0999-4221-ab7d-383329fe3378/advanced-tables-for-filament-3.7.25.zip",
+                "reference": "cacbf164f869977042b16c9547ffa13a73d4c027",
+                "shasum": "e4c31a75d7c9f915b47ea5cab144e067c65a6ff9"
             },
             "require": {
                 "archilex/filament-toggle-icon-column": "^3.0",
@@ -221,7 +221,7 @@
                 "tables",
                 "views"
             ],
-            "time": "2024-09-30T14:34:03+00:00"
+            "time": "2024-10-04T15:26:55+00:00"
         },
         {
             "name": "archilex/filament-toggle-icon-column",
@@ -1000,16 +1000,16 @@
         },
         {
             "name": "awcodes/recently",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/recently.git",
-                "reference": "2864cc1cfd0fe4ae9628deb6548d8af61cc52f49"
+                "reference": "101e18bd83710f0bbc2acb62b3437a207a15a6b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/recently/zipball/2864cc1cfd0fe4ae9628deb6548d8af61cc52f49",
-                "reference": "2864cc1cfd0fe4ae9628deb6548d8af61cc52f49",
+                "url": "https://api.github.com/repos/awcodes/recently/zipball/101e18bd83710f0bbc2acb62b3437a207a15a6b6",
+                "reference": "101e18bd83710f0bbc2acb62b3437a207a15a6b6",
                 "shasum": ""
             },
             "require": {
@@ -1071,7 +1071,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-11T12:52:54+00:00"
+            "time": "2024-10-02T19:21:32+00:00"
         },
         {
             "name": "awcodes/shout",
@@ -6535,16 +6535,16 @@
         },
         {
             "name": "lara-zeus/core",
-            "version": "v3.1.11",
+            "version": "v3.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "c3a6127e0675dada44ba2a394d09cb49ec55c30c"
+                "reference": "8a06819ce82e029d30e449ac4bc4c7f07dd41332"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/c3a6127e0675dada44ba2a394d09cb49ec55c30c",
-                "reference": "c3a6127e0675dada44ba2a394d09cb49ec55c30c",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/8a06819ce82e029d30e449ac4bc4c7f07dd41332",
+                "reference": "8a06819ce82e029d30e449ac4bc4c7f07dd41332",
                 "shasum": ""
             },
             "require": {
@@ -6617,7 +6617,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-02T14:32:22+00:00"
+            "time": "2024-10-05T18:44:33+00:00"
         },
         {
             "name": "lara-zeus/delia",
@@ -6706,26 +6706,26 @@
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/dynamic-dashboard.git",
-                "reference": "0409839d915ca4129615daf9c25b0dd28d1e5736"
+                "reference": "adfb4b1cdfdaa01299631f0e569ce201a7cc545a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/dynamic-dashboard/zipball/0409839d915ca4129615daf9c25b0dd28d1e5736",
-                "reference": "0409839d915ca4129615daf9c25b0dd28d1e5736",
+                "url": "https://api.github.com/repos/lara-zeus/dynamic-dashboard/zipball/adfb4b1cdfdaa01299631f0e569ce201a7cc545a",
+                "reference": "adfb4b1cdfdaa01299631f0e569ce201a7cc545a",
                 "shasum": ""
             },
             "require": {
-                "lara-zeus/core": "^3.0",
+                "lara-zeus/core": "^3.1",
                 "php": "^8.1"
             },
             "require-dev": {
+                "larastan/larastan": "^2.0",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.0.1",
                 "nunomaduro/phpinsights": "^2.8",
                 "orchestra/testbench": "^8.0",
                 "pestphp/pest": "^2.0",
@@ -6757,9 +6757,8 @@
             ],
             "authors": [
                 {
-                    "name": "php coder",
-                    "email": "info@larazeus.com",
-                    "role": "Owner"
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
                 }
             ],
             "description": "Zeus Dynamic Dashboard to manage widgets for filament dashboard your website landing page",
@@ -6782,7 +6781,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-09T15:27:46+00:00"
+            "time": "2024-10-05T18:53:29+00:00"
         },
         {
             "name": "lara-zeus/filament-plugin-tools",
@@ -10154,24 +10153,24 @@
         },
         {
             "name": "nette/schema",
-            "version": "v1.3.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/schema.git",
-                "reference": "a6d3a6d1f545f01ef38e60f375d1cf1f4de98188"
+                "reference": "9522dad6211c4d995a01a9ac529da88d0b0ba7b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/schema/zipball/a6d3a6d1f545f01ef38e60f375d1cf1f4de98188",
-                "reference": "a6d3a6d1f545f01ef38e60f375d1cf1f4de98188",
+                "url": "https://api.github.com/repos/nette/schema/zipball/9522dad6211c4d995a01a9ac529da88d0b0ba7b5",
+                "reference": "9522dad6211c4d995a01a9ac529da88d0b0ba7b5",
                 "shasum": ""
             },
             "require": {
                 "nette/utils": "^4.0",
-                "php": "8.1 - 8.3"
+                "php": "8.1 - 8.4"
             },
             "require-dev": {
-                "nette/tester": "^2.4",
+                "nette/tester": "^2.5.2",
                 "phpstan/phpstan-nette": "^1.0",
                 "tracy/tracy": "^2.8"
             },
@@ -10210,9 +10209,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/schema/issues",
-                "source": "https://github.com/nette/schema/tree/v1.3.0"
+                "source": "https://github.com/nette/schema/tree/v1.3.1"
             },
-            "time": "2023-12-11T11:54:22+00:00"
+            "time": "2024-10-05T03:01:50+00:00"
         },
         {
             "name": "nette/utils",
@@ -13510,16 +13509,16 @@
         },
         {
             "name": "spatie/laravel-tags",
-            "version": "4.6.1",
+            "version": "4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-tags.git",
-                "reference": "73944e8bd7a341269c03959fe063d8714adbe5a6"
+                "reference": "dcbfd689eb76801dbe42d19b223cb24235567681"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-tags/zipball/73944e8bd7a341269c03959fe063d8714adbe5a6",
-                "reference": "73944e8bd7a341269c03959fe063d8714adbe5a6",
+                "url": "https://api.github.com/repos/spatie/laravel-tags/zipball/dcbfd689eb76801dbe42d19b223cb24235567681",
+                "reference": "dcbfd689eb76801dbe42d19b223cb24235567681",
                 "shasum": ""
             },
             "require": {
@@ -13568,7 +13567,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-tags/issues",
-                "source": "https://github.com/spatie/laravel-tags/tree/4.6.1"
+                "source": "https://github.com/spatie/laravel-tags/tree/4.7.0"
             },
             "funding": [
                 {
@@ -13576,7 +13575,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-01T12:44:53+00:00"
+            "time": "2024-10-03T15:45:40+00:00"
         },
         {
             "name": "spatie/laravel-translatable",
