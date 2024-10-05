@@ -6085,16 +6085,16 @@
         },
         {
             "name": "lara-zeus/artemis",
-            "version": "v1.0.6",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/artemis.git",
-                "reference": "6c5cb3a6cc0e075c4f121872be32e84fc14df69f"
+                "reference": "88ee2abd8c7239980b31c6ff5d4aa25574118f8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/6c5cb3a6cc0e075c4f121872be32e84fc14df69f",
-                "reference": "6c5cb3a6cc0e075c4f121872be32e84fc14df69f",
+                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/88ee2abd8c7239980b31c6ff5d4aa25574118f8c",
+                "reference": "88ee2abd8c7239980b31c6ff5d4aa25574118f8c",
                 "shasum": ""
             },
             "require": {
@@ -6130,9 +6130,8 @@
             ],
             "authors": [
                 {
-                    "name": "php coder",
-                    "email": "wh7r.com@gmail.com",
-                    "role": "Owner"
+                    "name": "Lara Zeus (Ash)",
+                    "email": "wh7r.com@gmail.com"
                 }
             ],
             "description": "artistic themes for all lara zeus packages, telling a story with a design",
@@ -6160,7 +6159,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-02T03:31:40+00:00"
+            "time": "2024-10-05T20:25:29+00:00"
         },
         {
             "name": "lara-zeus/athena",
