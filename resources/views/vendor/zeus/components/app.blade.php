@@ -27,7 +27,7 @@
 </head>
 <body class="font-sans antialiased bg-gray-50 text-gray-900 dark:text-gray-100 dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
 
-<header x-data="{ open: false }" class="mt-12 bg-white dark:bg-black py-4">
+<header x-data="{ open: false }" class="bg-white dark:bg-black py-4">
     <x-nav/>
 </header>
 
