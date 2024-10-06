@@ -6163,16 +6163,16 @@
         },
         {
             "name": "lara-zeus/athena",
-            "version": "1.1.7",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/athena.git",
-                "reference": "59da4fdd4f97cca3fe4f58497f860ed5e7fb446d"
+                "reference": "3bb8a962f6241c737be0d759be2345fd585e6d0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/59da4fdd4f97cca3fe4f58497f860ed5e7fb446d",
-                "reference": "59da4fdd4f97cca3fe4f58497f860ed5e7fb446d",
+                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/3bb8a962f6241c737be0d759be2345fd585e6d0b",
+                "reference": "3bb8a962f6241c737be0d759be2345fd585e6d0b",
                 "shasum": ""
             },
             "require": {
@@ -6230,9 +6230,8 @@
             ],
             "authors": [
                 {
-                    "name": "php coder",
-                    "email": "info@larazeus.com",
-                    "role": "Owner"
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
                 }
             ],
             "description": "Athena appointments managements",
@@ -6248,8 +6247,12 @@
                 "schedule"
             ],
             "support": {
-                "issues": "https://github.com/lara-zeus/athena/issues",
-                "source": "https://github.com/lara-zeus/athena"
+                "chat": "https://discord.com/channels/883083792112300104/1282751531346694207",
+                "contact": "https://larazeus.com/contact-us",
+                "docs": "https://larazeus.com/athena",
+                "email": "info@larazeus.com",
+                "source": "https://github.com/lara-zeus/athena/tree/1.1.8",
+                "issues": "https://github.com/lara-zeus/athena/issues"
             },
             "funding": [
                 {
@@ -6257,7 +6260,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-07-14T19:46:54+00:00"
+            "time": "2024-10-06T16:07:30+00:00"
         },
         {
             "name": "lara-zeus/bolt",
@@ -7847,16 +7850,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.4.14",
+            "version": "v3.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "d5166e242e51cfdcf6da72b47bbfb337ad59f744"
+                "reference": "5d684552eb87b0bb6fa4af3e3cb598249096d146"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/d5166e242e51cfdcf6da72b47bbfb337ad59f744",
-                "reference": "d5166e242e51cfdcf6da72b47bbfb337ad59f744",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/5d684552eb87b0bb6fa4af3e3cb598249096d146",
+                "reference": "5d684552eb87b0bb6fa4af3e3cb598249096d146",
                 "shasum": ""
             },
             "require": {
@@ -7932,20 +7935,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-02T14:43:16+00:00"
+            "time": "2024-10-06T16:15:22+00:00"
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v3.1.45",
+            "version": "v3.1.46",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "544b0718a9ed90fe1253f32fb45db2f09b3e3af4"
+                "reference": "631218371eddd57434a5807b03edcc07aa5eeca3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/544b0718a9ed90fe1253f32fb45db2f09b3e3af4",
-                "reference": "544b0718a9ed90fe1253f32fb45db2f09b3e3af4",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/631218371eddd57434a5807b03edcc07aa5eeca3",
+                "reference": "631218371eddd57434a5807b03edcc07aa5eeca3",
                 "shasum": ""
             },
             "require": {
@@ -8035,7 +8038,7 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/thunder",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/thunder/tree/v3.1.45",
+                "source": "https://github.com/lara-zeus/thunder/tree/v3.1.46",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -8044,7 +8047,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-10-02T16:09:27+00:00"
+            "time": "2024-10-06T16:08:42+00:00"
         },
         {
             "name": "lara-zeus/tiles",
@@ -19091,16 +19094,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.12.5",
+            "version": "1.12.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "7e6c6cb7cecb0a6254009a1a8a7d54ec99812b17"
+                "reference": "dc4d2f145a88ea7141ae698effd64d9df46527ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/7e6c6cb7cecb0a6254009a1a8a7d54ec99812b17",
-                "reference": "7e6c6cb7cecb0a6254009a1a8a7d54ec99812b17",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/dc4d2f145a88ea7141ae698effd64d9df46527ae",
+                "reference": "dc4d2f145a88ea7141ae698effd64d9df46527ae",
                 "shasum": ""
             },
             "require": {
@@ -19145,7 +19148,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-26T12:45:22+00:00"
+            "time": "2024-10-06T15:03:59+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
