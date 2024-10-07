@@ -44,7 +44,9 @@ export default {
 
         // matrix-choice
         './vendor/lara-zeus/matrix-choice/resources/views/**/*.blade.php',
+
         './vendor/lara-zeus/accordion/resources/views/**/*.blade.php',
+
         './vendor/lara-zeus/list-group/resources/views/**/*.blade.php',
 
         // helen

@@ -71,3 +71,13 @@ pre code.torchlight .line-number,
 pre code.torchlight .summary-caret {
     @apply ltr:mr-4 rtl:ml-4;
 }
+
+.compact-timeline .fi-timeline-item-heading {
+    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col !important;
+}
+.compact-timeline .fi-timeline-section-content {
+    @apply shadow-none p-0 !important;
+}
+.compact-timeline {
+    @apply shadow-none ring-0 !important;
+}
