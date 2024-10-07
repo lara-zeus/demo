@@ -86,6 +86,6 @@ return [
     | cache_time is the time the values will be cached in seconds
     |
     */
-    'cache_time' => 10000,
+    'cache_time' => 90000,
 
 ];
