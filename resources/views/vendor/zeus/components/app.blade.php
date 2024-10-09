@@ -57,10 +57,38 @@
     {{ $slot }}
 </div>
 
+
+@php
+    $urls = [
+        'wind'=>'lara-zeus/wind',
+        'bolt'=>'lara-zeus/bolt',
+        'sky'=>'lara-zeus/sky',
+        'thunder'=>'lara-zeus/thunder',
+        'dynamic-dashboard'=>'lara-zeus/dynamic-dashboard',
+    ];
+    $packageName = (isset($urls[explode('/',request()->path())[0]])) ? $urls[explode('/',request()->path())[0]] : null;
+@endphp
+
 <footer class="bg-gray-100 dark:bg-gray-800 p-6 text-center font-light">
     <a href="https://larazeus.com" target="_blank">
         a gift with ❤️ &nbsp;from @zeus
     </a>
+
+    @if($packageName !== null)
+        <a target="_blank" href="https://github.com/{{ $packageName }}" class="block py-2 px-4 text-gray-900">
+            {{ $packageName }} v:{{ \Composer\InstalledVersions::getVersion($packageName) }}
+        </a>
+    @endif
+
+    <div class="flex gap-2 items-center justify-center">
+        <a href="https://github.com/lara-zeus" target="_blank">
+            @svg('tabler-brand-github-filled','h-6 w-6 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
+        </a>
+
+        <a href="https://twitter.com/larazeus" target="_blank">
+            @svg('tabler-brand-twitter-filled','h-6 w-6 text-secondary-500 hover:text-custom-500 transition-all ease-in-out duration-300')
+        </a>
+    </div>
 </footer>
 
 @livewireScripts
