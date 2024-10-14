@@ -31,7 +31,7 @@
 
 <script>
     function makeTimer() {
-        const endTime = (Date.parse(new Date("November 29, 2024 1:00:00 GMT"))) / 1000;
+        const endTime = (Date.parse(new Date("November 22, 2024 1:00:00 GMT"))) / 1000;
         const now = (Date.parse(new Date()) / 1000);
 
         const timeLeft = endTime - now;
