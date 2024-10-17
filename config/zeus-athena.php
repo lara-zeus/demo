@@ -28,7 +28,12 @@ return [
      * ->skyModels([ ... ])
      */
     'models' => [
-        'Office' => \LaraZeus\Athena\Models\AppointmentAssigned::class,
+        'RequestPeriods' => \LaraZeus\Athena\Models\RequestPeriods::class,
+        'Request' => \LaraZeus\Athena\Models\Request::class,
+        'Service' => \LaraZeus\Athena\Models\Service::class,
+        'TimeLock' => \LaraZeus\Athena\Models\TimeLock::class,
+        'RequestStatus' => \LaraZeus\Athena\Models\RequestStatus::class,
+        'User' => config('auth.providers.users.model'),
     ],
 
     /*
