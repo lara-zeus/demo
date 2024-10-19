@@ -8,6 +8,7 @@ use Filament\Forms\Components\Section;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
+use Filament\Infolists\Components\Section as InfolistSection;
 use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
 use Filament\Tables\Columns\TextColumn;
@@ -73,10 +74,9 @@ class Tiles extends Page implements HasForms, HasTable
         return $form
             ->statePath('data')
             ->schema([
-                Section::make('using popover in forms')
+                Section::make('')
                     ->schema([
-                        TileLayout::make('id')
-                            ->columnSpanFull()
+                        TileLayout::make('name')
                             ->label('Created By')
                             ->icon('tabler-dots-vertical')
                             ->description(fn () => $this->user->email)
@@ -101,7 +101,7 @@ class Tiles extends Page implements HasForms, HasTable
         return $infolist
             ->record(User::first())
             ->schema([
-                \Filament\Infolists\Components\Section::make('using popover in infolist')
+                InfolistSection::make('')
                     ->schema([
                         TileEntry::make('name')
                             ->icon('tabler-dots-vertical')

@@ -1,13 +1,16 @@
 <x-filament-panels::page>
-    {{ $this->form }}
+    <div class="mb-6">
+        <h3 class="my-4 text-lg capitalize">Using Accordion In Forms</h3>
+        {{ $this->form }}
+    </div>
 
-    <div class="my-10">
-        <h3 class="my-4 text-lg mx-4">using accordion in infolist</h3>
+    <div class="my-6">
+        <h3 class="my-4 text-lg capitalize">Using Accordion In Infolist</h3>
         {{ $this->infolist }}
     </div>
 
-    <div class="my-10">
-        <h3 class="my-4 text-lg mx-4">using accordion as a blade component</h3>
+    <div class="my-6">
+        <h3 class="my-4 text-lg capitalize">Using Accordion As A Blade Component</h3>
         <x-zeus-accordion::accordion activeAccordion="1">
             <x-zeus-accordion::accordion.item
                 :label="__('Contact Us')"
