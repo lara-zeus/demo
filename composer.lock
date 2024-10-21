@@ -1000,16 +1000,16 @@
         },
         {
             "name": "awcodes/recently",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/recently.git",
-                "reference": "360d0beec99a089126557a470f9077e14a16957a"
+                "reference": "a4fd37b50ab0c4a4bc61983e36de6520f498e696"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/recently/zipball/360d0beec99a089126557a470f9077e14a16957a",
-                "reference": "360d0beec99a089126557a470f9077e14a16957a",
+                "url": "https://api.github.com/repos/awcodes/recently/zipball/a4fd37b50ab0c4a4bc61983e36de6520f498e696",
+                "reference": "a4fd37b50ab0c4a4bc61983e36de6520f498e696",
                 "shasum": ""
             },
             "require": {
@@ -1071,7 +1071,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-18T15:39:43+00:00"
+            "time": "2024-10-21T12:58:56+00:00"
         },
         {
             "name": "awcodes/shout",

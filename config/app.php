@@ -108,11 +108,18 @@ return [
 
     'repos' => [
         'sky', 'bolt', 'wind', 'dynamic-dashboard',
-        'rhea', 'zeus', 'artemis', 'matrix-choice',
+        'zeus',
+        'matrix-choice',
         'qr', 'popover', 'inline-chart', 'accordion',
-        'quantity', 'list-group', 'delia', 'tartarus',
-        'filament-installer', 'pontus', 'boredom', 'core',
-        'akin', 'chaos', 'translatable', 'uranus',
+        'quantity', 'list-group', 'delia',
+        'akin', 'translatable',
+        //'rhea',
+        //'artemis',
+        //'tartarus',
+        //'filament-installer', 'pontus', 'boredom',
+        //'core',
+        //'chaos',
+        //'uranus',
     ],
 
     /*
