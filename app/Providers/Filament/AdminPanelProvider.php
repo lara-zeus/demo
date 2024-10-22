@@ -307,7 +307,7 @@ class AdminPanelProvider extends PanelProvider
                 ->navigationSort(99)
                 ->navigationCountBadge(),
             SpotlightPlugin::make(),
-            //LightSwitchPlugin::make(),
+            LightSwitchPlugin::make(),
             OverlookPlugin::make()
                 ->sort(5)
                 ->excludes([
