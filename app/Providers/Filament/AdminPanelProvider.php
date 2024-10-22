@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\CuratedBySwis;
 use App\Filament\Pages\Auth\Login;
 use App\Filament\Pages\Tiles;
 use App\Filament\Widgets\Feedback;
@@ -16,6 +17,7 @@ use Awcodes\LightSwitch\LightSwitchPlugin;
 use Awcodes\Overlook\OverlookPlugin;
 use Awcodes\Overlook\Widgets\OverlookWidget;
 use Awcodes\Recently\RecentlyPlugin;
+use DiogoGPinto\AuthUIEnhancer\AuthUIEnhancerPlugin;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -278,13 +280,21 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
+            AuthUIEnhancerPlugin::make()
+                ->showEmptyPanelOnMobile(false)
+                ->formPanelPosition('left')
+                ->formPanelWidth('40%'),
             FilamentUmamiPlugin::make(),
             RecentlyPlugin::make()
                 ->renderUsingHook(PanelsRenderHook::USER_MENU_BEFORE)
                 ->tooltip('Zeus is keeping an eye on you! 👿')
                 ->icon('tabler-eye')
                 ->globalSearch(condition: false),
-            FilamentBackgroundsPlugin::make(),
+            FilamentBackgroundsPlugin::make()
+                ->remember(1)
+                ->imageProvider(
+                    CuratedBySwis::make()
+                ),
             AdvancedTablesPlugin::make()
                 ->resourceNavigationGroup('Bolt')
                 ->resourceNavigationSort(99)
@@ -297,7 +307,7 @@ class AdminPanelProvider extends PanelProvider
                 ->navigationSort(99)
                 ->navigationCountBadge(),
             SpotlightPlugin::make(),
-            LightSwitchPlugin::make(),
+            //LightSwitchPlugin::make(),
             OverlookPlugin::make()
                 ->sort(5)
                 ->excludes([
@@ -321,10 +331,8 @@ class AdminPanelProvider extends PanelProvider
                     MenuSectionResource::class,
                     RequestResource::class,
                 ]),
-
             SpatieLaravelTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt', 'ko']),
-
             //ChronosPlugin::make(),
             DeliaPlugin::make(),
             BoringAvatarPlugin::make(),

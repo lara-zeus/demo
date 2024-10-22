@@ -24,6 +24,8 @@ export default {
         './vendor/lara-zeus/thunder/src/Models/TicketsStatus.php',
         './vendor/lara-zeus/thunder/src/Filament/Resources/TicketResource.php',
 
+        './vendor/diogogpinto/filament-auth-ui-enhancer/resources/**/*.blade.php',
+
         './vendor/lara-zeus/athena/resources/views/**/*.blade.php',
 
         './vendor/lara-zeus/artemis/resources/views/**/*.blade.php',
