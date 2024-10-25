@@ -6169,16 +6169,16 @@
         },
         {
             "name": "lara-zeus/artemis",
-            "version": "v1.0.8",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/artemis.git",
-                "reference": "88ee2abd8c7239980b31c6ff5d4aa25574118f8c"
+                "reference": "5a2766cd9a3f2356821acc0e2fa620bef89add2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/88ee2abd8c7239980b31c6ff5d4aa25574118f8c",
-                "reference": "88ee2abd8c7239980b31c6ff5d4aa25574118f8c",
+                "url": "https://api.github.com/repos/lara-zeus/artemis/zipball/5a2766cd9a3f2356821acc0e2fa620bef89add2d",
+                "reference": "5a2766cd9a3f2356821acc0e2fa620bef89add2d",
                 "shasum": ""
             },
             "require": {
@@ -6243,7 +6243,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-05T20:25:29+00:00"
+            "time": "2024-10-25T13:00:27+00:00"
         },
         {
             "name": "lara-zeus/athena",
