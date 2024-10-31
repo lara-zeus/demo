@@ -2083,16 +2083,16 @@
         },
         {
             "name": "codewithdennis/filament-select-tree",
-            "version": "v3.1.43",
+            "version": "v3.1.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeWithDennis/filament-select-tree.git",
-                "reference": "0450c9d4f2842985bd1e1e753c6d91fd8061ffcb"
+                "reference": "97c7bbd1887dca55fb72db5fb4370d3fd8bb36d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/0450c9d4f2842985bd1e1e753c6d91fd8061ffcb",
-                "reference": "0450c9d4f2842985bd1e1e753c6d91fd8061ffcb",
+                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/97c7bbd1887dca55fb72db5fb4370d3fd8bb36d9",
+                "reference": "97c7bbd1887dca55fb72db5fb4370d3fd8bb36d9",
                 "shasum": ""
             },
             "require": {
@@ -2150,7 +2150,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-28T08:45:40+00:00"
+            "time": "2024-10-30T10:43:39+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -6707,16 +6707,16 @@
         },
         {
             "name": "lara-zeus/delia",
-            "version": "v1.0.5",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/delia.git",
-                "reference": "dba7b339a2eb4cfd7a9dd5e019573b710c7dcdc6"
+                "reference": "efeb9c048a7b16006d6444fa728868ff1456abbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/delia/zipball/dba7b339a2eb4cfd7a9dd5e019573b710c7dcdc6",
-                "reference": "dba7b339a2eb4cfd7a9dd5e019573b710c7dcdc6",
+                "url": "https://api.github.com/repos/lara-zeus/delia/zipball/efeb9c048a7b16006d6444fa728868ff1456abbb",
+                "reference": "efeb9c048a7b16006d6444fa728868ff1456abbb",
                 "shasum": ""
             },
             "require": {
@@ -6788,7 +6788,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-08T01:02:52+00:00"
+            "time": "2024-10-31T10:05:05+00:00"
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
@@ -8314,16 +8314,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.29.0",
+            "version": "v11.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "425054512c362835ba9c0307561973c8eeac7385"
+                "reference": "dff716442d9c229d716be82ccc9a7de52eb97193"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/425054512c362835ba9c0307561973c8eeac7385",
-                "reference": "425054512c362835ba9c0307561973c8eeac7385",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/dff716442d9c229d716be82ccc9a7de52eb97193",
+                "reference": "dff716442d9c229d716be82ccc9a7de52eb97193",
                 "shasum": ""
             },
             "require": {
@@ -8519,7 +8519,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-10-22T14:13:31+00:00"
+            "time": "2024-10-30T15:00:34+00:00"
         },
         {
             "name": "laravel/prompts",
