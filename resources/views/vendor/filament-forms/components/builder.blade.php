@@ -1,6 +1,5 @@
 @php
     use Filament\Forms\Components\Actions\Action;
-    use Filament\Support\Enums\Alignment;
 
     $containers = $getChildComponentContainers();
     $blockPickerBlocks = $getBlockPickerBlocks();
@@ -302,15 +301,7 @@
                 :columns="$blockPickerColumns"
                 :state-path="$statePath"
                 :width="$blockPickerWidth"
-                @class([
-                    'flex',
-                    match ($getAddActionAlignment()) {
-                        Alignment::Start, Alignment::Left => 'justify-start',
-                        Alignment::Center, null => 'justify-center',
-                        Alignment::End, Alignment::Right => 'justify-end',
-                        default => $alignment,
-                    },
-                ])
+                class="flex justify-center"
             >
                 <x-slot name="trigger">
                     {{ $addAction }}

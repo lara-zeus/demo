@@ -29,7 +29,7 @@
     </a>
 </div>
 
-{{--<script>
+<script>
     function makeTimer() {
         const endTime = (Date.parse(new Date("November 22, 2024 1:00:00 GMT"))) / 1000;
         const now = (Date.parse(new Date()) / 1000);
@@ -58,6 +58,6 @@
             makeTimer();
         }
     }, 1000);
-</script>--}}
+</script>
 
 @stillStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
