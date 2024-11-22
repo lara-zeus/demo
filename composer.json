@@ -53,6 +53,7 @@
         "lara-zeus/thunder": "^3.1",
         "lara-zeus/tiles": "^1.0",
         "lara-zeus/wind": "^3.2",
+        "lara-zeus/apollo": "*",
         "laravel/framework": "^11.0",
         "laravel/prompts": "^0.1.15",
         "laravel/sanctum": "^4.0",
@@ -124,40 +125,8 @@
             "url": "https://filament-filter-sets.composer.sh"
         },
         {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/hades.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/hera.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/translatable.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/tiles.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/hermes.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/helen.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/thunder.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/athena.git"
-        },
-        {
-            "type": "github",
-            "url": "git@github.com:lara-zeus/bolt-pro.git"
+            "type": "path",
+            "url": "../p/*"
         }
     ]
 }

@@ -37,6 +37,9 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use LaraZeus\Apollo\ApolloPlugin;
+use LaraZeus\Apollo\Extensions\Apollo;
+use LaraZeus\Apollo\Filament\Resources\EventsResource;
 use LaraZeus\Athena\AthenaPlugin;
 use LaraZeus\Athena\Extensions\Athena;
 use LaraZeus\Athena\Filament\Pages\Calendar;
@@ -114,6 +117,12 @@ class AdminPanelProvider extends PanelProvider
                     ->icon('tabler-bolt')
                     ->label('Bolt'),
                 NavigationGroup::make()
+                    ->icon('tabler-calendar-event')
+                    ->label('Apollo')
+                    ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
+                    ->extraSidebarAttributes(['class' => 'fi-sidebar-group-paid']),
+
+                NavigationGroup::make()
                     ->icon('tabler-bolt')
                     ->label('Thunder')
                     ->extraTopbarAttributes(['class' => 'fi-sidebar-group-paid'])
@@ -150,6 +159,16 @@ class AdminPanelProvider extends PanelProvider
                     ->icon('tabler-bow'),
             ])
             //->unsavedChangesAlerts()
+
+            // apollo
+            ->renderHook(
+                'panels::page.start',
+                fn (array $scopes): View => view('filament.hooks.apollo', ['scopes' => $scopes]),
+                scopes: [
+                    EventsResource::class,
+                ],
+            )
+
 
             // hermes
             ->renderHook(
@@ -285,6 +304,7 @@ class AdminPanelProvider extends PanelProvider
                 ->formPanelPosition('left')
                 ->formPanelWidth('40%'),
             FilamentUmamiPlugin::make(),
+            ApolloPlugin::make(),
             RecentlyPlugin::make()
                 ->renderUsingHook(PanelsRenderHook::USER_MENU_BEFORE)
                 ->tooltip('Zeus is keeping an eye on you! 👿')
@@ -361,6 +381,7 @@ class AdminPanelProvider extends PanelProvider
                     Thunder::class,
                     Athena::class,
                     Grades::class,
+                    Apollo::class,
                 ]),
 
             ThunderPlugin::make(),
