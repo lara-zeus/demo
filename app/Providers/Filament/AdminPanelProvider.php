@@ -51,6 +51,7 @@ use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
 use LaraZeus\Delia\DeliaPlugin;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
+use LaraZeus\DynamicDashboard\Filament\Resources\LayoutResource;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
 use LaraZeus\Hera\Filament\Resources\SeoScanResource;
@@ -330,6 +331,7 @@ class AdminPanelProvider extends PanelProvider
                     TicketResource::class,
                     MenuSectionResource::class,
                     RequestResource::class,
+                    LayoutResource::class,
                 ]),
             SpatieLaravelTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt', 'ko']),
