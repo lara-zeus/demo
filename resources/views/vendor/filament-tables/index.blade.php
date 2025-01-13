@@ -944,10 +944,10 @@
                                 <x-filament-tables::cell
                                     @class([
                                         'fi-table-individual-search-cell-' . str($column->getName())->camel()->kebab(),
-                                        'min-w-48 px-3 py-2',
+                                        'min-w-48 px-3 py-2' => $isIndividuallySearchable = $column->isIndividuallySearchable(),
                                     ])
                                 >
-                                    @if ($column->isIndividuallySearchable())
+                                    @if ($isIndividuallySearchable)
                                         <x-filament-tables::search-field
                                             :debounce="$searchDebounce"
                                             :on-blur="$isSearchOnBlur"
