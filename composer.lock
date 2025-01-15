@@ -6009,16 +6009,16 @@
         },
         {
             "name": "lara-zeus/accordion",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/accordion.git",
-                "reference": "1afc9b3cd9188b550f3dea22dbba28aab6a893b5"
+                "reference": "e545a3c061499773da94507bad5db4c305d3c30b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/accordion/zipball/1afc9b3cd9188b550f3dea22dbba28aab6a893b5",
-                "reference": "1afc9b3cd9188b550f3dea22dbba28aab6a893b5",
+                "url": "https://api.github.com/repos/lara-zeus/accordion/zipball/e545a3c061499773da94507bad5db4c305d3c30b",
+                "reference": "e545a3c061499773da94507bad5db4c305d3c30b",
                 "shasum": ""
             },
             "require": {
@@ -6053,9 +6053,8 @@
             ],
             "authors": [
                 {
-                    "name": "php coder",
-                    "email": "info@larazeus.com",
-                    "role": "Owner"
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
                 }
             ],
             "description": "Zeus Accordion is filamentphp layout component to group components",
@@ -6089,7 +6088,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-05T23:35:54+00:00"
+            "time": "2025-01-13T19:17:00+00:00"
         },
         {
             "name": "lara-zeus/akin",
@@ -6441,16 +6440,16 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.2.15",
+            "version": "v3.2.16",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "6da6b3461c0c473314dfb3b7f30f8d52feb5447e"
+                "reference": "85743c69caa665bbef05b01234c8343fb3f9e266"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/6da6b3461c0c473314dfb3b7f30f8d52feb5447e",
-                "reference": "6da6b3461c0c473314dfb3b7f30f8d52feb5447e",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/85743c69caa665bbef05b01234c8343fb3f9e266",
+                "reference": "85743c69caa665bbef05b01234c8343fb3f9e266",
                 "shasum": ""
             },
             "require": {
@@ -6533,10 +6532,10 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/bolt-pro",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/bolt-pro/tree/v3.2.15",
+                "source": "https://github.com/lara-zeus/bolt-pro/tree/v3.2.16",
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues"
             },
-            "time": "2024-12-24T17:52:32+00:00"
+            "time": "2025-01-15T14:38:00+00:00"
         },
         {
             "name": "lara-zeus/boredom",
@@ -8311,16 +8310,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.37.0",
+            "version": "v11.38.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "6cb103d2024b087eae207654b3f4b26646119ba5"
+                "reference": "9d290aa90fcad44048bedca5219d2b872e98772a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/6cb103d2024b087eae207654b3f4b26646119ba5",
-                "reference": "6cb103d2024b087eae207654b3f4b26646119ba5",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9d290aa90fcad44048bedca5219d2b872e98772a",
+                "reference": "9d290aa90fcad44048bedca5219d2b872e98772a",
                 "shasum": ""
             },
             "require": {
@@ -8521,7 +8520,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-01-02T20:10:21+00:00"
+            "time": "2025-01-15T00:06:46+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -18493,16 +18492,16 @@
         },
         {
             "name": "laravel/pint",
-            "version": "v1.19.0",
+            "version": "v1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/pint.git",
-                "reference": "8169513746e1bac70c85d6ea1524d9225d4886f0"
+                "reference": "53072e8ea22213a7ed168a8a15b96fbb8b82d44b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pint/zipball/8169513746e1bac70c85d6ea1524d9225d4886f0",
-                "reference": "8169513746e1bac70c85d6ea1524d9225d4886f0",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/53072e8ea22213a7ed168a8a15b96fbb8b82d44b",
+                "reference": "53072e8ea22213a7ed168a8a15b96fbb8b82d44b",
                 "shasum": ""
             },
             "require": {
@@ -18555,7 +18554,7 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
-            "time": "2024-12-30T16:20:10+00:00"
+            "time": "2025-01-14T16:20:53+00:00"
         },
         {
             "name": "laravel/tinker",
