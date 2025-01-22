@@ -6,24 +6,6 @@
 
 @config 'tailwind.config.js';
 
-.compact-timeline .fi-timeline-item-heading {
-    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col !important;
-}
-.compact-timeline .fi-timeline-section-content {
-    @apply shadow-none p-0 !important;
-}
-.compact-timeline {
-    @apply shadow-none ring-0 !important;
-}
-
-.field-type .choices__list--single {
-    @apply !w-full;
-}
-
-.field-type .choices__list--single .tip, .field-type .choices__list--single .field-desc {
-    @apply !hidden;
-}
-
 :root {
     --c-50: var(--primary-50);
     --c-100: var(--primary-100);
@@ -58,6 +40,24 @@
     border: solid 1px red;
 }
 
+.compact-timeline .fi-timeline-item-heading {
+    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col !important;
+}
+.compact-timeline .fi-timeline-section-content {
+    @apply shadow-none p-0 !important;
+}
+.compact-timeline {
+    @apply shadow-none ring-0 !important;
+}
+
+.field-type .choices__list--single {
+    @apply !w-full;
+}
+
+.field-type .choices__list--single .tip, .field-type .choices__list--single .field-desc {
+    @apply !hidden;
+}
+
 .fi-sidebar-group-paid {
     @apply !bg-primary-50/30 dark:!bg-primary-900;
     @apply dark:!text-gray-100;
@@ -70,8 +70,6 @@
 .fi-sidebar {
     @apply shadow-md bg-white dark:bg-gray-950 !important;
 }
-
-
 
 .custom-auth-empty-panel {
     background-image: var(--filament-backgrounds-image);

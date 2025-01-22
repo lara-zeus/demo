@@ -140,12 +140,12 @@
         },
         {
             "name": "archilex/filament-filter-sets",
-            "version": "3.7.36",
+            "version": "3.7.37",
             "dist": {
                 "type": "zip",
-                "url": "https://filament-filter-sets.composer.sh/download/9e00a8b5-881a-4917-a48f-eeded40cc158/advanced-tables-for-filament-3.7.36.zip",
-                "reference": "d19e95e059ddf4545e53501b9a45da08d9af1b68",
-                "shasum": "0ff475dc731a54df638a3ad7b5301836c2eaf3ae"
+                "url": "https://filament-filter-sets.composer.sh/download/9e03c4f6-abad-48b4-b383-e836d7609514/advanced-tables-for-filament-3.7.37.zip",
+                "reference": "94e159cc9e20e8f32db1c7c77be53302e15c7c5d",
+                "shasum": "388721dd916d45ed7d46aac6cb0a712a14c2204c"
             },
             "require": {
                 "archilex/filament-toggle-icon-column": "^3.0",
@@ -221,7 +221,7 @@
                 "tables",
                 "views"
             ],
-            "time": "2025-01-19T03:17:57+00:00"
+            "time": "2025-01-20T16:24:27+00:00"
         },
         {
             "name": "archilex/filament-toggle-icon-column",
@@ -5460,16 +5460,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.3.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "be155e11613fa618aa18aee438955588d1092a47"
+                "reference": "e5ebe17f5a30a7840d059206447adfe0db60d15f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/be155e11613fa618aa18aee438955588d1092a47",
-                "reference": "be155e11613fa618aa18aee438955588d1092a47",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/e5ebe17f5a30a7840d059206447adfe0db60d15f",
+                "reference": "e5ebe17f5a30a7840d059206447adfe0db60d15f",
                 "shasum": ""
             },
             "require": {
@@ -5506,9 +5506,9 @@
             ],
             "support": {
                 "issues": "https://github.com/JayBizzle/Crawler-Detect/issues",
-                "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.3.0"
+                "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.3.1"
             },
-            "time": "2024-11-25T19:38:36+00:00"
+            "time": "2025-01-20T19:31:14+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
@@ -6083,16 +6083,16 @@
         },
         {
             "name": "lara-zeus/accordion",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/accordion.git",
-                "reference": "e545a3c061499773da94507bad5db4c305d3c30b"
+                "reference": "b0e4ce01308d83c537411da3082d698d44296f36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/accordion/zipball/e545a3c061499773da94507bad5db4c305d3c30b",
-                "reference": "e545a3c061499773da94507bad5db4c305d3c30b",
+                "url": "https://api.github.com/repos/lara-zeus/accordion/zipball/b0e4ce01308d83c537411da3082d698d44296f36",
+                "reference": "b0e4ce01308d83c537411da3082d698d44296f36",
                 "shasum": ""
             },
             "require": {
@@ -6162,7 +6162,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-13T19:17:00+00:00"
+            "time": "2025-01-22T08:52:03+00:00"
         },
         {
             "name": "lara-zeus/akin",
@@ -6319,16 +6319,16 @@
         },
         {
             "name": "lara-zeus/athena",
-            "version": "1.1.13",
+            "version": "1.1.14",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/athena.git",
-                "reference": "5113e59dbaf024d155c3f43098e2ecc8dad85690"
+                "reference": "6498168236c6a6886a6cd3c0261cf90b39195ed7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/5113e59dbaf024d155c3f43098e2ecc8dad85690",
-                "reference": "5113e59dbaf024d155c3f43098e2ecc8dad85690",
+                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/6498168236c6a6886a6cd3c0261cf90b39195ed7",
+                "reference": "6498168236c6a6886a6cd3c0261cf90b39195ed7",
                 "shasum": ""
             },
             "require": {
@@ -6407,7 +6407,7 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/athena",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/athena/tree/1.1.13",
+                "source": "https://github.com/lara-zeus/athena/tree/1.1.14",
                 "issues": "https://github.com/lara-zeus/athena/issues"
             },
             "funding": [
@@ -6416,7 +6416,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2025-01-19T20:09:44+00:00"
+            "time": "2025-01-21T12:18:06+00:00"
         },
         {
             "name": "lara-zeus/bolt",
@@ -8094,16 +8094,16 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v3.1.47",
+            "version": "v3.1.48",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "629396f7844d89b00c984a8e6c05ef4b3471ad86"
+                "reference": "6c278b0fba9c9fa3a025200fb3f145988c4e2c13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/629396f7844d89b00c984a8e6c05ef4b3471ad86",
-                "reference": "629396f7844d89b00c984a8e6c05ef4b3471ad86",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/6c278b0fba9c9fa3a025200fb3f145988c4e2c13",
+                "reference": "6c278b0fba9c9fa3a025200fb3f145988c4e2c13",
                 "shasum": ""
             },
             "require": {
@@ -8193,7 +8193,7 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/thunder",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/thunder/tree/v3.1.47",
+                "source": "https://github.com/lara-zeus/thunder/tree/v3.1.48",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -8202,7 +8202,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-10-07T10:39:47+00:00"
+            "time": "2025-01-21T12:15:23+00:00"
         },
         {
             "name": "lara-zeus/tiles",
@@ -8384,16 +8384,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.38.2",
+            "version": "v11.39.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "9d290aa90fcad44048bedca5219d2b872e98772a"
+                "reference": "996c96955f78e8a2b26a24c490a1721cfb14574f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/9d290aa90fcad44048bedca5219d2b872e98772a",
-                "reference": "9d290aa90fcad44048bedca5219d2b872e98772a",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/996c96955f78e8a2b26a24c490a1721cfb14574f",
+                "reference": "996c96955f78e8a2b26a24c490a1721cfb14574f",
                 "shasum": ""
             },
             "require": {
@@ -8594,7 +8594,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-01-15T00:06:46+00:00"
+            "time": "2025-01-21T15:02:43+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -13646,16 +13646,16 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.18.0",
+            "version": "1.18.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "8332205b90d17164913244f4a8e13ab7e6761d29"
+                "reference": "ba67eee37d86ed775dab7dad58a7cbaf9a6cfe78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/8332205b90d17164913244f4a8e13ab7e6761d29",
-                "reference": "8332205b90d17164913244f4a8e13ab7e6761d29",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/ba67eee37d86ed775dab7dad58a7cbaf9a6cfe78",
+                "reference": "ba67eee37d86ed775dab7dad58a7cbaf9a6cfe78",
                 "shasum": ""
             },
             "require": {
@@ -13694,7 +13694,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.18.0"
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.18.3"
             },
             "funding": [
                 {
@@ -13702,7 +13702,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-30T13:13:39+00:00"
+            "time": "2025-01-22T08:51:18+00:00"
         },
         {
             "name": "spatie/laravel-permission",
@@ -19311,16 +19311,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.12.15",
+            "version": "1.12.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "c91d4e8bc056f46cf653656e6f71004b254574d1"
+                "reference": "e0bb5cb78545aae631220735aa706eac633a6be9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c91d4e8bc056f46cf653656e6f71004b254574d1",
-                "reference": "c91d4e8bc056f46cf653656e6f71004b254574d1",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e0bb5cb78545aae631220735aa706eac633a6be9",
+                "reference": "e0bb5cb78545aae631220735aa706eac633a6be9",
                 "shasum": ""
             },
             "require": {
@@ -19365,7 +19365,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-05T16:40:22+00:00"
+            "time": "2025-01-21T14:50:05+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
