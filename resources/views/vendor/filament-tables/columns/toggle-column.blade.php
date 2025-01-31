@@ -31,9 +31,10 @@
             role="switch"
             aria-checked="false"
             x-bind:aria-checked="state.toString()"
+            wire:loading.attr="disabled"
             @if (! $isDisabled)
-                x-on:click.stop="
-                    if (isLoading) {
+                x-on:click.stop.prevent="
+                    if (isLoading || $el.hasAttribute('disabled')) {
                         return
                     }
 

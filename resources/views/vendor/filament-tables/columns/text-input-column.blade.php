@@ -87,7 +87,7 @@
                     theme: $store.theme,
                 }
         "
-        x-on:click.stop=""
+        x-on:click.stop.prevent=""
     >
         {{-- format-ignore-start --}}
         <x-filament::input

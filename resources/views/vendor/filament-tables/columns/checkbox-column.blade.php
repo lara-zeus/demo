@@ -15,6 +15,7 @@
 
         state: @js($state),
     }"
+    x-on:click.stop.prevent=""
     x-init="
         () => {
             Livewire.hook('commit', ({ component, commit, succeed, fail, respond }) => {
