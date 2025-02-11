@@ -44,6 +44,7 @@
         "lara-zeus/hermes": "^2.0",
         "lara-zeus/inline-chart": "^1.0",
         "lara-zeus/list-group": "^1.0",
+        "lara-zeus/mark": "dev-main",
         "lara-zeus/matrix-choice": "^3.2",
         "lara-zeus/popover": "^1.0",
         "lara-zeus/qr": "^1.0",
@@ -158,6 +159,10 @@
         {
             "type": "github",
             "url": "git@github.com:lara-zeus/bolt-pro.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:lara-zeus/mark.git"
         }
     ]
 }

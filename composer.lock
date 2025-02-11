@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3edd1b1a27de0b0b967aae2959a4e646",
+    "content-hash": "5d467e6dcd9d7db69ebd03111913056c",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -7588,6 +7588,109 @@
                 }
             ],
             "time": "2024-06-20T09:27:06+00:00"
+        },
+        {
+            "name": "lara-zeus/mark",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:lara-zeus/mark.git",
+                "reference": "9aa67079a80fdd5b445590f2a98e3e9c5d1fd1e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/mark/zipball/9aa67079a80fdd5b445590f2a98e3e9c5d1fd1e9",
+                "reference": "9aa67079a80fdd5b445590f2a98e3e9c5d1fd1e9",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.2",
+                "php": "^8.2",
+                "spatie/laravel-package-tools": "^1.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^8.0",
+                "nunomaduro/larastan": "^3.0",
+                "orchestra/testbench": "^9.0",
+                "pestphp/pest": "^3.0",
+                "pestphp/pest-plugin-arch": "^3.0",
+                "pestphp/pest-plugin-laravel": "^3.0",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^2.0",
+                "phpstan/phpstan-phpunit": "^2.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Mark\\MarkServiceProvider"
+                    ],
+                    "aliases": {
+                        "Mark": "LaraZeus\\Mark\\Mark"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Mark\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "LaraZeus\\Mark\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "lint": [
+                    "@format",
+                    "@analyse"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abdulmajeed-Jamaan",
+                    "email": "abdulmajeed.jamaan@outlook.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Ready to use application marks feature.",
+            "homepage": "https://github.com/lara-zeus/mark",
+            "keywords": [
+                "lara-zeus",
+                "laravel",
+                "mark"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/mark/issues",
+                "source": "https://github.com/lara-zeus/mark"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/lara-zeus"
+                }
+            ],
+            "time": "2025-02-06T18:25:36+00:00"
         },
         {
             "name": "lara-zeus/matrix-choice",
