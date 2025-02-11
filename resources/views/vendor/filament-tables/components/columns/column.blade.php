@@ -72,7 +72,7 @@
 
         <button
             type="button"
-            wire:click="{{ $wireClickAction }}"
+            wire:click.stop.prevent="{{ $wireClickAction }}"
             wire:loading.attr="disabled"
             wire:target="{{ $wireClickAction }}"
             class="{{ $columnClasses }}"

@@ -81,16 +81,22 @@
             </script>
         @else
             <script>
-                const theme = localStorage.getItem('theme') ?? @js(filament()->getDefaultThemeMode()->value)
+                const loadDarkMode = () => {
+                    var theme = localStorage.getItem('theme') ?? @js(filament()->getDefaultThemeMode()->value)
 
-                if (
-                    theme === 'dark' ||
-                    (theme === 'system' &&
-                        window.matchMedia('(prefers-color-scheme: dark)')
-                            .matches)
-                ) {
-                    document.documentElement.classList.add('dark')
+                    if (
+                        theme === 'dark' ||
+                        (theme === 'system' &&
+                            window.matchMedia('(prefers-color-scheme: dark)')
+                                .matches)
+                    ) {
+                        document.documentElement.classList.add('dark')
+                    }
                 }
+
+                loadDarkMode()
+
+                document.addEventListener('livewire:navigated', loadDarkMode)
             </script>
         @endif
 
@@ -121,6 +127,12 @@
                 window.Echo = new window.EchoFactory(@js(config('filament.broadcasting.echo')))
 
                 window.dispatchEvent(new CustomEvent('EchoLoaded'))
+            </script>
+        @endif
+
+        @if (filament()->hasDarkMode() && (! filament()->hasDarkModeForced()))
+            <script>
+                loadDarkMode()
             </script>
         @endif
 
