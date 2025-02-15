@@ -2,9 +2,9 @@
     <x-banner/>
 
     <div class="absolute flex justify-start items-center gap-4 top-16 ltr:right-4 rtl:left-4">
-        <x-lang-switcher/>
-        <x-dark-mode/>
-        <x-theme-switcher/>
+        {{--<x-lang-switcher/>--}}
+        {{--<x-dark-mode/>--}}
+        {{--<x-theme-switcher/>--}}
         <a href="https://github.com/lara-zeus" class="font-semibold leading-6" target="_blank" rel="noreferrer">
             @svg('tabler-brand-github-filled','h-8 w-8 text-secondary-500 hover:text-primary-500 transition-all ease-in-out duration-300')
         </a>
