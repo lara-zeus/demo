@@ -180,7 +180,7 @@
                 </x-filament::dropdown.list>
             </x-filament::dropdown>
 
-            <x-theme-switcher/>
+            {{--<x-theme-switcher/>--}}
             <x-lang-switcher/>
             <x-dark-mode/>
         </div>

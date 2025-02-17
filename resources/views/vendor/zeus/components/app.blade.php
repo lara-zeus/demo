@@ -14,10 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=KoHo:ital,wght@0,200;0,300;0,500;0,700;1,200;1,300;1,600;1,700&display=swap" rel="stylesheet">
 
-    @livewireStyles
     @filamentStyles
     @stack('styles')
-
     @vite('resources/css/app.css')
 
     <style>
@@ -57,13 +55,14 @@
     {{ $slot }}
 </div>
 
-
 @php
     $urls = [
         'wind'=>'lara-zeus/wind',
         'bolt'=>'lara-zeus/bolt',
         'sky'=>'lara-zeus/sky',
         'thunder'=>'lara-zeus/thunder',
+        'athena'=>'lara-zeus/athena',
+        'hermes'=>'lara-zeus/hermes',
         'dynamic-dashboard'=>'lara-zeus/dynamic-dashboard',
     ];
     $packageName = (isset($urls[explode('/',request()->path())[0]])) ? $urls[explode('/',request()->path())[0]] : null;
@@ -91,7 +90,6 @@
     </div>
 </footer>
 
-@livewireScripts
 @filamentScripts
 @livewire('notifications')
 @stack('scripts')

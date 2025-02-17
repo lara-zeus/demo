@@ -36,8 +36,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Almarai:wght@300;400;700;800&family=Reggae+One&display=swap" rel="stylesheet">
 
-    @livewireStyles
     @filamentStyles
+
     <style>
         [x-cloak=""], [x-cloak="x-cloak"], [x-cloak="1"] { display: none !important; }
         @media (max-width: 1023px) { [x-cloak="-lg"] { display: none !important; } }
@@ -47,12 +47,13 @@
             .bord {border: solid 1px crimson}
         @endif
     </style>
-    @if(session('current_theme') === 'daisy')
+    {{--@if(session('current_theme') === 'daisy')
         @vite(['resources/css/daisy.css'])
     @else
         @vite(['resources/css/app.css'])
-    @endif
-    <link rel="stylesheet" href="{{ asset('css/flag-icons.css') }}">
+    @endif--}}
+
+    @vite(['resources/css/app.css'])
 </head>
 
 <body class="@if(session('current_theme') === 'zeus') bg-[#F7FBF8] @else bg-gray-50 @endif dark:bg-gray-900 @if(app()->isLocal()) debug-screens @endif">
@@ -63,10 +64,10 @@
     </div>
 </div>
 
-@livewireScripts
 @filamentScripts
+@livewire('notifications')
 @stack('scripts')
-@stillStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
+
 <script>
     const theme = localStorage.getItem('theme')
 
@@ -74,6 +75,8 @@
         document.documentElement.classList.add('dark')
     }
 </script>
+
+@stillStats(f6ce3271-8bf4-4b41-bea5-07d10f9ac5c9)
 
 </body>
 </html>
