@@ -4,7 +4,7 @@ namespace App\Models;
 
 use LaraZeus\Mark\Models\Mark;
 
-class Like extends Mark
+class Train extends Mark
 {
     //
 }

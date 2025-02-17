@@ -20,7 +20,7 @@ return new class extends Migration
             $table->foreignId('from_office_id')->constrained(config('zeus-thunder.table-prefix') . 'offices');
             $table->foreignId('user_id')->constrained('users');
             $table->string('action');
-            $table->string('operation', 50)->nullable(); //todo for what?
+            $table->string('operation', 50)->nullable(); // todo for what?
             $table->text('notes')->nullable();
             $table->timestamps();
         });

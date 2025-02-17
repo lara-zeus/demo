@@ -7,7 +7,7 @@ use App\Models\Like;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
-use \LaraZeus\Mark\Forms\Components\Mark as MarkForm;
+use LaraZeus\Mark\Forms\Components\Mark as MarkForm;
 
 class Mark extends Page
 {
@@ -19,16 +19,15 @@ class Mark extends Page
 
     protected static ?int $navigationSort = 4;
 
-    public array $data;
+    public ?array $data = [];
 
-    public static function getNavigationLabel(): string
-    {
-        return 'Mark';
-    }
+    protected static ?string $navigationLabel = 'Mark';
 
-    public function getTitle(): string
+    protected static ?string $title = 'Mark';
+
+    public function mount(): void
     {
-        return 'Mark';
+        $this->form->fill();
     }
 
     public function form(Form $form): Form
@@ -40,10 +39,11 @@ class Mark extends Page
                 MarkForm::make(Like::class)
                     ->label('Like')
                     ->isLike(),
-                MarkForm::make(Like::class)
+                MarkForm::make('user_fav')
+                    ->helperText('user fav')
                     ->label('Bookmark')
                     ->isBookMark(),
-                MarkForm::make(Like::class)
+                MarkForm::make('user_rate')
                     ->label('Rating')
                     ->isRating(),
             ]);
@@ -51,6 +51,8 @@ class Mark extends Page
 
     public function create(): void
     {
+        abort_if(app()->isProduction(), 404);
+
         dd($this->form->getState());
     }
 }

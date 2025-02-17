@@ -63,13 +63,13 @@ class UserResource extends Resource
                     // main options
                     ->trigger('click')
                     ->placement('right')
-                    //->offset(10)
+                    // ->offset(10)
                     ->popOverMaxWidth('none')
                     ->icon('heroicon-o-chevron-right')
-                    //->content(fn ($record) => view('filament.test.user-card', ['record' => $record]))
-                    ->content(Qr::render(data: 'dataOrUrl')), //, downloadable:false
+                    // ->content(fn ($record) => view('filament.test.user-card', ['record' => $record]))
+                    ->content(Qr::render(data: 'dataOrUrl')), // , downloadable:false
 
-                //TextEntry::make('name'),
+                // TextEntry::make('name'),
                 TextEntry::make('email'),
             ]),
         ]);

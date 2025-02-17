@@ -20,12 +20,11 @@ class Accordion extends Page
 
     protected static ?int $navigationSort = 4;
 
-    public array $data;
+    public ?array $data = [];
 
-    public static function getNavigationLabel(): string
-    {
-        return 'Accordion';
-    }
+    protected static ?string $navigationLabel = 'Accordion';
+
+    protected static ?string $title = 'Accordion';
 
     public function infolist(Infolist $infolist): Infolist
     {
@@ -72,11 +71,6 @@ class Accordion extends Page
                             ]),
                     ]),
             ]);
-    }
-
-    public function getTitle(): string
-    {
-        return 'Accordion';
     }
 
     public function form(Form $form): Form

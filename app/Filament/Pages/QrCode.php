@@ -19,23 +19,17 @@ class QrCode extends Page
 
     protected static ?int $navigationSort = 2;
 
-    public ?array $data;
+    public ?array $data = [];
+
+    protected static ?string $navigationLabel = 'QR maker';
+
+    protected static ?string $title = 'QR maker';
 
     public string $qrcode;
 
     public function mount(): void
     {
         $this->form->fill();
-    }
-
-    public static function getNavigationLabel(): string
-    {
-        return 'QR maker';
-    }
-
-    public function getTitle(): string
-    {
-        return 'QR maker';
     }
 
     public function form(Form $form): Form

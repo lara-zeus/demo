@@ -55,12 +55,12 @@ class AppServiceProvider extends ServiceProvider
 
         });
 
-        //$this->hooksRenderer();
+        // $this->hooksRenderer();
 
         Filament::serving(function () {
             FilamentAsset::register([
                 Css::make('flags', asset('css/flag-icons.css')),
-                //Css::make('filament-stylesheet', asset('css/filament-zeus.css')),
+                // Css::make('filament-stylesheet', asset('css/filament-zeus.css')),
             ]);
         });
 
@@ -102,9 +102,9 @@ class AppServiceProvider extends ServiceProvider
             'zeus-form.before',
             'zeus-form.after',
             'zeus-form-section.before',
-            //'zeus-form-section.after',
-            //'zeus-form-field.before',
-            //'zeus-form-field.after',
+            // 'zeus-form-section.after',
+            // 'zeus-form-field.before',
+            // 'zeus-form-field.after',
         ];
         foreach ($hooks as $key => $hook) {
             FilamentView::registerRenderHook(

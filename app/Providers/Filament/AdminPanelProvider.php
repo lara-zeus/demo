@@ -150,7 +150,7 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()->label('Rhea')
                     ->icon('tabler-bow'),
             ])
-            //->unsavedChangesAlerts()
+            // ->unsavedChangesAlerts()
 
             // hermes
             ->renderHook(
@@ -221,7 +221,7 @@ class AdminPanelProvider extends PanelProvider
                     CollectionResource::class,
                 ],
             )
-            //db notice
+            // db notice
             /*->renderHook(
                 'panels::content.start',
                 fn (): View => view('filament.hooks.db-notice'),
@@ -249,12 +249,12 @@ class AdminPanelProvider extends PanelProvider
             //
             ->pages([
                 Pages\Dashboard::class,
-                //\LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboard::class,
+                // \LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboard::class,
             ])
             ->widgets([
-                //UmamiWidgetStatsGrouped::class,
-                //UmamiWidgetTableReferrers::class,
-                //UmamiWidgetTableUrls::class,
+                // UmamiWidgetStatsGrouped::class,
+                // UmamiWidgetTableReferrers::class,
+                // UmamiWidgetTableUrls::class,
 
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
@@ -335,7 +335,7 @@ class AdminPanelProvider extends PanelProvider
                 ]),
             SpatieLaravelTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt', 'ko']),
-            //ChronosPlugin::make(),
+            // ChronosPlugin::make(),
             DeliaPlugin::make(),
             BoringAvatarPlugin::make(),
             WindPlugin::make(),

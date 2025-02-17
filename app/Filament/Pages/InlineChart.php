@@ -5,17 +5,14 @@ namespace App\Filament\Pages;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\DemoWidgets\MiniChart;
 use App\Models\User;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
 use Filament\Pages\Page;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
 
-class InlineChart extends Page implements HasForms, HasTable
+class InlineChart extends Page implements HasTable
 {
-    use InteractsWithForms;
     use InteractsWithTable;
 
     protected static ?string $cluster = ComponentsDemo::class;
@@ -26,15 +23,9 @@ class InlineChart extends Page implements HasForms, HasTable
 
     protected static ?int $navigationSort = 5;
 
-    public static function getNavigationLabel(): string
-    {
-        return 'Inline Chart';
-    }
+    protected static ?string $navigationLabel = 'Inline Chart';
 
-    public function getTitle(): string
-    {
-        return 'Inline Chart';
-    }
+    protected static ?string $title = 'Inline Chart';
 
     public function table(Table $table): Table
     {

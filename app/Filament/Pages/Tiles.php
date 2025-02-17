@@ -5,8 +5,6 @@ namespace App\Filament\Pages;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Models\User;
 use Filament\Forms\Components\Section;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
 use Filament\Infolists\Components\Section as InfolistSection;
 use Filament\Infolists\Infolist;
@@ -20,9 +18,8 @@ use LaraZeus\Tiles\Forms\Components\TileSelect;
 use LaraZeus\Tiles\Infolists\Components\TileEntry;
 use LaraZeus\Tiles\Tables\Columns\TileColumn;
 
-class Tiles extends Page implements HasForms, HasTable
+class Tiles extends Page implements HasTable
 {
-    use InteractsWithForms;
     use InteractsWithTable;
 
     protected static ?string $cluster = ComponentsDemo::class;
@@ -33,7 +30,11 @@ class Tiles extends Page implements HasForms, HasTable
 
     protected static ?int $navigationSort = 3;
 
-    public array $data;
+    public ?array $data = [];
+
+    protected static ?string $navigationLabel = 'Tiles';
+
+    protected static ?string $title = 'Tiles';
 
     public User $user;
 
@@ -41,16 +42,6 @@ class Tiles extends Page implements HasForms, HasTable
     {
         $this->user = User::first();
         $this->form->fill();
-    }
-
-    public static function getNavigationLabel(): string
-    {
-        return 'Tiles';
-    }
-
-    public function getTitle(): string
-    {
-        return 'Tiles';
     }
 
     public function table(Table $table): Table

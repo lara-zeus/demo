@@ -17,8 +17,6 @@ class Embed extends Page
 
     protected static ?int $navigationSort = 7;
 
-    public array $data;
-
     public string $qrcode;
 
     public function openAction(): Action
@@ -36,13 +34,9 @@ class Embed extends Page
             ->action(fn () => dd('ya we heard that issue a million time'));
     }
 
-    public static function getNavigationLabel(): string
-    {
-        return 'Embed Bolt';
-    }
+    public ?array $data = [];
 
-    public function getTitle(): string
-    {
-        return 'Embed Bolt with Thunder';
-    }
+    protected static ?string $navigationLabel = 'Embed Bolt';
+
+    protected static ?string $title = 'Embed Bolt with Thunder';
 }

@@ -22,12 +22,11 @@ class ListGroup extends Page
 
     protected static ?int $navigationSort = 8;
 
-    public ?array $data;
+    public ?array $data = [];
 
-    public static function getNavigationLabel(): string
-    {
-        return 'List Group';
-    }
+    protected static ?string $navigationLabel = 'List Group';
+
+    protected static ?string $title = 'List Group';
 
     public function infolist(Infolist $infolist): Infolist
     {
@@ -107,11 +106,6 @@ class ListGroup extends Page
                             ])*/
                     ]),
             ]);
-    }
-
-    public function getTitle(): string
-    {
-        return 'Accordion';
     }
 
     public function form(Form $form): Form

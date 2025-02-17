@@ -19,19 +19,13 @@ class Matrix extends Page
 
     protected static ?int $navigationSort = 1;
 
-    public array $data;
+    public ?array $data = [];
 
-    public string $qrcode;
+    protected static ?string $navigationLabel = 'Matrix Grid';
 
-    public static function getNavigationLabel(): string
-    {
-        return 'Matrix Grid';
-    }
+    protected static ?string $title = 'Matrix Grid';
 
-    public function getTitle(): string
-    {
-        return 'Matrix Grid';
-    }
+    public ?string $qrcode;
 
     protected function getHeaderActions(): array
     {
@@ -48,7 +42,7 @@ class Matrix extends Page
                 Section::make()
                     ->schema([
                         MatrixAlias::make('options')
-                            //->disabled()
+                            // ->disabled()
                             ->disableOptionWhen(fn (string $value): bool => $value === 'm' || $value === 'p' || $value === 'users')
                             ->rowSelectRequired(false)
                             ->helperText('you can disable any options, like in the users row, the Manage and Approve are disabled')

@@ -4,7 +4,7 @@ return [
     'themes' => [
         'zeus' => 'zeus::components.app',
         'daisy' => 'zeus::themes.daisy.layouts.app',
-        //'breeze' => 'zeus::themes.breeze.layouts.app',
+        // 'breeze' => 'zeus::themes.breeze.layouts.app',
         'another-portfolio' => 'zeus::themes.another-portfolio.layouts.app',
     ],
 
