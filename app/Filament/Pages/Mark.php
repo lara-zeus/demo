@@ -3,7 +3,6 @@
 namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
-use App\Models\Like;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
@@ -36,7 +35,7 @@ class Mark extends Page
             ->statePath('data')
             ->schema([
                 TextInput::make('name'),
-                MarkForm::make(Like::class)
+                MarkForm::make('likes')
                     ->label('Like')
                     ->isLike(),
                 MarkForm::make('user_fav')
