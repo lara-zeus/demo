@@ -4,8 +4,12 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Models\User;
+use Filament\Forms\Components\Actions\Action;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
+use Filament\Forms\Form;
+use Filament\Forms\Get;
 use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
 use Filament\Tables\Concerns\InteractsWithTable;
@@ -13,10 +17,10 @@ use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
 use LaraZeus\Popover\Infolists\PopoverEntry;
 use LaraZeus\Popover\Tables\PopoverColumn;
+use LaraZeus\Quantity\Components\Quantity as QuantityAlias;
 
-class Popover extends Page implements HasForms, HasTable
+class Popover extends Page implements HasTable
 {
-    use InteractsWithForms;
     use InteractsWithTable;
 
     protected static ?string $cluster = ComponentsDemo::class;
@@ -63,6 +67,28 @@ class Popover extends Page implements HasForms, HasTable
                     ->popOverMaxWidth('none')
                     ->icon('heroicon-o-chevron-right')
                     ->content(fn ($record) => view('filament.test.user-card', ['record' => $record, 'type' => 'email'])),
+            ]);
+    }
+
+    public function mount(): void
+    {
+        $this->form->fill([
+            'name'=>'Zeus'
+        ]);
+    }
+
+    public function form(Form $form): Form
+    {
+        return $form
+            ->statePath('data')
+            ->schema([
+                Section::make()
+                    ->schema([
+                        \LaraZeus\Popover\Form\PopoverForm::make('name')
+                            ->trigger('hover')
+                            ->icon('tabler-chart-donut-4')
+                            ->content('Adam'),
+                    ]),
             ]);
     }
 
