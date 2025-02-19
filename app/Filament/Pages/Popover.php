@@ -15,6 +15,7 @@ use Filament\Pages\Page;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
+use LaraZeus\Popover\Form\PopoverForm;
 use LaraZeus\Popover\Infolists\PopoverEntry;
 use LaraZeus\Popover\Tables\PopoverColumn;
 use LaraZeus\Quantity\Components\Quantity as QuantityAlias;
@@ -84,7 +85,7 @@ class Popover extends Page implements HasTable
             ->schema([
                 Section::make()
                     ->schema([
-                        \LaraZeus\Popover\Form\PopoverForm::make('name')
+                        PopoverForm::make('name')
                             ->trigger('hover')
                             ->icon('tabler-chart-donut-4')
                             ->content('Adam'),
