@@ -2085,30 +2085,30 @@
         },
         {
             "name": "codewithdennis/filament-select-tree",
-            "version": "v3.1.45",
+            "version": "v3.1.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeWithDennis/filament-select-tree.git",
-                "reference": "2e69bbc2c300bd5494add6abe37bc67233b546da"
+                "reference": "8eb942de97a92836b8d983a00f756ad8ad14229d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/2e69bbc2c300bd5494add6abe37bc67233b546da",
-                "reference": "2e69bbc2c300bd5494add6abe37bc67233b546da",
+                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/8eb942de97a92836b8d983a00f756ad8ad14229d",
+                "reference": "8eb942de97a92836b8d983a00f756ad8ad14229d",
                 "shasum": ""
             },
             "require": {
                 "filament/forms": "^3.0",
-                "illuminate/contracts": "^10.0|^11.0",
+                "illuminate/contracts": "^10.0|^11.0|^12.0",
                 "php": "^8.1",
                 "spatie/laravel-package-tools": "^1.15.0"
             },
             "require-dev": {
                 "nunomaduro/collision": "^7.9",
-                "orchestra/testbench": "^8.0|^9.0",
-                "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-arch": "^2.0",
-                "pestphp/pest-plugin-laravel": "^2.0"
+                "orchestra/testbench": "^8.0|^9.0|^10.0",
+                "pestphp/pest": "^2.0|^3.7",
+                "pestphp/pest-plugin-arch": "^2.0|^3.0",
+                "pestphp/pest-plugin-laravel": "^2.0|^3.1"
             },
             "type": "library",
             "extra": {
@@ -2152,7 +2152,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-31T19:27:10+00:00"
+            "time": "2025-02-23T19:37:51+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -3826,16 +3826,16 @@
         },
         {
             "name": "filament/spatie-laravel-translatable-plugin",
-            "version": "v3.3.1",
+            "version": "v3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/translatable.git",
-                "reference": "a6777c2e691e1a638c01d60e2da3a2a852d4f24a"
+                "reference": "2f643cd9ab1fe5699070fb1e4cbd79537f62f631"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/translatable/zipball/a6777c2e691e1a638c01d60e2da3a2a852d4f24a",
-                "reference": "a6777c2e691e1a638c01d60e2da3a2a852d4f24a",
+                "url": "https://api.github.com/repos/lara-zeus/translatable/zipball/2f643cd9ab1fe5699070fb1e4cbd79537f62f631",
+                "reference": "2f643cd9ab1fe5699070fb1e4cbd79537f62f631",
                 "shasum": ""
             },
             "require": {
@@ -3881,7 +3881,7 @@
                     "url": "https://github.com/mohamedsabil83"
                 }
             ],
-            "time": "2024-12-25T19:08:42+00:00"
+            "time": "2025-02-24T13:37:13+00:00"
         },
         {
             "name": "filament/support",
@@ -5226,16 +5226,16 @@
         },
         {
             "name": "j0k3r/php-readability",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/j0k3r/php-readability.git",
-                "reference": "f825dcf55a9af91561b71efb96d14f43f9d37bf5"
+                "reference": "4258559b8a61d832850c55aabbaa70e997570933"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/j0k3r/php-readability/zipball/f825dcf55a9af91561b71efb96d14f43f9d37bf5",
-                "reference": "f825dcf55a9af91561b71efb96d14f43f9d37bf5",
+                "url": "https://api.github.com/repos/j0k3r/php-readability/zipball/4258559b8a61d832850c55aabbaa70e997570933",
+                "reference": "4258559b8a61d832850c55aabbaa70e997570933",
                 "shasum": ""
             },
             "require": {
@@ -5247,10 +5247,10 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.0",
                 "monolog/monolog": "^1.24|^2.1",
-                "phpstan/phpstan": "^1.3",
-                "phpstan/phpstan-phpunit": "^1.0",
-                "rector/rector": "^0.15.0",
-                "symfony/phpunit-bridge": "^4.4|^5.3|^6.0"
+                "phpstan/phpstan": "^2.0",
+                "phpstan/phpstan-phpunit": "^2.0",
+                "rector/rector": "^2.0.0",
+                "symfony/phpunit-bridge": "^4.4|^5.3|^6.0|^7.0"
             },
             "suggest": {
                 "ext-tidy": "Used to clean up given HTML and to avoid problems with bad HTML structure."
@@ -5300,7 +5300,7 @@
             ],
             "support": {
                 "issues": "https://github.com/j0k3r/php-readability/issues",
-                "source": "https://github.com/j0k3r/php-readability/tree/2.0.4"
+                "source": "https://github.com/j0k3r/php-readability/tree/2.0.5"
             },
             "funding": [
                 {
@@ -5308,7 +5308,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-11T06:56:35+00:00"
+            "time": "2025-02-24T08:50:46+00:00"
         },
         {
             "name": "jaocero/activity-timeline",
@@ -6420,16 +6420,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.72",
+            "version": "v3.0.73",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "13566e8aa32b56196496f1da59cfcea8518f7832"
+                "reference": "c37146cda6bef35745bc1c3042a1bb784874ba6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/13566e8aa32b56196496f1da59cfcea8518f7832",
-                "reference": "13566e8aa32b56196496f1da59cfcea8518f7832",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/c37146cda6bef35745bc1c3042a1bb784874ba6a",
+                "reference": "c37146cda6bef35745bc1c3042a1bb784874ba6a",
                 "shasum": ""
             },
             "require": {
@@ -6510,20 +6510,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-05T06:26:36+00:00"
+            "time": "2025-02-24T14:12:58+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.2.18",
+            "version": "v3.2.20",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "9a3d09f52076109464be8c6388ebd084e44275fb"
+                "reference": "e0d6f83c177852aa06115e7f263ee30305cccbac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/9a3d09f52076109464be8c6388ebd084e44275fb",
-                "reference": "9a3d09f52076109464be8c6388ebd084e44275fb",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/e0d6f83c177852aa06115e7f263ee30305cccbac",
+                "reference": "e0d6f83c177852aa06115e7f263ee30305cccbac",
                 "shasum": ""
             },
             "require": {
@@ -6606,10 +6606,10 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/bolt-pro",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/bolt-pro/tree/v3.2.18",
+                "source": "https://github.com/lara-zeus/bolt-pro/tree/v3.2.20",
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues"
             },
-            "time": "2025-02-23T12:11:49+00:00"
+            "time": "2025-02-24T14:15:13+00:00"
         },
         {
             "name": "lara-zeus/boredom",
@@ -8384,16 +8384,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.43.2",
+            "version": "v11.44.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "99d1573698abc42222f04d25fcd5b213d0eedf21"
+                "reference": "e9a33da34815ac1ed46c7e4c477a775f4592f0a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/99d1573698abc42222f04d25fcd5b213d0eedf21",
-                "reference": "99d1573698abc42222f04d25fcd5b213d0eedf21",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/e9a33da34815ac1ed46c7e4c477a775f4592f0a7",
+                "reference": "e9a33da34815ac1ed46c7e4c477a775f4592f0a7",
                 "shasum": ""
             },
             "require": {
@@ -8595,7 +8595,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-02-19T21:53:48+00:00"
+            "time": "2025-02-24T13:08:54+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -13539,16 +13539,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "11.12.6",
+            "version": "11.12.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "4357e6bd031008751123520602e6370b71b3bc21"
+                "reference": "2ca2cd098c856b931f581c02593c06f01dc32a06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/4357e6bd031008751123520602e6370b71b3bc21",
-                "reference": "4357e6bd031008751123520602e6370b71b3bc21",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/2ca2cd098c856b931f581c02593c06f01dc32a06",
+                "reference": "2ca2cd098c856b931f581c02593c06f01dc32a06",
                 "shasum": ""
             },
             "require": {
@@ -13632,7 +13632,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-medialibrary/issues",
-                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.12.6"
+                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.12.7"
             },
             "funding": [
                 {
@@ -13644,7 +13644,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-17T09:28:14+00:00"
+            "time": "2025-02-24T09:13:17+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",
@@ -17943,16 +17943,16 @@
         },
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v3.15.0",
+            "version": "v3.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "77cca4a1162d45e1fe64e7a71b4a3031656b6c86"
+                "reference": "62b222166a9505926d54fadf7663bb4a26ed9014"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/77cca4a1162d45e1fe64e7a71b4a3031656b6c86",
-                "reference": "77cca4a1162d45e1fe64e7a71b4a3031656b6c86",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/62b222166a9505926d54fadf7663bb4a26ed9014",
+                "reference": "62b222166a9505926d54fadf7663bb4a26ed9014",
                 "shasum": ""
             },
             "require": {
@@ -17962,6 +17962,9 @@
                 "php": "^8.1",
                 "php-debugbar/php-debugbar": "~2.1.1",
                 "symfony/finder": "^6|^7"
+            },
+            "conflict": {
+                "maximebf/debugbar": "*"
             },
             "require-dev": {
                 "mockery/mockery": "^1.3.3",
@@ -18012,7 +18015,7 @@
             ],
             "support": {
                 "issues": "https://github.com/barryvdh/laravel-debugbar/issues",
-                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.15.0"
+                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.15.1"
             },
             "funding": [
                 {
@@ -18024,7 +18027,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-21T15:00:44+00:00"
+            "time": "2025-02-24T10:48:28+00:00"
         },
         {
             "name": "dragon-code/contracts",
@@ -18173,16 +18176,16 @@
         },
         {
             "name": "dragon-code/support",
-            "version": "6.15.2",
+            "version": "6.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TheDragonCode/support.git",
-                "reference": "33679b6736619751a9ac8935f955f5a9f73ee996"
+                "reference": "ab9b657a307e75f6ba5b2b39e1e45207dc1a065a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TheDragonCode/support/zipball/33679b6736619751a9ac8935f955f5a9f73ee996",
-                "reference": "33679b6736619751a9ac8935f955f5a9f73ee996",
+                "url": "https://api.github.com/repos/TheDragonCode/support/zipball/ab9b657a307e75f6ba5b2b39e1e45207dc1a065a",
+                "reference": "ab9b657a307e75f6ba5b2b39e1e45207dc1a065a",
                 "shasum": ""
             },
             "require": {
@@ -18201,8 +18204,8 @@
                 "andrey-helldar/support": "*"
             },
             "require-dev": {
-                "illuminate/contracts": "^9.0 || ^10.0 || ^11.0",
-                "phpunit/phpunit": "^9.6 || ^11.0",
+                "illuminate/contracts": "^9.0 || ^10.0 || ^11.0 || ^12.0",
+                "phpunit/phpunit": "^9.6 || ^11.0 || ^12.0",
                 "symfony/var-dumper": "^6.0 || ^7.0"
             },
             "suggest": {
@@ -18264,7 +18267,7 @@
                     "type": "yoomoney"
                 }
             ],
-            "time": "2025-02-17T10:17:56+00:00"
+            "time": "2025-02-24T14:01:52+00:00"
         },
         {
             "name": "filp/whoops",
@@ -19107,16 +19110,16 @@
         },
         {
             "name": "php-debugbar/php-debugbar",
-            "version": "v2.1.5",
+            "version": "v2.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-debugbar/php-debugbar.git",
-                "reference": "3f589bbbaed53039d9699702c2908148647c27a1"
+                "reference": "16fa68da5617220594aa5e33fa9de415f94784a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-debugbar/php-debugbar/zipball/3f589bbbaed53039d9699702c2908148647c27a1",
-                "reference": "3f589bbbaed53039d9699702c2908148647c27a1",
+                "url": "https://api.github.com/repos/php-debugbar/php-debugbar/zipball/16fa68da5617220594aa5e33fa9de415f94784a0",
+                "reference": "16fa68da5617220594aa5e33fa9de415f94784a0",
                 "shasum": ""
             },
             "require": {
@@ -19171,9 +19174,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-debugbar/php-debugbar/issues",
-                "source": "https://github.com/php-debugbar/php-debugbar/tree/v2.1.5"
+                "source": "https://github.com/php-debugbar/php-debugbar/tree/v2.1.6"
             },
-            "time": "2025-02-21T13:02:05+00:00"
+            "time": "2025-02-21T17:47:03+00:00"
         },
         {
             "name": "phpmyadmin/sql-parser",
