@@ -140,12 +140,12 @@
         },
         {
             "name": "archilex/filament-filter-sets",
-            "version": "3.7.42",
+            "version": "3.7.43",
             "dist": {
                 "type": "zip",
-                "url": "https://filament-filter-sets.composer.sh/download/9e442ef8-3a99-4ee4-a6d3-26539f4f5d7c/advanced-tables-for-filament-3.7.42.zip",
-                "reference": "228731c43e02f095f16f8d681eddb0364fb10394",
-                "shasum": "4e314ab7d1366bc4fdcb43f2779cf0c55b516b1e"
+                "url": "https://filament-filter-sets.composer.sh/download/9e4a0429-3e5a-46f1-af76-26ddbd1d41b2/advanced-tables-for-filament-3.7.43.zip",
+                "reference": "0a9fdad40a123b9c75abfb5f87fccf28c8bb9853",
+                "shasum": "0d1a61c69cadf145a1479bd8f192894035c7169c"
             },
             "require": {
                 "archilex/filament-toggle-icon-column": "^3.0",
@@ -221,7 +221,7 @@
                 "tables",
                 "views"
             ],
-            "time": "2025-02-21T16:53:51+00:00"
+            "time": "2025-02-24T14:29:06+00:00"
         },
         {
             "name": "archilex/filament-toggle-icon-column",
@@ -6780,16 +6780,16 @@
         },
         {
             "name": "lara-zeus/delia",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/delia.git",
-                "reference": "df9f72f19b355c6f0c67dc965dbb792bde445e12"
+                "reference": "6d25e95ced00dd8a53ac6a0fefdb14fca9a9866d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/delia/zipball/df9f72f19b355c6f0c67dc965dbb792bde445e12",
-                "reference": "df9f72f19b355c6f0c67dc965dbb792bde445e12",
+                "url": "https://api.github.com/repos/lara-zeus/delia/zipball/6d25e95ced00dd8a53ac6a0fefdb14fca9a9866d",
+                "reference": "6d25e95ced00dd8a53ac6a0fefdb14fca9a9866d",
                 "shasum": ""
             },
             "require": {
@@ -6861,7 +6861,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-31T13:54:45+00:00"
+            "time": "2025-02-24T15:26:10+00:00"
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
@@ -11542,29 +11542,29 @@
         },
         {
             "name": "propaganistas/laravel-phone",
-            "version": "5.3.3",
+            "version": "5.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Propaganistas/Laravel-Phone.git",
-                "reference": "2172362ae5714ddc397d9df96a44b82bd125631a"
+                "reference": "a76eae715b927f8f30add4bb2228926091d3e152"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Propaganistas/Laravel-Phone/zipball/2172362ae5714ddc397d9df96a44b82bd125631a",
-                "reference": "2172362ae5714ddc397d9df96a44b82bd125631a",
+                "url": "https://api.github.com/repos/Propaganistas/Laravel-Phone/zipball/a76eae715b927f8f30add4bb2228926091d3e152",
+                "reference": "a76eae715b927f8f30add4bb2228926091d3e152",
                 "shasum": ""
             },
             "require": {
                 "giggsey/libphonenumber-for-php-lite": "^8.13.35",
-                "illuminate/contracts": "^10.0|^11.0",
-                "illuminate/support": "^10.0|^11.0",
-                "illuminate/validation": "^10.0|^11.0",
+                "illuminate/contracts": "^10.0|^11.0|^12.0",
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "illuminate/validation": "^10.0|^11.0|^12.0",
                 "php": "^8.1"
             },
             "require-dev": {
                 "laravel/pint": "^1.14",
                 "orchestra/testbench": "*",
-                "phpunit/phpunit": "^10.5"
+                "phpunit/phpunit": "^10.5|^11.5.3"
             },
             "type": "library",
             "extra": {
@@ -11601,7 +11601,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Propaganistas/Laravel-Phone/issues",
-                "source": "https://github.com/Propaganistas/Laravel-Phone/tree/5.3.3"
+                "source": "https://github.com/Propaganistas/Laravel-Phone/tree/5.3.4"
             },
             "funding": [
                 {
@@ -11609,7 +11609,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-27T11:45:47+00:00"
+            "time": "2025-02-24T15:09:06+00:00"
         },
         {
             "name": "psr/cache",
