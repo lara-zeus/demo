@@ -90,6 +90,7 @@
     </div>
 </footer>
 
+@livewireScripts
 @filamentScripts
 @livewire('notifications')
 @stack('scripts')
