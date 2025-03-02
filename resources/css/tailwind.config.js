@@ -16,6 +16,8 @@ module.exports = {
         './vendor/lara-zeus/wind/src/Filament/Resources/LetterResource.php',
         './vendor/lara-zeus/wind/src/Livewire/ContactsForm.php',
 
+        './vendor/lara-zeus/replies/resources/views/**/*.blade.php',
+
         './vendor/lara-zeus/sky/resources/views/**/*.blade.php',
         './vendor/lara-zeus/sky/src/Models/PostStatus.php',
 
