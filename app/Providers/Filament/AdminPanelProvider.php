@@ -61,7 +61,6 @@ use LaraZeus\Hermes\Filament\Resources\MenuItemLabelsResource;
 use LaraZeus\Hermes\Filament\Resources\MenuResource;
 use LaraZeus\Hermes\Filament\Resources\MenuSectionResource;
 use LaraZeus\Hermes\HermesPlugin;
-use LaraZeus\Rhea\RheaPlugin;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\Thunder\Extensions\Thunder;
 use LaraZeus\Thunder\Filament\Resources\OfficeResource;
@@ -147,8 +146,8 @@ class AdminPanelProvider extends PanelProvider
                     ->icon('tabler-wind-electricity'),
                 NavigationGroup::make()->label('Dynamic Dashboard')
                     ->icon('tabler-cloud-rain'),
-                NavigationGroup::make()->label('Rhea')
-                    ->icon('tabler-bow'),
+                /*NavigationGroup::make()->label('Rhea')
+                    ->icon('tabler-bow'),*/
             ])
             //->unsavedChangesAlerts()
 
@@ -307,7 +306,7 @@ class AdminPanelProvider extends PanelProvider
                 ->navigationGroup(fn (): string => __('Hermes'))
                 ->navigationSort(99)
                 ->navigationCountBadge(),
-            SpotlightPlugin::make(),
+            //SpotlightPlugin::make(),
             LightSwitchPlugin::make(),
             OverlookPlugin::make()
                 ->sort(5)
@@ -368,7 +367,7 @@ class AdminPanelProvider extends PanelProvider
             ThunderPlugin::make(),
             AthenaPlugin::make(),
             DynamicDashboardPlugin::make(),
-            RheaPlugin::make(),
+            //RheaPlugin::make(),
             HermesPlugin::make(),
         ];
     }
