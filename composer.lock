@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "107ddadc04df69c2aaec354d0d2158bc",
+    "content-hash": "18010723b68aa611410866fd98da6d7e",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -5381,16 +5381,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.74",
+            "version": "v3.0.75",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "746e2b7cc8eaa8a4ad4e15adcbc98b49e85792fe"
+                "reference": "ae6d1540d4ab4c766d87cc2f499782adc8bc66ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/746e2b7cc8eaa8a4ad4e15adcbc98b49e85792fe",
-                "reference": "746e2b7cc8eaa8a4ad4e15adcbc98b49e85792fe",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/ae6d1540d4ab4c766d87cc2f499782adc8bc66ee",
+                "reference": "ae6d1540d4ab4c766d87cc2f499782adc8bc66ee",
                 "shasum": ""
             },
             "require": {
@@ -5471,7 +5471,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-03T20:20:40+00:00"
+            "time": "2025-03-03T20:30:06+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
@@ -5651,6 +5651,74 @@
                 }
             ],
             "time": "2024-01-23T14:28:42+00:00"
+        },
+        {
+            "name": "lara-zeus/chaos",
+            "version": "v1.0.20",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/chaos.git",
+                "reference": "87606223fafa77f2720a6a99ab185ad9aee1aba7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/chaos/zipball/87606223fafa77f2720a6a99ab185ad9aee1aba7",
+                "reference": "87606223fafa77f2720a6a99ab185ad9aee1aba7",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "lara-zeus/popover": "^1.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.2",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^10.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Chaos\\ChaosServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Chaos\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
+                    "role": "Owner"
+                }
+            ],
+            "homepage": "https://larazeus.com",
+            "support": {
+                "issues": "https://github.com/lara-zeus/chaos/issues",
+                "source": "https://github.com/lara-zeus/chaos"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/atmonshi",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-01-14T09:20:00+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -6273,22 +6341,23 @@
         },
         {
             "name": "lara-zeus/hermes",
-            "version": "v2.0.7",
+            "version": "v2.0.8",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/hermes.git",
-                "reference": "150a294b02b0f67d3c64cf7b7a6d92c6e0a8c596"
+                "reference": "c200b06d2a9326a8dc73020c50914a191fa7a97d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/150a294b02b0f67d3c64cf7b7a6d92c6e0a8c596",
-                "reference": "150a294b02b0f67d3c64cf7b7a6d92c6e0a8c596",
+                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/c200b06d2a9326a8dc73020c50914a191fa7a97d",
+                "reference": "c200b06d2a9326a8dc73020c50914a191fa7a97d",
                 "shasum": ""
             },
             "require": {
                 "awcodes/filament-curator": "^3.4",
                 "guava/filament-icon-picker": "^2.3",
                 "lara-zeus/core": "^3.1",
+                "lara-zeus/filament-plugin-tools": "^1.0",
                 "maize-tech/laravel-markable": "^2.3",
                 "owenvoke/blade-fontawesome": "^2.4",
                 "php": "^8.1",
@@ -6377,10 +6446,10 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/hermes",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/hermes/tree/v2.0.7",
+                "source": "https://github.com/lara-zeus/hermes/tree/v2.0.8",
                 "issues": "https://github.com/lara-zeus/hermes/issues"
             },
-            "time": "2025-02-27T14:00:21+00:00"
+            "time": "2025-03-03T21:59:47+00:00"
         },
         {
             "name": "lara-zeus/inline-chart",
@@ -6463,6 +6532,68 @@
                 }
             ],
             "time": "2025-03-03T15:02:12+00:00"
+        },
+        {
+            "name": "lara-zeus/installer",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/filament-installer.git",
+                "reference": "1b277e32c5b1b8caf0d87553a55b278566640fa7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/filament-installer/zipball/1b277e32c5b1b8caf0d87553a55b278566640fa7",
+                "reference": "1b277e32c5b1b8caf0d87553a55b278566640fa7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^10.20|^11.0|^12.0",
+                "illuminate/support": "^10.20|^11.0|^12.0",
+                "laravel/prompts": "^0.3",
+                "php": "^8.2",
+                "symfony/console": "^6.2|^7.0",
+                "symfony/process": "^6.2|^7.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.4"
+            },
+            "bin": [
+                "bin/filament"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Installer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "filament application installer",
+            "keywords": [
+                "filamentphp"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/filament-installer/issues",
+                "source": "https://github.com/lara-zeus/filament-installer/tree/1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/atmonshi",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-28T21:50:53+00:00"
         },
         {
             "name": "lara-zeus/laravel-seo",
@@ -7132,17 +7263,109 @@
             "time": "2025-03-03T20:07:59+00:00"
         },
         {
-            "name": "lara-zeus/thunder",
-            "version": "v3.1.49",
+            "name": "lara-zeus/tartarus",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "60b73493d185941cecd7d3d26c5e50423c704ee9"
+                "url": "https://github.com/lara-zeus/tartarus.git",
+                "reference": "d7c9a3bd86dae6d629ed4b87cbceb65e255d9eb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/60b73493d185941cecd7d3d26c5e50423c704ee9",
-                "reference": "60b73493d185941cecd7d3d26c5e50423c704ee9",
+                "url": "https://api.github.com/repos/lara-zeus/tartarus/zipball/d7c9a3bd86dae6d629ed4b87cbceb65e255d9eb2",
+                "reference": "d7c9a3bd86dae6d629ed4b87cbceb65e255d9eb2",
+                "shasum": ""
+            },
+            "require": {
+                "awcodes/preset-color-picker": "^0.1",
+                "calebporzio/sushi": "^2.4",
+                "filament/filament": "^3.2",
+                "filament/spatie-laravel-translatable-plugin": "^3.2",
+                "lara-zeus/chaos": "^1.0",
+                "php": "^8.1",
+                "rickdbcn/filament-email": "^1.8",
+                "secondnetwork/blade-tabler-icons": "^3.0",
+                "spatie/laravel-package-tools": "^1.16",
+                "spatie/laravel-tags": "^4.6",
+                "stechstudio/filament-impersonate": "^3.15"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.2",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Tartarus": "LaraZeus\\Tartarus\\Facades\\Tartarus"
+                    },
+                    "providers": [
+                        "LaraZeus\\Tartarus\\TartarusServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "LaraZeus\\Tartarus\\": "src",
+                    "LaraZeus\\Tartarus\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "simple multi tenants",
+            "homepage": "https://larazeus.com/tartarus",
+            "keywords": [
+                "filamentphp",
+                "lara-zeus",
+                "laravel",
+                "manager",
+                "multi",
+                "panels",
+                "tartarus",
+                "tenants"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/tartarus/issues",
+                "source": "https://github.com/lara-zeus/tartarus"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/atmonshi",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-03-02T01:42:54+00:00"
+        },
+        {
+            "name": "lara-zeus/thunder",
+            "version": "v3.1.50",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:lara-zeus/thunder.git",
+                "reference": "a68a9bb2ca1343e82a04f1c0615b1cb49041f8a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/a68a9bb2ca1343e82a04f1c0615b1cb49041f8a1",
+                "reference": "a68a9bb2ca1343e82a04f1c0615b1cb49041f8a1",
                 "shasum": ""
             },
             "require": {
@@ -7233,7 +7456,7 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/thunder",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/thunder/tree/v3.1.49",
+                "source": "https://github.com/lara-zeus/thunder/tree/v3.1.50",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -7242,7 +7465,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2025-03-03T20:22:43+00:00"
+            "time": "2025-03-03T21:05:43+00:00"
         },
         {
             "name": "lara-zeus/tiles",
@@ -10806,6 +11029,79 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "rickdbcn/filament-email",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RickDBCN/filament-email.git",
+                "reference": "5970dbc06794f57ea1910ca042110e51b8e66523"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RickDBCN/filament-email/zipball/5970dbc06794f57ea1910ca042110e51b8e66523",
+                "reference": "5970dbc06794f57ea1910ca042110e51b8e66523",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "illuminate/contracts": "^10.0|^11.0|^12.0",
+                "laravel/framework": "^10.0|^11.0|^12.0",
+                "malzariey/filament-daterangepicker-filter": "^3.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.9|^8.0",
+                "orchestra/testbench": "^8.0|^9.0|^10.0",
+                "pestphp/pest": "^2.0|^3.7",
+                "pestphp/pest-plugin-arch": "^2.0|^3.0",
+                "pestphp/pest-plugin-laravel": "^2.0|^3.1",
+                "pestphp/pest-plugin-livewire": "^2.1|^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "FilamentEmail": "RickDBCN\\FilamentEmail\\Facades\\FilamentEmail"
+                    },
+                    "providers": [
+                        "RickDBCN\\FilamentEmail\\FilamentEmailServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RickDBCN\\FilamentEmail\\": "src/",
+                    "RickDBCN\\FilamentEmail\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rick de Boer",
+                    "email": "rickdb@calvintijd.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Log all outbound emails you send through your Filament application",
+            "homepage": "https://github.com/rickdbcn/filament-email",
+            "keywords": [
+                "RickDBCN",
+                "filament-email",
+                "laravel",
+                "marcogermani87"
+            ],
+            "support": {
+                "issues": "https://github.com/RickDBCN/filament-email/issues",
+                "source": "https://github.com/RickDBCN/filament-email/tree/v1.8.0"
+            },
+            "time": "2025-02-26T15:19:24+00:00"
         },
         {
             "name": "rupadana/filament-api-service",
