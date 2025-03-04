@@ -50,6 +50,7 @@ use LaraZeus\BoltPro\Extensions\Grades;
 use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
 use LaraZeus\Delia\DeliaPlugin;
+use LaraZeus\Delia\Filament\Resources\BookmarkResource;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\DynamicDashboard\Filament\Resources\LayoutResource;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
@@ -325,6 +326,8 @@ class AdminPanelProvider extends PanelProvider
             QuickCreatePlugin::make()
                 ->sortBy('navigation')
                 ->excludes([
+                    BookmarkResource::class,
+                    SeoScanResource::class,
                     UserViewResource::class,
                     LetterResource::class,
                     TicketResource::class,
