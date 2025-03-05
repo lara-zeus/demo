@@ -20,9 +20,8 @@ use LaraZeus\Tiles\Forms\Components\TileSelect;
 use LaraZeus\Tiles\Infolists\Components\TileEntry;
 use LaraZeus\Tiles\Tables\Columns\TileColumn;
 
-class Tiles extends Page implements HasForms, HasTable
+class Tiles extends Page implements HasTable
 {
-    use InteractsWithForms;
     use InteractsWithTable;
 
     protected static ?string $cluster = ComponentsDemo::class;
