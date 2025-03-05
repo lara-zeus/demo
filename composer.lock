@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff6b59150d8ddc6b765814bd1f9d946d",
+    "content-hash": "70840225dae03ff607599a64e2486339",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -7742,7 +7742,7 @@
         },
         {
             "name": "lara-zeus/replies",
-            "version": "1.x-dev",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/replies.git",
@@ -7772,7 +7772,6 @@
                 "phpstan/phpstan-deprecation-rules": "^2.0",
                 "phpstan/phpstan-phpunit": "^2.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -20683,12 +20682,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "e7cacb4409da236548159072e5eff2c30cd3bf9c"
+                "reference": "cf482a33017a89e702a0f87d5ab18682b19061cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/e7cacb4409da236548159072e5eff2c30cd3bf9c",
-                "reference": "e7cacb4409da236548159072e5eff2c30cd3bf9c",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/cf482a33017a89e702a0f87d5ab18682b19061cd",
+                "reference": "cf482a33017a89e702a0f87d5ab18682b19061cd",
                 "shasum": ""
             },
             "conflict": {
@@ -21225,7 +21224,7 @@
                 "rap2hpoutre/laravel-log-viewer": "<0.13",
                 "react/http": ">=0.7,<1.9",
                 "really-simple-plugins/complianz-gdpr": "<6.4.2",
-                "redaxo/source": "<=5.18.1",
+                "redaxo/source": "<5.18.3",
                 "remdex/livehelperchat": "<4.29",
                 "reportico-web/reportico": "<=8.1",
                 "rhukster/dom-sanitizer": "<1.0.7",
@@ -21551,7 +21550,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-03T20:05:19+00:00"
+            "time": "2025-03-05T19:04:36+00:00"
         },
         {
             "name": "spatie/backtrace",
@@ -22013,7 +22012,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "lara-zeus/replies": 20,
         "torchlight/torchlight-laravel": 20,
         "wiebenieuwenhuis/filament-code-editor": 20,
         "roave/security-advisories": 20
