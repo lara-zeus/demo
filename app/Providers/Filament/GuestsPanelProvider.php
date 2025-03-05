@@ -40,6 +40,11 @@ class GuestsPanelProvider extends PanelProvider
                 'panels::footer',
                 fn (): View => view('filament.hooks.footer-guests'),
             )
+            // lang
+            ->renderHook(
+                'panels::user-menu.profile.after',
+                fn (): View => view('filament.hooks.lang-switcher'),
+            )
             ->discoverResources(in: app_path('Filament/Guests/Resources'), for: 'App\\Filament\\Guests\\Resources')
             ->discoverPages(in: app_path('Filament/Guests/Pages'), for: 'App\\Filament\\Guests\\Pages')
             ->pages([
