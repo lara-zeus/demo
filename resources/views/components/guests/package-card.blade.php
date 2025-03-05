@@ -6,7 +6,7 @@
     </x-slot>
     <x-slot name="headerEnd">
         @php
-            $stars = 0; //cache()->remember('github-stars-'.$github,now()->addDay(),fn()=>\GrahamCampbell\GitHub\Facades\GitHub::repo()->show($vendor, $github)['stargazers_count'] ?? 0);
+            $stars = cache()->remember('github-stars-'.$github,now()->addDay(),fn()=>\GrahamCampbell\GitHub\Facades\GitHub::repo()->show($vendor, $github)['stargazers_count'] ?? 0);
         @endphp
         <x-filament::button
             tooltip="github stars"

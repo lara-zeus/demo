@@ -25,6 +25,7 @@
         "fakerphp/faker": "^1.23",
         "filament/filament": "^3.0",
         "garygreen/pretty-routes": "^1.0",
+        "graham-campbell/github": "^13.0",
         "guzzlehttp/guzzle": "^7.5",
         "jaocero/activity-timeline": "^1.2",
         "jaocero/radio-deck": "^1.2",
@@ -68,8 +69,8 @@
         "sentry/sentry-laravel": "^4.3",
         "stechstudio/filament-impersonate": "^3.8",
         "swisnl/filament-backgrounds": "^1.1",
-        "wiebenieuwenhuis/filament-code-editor": "dev-laravel-12",
-        "torchlight/torchlight-laravel": "dev-l12-compatibility"
+        "torchlight/torchlight-laravel": "dev-l12-compatibility",
+        "wiebenieuwenhuis/filament-code-editor": "dev-laravel-12"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
