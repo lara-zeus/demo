@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('masons', function (Blueprint $table) {
             $table->id();
-            $table->longText('content');
+            $table->longText('content')->nullable();
             $table->timestamps();
         });
     }
