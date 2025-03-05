@@ -52,7 +52,7 @@
         "lara-zeus/list-group": "^1.0",
         "lara-zeus/matrix-choice": "^3.2",
         "lara-zeus/popover": "^1.0",
-        "lara-zeus/qr": "^1.0",
+        "lara-zeus/qr": "^1.2",
         "lara-zeus/quantity": "^1.0",
         "lara-zeus/replies": "1.x-dev",
         "lara-zeus/sky": "^3.4",
