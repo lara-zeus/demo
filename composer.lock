@@ -6731,16 +6731,16 @@
         },
         {
             "name": "lara-zeus/helen",
-            "version": "2.1.2",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/helen.git",
-                "reference": "fa0cd41b90e3ba28457da892b049deefa54295c3"
+                "reference": "40e9e538fc045fea655de055f4be8b487b1ec5a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/helen/zipball/fa0cd41b90e3ba28457da892b049deefa54295c3",
-                "reference": "fa0cd41b90e3ba28457da892b049deefa54295c3",
+                "url": "https://api.github.com/repos/lara-zeus/helen/zipball/40e9e538fc045fea655de055f4be8b487b1ec5a2",
+                "reference": "40e9e538fc045fea655de055f4be8b487b1ec5a2",
                 "shasum": ""
             },
             "require": {
@@ -6812,8 +6812,12 @@
                 "short"
             ],
             "support": {
-                "issues": "https://github.com/lara-zeus/helen/issues",
-                "source": "https://github.com/lara-zeus/helen"
+                "chat": "https://discord.com/channels/883083792112300104/1282752586046378086",
+                "contact": "https://larazeus.com/contact-us",
+                "docs": "https://larazeus.com/helen",
+                "email": "info@larazeus.com",
+                "source": "https://github.com/lara-zeus/helen/tree/2.1.3",
+                "issues": "https://github.com/lara-zeus/helen/issues"
             },
             "funding": [
                 {
@@ -6821,7 +6825,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2024-09-07T22:19:23+00:00"
+            "time": "2025-03-07T19:07:39+00:00"
         },
         {
             "name": "lara-zeus/hera",
