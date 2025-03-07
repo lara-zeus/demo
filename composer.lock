@@ -6472,20 +6472,21 @@
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
-            "version": "v3.0.2",
+            "version": "v3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/dynamic-dashboard.git",
-                "reference": "adfb4b1cdfdaa01299631f0e569ce201a7cc545a"
+                "reference": "13c64cc9e172fa553963a132eb717503da005ecd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/dynamic-dashboard/zipball/adfb4b1cdfdaa01299631f0e569ce201a7cc545a",
-                "reference": "adfb4b1cdfdaa01299631f0e569ce201a7cc545a",
+                "url": "https://api.github.com/repos/lara-zeus/dynamic-dashboard/zipball/13c64cc9e172fa553963a132eb717503da005ecd",
+                "reference": "13c64cc9e172fa553963a132eb717503da005ecd",
                 "shasum": ""
             },
             "require": {
                 "lara-zeus/core": "^3.1",
+                "lara-zeus/filament-plugin-tools": "^1.0",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -6547,7 +6548,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-05T18:53:29+00:00"
+            "time": "2025-03-07T19:40:07+00:00"
         },
         {
             "name": "lara-zeus/filament-plugin-tools",
@@ -7842,16 +7843,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.4.19",
+            "version": "v3.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "ed15a415ca2203915ce364ec3c4adc9102f5d2c3"
+                "reference": "be3a25edebf27b7496e356066adf1550a5b16c31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/ed15a415ca2203915ce364ec3c4adc9102f5d2c3",
-                "reference": "ed15a415ca2203915ce364ec3c4adc9102f5d2c3",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/be3a25edebf27b7496e356066adf1550a5b16c31",
+                "reference": "be3a25edebf27b7496e356066adf1550a5b16c31",
                 "shasum": ""
             },
             "require": {
@@ -7927,7 +7928,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-07T01:16:11+00:00"
+            "time": "2025-03-07T19:18:10+00:00"
         },
         {
             "name": "lara-zeus/tartarus",
