@@ -30,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
         }
 
         FilamentIcon::register([
-            'panels::panel-switch-modern-icon' => 'iconpark-switchbutton',
+            'panels::panel-switch-modern-icon' => 'tabler-switch-horizontal',
         ]);
 
         Modal::closedByClickingAway(false);
