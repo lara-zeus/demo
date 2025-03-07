@@ -727,16 +727,16 @@
         },
         {
             "name": "awcodes/mason",
-            "version": "v0.1.0",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/mason.git",
-                "reference": "4716018b4e03c32bc6c6457de516ff2abc969efb"
+                "reference": "0fe5750f11bb389adfeebdc3cbf977d96d86e8ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/mason/zipball/4716018b4e03c32bc6c6457de516ff2abc969efb",
-                "reference": "4716018b4e03c32bc6c6457de516ff2abc969efb",
+                "url": "https://api.github.com/repos/awcodes/mason/zipball/0fe5750f11bb389adfeebdc3cbf977d96d86e8ed",
+                "reference": "0fe5750f11bb389adfeebdc3cbf977d96d86e8ed",
                 "shasum": ""
             },
             "require": {
@@ -804,7 +804,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-04T20:41:17+00:00"
+            "time": "2025-03-06T15:31:52+00:00"
         },
         {
             "name": "awcodes/matinee",
@@ -1907,78 +1907,6 @@
             "time": "2025-02-25T09:13:16+00:00"
         },
         {
-            "name": "codeat3/blade-clarity-icons",
-            "version": "1.10.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/codeat3/blade-clarity-icons.git",
-                "reference": "4b4450200061633f4e9f5390e7095fbc30057340"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/codeat3/blade-clarity-icons/zipball/4b4450200061633f4e9f5390e7095fbc30057340",
-                "reference": "4b4450200061633f4e9f5390e7095fbc30057340",
-                "shasum": ""
-            },
-            "require": {
-                "blade-ui-kit/blade-icons": "^1.1",
-                "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
-                "php": "^7.4|^8.0"
-            },
-            "require-dev": {
-                "codeat3/blade-icon-generation-helpers": "^0.10",
-                "codeat3/phpcs-styles": "^1.0",
-                "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0|^10.0",
-                "phpunit/phpunit": "^9.0|^10.5|^11.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Codeat3\\BladeClarityIcons\\BladeClarityIconsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Codeat3\\BladeClarityIcons\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Swapnil Sarwe",
-                    "homepage": "https://swapnilsarwe.com"
-                },
-                {
-                    "name": "Dries Vints",
-                    "homepage": "https://driesvints.com"
-                }
-            ],
-            "description": "A package to easily make use of Clarity Icons in your Laravel Blade views.",
-            "homepage": "https://github.com/codeat3/blade-clarity-icons",
-            "keywords": [
-                "blade",
-                "clarity",
-                "icons",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/codeat3/blade-clarity-icons/issues",
-                "source": "https://github.com/codeat3/blade-clarity-icons/tree/1.10.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/swapnilsarwe",
-                    "type": "github"
-                }
-            ],
-            "time": "2025-02-25T08:35:37+00:00"
-        },
-        {
             "name": "codeat3/blade-iconpark",
             "version": "1.7.0",
             "source": {
@@ -2122,16 +2050,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.5.5",
+            "version": "1.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "08c50d5ec4c6ced7d0271d2862dec8c1033283e6"
+                "reference": "f65c239c970e7f072f067ab78646e9f0b2935175"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/08c50d5ec4c6ced7d0271d2862dec8c1033283e6",
-                "reference": "08c50d5ec4c6ced7d0271d2862dec8c1033283e6",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/f65c239c970e7f072f067ab78646e9f0b2935175",
+                "reference": "f65c239c970e7f072f067ab78646e9f0b2935175",
                 "shasum": ""
             },
             "require": {
@@ -2178,7 +2106,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/ca-bundle/issues",
-                "source": "https://github.com/composer/ca-bundle/tree/1.5.5"
+                "source": "https://github.com/composer/ca-bundle/tree/1.5.6"
             },
             "funding": [
                 {
@@ -2194,7 +2122,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-01-08T16:17:16+00:00"
+            "time": "2025-03-06T14:30:56+00:00"
         },
         {
             "name": "composer/semver",
@@ -5150,16 +5078,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.3.3",
+            "version": "v1.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "d14a1c24553d7024a577ebc2bd8667de1033be68"
+                "reference": "d3b7ff28994e1b0de764ab7412fa269a79634ff3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/d14a1c24553d7024a577ebc2bd8667de1033be68",
-                "reference": "d14a1c24553d7024a577ebc2bd8667de1033be68",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/d3b7ff28994e1b0de764ab7412fa269a79634ff3",
+                "reference": "d3b7ff28994e1b0de764ab7412fa269a79634ff3",
                 "shasum": ""
             },
             "require": {
@@ -5196,9 +5124,9 @@
             ],
             "support": {
                 "issues": "https://github.com/JayBizzle/Crawler-Detect/issues",
-                "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.3.3"
+                "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.3.4"
             },
-            "time": "2025-02-26T18:40:58+00:00"
+            "time": "2025-03-05T23:12:10+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
@@ -5934,16 +5862,16 @@
         },
         {
             "name": "lara-zeus/athena",
-            "version": "1.1.15",
+            "version": "1.1.16",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/athena.git",
-                "reference": "5fd3b6a4cb716fde34263415b9673b6d590f36e9"
+                "reference": "040adb3a39bd9eb750d96b6ae569a64b9aa32458"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/5fd3b6a4cb716fde34263415b9673b6d590f36e9",
-                "reference": "5fd3b6a4cb716fde34263415b9673b6d590f36e9",
+                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/040adb3a39bd9eb750d96b6ae569a64b9aa32458",
+                "reference": "040adb3a39bd9eb750d96b6ae569a64b9aa32458",
                 "shasum": ""
             },
             "require": {
@@ -6022,7 +5950,7 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/athena",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/athena/tree/1.1.15",
+                "source": "https://github.com/lara-zeus/athena/tree/1.1.16",
                 "issues": "https://github.com/lara-zeus/athena/issues"
             },
             "funding": [
@@ -6031,24 +5959,23 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2025-03-03T14:51:55+00:00"
+            "time": "2025-03-07T03:56:16+00:00"
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.75",
+            "version": "v3.0.77",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "ae6d1540d4ab4c766d87cc2f499782adc8bc66ee"
+                "reference": "16a9114310ec73c70c6b2672fce1287dcf230fd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/ae6d1540d4ab4c766d87cc2f499782adc8bc66ee",
-                "reference": "ae6d1540d4ab4c766d87cc2f499782adc8bc66ee",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/16a9114310ec73c70c6b2672fce1287dcf230fd4",
+                "reference": "16a9114310ec73c70c6b2672fce1287dcf230fd4",
                 "shasum": ""
             },
             "require": {
-                "codeat3/blade-clarity-icons": "^1.7",
                 "flowframe/laravel-trend": "^0.4",
                 "guava/filament-icon-picker": "^2.3",
                 "lara-zeus/accordion": "^1.1",
@@ -6125,20 +6052,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-03T20:30:06+00:00"
+            "time": "2025-03-07T03:51:08+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.2.21",
+            "version": "v3.2.22",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "0e0e0d3cba186bdd4250158ec7357dc7f302cf1f"
+                "reference": "f6a16882c80d2c3cb6191f40534b84f82d887fde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/0e0e0d3cba186bdd4250158ec7357dc7f302cf1f",
-                "reference": "0e0e0d3cba186bdd4250158ec7357dc7f302cf1f",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/f6a16882c80d2c3cb6191f40534b84f82d887fde",
+                "reference": "f6a16882c80d2c3cb6191f40534b84f82d887fde",
                 "shasum": ""
             },
             "require": {
@@ -6220,10 +6147,10 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/bolt-pro",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/bolt-pro/tree/v3.2.21",
+                "source": "https://github.com/lara-zeus/bolt-pro/tree/v3.2.22",
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues"
             },
-            "time": "2025-03-03T14:54:53+00:00"
+            "time": "2025-03-07T03:58:02+00:00"
         },
         {
             "name": "lara-zeus/boredom",
@@ -7911,20 +7838,19 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.4.18",
+            "version": "v3.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "c5973e9c42de6de875f09b41953c53e87e1319e4"
+                "reference": "ed15a415ca2203915ce364ec3c4adc9102f5d2c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/c5973e9c42de6de875f09b41953c53e87e1319e4",
-                "reference": "c5973e9c42de6de875f09b41953c53e87e1319e4",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/ed15a415ca2203915ce364ec3c4adc9102f5d2c3",
+                "reference": "ed15a415ca2203915ce364ec3c4adc9102f5d2c3",
                 "shasum": ""
             },
             "require": {
-                "doctrine/dbal": "^3.5|^4.0",
                 "filament/spatie-laravel-media-library-plugin": "^3.0",
                 "filament/spatie-laravel-tags-plugin": "^3.0",
                 "lara-zeus/core": "^3.2",
@@ -7997,7 +7923,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-03T20:07:59+00:00"
+            "time": "2025-03-07T01:16:11+00:00"
         },
         {
             "name": "lara-zeus/tartarus",
@@ -8093,16 +8019,16 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v3.1.50",
+            "version": "v3.1.51",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "a68a9bb2ca1343e82a04f1c0615b1cb49041f8a1"
+                "reference": "23c504e2a56cc30a93bb750317d9d342f436d531"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/a68a9bb2ca1343e82a04f1c0615b1cb49041f8a1",
-                "reference": "a68a9bb2ca1343e82a04f1c0615b1cb49041f8a1",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/23c504e2a56cc30a93bb750317d9d342f436d531",
+                "reference": "23c504e2a56cc30a93bb750317d9d342f436d531",
                 "shasum": ""
             },
             "require": {
@@ -8193,7 +8119,7 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/thunder",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/thunder/tree/v3.1.50",
+                "source": "https://github.com/lara-zeus/thunder/tree/v3.1.51",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -8202,7 +8128,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2025-03-03T21:05:43+00:00"
+            "time": "2025-03-07T03:54:16+00:00"
         },
         {
             "name": "lara-zeus/tiles",
@@ -10757,16 +10683,16 @@
         },
         {
             "name": "openspout/openspout",
-            "version": "v4.28.5",
+            "version": "v4.29.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/openspout/openspout.git",
-                "reference": "ab05a09fe6fce57c90338f83280648a9786ce36b"
+                "reference": "3032427a0cd95bdbd8081165f2daf134554cdcc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openspout/openspout/zipball/ab05a09fe6fce57c90338f83280648a9786ce36b",
-                "reference": "ab05a09fe6fce57c90338f83280648a9786ce36b",
+                "url": "https://api.github.com/repos/openspout/openspout/zipball/3032427a0cd95bdbd8081165f2daf134554cdcc1",
+                "reference": "3032427a0cd95bdbd8081165f2daf134554cdcc1",
                 "shasum": ""
             },
             "require": {
@@ -10776,17 +10702,17 @@
                 "ext-libxml": "*",
                 "ext-xmlreader": "*",
                 "ext-zip": "*",
-                "php": "~8.2.0 || ~8.3.0 || ~8.4.0"
+                "php": "~8.3.0 || ~8.4.0"
             },
             "require-dev": {
                 "ext-zlib": "*",
-                "friendsofphp/php-cs-fixer": "^3.68.3",
-                "infection/infection": "^0.29.10",
+                "friendsofphp/php-cs-fixer": "^3.70.2",
+                "infection/infection": "^0.29.14",
                 "phpbench/phpbench": "^1.4.0",
-                "phpstan/phpstan": "^2.1.2",
+                "phpstan/phpstan": "^2.1.7",
                 "phpstan/phpstan-phpunit": "^2.0.4",
-                "phpstan/phpstan-strict-rules": "^2",
-                "phpunit/phpunit": "^11.5.4"
+                "phpstan/phpstan-strict-rules": "^2.0.3",
+                "phpunit/phpunit": "^12.0.6"
             },
             "suggest": {
                 "ext-iconv": "To handle non UTF-8 CSV files (if \"php-mbstring\" is not already installed or is too limited)",
@@ -10834,7 +10760,7 @@
             ],
             "support": {
                 "issues": "https://github.com/openspout/openspout/issues",
-                "source": "https://github.com/openspout/openspout/tree/v4.28.5"
+                "source": "https://github.com/openspout/openspout/tree/v4.29.0"
             },
             "funding": [
                 {
@@ -10846,7 +10772,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-30T13:51:11+00:00"
+            "time": "2025-03-06T09:59:55+00:00"
         },
         {
             "name": "owenvoke/blade-fontawesome",
@@ -12972,16 +12898,16 @@
         },
         {
             "name": "secondnetwork/blade-tabler-icons",
-            "version": "v3.30.1",
+            "version": "v3.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/secondnetwork/blade-tabler-icons.git",
-                "reference": "660b757230dfa68c491dcc767bce71384ab8bade"
+                "reference": "bf069bbdb2a63aa8eaeb10e6fd993464e9340a31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/secondnetwork/blade-tabler-icons/zipball/660b757230dfa68c491dcc767bce71384ab8bade",
-                "reference": "660b757230dfa68c491dcc767bce71384ab8bade",
+                "url": "https://api.github.com/repos/secondnetwork/blade-tabler-icons/zipball/bf069bbdb2a63aa8eaeb10e6fd993464e9340a31",
+                "reference": "bf069bbdb2a63aa8eaeb10e6fd993464e9340a31",
                 "shasum": ""
             },
             "require": {
@@ -13024,9 +12950,9 @@
             ],
             "support": {
                 "issues": "https://github.com/secondnetwork/blade-tabler-icons/issues",
-                "source": "https://github.com/secondnetwork/blade-tabler-icons/tree/v3.30.1"
+                "source": "https://github.com/secondnetwork/blade-tabler-icons/tree/v3.31.0"
             },
-            "time": "2025-02-19T10:36:52+00:00"
+            "time": "2025-03-06T09:24:43+00:00"
         },
         {
             "name": "sentry/sentry",
@@ -19540,16 +19466,16 @@
         },
         {
             "name": "laravel-lang/moonshine",
-            "version": "1.3.4",
+            "version": "1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/moonshine.git",
-                "reference": "e5a638a51f0ea8186f07bd8b715803563e5d55c6"
+                "reference": "54e1d0bb23945ce772a12ea9bf55c3dfe56984ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/moonshine/zipball/e5a638a51f0ea8186f07bd8b715803563e5d55c6",
-                "reference": "e5a638a51f0ea8186f07bd8b715803563e5d55c6",
+                "url": "https://api.github.com/repos/Laravel-Lang/moonshine/zipball/54e1d0bb23945ce772a12ea9bf55c3dfe56984ca",
+                "reference": "54e1d0bb23945ce772a12ea9bf55c3dfe56984ca",
                 "shasum": ""
             },
             "require": {
@@ -19602,9 +19528,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/moonshine/issues",
-                "source": "https://github.com/Laravel-Lang/moonshine/tree/1.3.4"
+                "source": "https://github.com/Laravel-Lang/moonshine/tree/1.3.5"
             },
-            "time": "2025-03-04T16:05:45+00:00"
+            "time": "2025-03-06T15:18:50+00:00"
         },
         {
             "name": "laravel-lang/native-country-names",
@@ -19990,16 +19916,16 @@
         },
         {
             "name": "laravel-lang/starter-kits",
-            "version": "1.2.1",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/starter-kits.git",
-                "reference": "ce00bf886eb2e1d9aa01d22b0ec8cb5ab2a5d645"
+                "reference": "179ed12bdaff7f723e9dd8cf9bae8d8ce1dcd391"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/starter-kits/zipball/ce00bf886eb2e1d9aa01d22b0ec8cb5ab2a5d645",
-                "reference": "ce00bf886eb2e1d9aa01d22b0ec8cb5ab2a5d645",
+                "url": "https://api.github.com/repos/Laravel-Lang/starter-kits/zipball/179ed12bdaff7f723e9dd8cf9bae8d8ce1dcd391",
+                "reference": "179ed12bdaff7f723e9dd8cf9bae8d8ce1dcd391",
                 "shasum": ""
             },
             "require": {
@@ -20051,9 +19977,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/starter-kits/issues",
-                "source": "https://github.com/Laravel-Lang/starter-kits/tree/1.2.1"
+                "source": "https://github.com/Laravel-Lang/starter-kits/tree/1.3.0"
             },
-            "time": "2025-03-05T13:07:03+00:00"
+            "time": "2025-03-06T11:53:02+00:00"
         },
         {
             "name": "laravel/pint",
@@ -20682,12 +20608,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "cf482a33017a89e702a0f87d5ab18682b19061cd"
+                "reference": "4da22c240293fcf0fe72fc0b1f2f265efeb44e2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/cf482a33017a89e702a0f87d5ab18682b19061cd",
-                "reference": "cf482a33017a89e702a0f87d5ab18682b19061cd",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/4da22c240293fcf0fe72fc0b1f2f265efeb44e2e",
+                "reference": "4da22c240293fcf0fe72fc0b1f2f265efeb44e2e",
                 "shasum": ""
             },
             "conflict": {
@@ -21015,7 +20941,7 @@
                 "lara-zeus/artemis": ">=1,<=1.0.6",
                 "lara-zeus/dynamic-dashboard": ">=3,<=3.0.1",
                 "laravel/fortify": "<1.11.1",
-                "laravel/framework": "<6.20.45|>=7,<7.30.7|>=8,<8.83.28|>=9,<9.52.17|>=10,<10.48.23|>=11,<11.31",
+                "laravel/framework": "<11.44.1|>=12,<12.1.1",
                 "laravel/laravel": ">=5.4,<5.4.22",
                 "laravel/pulse": "<1.3.1",
                 "laravel/reverb": "<1.4",
@@ -21035,6 +20961,7 @@
                 "limesurvey/limesurvey": "<6.5.12",
                 "livehelperchat/livehelperchat": "<=3.91",
                 "livewire/livewire": "<2.12.7|>=3.0.0.0-beta1,<3.5.2",
+                "livewire/volt": "<1.7",
                 "lms/routes": "<2.1.1",
                 "localizationteam/l10nmgr": "<7.4|>=8,<8.7|>=9,<9.2",
                 "luyadev/yii-helpers": "<1.2.1",
@@ -21168,7 +21095,7 @@
                 "phpmyadmin/phpmyadmin": "<5.2.2",
                 "phpmyfaq/phpmyfaq": "<3.2.5|==3.2.5|>=3.2.10,<=4.0.1",
                 "phpoffice/common": "<0.2.9",
-                "phpoffice/phpexcel": "<1.8.1",
+                "phpoffice/phpexcel": "<=1.8.2",
                 "phpoffice/phpspreadsheet": "<1.29.9|>=2,<2.1.8|>=2.2,<2.3.7|>=3,<3.9",
                 "phpseclib/phpseclib": "<2.0.47|>=3,<3.0.36",
                 "phpservermon/phpservermon": "<3.6",
@@ -21550,7 +21477,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-05T19:04:36+00:00"
+            "time": "2025-03-06T18:06:13+00:00"
         },
         {
             "name": "spatie/backtrace",
