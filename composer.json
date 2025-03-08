@@ -22,7 +22,6 @@
     "awcodes/recently": "^1.0",
     "awcodes/shout": "^2.0",
     "bezhansalleh/filament-panel-switch": "^1.0",
-    "codeat3/blade-ant-design-icons": "^1.9",
     "codewithdennis/filament-select-tree": "^3.1",
     "diogogpinto/filament-auth-ui-enhancer": "^1.0",
     "fakerphp/faker": "^1.23",
@@ -90,7 +89,6 @@
     "spatie/laravel-ignition": "^2.4",
     "barryvdh/laravel-debugbar": "^3.9",
     "larastan/larastan": "^3.1",
-    "laravel-lang/common": "^6.0",
     "phpstan/extension-installer": "^1.1",
     "phpstan/phpstan-deprecation-rules": "^2.0"
   },

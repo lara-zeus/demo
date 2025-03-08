@@ -3,8 +3,6 @@
 namespace App\Filament\Guests\Pages;
 
 use App\Mason\BrickCollection;
-use App\Mason\Code;
-use App\Mason\Section;
 use App\Models\Mason as MasonModel;
 use Filament\Forms\Form;
 use Filament\Notifications\Notification;
@@ -12,7 +10,7 @@ use Filament\Pages\Page;
 
 class Mason extends Page
 {
-    protected static ?string $navigationIcon = 'antdesign-build';
+    protected static ?string $navigationIcon = 'tabler-building-castle';
 
     protected static ?string $navigationGroup = 'Plugins';
 
