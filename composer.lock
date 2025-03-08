@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70840225dae03ff607599a64e2486339",
+    "content-hash": "0e2a9e4bf6c2d92e8f9ac884f1d4ce7b",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -587,6 +587,88 @@
                 }
             ],
             "time": "2024-11-13T18:07:04+00:00"
+        },
+        {
+            "name": "awcodes/filament-tiptap-editor",
+            "version": "v3.5.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/awcodes/filament-tiptap-editor.git",
+                "reference": "7c401aa7ffe7672fe23c5a30fb65deae3e9201fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/awcodes/filament-tiptap-editor/zipball/7c401aa7ffe7672fe23c5a30fb65deae3e9201fb",
+                "reference": "7c401aa7ffe7672fe23c5a30fb65deae3e9201fb",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.2.138",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.9.2",
+                "ueberdosis/tiptap-php": "^1.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.19",
+                "pestphp/pest-plugin-laravel": "^2.2",
+                "pestphp/pest-plugin-livewire": "^2.1",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "package",
+            "extra": {
+                "aliases": {
+                    "TiptapConverter": "FilamentTiptapEditor\\Facades\\TiptapConverter"
+                },
+                "laravel": {
+                    "providers": [
+                        "FilamentTiptapEditor\\FilamentTiptapEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "FilamentTiptapEditor\\": "src/",
+                    "FilamentTiptapEditor\\Tests\\": "tests/src",
+                    "FilamentTiptapEditor\\Tests\\Database\\Factories\\": "tests/database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Weston",
+                    "email": "awcodes1@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Tiptap integration for Filament Admin/Forms.",
+            "keywords": [
+                "editor",
+                "filament",
+                "framework",
+                "laravel",
+                "tiptap",
+                "wysiwyg"
+            ],
+            "support": {
+                "issues": "https://github.com/awcodes/filament-tiptap-editor/issues",
+                "source": "https://github.com/awcodes/filament-tiptap-editor/tree/v3.5.9"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/awcodes",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-25T14:52:20+00:00"
         },
         {
             "name": "awcodes/filament-versions",
@@ -5712,6 +5794,103 @@
             "time": "2025-03-07T21:16:39+00:00"
         },
         {
+            "name": "lara-zeus/apollo",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:lara-zeus/apollo.git",
+                "reference": "dcfe8bd2317b83af3f529b385acea6475dd59ffe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/apollo/zipball/dcfe8bd2317b83af3f529b385acea6475dd59ffe",
+                "reference": "dcfe8bd2317b83af3f529b385acea6475dd59ffe",
+                "shasum": ""
+            },
+            "require": {
+                "awcodes/filament-tiptap-editor": "^3.0",
+                "beyondcode/laravel-comments": "^1.4",
+                "blade-ui-kit/blade-ui-kit": "^0.7",
+                "lara-zeus/bolt": "^3.0",
+                "lara-zeus/filament-plugin-tools": "^1.0",
+                "lara-zeus/quantity": "^1.0",
+                "php": "^8.1",
+                "saade/filament-fullcalendar": "^3.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.2",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Apollo\\ApolloServiceProvider"
+                    ],
+                    "aliases": {
+                        "Apollo": "LaraZeus\\Apollo\\Facades\\Apollo"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Apollo\\": "src",
+                    "LaraZeus\\Apollo\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
+                }
+            ],
+            "description": "Apollo Events managements",
+            "homepage": "https://larazeus.com/apollo",
+            "keywords": [
+                "apollo",
+                "appointments",
+                "calendar",
+                "filamentphp",
+                "lara-zeus",
+                "laravel",
+                "managements",
+                "schedule"
+            ],
+            "support": {
+                "chat": "https://discord.com/channels/883083792112300104/1282751531346694207",
+                "contact": "https://larazeus.com/contact-us",
+                "docs": "https://larazeus.com/apollo",
+                "email": "info@larazeus.com",
+                "source": "https://github.com/lara-zeus/apollo/tree/1.x",
+                "issues": "https://github.com/lara-zeus/apollo/issues"
+            },
+            "time": "2025-03-08T00:59:11+00:00"
+        },
+        {
             "name": "lara-zeus/artemis",
             "version": "v1.0.10",
             "source": {
@@ -6229,6 +6408,99 @@
                 }
             ],
             "time": "2025-01-14T09:20:00+00:00"
+        },
+        {
+            "name": "lara-zeus/chronos",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:lara-zeus/chronos.git",
+                "reference": "69ffcb8b97ae55f13999bd6ac94d1d100e33a784"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/chronos/zipball/69ffcb8b97ae55f13999bd6ac94d1d100e33a784",
+                "reference": "69ffcb8b97ae55f13999bd6ac94d1d100e33a784",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.1",
+                "filament/spatie-laravel-translatable-plugin": "^3.2",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.2",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Chronos\\ChronosServiceProvider"
+                    ],
+                    "aliases": {
+                        "Chronos": "LaraZeus\\Chronos\\Facades\\Chronos"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Chronos\\": "src",
+                    "LaraZeus\\Chronos\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "Docs manager with templates",
+            "homepage": "https://larazeus.com/chronos",
+            "keywords": [
+                "chronos",
+                "docs",
+                "documentations",
+                "filamentphp",
+                "lara-zeus",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/chronos/issues",
+                "source": "https://github.com/lara-zeus/chronos"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/atmonshi"
+                }
+            ],
+            "time": "2024-03-20T20:42:49+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -7269,6 +7541,109 @@
             "time": "2024-06-20T09:27:06+00:00"
         },
         {
+            "name": "lara-zeus/mark",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:lara-zeus/mark.git",
+                "reference": "868a17c31db19dfa83543b1b64e3a5b2cf5b0e85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/mark/zipball/868a17c31db19dfa83543b1b64e3a5b2cf5b0e85",
+                "reference": "868a17c31db19dfa83543b1b64e3a5b2cf5b0e85",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.2",
+                "php": "^8.2",
+                "spatie/laravel-package-tools": "^1.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^8.0",
+                "nunomaduro/larastan": "^3.0",
+                "orchestra/testbench": "^9.0",
+                "pestphp/pest": "^3.0",
+                "pestphp/pest-plugin-arch": "^3.0",
+                "pestphp/pest-plugin-laravel": "^3.0",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^2.0",
+                "phpstan/phpstan-phpunit": "^2.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Mark\\MarkServiceProvider"
+                    ],
+                    "aliases": {
+                        "Mark": "LaraZeus\\Mark\\Mark"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Mark\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "LaraZeus\\Mark\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "lint": [
+                    "@format",
+                    "@analyse"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abdulmajeed-Jamaan",
+                    "email": "abdulmajeed.jamaan@outlook.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Ready to use application marks feature.",
+            "homepage": "https://github.com/lara-zeus/mark",
+            "keywords": [
+                "lara-zeus",
+                "laravel",
+                "mark"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/mark/issues",
+                "source": "https://github.com/lara-zeus/mark"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/lara-zeus"
+                }
+            ],
+            "time": "2025-02-25T20:03:42+00:00"
+        },
+        {
             "name": "lara-zeus/matrix-choice",
             "version": "v3.2.2",
             "source": {
@@ -7353,6 +7728,93 @@
                 }
             ],
             "time": "2024-09-04T18:18:18+00:00"
+        },
+        {
+            "name": "lara-zeus/pontus",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/pontus.git",
+                "reference": "c0a75def5928d720fe3e77ffe705ab07be92b64b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/pontus/zipball/c0a75def5928d720fe3e77ffe705ab07be92b64b",
+                "reference": "c0a75def5928d720fe3e77ffe705ab07be92b64b",
+                "shasum": ""
+            },
+            "require": {
+                "calebporzio/sushi": "^2.4",
+                "ext-json": "*",
+                "ext-pdo_sqlite": "*",
+                "ext-sqlite3": "*",
+                "filament/filament": "^3.2",
+                "lara-zeus/chaos": "^1.0",
+                "php": "^8.1",
+                "rinvex/laravel-subscriptions": "dev-laravel-12"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.2",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Pontus": "LaraZeus\\Pontus\\Facades\\Pontus"
+                    },
+                    "providers": [
+                        "LaraZeus\\Pontus\\PontusServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Pontus\\": "src",
+                    "LaraZeus\\Pontus\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "subscriptions, plans, invoices, and features",
+            "homepage": "https://larazeus.com/pontus",
+            "keywords": [
+                "features",
+                "filamentphp",
+                "invoices",
+                "lara-zeus",
+                "laravel",
+                "manager",
+                "plans",
+                "pontus",
+                "subscriptions"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/pontus/issues",
+                "source": "https://github.com/lara-zeus/pontus"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/atmonshi",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-03-01T23:44:34+00:00"
         },
         {
             "name": "lara-zeus/popover",
@@ -8160,6 +8622,104 @@
                 }
             ],
             "time": "2025-02-25T12:55:49+00:00"
+        },
+        {
+            "name": "lara-zeus/translatable-pro",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:lara-zeus/translatable-pro.git",
+                "reference": "51be1c1ef161f35594a3a20914e3f61977b91dbf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/translatable-pro/zipball/51be1c1ef161f35594a3a20914e3f61977b91dbf",
+                "reference": "51be1c1ef161f35594a3a20914e3f61977b91dbf",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.2",
+                "php": "^8.2",
+                "reedware/laravel-relation-joins": "^6.0|^8.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^8.0",
+                "nunomaduro/larastan": "^2.0",
+                "nunomaduro/phpinsights": "^2.8",
+                "orchestra/testbench": "^9.0",
+                "phpstan/extension-installer": "^1.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\TranslatablePro\\TranslatableProServiceProvider"
+                    ],
+                    "aliases": {
+                        "TranslatablePro": "LaraZeus\\TranslatablePro\\Facades\\TranslatablePro"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\TranslatablePro\\": "src"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
+                }
+            ],
+            "description": "Zeus Translatable Pro is Advanced, Optimized, high performance Translatable Plugin for FilamentPHP",
+            "homepage": "https://larazeus.com/translatable-pro",
+            "keywords": [
+                "database",
+                "database translatable",
+                "filamentphp",
+                "lara-zeus",
+                "laravel",
+                "translatable",
+                "translatable-pro"
+            ],
+            "support": {
+                "chat": "https://discord.com/channels/883083792112300104/1282750611586154516",
+                "contact": "https://larazeus.com/contact-us",
+                "docs": "https://larazeus.com/translatable-pro",
+                "email": "info@larazeus.com",
+                "source": "https://github.com/lara-zeus/translatable-pro/tree/1.x",
+                "issues": "https://github.com/lara-zeus/translatable-pro/issues"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/atmonshi"
+                },
+                {
+                    "type": "custom",
+                    "url": "https://www.buymeacoffee.com/larazeus"
+                }
+            ],
+            "time": "2025-03-03T22:42:29+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -12075,6 +12635,72 @@
             "time": "2024-04-27T21:32:50+00:00"
         },
         {
+            "name": "reedware/laravel-relation-joins",
+            "version": "v8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tylernathanreed/laravel-relation-joins.git",
+                "reference": "d7714d8b2a718dc737b95576bbc5d57cab8b9780"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tylernathanreed/laravel-relation-joins/zipball/d7714d8b2a718dc737b95576bbc5d57cab8b9780",
+                "reference": "d7714d8b2a718dc737b95576bbc5d57cab8b9780",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^11.0|^12.0",
+                "illuminate/database": "^11.0|^12.0",
+                "illuminate/support": "^11.0|^12.0",
+                "php": ">=8.2"
+            },
+            "require-dev": {
+                "illuminate/container": "^11.0|^12.0",
+                "larastan/larastan": "^2.9",
+                "laravel/pint": "^1.5",
+                "mockery/mockery": "^1.6.6",
+                "php-coveralls/php-coveralls": "^2.4",
+                "phpunit/phpunit": "^10.5",
+                "symfony/var-dumper": "^6.4.4|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Reedware\\LaravelRelationJoins\\LaravelRelationJoinServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Reedware\\LaravelRelationJoins\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tyler Reed",
+                    "email": "tylernathanreed@gmail.com"
+                }
+            ],
+            "description": "Adds the ability to join on a relationship by name.",
+            "keywords": [
+                "eloquent",
+                "join",
+                "laravel",
+                "query",
+                "relation"
+            ],
+            "support": {
+                "issues": "https://github.com/tylernathanreed/laravel-relation-joins/issues",
+                "source": "https://github.com/tylernathanreed/laravel-relation-joins/tree/v8.0.0"
+            },
+            "time": "2025-02-24T16:00:04+00:00"
+        },
+        {
             "name": "rickdbcn/filament-email",
             "version": "v1.8.0",
             "source": {
@@ -12146,6 +12772,96 @@
                 "source": "https://github.com/RickDBCN/filament-email/tree/v1.8.0"
             },
             "time": "2025-02-26T15:19:24+00:00"
+        },
+        {
+            "name": "rinvex/laravel-subscriptions",
+            "version": "dev-laravel-12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/still-code/laravel-subscriptions.git",
+                "reference": "d456868f5d02a59d4bcb922d0f2e40510e420006"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/still-code/laravel-subscriptions/zipball/d456868f5d02a59d4bcb922d0f2e40510e420006",
+                "reference": "d456868f5d02a59d4bcb922d0f2e40510e420006",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^8.0.0 | ^9.0.0 | ^10.0.0 | ^11.0.0 | ^12.0.0",
+                "illuminate/database": "^8.0.0 | ^9.0.0 | ^10.0.0 | ^11.0.0 | ^12.0.0",
+                "illuminate/support": "^8.0.0 | ^9.0.0 | ^10.0.0 | ^11.0.0 | ^12.0.0",
+                "php": "^8.1",
+                "spatie/eloquent-sortable": "^4.0",
+                "spatie/laravel-sluggable": "^3.4",
+                "spatie/laravel-translatable": "^6.4"
+            },
+            "require-dev": {
+                "codedungeon/phpunit-result-printer": "^0.31.0",
+                "illuminate/container": "^8.0.0 | ^9.0.0",
+                "phpunit/phpunit": "^9.5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Rinvex\\Subscriptions\\Providers\\SubscriptionsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rinvex\\Subscriptions\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Rinvex\\Subscriptions\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rinvex LLC",
+                    "homepage": "https://rinvex.com",
+                    "email": "help@rinvex.com"
+                },
+                {
+                    "name": "Abdelrahman Omran",
+                    "homepage": "https://omranic.com",
+                    "email": "me@omranic.com",
+                    "role": "Project Lead"
+                },
+                {
+                    "name": "The Generous Laravel Community",
+                    "homepage": "https://github.com/rinvex/laravel-subscriptions/contributors"
+                }
+            ],
+            "description": "Rinvex Subscriptions is a flexible plans and subscription management system for Laravel, with the required tools to run your SAAS like services efficiently. It's simple architecture, accompanied by powerful underlying to afford solid platform for your business.",
+            "homepage": "https://rinvex.com",
+            "keywords": [
+                "database",
+                "feature",
+                "laravel",
+                "plan",
+                "recurring",
+                "subscription",
+                "value"
+            ],
+            "support": {
+                "email": "help@rinvex.com",
+                "issues": "https://github.com/rinvex/laravel-subscriptions/issues",
+                "source": "https://github.com/rinvex/laravel-subscriptions",
+                "docs": "https://github.com/rinvex/laravel-subscriptions/blob/master/README.md"
+            },
+            "time": "2025-03-01T23:41:41+00:00"
         },
         {
             "name": "rupadana/filament-api-service",
@@ -21746,6 +22462,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "lara-zeus/translatable-pro": 20,
         "torchlight/torchlight-laravel": 20,
         "wiebenieuwenhuis/filament-code-editor": 20,
         "roave/security-advisories": 20
