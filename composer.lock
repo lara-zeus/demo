@@ -2301,16 +2301,16 @@
         },
         {
             "name": "dedoc/scramble",
-            "version": "v0.12.10",
+            "version": "v0.12.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dedoc/scramble.git",
-                "reference": "996dc8db3e09e7f893d4883dfdfa8f2839fee531"
+                "reference": "83aacb9d81ed147ac086f42967de288a3415c5d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dedoc/scramble/zipball/996dc8db3e09e7f893d4883dfdfa8f2839fee531",
-                "reference": "996dc8db3e09e7f893d4883dfdfa8f2839fee531",
+                "url": "https://api.github.com/repos/dedoc/scramble/zipball/83aacb9d81ed147ac086f42967de288a3415c5d6",
+                "reference": "83aacb9d81ed147ac086f42967de288a3415c5d6",
                 "shasum": ""
             },
             "require": {
@@ -2365,7 +2365,7 @@
             ],
             "support": {
                 "issues": "https://github.com/dedoc/scramble/issues",
-                "source": "https://github.com/dedoc/scramble/tree/v0.12.10"
+                "source": "https://github.com/dedoc/scramble/tree/v0.12.11"
             },
             "funding": [
                 {
@@ -2373,7 +2373,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-24T20:12:29+00:00"
+            "time": "2025-03-09T10:32:56+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -6432,16 +6432,16 @@
         },
         {
             "name": "lara-zeus/core",
-            "version": "v3.2.1",
+            "version": "v3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "093853f242b1cb515f3115df76f619a97e818a0a"
+                "reference": "414db3ead2ddcdd1710a3a984db236200e95c2e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/093853f242b1cb515f3115df76f619a97e818a0a",
-                "reference": "093853f242b1cb515f3115df76f619a97e818a0a",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/414db3ead2ddcdd1710a3a984db236200e95c2e1",
+                "reference": "414db3ead2ddcdd1710a3a984db236200e95c2e1",
                 "shasum": ""
             },
             "require": {
@@ -6449,8 +6449,8 @@
                 "ext-json": "*",
                 "ext-pdo_sqlite": "*",
                 "ext-sqlite3": "*",
-                "filament/filament": "^3.3",
-                "filament/spatie-laravel-translatable-plugin": "^3.3",
+                "filament/filament": "^3.0",
+                "filament/spatie-laravel-translatable-plugin": "^3.0",
                 "lara-zeus/laravel-seo": "^1.0",
                 "php": "^8.2"
             },
@@ -6511,7 +6511,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-07T21:12:29+00:00"
+            "time": "2025-03-09T00:07:24+00:00"
         },
         {
             "name": "lara-zeus/delia",
@@ -19237,16 +19237,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.7",
+            "version": "2.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "12567f91a74036d56ba0af6d56c8e73ac0e8d850"
+                "reference": "f9adff3b87c03b12cc7e46a30a524648e497758f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/12567f91a74036d56ba0af6d56c8e73ac0e8d850",
-                "reference": "12567f91a74036d56ba0af6d56c8e73ac0e8d850",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f9adff3b87c03b12cc7e46a30a524648e497758f",
+                "reference": "f9adff3b87c03b12cc7e46a30a524648e497758f",
                 "shasum": ""
             },
             "require": {
@@ -19291,7 +19291,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-05T13:43:55+00:00"
+            "time": "2025-03-09T09:30:48+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
