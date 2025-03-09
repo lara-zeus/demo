@@ -6,7 +6,6 @@ use Awcodes\Mason\Brick;
 use Awcodes\Mason\EditorCommand;
 use Awcodes\Mason\Mason;
 use Filament\Forms\Components\Select;
-use Filament\Forms\Components\Textarea;
 use Wiebenieuwenhuis\FilamentCodeEditor\Components\CodeEditor;
 
 class Code

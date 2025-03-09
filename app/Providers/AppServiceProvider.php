@@ -20,10 +20,8 @@ class AppServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         if ($this->app->environment('production')) {
             URL::forceScheme('https');
@@ -55,12 +53,12 @@ class AppServiceProvider extends ServiceProvider
 
         });
 
-        //$this->hooksRenderer();
+        // $this->hooksRenderer();
 
         Filament::serving(function () {
             FilamentAsset::register([
                 Css::make('flags', asset('css/flag-icons.css')),
-                //Css::make('filament-stylesheet', asset('css/filament-zeus.css')),
+                // Css::make('filament-stylesheet', asset('css/filament-zeus.css')),
             ]);
         });
 
@@ -81,8 +79,7 @@ class AppServiceProvider extends ServiceProvider
         });*/
 
         Blade::directive('zeusz', function ($part = null) {
-            return '<span class="title-font text-gray-700 group"><span class="title-font font-semibold text-primary-500 group-hover:text-secondary-500 transition ease-in-out duration-300">Lara&nbsp;<span class="title-font line-through italic text-secondary-500 group-hover:text-primary-500 transition ease-in-out duration-300">Z</span>eus</span></span>'
-            . ($part) ?? '<span class="title-font text-base tracking-wide text-gray-500">{$part}</span>';
+            return '<span class="title-font text-gray-700 group"><span class="title-font font-semibold text-primary-500 group-hover:text-secondary-500 transition ease-in-out duration-300">Lara&nbsp;<span class="title-font line-through italic text-secondary-500 group-hover:text-primary-500 transition ease-in-out duration-300">Z</span>eus</span></span>';
         });
 
         Blade::directive('stillStats', function ($code) {
@@ -94,7 +91,7 @@ class AppServiceProvider extends ServiceProvider
         });
     }
 
-    public function hooksRenderer()
+    /*public function hooksRenderer(): void
     {
         $hooks = [
             'zeus-forms.before',
@@ -102,9 +99,9 @@ class AppServiceProvider extends ServiceProvider
             'zeus-form.before',
             'zeus-form.after',
             'zeus-form-section.before',
-            //'zeus-form-section.after',
-            //'zeus-form-field.before',
-            //'zeus-form-field.after',
+            // 'zeus-form-section.after',
+            // 'zeus-form-field.before',
+            // 'zeus-form-field.after',
         ];
         foreach ($hooks as $key => $hook) {
             FilamentView::registerRenderHook(
@@ -115,5 +112,5 @@ class AppServiceProvider extends ServiceProvider
                 ),
             );
         }
-    }
+    }*/
 }

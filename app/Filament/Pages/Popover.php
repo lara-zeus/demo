@@ -3,6 +3,7 @@
 namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
+use App\Filament\Pages\Actions\DemoHeaderAction;
 use App\Models\User;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
@@ -30,7 +31,7 @@ class Popover extends Page implements HasTable
     public function mount(): void
     {
         $this->form->fill([
-            'name'=>'Zeus'
+            'name' => 'Zeus',
         ]);
     }
 
@@ -108,5 +109,12 @@ class Popover extends Page implements HasTable
                             ->content(fn ($record) => view('filament.test.user-card', ['record' => $record, 'type' => 'name'])),
                     ]),
             ]);
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            DemoHeaderAction::make(),
+        ];
     }
 }

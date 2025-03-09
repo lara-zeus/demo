@@ -33,7 +33,7 @@ return new class extends Migration
             $table->integer('days_between_requests')->default(0);
             $table->integer('hours_to_cancel')->default(24);
             $table->integer('ordering')->default(1);
-            $table->string('req_acceptance_mode')->default('AUTO'); //MANUAL
+            $table->string('req_acceptance_mode')->default('AUTO'); // MANUAL
             $table->text('timetable');
             $table->boolean('is_request_user_unique')->default(true);
             $table->text('notifications')->nullable();

@@ -28,7 +28,7 @@ class WindSeeder extends Seeder
                 'is_active' => 1,
                 'desc' => 'any help with Sales',
                 'slug' => 'sales',
-                //'logo' => 'new-page',
+                // 'logo' => 'new-page',
                 'created_at' => now(),
             ]);
 

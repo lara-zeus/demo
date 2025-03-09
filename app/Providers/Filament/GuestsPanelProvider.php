@@ -52,7 +52,7 @@ class GuestsPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Guests/Widgets'), for: 'App\\Filament\\Guests\\Widgets')
             ->widgets([
-                //Widgets\FilamentInfoWidget::class,
+                // Widgets\FilamentInfoWidget::class,
             ])
             ->plugins([
                 BoringAvatarPlugin::make()
@@ -65,7 +65,7 @@ class GuestsPanelProvider extends PanelProvider
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
                 StartSession::class,
-                //AuthenticateSession::class,
+                // AuthenticateSession::class,
                 ShareErrorsFromSession::class,
                 VerifyCsrfToken::class,
                 SubstituteBindings::class,

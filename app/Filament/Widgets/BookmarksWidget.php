@@ -33,8 +33,6 @@ class BookmarksWidget extends Widget implements HasForms, HasInfolists
                             ->where('user_id', auth()->user()->id)
                             ->get()
                             ->map(function ($item) {
-                                $resource = app($item->bookmarkable_resource);
-
                                 return ListItem::make()
                                     ->id($item->id)
                                     ->url($item->url)

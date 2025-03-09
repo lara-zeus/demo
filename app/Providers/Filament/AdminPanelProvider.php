@@ -5,6 +5,8 @@ namespace App\Providers\Filament;
 use App\CuratedBySwis;
 use App\Filament\Pages\Auth\Login;
 use App\Filament\Pages\Tiles;
+use App\Filament\Resources\CarResource;
+use App\Filament\Resources\UserResource;
 use App\Filament\Widgets\Feedback;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
@@ -150,7 +152,34 @@ class AdminPanelProvider extends PanelProvider
                 /*NavigationGroup::make()->label('Rhea')
                     ->icon('tabler-bow'),*/
             ])
-            //->unsavedChangesAlerts()
+            // ->unsavedChangesAlerts()
+
+            // car
+            ->renderHook(
+                'panels::page.start',
+                fn (array $scopes): View => view('filament.hooks.car', ['scopes' => $scopes]),
+                scopes: [
+                    CarResource::class,
+                ],
+            )
+
+            // user
+            ->renderHook(
+                'panels::page.start',
+                fn (array $scopes): View => view('filament.hooks.user', ['scopes' => $scopes]),
+                scopes: [
+                    UserResource::class,
+                ],
+            )
+
+            // user views resource
+            ->renderHook(
+                'panels::page.start',
+                fn (array $scopes): View => view('filament.hooks.user-view-resource', ['scopes' => $scopes]),
+                scopes: [
+                    UserViewResource::class,
+                ],
+            )
 
             // hermes
             ->renderHook(
@@ -221,7 +250,7 @@ class AdminPanelProvider extends PanelProvider
                     CollectionResource::class,
                 ],
             )
-            //db notice
+            // db notice
             /*->renderHook(
                 'panels::content.start',
                 fn (): View => view('filament.hooks.db-notice'),
@@ -249,12 +278,12 @@ class AdminPanelProvider extends PanelProvider
             //
             ->pages([
                 Pages\Dashboard::class,
-                //\LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboard::class,
+                // \LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboard::class,
             ])
             ->widgets([
-                //UmamiWidgetStatsGrouped::class,
-                //UmamiWidgetTableReferrers::class,
-                //UmamiWidgetTableUrls::class,
+                // UmamiWidgetStatsGrouped::class,
+                // UmamiWidgetTableReferrers::class,
+                // UmamiWidgetTableUrls::class,
 
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
@@ -307,7 +336,7 @@ class AdminPanelProvider extends PanelProvider
                 ->navigationGroup(fn (): string => __('Hermes'))
                 ->navigationSort(99)
                 ->navigationCountBadge(),
-            //SpotlightPlugin::make(),
+            // SpotlightPlugin::make(),
             LightSwitchPlugin::make(),
             OverlookPlugin::make()
                 ->sort(5)
@@ -337,7 +366,7 @@ class AdminPanelProvider extends PanelProvider
                 ]),
             SpatieLaravelTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt', 'ko']),
-            //ChronosPlugin::make(),
+            // ChronosPlugin::make(),
             DeliaPlugin::make(),
             BoringAvatarPlugin::make(),
             WindPlugin::make(),
@@ -370,7 +399,7 @@ class AdminPanelProvider extends PanelProvider
             ThunderPlugin::make(),
             AthenaPlugin::make(),
             DynamicDashboardPlugin::make(),
-            //RheaPlugin::make(),
+            // RheaPlugin::make(),
             HermesPlugin::make(),
         ];
     }

@@ -19,6 +19,7 @@ class Mason extends Page
     protected ?string $heading = 'A simple block based builder';
 
     public ?array $data = [];
+
     public MasonModel $post;
 
     public function mount(): void
