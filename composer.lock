@@ -590,16 +590,16 @@
         },
         {
             "name": "awcodes/filament-tiptap-editor",
-            "version": "v3.5.9",
+            "version": "v3.5.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/filament-tiptap-editor.git",
-                "reference": "7c401aa7ffe7672fe23c5a30fb65deae3e9201fb"
+                "reference": "95b99dd30fe1b6672957b5a9e83e598a08c0423b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/filament-tiptap-editor/zipball/7c401aa7ffe7672fe23c5a30fb65deae3e9201fb",
-                "reference": "7c401aa7ffe7672fe23c5a30fb65deae3e9201fb",
+                "url": "https://api.github.com/repos/awcodes/filament-tiptap-editor/zipball/95b99dd30fe1b6672957b5a9e83e598a08c0423b",
+                "reference": "95b99dd30fe1b6672957b5a9e83e598a08c0423b",
                 "shasum": ""
             },
             "require": {
@@ -660,7 +660,7 @@
             ],
             "support": {
                 "issues": "https://github.com/awcodes/filament-tiptap-editor/issues",
-                "source": "https://github.com/awcodes/filament-tiptap-editor/tree/v3.5.9"
+                "source": "https://github.com/awcodes/filament-tiptap-editor/tree/v3.5.10"
             },
             "funding": [
                 {
@@ -668,7 +668,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-25T14:52:20+00:00"
+            "time": "2025-03-10T13:21:57+00:00"
         },
         {
             "name": "awcodes/filament-versions",
@@ -7055,16 +7055,16 @@
         },
         {
             "name": "lara-zeus/hermes",
-            "version": "v2.0.9",
+            "version": "v2.0.10",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/hermes.git",
-                "reference": "ca828b02e391bf2d05071bd0dd246a5a64f600aa"
+                "reference": "7662a291455cacbdfe25b5f60e6d1f9e74bb5515"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/ca828b02e391bf2d05071bd0dd246a5a64f600aa",
-                "reference": "ca828b02e391bf2d05071bd0dd246a5a64f600aa",
+                "url": "https://api.github.com/repos/lara-zeus/hermes/zipball/7662a291455cacbdfe25b5f60e6d1f9e74bb5515",
+                "reference": "7662a291455cacbdfe25b5f60e6d1f9e74bb5515",
                 "shasum": ""
             },
             "require": {
@@ -7158,10 +7158,10 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/hermes",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/hermes/tree/v2.0.9",
+                "source": "https://github.com/lara-zeus/hermes/tree/v2.0.10",
                 "issues": "https://github.com/lara-zeus/hermes/issues"
             },
-            "time": "2025-03-07T21:30:56+00:00"
+            "time": "2025-03-10T23:03:44+00:00"
         },
         {
             "name": "lara-zeus/inline-chart",
@@ -10189,16 +10189,16 @@
         },
         {
             "name": "malzariey/filament-daterangepicker-filter",
-            "version": "3.2.1",
+            "version": "3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/malzariey/filament-daterangepicker-filter.git",
-                "reference": "990c9b2a756d1adb0c851b5fc10e0dda6b5c7f2c"
+                "reference": "4108b1f465d77d2a88ea637ded37d7e99523a3bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/malzariey/filament-daterangepicker-filter/zipball/990c9b2a756d1adb0c851b5fc10e0dda6b5c7f2c",
-                "reference": "990c9b2a756d1adb0c851b5fc10e0dda6b5c7f2c",
+                "url": "https://api.github.com/repos/malzariey/filament-daterangepicker-filter/zipball/4108b1f465d77d2a88ea637ded37d7e99523a3bc",
+                "reference": "4108b1f465d77d2a88ea637ded37d7e99523a3bc",
                 "shasum": ""
             },
             "require": {
@@ -10243,7 +10243,7 @@
             ],
             "support": {
                 "issues": "https://github.com/malzariey/filament-daterangepicker-filter/issues",
-                "source": "https://github.com/malzariey/filament-daterangepicker-filter/tree/3.2.1"
+                "source": "https://github.com/malzariey/filament-daterangepicker-filter/tree/3.2.3"
             },
             "funding": [
                 {
@@ -10251,7 +10251,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-25T12:48:10+00:00"
+            "time": "2025-03-10T12:23:59+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -13036,16 +13036,16 @@
         },
         {
             "name": "saade/filament-fullcalendar",
-            "version": "v3.2.3",
+            "version": "v3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/saade/filament-fullcalendar.git",
-                "reference": "218643a1c10c07ec073992b40845ccfcf977bb6e"
+                "reference": "9dcfba69748312b5aeb5dd0281c899ffe050339c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/saade/filament-fullcalendar/zipball/218643a1c10c07ec073992b40845ccfcf977bb6e",
-                "reference": "218643a1c10c07ec073992b40845ccfcf977bb6e",
+                "url": "https://api.github.com/repos/saade/filament-fullcalendar/zipball/9dcfba69748312b5aeb5dd0281c899ffe050339c",
+                "reference": "9dcfba69748312b5aeb5dd0281c899ffe050339c",
                 "shasum": ""
             },
             "require": {
@@ -13098,7 +13098,7 @@
             ],
             "support": {
                 "issues": "https://github.com/saade/filament-fullcalendar/issues",
-                "source": "https://github.com/saade/filament-fullcalendar/tree/v3.2.3"
+                "source": "https://github.com/saade/filament-fullcalendar/tree/v3.2.4"
             },
             "funding": [
                 {
@@ -13106,7 +13106,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-19T17:19:23+00:00"
+            "time": "2025-03-10T16:44:00+00:00"
         },
         {
             "name": "savannabits/filament-flatpickr",
@@ -18482,16 +18482,16 @@
         },
         {
             "name": "ysfkaya/filament-phone-input",
-            "version": "v2.3.7",
+            "version": "v2.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ysfkaya/filament-phone-input.git",
-                "reference": "86eb648fd316b9b167a0f4d3f87ff2359ecf1d68"
+                "reference": "5ed05489317659e27ae4c28013803176fcc10a9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ysfkaya/filament-phone-input/zipball/86eb648fd316b9b167a0f4d3f87ff2359ecf1d68",
-                "reference": "86eb648fd316b9b167a0f4d3f87ff2359ecf1d68",
+                "url": "https://api.github.com/repos/ysfkaya/filament-phone-input/zipball/5ed05489317659e27ae4c28013803176fcc10a9a",
+                "reference": "5ed05489317659e27ae4c28013803176fcc10a9a",
                 "shasum": ""
             },
             "require": {
@@ -18540,9 +18540,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ysfkaya/filament-phone-input/issues",
-                "source": "https://github.com/ysfkaya/filament-phone-input/tree/v2.3.7"
+                "source": "https://github.com/ysfkaya/filament-phone-input/tree/v2.4.8"
             },
-            "time": "2024-08-14T11:44:05+00:00"
+            "time": "2025-03-10T16:57:09+00:00"
         }
     ],
     "packages-dev": [
@@ -19425,12 +19425,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "4da22c240293fcf0fe72fc0b1f2f265efeb44e2e"
+                "reference": "5798aba4843a60cf69f01d0197b167e6ff359188"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/4da22c240293fcf0fe72fc0b1f2f265efeb44e2e",
-                "reference": "4da22c240293fcf0fe72fc0b1f2f265efeb44e2e",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5798aba4843a60cf69f01d0197b167e6ff359188",
+                "reference": "5798aba4843a60cf69f01d0197b167e6ff359188",
                 "shasum": ""
             },
             "conflict": {
@@ -19531,7 +19531,7 @@
                 "codiad/codiad": "<=2.8.4",
                 "components/jquery": ">=1.0.3,<3.5",
                 "composer/composer": "<1.10.27|>=2,<2.2.24|>=2.3,<2.7.7",
-                "concrete5/concrete5": "<9.3.4",
+                "concrete5/concrete5": "<9.4.0.0-RC1-dev",
                 "concrete5/core": "<8.5.8|>=9,<9.1",
                 "contao-components/mediaelement": ">=2.14.2,<2.21.1",
                 "contao/comments-bundle": ">=2,<4.13.40|>=5.0.0.0-RC1-dev,<5.3.4",
@@ -19933,7 +19933,7 @@
                 "pixelfed/pixelfed": "<0.11.11",
                 "plotly/plotly.js": "<2.25.2",
                 "pocketmine/bedrock-protocol": "<8.0.2",
-                "pocketmine/pocketmine-mp": "<5.11.2",
+                "pocketmine/pocketmine-mp": "<5.25.2",
                 "pocketmine/raklib": ">=0.14,<0.14.6|>=0.15,<0.15.1",
                 "pressbooks/pressbooks": "<5.18",
                 "prestashop/autoupgrade": ">=4,<4.10.1",
@@ -20294,7 +20294,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-06T18:06:13+00:00"
+            "time": "2025-03-10T23:05:21+00:00"
         },
         {
             "name": "spatie/backtrace",
