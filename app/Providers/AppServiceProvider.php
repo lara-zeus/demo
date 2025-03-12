@@ -78,6 +78,11 @@ class AppServiceProvider extends ServiceProvider
             return '<span class="font-courier"><span class="font-courier rounded-lg bg-gray-200 italic px-2 dark:bg-gray-500"><span class="font-courier not-italic">Still ~ </span><span class="font-courier not-italic text-purple-500">&lt;?</span><span> code</span><span class="font-courier blink-cursor not-italic font-thin text-gray-400">|</span><span class="font-courier not-italic text-purple-500">?&gt;</span></span></span>';
         });*/
 
+        $this->app->bind(
+            \LaraZeus\Athena\Filament\Resources\ServiceResource::class,
+            \App\Filament\Resources\ServiceResource::class,
+        );
+
         Blade::directive('zeusz', function ($part = null) {
             return '<span class="title-font text-gray-700 group"><span class="title-font font-semibold text-primary-500 group-hover:text-secondary-500 transition ease-in-out duration-300">Lara&nbsp;<span class="title-font line-through italic text-secondary-500 group-hover:text-primary-500 transition ease-in-out duration-300">Z</span>eus</span></span>';
         });
