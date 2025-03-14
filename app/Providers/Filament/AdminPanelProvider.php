@@ -71,12 +71,8 @@ use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
-use pxlrbt\FilamentSpotlight\SpotlightPlugin;
 use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
 use Schmeits\FilamentUmami\FilamentUmamiPlugin;
-use Schmeits\FilamentUmami\Widgets\UmamiWidgetStatsGrouped;
-use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableReferrers;
-use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableUrls;
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider

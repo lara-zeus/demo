@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "454fb229d41d2ad7fff4d3979500dec0",
+    "content-hash": "2711f7e4112ab8e64b342a93b3278286",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -5898,16 +5898,16 @@
         },
         {
             "name": "lara-zeus/athena",
-            "version": "1.1.17",
+            "version": "1.1.18",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/athena.git",
-                "reference": "05f1ea889339c7cbebf7a1cec22393bebf3eda76"
+                "reference": "df96e6d8882f861f346cc4423da808d9559c02a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/05f1ea889339c7cbebf7a1cec22393bebf3eda76",
-                "reference": "05f1ea889339c7cbebf7a1cec22393bebf3eda76",
+                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/df96e6d8882f861f346cc4423da808d9559c02a4",
+                "reference": "df96e6d8882f861f346cc4423da808d9559c02a4",
                 "shasum": ""
             },
             "require": {
@@ -5986,7 +5986,7 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/athena",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/athena/tree/1.1.17",
+                "source": "https://github.com/lara-zeus/athena/tree/1.1.18",
                 "issues": "https://github.com/lara-zeus/athena/issues"
             },
             "funding": [
@@ -5995,7 +5995,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2025-03-07T21:20:06+00:00"
+            "time": "2025-03-13T23:17:25+00:00"
         },
         {
             "name": "lara-zeus/bolt",
@@ -19425,12 +19425,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "6ba50c57532da17268dc38903cc0abffb0f74660"
+                "reference": "700b113fafb61467cdb435b48a29c533235f41d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/6ba50c57532da17268dc38903cc0abffb0f74660",
-                "reference": "6ba50c57532da17268dc38903cc0abffb0f74660",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/700b113fafb61467cdb435b48a29c533235f41d3",
+                "reference": "700b113fafb61467cdb435b48a29c533235f41d3",
                 "shasum": ""
             },
             "conflict": {
@@ -19819,7 +19819,7 @@
                 "miniorange/miniorange-saml": "<1.4.3",
                 "mittwald/typo3_forum": "<1.2.1",
                 "mobiledetect/mobiledetectlib": "<2.8.32",
-                "modx/revolution": "<=2.8.3.0-patch",
+                "modx/revolution": "<=3.1",
                 "mojo42/jirafeau": "<4.4",
                 "mongodb/mongodb": ">=1,<1.9.2",
                 "monolog/monolog": ">=1.8,<1.12",
@@ -20295,7 +20295,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-12T23:05:27+00:00"
+            "time": "2025-03-13T20:05:28+00:00"
         },
         {
             "name": "spatie/backtrace",

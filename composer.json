@@ -136,10 +136,6 @@
   "prefer-stable": true,
   "repositories": [
     {
-      "type": "composer",
-      "url": "https://filament-filter-sets.composer.sh"
-    },
-    {
       "type": "vcs",
       "url": "https://github.com/laravel-shift/torchlight-laravel.git"
     },
