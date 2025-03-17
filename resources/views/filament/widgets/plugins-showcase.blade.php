@@ -2,7 +2,7 @@
     <x-filament::section
         icon="tabler-artboard-filled"
         icon-color="secondary"
-        icon-size="lg"
+        :compact="true"
     >
         <x-slot name="heading">
             Plugins Showcase

@@ -4,6 +4,7 @@ namespace App\Providers\Filament;
 
 use App\CuratedBySwis;
 use App\Filament\Pages\Auth\Login;
+use App\Filament\Pages\DashboardPage;
 use App\Filament\Pages\Tiles;
 use App\Filament\Resources\CarResource;
 use App\Filament\Resources\UserResource;
@@ -176,6 +177,15 @@ class AdminPanelProvider extends PanelProvider
                 ],
             )
 
+            // user views resource
+            ->renderHook(
+                'panels::page.start',
+                fn (array $scopes): View => view('filament.hooks.my-dash', ['scopes' => $scopes]),
+                scopes: [
+                    DashboardPage::class,
+                ],
+            )
+
             // hermes
             ->renderHook(
                 'panels::page.start',
@@ -273,7 +283,7 @@ class AdminPanelProvider extends PanelProvider
             //
             ->pages([
                 Pages\Dashboard::class,
-                // \LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboard::class,
+                DashboardPage::class,
             ])
             ->widgets([
                 // UmamiWidgetStatsGrouped::class,
