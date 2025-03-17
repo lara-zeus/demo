@@ -16,10 +16,8 @@
                 :label="__('Contact Us')"
                 icon="tabler-brand-pagekit"
             >
-                <div class="dark:bg-gray-900 bg-white p-4 *:py-2">
-                    <p>title</p>
-                    <p>title</p>
-                </div>
+                <p>title</p>
+                <p>title</p>
             </x-zeus-accordion::accordion.item>
 
             <x-zeus-accordion::accordion.item
@@ -28,20 +26,16 @@
                 badge="New Item"
                 badgeColor="danger"
             >
-                <div class="dark:bg-gray-900 items-center justify-center bg-white p-4 *:py-2">
-                    <p>info</p>
-                    <p>info</p>
-                    <p>info</p>
-                </div>
+                <p>info</p>
+                <p>info</p>
+                <p>info</p>
             </x-zeus-accordion::accordion.item>
 
             <x-zeus-accordion::accordion.item
                 :label="__('Find Us')"
                 icon="tabler-map-2"
             >
-                <div class="dark:bg-gray-900 items-center justify-center bg-white p-4 *:py-2">
-                    <p>map</p>
-                </div>
+                <p>map</p>
             </x-zeus-accordion::accordion.item>
 
         </x-zeus-accordion::accordion>

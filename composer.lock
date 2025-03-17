@@ -5574,16 +5574,16 @@
         },
         {
             "name": "lara-zeus/accordion",
-            "version": "1.1.9",
+            "version": "1.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/accordion.git",
-                "reference": "c1ef218cad26c621760c562590f3e2ef09754e91"
+                "reference": "eac4f36ee4394b8fabb4eeb3e06d0e1771aff2b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/accordion/zipball/c1ef218cad26c621760c562590f3e2ef09754e91",
-                "reference": "c1ef218cad26c621760c562590f3e2ef09754e91",
+                "url": "https://api.github.com/repos/lara-zeus/accordion/zipball/eac4f36ee4394b8fabb4eeb3e06d0e1771aff2b6",
+                "reference": "eac4f36ee4394b8fabb4eeb3e06d0e1771aff2b6",
                 "shasum": ""
             },
             "require": {
@@ -5653,7 +5653,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-17T19:16:15+00:00"
+            "time": "2025-03-17T21:49:20+00:00"
         },
         {
             "name": "lara-zeus/akin",
