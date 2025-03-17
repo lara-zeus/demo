@@ -5999,16 +5999,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.78",
+            "version": "v3.0.79",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "17bd49ddc932a89a59bb33cb1aaee69e6070b70d"
+                "reference": "46d87667db23d2b8dc9ca10bc353c0f0f2eaedbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/17bd49ddc932a89a59bb33cb1aaee69e6070b70d",
-                "reference": "17bd49ddc932a89a59bb33cb1aaee69e6070b70d",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/46d87667db23d2b8dc9ca10bc353c0f0f2eaedbb",
+                "reference": "46d87667db23d2b8dc9ca10bc353c0f0f2eaedbb",
                 "shasum": ""
             },
             "require": {
@@ -6088,7 +6088,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-07T21:21:51+00:00"
+            "time": "2025-03-17T15:53:09+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
