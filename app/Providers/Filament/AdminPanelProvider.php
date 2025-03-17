@@ -93,7 +93,6 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login(Login::class)
-            ->profile(isSimple: false)
             ->font('Montserrat')
             ->plugins($this->getPlugins())
             ->brandLogo(fn () => view('filament.logo'))
