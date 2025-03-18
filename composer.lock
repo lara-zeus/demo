@@ -5999,16 +5999,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.79",
+            "version": "v3.0.80",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "46d87667db23d2b8dc9ca10bc353c0f0f2eaedbb"
+                "reference": "031d3524a65105a990a244a946ab7c1b1444dd2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/46d87667db23d2b8dc9ca10bc353c0f0f2eaedbb",
-                "reference": "46d87667db23d2b8dc9ca10bc353c0f0f2eaedbb",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/031d3524a65105a990a244a946ab7c1b1444dd2f",
+                "reference": "031d3524a65105a990a244a946ab7c1b1444dd2f",
                 "shasum": ""
             },
             "require": {
@@ -6088,20 +6088,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-17T15:53:09+00:00"
+            "time": "2025-03-18T20:41:15+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.2.23",
+            "version": "v3.2.24",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "22986e348ddf94b3ca245c473ebe84e9c0c683ca"
+                "reference": "f65b1852b3bcb7be0f4ccd5fe7416ad827ff062f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/22986e348ddf94b3ca245c473ebe84e9c0c683ca",
-                "reference": "22986e348ddf94b3ca245c473ebe84e9c0c683ca",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/f65b1852b3bcb7be0f4ccd5fe7416ad827ff062f",
+                "reference": "f65b1852b3bcb7be0f4ccd5fe7416ad827ff062f",
                 "shasum": ""
             },
             "require": {
@@ -6183,10 +6183,10 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/bolt-pro",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/bolt-pro/tree/v3.2.23",
+                "source": "https://github.com/lara-zeus/bolt-pro/tree/v3.2.24",
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues"
             },
-            "time": "2025-03-07T21:23:39+00:00"
+            "time": "2025-03-18T20:43:42+00:00"
         },
         {
             "name": "lara-zeus/boredom",
