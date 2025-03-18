@@ -10,13 +10,13 @@
 
         Check out our filamentPHP
         <x-filament::link
-            tooltip="3 plugins available"
+            tooltip="{{ count(\Filament\Facades\Filament::getPanel('guests')->getPages()) - 1 }} plugins available"
             badge-color="secondary"
             :href="url('guests')"
         >
             Community Plugins Showcase
             <x-slot name="badge">
-                3
+                {{ count(\Filament\Facades\Filament::getPanel('guests')->getPages()) - 1 }}
             </x-slot>
         </x-filament::link>
     </x-filament::section>
