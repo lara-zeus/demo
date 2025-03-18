@@ -7383,16 +7383,16 @@
         },
         {
             "name": "lara-zeus/list-group",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/list-group.git",
-                "reference": "8d2b3599a0a9dc625a3d9798325efac0980ffb8b"
+                "reference": "f39b5fd4d948788589ab88dd4c41b4a63dc0c9d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/list-group/zipball/8d2b3599a0a9dc625a3d9798325efac0980ffb8b",
-                "reference": "8d2b3599a0a9dc625a3d9798325efac0980ffb8b",
+                "url": "https://api.github.com/repos/lara-zeus/list-group/zipball/f39b5fd4d948788589ab88dd4c41b4a63dc0c9d1",
+                "reference": "f39b5fd4d948788589ab88dd4c41b4a63dc0c9d1",
                 "shasum": ""
             },
             "require": {
@@ -7427,9 +7427,8 @@
             ],
             "authors": [
                 {
-                    "name": "php coder",
-                    "email": "info@larazeus.com",
-                    "role": "Owner"
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
                 }
             ],
             "description": "Zeus List is a filamentphp infolist layout component to group items with links, icons and badges",
@@ -7466,7 +7465,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-20T09:27:06+00:00"
+            "time": "2025-03-18T00:05:28+00:00"
         },
         {
             "name": "lara-zeus/mark",
