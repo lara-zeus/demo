@@ -42,9 +42,11 @@
 .compact-timeline .fi-timeline-item-heading {
     @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col !important;
 }
+
 .compact-timeline .fi-timeline-section-content {
     @apply shadow-none p-0 !important;
 }
+
 .compact-timeline {
     @apply shadow-none ring-0 !important;
 }
@@ -62,7 +64,7 @@
     @apply dark:!text-gray-100;
 }
 
-.fi-modal-close-overlay{
+.fi-modal-close-overlay {
     @apply backdrop-blur-sm;
 }
 
@@ -113,4 +115,12 @@
         border-radius: inherit;
         backdrop-filter: blur(3px);
     }
+}
+
+.fi-header-heading, .fi-section-header-heading {
+    @apply font-normal text-secondary-600 !important;
+}
+
+.fi-breadcrumbs-item-label {
+    @apply text-primary-600 !important;
 }
