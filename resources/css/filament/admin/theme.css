@@ -124,3 +124,24 @@
 .fi-breadcrumbs-item-label {
     @apply text-primary-600 !important;
 }
+
+/*
+.fi-topbar {
+    @apply hidden !important;
+}
+
+.fi-main {
+    @apply my-4 mb-4 bg-gray-50 rounded-3xl shadow-lg !important;
+}
+
+.fi-main-ctn {
+    @apply mx-10 !important;
+}
+
+.fi-panel-admin, .fi-main-ctn, .fi-sidebar, .fi-sidebar-header {
+    @apply bg-secondary-50 !important;
+}
+
+.fi-sidebar, .fi-sidebar-header {
+    @apply ring-0 shadow-none !important;
+}*/
