@@ -5069,16 +5069,16 @@
         },
         {
             "name": "jean85/pretty-package-versions",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jean85/pretty-package-versions.git",
-                "reference": "3c4e5f62ba8d7de1734312e4fff32f67a8daaf10"
+                "reference": "4d7aa5dab42e2a76d99559706022885de0e18e1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jean85/pretty-package-versions/zipball/3c4e5f62ba8d7de1734312e4fff32f67a8daaf10",
-                "reference": "3c4e5f62ba8d7de1734312e4fff32f67a8daaf10",
+                "url": "https://api.github.com/repos/Jean85/pretty-package-versions/zipball/4d7aa5dab42e2a76d99559706022885de0e18e1a",
+                "reference": "4d7aa5dab42e2a76d99559706022885de0e18e1a",
                 "shasum": ""
             },
             "require": {
@@ -5088,8 +5088,9 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.2",
                 "jean85/composer-provided-replaced-stub-package": "^1.0",
-                "phpstan/phpstan": "^1.4",
+                "phpstan/phpstan": "^2.0",
                 "phpunit/phpunit": "^7.5|^8.5|^9.6",
+                "rector/rector": "^2.0",
                 "vimeo/psalm": "^4.3 || ^5.0"
             },
             "type": "library",
@@ -5122,9 +5123,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Jean85/pretty-package-versions/issues",
-                "source": "https://github.com/Jean85/pretty-package-versions/tree/2.1.0"
+                "source": "https://github.com/Jean85/pretty-package-versions/tree/2.1.1"
             },
-            "time": "2024-11-18T16:19:46+00:00"
+            "time": "2025-03-19T14:43:43+00:00"
         },
         {
             "name": "jenssegers/agent",
@@ -6092,16 +6093,16 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.2.24",
+            "version": "v3.2.25",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "f65b1852b3bcb7be0f4ccd5fe7416ad827ff062f"
+                "reference": "fc43ddcc1fc89bb65fa861a2c48eaf56d5f5e601"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/f65b1852b3bcb7be0f4ccd5fe7416ad827ff062f",
-                "reference": "f65b1852b3bcb7be0f4ccd5fe7416ad827ff062f",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/fc43ddcc1fc89bb65fa861a2c48eaf56d5f5e601",
+                "reference": "fc43ddcc1fc89bb65fa861a2c48eaf56d5f5e601",
                 "shasum": ""
             },
             "require": {
@@ -6183,10 +6184,10 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/bolt-pro",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/bolt-pro/tree/v3.2.24",
+                "source": "https://github.com/lara-zeus/bolt-pro/tree/v3.2.25",
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues"
             },
-            "time": "2025-03-18T20:43:42+00:00"
+            "time": "2025-03-19T18:32:58+00:00"
         },
         {
             "name": "lara-zeus/boredom",
@@ -12956,16 +12957,16 @@
         },
         {
             "name": "saade/filament-autograph",
-            "version": "v3.1.1",
+            "version": "v3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/saade/filament-autograph.git",
-                "reference": "c3954b289ee8df3e60c6597faeee1c9a8b5bf0aa"
+                "reference": "05f6ece27f114b0c71275c76ad8f5c31efe3c7da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/saade/filament-autograph/zipball/c3954b289ee8df3e60c6597faeee1c9a8b5bf0aa",
-                "reference": "c3954b289ee8df3e60c6597faeee1c9a8b5bf0aa",
+                "url": "https://api.github.com/repos/saade/filament-autograph/zipball/05f6ece27f114b0c71275c76ad8f5c31efe3c7da",
+                "reference": "05f6ece27f114b0c71275c76ad8f5c31efe3c7da",
                 "shasum": ""
             },
             "require": {
@@ -13032,7 +13033,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-26T15:44:44+00:00"
+            "time": "2025-03-19T13:35:23+00:00"
         },
         {
             "name": "saade/filament-fullcalendar",
@@ -19377,12 +19378,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "082338f65948c175f5d9be2f420571b40f254e58"
+                "reference": "af199f9f0a8c465dd03b06977d83d5b5cbe32a3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/082338f65948c175f5d9be2f420571b40f254e58",
-                "reference": "082338f65948c175f5d9be2f420571b40f254e58",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/af199f9f0a8c465dd03b06977d83d5b5cbe32a3a",
+                "reference": "af199f9f0a8c465dd03b06977d83d5b5cbe32a3a",
                 "shasum": ""
             },
             "conflict": {
@@ -19491,7 +19492,7 @@
                 "contao/comments-bundle": ">=2,<4.13.40|>=5.0.0.0-RC1-dev,<5.3.4",
                 "contao/contao": "<=5.4.1",
                 "contao/core": "<3.5.39",
-                "contao/core-bundle": "<4.13.49|>=5,<5.3.15|>=5.4,<5.4.3",
+                "contao/core-bundle": "<4.13.54|>=5,<5.3.30|>=5.4,<5.5.6",
                 "contao/listing-bundle": ">=3,<=3.5.30|>=4,<4.4.8",
                 "contao/managed-edition": "<=1.5",
                 "corveda/phpsandbox": "<1.3.5",
@@ -20013,7 +20014,7 @@
                 "sylius/admin-bundle": ">=1,<1.0.17|>=1.1,<1.1.9|>=1.2,<1.2.2",
                 "sylius/grid": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
                 "sylius/grid-bundle": "<1.10.1",
-                "sylius/paypal-plugin": "<1.6.1|>=1.7,<1.7.1|>=2,<2.0.1",
+                "sylius/paypal-plugin": "<1.6.2|>=1.7,<1.7.2|>=2,<2.0.2",
                 "sylius/resource-bundle": ">=1,<1.3.14|>=1.4,<1.4.7|>=1.5,<1.5.2|>=1.6,<1.6.4",
                 "sylius/sylius": "<1.12.19|>=1.13.0.0-alpha1,<1.13.4",
                 "symbiote/silverstripe-multivaluefield": ">=3,<3.1",
@@ -20249,7 +20250,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-18T11:05:04+00:00"
+            "time": "2025-03-19T17:05:08+00:00"
         },
         {
             "name": "spatie/backtrace",
