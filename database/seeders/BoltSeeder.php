@@ -13,12 +13,18 @@ class BoltSeeder extends Seeder
      */
     public function run()
     {
+        /**
+         {"en":[
+          {"itemValue":"one en","itemKey":"1","itemIsDefault":false},
+          {"itemValue":"two en","itemKey":"2","itemIsDefault":false}
+         ]}
+         */
         $collection = DB::table(config('zeus-bolt.table-prefix') . 'collections')->insertGetId([
-            'name' => 'numbers range 1-5',
+            'name' => json_encode(['en' => 'numbers range 1-5'], JSON_THROW_ON_ERROR),
             'values' => json_encode([
                 [
                     'itemKey' => '1',
-                    'itemValue' => 'One',
+                    'itemValue' => ['en'=>'One'],
                     'itemIsDefault' => false,
                 ],
                 [
