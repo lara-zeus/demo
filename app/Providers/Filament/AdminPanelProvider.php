@@ -370,7 +370,7 @@ class AdminPanelProvider extends PanelProvider
                     LayoutResource::class,
                 ]),
             SpatieLaravelTranslatablePlugin::make()
-                ->defaultLocales(['en', 'pt', 'ko']),
+                ->defaultLocales(['en','es', 'pt', 'ko']),
             // ChronosPlugin::make(),
             DeliaPlugin::make(),
             BoringAvatarPlugin::make(),
