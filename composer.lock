@@ -5894,16 +5894,16 @@
         },
         {
             "name": "lara-zeus/athena",
-            "version": "1.1.19",
+            "version": "1.1.20",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/athena.git",
-                "reference": "18bc15ac92ed29f42dc74600347c64e43d556e0a"
+                "reference": "cc4d27a96bcaa867a1d0535f1a34103f4d172909"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/18bc15ac92ed29f42dc74600347c64e43d556e0a",
-                "reference": "18bc15ac92ed29f42dc74600347c64e43d556e0a",
+                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/cc4d27a96bcaa867a1d0535f1a34103f4d172909",
+                "reference": "cc4d27a96bcaa867a1d0535f1a34103f4d172909",
                 "shasum": ""
             },
             "require": {
@@ -5982,7 +5982,7 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/athena",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/athena/tree/1.1.19",
+                "source": "https://github.com/lara-zeus/athena/tree/1.1.20",
                 "issues": "https://github.com/lara-zeus/athena/issues"
             },
             "funding": [
@@ -5991,7 +5991,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2025-03-15T13:30:08+00:00"
+            "time": "2025-03-23T22:51:19+00:00"
         },
         {
             "name": "lara-zeus/bolt",
@@ -6088,16 +6088,16 @@
         },
         {
             "name": "lara-zeus/bolt-pro",
-            "version": "v3.2.25",
+            "version": "v3.2.26",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/bolt-pro.git",
-                "reference": "fc43ddcc1fc89bb65fa861a2c48eaf56d5f5e601"
+                "reference": "04d04563954d28a2c1ec687c577603c8cd5551a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/fc43ddcc1fc89bb65fa861a2c48eaf56d5f5e601",
-                "reference": "fc43ddcc1fc89bb65fa861a2c48eaf56d5f5e601",
+                "url": "https://api.github.com/repos/lara-zeus/bolt-pro/zipball/04d04563954d28a2c1ec687c577603c8cd5551a6",
+                "reference": "04d04563954d28a2c1ec687c577603c8cd5551a6",
                 "shasum": ""
             },
             "require": {
@@ -6179,10 +6179,10 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/bolt-pro",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/bolt-pro/tree/v3.2.25",
+                "source": "https://github.com/lara-zeus/bolt-pro/tree/v3.2.26",
                 "issues": "https://github.com/lara-zeus/bolt-pro/issues"
             },
-            "time": "2025-03-19T18:32:58+00:00"
+            "time": "2025-03-23T15:43:38+00:00"
         },
         {
             "name": "lara-zeus/boredom",
@@ -18478,16 +18478,16 @@
         },
         {
             "name": "ysfkaya/filament-phone-input",
-            "version": "v2.3.7",
+            "version": "v2.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ysfkaya/filament-phone-input.git",
-                "reference": "86eb648fd316b9b167a0f4d3f87ff2359ecf1d68"
+                "reference": "5ed05489317659e27ae4c28013803176fcc10a9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ysfkaya/filament-phone-input/zipball/86eb648fd316b9b167a0f4d3f87ff2359ecf1d68",
-                "reference": "86eb648fd316b9b167a0f4d3f87ff2359ecf1d68",
+                "url": "https://api.github.com/repos/ysfkaya/filament-phone-input/zipball/5ed05489317659e27ae4c28013803176fcc10a9a",
+                "reference": "5ed05489317659e27ae4c28013803176fcc10a9a",
                 "shasum": ""
             },
             "require": {
@@ -18536,9 +18536,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ysfkaya/filament-phone-input/issues",
-                "source": "https://github.com/ysfkaya/filament-phone-input/tree/v2.3.7"
+                "source": "https://github.com/ysfkaya/filament-phone-input/tree/v2.4.8"
             },
-            "time": "2024-08-14T11:44:05+00:00"
+            "time": "2025-03-10T16:57:09+00:00"
         }
     ],
     "packages-dev": [
@@ -19185,16 +19185,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.8",
+            "version": "2.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "f9adff3b87c03b12cc7e46a30a524648e497758f"
+                "reference": "051a3b6b9b80df4ba3a7f801a8b53ad7d8f1c15f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f9adff3b87c03b12cc7e46a30a524648e497758f",
-                "reference": "f9adff3b87c03b12cc7e46a30a524648e497758f",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/051a3b6b9b80df4ba3a7f801a8b53ad7d8f1c15f",
+                "reference": "051a3b6b9b80df4ba3a7f801a8b53ad7d8f1c15f",
                 "shasum": ""
             },
             "require": {
@@ -19239,7 +19239,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-09T09:30:48+00:00"
+            "time": "2025-03-23T14:57:55+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
