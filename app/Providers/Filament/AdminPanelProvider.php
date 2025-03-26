@@ -275,7 +275,9 @@ class AdminPanelProvider extends PanelProvider
                 'panels::footer',
                 fn (): View => view('filament.hooks.footer'),
             )
-            //
+            // sidebar search
+            ->renderHook(PanelsRenderHook::SIDEBAR_NAV_START, fn () => view('filament.hooks.sidebar-searcher'))
+
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
