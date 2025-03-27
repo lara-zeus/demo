@@ -25,7 +25,7 @@ class Mason extends Page
     public function mount(): void
     {
         $this->post = MasonModel::first();
-        $this->form->fill($this->post->toArray());
+        $this->form->fill($this->post?->toArray() ?? []);
     }
 
     public function form(Form $form): Form
@@ -42,7 +42,10 @@ class Mason extends Page
 
     public function store()
     {
-        $this->post->update($this->form->getState());
+        $data = $this->form->getState();
+        if ($data !== null) {
+            $this->post->update($data);
+        }
 
         Notification::make()
             ->title('Saved successfully')
