@@ -16,7 +16,7 @@
             </div>
             <div class="w-1/2 mx-auto">
                 <h3>Embed with iframe</h3>
-                <iframe class="bord" height="500" src="https://larazeus.com/bolt/embed/{{ $form->slug }}"></iframe>
+                <iframe height="500" src="{{ url('bolt/embed/'.$form->slug) }}"></iframe>
             </div>
         </div>
         <div>
