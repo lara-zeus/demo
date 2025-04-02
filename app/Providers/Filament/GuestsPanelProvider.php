@@ -55,11 +55,7 @@ class GuestsPanelProvider extends PanelProvider
                 // Widgets\FilamentInfoWidget::class,
             ])
             ->plugins([
-                BoringAvatarPlugin::make()
-                //  ->colors(['0A0310','49007E','FF005B','FF7D10','FFB238'])
-                //  ->square()
-                //  ->variant(Variants::MARBLE)
-                ,
+                BoringAvatarPlugin::make(),
             ])
             ->middleware([
                 EncryptCookies::class,

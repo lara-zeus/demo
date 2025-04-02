@@ -2,8 +2,6 @@
 
 namespace App\Filament\Guests\Pages;
 
-use App\Mason\BrickCollection;
-use App\Models\Mason as MasonModel;
 use Awcodes\Richie\RichieEditor;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
