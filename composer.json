@@ -36,6 +36,7 @@
     "jeremykenedy/laravel-packagist": "^1.0",
     "lara-zeus/accordion": "^1.0",
     "lara-zeus/akin": "^1.0",
+    "lara-zeus/torch-filament": "^1.0",
     "lara-zeus/apollo": "*",
     "lara-zeus/artemis": "^1.0",
     "lara-zeus/athena": "^1.0",
@@ -79,6 +80,7 @@
     "sentry/sentry-laravel": "^4.3",
     "stechstudio/filament-impersonate": "^3.8",
     "swisnl/filament-backgrounds": "^1.1",
+    "torchlight/engine": "^0.1.0",
     "torchlight/torchlight-laravel": "dev-l12-compatibility",
     "wiebenieuwenhuis/filament-code-editor": "dev-laravel-12"
   },
