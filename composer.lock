@@ -8669,7 +8669,7 @@
         },
         {
             "name": "lara-zeus/torch-filament",
-            "version": "1.x-dev",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/torch-filament.git",
@@ -8695,7 +8695,6 @@
                 "orchestra/testbench": "^8.0",
                 "phpstan/extension-installer": "^1.1"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
