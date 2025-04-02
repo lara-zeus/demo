@@ -1,5 +1,4 @@
 @import '/vendor/filament/filament/resources/css/theme.css';
-
 @import '/vendor/awcodes/filament-curator/resources/css/plugin.css';
 /*@import '/vendor/archilex/filament-filter-sets/resources/css/plugin.css';*/
 @import '/node_modules/cropperjs/dist/cropper.css';
@@ -43,9 +42,11 @@
 .compact-timeline .fi-timeline-item-heading {
     @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col !important;
 }
+
 .compact-timeline .fi-timeline-section-content {
     @apply shadow-none p-0 !important;
 }
+
 .compact-timeline {
     @apply shadow-none ring-0 !important;
 }
@@ -59,11 +60,12 @@
 }
 
 .fi-sidebar-group-paid {
-    @apply !bg-primary-50/30 dark:!bg-primary-900;
+    @apply rounded-2xl !bg-primary-500/10 dark:!bg-primary-900;
     @apply dark:!text-gray-100;
+    @apply border-2 shadow-lg border-b-4 border-primary-500/70 dark:border-primary-500/30;
 }
 
-.fi-modal-close-overlay{
+.fi-modal-close-overlay {
     @apply backdrop-blur-sm;
 }
 
@@ -114,4 +116,45 @@
         border-radius: inherit;
         backdrop-filter: blur(3px);
     }
+}
+
+.fi-header-heading, .fi-section-header-heading {
+    @apply font-normal text-secondary-600 !important;
+}
+
+.fi-breadcrumbs-item-label {
+    @apply text-primary-600 !important;
+}
+
+/*
+.fi-topbar {
+    @apply hidden !important;
+}
+
+.fi-main {
+    @apply my-4 mb-4 bg-gray-50 rounded-3xl shadow-lg !important;
+}
+
+.fi-main-ctn {
+    @apply mx-10 !important;
+}
+
+.fi-panel-admin, .fi-main-ctn, .fi-sidebar, .fi-sidebar-header {
+    @apply bg-secondary-50 !important;
+}
+
+.fi-sidebar, .fi-sidebar-header {
+    @apply ring-0 shadow-none !important;
+}*/
+
+.fi-page-sub-navigation-sidebar-ctn, .fi-section{
+    @apply px-2 py-3 bg-gray-50 dark:bg-gray-900 border-2 shadow-lg border-b-4 border-primary-500 dark:border-primary-800 rounded-2xl !important;
+}
+
+.fi-page-sub-navigation-sidebar{
+    @apply rounded-2xl !important;
+}
+
+.fi-active, .fi-active a, .fi-sidebar-item.fi-active{
+    @apply rounded-2xl !important;
 }

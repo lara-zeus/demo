@@ -32,7 +32,5 @@ class FilamentUser extends Authenticatable implements \Filament\Models\Contracts
     public function isSuperAdmin(): bool
     {
         return true;
-
-        return str_ends_with($this->email, '@larazeus.com');
     }
 }

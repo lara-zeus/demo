@@ -1,6 +1,6 @@
 <x-filament::section
     icon-color="primary"
-    icon="clarity-tree-view-line">
+    icon="tabler-binary-tree-2-f">
     <x-slot name="heading">
         {{ $name }} Filament Plugin
     </x-slot>

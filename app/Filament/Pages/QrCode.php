@@ -3,7 +3,7 @@
 namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
-use Filament\Forms\Components\Placeholder;
+use App\Filament\Pages\Actions\DemoHeaderAction;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
@@ -38,16 +38,27 @@ class QrCode extends Page
             ->statePath('data')
             ->schema([
                 Section::make()
+                    ->heading('Use it as a direct form')
                     ->schema([
-                        Placeholder::make('')->content('Use it as a direct form'),
                         ...\LaraZeus\Qr\Facades\Qr::getFormSchema('text', 'text-options'),
+                    ]),
 
-                        Placeholder::make('')->content('Use it as an action'),
+
+                Section::make()
+                    ->heading('Use it as an action')
+                    ->schema([
                         Qr::make('qr-code')
                             ->actionIcon('heroicon-o-adjustments-vertical')
                             ->asSlideOver()
-                            ->optionsColumn('options'),
+                            ->optionsColumn(),
                     ]),
             ]);
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            DemoHeaderAction::make(),
+        ];
     }
 }

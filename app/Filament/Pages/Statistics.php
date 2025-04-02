@@ -2,6 +2,8 @@
 
 namespace App\Filament\Pages;
 
+use App\Filament\Pages\Actions\DemoHeaderAction;
+use App\Filament\Pages\Widgets\GitDownChart;
 use App\Filament\Pages\Widgets\GitStarsChart;
 use Filament\Pages\Page;
 use Schmeits\FilamentUmami\Concerns\HasFilter;
@@ -25,6 +27,14 @@ class Statistics extends Page
             UmamiWidgetTableUrls::class,
 
             GitStarsChart::class,
+            GitDownChart::class,
+        ];
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            DemoHeaderAction::make(),
         ];
     }
 }

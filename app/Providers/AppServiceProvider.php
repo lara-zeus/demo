@@ -20,17 +20,15 @@ class AppServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         if ($this->app->environment('production')) {
             URL::forceScheme('https');
         }
 
         FilamentIcon::register([
-            'panels::panel-switch-modern-icon' => 'iconpark-switchbutton',
+            'panels::panel-switch-modern-icon' => 'tabler-switch-horizontal',
         ]);
 
         Modal::closedByClickingAway(false);
@@ -81,8 +79,7 @@ class AppServiceProvider extends ServiceProvider
         });*/
 
         Blade::directive('zeusz', function ($part = null) {
-            return '<span class="title-font text-gray-700 group"><span class="title-font font-semibold text-primary-500 group-hover:text-secondary-500 transition ease-in-out duration-300">Lara&nbsp;<span class="title-font line-through italic text-secondary-500 group-hover:text-primary-500 transition ease-in-out duration-300">Z</span>eus</span></span>'
-            . ($part) ?? '<span class="title-font text-base tracking-wide text-gray-500">{$part}</span>';
+            return '<span class="title-font text-gray-700 group"><span class="title-font font-semibold text-primary-500 group-hover:text-secondary-500 transition ease-in-out duration-300">Lara&nbsp;<span class="title-font line-through italic text-secondary-500 group-hover:text-primary-500 transition ease-in-out duration-300">Z</span>eus</span></span>';
         });
 
         Blade::directive('stillStats', function ($code) {
@@ -94,7 +91,7 @@ class AppServiceProvider extends ServiceProvider
         });
     }
 
-    public function hooksRenderer()
+    /*public function hooksRenderer(): void
     {
         $hooks = [
             'zeus-forms.before',
@@ -115,5 +112,5 @@ class AppServiceProvider extends ServiceProvider
                 ),
             );
         }
-    }
+    }*/
 }

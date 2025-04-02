@@ -4,6 +4,7 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\DemoWidgets\MiniChart;
+use App\Filament\Pages\Actions\DemoHeaderAction;
 use App\Models\User;
 use Filament\Pages\Page;
 use Filament\Tables\Columns\TextColumn;
@@ -46,5 +47,12 @@ class InlineChart extends Page implements HasTable
                     ->icon('heroicon-o-envelope')
                     ->searchable(),
             ]);
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            DemoHeaderAction::make(),
+        ];
     }
 }

@@ -1,4 +1,4 @@
-<x-filament::page class=" mx-10">
+<x-filament::page>
     <div class="mb-6">
         <h3 class="my-4 text-lg mx-4 capitalize">using tiles in a table</h3>
         {{ $this->table }}

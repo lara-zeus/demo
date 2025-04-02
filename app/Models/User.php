@@ -16,6 +16,9 @@ use LaraZeus\Bolt\Models\Concerns\BelongToBolt;
 use LaraZeus\Boredom\Concerns\HasBoringAvatar;
 use LaraZeus\Thunder\Concerns\ManageOffice;
 
+/**
+ * @property string $avatar_url
+ */
 class User extends Authenticatable implements FilamentUser, HasAvatar
 {
     use BelongToAthena;
@@ -29,21 +32,11 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
 
     protected $guarded = [];
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
     protected $hidden = [
         'password',
         'remember_token',
     ];
 
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
     protected $casts = [
         'email_verified_at' => 'datetime',
         'options' => 'array',
@@ -54,8 +47,6 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
     public function isSuperAdmin(): bool
     {
         return true;
-
-        return str_ends_with($this->email, '@larazeus.com');
     }
 
     public function canAccessPanel(Panel $panel): bool

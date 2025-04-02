@@ -2,11 +2,8 @@
     <x-filament::section
         icon-color="danger"
         icon="heroicon-o-sparkles"
+        heading="Feedback"
     >
-        <x-slot name="heading">
-            Feedback
-        </x-slot>
-
         if you have any feedback click on the buttom on the corner and point on the problem on the page
         <br><br>
         Check out Durchblick the easiest way to

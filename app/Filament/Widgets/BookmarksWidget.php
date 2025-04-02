@@ -19,7 +19,7 @@ class BookmarksWidget extends Widget implements HasForms, HasInfolists
 
     protected static ?int $sort = 3;
 
-    protected int | string | array $columnSpan = 'full';
+    protected int | string | array $columnSpan = '1/2';
 
     protected static string $view = 'filament.widgets.bookmarks-widget';
 
@@ -33,8 +33,6 @@ class BookmarksWidget extends Widget implements HasForms, HasInfolists
                             ->where('user_id', auth()->user()->id)
                             ->get()
                             ->map(function ($item) {
-                                $resource = app($item->bookmarkable_resource);
-
                                 return ListItem::make()
                                     ->id($item->id)
                                     ->url($item->url)

@@ -4,7 +4,10 @@ namespace App\Providers\Filament;
 
 use App\CuratedBySwis;
 use App\Filament\Pages\Auth\Login;
+use App\Filament\Pages\DashboardPage;
 use App\Filament\Pages\Tiles;
+use App\Filament\Resources\CarResource;
+use App\Filament\Resources\UserResource;
 use App\Filament\Widgets\Feedback;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
@@ -50,6 +53,7 @@ use LaraZeus\BoltPro\Extensions\Grades;
 use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
 use LaraZeus\Delia\DeliaPlugin;
+use LaraZeus\Delia\Filament\Resources\BookmarkResource;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\DynamicDashboard\Filament\Resources\LayoutResource;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
@@ -61,7 +65,6 @@ use LaraZeus\Hermes\Filament\Resources\MenuItemLabelsResource;
 use LaraZeus\Hermes\Filament\Resources\MenuResource;
 use LaraZeus\Hermes\Filament\Resources\MenuSectionResource;
 use LaraZeus\Hermes\HermesPlugin;
-use LaraZeus\Rhea\RheaPlugin;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\Thunder\Extensions\Thunder;
 use LaraZeus\Thunder\Filament\Resources\OfficeResource;
@@ -69,12 +72,8 @@ use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
-use pxlrbt\FilamentSpotlight\SpotlightPlugin;
 use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
 use Schmeits\FilamentUmami\FilamentUmamiPlugin;
-use Schmeits\FilamentUmami\Widgets\UmamiWidgetStatsGrouped;
-use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableReferrers;
-use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableUrls;
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
@@ -95,7 +94,6 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login(Login::class)
-            ->profile(isSimple: false)
             ->font('Montserrat')
             ->plugins($this->getPlugins())
             ->brandLogo(fn () => view('filament.logo'))
@@ -147,10 +145,47 @@ class AdminPanelProvider extends PanelProvider
                     ->icon('tabler-wind-electricity'),
                 NavigationGroup::make()->label('Dynamic Dashboard')
                     ->icon('tabler-cloud-rain'),
-                NavigationGroup::make()->label('Rhea')
-                    ->icon('tabler-bow'),
+                /*NavigationGroup::make()->label('Rhea')
+                    ->icon('tabler-bow'),*/
             ])
             // ->unsavedChangesAlerts()
+
+
+            // car
+            ->renderHook(
+                'panels::page.start',
+                fn (array $scopes): View => view('filament.hooks.car', ['scopes' => $scopes]),
+                scopes: [
+                    CarResource::class,
+                ],
+            )
+
+            // user
+            ->renderHook(
+                'panels::page.start',
+                fn (array $scopes): View => view('filament.hooks.user', ['scopes' => $scopes]),
+                scopes: [
+                    UserResource::class,
+                ],
+            )
+
+            // user views resource
+            ->renderHook(
+                'panels::page.start',
+                fn (array $scopes): View => view('filament.hooks.user-view-resource', ['scopes' => $scopes]),
+                scopes: [
+                    UserViewResource::class,
+                ],
+            )
+
+            // user views resource
+            ->renderHook(
+                'panels::page.start',
+                fn (array $scopes): View => view('filament.hooks.my-dash', ['scopes' => $scopes]),
+                scopes: [
+                    DashboardPage::class,
+                ],
+            )
 
             // hermes
             ->renderHook(
@@ -241,7 +276,9 @@ class AdminPanelProvider extends PanelProvider
                 'panels::footer',
                 fn (): View => view('filament.hooks.footer'),
             )
-            //
+            // sidebar search
+            ->renderHook(PanelsRenderHook::SIDEBAR_NAV_START, fn () => view('filament.hooks.sidebar-searcher'))
+
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
@@ -249,7 +286,7 @@ class AdminPanelProvider extends PanelProvider
             //
             ->pages([
                 Pages\Dashboard::class,
-                // \LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboard::class,
+                DashboardPage::class,
             ])
             ->widgets([
                 // UmamiWidgetStatsGrouped::class,
@@ -307,7 +344,7 @@ class AdminPanelProvider extends PanelProvider
                 ->navigationGroup(fn (): string => __('Hermes'))
                 ->navigationSort(99)
                 ->navigationCountBadge(),
-            SpotlightPlugin::make(),
+            // SpotlightPlugin::make(),
             LightSwitchPlugin::make(),
             OverlookPlugin::make()
                 ->sort(5)
@@ -326,6 +363,8 @@ class AdminPanelProvider extends PanelProvider
             QuickCreatePlugin::make()
                 ->sortBy('navigation')
                 ->excludes([
+                    BookmarkResource::class,
+                    SeoScanResource::class,
                     UserViewResource::class,
                     LetterResource::class,
                     TicketResource::class,
@@ -368,7 +407,7 @@ class AdminPanelProvider extends PanelProvider
             ThunderPlugin::make(),
             AthenaPlugin::make(),
             DynamicDashboardPlugin::make(),
-            RheaPlugin::make(),
+            // RheaPlugin::make(),
             HermesPlugin::make(),
         ];
     }

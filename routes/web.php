@@ -17,7 +17,7 @@ Route::post('/forms', function () {
     ]);
 
     return response()->json([
-        'message' => 'your code is ' . $code,
+        'message' => 'your code is '.$code,
         'state' => 'faild',
     ]);
 });
@@ -34,6 +34,18 @@ Route::get('lang/{lang}', function ($lang) {
     return redirect(url()->previousPath());
 });
 
+Route::get('icons', function () {
+    if (app()->isLocal()) {
+        $json = json_decode(file_get_contents(base_path('icons/tabler-nodes-outline.json')), false, 512, JSON_THROW_ON_ERROR);
+        $items = collect($json)
+            ->keys()
+            ->toArray();
+        foreach ($items as $item) {
+            echo "case ".str($item)->title()->studly()->toString()." = '$item';<br>";
+        }
+    }
+});
+
 Route::get('theme/{theme}', function ($theme) {
     session()->put('current_theme', $theme);
 
@@ -46,4 +58,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__ . '/auth.php';
+require __DIR__.'/auth.php';

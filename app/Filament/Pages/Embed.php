@@ -3,6 +3,7 @@
 namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
+use App\Filament\Pages\Actions\DemoHeaderAction;
 use Filament\Actions\Action;
 use Filament\Forms\Components\View;
 use Filament\Pages\Page;
@@ -36,7 +37,15 @@ class Embed extends Page
 
     public ?array $data = [];
 
-    protected static ?string $navigationLabel = 'Embed Bolt';
+    public function getTitle(): string
+    {
+        return 'Embed Bolt with Thunder';
+    }
 
-    protected static ?string $title = 'Embed Bolt with Thunder';
+    protected function getHeaderActions(): array
+    {
+        return [
+            DemoHeaderAction::make(),
+        ];
+    }
 }

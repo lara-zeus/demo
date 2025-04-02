@@ -3,12 +3,16 @@
 namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
+use App\Filament\Pages\Actions\DemoHeaderAction;
 use App\Models\User;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Form;
 use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
+use LaraZeus\Popover\Form\PopoverForm;
 use LaraZeus\Popover\Infolists\PopoverEntry;
 use LaraZeus\Popover\Tables\PopoverColumn;
 
@@ -24,7 +28,17 @@ class Popover extends Page implements HasTable
 
     protected static ?int $navigationSort = 3;
 
-    protected static ?string $navigationLabel = 'Popover';
+    public function mount(): void
+    {
+        $this->form->fill([
+            'name' => 'Zeus',
+        ]);
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return 'Popover';
+    }
 
     protected static ?string $title = 'Popover';
 
@@ -57,6 +71,21 @@ class Popover extends Page implements HasTable
             ]);
     }
 
+    public function form(Form $form): Form
+    {
+        return $form
+            ->statePath('data')
+            ->schema([
+                Section::make()
+                    ->schema([
+                        PopoverForm::make('name')
+                            ->trigger('hover')
+                            ->icon('tabler-chart-donut-4')
+                            ->content('Adam'),
+                    ]),
+            ]);
+    }
+
     public function infolist(Infolist $infolist): Infolist
     {
         return $infolist
@@ -77,5 +106,12 @@ class Popover extends Page implements HasTable
                             ->content(fn ($record) => view('filament.test.user-card', ['record' => $record, 'type' => 'name'])),
                     ]),
             ]);
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            DemoHeaderAction::make(),
+        ];
     }
 }

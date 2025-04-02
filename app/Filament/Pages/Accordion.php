@@ -3,6 +3,7 @@
 namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
+use App\Filament\Pages\Actions\DemoHeaderAction;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Infolists\Components\TextEntry;
@@ -48,14 +49,14 @@ class Accordion extends Page
                             ->badge('New Badge')
                             ->badgeColor('info')
                             ->label('User Details')
-                            ->icon('iconpark-commentone')
+                            ->icon('tabler-arrow-right-to-arc')
                             ->schema([
                                 TextEntry::make('name'),
                                 TextEntry::make('email'),
                             ]),
                         \LaraZeus\Accordion\Infolists\Accordion::make('user-data')
                             ->label('User Personal Contact')
-                            ->icon('iconpark-comments')
+                            ->icon('tabler-arrow-right-to-arc')
                             ->columns()
                             ->schema([
                                 TextEntry::make('personal-email'),
@@ -64,7 +65,7 @@ class Accordion extends Page
                         \LaraZeus\Accordion\Infolists\Accordion::make('work-data')
                             ->columns()
                             ->label('User Work Contact')
-                            ->icon('iconpark-communication')
+                            ->icon('tabler-arrow-right-to-arc')
                             ->schema([
                                 TextEntry::make('work-email'),
                                 TextEntry::make('work-phone'),
@@ -88,7 +89,7 @@ class Accordion extends Page
                             ->badge('New Badge')
                             ->badgeColor('info')
                             ->label('User Details')
-                            ->icon('iconpark-commentone')
+                            ->icon('tabler-arrow-right-to-arc')
                             ->schema([
                                 TextInput::make('name')->required(),
                                 TextInput::make('email')->required(),
@@ -96,7 +97,7 @@ class Accordion extends Page
 
                         \LaraZeus\Accordion\Forms\Accordion::make('user-data')
                             ->label('User Personal Contact')
-                            ->icon('iconpark-comments')
+                            ->icon('tabler-arrow-right-to-arc')
                             ->columns()
                             ->schema([
                                 TextInput::make('personal-email')->required(),
@@ -106,12 +107,19 @@ class Accordion extends Page
                         \LaraZeus\Accordion\Forms\Accordion::make('work-data')
                             ->columns()
                             ->label('User Work Contact')
-                            ->icon('iconpark-communication')
+                            ->icon('tabler-arrow-right-to-arc')
                             ->schema([
                                 TextInput::make('work-email')->required(),
                                 TextInput::make('work-phone')->required(),
                             ]),
                     ]),
             ]);
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            DemoHeaderAction::make(),
+        ];
     }
 }

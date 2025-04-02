@@ -49,5 +49,12 @@ return [
      */
     'show_presets' => true,
 
+    /**
+     * the preset comes with a demo forms:
+     * a Contact form and Ticket support form.
+     * if you dont want them, feel free to set this to false
+     * */
+    'show_core_presets' => true,
+
     'allow_design' => true,
 ];

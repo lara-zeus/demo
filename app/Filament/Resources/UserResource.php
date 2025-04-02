@@ -33,7 +33,7 @@ class UserResource extends Resource
 
     protected static ?int $navigationSort = 1;
 
-    protected static ?string $navigationIcon = 'heroicon-o-lock-closed';
+    protected static ?string $navigationIcon = 'tabler-users-group';
 
     public static function getNavigationLabel(): string
     {
@@ -95,47 +95,6 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-                /*RightClick::make('name')
-                    ->actions(fn(User $record): array => [
-                        Action::make('edit')
-                            ->icon('heroicon-o-pencil-square')
-                            ->color('info')
-                            ->grouped()
-                            ->requiresConfirmation(),
-                        Action::make('view')
-                            ->icon('heroicon-o-eye')
-                            ->color('info')
-                            ->grouped()
-                            ->requiresConfirmation(),
-                        Action::make('delete')
-                            ->icon('heroicon-o-trash')
-                            ->color('danger')
-                            ->grouped()
-                            ->requiresConfirmation(),
-                        Action::make('permissions')
-                            ->icon('heroicon-o-key')
-                            ->color('warning')
-                            ->grouped()
-                            ->requiresConfirmation(),
-                        Action::make('Impersonate')
-                            ->icon('heroicon-o-user')
-                            ->color('secondary')
-                            ->grouped()
-                            ->requiresConfirmation()
-
-
-
-                        //ViewAction::make()->record($record),
-                        //EditAction::make(),
-                        /*Impersonate::make()
-                            ->grouped()
-                            ->redirectTo(url('/admin')),* /
-                    ]),*/
-                /*TextColumn::make('id')
-                    ->formatStateUsing(fn($record) => $record->name.'<br>'.$record->email)
-                    ->icon(fn($record) => $record->avatarUrl)
-                    ->html(),*/
-
                 ImageColumn::make('avatar_url'),
                 PopoverColumn::make('name')
                     ->content(\LaraZeus\Qr\Facades\Qr::render(
@@ -172,18 +131,6 @@ class UserResource extends Resource
                     ->wrapHeader(),
                 ColumnGroup::make('other-info', [
                     TextColumn::make('email_verified_at')
-                        ->sortable()
-                        ->toggleable()
-                        ->searchable(),
-
-                    /*TextColumn::make('remember_token')
-                        ->toggleable(),*/
-
-                    TextColumn::make('created_at')
-                        ->sortable()
-                        ->toggleable()
-                        ->searchable(),
-                    TextColumn::make('updated_at')
                         ->sortable()
                         ->toggleable()
                         ->searchable(),

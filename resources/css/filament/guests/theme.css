@@ -2,5 +2,7 @@
 @import '/node_modules/cropperjs/dist/cropper.css';
 @import 'tippy.js/dist/tippy.css';
 @import '/vendor/awcodes/filament-table-repeater/resources/css/plugin.css';
+@import '/vendor/awcodes/mason/resources/css/index.css';
+@import '/vendor/awcodes/richie/resources/css/index.css';
 
 @config 'tailwind.config.js';

@@ -3,6 +3,7 @@
 namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
+use App\Filament\Pages\Actions\DemoHeaderAction;
 use App\Models\User;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
@@ -102,5 +103,12 @@ class Tiles extends Page implements HasTable
                             ->image(fn (User $record) => $record->avatar_url),
                     ]),
             ]);
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            DemoHeaderAction::make(),
+        ];
     }
 }
