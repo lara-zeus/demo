@@ -31,7 +31,11 @@ class Tiles extends Page implements HasTable
 
     protected static ?int $navigationSort = 3;
 
-    public array $data;
+    public ?array $data = [];
+
+    protected static ?string $navigationLabel = 'Tiles';
+
+    protected static ?string $title = 'Tiles';
 
     public User $user;
 
@@ -39,16 +43,6 @@ class Tiles extends Page implements HasTable
     {
         $this->user = User::first();
         $this->form->fill();
-    }
-
-    public static function getNavigationLabel(): string
-    {
-        return 'Tiles';
-    }
-
-    public function getTitle(): string
-    {
-        return 'Tiles';
     }
 
     public function table(Table $table): Table

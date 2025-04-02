@@ -23,15 +23,9 @@ class Quantity extends Page
 
     public ?array $data = [];
 
-    public static function getNavigationLabel(): string
-    {
-        return 'Quantity';
-    }
+    protected static ?string $navigationLabel = 'Quantity';
 
-    public function getTitle(): string
-    {
-        return 'Quantity Input Number';
-    }
+    protected static ?string $title = 'Quantity Input Number';
 
     public function mount(): void
     {

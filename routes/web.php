@@ -17,7 +17,7 @@ Route::post('/forms', function () {
     ]);
 
     return response()->json([
-        'message' => 'your code is '.$code,
+        'message' => 'your code is ' . $code,
         'state' => 'faild',
     ]);
 });
@@ -41,7 +41,7 @@ Route::get('icons', function () {
             ->keys()
             ->toArray();
         foreach ($items as $item) {
-            echo "case ".str($item)->title()->studly()->toString()." = '$item';<br>";
+            echo 'case ' . str($item)->title()->studly()->toString() . " = '$item';<br>";
         }
     }
 });
@@ -58,4 +58,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

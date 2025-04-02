@@ -24,15 +24,9 @@ class InlineChart extends Page implements HasTable
 
     protected static ?int $navigationSort = 5;
 
-    public static function getNavigationLabel(): string
-    {
-        return 'Inline Chart';
-    }
+    protected static ?string $navigationLabel = 'Inline Chart';
 
-    public function getTitle(): string
-    {
-        return 'Inline Chart';
-    }
+    protected static ?string $title = 'Inline Chart';
 
     public function table(Table $table): Table
     {

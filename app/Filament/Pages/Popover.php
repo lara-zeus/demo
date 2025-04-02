@@ -40,10 +40,7 @@ class Popover extends Page implements HasTable
         return 'Popover';
     }
 
-    public function getTitle(): string
-    {
-        return 'Popover';
-    }
+    protected static ?string $title = 'Popover';
 
     public function table(Table $table): Table
     {

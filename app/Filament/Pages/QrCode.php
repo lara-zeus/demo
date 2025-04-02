@@ -19,7 +19,11 @@ class QrCode extends Page
 
     protected static ?int $navigationSort = 2;
 
-    public ?array $data;
+    public ?array $data = [];
+
+    protected static ?string $navigationLabel = 'QR maker';
+
+    protected static ?string $title = 'QR maker';
 
     public string $qrcode;
 
@@ -27,10 +31,6 @@ class QrCode extends Page
     {
         $this->form->fill();
     }
-
-    protected static ?string $navigationLabel = 'QR maker';
-
-    protected static ?string $title = 'QR maker';
 
     public function form(Form $form): Form
     {
@@ -42,7 +42,6 @@ class QrCode extends Page
                     ->schema([
                         ...\LaraZeus\Qr\Facades\Qr::getFormSchema('text', 'text-options'),
                     ]),
-
 
                 Section::make()
                     ->heading('Use it as an action')

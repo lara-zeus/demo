@@ -31,5 +31,4 @@ class Richie extends Page
                 RichieEditor::make('content'),
             ]);
     }
-
 }
