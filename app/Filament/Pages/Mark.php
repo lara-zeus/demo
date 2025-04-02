@@ -3,6 +3,7 @@
 namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
+use App\Filament\Pages\Actions\DemoHeaderAction;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
@@ -37,21 +38,26 @@ class Mark extends Page
                 TextInput::make('name'),
                 MarkForm::make('likes')
                     ->label('Like')
-                    ->isLike(),
+                    ->like(),
                 MarkForm::make('user_fav')
                     ->helperText('user fav')
                     ->label('Bookmark')
-                    ->isBookMark(),
+                    ->bookMark(),
                 MarkForm::make('user_rate')
                     ->label('Rating')
-                    ->isRating(),
+                    ->rating(),
             ]);
     }
 
     public function create(): void
     {
-        abort_if(app()->isProduction(), 404);
-
         dd($this->form->getState());
+    }
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            DemoHeaderAction::make(),
+        ];
     }
 }

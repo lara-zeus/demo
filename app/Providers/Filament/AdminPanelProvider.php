@@ -150,7 +150,6 @@ class AdminPanelProvider extends PanelProvider
             ])
             // ->unsavedChangesAlerts()
 
-
             // car
             ->renderHook(
                 'panels::page.start',

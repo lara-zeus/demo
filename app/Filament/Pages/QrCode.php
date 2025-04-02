@@ -43,7 +43,6 @@ class QrCode extends Page
                         ...\LaraZeus\Qr\Facades\Qr::getFormSchema('text', 'text-options'),
                     ]),
 
-
                 Section::make()
                     ->heading('Use it as an action')
                     ->schema([

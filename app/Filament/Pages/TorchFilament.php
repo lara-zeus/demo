@@ -30,12 +30,12 @@ class TorchFilament extends Page
                         TorchEntry::make('code')
                             ->columnSpanFull()
                             ->theme([
-                                'light'=>'everforest-light',
-                                'dark'=>'everforest-dark',
+                                'light' => 'everforest-light',
+                                'dark' => 'everforest-dark',
                             ])
-                            //->withGutter(false)
-                            //->withWrapper(true)
-                            //->grammar('php')
+                            // ->withGutter(false)
+                            // ->withWrapper(true)
+                            // ->grammar('php')
                             ->state(<<<'PHP'
                                 echo "Hello, world!";
                                 echo "Hello, world! I am focused"; // [tl! focus]
