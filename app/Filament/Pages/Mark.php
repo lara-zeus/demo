@@ -46,6 +46,17 @@ class Mark extends Page
                 MarkForm::make('user_rate')
                     ->label('Rating')
                     ->rating(),
+
+
+                MarkForm::make('user_mode')
+                    ->icons([
+                        true => 'tabler-mood-smile',
+                        false => 'tabler-mood-sad',
+                    ])
+                    ->selectedIcons([
+                        true => 'tabler-mood-smile-filled',
+                        false => 'tabler-mood-sad-filled',
+                    ]),
             ]);
     }
 
