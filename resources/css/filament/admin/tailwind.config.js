@@ -58,6 +58,8 @@ export default {
         './vendor/lara-zeus/helen/src/Filament/Resources/LinksResource.php',
         './vendor/lara-zeus/helen/src/Facades/Helen.php',
 
+        './vendor/lara-zeus/mark/resources/**/*.blade.php',
+
         // filament
         './app/Filament/**/*.php',
         './resources/views/filament/**/*.blade.php',

@@ -44,7 +44,7 @@
     "lara-zeus/bolt-pro": "^3.2",
     "lara-zeus/boredom": "^1.0",
     "lara-zeus/chaos": "^1.0",
-    "lara-zeus/chronos": "*",
+    "lara-zeus/chronos": "^1.0",
     "lara-zeus/core": "^3.2",
     "lara-zeus/delia": "^1.0",
     "lara-zeus/dynamic-dashboard": "^3.0",
@@ -59,12 +59,12 @@
     "lara-zeus/list-group": "^1.0",
     "lara-zeus/mark": "*",
     "lara-zeus/matrix-choice": "^3.2",
-    "lara-zeus/pontus": "*",
+    "lara-zeus/pontus": "^1.0",
     "lara-zeus/popover": "^1.0",
     "lara-zeus/qr": "^1.2",
     "lara-zeus/quantity": "^1.0",
     "lara-zeus/replies": "^1.0",
-    "lara-zeus/simple-qrcode": "*",
+    "lara-zeus/simple-qrcode": "^5.0",
     "lara-zeus/sky": "^3.4",
     "lara-zeus/tartarus": "^1.0",
     "lara-zeus/thunder": "^3.1",
@@ -156,6 +156,10 @@
     },
     {
       "type": "github",
+      "url": "https://github.com/awcodes/richie"
+    },
+    {
+      "type": "github",
       "url": "git@github.com:lara-zeus/hades.git"
     },
     {
@@ -205,10 +209,6 @@
     {
       "type": "github",
       "url": "git@github.com:lara-zeus/translatable-pro.git"
-    },
-    {
-      "type": "github",
-      "url": "https://github.com/awcodes/richie"
     }
   ]
 }
