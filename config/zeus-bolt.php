@@ -57,4 +57,6 @@ return [
     'show_core_presets' => true,
 
     'allow_design' => true,
+
+    'should_cache_preset' => true,
 ];
