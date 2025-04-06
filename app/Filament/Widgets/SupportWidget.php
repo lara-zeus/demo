@@ -10,7 +10,7 @@ class SupportWidget extends Widget implements ZeusWidget
 {
     use InteractWithWidgets;
 
-    protected static string $view = 'filament.widgets.support-widget';
+    protected string $view = 'filament.widgets.support-widget';
 
     protected static ?int $sort = 2;
 }

@@ -57,7 +57,7 @@ return [
     | grid view.
     |
     */
-    'layout' => \Guava\FilamentIconPicker\Layout::FLOATING,
+    //'layout' => \Guava\FilamentIconPicker\Layout::FLOATING,
 
     /*
     |--------------------------------------------------------------------------

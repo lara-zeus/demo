@@ -4,10 +4,13 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\CarResource\Pages;
 use App\Models\Car;
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
 use Filament\Forms;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Form;
 use Filament\Resources\Resource;
+use Filament\Schemas\Schema;
 use Filament\Tables;
 use Filament\Tables\Table;
 
@@ -17,11 +20,11 @@ class CarResource extends Resource
 
     protected static ?string $navigationGroup = 'App';
 
-    protected static ?string $navigationIcon = 'tabler-car';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-car';
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
+        return $schema
             ->schema([
                 TextInput::make('name')
                     ->required()
@@ -47,11 +50,11 @@ class CarResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                EditAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
                 ]),
             ]);
     }

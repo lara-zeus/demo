@@ -21,13 +21,13 @@ use LaraZeus\Thunder\Concerns\ManageOffice;
  */
 class User extends Authenticatable implements FilamentUser, HasAvatar
 {
-    use BelongToAthena;
-    use BelongToBolt;
+    //use BelongToAthena;
+    //use BelongToBolt;
     use HasApiTokens;
     use HasBoringAvatar;
     use HasFactory;
-    use HasViews;
-    use ManageOffice;
+    //use HasViews;
+    //use ManageOffice;
     use Notifiable;
 
     protected $guarded = [];

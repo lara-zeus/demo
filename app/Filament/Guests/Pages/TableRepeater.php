@@ -9,9 +9,9 @@ use Filament\Pages\Page;
 
 class TableRepeater extends Page
 {
-    protected static string $view = 'filament.guests.pages.table-repeater';
+    protected string $view = 'filament.guests.pages.table-repeater';
 
-    protected static ?string $navigationIcon = 'tabler-repeat';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-repeat';
 
     protected static ?string $navigationGroup = 'Plugins';
 

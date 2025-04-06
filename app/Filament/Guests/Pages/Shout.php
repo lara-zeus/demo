@@ -7,9 +7,9 @@ use Filament\Pages\Page;
 
 class Shout extends Page
 {
-    protected static string $view = 'filament.guests.pages.shout';
+    protected string $view = 'filament.guests.pages.shout';
 
-    protected static ?string $navigationIcon = 'tabler-message-chatbot';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-message-chatbot';
 
     protected static ?string $navigationGroup = 'Plugins';
 

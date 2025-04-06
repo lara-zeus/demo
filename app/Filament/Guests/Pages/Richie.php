@@ -8,7 +8,7 @@ use Filament\Pages\Page;
 
 class Richie extends Page
 {
-    protected static ?string $navigationIcon = 'tabler-cash-edit';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-cash-edit';
 
     protected static ?string $navigationGroup = 'Plugins';
 
@@ -16,7 +16,7 @@ class Richie extends Page
 
     public ?array $data = [];
 
-    protected static string $view = 'filament.guests.pages.richie';
+    protected string $view = 'filament.guests.pages.richie';
 
     public function mount(): void
     {

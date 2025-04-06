@@ -16,9 +16,9 @@ class BadgeableColumn extends Page implements HasForms, HasTable
     use InteractsWithForms;
     use InteractsWithTable;
 
-    protected static string $view = 'filament.guests.pages.badgeable-column';
+    protected string $view = 'filament.guests.pages.badgeable-column';
 
-    protected static ?string $navigationIcon = 'tabler-badge';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-badge';
 
     protected static ?string $navigationGroup = 'Plugins';
 

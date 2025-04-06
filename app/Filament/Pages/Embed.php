@@ -5,16 +5,16 @@ namespace App\Filament\Pages;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use Filament\Actions\Action;
-use Filament\Forms\Components\View;
 use Filament\Pages\Page;
+use Filament\Schemas\Components\View;
 
 class Embed extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-chart-donut-4';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-chart-donut-4';
 
-    protected static string $view = 'filament.pages.embed';
+    protected string $view = 'filament.pages.embed';
 
     protected static ?int $navigationSort = 7;
 
@@ -27,7 +27,7 @@ class Embed extends Page
             ->icon('tabler-chart-donut-4')
             ->modalSubmitAction(false)
             ->modalCancelAction(false)
-            ->form([
+            ->schema([
                 View::make('bolt')
                     ->columnSpanFull()
                     ->view('filament.pages.bolt'),

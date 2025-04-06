@@ -10,11 +10,11 @@ use Filament\Pages\Page;
 
 class Mason extends Page
 {
-    protected static ?string $navigationIcon = 'tabler-building-castle';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-building-castle';
 
     protected static ?string $navigationGroup = 'Plugins';
 
-    protected static string $view = 'filament.guests.pages.mason';
+    protected string $view = 'filament.guests.pages.mason';
 
     protected ?string $heading = 'A simple block based builder';
 

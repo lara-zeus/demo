@@ -4,9 +4,9 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
-use Filament\Infolists\Components\Section;
-use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use LaraZeus\ListGroup\Infolists\ListEntry;
 use LaraZeus\ListGroup\Item\ListItem;
 
@@ -14,9 +14,9 @@ class ListGroup extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-list-details';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-list-details';
 
-    protected static string $view = 'filament.pages.list-group';
+    protected string $view = 'filament.pages.list-group';
 
     protected static ?int $navigationSort = 8;
 
@@ -26,7 +26,7 @@ class ListGroup extends Page
 
     protected static ?string $title = 'List Group';
 
-    public function infolist(Infolist $infolist): Infolist
+    public function infolist(Schema $infolist): Schema
     {
         return $infolist
             ->schema([

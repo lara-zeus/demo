@@ -4,24 +4,24 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
-use Filament\Infolists\Components\Section;
-use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use LaraZeus\TorchFilament\Infolists\TorchEntry;
 
 class TorchFilament extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
 
-    protected static string $view = 'filament.pages.torch-filament';
+    protected string $view = 'filament.pages.torch-filament';
 
     protected static ?int $navigationSort = 8;
 
     public array $data = [];
 
-    public function infolist(Infolist $infolist): Infolist
+    public function infolist(Schema $infolist): Schema
     {
         return $infolist
             ->schema([

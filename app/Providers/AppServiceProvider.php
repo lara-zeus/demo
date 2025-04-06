@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use BezhanSalleh\PanelSwitch\PanelSwitch;
 use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;
 use Filament\Support\Colors\Color;
@@ -10,7 +9,7 @@ use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentColor;
 use Filament\Support\Facades\FilamentIcon;
 use Filament\Support\Facades\FilamentView;
-use Filament\Support\View\Components\Modal;
+use Filament\Support\View\Components\ModalComponent;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\URL;
@@ -31,9 +30,9 @@ class AppServiceProvider extends ServiceProvider
             'panels::panel-switch-modern-icon' => 'tabler-switch-horizontal',
         ]);
 
-        Modal::closedByClickingAway(false);
+        ModalComponent::closedByClickingAway(false);
 
-        PanelSwitch::configureUsing(function (PanelSwitch $panelSwitch) {
+        /*PanelSwitch::configureUsing(function (PanelSwitch $panelSwitch) {
             $panelSwitch
                 ->canSwitchPanels(true)
                 ->visible(true)
@@ -51,7 +50,7 @@ class AppServiceProvider extends ServiceProvider
                 ->iconSize(20)
                 ->renderHook('panels::user-menu.before');
 
-        });
+        });*/
 
         // $this->hooksRenderer();
 

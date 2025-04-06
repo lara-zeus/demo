@@ -5,19 +5,18 @@ namespace App\Filament\Pages;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Form;
 use Filament\Infolists\Components\TextEntry;
-use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
+use Filament\Schemas\Schema;
 use LaraZeus\Accordion\Forms\Accordions;
 
 class Accordion extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-table-filled';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-table-filled';
 
-    protected static string $view = 'filament.pages.accordion';
+    protected string $view = 'filament.pages.accordion';
 
     protected static ?int $navigationSort = 4;
 
@@ -27,7 +26,7 @@ class Accordion extends Page
 
     protected static ?string $title = 'Accordion';
 
-    public function infolist(Infolist $infolist): Infolist
+    public function infolist(Schema $infolist): Schema
     {
         return $infolist
             ->state([
@@ -74,7 +73,7 @@ class Accordion extends Page
             ]);
     }
 
-    public function form(Form $form): Form
+    public function form(Schema $form): Schema
     {
         return $form
             ->statePath('data')

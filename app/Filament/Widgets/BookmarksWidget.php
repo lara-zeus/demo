@@ -21,7 +21,7 @@ class BookmarksWidget extends Widget implements HasForms, HasInfolists
 
     protected int | string | array $columnSpan = '1/2';
 
-    protected static string $view = 'filament.widgets.bookmarks-widget';
+    protected string $view = 'filament.widgets.bookmarks-widget';
 
     public function bookmarkInfolist(Infolist $infolist): Infolist
     {

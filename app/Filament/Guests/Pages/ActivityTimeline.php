@@ -13,9 +13,9 @@ use JaOcero\ActivityTimeline\Components\ActivityTitle;
 
 class ActivityTimeline extends Page
 {
-    protected static string $view = 'filament.guests.pages.activity-timeline';
+    protected string $view = 'filament.guests.pages.activity-timeline';
 
-    protected static ?string $navigationIcon = 'tabler-timeline-event-exclamation';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-timeline-event-exclamation';
 
     protected static ?string $navigationGroup = 'Plugins';
 

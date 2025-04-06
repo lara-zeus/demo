@@ -10,7 +10,7 @@ class DemoOverview extends Widget implements ZeusWidget
 {
     use InteractWithWidgets;
 
-    protected static string $view = 'filament.widgets.demo-overview';
+    protected string $view = 'filament.widgets.demo-overview';
 
     protected static ?int $sort = 1;
 }

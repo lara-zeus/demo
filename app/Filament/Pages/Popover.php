@@ -5,10 +5,9 @@ namespace App\Filament\Pages;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use App\Models\User;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Form;
-use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
@@ -22,9 +21,9 @@ class Popover extends Page implements HasTable
 
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-stack-pop';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-stack-pop';
 
-    protected static string $view = 'filament.pages.popover';
+    protected string $view = 'filament.pages.popover';
 
     protected static ?int $navigationSort = 3;
 
@@ -71,7 +70,7 @@ class Popover extends Page implements HasTable
             ]);
     }
 
-    public function form(Form $form): Form
+    public function form(Schema $form): Schema
     {
         return $form
             ->statePath('data')
@@ -86,12 +85,12 @@ class Popover extends Page implements HasTable
             ]);
     }
 
-    public function infolist(Infolist $infolist): Infolist
+    public function infolist(Schema $infolist): Schema
     {
         return $infolist
             ->record(User::first())
             ->schema([
-                \Filament\Infolists\Components\Section::make()
+                Section::make()
                     ->schema([
                         PopoverEntry::make('name')
                             ->trigger('hover')

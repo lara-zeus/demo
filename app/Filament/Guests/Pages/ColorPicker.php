@@ -9,9 +9,9 @@ use Filament\Support\Facades\FilamentColor;
 
 class ColorPicker extends Page
 {
-    protected static string $view = 'filament.guests.pages.preset-color-picker';
+    protected string $view = 'filament.guests.pages.preset-color-picker';
 
-    protected static ?string $navigationIcon = 'tabler-photo';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-photo';
 
     protected static ?string $navigationGroup = 'Plugins';
 

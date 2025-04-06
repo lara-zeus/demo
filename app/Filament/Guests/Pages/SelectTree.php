@@ -9,9 +9,9 @@ use Filament\Pages\Page;
 
 class SelectTree extends Page
 {
-    protected static string $view = 'filament.guests.pages.select-tree';
+    protected string $view = 'filament.guests.pages.select-tree';
 
-    protected static ?string $navigationIcon = 'tabler-binary-tree-2';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-binary-tree-2';
 
     protected static ?int $navigationSort = 1;
 

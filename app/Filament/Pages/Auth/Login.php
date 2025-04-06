@@ -3,11 +3,11 @@
 namespace App\Filament\Pages\Auth;
 
 use DiogoGPinto\AuthUIEnhancer\Pages\Auth\Concerns\HasCustomLayout;
-use Filament\Pages\Auth\Login as BaseLogin;
+use Filament\Auth\Pages\Login as BaseLogin;
 
 class Login extends BaseLogin
 {
-    use HasCustomLayout;
+    //use HasCustomLayout;
 
     public function mount(): void
     {
