@@ -2037,16 +2037,16 @@
         },
         {
             "name": "codewithdennis/filament-select-tree",
-            "version": "v3.1.49",
+            "version": "v3.1.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeWithDennis/filament-select-tree.git",
-                "reference": "df656d6f7e4debd5ebe65964f36f6e8001774f78"
+                "reference": "68a38f8de4cc303c326a4ea9f6d9c6bd32c02cf5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/df656d6f7e4debd5ebe65964f36f6e8001774f78",
-                "reference": "df656d6f7e4debd5ebe65964f36f6e8001774f78",
+                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/68a38f8de4cc303c326a4ea9f6d9c6bd32c02cf5",
+                "reference": "68a38f8de4cc303c326a4ea9f6d9c6bd32c02cf5",
                 "shasum": ""
             },
             "require": {
@@ -2104,7 +2104,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-04T17:24:10+00:00"
+            "time": "2025-04-05T12:19:35+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -7668,12 +7668,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/mark.git",
-                "reference": "0f01a3999c6c8f921f7556eeb9284cdaf8807dbb"
+                "reference": "b360699ac7baf1c250baf44196fef0502b3313b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/mark/zipball/0f01a3999c6c8f921f7556eeb9284cdaf8807dbb",
-                "reference": "0f01a3999c6c8f921f7556eeb9284cdaf8807dbb",
+                "url": "https://api.github.com/repos/lara-zeus/mark/zipball/b360699ac7baf1c250baf44196fef0502b3313b0",
+                "reference": "b360699ac7baf1c250baf44196fef0502b3313b0",
                 "shasum": ""
             },
             "require": {
@@ -7682,10 +7682,10 @@
                 "spatie/laravel-package-tools": "^1.0"
             },
             "require-dev": {
+                "larastan/larastan": "^3.0",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^8.0",
-                "nunomaduro/larastan": "^3.0",
-                "orchestra/testbench": "^9.0",
+                "orchestra/testbench": "^10.0",
                 "pestphp/pest": "^3.0",
                 "pestphp/pest-plugin-arch": "^3.0",
                 "pestphp/pest-plugin-laravel": "^3.0",
@@ -7763,7 +7763,7 @@
                     "url": "https://github.com/lara-zeus"
                 }
             ],
-            "time": "2025-04-02T10:26:30+00:00"
+            "time": "2025-04-05T11:06:47+00:00"
         },
         {
             "name": "lara-zeus/matrix-choice",
