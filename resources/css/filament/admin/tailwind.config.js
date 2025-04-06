@@ -1,7 +1,6 @@
 import colors from "tailwindcss/colors.js";
 
 export default {
-    presets: [preset],
     content: [
         './app/Filament/**/*.php',
         './vendor/filament/**/*.blade.php',
