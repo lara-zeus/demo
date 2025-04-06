@@ -1,4 +1,3 @@
-import preset from '../../../../vendor/filament/filament/tailwind.config.preset'
 import colors from "tailwindcss/colors.js";
 
 export default {
