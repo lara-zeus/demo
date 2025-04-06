@@ -111,7 +111,7 @@ module.exports = {
         },
     },
     plugins: [
-        plugin(function ({addUtilities, addComponents, e, config}) {
+        /*plugin(function ({addUtilities, addComponents, e, config}) {
             const sketchyBorders = {
                 '.border-sketchy-sm': {
                     borderRadius: '255px 25px 225px 25px/25px 225px 25px 255px',
@@ -130,7 +130,7 @@ module.exports = {
             addUtilities(sketchyBorders, {
                 variants: ['responsive', 'hover'],
             })
-        }),
-        require('tailwindcss-debug-screens'),
+        }),*/
+        /*require('tailwindcss-debug-screens'),*/
     ],
 }
