@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import '/vendor/filament/filament/resources/css/theme.css';
+@import '../../../vendor/filament/filament/resources/css/theme.css';
 /*@import '/vendor/awcodes/filament-curator/resources/css/plugin.css';*/
 /*@import '/vendor/archilex/filament-filter-sets/resources/css/plugin.css';*/
-@import '/node_modules/cropperjs/dist/cropper.css';
+@import '../../../node_modules/cropperjs/dist/cropper.css';
 @import 'tippy.js/dist/tippy.css';
 
 :root {
