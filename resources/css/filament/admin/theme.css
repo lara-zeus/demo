@@ -1,37 +1,53 @@
+@import "tailwindcss";
+
+@theme inline {
+    --color-primary-50: '#C6E9E2';
+    --color-primary-100: '#B8E4DB';
+    --color-primary-200: '#9AD8CC';
+    --color-primary-300: '#7DCDBD';
+    --color-primary-400: '#5FC1AE';
+    --color-primary-500: '#45B39D';
+    --color-primary-600: '#358B79';
+    --color-primary-700: '#266256';
+    --color-primary-800: '#163A32';
+    --color-primary-900: '#07110F';
+    --color-primary-950: '#000000';
+
+    --color-secondary-50: '#FDF2F0';
+    --color-secondary-100: '#FCE7E5';
+    --color-secondary-200: '#F9D2CE';
+    --color-secondary-300: '#F6BEB8';
+    --color-secondary-400: '#F4A9A1';
+    --color-secondary-500: '#F1948A';
+    --color-secondary-600: '#EB6658';
+    --color-secondary-700: '#E53826';
+    --color-secondary-800: '#BC2717';
+    --color-secondary-900: '#8A1C11';
+    --color-secondary-950: '#71170E';
+}
+
+@import './sources.css';
+@import '../../../../node_modules/cropperjs/dist/cropper.css';
 @import '../../../../vendor/filament/filament/resources/css/theme.css';
 /*@import '/vendor/awcodes/filament-curator/resources/css/plugin.css';*/
 /*@import '/vendor/archilex/filament-filter-sets/resources/css/plugin.css';*/
-@import '../../../../node_modules/cropperjs/dist/cropper.css';
 
-@config 'tailwind.config.js';
-
-:root {
-    --c-50: var(--primary-50);
-    --c-100: var(--primary-100);
-    --c-200: var(--primary-200);
-    --c-300: var(--primary-300);
-    --c-400: var(--primary-400);
-    --c-500: var(--primary-500);
-    --c-600: var(--primary-600);
-    --c-700: var(--primary-700);
-    --c-800: var(--primary-800);
-    --c-900: var(--primary-900);
-}
+@variant dark (&:where(.dark, .dark *));
 
 [dir=rtl] {
-    font-family: 'Almarai', 'Montserrat', sans-serif !important;
+    font-family: 'Almarai', 'Montserrat', sans-serif;
 }
 
 [dir=rtl] .title-font {
-    font-family: 'Almarai', sans-serif !important;
+    font-family: 'Almarai', sans-serif;
 }
 
 [dir=ltr] {
-    font-family: 'Montserrat', 'Almarai', sans-serif !important;
+    font-family: 'Montserrat', 'Almarai', sans-serif;
 }
 
 [dir=ltr] .title-font {
-    font-family: 'Montserrat', 'Almarai', sans-serif !important;
+    font-family: 'Montserrat', 'Almarai', sans-serif;
     @apply font-semibold
 }
 
@@ -40,15 +56,15 @@
 }
 
 .compact-timeline .fi-timeline-item-heading {
-    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col !important;
+    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col ;
 }
 
 .compact-timeline .fi-timeline-section-content {
-    @apply shadow-none p-0 !important;
+    @apply shadow-none p-0 ;
 }
 
 .compact-timeline {
-    @apply shadow-none ring-0 !important;
+    @apply shadow-none ring-0 ;
 }
 
 .field-type .choices__list--single {
@@ -70,7 +86,7 @@
 }
 
 .fi-sidebar {
-    @apply shadow-md bg-white dark:bg-gray-950 !important;
+    @apply shadow-md bg-white dark:bg-gray-950 ;
 }
 
 .custom-auth-empty-panel {
@@ -119,42 +135,42 @@
 }
 
 .fi-header-heading, .fi-section-header-heading {
-    @apply font-normal text-secondary-600 !important;
+    @apply font-normal text-secondary-600 ;
 }
 
 .fi-breadcrumbs-item-label {
-    @apply text-primary-600 !important;
+    @apply text-primary-600 ;
 }
 
 /*
 .fi-topbar {
-    @apply hidden !important;
+    @apply hidden ;
 }
 
 .fi-main {
-    @apply my-4 mb-4 bg-gray-50 rounded-3xl shadow-lg !important;
+    @apply my-4 mb-4 bg-gray-50 rounded-3xl shadow-lg ;
 }
 
 .fi-main-ctn {
-    @apply mx-10 !important;
+    @apply mx-10 ;
 }
 
 .fi-panel-admin, .fi-main-ctn, .fi-sidebar, .fi-sidebar-header {
-    @apply bg-secondary-50 !important;
+    @apply bg-secondary-50 ;
 }
 
 .fi-sidebar, .fi-sidebar-header {
-    @apply ring-0 shadow-none !important;
+    @apply ring-0 shadow-none ;
 }*/
 
-.fi-page-sub-navigation-sidebar-ctn, .fi-section{
-    @apply px-2 py-3 bg-gray-50 dark:bg-gray-900 border-2 shadow-lg border-b-4 border-primary-500 dark:border-primary-800 rounded-2xl !important;
+.fi-page-sub-navigation-sidebar-ctn, .fi-section {
+    @apply px-2 py-3 bg-gray-50 dark:bg-gray-900 border-2 shadow-lg border-b-4 border-primary-500 dark:border-primary-800 rounded-2xl ;
 }
 
-.fi-page-sub-navigation-sidebar{
-    @apply rounded-2xl !important;
+.fi-page-sub-navigation-sidebar {
+    @apply rounded-2xl ;
 }
 
-.fi-active, .fi-active a, .fi-sidebar-item.fi-active{
-    @apply rounded-2xl !important;
+.fi-active, .fi-active a, .fi-sidebar-item.fi-active {
+    @apply rounded-2xl ;
 }

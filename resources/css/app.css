@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import '/vendor/filament/filament/resources/css/theme.css';
-@import '/vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
-@import '/node_modules/tippy.js/dist/tippy.css';
-@import '/node_modules/tippy.js/themes/light.css';
-
-@config "tailwind.config.js";
+@import 'tailwindcss';
+@import '../../vendor/filament/filament/resources/css/theme.css';
+/*@import '../../vendor/lara-zeus/core/resources/css/_checkbox-cards.css';*/
+@import '../../node_modules/tippy.js/dist/tippy.css';
+@import '../../node_modules/tippy.js/themes/light.css';
 
 /* Sky search result highlight */
 span.highlight {
@@ -14,19 +12,19 @@ span.highlight {
 /*@import '/vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';*/
 
 [dir=rtl] {
-    font-family: 'Almarai','Karla', sans-serif !important;
+    font-family: 'Almarai', 'Karla', sans-seri;
 }
 
 [dir=rtl] .title-font {
-    font-family: 'Almarai', sans-serif !important;
+    font-family: 'Almarai', sans-seri;
 }
 
 [dir=ltr] {
-    font-family: 'Karla', 'Almarai', sans-serif !important;
+    font-family: 'Karla', 'Almarai', sans-seri;
 }
 
 [dir=ltr] .title-font {
-    font-family: 'Montserrat', 'Almarai', sans-serif !important;
+    font-family: 'Montserrat', 'Almarai', sans-seri;
     @apply font-semibold
 }
 
@@ -73,11 +71,13 @@ pre code.torchlight .summary-caret {
 }
 
 .compact-timeline .fi-timeline-item-heading {
-    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col !important;
+    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col;
 }
+
 .compact-timeline .fi-timeline-section-content {
-    @apply shadow-none p-0 !important;
+    @apply shadow-none p-0;
 }
+
 .compact-timeline {
-    @apply shadow-none ring-0 !important;
+    @apply shadow-none ring-0;
 }

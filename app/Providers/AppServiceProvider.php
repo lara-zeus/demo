@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\User;
 use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;
 use Filament\Support\Colors\Color;
@@ -12,6 +13,7 @@ use Filament\Support\Facades\FilamentView;
 use Filament\Support\View\Components\ModalComponent;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
@@ -31,6 +33,10 @@ class AppServiceProvider extends ServiceProvider
         ]);
 
         ModalComponent::closedByClickingAway(false);
+
+        /*Gate::define('reply', function (User $user) {
+            return '';
+        });*/
 
         /*PanelSwitch::configureUsing(function (PanelSwitch $panelSwitch) {
             $panelSwitch

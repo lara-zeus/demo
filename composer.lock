@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "befecbf4d6e07a059b73dab4b856b59b",
+    "content-hash": "dd42cde7687ecc86d6c8e86e74eb7b20",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -125,6 +125,66 @@
                 "source": "https://github.com/Bacon/BaconQrCode/tree/v3.0.1"
             },
             "time": "2024-10-01T13:55:55+00:00"
+        },
+        {
+            "name": "beyondcode/laravel-comments",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beyondcode/laravel-comments.git",
+                "reference": "4635f98118c611e55ada82bc9d8044ee3fc66e33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beyondcode/laravel-comments/zipball/4635f98118c611e55ada82bc9d8044ee3fc66e33",
+                "reference": "4635f98118c611e55ada82bc9d8044ee3fc66e33",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.6|^5.0|^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^9.5.8|^10.0.7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BeyondCode\\Comments\\CommentsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BeyondCode\\Comments\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "marcel@beyondco.de",
+                    "homepage": "https://beyondcode.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add comments to your Laravel application",
+            "homepage": "https://github.com/beyondcode/laravel-comments",
+            "keywords": [
+                "beyondcode",
+                "comments",
+                "laravel-comments"
+            ],
+            "support": {
+                "issues": "https://github.com/beyondcode/laravel-comments/issues",
+                "source": "https://github.com/beyondcode/laravel-comments/tree/1.8.0"
+            },
+            "time": "2025-03-02T18:47:27+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -275,6 +335,84 @@
                 }
             ],
             "time": "2025-02-13T20:35:06+00:00"
+        },
+        {
+            "name": "blade-ui-kit/blade-ui-kit",
+            "version": "0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blade-ui-kit/blade-ui-kit.git",
+                "reference": "3d6034f5425ea41e54a75130555befd1dfec7690"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-ui-kit/zipball/3d6034f5425ea41e54a75130555befd1dfec7690",
+                "reference": "3d6034f5425ea41e54a75130555befd1dfec7690",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/filesystem": "^10.0|^11.0|^12.0",
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "illuminate/view": "^10.0|^11.0|^12.0",
+                "nesbot/carbon": "^2.38|^3.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^7.4",
+                "league/commonmark": "^1.4|^2.0",
+                "livewire/livewire": "^3.0",
+                "lorisleiva/cron-translator": "^0.1.1|^0.4",
+                "orchestra/testbench": "^8.0|^9.0|^10.0",
+                "orchestra/testbench-dusk": "^8.0|^9.0|^10.0",
+                "pestphp/pest": "^2.34|^3.0",
+                "phpunit/phpunit": "^10.5|^11.0"
+            },
+            "suggest": {
+                "league/commonmark": "Required to use the markdown component (^1.4).",
+                "lorisleiva/cron-translator": "Required to use the cron component (^0.1.1)."
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeUIKit\\BladeUIKitServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BladeUIKit\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A set of renderless components to utilise in your Laravel Blade views.",
+            "homepage": "https://github.com/blade-ui-kit/blade-ui-kit",
+            "keywords": [
+                "blade",
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "issues": "https://github.com/blade-ui-kit/blade-ui-kit/issues",
+                "source": "https://github.com/blade-ui-kit/blade-ui-kit"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/driesvints",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-19T08:32:44+00:00"
         },
         {
             "name": "brick/math",
@@ -1933,6 +2071,80 @@
             }
         },
         {
+            "name": "flowframe/laravel-trend",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Flowframe/laravel-trend.git",
+                "reference": "5ace11d3075932652dc48963faa732c043aeb14d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Flowframe/laravel-trend/zipball/5ace11d3075932652dc48963faa732c043aeb14d",
+                "reference": "5ace11d3075932652dc48963faa732c043aeb14d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.37|^9|^10.0|^11.0|^12.0",
+                "php": "^8.2",
+                "spatie/laravel-package-tools": "^1.4.3"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^5.3|^6.1|^8.0",
+                "orchestra/testbench": "^6.15|^7.0|^8.0|^9.0|^10.0",
+                "pestphp/pest": "^1.18|^2.34|^3.7",
+                "pestphp/pest-plugin-laravel": "^1.1|^2.3|^3.1",
+                "spatie/laravel-ray": "^1.23",
+                "vimeo/psalm": "^4.8|^5.6|^6.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Trend": "Flowframe\\Trend\\TrendFacade"
+                    },
+                    "providers": [
+                        "Flowframe\\Trend\\TrendServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Flowframe\\Trend\\": "src",
+                    "Flowframe\\Trend\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Klopstra",
+                    "email": "lars@flowframe.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily generate model trends",
+            "homepage": "https://github.com/flowframe/laravel-trend",
+            "keywords": [
+                "Flowframe",
+                "laravel",
+                "laravel-trend"
+            ],
+            "support": {
+                "issues": "https://github.com/Flowframe/laravel-trend/issues",
+                "source": "https://github.com/Flowframe/laravel-trend/tree/v0.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/larsklopstra",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-25T11:13:23+00:00"
+        },
+        {
             "name": "fruitcake/php-cors",
             "version": "v1.3.0",
             "source": {
@@ -3444,11 +3656,11 @@
         },
         {
             "name": "lara-zeus/akin",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/akin",
-                "reference": "f25846b8cc468cca9ba204f961d8abdcc2d97be1"
+                "reference": "faa68d65f4af38e19ae19037bc667220803508e8"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -3505,14 +3717,14 @@
         },
         {
             "name": "lara-zeus/artemis",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/artemis",
-                "reference": "2920dceaa3d71ec91f6af628f9d7e3049fb33943"
+                "reference": "32a03e949a72796695c77abf160a11a5865b5d6b"
             },
             "require": {
-                "lara-zeus/core": "^3.0",
+                "lara-zeus/core": "*",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -3571,12 +3783,290 @@
             }
         },
         {
+            "name": "lara-zeus/athena",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "../p/athena",
+                "reference": "3d6a8aec3391cce62a1bcc3db060ab352a5b9a2d"
+            },
+            "require": {
+                "beyondcode/laravel-comments": "^1.8",
+                "blade-ui-kit/blade-ui-kit": "^0.7",
+                "jenssegers/agent": "^2.6",
+                "lara-zeus/bolt": "*",
+                "lara-zeus/filament-plugin-tools": "*",
+                "lara-zeus/quantity": "*",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.2",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Athena\\AthenaServiceProvider"
+                    ],
+                    "aliases": {
+                        "Athena": "LaraZeus\\Athena\\Facades\\Athena"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Athena\\": "src",
+                    "LaraZeus\\Athena\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
+                }
+            ],
+            "description": "Athena appointments managements",
+            "homepage": "https://larazeus.com/athena",
+            "keywords": [
+                "appointments",
+                "athena",
+                "calendar",
+                "filamentphp",
+                "lara-zeus",
+                "laravel",
+                "managements",
+                "schedule"
+            ],
+            "support": {
+                "chat": "https://discord.com/channels/883083792112300104/1282751531346694207",
+                "contact": "https://larazeus.com/contact-us",
+                "docs": "https://larazeus.com/athena",
+                "email": "info@larazeus.com"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "lara-zeus/bolt",
+            "version": "4.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "../p/bolt",
+                "reference": "9718fc3620f24c91bbf6a611aced7d0081a023a0"
+            },
+            "require": {
+                "flowframe/laravel-trend": "^0.4",
+                "lara-zeus/accordion": "*",
+                "lara-zeus/core": "*",
+                "lara-zeus/filament-plugin-tools": "*",
+                "lara-zeus/list-group": "*",
+                "php": "^8.1",
+                "secondnetwork/blade-tabler-icons": "^3.30"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^8.6",
+                "nunomaduro/phpinsights": "^2.8",
+                "orchestra/testbench": "^10.0",
+                "pestphp/pest": "^3.0",
+                "pestphp/pest-plugin-arch": "^3.0",
+                "pestphp/pest-plugin-laravel": "^3.0",
+                "pestphp/pest-plugin-livewire": "^3.0",
+                "phpstan/extension-installer": "^1.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Bolt\\BoltServiceProvider"
+                    ],
+                    "aliases": {
+                        "Bolt": "LaraZeus\\Bolt\\Facades\\Bolt"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Bolt\\": "src",
+                    "LaraZeus\\Bolt\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "LaraZeus\\Bolt\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:pest": [
+                    "vendor/bin/pest --parallel"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
+                }
+            ],
+            "description": "Zeus Bolt is form builder for your users, with so many use cases",
+            "homepage": "https://larazeus.com/bolt",
+            "keywords": [
+                "bolt",
+                "builder",
+                "filamentphp",
+                "form",
+                "forms",
+                "generator",
+                "lara-zeus",
+                "laravel",
+                "maker",
+                "self hosted"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/bolt/issues",
+                "source": "https://github.com/lara-zeus/bolt"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "lara-zeus/bolt-pro",
+            "version": "4.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "../p/bolt-pro",
+                "reference": "6e5e29db4e2cc599c653600f1b644fe7e63748ab"
+            },
+            "require": {
+                "lara-zeus/bolt": "*",
+                "lara-zeus/matrix-choice": "*",
+                "lara-zeus/quantity": "*",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.0",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "nunomaduro/phpinsights": "^2.8",
+                "orchestra/testbench": "^8.0",
+                "phpstan/extension-installer": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\BoltPro\\BoltProServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\BoltPro\\": "src"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
+                }
+            ],
+            "description": "Zeus Bolt Pro is to supercharge your forms with additional tools for Bolt the form builder",
+            "homepage": "https://larazeus.com/bolt-pro",
+            "keywords": [
+                "bolt",
+                "bolt pro",
+                "builder",
+                "feilds",
+                "filamentphp",
+                "form",
+                "forms",
+                "generator",
+                "lara-zeus",
+                "laravel",
+                "maker",
+                "self hosted"
+            ],
+            "support": {
+                "chat": "https://discord.com/channels/883083792112300104/1282748203376050309",
+                "contact": "https://larazeus.com/contact-us",
+                "docs": "https://larazeus.com/bolt-pro",
+                "email": "info@larazeus.com"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "lara-zeus/boredom",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/boredom",
-                "reference": "17d4844b43b9b877b647dad4401dd478eded80cd"
+                "reference": "6d013b63d3290ba525d486402371c1cba6e7c49c"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -3651,11 +4141,11 @@
         },
         {
             "name": "lara-zeus/chaos",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/chaos",
-                "reference": "45e1c8eb5227d6b81a07ead5bec4efb88aba9d9b"
+                "reference": "dd5001fb1ab8ecec79c49743d031354db8eb8d62"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -3719,11 +4209,11 @@
         },
         {
             "name": "lara-zeus/chronos",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/chronos",
-                "reference": "2983a737e9b9b33da2a95e6edf48a7d1b0088597"
+                "reference": "1b87a41194080b09263d731cc36e6157021bdfbf"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -3802,11 +4292,11 @@
         },
         {
             "name": "lara-zeus/core",
-            "version": "3.x-dev",
+            "version": "4.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/core",
-                "reference": "6046e4e098c63cf25795bc6e2f6b2b1e649ceb35"
+                "reference": "3c84cbb74c29743235d332661e3fa4d548c4e625"
             },
             "require": {
                 "calebporzio/sushi": "^2.4",
@@ -3815,22 +4305,22 @@
                 "ext-sqlite3": "*",
                 "filament/filament": "*",
                 "filament/spatie-laravel-translatable-plugin": "*",
-                "lara-zeus/laravel-seo": "^1.0",
-                "php": "^8.2"
+                "lara-zeus/laravel-seo": "*",
+                "php": "^8.1"
             },
             "require-dev": {
-                "larastan/larastan": "^3.0",
+                "larastan/larastan": "^2.2",
                 "laravel/pint": "^1.0",
-                "nunomaduro/collision": "^8.6",
-                "nunomaduro/phpinsights": "^2.8",
-                "orchestra/testbench": "^10.0",
-                "pestphp/pest": "^3.0",
-                "pestphp/pest-plugin-arch": "^3.0",
-                "pestphp/pest-plugin-laravel": "^3.0",
-                "pestphp/pest-plugin-livewire": "^3.0",
-                "phpstan/extension-installer": "^1.4",
-                "phpstan/phpstan-deprecation-rules": "^2.0",
-                "phpstan/phpstan-phpunit": "^2.0"
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "pestphp/pest-plugin-livewire": "2.x-dev",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^10.1"
             },
             "type": "library",
             "extra": {
@@ -3873,14 +4363,17 @@
             ],
             "authors": [
                 {
-                    "name": "Lara Zeus (Ash)",
-                    "email": "info@larazeus.com"
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
+                    "role": "Owner"
                 }
             ],
             "description": "the core for zeus packages",
             "homepage": "https://larazeus.com",
             "keywords": [
+                "contact",
                 "core",
+                "form",
                 "lara-zeus",
                 "laravel"
             ],
@@ -3894,14 +4387,14 @@
         },
         {
             "name": "lara-zeus/delia",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/delia",
-                "reference": "6ae038dfcc3e997e854cdc7ab1d5f48d3352eaf3"
+                "reference": "ddb78c7cc7d312b2a887e3ccc33544985c0a0d94"
             },
             "require": {
-                "lara-zeus/filament-plugin-tools": "^1.0",
+                "lara-zeus/filament-plugin-tools": "*",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -3984,15 +4477,15 @@
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
-            "version": "3.x-dev",
+            "version": "4.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/rain",
-                "reference": "310bc8ef70263132f2d7aa05a3d17b4c036c981c"
+                "reference": "eae2e7195145e66d8d796eb0628dfeefc012d979"
             },
             "require": {
-                "lara-zeus/core": "^3.1",
-                "lara-zeus/filament-plugin-tools": "^1.0",
+                "lara-zeus/core": "*",
+                "lara-zeus/filament-plugin-tools": "*",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -4073,11 +4566,11 @@
         },
         {
             "name": "lara-zeus/filament-plugin-tools",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/filament-plugin-tools",
-                "reference": "e3b6437bf52f380e098c16ee015e8dac2a0db1f5"
+                "reference": "3bc7e761b9a37306db7e15210179829b4aa0e2fa"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -4156,14 +4649,14 @@
         },
         {
             "name": "lara-zeus/hades",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/hades",
-                "reference": "390e5da00b746184e34e88b11b7140fc55f06c37"
+                "reference": "04c2da0b70d0bcec1647af30113c43107b84f411"
             },
             "require": {
-                "lara-zeus/filament-plugin-tools": "^1.0",
+                "lara-zeus/filament-plugin-tools": "*",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -4244,11 +4737,11 @@
         },
         {
             "name": "lara-zeus/helen",
-            "version": "2.x-dev",
+            "version": "3.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/helen",
-                "reference": "f80997c8bbbfaac20601b2b728000dacb66eaa2f"
+                "reference": "5f4f85396b568b8e180962e70ba9c6591b57e5ea"
             },
             "require": {
                 "jenssegers/agent": "^2.6",
@@ -4330,14 +4823,14 @@
         },
         {
             "name": "lara-zeus/hera",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/hera",
-                "reference": "7ab9cfcd0af94efd01eb7da86b4fd28f3f0aad10"
+                "reference": "9c1b0bb66e8a0d58472c620a86efa652e2567bfc"
             },
             "require": {
-                "lara-zeus/filament-plugin-tools": "^1.0",
+                "lara-zeus/filament-plugin-tools": "*",
                 "php": "^8.1",
                 "vormkracht10/laravel-seo-scanner": "^3.13"
             },
@@ -4410,8 +4903,107 @@
             }
         },
         {
+            "name": "lara-zeus/hermes",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "../p/hermes",
+                "reference": "ba754c74a68d5311a3471a6061f05c92e27596bd"
+            },
+            "require": {
+                "lara-zeus/core": "*",
+                "lara-zeus/filament-plugin-tools": "*",
+                "lara-zeus/mark": "*",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.2",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "pestphp/pest-plugin-livewire": "^2.1",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Hermes\\HermesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Hermes\\": "src",
+                    "LaraZeus\\Hermes\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "LaraZeus\\Hermes\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:pest": [
+                    "vendor/bin/pest --parallel"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
+                }
+            ],
+            "description": "Hermes is a restaurants and cafes menu managements",
+            "homepage": "https://larazeus.com/hermes",
+            "keywords": [
+                "achevment management",
+                "filamentphp",
+                "hermes",
+                "lara-zeus",
+                "laravel",
+                "level up"
+            ],
+            "support": {
+                "chat": "https://discord.com/channels/883083792112300104/1282759718603063389",
+                "contact": "https://larazeus.com/contact-us",
+                "docs": "https://larazeus.com/hermes",
+                "email": "info@larazeus.com"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "lara-zeus/inline-chart",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/inline-chart",
@@ -4865,19 +5457,19 @@
         },
         {
             "name": "lara-zeus/pontus",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/pontus",
-                "reference": "93fdbf92c7f26c727f3e7bf01247c0b1f5b43fac"
+                "reference": "07c45e29a8037998df79ba40157bb02964df0c1a"
             },
             "require": {
                 "calebporzio/sushi": "^2.4",
                 "ext-json": "*",
                 "ext-pdo_sqlite": "*",
                 "ext-sqlite3": "*",
-                "lara-zeus/chaos": "^1.0",
-                "lara-zeus/filament-plugin-tools": "^1.0",
+                "lara-zeus/chaos": "*",
+                "lara-zeus/filament-plugin-tools": "*",
                 "php": "^8.1",
                 "rinvex/laravel-subscriptions": "dev-laravel-12"
             },
@@ -4955,11 +5547,11 @@
         },
         {
             "name": "lara-zeus/popover",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/popover",
-                "reference": "d9d0b37ab7f21858d5bc0bf4c707fdd93fdf7b1d"
+                "reference": "e98deb450d19a5685887eb137e9a484b2cf4b875"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -5197,14 +5789,14 @@
         },
         {
             "name": "lara-zeus/replies",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/replies",
-                "reference": "6b9957ea4bb55986b66f264a859e6bf9f327f1e3"
+                "reference": "8508830ad651b57c93e9d51f48d19c03f7fbcc38"
             },
             "require": {
-                "lara-zeus/filament-plugin-tools": "^1.0",
+                "lara-zeus/filament-plugin-tools": "*",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -5357,18 +5949,18 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "3.x-dev",
+            "version": "4.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/sky",
-                "reference": "f2b617823c06482202ee6ed0e1d027d9602e3f08"
+                "reference": "a5ad3f6a24af5098bfd294fee3f4fb12a64789c7"
             },
             "require": {
                 "filament/spatie-laravel-media-library-plugin": "*",
                 "filament/spatie-laravel-tags-plugin": "*",
-                "lara-zeus/core": "^3.2",
-                "lara-zeus/filament-plugin-tools": "^1.0",
-                "php": "^8.1",
+                "lara-zeus/core": "*",
+                "lara-zeus/filament-plugin-tools": "*",
+                "php": "^8.2",
                 "spatie/laravel-medialibrary": "^11.0",
                 "spatie/laravel-sluggable": "^3.3",
                 "spatie/laravel-tags": "^4.6"
@@ -5454,12 +6046,205 @@
             }
         },
         {
+            "name": "lara-zeus/tartarus",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "../p/tartarus",
+                "reference": "12525a61380756719ce9bfdaaf41dc9f7facb7aa"
+            },
+            "require": {
+                "calebporzio/sushi": "^2.4",
+                "filament/filament": "*",
+                "filament/spatie-laravel-translatable-plugin": "*",
+                "lara-zeus/chaos": "*",
+                "lara-zeus/filament-plugin-tools": "*",
+                "php": "^8.1",
+                "secondnetwork/blade-tabler-icons": "^3.0",
+                "spatie/laravel-package-tools": "^1.16",
+                "spatie/laravel-tags": "^4.6"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.2",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Tartarus\\TartarusServiceProvider"
+                    ],
+                    "aliases": {
+                        "Tartarus": "LaraZeus\\Tartarus\\Facades\\Tartarus"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Tartarus\\": "src",
+                    "LaraZeus\\Tartarus\\Database\\Factories\\": "database/factories/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ],
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "simple multi tenants",
+            "homepage": "https://larazeus.com/tartarus",
+            "keywords": [
+                "filamentphp",
+                "lara-zeus",
+                "laravel",
+                "manager",
+                "multi",
+                "panels",
+                "tartarus",
+                "tenants"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/tartarus/issues",
+                "source": "https://github.com/lara-zeus/tartarus"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "lara-zeus/thunder",
+            "version": "4.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "../p/thunder",
+                "reference": "b74acb1d015fb00fbb349d48905827db6da90534"
+            },
+            "require": {
+                "beyondcode/laravel-comments": "^1.8",
+                "lara-zeus/bolt": "*",
+                "lara-zeus/filament-plugin-tools": "*",
+                "lara-zeus/inline-chart": "*",
+                "lara-zeus/quantity": "*",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.2",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "pestphp/pest-plugin-livewire": "2.x-dev",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^10.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Thunder\\ThunderServiceProvider"
+                    ],
+                    "aliases": {
+                        "Thunder": "LaraZeus\\Thunder\\Facades\\Thunder"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Thunder\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "LaraZeus\\Thunder\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "pint": [
+                    "vendor/bin/pint"
+                ],
+                "test:pest": [
+                    "vendor/bin/pest --parallel"
+                ],
+                "test:phpstan": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "@test:pest",
+                    "@test:phpstan"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lara Zeus (Ash)",
+                    "email": "info@larazeus.com"
+                }
+            ],
+            "description": "tickets system for laravel as filament plugin",
+            "homepage": "https://larazeus.com/thunder",
+            "keywords": [
+                "filamentphp",
+                "form",
+                "forms",
+                "generator",
+                "help desk",
+                "lara-zeus",
+                "laravel",
+                "maker",
+                "self hosted",
+                "thunder",
+                "tickets"
+            ],
+            "support": {
+                "chat": "https://discord.com/channels/883083792112300104/1282746155813306511",
+                "contact": "https://larazeus.com/contact-us",
+                "docs": "https://larazeus.com/thunder",
+                "email": "info@larazeus.com"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "lara-zeus/tiles",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/tiles",
-                "reference": "581d6feda8a6dcb8709a415e3ac3f66a9d348bd4"
+                "reference": "d0f9261758c37fc7adb289c172d6049ecbf5be18"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -5619,11 +6404,11 @@
         },
         {
             "name": "lara-zeus/translatable-pro",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/translatable-pro",
-                "reference": "00b49b5ee5185edca00414c2dab99c6543520d09"
+                "reference": "efd1f2ad4ee5f5668aeca7ca9b351fbb2e922921"
             },
             "require": {
                 "filament/filament": "*",
@@ -5700,14 +6485,14 @@
         },
         {
             "name": "lara-zeus/wind",
-            "version": "3.x-dev",
+            "version": "4.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/wind",
-                "reference": "952721e75f3ab3025a26934d2489fc1d77432299"
+                "reference": "57bb8d371929e6395019cd770f93678d44b905e1"
             },
             "require": {
-                "lara-zeus/core": "^3.2",
+                "lara-zeus/core": "*",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -5787,16 +6572,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.7.2",
+            "version": "v12.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "a4ba76e06fe6dd02312359f8184ab259900a7780"
+                "reference": "d1ea3566f6e0cad34834c6d18db0bf995438eb87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/a4ba76e06fe6dd02312359f8184ab259900a7780",
-                "reference": "a4ba76e06fe6dd02312359f8184ab259900a7780",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d1ea3566f6e0cad34834c6d18db0bf995438eb87",
+                "reference": "d1ea3566f6e0cad34834c6d18db0bf995438eb87",
                 "shasum": ""
             },
             "require": {
@@ -5998,7 +6783,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-04-03T18:00:49+00:00"
+            "time": "2025-04-08T19:58:59+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -8017,16 +8802,16 @@
         },
         {
             "name": "phiki/phiki",
-            "version": "v1.1.4",
+            "version": "v1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phikiphp/phiki.git",
-                "reference": "d71a22049db4aaa61fd1f8ef3e4a351265e7d57e"
+                "reference": "30280485e06201b28532f4e441580c2c969e539e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phikiphp/phiki/zipball/d71a22049db4aaa61fd1f8ef3e4a351265e7d57e",
-                "reference": "d71a22049db4aaa61fd1f8ef3e4a351265e7d57e",
+                "url": "https://api.github.com/repos/phikiphp/phiki/zipball/30280485e06201b28532f4e441580c2c969e539e",
+                "reference": "30280485e06201b28532f4e441580c2c969e539e",
                 "shasum": ""
             },
             "require": {
@@ -8065,9 +8850,9 @@
             "description": "Syntax highlighting using TextMate grammars in PHP.",
             "support": {
                 "issues": "https://github.com/phikiphp/phiki/issues",
-                "source": "https://github.com/phikiphp/phiki/tree/v1.1.4"
+                "source": "https://github.com/phikiphp/phiki/tree/v1.1.5"
             },
-            "time": "2025-03-10T20:06:09+00:00"
+            "time": "2025-04-06T23:40:06+00:00"
         },
         {
             "name": "php-http/cache-plugin",
@@ -9686,6 +10471,64 @@
             "time": "2022-12-17T21:53:22+00:00"
         },
         {
+            "name": "secondnetwork/blade-tabler-icons",
+            "version": "v3.31.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/secondnetwork/blade-tabler-icons.git",
+                "reference": "bf069bbdb2a63aa8eaeb10e6fd993464e9340a31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/secondnetwork/blade-tabler-icons/zipball/bf069bbdb2a63aa8eaeb10e6fd993464e9340a31",
+                "reference": "bf069bbdb2a63aa8eaeb10e6fd993464e9340a31",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.8",
+                "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0|^7.0|^9.0",
+                "phpunit/phpunit": "^9.0|^10.0|^11.0|^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "secondnetwork\\TablerIcons\\BladeTablerIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "secondnetwork\\TablerIcons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Farah"
+                }
+            ],
+            "description": "A package to easily make use of tabler-icons in your Laravel Blade views.",
+            "homepage": "https://github.com/secondnetwork/blade-tabler-icons",
+            "keywords": [
+                "blade",
+                "laravel",
+                "tabler-icons"
+            ],
+            "support": {
+                "issues": "https://github.com/secondnetwork/blade-tabler-icons/issues",
+                "source": "https://github.com/secondnetwork/blade-tabler-icons/tree/v3.31.0"
+            },
+            "time": "2025-03-06T09:24:43+00:00"
+        },
+        {
             "name": "sentry/sentry",
             "version": "4.10.0",
             "source": {
@@ -10362,16 +11205,16 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.92.0",
+            "version": "1.92.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "dd46cd0ed74015db28822d88ad2e667f4496a6f6"
+                "reference": "45001525ccbb3804edb46a3410157f40de2ddd89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/dd46cd0ed74015db28822d88ad2e667f4496a6f6",
-                "reference": "dd46cd0ed74015db28822d88ad2e667f4496a6f6",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/45001525ccbb3804edb46a3410157f40de2ddd89",
+                "reference": "45001525ccbb3804edb46a3410157f40de2ddd89",
                 "shasum": ""
             },
             "require": {
@@ -10410,7 +11253,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.92.0"
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.92.3"
             },
             "funding": [
                 {
@@ -10418,7 +11261,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-27T08:34:10+00:00"
+            "time": "2025-04-10T21:50:03+00:00"
         },
         {
             "name": "spatie/laravel-sluggable",
@@ -14218,16 +15061,16 @@
     "packages-dev": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v3.15.2",
+            "version": "v3.15.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "0bc1e1361e7fffc2be156f46ad1fba6927c01729"
+                "reference": "4ccab20844d18c5af08b68d310e7151a791c3037"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/0bc1e1361e7fffc2be156f46ad1fba6927c01729",
-                "reference": "0bc1e1361e7fffc2be156f46ad1fba6927c01729",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/4ccab20844d18c5af08b68d310e7151a791c3037",
+                "reference": "4ccab20844d18c5af08b68d310e7151a791c3037",
                 "shasum": ""
             },
             "require": {
@@ -14237,9 +15080,6 @@
                 "php": "^8.1",
                 "php-debugbar/php-debugbar": "~2.1.1",
                 "symfony/finder": "^6|^7"
-            },
-            "conflict": {
-                "maximebf/debugbar": "*"
             },
             "require-dev": {
                 "mockery/mockery": "^1.3.3",
@@ -14290,7 +15130,7 @@
             ],
             "support": {
                 "issues": "https://github.com/barryvdh/laravel-debugbar/issues",
-                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.15.2"
+                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.15.3"
             },
             "funding": [
                 {
@@ -14302,7 +15142,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-25T15:25:22+00:00"
+            "time": "2025-04-08T15:11:06+00:00"
         },
         {
             "name": "filp/whoops",
@@ -14562,16 +15402,16 @@
         },
         {
             "name": "laravel/pint",
-            "version": "v1.21.2",
+            "version": "v1.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/pint.git",
-                "reference": "370772e7d9e9da087678a0edf2b11b6960e40558"
+                "reference": "7ddfaa6523a675fae5c4123ee38fc6bfb8ee4f36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pint/zipball/370772e7d9e9da087678a0edf2b11b6960e40558",
-                "reference": "370772e7d9e9da087678a0edf2b11b6960e40558",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/7ddfaa6523a675fae5c4123ee38fc6bfb8ee4f36",
+                "reference": "7ddfaa6523a675fae5c4123ee38fc6bfb8ee4f36",
                 "shasum": ""
             },
             "require": {
@@ -14582,9 +15422,9 @@
                 "php": "^8.2.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.72.0",
+                "friendsofphp/php-cs-fixer": "^3.75.0",
                 "illuminate/view": "^11.44.2",
-                "larastan/larastan": "^3.2.0",
+                "larastan/larastan": "^3.3.1",
                 "laravel-zero/framework": "^11.36.1",
                 "mockery/mockery": "^1.6.12",
                 "nunomaduro/termwind": "^2.3",
@@ -14624,7 +15464,7 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
-            "time": "2025-03-14T22:31:42+00:00"
+            "time": "2025-04-08T22:11:45+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -15157,16 +15997,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "975c081c7e430d0316a94047e5d8ab26e0a8f49e"
+                "reference": "27515dc524094e01d3cc1ce47c9218e6eb52d723"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/975c081c7e430d0316a94047e5d8ab26e0a8f49e",
-                "reference": "975c081c7e430d0316a94047e5d8ab26e0a8f49e",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/27515dc524094e01d3cc1ce47c9218e6eb52d723",
+                "reference": "27515dc524094e01d3cc1ce47c9218e6eb52d723",
                 "shasum": ""
             },
             "conflict": {
                 "3f/pygmentize": "<1.2",
+                "adaptcms/adaptcms": "<=1.3",
                 "admidio/admidio": "<4.3.12",
                 "adodb/adodb-php": "<=5.20.20|>=5.21,<=5.21.3",
                 "aheinze/cockpit": "<2.2",
@@ -15191,8 +16032,8 @@
                 "andrewhaine/silverstripe-form-capture": ">=0.2,<=0.2.3|>=1,<1.0.2|>=2,<2.2.5",
                 "apache-solr-for-typo3/solr": "<2.8.3",
                 "apereo/phpcas": "<1.6",
-                "api-platform/core": "<4.0.22",
-                "api-platform/graphql": "<4.0.22",
+                "api-platform/core": "<3.4.17|>=4.0.0.0-alpha1,<4.0.22",
+                "api-platform/graphql": "<3.4.17|>=4.0.0.0-alpha1,<4.0.22",
                 "appwrite/server-ce": "<=1.2.1",
                 "arc/web": "<3",
                 "area17/twill": "<1.2.5|>=2,<2.5.3",
@@ -15297,6 +16138,7 @@
                 "devgroup/dotplant": "<2020.09.14-dev",
                 "digimix/wp-svg-upload": "<=1",
                 "directmailteam/direct-mail": "<6.0.3|>=7,<7.0.3|>=8,<9.5.2",
+                "dnadesign/silverstripe-elemental": "<5.3.12",
                 "doctrine/annotations": "<1.2.7",
                 "doctrine/cache": ">=1,<1.3.2|>=1.4,<1.4.2",
                 "doctrine/common": "<2.4.3|>=2.5,<2.5.1",
@@ -15357,7 +16199,7 @@
                 "ezsystems/ezplatform-http-cache": "<2.3.16",
                 "ezsystems/ezplatform-kernel": "<1.2.5.1-dev|>=1.3,<1.3.35",
                 "ezsystems/ezplatform-rest": ">=1.2,<=1.2.2|>=1.3,<1.3.8",
-                "ezsystems/ezplatform-richtext": ">=2.3,<2.3.7.1-dev|>=3.3,<3.3.40",
+                "ezsystems/ezplatform-richtext": ">=2.3,<2.3.26|>=3.3,<3.3.40",
                 "ezsystems/ezplatform-solr-search-engine": ">=1.7,<1.7.12|>=2,<2.0.2|>=3.3,<3.3.15",
                 "ezsystems/ezplatform-user": ">=1,<1.0.1",
                 "ezsystems/ezpublish-kernel": "<6.13.8.2-dev|>=7,<7.5.31",
@@ -15443,7 +16285,7 @@
                 "hyn/multi-tenant": ">=5.6,<5.7.2",
                 "ibexa/admin-ui": ">=4.2,<4.2.3|>=4.6,<4.6.14",
                 "ibexa/core": ">=4,<4.0.7|>=4.1,<4.1.4|>=4.2,<4.2.3|>=4.5,<4.5.6|>=4.6,<4.6.2",
-                "ibexa/fieldtype-richtext": ">=4.6,<4.6.10",
+                "ibexa/fieldtype-richtext": ">=4.6,<4.6.19",
                 "ibexa/graphql": ">=2.5,<2.5.31|>=3.3,<3.3.28|>=4.2,<4.2.3",
                 "ibexa/http-cache": ">=4.6,<4.6.14",
                 "ibexa/post-install": "<1.0.16|>=4.6,<4.6.14",
@@ -15480,17 +16322,20 @@
                 "johnbillion/wp-crontrol": "<1.16.2",
                 "joomla/application": "<1.0.13",
                 "joomla/archive": "<1.1.12|>=2,<2.0.1",
+                "joomla/database": ">=1,<2.2|>=3,<3.4",
                 "joomla/filesystem": "<1.6.2|>=2,<2.0.1",
                 "joomla/filter": "<1.4.4|>=2,<2.0.1",
                 "joomla/framework": "<1.5.7|>=2.5.4,<=3.8.12",
                 "joomla/input": ">=2,<2.0.2",
-                "joomla/joomla-cms": ">=2.5,<3.9.12",
+                "joomla/joomla-cms": ">=2.5,<3.9.12|>=4,<4.4.13|>=5,<5.2.6",
+                "joomla/joomla-platform": "<1.5.4",
                 "joomla/session": "<1.3.1",
                 "joyqi/hyper-down": "<=2.4.27",
                 "jsdecena/laracom": "<2.0.9",
                 "jsmitty12/phpwhois": "<5.1",
                 "juzaweb/cms": "<=3.4",
                 "jweiland/events2": "<8.3.8|>=9,<9.0.6",
+                "jweiland/kk-downloader": "<1.2.2",
                 "kazist/phpwhois": "<=4.2.6",
                 "kelvinmo/simplexrd": "<3.1.1",
                 "kevinpapst/kimai2": "<1.16.7",
@@ -15558,6 +16403,7 @@
                 "mediawiki/data-transfer": ">=1.39,<1.39.11|>=1.41,<1.41.3|>=1.42,<1.42.2",
                 "mediawiki/matomo": "<2.4.3",
                 "mediawiki/semantic-media-wiki": "<4.0.2",
+                "mehrwert/phpmyadmin": "<3.2",
                 "melisplatform/melis-asset-manager": "<5.0.1",
                 "melisplatform/melis-cms": "<5.0.1",
                 "melisplatform/melis-front": "<5.0.1",
@@ -15675,7 +16521,7 @@
                 "phpxmlrpc/extras": "<0.6.1",
                 "phpxmlrpc/phpxmlrpc": "<4.9.2",
                 "pi/pi": "<=2.5",
-                "pimcore/admin-ui-classic-bundle": "<1.7.4",
+                "pimcore/admin-ui-classic-bundle": "<1.7.6",
                 "pimcore/customer-management-framework-bundle": "<4.2.1",
                 "pimcore/data-hub": "<1.2.4",
                 "pimcore/data-importer": "<1.8.9|>=1.9,<1.9.3",
@@ -15740,8 +16586,8 @@
                 "serluck/phpwhois": "<=4.2.6",
                 "sfroemken/url_redirect": "<=1.2.1",
                 "sheng/yiicms": "<1.2.1",
-                "shopware/core": "<=6.5.8.12|>=6.6,<=6.6.5",
-                "shopware/platform": "<=6.5.8.12|>=6.6,<=6.6.5",
+                "shopware/core": "<6.5.8.17-dev|>=6.6,<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
+                "shopware/platform": "<6.5.8.17-dev|>=6.6,<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
                 "shopware/production": "<=6.3.5.2",
                 "shopware/shopware": "<=5.7.17",
                 "shopware/storefront": "<=6.4.8.1|>=6.5.8,<6.5.8.7-dev",
@@ -15754,7 +16600,7 @@
                 "silverstripe/cms": "<4.11.3",
                 "silverstripe/comments": ">=1.3,<3.1.1",
                 "silverstripe/forum": "<=0.6.1|>=0.7,<=0.7.3",
-                "silverstripe/framework": "<5.3.8",
+                "silverstripe/framework": "<5.3.23",
                 "silverstripe/graphql": ">=2,<2.0.5|>=3,<3.8.2|>=4,<4.3.7|>=5,<5.1.3",
                 "silverstripe/hybridsessions": ">=1,<2.4.1|>=2.5,<2.5.1",
                 "silverstripe/recipe-cms": ">=4.5,<4.5.3",
@@ -15777,6 +16623,7 @@
                 "simplesamlphp/xml-security": "==1.6.11",
                 "simplito/elliptic-php": "<1.0.6",
                 "sitegeist/fluid-components": "<3.5",
+                "sjbr/sr-feuser-register": "<2.5.21",
                 "sjbr/sr-freecap": "<2.4.6|>=2.5,<2.5.3",
                 "slim/psr7": "<1.4.1|>=1.5,<1.5.1|>=1.6,<1.6.1",
                 "slim/slim": "<2.6",
@@ -15892,6 +16739,7 @@
                 "typo3/cms-dashboard": ">=10,<=10.4.47|>=11,<=11.5.41|>=12,<=12.4.24|>=13,<=13.4.2",
                 "typo3/cms-extbase": "<6.2.24|>=7,<7.6.8|==8.1.1",
                 "typo3/cms-extensionmanager": ">=10,<=10.4.47|>=11,<=11.5.41|>=12,<=12.4.24|>=13,<=13.4.2",
+                "typo3/cms-felogin": ">=4.2,<4.2.3",
                 "typo3/cms-fluid": "<4.3.4|>=4.4,<4.4.1",
                 "typo3/cms-form": ">=8,<=8.7.39|>=9,<=9.5.24|>=10,<=10.4.47|>=11,<=11.5.41|>=12,<=12.4.24|>=13,<=13.4.2",
                 "typo3/cms-frontend": "<4.3.9|>=4.4,<4.4.5",
@@ -15926,7 +16774,7 @@
                 "vufind/vufind": ">=2,<9.1.1",
                 "waldhacker/hcaptcha": "<2.1.2",
                 "wallabag/tcpdf": "<6.2.22",
-                "wallabag/wallabag": "<2.6.7",
+                "wallabag/wallabag": "<2.6.11",
                 "wanglelecc/laracms": "<=1.0.3",
                 "web-auth/webauthn-framework": ">=3.3,<3.3.4|>=4.5,<4.9",
                 "web-auth/webauthn-lib": ">=4.5,<4.9",
@@ -15961,7 +16809,7 @@
                 "yidashi/yii2cmf": "<=2",
                 "yii2mod/yii2-cms": "<1.9.2",
                 "yiisoft/yii": "<1.1.29",
-                "yiisoft/yii2": "<2.0.49.4-dev",
+                "yiisoft/yii2": "<2.0.52",
                 "yiisoft/yii2-authclient": "<2.2.15",
                 "yiisoft/yii2-bootstrap": "<2.0.4",
                 "yiisoft/yii2-dev": "<=2.0.45",
@@ -16047,7 +16895,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-04-04T15:05:17+00:00"
+            "time": "2025-04-10T21:05:09+00:00"
         },
         {
             "name": "spatie/backtrace",

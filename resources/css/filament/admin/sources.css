@@ -1,0 +1,56 @@
+@source '../../../../app/Filament';
+@source '../../../../resources/views';
+
+@source '../../../../vendor/filament';
+@source '../../../../vendor/lara-zeus';
+
+/*@source '../../../../vendor/lara-zeus/core/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/core/src/CoreServiceProvider.php';
+@source '../../../../vendor/lara-zeus/wind/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/wind/src/Filament/Resources/LetterResource.php';
+@source '../../../../vendor/lara-zeus/wind/src/Livewire/ContactsForm.php';
+@source '../../../../vendor/lara-zeus/sky/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/sky/src/Models/PostStatus.php';
+@source '../../../../vendor/lara-zeus/bolt/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/thunder/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/thunder/src/Models/TicketsStatus.php';
+@source '../../../../vendor/lara-zeus/thunder/src/Filament/Resources/TicketResource.php';
+@source '../../../../vendor/lara-zeus/athena/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/artemis/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/quantity/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/dynamic-dashboard/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/dynamic-dashboard/src/Models/Columns.php';
+@source '../../../../vendor/lara-zeus/rhea/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/mark/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/hermes/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/bolt-pro/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/matrix-choice/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/accordion/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/list-group/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/helen/resources/views!**!*.blade.php';
+@source '../../../../vendor/lara-zeus/helen/src/Filament/Resources/LinksResource.php';
+@source '../../../../vendor/lara-zeus/helen/src/Facades/Helen.php';
+@source '../../../../vendor/lara-zeus/replies/resources/views!**!*.blade.php';*/
+
+@source '../../../../vendor/wire-elements/spotlight/resources/views/spotlight.blade.php';
+@source '../../../../vendor/archilex/filament-filter-sets/**/*.php';
+@source '../../../../vendor/bezhansalleh/filament-panel-switch/resources/views/panel-switch-menu.blade.php';
+@source '../../../../vendor/jaocero/radio-deck/resources/views/**/*.blade.php';
+@source '../../../../vendor/jaocero/activity-timeline/resources/views/**/*.blade.php';
+@source '../../../../vendor/diogogpinto/filament-auth-ui-enhancer/resources/**/*.blade.php';
+@source '../../../../vendor/sawirricardo/filament-nouislider/resources/views/forms/components/nouislider.blade.php';
+
+@source '../../../../vendor/awcodes/**/*.blade.php';
+/*
+@source '../../../../vendor/awcodes/preset-color-picker/resources!**!*.blade.php';
+@source '../../../../vendor/awcodes/recently/resources!**!*.blade.php';
+@source '../../../../vendor/awcodes/filament-tiptap-editor/resources!**!*.blade.php';
+@source '../../../../vendor/awcodes/filament-versions/resources!**!*.blade.php';
+@source '../../../../vendor/awcodes/filament-quick-create/resources!**!*.blade.php';
+@source '../../../../vendor/awcodes/overlook/resources!**!*.blade.php';
+@source '../../../../vendor/awcodes/filament-curator/resources!**!*.blade.php';
+@source '../../../../vendor/awcodes/filament-table-repeater/resources!**!*.blade.php';
+@source '../../../../vendor/awcodes/matinee/resources/views!**!*.blade.php';
+@source '../../../../vendor/awcodes/filament-badgeable-column/resources!**!*.blade.php';
+@source '../../../../vendor/awcodes/mason/resources!**!*.blade.php';
+@source '../../../../vendor/awcodes/richie/resources!**!*.blade.php';*/

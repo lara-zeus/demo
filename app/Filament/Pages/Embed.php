@@ -20,6 +20,8 @@ class Embed extends Page
 
     public string $qrcode;
 
+    public ?array $data = [];
+
     public function openAction(): Action
     {
         return Action::make('open')
@@ -34,8 +36,6 @@ class Embed extends Page
             ])
             ->action(fn () => dd('ya we heard that issue a million time'));
     }
-
-    public ?array $data = [];
 
     public function getTitle(): string
     {

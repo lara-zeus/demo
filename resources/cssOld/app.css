@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import '/vendor/filament/filament/resources/css/theme.css';
+@import '/vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
+@import '/node_modules/tippy.js/dist/tippy.css';
+@import '/node_modules/tippy.js/themes/light.css';
+
+@config "tailwind.config.js";
+
+/* Sky search result highlight */
+span.highlight {
+    @apply bg-primary-200 text-primary-700 px-2
+}
+
+/*@import '/vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';*/
+
+[dir=rtl] {
+    font-family: 'Almarai','Karla', sans-serif !important;
+}
+
+[dir=rtl] .title-font {
+    font-family: 'Almarai', sans-serif !important;
+}
+
+[dir=ltr] {
+    font-family: 'Karla', 'Almarai', sans-serif !important;
+}
+
+[dir=ltr] .title-font {
+    font-family: 'Montserrat', 'Almarai', sans-serif !important;
+    @apply font-semibold
+}
+
+.bord {
+    border: solid 1px red;
+}
+
+/*
+ Margin and rounding are personal preferences,
+ overflow-x-auto is recommended.
+*/
+pre {
+    @apply rounded-md overflow-x-auto;
+}
+
+/*
+ Add some vertical padding and expand the width
+ to fill its container. The horizontal padding
+ comes at the line level so that background
+ colors extend edge to edge.
+*/
+pre code.torchlight {
+    @apply block py-4;
+}
+
+/*
+ Horizontal line padding.
+*/
+pre code.torchlight .line {
+    @apply px-4;
+}
+
+pre code.torchlight .line-number {
+    @apply text-gray-50;
+}
+
+/*
+ Push the code away from the line numbers and
+ summary caret indicators.
+*/
+pre code.torchlight .line-number,
+pre code.torchlight .summary-caret {
+    @apply ltr:mr-4 rtl:ml-4;
+}
+
+.compact-timeline .fi-timeline-item-heading {
+    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col !important;
+}
+.compact-timeline .fi-timeline-section-content {
+    @apply shadow-none p-0 !important;
+}
+.compact-timeline {
+    @apply shadow-none ring-0 !important;
+}

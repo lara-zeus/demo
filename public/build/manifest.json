@@ -1,37 +1,16 @@
 {
-  "node_modules/photoswipe/dist/photoswipe.esm.js": {
-    "file": "assets/photoswipe.esm-GXRgw7eJ.js",
-    "name": "photoswipe.esm",
-    "src": "node_modules/photoswipe/dist/photoswipe.esm.js",
-    "isDynamicEntry": true
-  },
-  "resources/css/another-portfolio.css": {
-    "file": "assets/another-portfolio-BwaC6H7T.css",
-    "src": "resources/css/another-portfolio.css",
-    "isEntry": true
-  },
   "resources/css/app.css": {
-    "file": "assets/app-DSv9sWJ1.css",
+    "file": "assets/app-DNDXJ5Cw.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
-  "resources/css/daisy.css": {
-    "file": "assets/daisy-BDvxyoQb.css",
-    "src": "resources/css/daisy.css",
-    "isEntry": true
-  },
   "resources/css/filament/admin/theme.css": {
-    "file": "assets/theme-CQ5D05tL.css",
+    "file": "assets/theme-D7m-YEe0.css",
     "src": "resources/css/filament/admin/theme.css",
     "isEntry": true
   },
-  "resources/css/filament/guests/theme.css": {
-    "file": "assets/theme-DKdh5GJG.css",
-    "src": "resources/css/filament/guests/theme.css",
-    "isEntry": true
-  },
   "resources/css/flag-icons.css": {
-    "file": "assets/flag-icons-C7mVcbTK.css",
+    "file": "assets/flag-icons-CCdnE5UO.css",
     "src": "resources/css/flag-icons.css",
     "isEntry": true
   },
@@ -1106,14 +1085,5 @@
   "resources/flags/4x3/zw.svg": {
     "file": "assets/zw-CUCThRVS.svg",
     "src": "resources/flags/4x3/zw.svg"
-  },
-  "resources/js/another-portfolio.js": {
-    "file": "assets/another-portfolio-D2pnwEdv.js",
-    "name": "another-portfolio",
-    "src": "resources/js/another-portfolio.js",
-    "isEntry": true,
-    "dynamicImports": [
-      "node_modules/photoswipe/dist/photoswipe.esm.js"
-    ]
   }
 }

@@ -89,11 +89,11 @@ class AdminPanelProvider extends PanelProvider
             ->defaultAvatarProvider(
                 BoringAvatarsProvider::class
             )
-            ->databaseNotifications()
+            //->databaseNotifications()
             ->homeUrl('/')
             ->id('admin')
             ->path('admin')
-            ->login() // Login::class
+            ->login(Login::class) // Login::class
             ->font('Montserrat')
             ->plugins($this->getPlugins())
             ->brandLogo(fn () => view('filament.logo'))
@@ -169,13 +169,13 @@ class AdminPanelProvider extends PanelProvider
             )
 
             // user views resource
-            /*->renderHook(
+            ->renderHook(
                 'panels::page.start',
                 fn (array $scopes): View => view('filament.hooks.user-view-resource', ['scopes' => $scopes]),
                 scopes: [
                     UserViewResource::class,
                 ],
-            )*/
+            )
 
             // user views resource
             ->renderHook(
@@ -187,7 +187,7 @@ class AdminPanelProvider extends PanelProvider
             )
 
             // hermes
-            /*->renderHook(
+            ->renderHook(
                 'panels::page.start',
                 fn (array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
                 scopes: [
@@ -196,7 +196,7 @@ class AdminPanelProvider extends PanelProvider
                     MenuResource::class,
                     MenuSectionResource::class,
                 ],
-            )*/
+            )
 
             // Delia
             ->renderHook(
@@ -207,7 +207,7 @@ class AdminPanelProvider extends PanelProvider
                 ],
             )
             // athena
-            /*->renderHook(
+            ->renderHook(
                 'panels::page.start',
                 fn (array $scopes): View => view('filament.hooks.athena', ['scopes' => $scopes]),
                 scopes: [
@@ -215,20 +215,20 @@ class AdminPanelProvider extends PanelProvider
                     ServiceResource::class,
                     Calendar::class,
                 ],
-            )*/
+            )
             ->renderHook(
                 'panels::topbar.start',
                 fn (array $scopes): View => view('filament.hooks.store'),
             )
             // thunder
-            /*->renderHook(
+            ->renderHook(
                 'panels::page.start',
                 fn (array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
                 scopes: [
                     OfficeResource::class,
                     TicketResource::class,
                 ],
-            )*/
+            )
             // helen
             ->renderHook(
                 'panels::page.start',
@@ -246,7 +246,7 @@ class AdminPanelProvider extends PanelProvider
                 ],
             )
             // bolt
-            /*->renderHook(
+            ->renderHook(
                 'panels::page.start',
                 fn (array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
                 scopes: [
@@ -254,7 +254,7 @@ class AdminPanelProvider extends PanelProvider
                     CategoryResource::class,
                     CollectionResource::class,
                 ],
-            )*/
+            )
             // db notice
             /*->renderHook(
                 'panels::content.start',
@@ -287,17 +287,17 @@ class AdminPanelProvider extends PanelProvider
                 Pages\Dashboard::class,
                 DashboardPage::class,
             ])
-            /*->widgets([
+            ->widgets([
                 // UmamiWidgetStatsGrouped::class,
                 // UmamiWidgetTableReferrers::class,
                 // UmamiWidgetTableUrls::class,
 
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
-                VersionsWidget::class,
-                OverlookWidget::class,
+                //VersionsWidget::class,
+                //OverlookWidget::class,
                 Feedback::class,
-            ])*/
+            ])
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
@@ -389,7 +389,7 @@ class AdminPanelProvider extends PanelProvider
 
             \LaraZeus\Akin\AkinTheme::make(),
 
-            /*BoltPlugin::make()
+            BoltPlugin::make()
                 ->hideNavigationBadges()
                 ->customSchema([
                     'form' => \App\Zeus\CustomSchema\Form::class,
@@ -399,15 +399,15 @@ class AdminPanelProvider extends PanelProvider
                 ->formActionsAreSticky(true)
                 ->extensions([
                     Thunder::class,
-                    Athena::class,
                     Grades::class,
-                ]),*/
+                    Athena::class,
+                ]),
 
-            // ThunderPlugin::make(), // v4
-            // AthenaPlugin::make(), // v4
+            ThunderPlugin::make(), // v4
+            AthenaPlugin::make(), // v4
             DynamicDashboardPlugin::make(),
             // RheaPlugin::make(),
-            // HermesPlugin::make(), // v4
+            HermesPlugin::make(), // v4
         ];
     }
 }

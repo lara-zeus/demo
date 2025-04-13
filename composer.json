@@ -1,139 +1,144 @@
 {
-  "name": "laravel/laravel",
-  "type": "project",
-  "description": "The Laravel Framework.",
-  "keywords": [
-    "framework",
-    "laravel"
-  ],
-  "license": "MIT",
-  "require": {
-    "php": "^8.3",
-    "fakerphp/faker": "^1.23",
-    "filament/filament": "^4.0",
-    "filament/spatie-laravel-translatable-plugin": "*",
-    "graham-campbell/github": "^13.0",
-    "guzzlehttp/guzzle": "^7.5",
-    "jeremykenedy/laravel-packagist": "^1.0",
-    "lara-zeus/accordion": "*",
-    "lara-zeus/akin": "*",
-    "lara-zeus/torch-filament": "*",
-    "lara-zeus/artemis": "*",
-    "lara-zeus/boredom": "*",
-    "lara-zeus/chaos": "*",
-    "lara-zeus/chronos": "*",
-    "lara-zeus/core": "*",
-    "lara-zeus/delia": "*",
-    "lara-zeus/dynamic-dashboard": "*",
-    "lara-zeus/filament-plugin-tools": "*",
-    "lara-zeus/hades": "*",
-    "lara-zeus/helen": "*",
-    "lara-zeus/hera": "*",
-    "lara-zeus/inline-chart": "*",
-    "lara-zeus/installer": "*",
-    "lara-zeus/laravel-seo": "*",
-    "lara-zeus/list-group": "*",
-    "lara-zeus/mark": "*",
-    "lara-zeus/matrix-choice": "*",
-    "lara-zeus/pontus": "*",
-    "lara-zeus/popover": "*",
-    "lara-zeus/qr": "*",
-    "lara-zeus/quantity": "*",
-    "lara-zeus/replies": "*",
-    "lara-zeus/simple-qrcode": "*",
-    "lara-zeus/sky": "*",
-    "lara-zeus/tiles": "*",
-    "lara-zeus/translatable-pro": "*",
-    "lara-zeus/wind": "*",
-    "laravel/framework": "^12.0",
-    "laravel/prompts": "^0.3",
-    "laravel/sanctum": "^4.0",
-    "sentry/sentry-laravel": "^4.3",
-    "torchlight/engine": "^0.1.0",
-    "torchlight/torchlight-laravel": "dev-l12-compatibility"
-  },
-  "require-dev": {
-    "garygreen/pretty-routes": "^1.0",
-    "barryvdh/laravel-debugbar": "^3.9",
-    "larastan/larastan": "^3.0",
-    "laravel/pint": "^1.13",
-    "laravel/tinker": "^2.9",
-    "nunomaduro/collision": "^8.0",
-    "phpstan/extension-installer": "^1.1",
-    "phpstan/phpstan-deprecation-rules": "^2.0",
-    "roave/security-advisories": "dev-latest",
-    "spatie/laravel-ignition": "^2.4"
-  },
-  "autoload": {
-    "psr-4": {
-      "App\\": "app/",
-      "Database\\Factories\\": "database/factories/",
-      "Database\\Seeders\\": "database/seeders/"
-    }
-  },
-  "scripts": {
-    "post-autoload-dump": [
-      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-      "@php artisan package:discover --ansi"
-    ],
-    "post-update-cmd": [
-      "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
-      "@php artisan vendor:publish --tag=zeus-assets --ansi --force",
-      "@php artisan vendor:publish --tag=zeus-artemis-assets --ansi --force",
-      "@php artisan demo:filament",
-      "@php artisan filament:upgrade"
-    ],
-    "post-root-package-install": [
-      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-    ],
-    "post-create-project-cmd": [
-      "@php artisan key:generate --ansi"
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "fakerphp/faker": "^1.23",
+        "filament/filament": "^4.0",
+        "filament/spatie-laravel-translatable-plugin": "*",
+        "graham-campbell/github": "^13.0",
+        "guzzlehttp/guzzle": "^7.5",
+        "jeremykenedy/laravel-packagist": "^1.0",
+        "lara-zeus/accordion": "*",
+        "lara-zeus/akin": "*",
+        "lara-zeus/artemis": "*",
+        "lara-zeus/boredom": "*",
+        "lara-zeus/chaos": "*",
+        "lara-zeus/chronos": "*",
+        "lara-zeus/core": "*",
+        "lara-zeus/delia": "*",
+        "lara-zeus/dynamic-dashboard": "*",
+        "lara-zeus/filament-plugin-tools": "*",
+        "lara-zeus/hades": "*",
+        "lara-zeus/helen": "*",
+        "lara-zeus/hera": "*",
+        "lara-zeus/inline-chart": "*",
+        "lara-zeus/installer": "*",
+        "lara-zeus/laravel-seo": "*",
+        "lara-zeus/list-group": "*",
+        "lara-zeus/mark": "*",
+        "lara-zeus/matrix-choice": "*",
+        "lara-zeus/pontus": "*",
+        "lara-zeus/popover": "*",
+        "lara-zeus/thunder": "*",
+        "lara-zeus/athena": "*",
+        "lara-zeus/bolt-pro": "*",
+        "lara-zeus/qr": "*",
+        "lara-zeus/quantity": "*",
+        "lara-zeus/replies": "*",
+        "lara-zeus/simple-qrcode": "*",
+        "lara-zeus/sky": "*",
+        "lara-zeus/hermes": "*",
+        "lara-zeus/bolt": "*",
+        "lara-zeus/tartarus": "*",
+        "lara-zeus/tiles": "*",
+        "lara-zeus/torch-filament": "*",
+        "lara-zeus/translatable-pro": "*",
+        "lara-zeus/wind": "*",
+        "laravel/framework": "^12.0",
+        "laravel/prompts": "^0.3",
+        "laravel/sanctum": "^4.0",
+        "livewire/livewire": "^3.6",
+        "secondnetwork/blade-tabler-icons": "^3.31",
+        "sentry/sentry-laravel": "^4.3",
+        "torchlight/engine": "^0.1.0",
+        "torchlight/torchlight-laravel": "dev-l12-compatibility"
+    },
+    "require-dev": {
+        "garygreen/pretty-routes": "^1.0",
+        "barryvdh/laravel-debugbar": "^3.9",
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.13",
+        "laravel/tinker": "^2.9",
+        "nunomaduro/collision": "^8.0",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "roave/security-advisories": "dev-latest",
+        "spatie/laravel-ignition": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi",
+            "@php artisan filament:upgrade"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
+            "@php artisan vendor:publish --tag=zeus-assets --ansi --force",
+            "@php artisan vendor:publish --tag=zeus-artemis-assets --ansi --force",
+            "@php artisan filament:upgrade"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/laravel-shift/torchlight-laravel.git"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:atmonshi/filament-code-editor.git"
+        },
+        {
+            "type": "github",
+            "url": "https://github.com/still-code/laravel-subscriptions"
+        },
+        {
+            "type": "composer",
+            "url": "https://filament-filter-sets.composer.sh"
+        },
+        {
+            "type": "github",
+            "url": "https://github.com/awcodes/richie"
+        },
+        {
+            "type": "path",
+            "url": "../filament/packages/*"
+        },
+        {
+            "type": "path",
+            "url": "../p/*"
+        }
     ]
-  },
-  "extra": {
-    "laravel": {
-      "dont-discover": []
-    }
-  },
-  "config": {
-    "optimize-autoloader": true,
-    "preferred-install": "dist",
-    "sort-packages": true,
-    "allow-plugins": {
-      "phpstan/extension-installer": true,
-      "php-http/discovery": true
-    }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/laravel-shift/torchlight-laravel.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:atmonshi/filament-code-editor.git"
-    },
-    {
-      "type": "github",
-      "url": "https://github.com/still-code/laravel-subscriptions"
-    },
-    {
-      "type": "composer",
-      "url": "https://filament-filter-sets.composer.sh"
-    },
-    {
-      "type": "github",
-      "url": "https://github.com/awcodes/richie"
-    },
-    {
-      "type": "path",
-      "url": "../filament/packages/*"
-    },
-    {
-      "type": "path",
-      "url": "../p/*"
-    }
-  ]
 }

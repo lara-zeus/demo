@@ -29,9 +29,7 @@ class Popover extends Page implements HasTable
 
     public function mount(): void
     {
-        $this->form->fill([
-            'name' => 'Zeus',
-        ]);
+        $this->form->fill(User::first()->toArray());
     }
 
     public static function getNavigationLabel(): string
@@ -73,13 +71,19 @@ class Popover extends Page implements HasTable
     public function form(Schema $form): Schema
     {
         return $form
+            ->record(User::first())
             ->statePath('data')
             ->schema([
                 Section::make()
                     ->schema([
                         PopoverForm::make('name')
                             ->trigger('hover')
-                            ->icon('tabler-chart-donut-4')
+                            //->icon('tabler-chart-donut-4')
+                            ->content('Adam'),
+
+                        PopoverForm::make('email')
+                            ->trigger('hover')
+                            //->icon('tabler-chart-donut-4')
                             ->content('Adam'),
                     ]),
             ]);

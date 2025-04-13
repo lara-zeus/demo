@@ -21,13 +21,13 @@ use LaraZeus\Thunder\Concerns\ManageOffice;
  */
 class User extends Authenticatable implements FilamentUser, HasAvatar
 {
-    //use BelongToAthena;
-    //use BelongToBolt;
+    use BelongToAthena;
+    use BelongToBolt;
     use HasApiTokens;
     use HasBoringAvatar;
     use HasFactory;
     //use HasViews;
-    //use ManageOffice;
+    use ManageOffice;
     use Notifiable;
 
     protected $guarded = [];
@@ -46,7 +46,7 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
 
     public function isSuperAdmin(): bool
     {
-        return true;
+        return $this->email === 'info@larazeus.com';
     }
 
     public function canAccessPanel(Panel $panel): bool
