@@ -13,7 +13,7 @@ use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableUrls;
 
 class Statistics extends Page
 {
-    /*use HasFilter;*/
+    /* use HasFilter; */
 
     protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
 

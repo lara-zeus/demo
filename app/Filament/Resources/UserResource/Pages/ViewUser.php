@@ -9,7 +9,7 @@ use Filament\Resources\Pages\ViewRecord;
 
 class ViewUser extends ViewRecord
 {
-    //use HasRecentHistoryRecorder;
+    // use HasRecentHistoryRecorder;
 
     protected static string $resource = UserResource::class;
 

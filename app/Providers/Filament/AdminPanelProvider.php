@@ -89,7 +89,7 @@ class AdminPanelProvider extends PanelProvider
             ->defaultAvatarProvider(
                 BoringAvatarsProvider::class
             )
-            //->databaseNotifications()
+            // ->databaseNotifications()
             ->homeUrl('/')
             ->id('admin')
             ->path('admin')
@@ -294,8 +294,8 @@ class AdminPanelProvider extends PanelProvider
 
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
-                //VersionsWidget::class,
-                //OverlookWidget::class,
+                // VersionsWidget::class,
+                // OverlookWidget::class,
                 Feedback::class,
             ])
             ->middleware([

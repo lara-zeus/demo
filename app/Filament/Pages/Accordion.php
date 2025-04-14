@@ -4,6 +4,8 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
+use BackedEnum;
+use Exception;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Pages\Page;
@@ -14,7 +16,7 @@ class Accordion extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-table-filled';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-table-filled';
 
     protected string $view = 'filament.pages.accordion';
 
@@ -26,6 +28,9 @@ class Accordion extends Page
 
     protected static ?string $title = 'Accordion';
 
+    /**
+     * @throws Exception
+     */
     public function infolist(Schema $infolist): Schema
     {
         return $infolist
@@ -73,6 +78,9 @@ class Accordion extends Page
             ]);
     }
 
+    /**
+     * @throws Exception
+     */
     public function form(Schema $form): Schema
     {
         return $form

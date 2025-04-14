@@ -7,7 +7,7 @@ use Filament\Auth\Pages\Login as BaseLogin;
 
 class Login extends BaseLogin
 {
-    //use HasCustomLayout;
+    // use HasCustomLayout;
 
     public function mount(): void
     {

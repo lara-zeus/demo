@@ -78,12 +78,12 @@ class Popover extends Page implements HasTable
                     ->schema([
                         PopoverForm::make('name')
                             ->trigger('hover')
-                            //->icon('tabler-chart-donut-4')
+                            // ->icon('tabler-chart-donut-4')
                             ->content('Adam'),
 
                         PopoverForm::make('email')
                             ->trigger('hover')
-                            //->icon('tabler-chart-donut-4')
+                            // ->icon('tabler-chart-donut-4')
                             ->content('Adam'),
                     ]),
             ]);
