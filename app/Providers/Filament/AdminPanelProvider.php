@@ -351,7 +351,8 @@ class AdminPanelProvider extends PanelProvider
                     LetterResource::class,
                     TicketResource::class,
                 ])
-                ->alphabetical(),
+                //->alphabetical()
+            ,
             VersionsPlugin::make()
                 ->widgetSort(4)
                 ->hasNavigationView(false)
