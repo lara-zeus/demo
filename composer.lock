@@ -2499,16 +2499,16 @@
         },
         {
             "name": "dedoc/scramble",
-            "version": "v0.12.17",
+            "version": "v0.12.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dedoc/scramble.git",
-                "reference": "f71afa07e485548f9c3743b69f7859bb4d899600"
+                "reference": "a107fd82242abd765a9a22652bfa13f65e77e209"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dedoc/scramble/zipball/f71afa07e485548f9c3743b69f7859bb4d899600",
-                "reference": "f71afa07e485548f9c3743b69f7859bb4d899600",
+                "url": "https://api.github.com/repos/dedoc/scramble/zipball/a107fd82242abd765a9a22652bfa13f65e77e209",
+                "reference": "a107fd82242abd765a9a22652bfa13f65e77e209",
                 "shasum": ""
             },
             "require": {
@@ -2563,7 +2563,7 @@
             ],
             "support": {
                 "issues": "https://github.com/dedoc/scramble/issues",
-                "source": "https://github.com/dedoc/scramble/tree/v0.12.17"
+                "source": "https://github.com/dedoc/scramble/tree/v0.12.18"
             },
             "funding": [
                 {
@@ -2571,7 +2571,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-04T06:45:52+00:00"
+            "time": "2025-04-14T14:01:50+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -6095,16 +6095,16 @@
         },
         {
             "name": "lara-zeus/athena",
-            "version": "1.1.20",
+            "version": "1.1.21",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/athena.git",
-                "reference": "cc4d27a96bcaa867a1d0535f1a34103f4d172909"
+                "reference": "3ffe74c8c6970839b7f11e90d571354fae4564c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/cc4d27a96bcaa867a1d0535f1a34103f4d172909",
-                "reference": "cc4d27a96bcaa867a1d0535f1a34103f4d172909",
+                "url": "https://api.github.com/repos/lara-zeus/athena/zipball/3ffe74c8c6970839b7f11e90d571354fae4564c7",
+                "reference": "3ffe74c8c6970839b7f11e90d571354fae4564c7",
                 "shasum": ""
             },
             "require": {
@@ -6183,7 +6183,7 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/athena",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/athena/tree/1.1.20",
+                "source": "https://github.com/lara-zeus/athena/tree/1.1.21",
                 "issues": "https://github.com/lara-zeus/athena/issues"
             },
             "funding": [
@@ -6192,7 +6192,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2025-03-23T22:51:19+00:00"
+            "time": "2025-04-14T15:33:00+00:00"
         },
         {
             "name": "lara-zeus/bolt",
