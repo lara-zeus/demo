@@ -11,7 +11,7 @@ class Shout extends Page
 
     protected static string | \BackedEnum | null $navigationIcon = 'tabler-message-chatbot';
 
-    protected static ?string $navigationGroup = 'Plugins';
+    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
 
     protected static ?int $navigationSort = 3;
 

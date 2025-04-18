@@ -12,5 +12,5 @@ class Socialment extends Page
 
     protected static ?int $navigationSort = 4;
 
-    protected static ?string $navigationGroup = 'Plugins';
+    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
 }

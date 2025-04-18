@@ -13,7 +13,7 @@ class TableRepeater extends Page
 
     protected static string | \BackedEnum | null $navigationIcon = 'tabler-repeat';
 
-    protected static ?string $navigationGroup = 'Plugins';
+    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
 
     protected static ?int $navigationSort = 3;
 

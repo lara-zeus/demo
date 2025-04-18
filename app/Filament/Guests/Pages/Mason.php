@@ -12,7 +12,7 @@ class Mason extends Page
 {
     protected static string | \BackedEnum | null $navigationIcon = 'tabler-building-castle';
 
-    protected static ?string $navigationGroup = 'Plugins';
+    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
 
     protected string $view = 'filament.guests.pages.mason';
 

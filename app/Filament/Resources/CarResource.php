@@ -18,7 +18,7 @@ class CarResource extends Resource
 {
     protected static ?string $model = Car::class;
 
-    protected static ?string $navigationGroup = 'App';
+    protected static string | \UnitEnum | null $navigationGroup = 'App';
 
     protected static string | \BackedEnum | null $navigationIcon = 'tabler-car';
 

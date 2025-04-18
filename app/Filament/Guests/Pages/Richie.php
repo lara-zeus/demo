@@ -10,7 +10,7 @@ class Richie extends Page
 {
     protected static string | \BackedEnum | null $navigationIcon = 'tabler-cash-edit';
 
-    protected static ?string $navigationGroup = 'Plugins';
+    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
 
     protected ?string $heading = 'Richie is just another rich text editor for Filament PHP.';
 

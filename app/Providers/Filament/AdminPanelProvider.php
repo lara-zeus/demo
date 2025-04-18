@@ -28,7 +28,7 @@ use Filament\Navigation\NavigationGroup;
 use Filament\Pages;
 use Filament\Panel;
 use Filament\PanelProvider;
-use Filament\SpatieLaravelTranslatablePlugin;
+use LaraZeus\SpatieTranslatable\SpatieLaravelTranslatablePlugin;
 use Filament\Support\Colors\Color;
 use Filament\View\PanelsRenderHook;
 use Filament\Widgets;

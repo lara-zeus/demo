@@ -15,7 +15,7 @@ class SelectTree extends Page
 
     protected static ?int $navigationSort = 1;
 
-    protected static ?string $navigationGroup = 'Plugins';
+    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
 
     public ?array $data = [];
 
