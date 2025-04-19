@@ -20,7 +20,7 @@
             x-on:keydown.meta.j.prevent.document="$refs.search.focus()"
         />
 
-        <kbd class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-100 border border-gray-300 text-gray-400 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-50 text-xs px-1.5 flex items-center justify-center gap-1 py-1 rounded-md">
+        <kbd class="shadow-lg absolute right-1 top-1/13 transform -translate-y-1/2 bg-gray-100 border border-gray-300 text-gray-400 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-50 text-xs px-1.5 flex items-center justify-center gap-1 py-1 rounded-md">
             @svg('tabler-command', 'h-4 w-4 text-gray-400')
             <kd>J</kd>
         </kbd>

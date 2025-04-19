@@ -8,20 +8,19 @@
         "prod": "vite build"
     },
     "devDependencies": {
-        "@tailwindcss/postcss": "^4.1.3",
-        "@tailwindcss/vite": "^4.1.3",
+        "@tailwindcss/postcss": "^4.1.4",
+        "@tailwindcss/vite": "^4.1.4",
         "concurrently": "^9.0.1",
         "cropperjs": "^1.6.0",
         "esbuild-postcss": "^0.0.4",
         "laravel-vite-plugin": "^1.2.0",
         "photoswipe": "^5.3.9",
-        "tailwindcss": "^4.1.3",
+        "tailwindcss": "^4.1.4",
         "tippy.js": "^6.3.7",
         "vite": "6.2.5"
     },
     "dependencies": {
         "@tailwindcss/forms": "^0.5.10",
-        "@tailwindcss/typography": "^0.5.16",
-        "postcss": "^8.5.3"
+        "@tailwindcss/typography": "^0.5.16"
     }
 }

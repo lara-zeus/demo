@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
     plugins: [
+        tailwindcss(),
         laravel({
             input: [
                 `resources/css/filament/admin/theme.css`,
@@ -13,6 +14,5 @@ export default defineConfig({
             ],
             refresh: true,
         }),
-        tailwindcss(),
     ],
 });

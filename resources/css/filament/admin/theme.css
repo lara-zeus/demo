@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import './sources.css';
 
 @theme inline {
     --color-primary-50: '#C6E9E2';
@@ -26,7 +27,6 @@
     --color-secondary-950: '#71170E';
 }
 
-@import './sources.css';
 @import '../../../../node_modules/cropperjs/dist/cropper.css';
 @import '../../../../vendor/filament/filament/resources/css/theme.css';
 /*@import '/vendor/awcodes/filament-curator/resources/css/plugin.css';*/
