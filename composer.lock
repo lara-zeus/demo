@@ -4963,7 +4963,7 @@
         },
         {
             "name": "lara-zeus/inline-chart",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/inline-chart",
@@ -5749,7 +5749,7 @@
         },
         {
             "name": "lara-zeus/replies",
-            "version": "2.x-dev",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/replies",
