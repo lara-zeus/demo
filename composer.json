@@ -37,6 +37,7 @@
         "lara-zeus/athena": "*",
         "lara-zeus/bolt-pro": "*",
         "lara-zeus/qr": "*",
+        "lara-zeus/translatable-upgrade": "*",
         "lara-zeus/quantity": "*",
         "lara-zeus/replies": "*",
         "lara-zeus/simple-qrcode": "*",
@@ -58,6 +59,7 @@
         "torchlight/torchlight-laravel": "dev-l12-compatibility"
     },
     "require-dev": {
+        "filament/upgrade": "*",
         "garygreen/pretty-routes": "^1.0",
         "barryvdh/laravel-debugbar": "^3.9",
         "larastan/larastan": "^3.0",

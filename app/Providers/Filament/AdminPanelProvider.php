@@ -28,7 +28,7 @@ use Filament\Navigation\NavigationGroup;
 use Filament\Pages;
 use Filament\Panel;
 use Filament\PanelProvider;
-use LaraZeus\SpatieTranslatable\SpatieLaravelTranslatablePlugin;
+use LaraZeus\SpatieTranslatable\SpatieTranslatablePlugin;
 use Filament\Support\Colors\Color;
 use Filament\View\PanelsRenderHook;
 use Filament\Widgets;
@@ -371,7 +371,7 @@ class AdminPanelProvider extends PanelProvider
                     RequestResource::class,
                     LayoutResource::class,
                 ]),*/
-            SpatieLaravelTranslatablePlugin::make()
+            SpatieTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt', 'ko']),
             // ChronosPlugin::make(),
             DeliaPlugin::make(),

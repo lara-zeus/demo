@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "37fa05d961382527792e6148bb55bc7d",
+    "content-hash": "1793a569b8129fcf788f6d06f7da0be4",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -125,66 +125,6 @@
                 "source": "https://github.com/Bacon/BaconQrCode/tree/v3.0.1"
             },
             "time": "2024-10-01T13:55:55+00:00"
-        },
-        {
-            "name": "beyondcode/laravel-comments",
-            "version": "1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/beyondcode/laravel-comments.git",
-                "reference": "4635f98118c611e55ada82bc9d8044ee3fc66e33"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/beyondcode/laravel-comments/zipball/4635f98118c611e55ada82bc9d8044ee3fc66e33",
-                "reference": "4635f98118c611e55ada82bc9d8044ee3fc66e33",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "^10.0|^11.0|^12.0",
-                "php": "^8.1"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^3.6|^5.0|^6.0|^7.0|^8.0",
-                "phpunit/phpunit": "^9.5.8|^10.0.7"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "BeyondCode\\Comments\\CommentsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "BeyondCode\\Comments\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marcel Pociot",
-                    "email": "marcel@beyondco.de",
-                    "homepage": "https://beyondcode.de",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Add comments to your Laravel application",
-            "homepage": "https://github.com/beyondcode/laravel-comments",
-            "keywords": [
-                "beyondcode",
-                "comments",
-                "laravel-comments"
-            ],
-            "support": {
-                "issues": "https://github.com/beyondcode/laravel-comments/issues",
-                "source": "https://github.com/beyondcode/laravel-comments/tree/1.8.0"
-            },
-            "time": "2025-03-02T18:47:27+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -3539,7 +3479,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/accordion",
-                "reference": "171c212cdb5c17e49bfd13f9ff35635bd9b10014"
+                "reference": "7604f347df302119f4e66664c894e233bffacc89"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -3749,14 +3689,14 @@
             "dist": {
                 "type": "path",
                 "url": "../p/athena",
-                "reference": "53bac6a223191e5c13c944b2ac52f45445db6357"
+                "reference": "8d16235a3fca297fa8a9126d8fa9b5f7a6e4027f"
             },
             "require": {
-                "beyondcode/laravel-comments": "^1.8",
                 "blade-ui-kit/blade-ui-kit": "^0.7",
                 "lara-zeus/bolt": "*",
                 "lara-zeus/filament-plugin-tools": "*",
                 "lara-zeus/quantity": "*",
+                "lara-zeus/replies": "*",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -3837,7 +3777,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/bolt",
-                "reference": "de8df3405b750defd76dbd33a84cdd5cd931f0aa"
+                "reference": "da86fa6b3b9d73d8edb30bcaa0af59748723fa4e"
             },
             "require": {
                 "flowframe/laravel-trend": "^0.4",
@@ -3942,7 +3882,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/bolt-pro",
-                "reference": "6e5e29db4e2cc599c653600f1b644fe7e63748ab"
+                "reference": "e9e46f99e56246209940f547e94c359f258ad685"
             },
             "require": {
                 "lara-zeus/bolt": "*",
@@ -4173,7 +4113,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/chronos",
-                "reference": "1b87a41194080b09263d731cc36e6157021bdfbf"
+                "reference": "4462ef400072b45dec63735732526a9f4b547c4e"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -4256,7 +4196,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/core",
-                "reference": "3c84cbb74c29743235d332661e3fa4d548c4e625"
+                "reference": "5217002bdf842951606c0675c97aff5db8aabab9"
             },
             "require": {
                 "calebporzio/sushi": "^2.4",
@@ -4351,7 +4291,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/delia",
-                "reference": "ddb78c7cc7d312b2a887e3ccc33544985c0a0d94"
+                "reference": "32d6a04022bdf60ae8b5cc851412217bde364e0c"
             },
             "require": {
                 "lara-zeus/filament-plugin-tools": "*",
@@ -4441,7 +4381,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/rain",
-                "reference": "eae2e7195145e66d8d796eb0628dfeefc012d979"
+                "reference": "b7e63e9a08475260ac29399b814f63c30cd62f23"
             },
             "require": {
                 "lara-zeus/core": "*",
@@ -4530,7 +4470,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/filament-plugin-tools",
-                "reference": "3bc7e761b9a37306db7e15210179829b4aa0e2fa"
+                "reference": "ea505222eceaad9672de60ab3c644cfea3dc1139"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -4868,7 +4808,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/hermes",
-                "reference": "ba754c74a68d5311a3471a6061f05c92e27596bd"
+                "reference": "6a8647b4dfa7c12321f32d7328b5edfb4b1cbaf8"
             },
             "require": {
                 "lara-zeus/core": "*",
@@ -4967,7 +4907,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/inline-chart",
-                "reference": "0ab9e68da489fe9ee37623fffa8429a439e19ffc"
+                "reference": "0131e99d683b7b4b8d82b3ef6a32f1ea77996de6"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -5160,7 +5100,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/list-group",
-                "reference": "29310bef7bcf01363812a91e9dad1ad0bdeb5b8a"
+                "reference": "20414f396e3222e97519a30681fe6067d5352b73"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -5511,7 +5451,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/popover",
-                "reference": "e98deb450d19a5685887eb137e9a484b2cf4b875"
+                "reference": "1dbadb1ec3222f91d319b1f7dcac63f961ceeac0"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -5670,7 +5610,7 @@
         },
         {
             "name": "lara-zeus/quantity",
-            "version": "2.x-dev",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/quantity",
@@ -5913,7 +5853,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/sky",
-                "reference": "a5ad3f6a24af5098bfd294fee3f4fb12a64789c7"
+                "reference": "baabfee387bbac7c8b65a03875215bec2331a84d"
             },
             "require": {
                 "filament/spatie-laravel-media-library-plugin": "*",
@@ -6007,11 +5947,11 @@
         },
         {
             "name": "lara-zeus/spatie-translatable",
-            "version": "dev-main",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/spatie-translatable",
-                "reference": "7272617531805d9b1046110d0b35b6fd03c8711b"
+                "reference": "a5e7143e9449a87522cff209d62e9390c25ebc23"
             },
             "require": {
                 "ext-intl": "*",
@@ -6030,7 +5970,7 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "LaraZeus\\SpatieTranslatable\\SpatieLaravelTranslatablePluginServiceProvider"
+                        "LaraZeus\\SpatieTranslatable\\SpatieTranslatableServiceProvider"
                     ]
                 }
             },
@@ -6058,7 +5998,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/tartarus",
-                "reference": "12525a61380756719ce9bfdaaf41dc9f7facb7aa"
+                "reference": "6788d0247b63c201151b898ccad4b376aaa56f88"
             },
             "require": {
                 "calebporzio/sushi": "^2.4",
@@ -6151,14 +6091,14 @@
             "dist": {
                 "type": "path",
                 "url": "../p/thunder",
-                "reference": "b74acb1d015fb00fbb349d48905827db6da90534"
+                "reference": "3180e44914b171691402a96669a08ba688eb51e1"
             },
             "require": {
-                "beyondcode/laravel-comments": "^1.8",
                 "lara-zeus/bolt": "*",
                 "lara-zeus/filament-plugin-tools": "*",
                 "lara-zeus/inline-chart": "*",
                 "lara-zeus/quantity": "*",
+                "lara-zeus/replies": "*",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -6331,7 +6271,7 @@
         },
         {
             "name": "lara-zeus/torch-filament",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/torch-filament",
@@ -6491,12 +6431,51 @@
             }
         },
         {
+            "name": "lara-zeus/translatable-upgrade",
+            "version": "1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "../p/translatable-upgrade",
+                "reference": "6d0366da06c8012f17e82a25d4ec60241c060b82"
+            },
+            "require": {
+                "nunomaduro/termwind": "^2.0",
+                "php": "^8.1",
+                "rector/rector": "^2.0"
+            },
+            "require-dev": {
+                "roave/security-advisories": "dev-latest"
+            },
+            "bin": [
+                "bin/translatable",
+                "bin/thunder"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SpatieTranslatable\\Upgrade\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "upgrade filament translatable to use lara zeus translatable",
+            "homepage": "https://github.com/lara-zeus/spatie-translatable",
+            "support": {
+                "issues": "https://github.com/lara-zeus/spatie-translatable/issues",
+                "source": "https://github.com/lara-zeus/spatie-translatable"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "lara-zeus/wind",
             "version": "4.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/wind",
-                "reference": "57bb8d371929e6395019cd770f93678d44b905e1"
+                "reference": "55dd64d1181a5750de012582a8b1d5ebee003827"
             },
             "require": {
                 "lara-zeus/core": "*",
@@ -9374,6 +9353,64 @@
             "time": "2024-07-20T21:41:07+00:00"
         },
         {
+            "name": "phpstan/phpstan",
+            "version": "2.1.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "96dde49e967c0c22812bcfa7bda4ff82c09f3b0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/96dde49e967c0c22812bcfa7bda4ff82c09f3b0c",
+                "reference": "96dde49e967c0c22812bcfa7bda4ff82c09f3b0c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan-shim": "*"
+            },
+            "bin": [
+                "phpstan",
+                "phpstan.phar"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPStan - PHP Static Analysis Tool",
+            "keywords": [
+                "dev",
+                "static analysis"
+            ],
+            "support": {
+                "docs": "https://phpstan.org/user-guide/getting-started",
+                "forum": "https://github.com/phpstan/phpstan/discussions",
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "security": "https://github.com/phpstan/phpstan/security/policy",
+                "source": "https://github.com/phpstan/phpstan-src"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/phpstan",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-04-16T13:19:18+00:00"
+        },
+        {
             "name": "pragmarx/google2fa",
             "version": "v8.0.3",
             "source": {
@@ -10164,6 +10201,65 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "rector/rector",
+            "version": "2.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rectorphp/rector.git",
+                "reference": "059b827cc648929711606e9824337e41e2f9ed92"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/059b827cc648929711606e9824337e41e2f9ed92",
+                "reference": "059b827cc648929711606e9824337e41e2f9ed92",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "phpstan/phpstan": "^2.1.9"
+            },
+            "conflict": {
+                "rector/rector-doctrine": "*",
+                "rector/rector-downgrade-php": "*",
+                "rector/rector-phpunit": "*",
+                "rector/rector-symfony": "*"
+            },
+            "suggest": {
+                "ext-dom": "To manipulate phpunit.xml via the custom-rule command"
+            },
+            "bin": [
+                "bin/rector"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Instant Upgrade and Automated Refactoring of any PHP code",
+            "keywords": [
+                "automation",
+                "dev",
+                "migration",
+                "refactoring"
+            ],
+            "support": {
+                "issues": "https://github.com/rectorphp/rector/issues",
+                "source": "https://github.com/rectorphp/rector/tree/2.0.11"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tomasvotruba",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-03-28T10:25:17+00:00"
         },
         {
             "name": "reedware/laravel-relation-joins",
@@ -15153,6 +15249,41 @@
             "time": "2025-04-16T06:32:06+00:00"
         },
         {
+            "name": "filament/upgrade",
+            "version": "4.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "../filament/packages/upgrade",
+                "reference": "ab0cf53e9832860cb98f709aa32855ab9be4bb53"
+            },
+            "require": {
+                "nunomaduro/termwind": "^2.0",
+                "php": "^8.2",
+                "rector/rector": "^2.0"
+            },
+            "bin": [
+                "bin/filament-v4"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Filament\\Upgrade\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Upgrade Filament v3 code to Filament v4.",
+            "homepage": "https://github.com/filamentphp/filament",
+            "support": {
+                "issues": "https://github.com/filamentphp/filament/issues",
+                "source": "https://github.com/filamentphp/filament"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "filp/whoops",
             "version": "2.18.0",
             "source": {
@@ -15814,64 +15945,6 @@
                 "source": "https://github.com/phpstan/extension-installer/tree/1.4.3"
             },
             "time": "2024-09-04T20:21:43+00:00"
-        },
-        {
-            "name": "phpstan/phpstan",
-            "version": "2.1.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "96dde49e967c0c22812bcfa7bda4ff82c09f3b0c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/96dde49e967c0c22812bcfa7bda4ff82c09f3b0c",
-                "reference": "96dde49e967c0c22812bcfa7bda4ff82c09f3b0c",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4|^8.0"
-            },
-            "conflict": {
-                "phpstan/phpstan-shim": "*"
-            },
-            "bin": [
-                "phpstan",
-                "phpstan.phar"
-            ],
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "PHPStan - PHP Static Analysis Tool",
-            "keywords": [
-                "dev",
-                "static analysis"
-            ],
-            "support": {
-                "docs": "https://phpstan.org/user-guide/getting-started",
-                "forum": "https://github.com/phpstan/phpstan/discussions",
-                "issues": "https://github.com/phpstan/phpstan/issues",
-                "security": "https://github.com/phpstan/phpstan/security/policy",
-                "source": "https://github.com/phpstan/phpstan-src"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/ondrejmirtes",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/phpstan",
-                    "type": "github"
-                }
-            ],
-            "time": "2025-04-16T13:19:18+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
