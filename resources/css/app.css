@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@import './filament/admin/sources.css';
+
 @import '../../vendor/filament/filament/resources/css/theme.css';
 /*@import '../../vendor/lara-zeus/core/resources/css/_checkbox-cards.css';*/
 @import '../../node_modules/tippy.js/dist/tippy.css';
