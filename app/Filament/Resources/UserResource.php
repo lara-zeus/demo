@@ -142,9 +142,9 @@ class UserResource extends Resource
                 \Filament\Actions\ActionGroup::make([
                     \Filament\Actions\ViewAction::make(),
                     \Filament\Actions\EditAction::make(),
-                    Impersonate::make()
+                    /*Impersonate::make()
                         ->grouped()
-                        ->redirectTo(url('/admin')),
+                        ->redirectTo(url('/admin')),*/
                 ]),
             ])
             ->defaultSort('id', 'desc')

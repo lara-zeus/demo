@@ -1,39 +1,28 @@
 @import '../../../../vendor/filament/filament/resources/css/theme.css';
 
-@source '../../../../app/Filament';
-@source '../../../../resources/views/filament';
-
 /*@import '/vendor/awcodes/filament-curator/resources/css/plugin.css';*/
 /*@import '/vendor/archilex/filament-filter-sets/resources/css/plugin.css';*/
-@import '/node_modules/cropperjs/dist/cropper.css';
+/*@import '/node_modules/cropperjs/dist/cropper.css';*/
 
-:root {
-    --c-50: var(--primary-50);
-    --c-100: var(--primary-100);
-    --c-200: var(--primary-200);
-    --c-300: var(--primary-300);
-    --c-400: var(--primary-400);
-    --c-500: var(--primary-500);
-    --c-600: var(--primary-600);
-    --c-700: var(--primary-700);
-    --c-800: var(--primary-800);
-    --c-900: var(--primary-900);
-}
+@import '../../theme.css';
+@source '../../../../app/Filament';
+@source '../../../../resources/views';
+@source '../../../../vendor/lara-zeus';
 
 [dir=rtl] {
-    font-family: 'Almarai', 'Montserrat', sans-serif !important;
+    font-family: 'Almarai', 'Montserrat', sans-serif;
 }
 
 [dir=rtl] .title-font {
-    font-family: 'Almarai', sans-serif !important;
+    font-family: 'Almarai', sans-serif;
 }
 
 [dir=ltr] {
-    font-family: 'Montserrat', 'Almarai', sans-serif !important;
+    font-family: 'Montserrat', 'Almarai', sans-serif;
 }
 
 [dir=ltr] .title-font {
-    font-family: 'Montserrat', 'Almarai', sans-serif !important;
+    font-family: 'Montserrat', 'Almarai', sans-serif;
     @apply font-semibold
 }
 
@@ -42,15 +31,15 @@
 }
 
 .compact-timeline .fi-timeline-item-heading {
-    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col !important;
+    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col;
 }
 
 .compact-timeline .fi-timeline-section-content {
-    @apply shadow-none p-0 !important;
+    @apply shadow-none p-0;
 }
 
 .compact-timeline {
-    @apply shadow-none ring-0 !important;
+    @apply shadow-none ring-0;
 }
 
 .field-type .choices__list--single {
@@ -72,7 +61,7 @@
 }
 
 .fi-sidebar {
-    @apply shadow-md bg-white dark:bg-gray-950 !important;
+    @apply shadow-md bg-white dark:bg-gray-950;
 }
 
 .custom-auth-empty-panel {
@@ -121,42 +110,42 @@
 }
 
 .fi-header-heading, .fi-section-header-heading {
-    @apply font-normal text-secondary-600 !important;
+    @apply font-normal text-secondary-600;
 }
 
 .fi-breadcrumbs-item-label {
-    @apply text-primary-600 !important;
+    @apply text-primary-600;
 }
 
 /*
 .fi-topbar {
-    @apply hidden !important;
+    @apply hidden;
 }
 
 .fi-main {
-    @apply my-4 mb-4 bg-gray-50 rounded-3xl shadow-lg !important;
+    @apply my-4 mb-4 bg-gray-50 rounded-3xl shadow-lg;
 }
 
 .fi-main-ctn {
-    @apply mx-10 !important;
+    @apply mx-10;
 }
 
 .fi-panel-admin, .fi-main-ctn, .fi-sidebar, .fi-sidebar-header {
-    @apply bg-secondary-50 !important;
+    @apply bg-secondary-50;
 }
 
 .fi-sidebar, .fi-sidebar-header {
-    @apply ring-0 shadow-none !important;
+    @apply ring-0 shadow-none;
 }*/
 
 .fi-page-sub-navigation-sidebar-ctn, .fi-section{
-    @apply px-2 py-3 bg-gray-50 dark:bg-gray-900 border-2 shadow-lg border-b-4 border-primary-500 dark:border-primary-800 rounded-2xl !important;
+    @apply px-2 py-3 bg-gray-50 dark:bg-gray-900 border-2 shadow-lg border-b-4 border-primary-500 dark:border-primary-800 rounded-2xl;
 }
 
 .fi-page-sub-navigation-sidebar{
-    @apply rounded-2xl !important;
+    @apply rounded-2xl;
 }
 
 .fi-active, .fi-active a, .fi-sidebar-item.fi-active{
-    @apply rounded-2xl !important;
+    @apply rounded-2xl;
 }

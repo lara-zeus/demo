@@ -86,18 +86,18 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
-            //->viteTheme('resources/css/filament/admin/theme.css')
+            ->viteTheme('resources/css/filament/admin/theme.css')
             ->defaultAvatarProvider(
                 BoringAvatarsProvider::class
             )
-            //->databaseNotifications()
+            //->databaseNotifications() todo
             ->homeUrl('/')
             ->id('admin')
             ->path('admin')
             ->login(Login::class)
             ->font('Montserrat')
             ->plugins($this->getPlugins())
-            //->brandLogo(fn () => view('filament.logo'))
+            ->brandLogo(fn () => view('filament.logo'))
             ->colors([
                 ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
                 'primary' => Color::hex('#45B39D'),
@@ -297,7 +297,7 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\FilamentInfoWidget::class,
                 //VersionsWidget::class,
                 //OverlookWidget::class,
-                //Feedback::class,
+                Feedback::class,
             ])
             ->middleware([
                 EncryptCookies::class,
@@ -384,13 +384,10 @@ class AdminPanelProvider extends PanelProvider
             HelenPlugin::make()
                 ->baseDomain('demo.larazeus.com')
                 ->prefix('not-so-short/'),
-
             /*FilamentFullCalendarPlugin::make()
                 ->selectable()
                 ->editable(),*/
-
             //\LaraZeus\Akin\AkinTheme::make(),
-
             BoltPlugin::make()
                 ->hideNavigationBadges()
                 ->customSchema([
