@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Hash;
 
 class EditUser extends EditRecord
 {
-    use HasRecentHistoryRecorder;
+    //use HasRecentHistoryRecorder;
 
     protected static string $resource = UserResource::class;
 

@@ -33,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
 
         \Filament\Support\View\Components\ModalComponent::closedByClickingAway(false);
 
-        PanelSwitch::configureUsing(function (PanelSwitch $panelSwitch) {
+        /*PanelSwitch::configureUsing(function (PanelSwitch $panelSwitch) {
             $panelSwitch
                 ->canSwitchPanels(true)
                 ->visible(true)
@@ -50,8 +50,7 @@ class AppServiceProvider extends ServiceProvider
                 ])
                 ->iconSize(20)
                 ->renderHook('panels::user-menu.before');
-
-        });
+        });*/
 
         // $this->hooksRenderer();
 

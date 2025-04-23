@@ -66,6 +66,7 @@ use LaraZeus\Hermes\Filament\Resources\MenuResource;
 use LaraZeus\Hermes\Filament\Resources\MenuSectionResource;
 use LaraZeus\Hermes\HermesPlugin;
 use LaraZeus\Sky\SkyPlugin;
+use LaraZeus\SpatieTranslatable\SpatieTranslatablePlugin;
 use LaraZeus\Thunder\Extensions\Thunder;
 use LaraZeus\Thunder\Filament\Resources\OfficeResource;
 use LaraZeus\Thunder\Filament\Resources\TicketResource;
@@ -169,13 +170,13 @@ class AdminPanelProvider extends PanelProvider
             )
 
             // user views resource
-            ->renderHook(
+            /*->renderHook(
                 'panels::page.start',
                 fn (array $scopes): View => view('filament.hooks.user-view-resource', ['scopes' => $scopes]),
                 scopes: [
                     UserViewResource::class,
                 ],
-            )
+            )*/
 
             // user views resource
             ->renderHook(
@@ -294,8 +295,8 @@ class AdminPanelProvider extends PanelProvider
 
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
-                VersionsWidget::class,
-                OverlookWidget::class,
+                //VersionsWidget::class,
+                //OverlookWidget::class,
                 Feedback::class,
             ])
             ->middleware([
@@ -317,12 +318,12 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
-            AuthUIEnhancerPlugin::make()
+            /*AuthUIEnhancerPlugin::make()
                 ->showEmptyPanelOnMobile(false)
                 ->formPanelPosition('left')
-                ->formPanelWidth('40%'),
-            FilamentUmamiPlugin::make(),
-            RecentlyPlugin::make()
+                ->formPanelWidth('40%'),*/
+            //FilamentUmamiPlugin::make(),
+            /*RecentlyPlugin::make()
                 ->renderUsingHook(PanelsRenderHook::USER_MENU_BEFORE)
                 ->tooltip('Zeus is keeping an eye on you! 👿')
                 ->icon('tabler-eye')
@@ -371,8 +372,8 @@ class AdminPanelProvider extends PanelProvider
                     MenuSectionResource::class,
                     RequestResource::class,
                     LayoutResource::class,
-                ]),
-            SpatieLaravelTranslatablePlugin::make()
+                ]),*/
+            SpatieTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt', 'ko']),
             // ChronosPlugin::make(),
             DeliaPlugin::make(),
@@ -384,9 +385,9 @@ class AdminPanelProvider extends PanelProvider
                 ->baseDomain('demo.larazeus.com')
                 ->prefix('not-so-short/'),
 
-            FilamentFullCalendarPlugin::make()
+            /*FilamentFullCalendarPlugin::make()
                 ->selectable()
-                ->editable(),
+                ->editable(),*/
 
             \LaraZeus\Akin\AkinTheme::make(),
 
