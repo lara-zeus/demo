@@ -15,9 +15,9 @@ class Accordion extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-table-filled';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-table-filled';
 
-    protected static string $view = 'filament.pages.accordion';
+    protected string $view = 'filament.pages.accordion';
 
     protected static ?int $navigationSort = 4;
 
@@ -27,9 +27,9 @@ class Accordion extends Page
 
     protected static ?string $title = 'Accordion';
 
-    public function infolist(Infolist $infolist): Infolist
+    public function infolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $infolist
+        return $schema
             ->state([
                 'name' => 'Lara Zeus',
                 'email' => 'info@larazeus.com',
@@ -38,7 +38,7 @@ class Accordion extends Page
                 'work-email' => 'info@larazeus.com',
                 'work-phone' => '9999999999',
             ])
-            ->schema([
+            ->components([
                 \LaraZeus\Accordion\Infolists\Accordions::make('Options')
                     ->activeAccordion(2)
                     ->isolated()
@@ -74,11 +74,11 @@ class Accordion extends Page
             ]);
     }
 
-    public function form(Form $form): Form
+    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
-            ->schema([
+            ->components([
                 Accordions::make('Options')
                     ->activeAccordion(2)
                     ->isolated()

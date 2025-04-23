@@ -13,11 +13,11 @@ use JaOcero\ActivityTimeline\Components\ActivityTitle;
 
 class ActivityTimeline extends Page
 {
-    protected static string $view = 'filament.guests.pages.activity-timeline';
+    protected string $view = 'filament.guests.pages.activity-timeline';
 
-    protected static ?string $navigationIcon = 'tabler-timeline-event-exclamation';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-timeline-event-exclamation';
 
-    protected static ?string $navigationGroup = 'Plugins';
+    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
 
     protected static ?int $navigationSort = 3;
 
@@ -28,9 +28,9 @@ class ActivityTimeline extends Page
         $this->form->fill();
     }
 
-    public function infolist(Infolist $infolist): Infolist
+    public function infolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $infolist
+        return $schema
             ->state([
                 'activities' => [
                     [
@@ -59,7 +59,7 @@ class ActivityTimeline extends Page
                     ],
                 ],
             ])
-            ->schema([
+            ->components([
 
                 /*
                    You should enclose the entire components within a personalized "ActivitySection" entry.

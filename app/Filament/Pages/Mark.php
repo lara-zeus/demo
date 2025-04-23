@@ -13,9 +13,9 @@ class Mark extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-star-half-filled';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-star-half-filled';
 
-    protected static string $view = 'filament.pages.mark';
+    protected string $view = 'filament.pages.mark';
 
     protected static ?int $navigationSort = 4;
 
@@ -30,11 +30,11 @@ class Mark extends Page
         $this->form->fill();
     }
 
-    public function form(Form $form): Form
+    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
-            ->schema([
+            ->components([
                 TextInput::make('name'),
                 MarkForm::make('likes')
                     ->label('Like')

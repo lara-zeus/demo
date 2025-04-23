@@ -22,9 +22,9 @@ class Popover extends Page implements HasTable
 
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-stack-pop';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-stack-pop';
 
-    protected static string $view = 'filament.pages.popover';
+    protected string $view = 'filament.pages.popover';
 
     protected static ?int $navigationSort = 3;
 
@@ -71,12 +71,12 @@ class Popover extends Page implements HasTable
             ]);
     }
 
-    public function form(Form $form): Form
+    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
-            ->schema([
-                Section::make()
+            ->components([
+                \Filament\Schemas\Components\Section::make()
                     ->schema([
                         PopoverForm::make('name')
                             ->trigger('hover')
@@ -86,12 +86,12 @@ class Popover extends Page implements HasTable
             ]);
     }
 
-    public function infolist(Infolist $infolist): Infolist
+    public function infolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $infolist
+        return $schema
             ->record(User::first())
-            ->schema([
-                \Filament\Infolists\Components\Section::make()
+            ->components([
+                \Filament\Schemas\Components\Section::make()
                     ->schema([
                         PopoverEntry::make('name')
                             ->trigger('hover')

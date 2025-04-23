@@ -33,7 +33,7 @@ class UserResource extends Resource
 
     protected static ?int $navigationSort = 1;
 
-    protected static ?string $navigationIcon = 'tabler-users-group';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-users-group';
 
     public static function getNavigationLabel(): string
     {
@@ -55,10 +55,10 @@ class UserResource extends Resource
         return 'App';
     }
 
-    public static function infolist(Infolist $infolist): Infolist
+    public static function infolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $infolist->schema([
-            Section::make('User Info')->columns()->schema([
+        return $schema->components([
+            \Filament\Schemas\Components\Section::make('User Info')->columns()->schema([
                 PopoverEntry::make('name')
                     // main options
                     ->trigger('click')
@@ -75,9 +75,9 @@ class UserResource extends Resource
         ]);
     }
 
-    public static function form(Form $form): Form
+    public static function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $form->schema([
+        return $schema->components([
             TextInput::make('name')->required(),
             TextInput::make('email')
                 ->unique(ignoreRecord: true)
@@ -139,9 +139,9 @@ class UserResource extends Resource
                     ->wrapHeader(),
             ])
             ->actions([
-                ActionGroup::make([
-                    ViewAction::make(),
-                    EditAction::make(),
+                \Filament\Actions\ActionGroup::make([
+                    \Filament\Actions\ViewAction::make(),
+                    \Filament\Actions\EditAction::make(),
                     Impersonate::make()
                         ->grouped()
                         ->redirectTo(url('/admin')),

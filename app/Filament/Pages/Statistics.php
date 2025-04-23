@@ -15,9 +15,9 @@ class Statistics extends Page
 {
     use HasFilter;
 
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
 
-    protected static string $view = 'filament.pages.statistics';
+    protected string $view = 'filament.pages.statistics';
 
     protected function getFooterWidgets(): array
     {

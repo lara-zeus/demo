@@ -15,14 +15,14 @@ class CarResource extends Resource
 {
     protected static ?string $model = Car::class;
 
-    protected static ?string $navigationGroup = 'App';
+    protected static string | \UnitEnum | null $navigationGroup = 'App';
 
-    protected static ?string $navigationIcon = 'tabler-car';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-car';
 
-    public static function form(Form $form): Form
+    public static function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $form
-            ->schema([
+        return $schema
+            ->components([
                 TextInput::make('name')
                     ->required()
                     ->maxLength(255),
@@ -47,11 +47,11 @@ class CarResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                \Filament\Actions\EditAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                \Filament\Actions\BulkActionGroup::make([
+                    \Filament\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
     }

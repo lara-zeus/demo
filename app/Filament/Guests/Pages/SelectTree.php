@@ -9,13 +9,13 @@ use Filament\Pages\Page;
 
 class SelectTree extends Page
 {
-    protected static string $view = 'filament.guests.pages.select-tree';
+    protected string $view = 'filament.guests.pages.select-tree';
 
-    protected static ?string $navigationIcon = 'tabler-binary-tree-2';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-binary-tree-2';
 
     protected static ?int $navigationSort = 1;
 
-    protected static ?string $navigationGroup = 'Plugins';
+    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
 
     public ?array $data = [];
 
@@ -24,13 +24,13 @@ class SelectTree extends Page
         $this->form->fill();
     }
 
-    public function form(Form $form): Form
+    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $form
+        return $schema
             ->model(SelectTreeBlog::class)
             ->statePath('data')
-            ->schema([
-                Section::make()
+            ->components([
+                \Filament\Schemas\Components\Section::make()
                     ->columns(2)
                     ->schema([
                         \CodeWithDennis\FilamentSelectTree\SelectTree::make('categories_1')

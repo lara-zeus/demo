@@ -25,9 +25,9 @@ class Tiles extends Page implements HasTable
 
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-photo-circle';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-photo-circle';
 
-    protected static string $view = 'filament.pages.tiles';
+    protected string $view = 'filament.pages.tiles';
 
     protected static ?int $navigationSort = 3;
 
@@ -61,12 +61,12 @@ class Tiles extends Page implements HasTable
             ]);
     }
 
-    public function form(Form $form): Form
+    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
-            ->schema([
-                Section::make('')
+            ->components([
+                \Filament\Schemas\Components\Section::make('')
                     ->schema([
                         TileLayout::make('name')
                             ->label('Created By')
@@ -88,12 +88,12 @@ class Tiles extends Page implements HasTable
             ]);
     }
 
-    public function infolist(Infolist $infolist): Infolist
+    public function infolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $infolist
+        return $schema
             ->record(User::first())
-            ->schema([
-                InfolistSection::make('')
+            ->components([
+                \Filament\Schemas\Components\Section::make('')
                     ->schema([
                         TileEntry::make('name')
                             ->icon('tabler-dots-vertical')

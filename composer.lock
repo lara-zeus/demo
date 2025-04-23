@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef8554f9924749125f7cd67dc75d515e",
+    "content-hash": "6bf55ed68f4699437f88909daf3fe187",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -19560,6 +19560,46 @@
             "time": "2025-04-16T06:32:06+00:00"
         },
         {
+            "name": "filament/upgrade",
+            "version": "v4.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filamentphp/upgrade.git",
+                "reference": "5eae9c0346abde563a7dff9855068980598f1030"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filamentphp/upgrade/zipball/5eae9c0346abde563a7dff9855068980598f1030",
+                "reference": "5eae9c0346abde563a7dff9855068980598f1030",
+                "shasum": ""
+            },
+            "require": {
+                "nunomaduro/termwind": "^2.0",
+                "php": "^8.2",
+                "rector/rector": "^2.0"
+            },
+            "bin": [
+                "bin/filament-v4"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Filament\\Upgrade\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Upgrade Filament v3 code to Filament v4.",
+            "homepage": "https://github.com/filamentphp/filament",
+            "support": {
+                "issues": "https://github.com/filamentphp/filament/issues",
+                "source": "https://github.com/filamentphp/filament"
+            },
+            "time": "2025-04-23T06:32:14+00:00"
+        },
+        {
             "name": "filp/whoops",
             "version": "2.18.0",
             "source": {
@@ -20292,6 +20332,65 @@
                 "source": "https://github.com/bobthecow/psysh/tree/v0.12.8"
             },
             "time": "2025-03-16T03:05:19+00:00"
+        },
+        {
+            "name": "rector/rector",
+            "version": "2.0.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rectorphp/rector.git",
+                "reference": "a7f9b968f6c15abfd0d2a1442c9dcd9ade677192"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/a7f9b968f6c15abfd0d2a1442c9dcd9ade677192",
+                "reference": "a7f9b968f6c15abfd0d2a1442c9dcd9ade677192",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "phpstan/phpstan": "^2.1.12"
+            },
+            "conflict": {
+                "rector/rector-doctrine": "*",
+                "rector/rector-downgrade-php": "*",
+                "rector/rector-phpunit": "*",
+                "rector/rector-symfony": "*"
+            },
+            "suggest": {
+                "ext-dom": "To manipulate phpunit.xml via the custom-rule command"
+            },
+            "bin": [
+                "bin/rector"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Instant Upgrade and Automated Refactoring of any PHP code",
+            "keywords": [
+                "automation",
+                "dev",
+                "migration",
+                "refactoring"
+            ],
+            "support": {
+                "issues": "https://github.com/rectorphp/rector/issues",
+                "source": "https://github.com/rectorphp/rector/tree/2.0.12"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tomasvotruba",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-04-22T12:47:33+00:00"
         },
         {
             "name": "roave/security-advisories",

@@ -14,9 +14,9 @@ class ListGroup extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-list-details';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-list-details';
 
-    protected static string $view = 'filament.pages.list-group';
+    protected string $view = 'filament.pages.list-group';
 
     protected static ?int $navigationSort = 8;
 
@@ -26,11 +26,11 @@ class ListGroup extends Page
 
     protected static ?string $title = 'List Group';
 
-    public function infolist(Infolist $infolist): Infolist
+    public function infolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $infolist
-            ->schema([
-                Section::make()
+        return $schema
+            ->components([
+                \Filament\Schemas\Components\Section::make()
                     ->schema([
                         ListEntry::make('items')
                             ->columnSpanFull()

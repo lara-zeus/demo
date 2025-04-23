@@ -10,11 +10,11 @@ use Filament\Pages\Page;
 
 class Mason extends Page
 {
-    protected static ?string $navigationIcon = 'tabler-building-castle';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-building-castle';
 
-    protected static ?string $navigationGroup = 'Plugins';
+    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
 
-    protected static string $view = 'filament.guests.pages.mason';
+    protected string $view = 'filament.guests.pages.mason';
 
     protected ?string $heading = 'A simple block based builder';
 
@@ -28,12 +28,12 @@ class Mason extends Page
         $this->form->fill($this->post?->toArray() ?? []);
     }
 
-    public function form(Form $form): Form
+    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
             ->model($this->post)
-            ->schema([
+            ->components([
                 \Awcodes\Mason\Mason::make('content')
                     ->bricks(BrickCollection::make())
                     ->placeholder('Drag and drop bricks to get started...'),

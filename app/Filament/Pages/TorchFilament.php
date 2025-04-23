@@ -13,19 +13,19 @@ class TorchFilament extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
 
-    protected static string $view = 'filament.pages.torch-filament';
+    protected string $view = 'filament.pages.torch-filament';
 
     protected static ?int $navigationSort = 8;
 
     public array $data = [];
 
-    public function infolist(Infolist $infolist): Infolist
+    public function infolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $infolist
-            ->schema([
-                Section::make()
+        return $schema
+            ->components([
+                \Filament\Schemas\Components\Section::make()
                     ->schema([
                         TorchEntry::make('code')
                             ->columnSpanFull()

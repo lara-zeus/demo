@@ -15,9 +15,9 @@ class Quantity extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-input-search';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-input-search';
 
-    protected static string $view = 'filament.pages.quantity';
+    protected string $view = 'filament.pages.quantity';
 
     protected static ?int $navigationSort = 6;
 
@@ -32,12 +32,12 @@ class Quantity extends Page
         $this->form->fill();
     }
 
-    public function form(Form $form): Form
+    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
-            ->schema([
-                Section::make()
+            ->components([
+                \Filament\Schemas\Components\Section::make()
                     ->schema([
 
                         QuantityAlias::make('name9')
@@ -61,15 +61,15 @@ class Quantity extends Page
                             ->minValue(2)
                             ->hiddenLabel()
                             ->live()
-                            ->prefix(fn (Get $get) => 'stop at 0')
-                            ->suffix(fn (Get $get) => 'stop at 10')
+                            ->prefix(fn (\Filament\Schemas\Components\Utilities\Get $get) => 'stop at 0')
+                            ->suffix(fn (\Filament\Schemas\Components\Utilities\Get $get) => 'stop at 10')
                             ->columnSpanFull(),
 
                         QuantityAlias::make('name2')
                             ->label('select quantity')
                             ->default(10)
                             ->required()
-                            ->prefix(fn (Get $get) => 'stop at 0')
+                            ->prefix(fn (\Filament\Schemas\Components\Utilities\Get $get) => 'stop at 0')
 
                             ->heading('select quantity')
                             ->hiddenLabel()
@@ -79,9 +79,9 @@ class Quantity extends Page
                             ->label('select quantity')
                             ->default(100)
                             ->required()
-                            ->suffix(fn (Get $get) => 'stop at 0')
+                            ->suffix(fn (\Filament\Schemas\Components\Utilities\Get $get) => 'stop at 0')
                             ->suffixAction(
-                                Action::make('copyCostToPrice')
+                                \Filament\Actions\Action::make('copyCostToPrice')
                                     ->icon('heroicon-m-clipboard')
                                     ->requiresConfirmation()
                                     ->modalHeading('nothing will happen after ...')

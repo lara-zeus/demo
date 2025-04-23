@@ -7,11 +7,11 @@ use Filament\Pages\Page;
 
 class Matinee extends Page
 {
-    protected static string $view = 'filament.guests.pages.matinee';
+    protected string $view = 'filament.guests.pages.matinee';
 
-    protected static ?string $navigationIcon = 'tabler-photo';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-photo';
 
-    protected static ?string $navigationGroup = 'Plugins';
+    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
 
     protected static ?int $navigationSort = 3;
 
@@ -22,11 +22,11 @@ class Matinee extends Page
         $this->form->fill();
     }
 
-    public function form(Form $form): Form
+    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
-            ->schema([
+            ->components([
                 \Awcodes\Matinee\Matinee::make('video')
                     ->showPreview(),
             ]);

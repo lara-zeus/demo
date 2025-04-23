@@ -31,7 +31,7 @@ class AppServiceProvider extends ServiceProvider
             'panels::panel-switch-modern-icon' => 'tabler-switch-horizontal',
         ]);
 
-        Modal::closedByClickingAway(false);
+        \Filament\Support\View\Components\ModalComponent::closedByClickingAway(false);
 
         PanelSwitch::configureUsing(function (PanelSwitch $panelSwitch) {
             $panelSwitch

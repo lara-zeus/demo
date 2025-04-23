@@ -21,12 +21,12 @@ class BookmarksWidget extends Widget implements HasForms, HasInfolists
 
     protected int | string | array $columnSpan = '1/2';
 
-    protected static string $view = 'filament.widgets.bookmarks-widget';
+    protected string $view = 'filament.widgets.bookmarks-widget';
 
-    public function bookmarkInfolist(Infolist $infolist): Infolist
+    public function bookmarkInfolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $infolist
-            ->schema([
+        return $schema
+            ->components([
                 ListEntry::make('items')
                     ->state(function () {
                         return Bookmark::query()

@@ -6,11 +6,11 @@ use Filament\Pages\Page;
 
 class Socialment extends Page
 {
-    protected static string $view = 'filament.guests.pages.socialment';
+    protected string $view = 'filament.guests.pages.socialment';
 
-    protected static ?string $navigationIcon = 'tabler-lock';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-lock';
 
     protected static ?int $navigationSort = 4;
 
-    protected static ?string $navigationGroup = 'Plugins';
+    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
 }

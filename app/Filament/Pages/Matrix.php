@@ -14,9 +14,9 @@ class Matrix extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-list-check';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-list-check';
 
-    protected static string $view = 'filament.pages.qrcode';
+    protected string $view = 'filament.pages.qrcode';
 
     protected static ?int $navigationSort = 1;
 
@@ -41,12 +41,12 @@ class Matrix extends Page
         ];
     }
 
-    public function form(Form $form): Form
+    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
-            ->schema([
-                Section::make()
+            ->components([
+                \Filament\Schemas\Components\Section::make()
                     ->schema([
                         MatrixAlias::make('options')
                             // ->disabled()

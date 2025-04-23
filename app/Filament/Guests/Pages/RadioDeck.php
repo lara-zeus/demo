@@ -11,13 +11,13 @@ use Filament\Support\Enums\IconSize;
 
 class RadioDeck extends Page
 {
-    protected static string $view = 'filament.guests.pages.radio-deck';
+    protected string $view = 'filament.guests.pages.radio-deck';
 
-    protected static ?string $navigationIcon = 'tabler-aspect-ratio';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-aspect-ratio';
 
     protected static ?int $navigationSort = 2;
 
-    protected static ?string $navigationGroup = 'Plugins';
+    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
 
     public ?array $data = [];
 
@@ -26,11 +26,11 @@ class RadioDeck extends Page
         $this->form->fill();
     }
 
-    public function form(Form $form): Form
+    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
-            ->schema([
+            ->components([
                 \JaOcero\RadioDeck\Forms\Components\RadioDeck::make('select-os-1')
                     ->label('Select OS')
                     ->options([
