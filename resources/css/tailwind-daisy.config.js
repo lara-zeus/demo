@@ -48,18 +48,7 @@ module.exports = {
             }
         },
     },
-    daisyui: {
-        styled: true,
-        themes: true,
-        base: true,
-        utils: true,
-        logs: false,
-        rtl: true,
-        prefix: "",
-        darkTheme: "dark",
-    },
     plugins: [
-        require('daisyui'),
         require('tailwindcss-debug-screens'),
         require('@tailwindcss/typography'),
         require('@tailwindcss/forms'),
