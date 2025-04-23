@@ -86,7 +86,6 @@
       "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
       "@php artisan vendor:publish --tag=zeus-assets --ansi --force",
       "@php artisan vendor:publish --tag=zeus-artemis-assets --ansi --force",
-      "@php artisan demo:filament",
       "@php artisan filament:upgrade"
     ],
     "post-root-package-install": [

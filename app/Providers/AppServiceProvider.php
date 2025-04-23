@@ -27,11 +27,11 @@ class AppServiceProvider extends ServiceProvider
             URL::forceScheme('https');
         }
 
-        FilamentIcon::register([
+        /*FilamentIcon::register([
             'panels::panel-switch-modern-icon' => 'tabler-switch-horizontal',
-        ]);
+        ]);*/
 
-        \Filament\Support\View\Components\ModalComponent::closedByClickingAway(false);
+        //\Filament\Support\View\Components\ModalComponent::closedByClickingAway(false);
 
         /*PanelSwitch::configureUsing(function (PanelSwitch $panelSwitch) {
             $panelSwitch
@@ -54,12 +54,12 @@ class AppServiceProvider extends ServiceProvider
 
         // $this->hooksRenderer();
 
-        Filament::serving(function () {
+        /*Filament::serving(function () {
             FilamentAsset::register([
-                Css::make('flags', asset('css/flag-icons.css')),
+                // Css::make('flags', asset('css/flag-icons.css')),
                 // Css::make('filament-stylesheet', asset('css/filament-zeus.css')),
             ]);
-        });
+        });*/
 
         FilamentColor::register([
             ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
