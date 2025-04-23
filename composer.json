@@ -11,13 +11,12 @@
     "php": "^8.3",
     "fakerphp/faker": "^1.23",
     "filament/filament": "^4.0",
-    "lara-zeus/spatie-translatable": "^1.0",
+    "lara-zeus/spatie-translatable": "*",
     "graham-campbell/github": "^13.0",
     "guzzlehttp/guzzle": "^7.5",
     "jeremykenedy/laravel-packagist": "^1.0",
     "lara-zeus/accordion": "*",
     "lara-zeus/akin": "*",
-    "lara-zeus/apollo": "*",
     "lara-zeus/artemis": "*",
     "lara-zeus/athena": "*",
     "lara-zeus/bolt": "*",
@@ -135,56 +134,8 @@
       "url": "https://github.com/awcodes/richie"
     },
     {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/hades.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/hera.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/translatable.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/tiles.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/hermes.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/helen.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/thunder.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/athena.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/bolt-pro.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/apollo.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/chronos.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/mark.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/translatable-pro.git"
+      "type": "path",
+      "url": "../p/*"
     }
   ]
 }
