@@ -5,10 +5,9 @@ namespace App\Filament\Pages;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use App\Models\User;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Form;
-use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
@@ -71,12 +70,13 @@ class Popover extends Page implements HasTable
             ]);
     }
 
-    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function form(Schema $schema): Schema
     {
         return $schema
             ->statePath('data')
+            ->record(User::first())
             ->components([
-                \Filament\Schemas\Components\Section::make()
+                Section::make()
                     ->schema([
                         PopoverForm::make('name')
                             ->trigger('hover')
@@ -86,12 +86,12 @@ class Popover extends Page implements HasTable
             ]);
     }
 
-    public function infolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function infolist(Schema $schema): Schema
     {
         return $schema
             ->record(User::first())
             ->components([
-                \Filament\Schemas\Components\Section::make()
+                Section::make()
                     ->schema([
                         PopoverEntry::make('name')
                             ->trigger('hover')
