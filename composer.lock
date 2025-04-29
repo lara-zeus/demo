@@ -3535,7 +3535,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/accordion",
-                "reference": "7604f347df302119f4e66664c894e233bffacc89"
+                "reference": "a95bcfbd86fd4b3400a81d9c14aefc8f825a10cb"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -3617,7 +3617,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/akin",
-                "reference": "faa68d65f4af38e19ae19037bc667220803508e8"
+                "reference": "2f2cd238486d7815af5cc87102e8a4c216145412"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -3832,7 +3832,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/bolt",
-                "reference": "0c04ff31beb1a8b9bd07f5a921e414c518c2b9e9"
+                "reference": "edd3e1f35684c789b1cb666ab424142430fa9cd7"
             },
             "require": {
                 "flowframe/laravel-trend": "^0.4",
@@ -3937,9 +3937,10 @@
             "dist": {
                 "type": "path",
                 "url": "../p/bolt-pro",
-                "reference": "e9e46f99e56246209940f547e94c359f258ad685"
+                "reference": "5f9d95f8f75b818c54ff390b233aa4f5b7d05953"
             },
             "require": {
+                "calebporzio/sushi": "^2.4",
                 "lara-zeus/bolt": "*",
                 "lara-zeus/matrix-choice": "*",
                 "lara-zeus/quantity": "*",
@@ -4100,7 +4101,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/chaos",
-                "reference": "dd5001fb1ab8ecec79c49743d031354db8eb8d62"
+                "reference": "e75d452e106732f65645794a5d3682e8414705ba"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -4168,7 +4169,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/chronos",
-                "reference": "4462ef400072b45dec63735732526a9f4b547c4e"
+                "reference": "fa1c90cd547ca3a701c8d519ca4904e9e87cbb5a"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -4251,17 +4252,14 @@
             "dist": {
                 "type": "path",
                 "url": "../p/core",
-                "reference": "5217002bdf842951606c0675c97aff5db8aabab9"
+                "reference": "6cb9f13854182cea789b14c1e48eaaff150f676e"
             },
             "require": {
-                "calebporzio/sushi": "^2.4",
                 "ext-json": "*",
-                "ext-pdo_sqlite": "*",
-                "ext-sqlite3": "*",
                 "filament/filament": "*",
                 "lara-zeus/laravel-seo": "*",
                 "lara-zeus/spatie-translatable": "*",
-                "php": "^8.1"
+                "php": "^8.2"
             },
             "require-dev": {
                 "larastan/larastan": "^2.2",
@@ -4436,7 +4434,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/rain",
-                "reference": "fb2c6b929184ea80a4b02260c2d89b14890637a5"
+                "reference": "621c729cd99d34afaddb1d5db9146c6413d3d249"
             },
             "require": {
                 "lara-zeus/core": "*",
@@ -4696,7 +4694,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/helen",
-                "reference": "5827b066e96438f03b657058bcc9cb627f63b6ca"
+                "reference": "1a21af7c71a00854a757b9c3feb2fa3a2d48deed"
             },
             "require": {
                 "jenssegers/agent": "^2.6",
@@ -4782,7 +4780,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/hera",
-                "reference": "9c1b0bb66e8a0d58472c620a86efa652e2567bfc"
+                "reference": "6d4f4e64a7c3c4912f315f2a95ab01f94836cb5d"
             },
             "require": {
                 "lara-zeus/filament-plugin-tools": "*",
@@ -4863,7 +4861,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/hermes",
-                "reference": "26d7d21f5f9a6a0a0f913258218302c68bd2efe8"
+                "reference": "90bac4dc5cad6182c676951ded780b2c0516bcfe"
             },
             "require": {
                 "lara-zeus/core": "*",
@@ -5240,7 +5238,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/mark",
-                "reference": "4887e05aa8fc0704d07c6df1a00d8d525edaecdc"
+                "reference": "5f6bfbc2345632f7204f649e50d12fe1a5082f8b"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -5332,7 +5330,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/matrix-choice",
-                "reference": "861376fa31dd1f5008a070e3cd5ad516c5dcb206"
+                "reference": "7d52e0918c324902a7cec11cb2670611efb38135"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -5416,10 +5414,9 @@
             "dist": {
                 "type": "path",
                 "url": "../p/pontus",
-                "reference": "78454a735c432009bd3b698ec776431de4d88573"
+                "reference": "40ec5afedf510da6d70b32ea4f3fc7ebfe2ea3a5"
             },
             "require": {
-                "calebporzio/sushi": "^2.4",
                 "ext-json": "*",
                 "ext-pdo_sqlite": "*",
                 "ext-sqlite3": "*",
@@ -5588,7 +5585,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/qr",
-                "reference": "88aa55edb8de515dd7eb652bbc7d23cb4f45eba7"
+                "reference": "e9305d213cc2079b79546bc5d93b32c487864090"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -5744,11 +5741,11 @@
         },
         {
             "name": "lara-zeus/replies",
-            "version": "2.x-dev",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/replies",
-                "reference": "174148fbb195c5f37f1c149408d950a68d236819"
+                "reference": "7e4ed63b7cdaa70c160fc533e375f9c203f7b018"
             },
             "require": {
                 "lara-zeus/filament-plugin-tools": "*",
@@ -5908,7 +5905,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/sky",
-                "reference": "279e83cd58fd54bbdcd8a9a87599735fa3696161"
+                "reference": "77d645f4087f025050baf24166bfe0eac008c5d9"
             },
             "require": {
                 "filament/spatie-laravel-media-library-plugin": "*",
@@ -6053,7 +6050,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/tabler-icons-enum",
-                "reference": "64dcf04170c2614b269755e75ce650db8ec1e8af"
+                "reference": "4d69e154064f0f43c79c6ed85c59776715a6a4d0"
             },
             "require": {
                 "filament/support": "*",
@@ -6113,10 +6110,9 @@
             "dist": {
                 "type": "path",
                 "url": "../p/tartarus",
-                "reference": "40dad622eee846f383601db94c33c07100521d10"
+                "reference": "5c23263eea3910eda4897b7df7f10ff37be0a11c"
             },
             "require": {
-                "calebporzio/sushi": "^2.4",
                 "filament/filament": "*",
                 "lara-zeus/chaos": "*",
                 "lara-zeus/filament-plugin-tools": "*",
@@ -6551,7 +6547,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/wind",
-                "reference": "1e26378ef92d8a787d855b3484bb1ef2d4208e9a"
+                "reference": "c42d4d69bbb2b2fc36e9052fdd49824527690468"
             },
             "require": {
                 "lara-zeus/core": "*",
@@ -16978,16 +16974,16 @@
         },
         {
             "name": "spatie/backtrace",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/backtrace.git",
-                "reference": "0f2477c520e3729de58e061b8192f161c99f770b"
+                "reference": "9807de6b8fecfaa5b3d10650985f0348b02862b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/backtrace/zipball/0f2477c520e3729de58e061b8192f161c99f770b",
-                "reference": "0f2477c520e3729de58e061b8192f161c99f770b",
+                "url": "https://api.github.com/repos/spatie/backtrace/zipball/9807de6b8fecfaa5b3d10650985f0348b02862b2",
+                "reference": "9807de6b8fecfaa5b3d10650985f0348b02862b2",
                 "shasum": ""
             },
             "require": {
@@ -17025,7 +17021,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/backtrace/tree/1.7.1"
+                "source": "https://github.com/spatie/backtrace/tree/1.7.2"
             },
             "funding": [
                 {
@@ -17037,7 +17033,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2024-12-02T13:28:15+00:00"
+            "time": "2025-04-28T14:55:53+00:00"
         },
         {
             "name": "spatie/error-solutions",
