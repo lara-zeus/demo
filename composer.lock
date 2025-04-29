@@ -5326,7 +5326,7 @@
         },
         {
             "name": "lara-zeus/matrix-choice",
-            "version": "4.x-dev",
+            "version": "3.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/matrix-choice",
@@ -5499,7 +5499,7 @@
         },
         {
             "name": "lara-zeus/popover",
-            "version": "2.x-dev",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/popover",
@@ -5741,7 +5741,7 @@
         },
         {
             "name": "lara-zeus/replies",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/replies",
@@ -5905,7 +5905,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/sky",
-                "reference": "77d645f4087f025050baf24166bfe0eac008c5d9"
+                "reference": "33dba43c41f71f0058ab8b227308212fa6879683"
             },
             "require": {
                 "filament/spatie-laravel-media-library-plugin": "*",
