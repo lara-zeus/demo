@@ -56,11 +56,13 @@
     "laravel/sanctum": "^4.0",
     "sentry/sentry-laravel": "^4.3",
     "torchlight/engine": "^0.1.0",
+    "rinvex/laravel-subscriptions": "dev-laravel-12",
     "torchlight/torchlight-laravel": "dev-l12-compatibility"
   },
   "require-dev": {
-    "garygreen/pretty-routes": "^1.0",
     "barryvdh/laravel-debugbar": "^3.9",
+    "filament/upgrade": "^4.0",
+    "garygreen/pretty-routes": "^1.0",
     "larastan/larastan": "^3.0",
     "laravel/pint": "^1.13",
     "laravel/tinker": "^2.9",

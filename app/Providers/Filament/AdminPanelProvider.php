@@ -65,6 +65,7 @@ use LaraZeus\Hermes\Filament\Resources\MenuItemLabelsResource;
 use LaraZeus\Hermes\Filament\Resources\MenuResource;
 use LaraZeus\Hermes\Filament\Resources\MenuSectionResource;
 use LaraZeus\Hermes\HermesPlugin;
+use LaraZeus\Pontus\PontusPlugin;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\SpatieTranslatable\SpatieTranslatablePlugin;
 use LaraZeus\Thunder\Extensions\Thunder;
@@ -374,7 +375,7 @@ class AdminPanelProvider extends PanelProvider
                     LayoutResource::class,
                 ]),*/
             SpatieTranslatablePlugin::make()
-                ->defaultLocales(['en', 'pt', 'ko']),
+                ->defaultLocales(['en', 'pt']),
             // ChronosPlugin::make(),
             DeliaPlugin::make(),
             BoringAvatarPlugin::make(),
@@ -407,6 +408,7 @@ class AdminPanelProvider extends PanelProvider
             DynamicDashboardPlugin::make(),
             // RheaPlugin::make(),
             HermesPlugin::make(),
+            //PontusPlugin::make(),
         ];
     }
 }
