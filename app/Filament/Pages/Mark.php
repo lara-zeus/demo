@@ -64,8 +64,7 @@ class Mark extends Page
                     ])
                     ->colors([
                         true => 'violet',
-                    ])
-                    ,
+                    ]),
 
                 MarkForm::make('user_rate')
                     ->default(3)
