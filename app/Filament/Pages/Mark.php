@@ -58,12 +58,14 @@ class Mark extends Page
                 MarkForm::make('user_fav')
                     ->helperText('or user Favorite?')
                     ->label('Favorite')
-                    ->bookMark()
+                    ->colors([
+                        true => 'violet',
+                    ])
                     ->icons([
                         true => 'heroicon-o-star',
                     ])
-                    ->colors([
-                        true => 'violet',
+                    ->selectedIcons([
+                        true => 'heroicon-s-star',
                     ]),
 
                 MarkForm::make('user_rate')
