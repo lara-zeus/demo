@@ -18,6 +18,7 @@
 @source '../../vendor/lara-zeus/hermes/resources/views/**/*.blade.php';
 @source '../../vendor/lara-zeus/bolt-pro/resources/views/**/*.blade.php';
 @source '../../vendor/lara-zeus/matrix-choice/resources/views/**/*.blade.php';
+@source '../../vendor/lara-zeus/mark/resources/views/**/*.blade.php';
 @source '../../vendor/lara-zeus/accordion/resources/views/**/*.blade.php';
 @source '../../vendor/lara-zeus/list-group/resources/views/**/*.blade.php';
 @source '../../vendor/lara-zeus/helen/src/Filament/Resources/LinksResource.php';

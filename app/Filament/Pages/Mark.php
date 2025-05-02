@@ -4,16 +4,17 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
+use BackedEnum;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Form;
 use Filament\Pages\Page;
+use Filament\Schemas\Schema;
 use LaraZeus\Mark\Forms\Components\Mark as MarkForm;
 
 class Mark extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-star-half-filled';
+    protected static string|BackedEnum|null $navigationIcon = 'tabler-star-half-filled';
 
     protected string $view = 'filament.pages.mark';
 
@@ -27,10 +28,13 @@ class Mark extends Page
 
     public function mount(): void
     {
-        $this->form->fill();
+        $this->form->fill([
+            'user_rate' => 3,
+            'name' => 'Zeus',
+        ]);
     }
 
-    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function form(Schema $schema): Schema
     {
         return $schema
             ->statePath('data')
@@ -38,20 +42,38 @@ class Mark extends Page
                 TextInput::make('name'),
                 MarkForm::make('likes')
                     ->label('Like')
+                    ->colors([
+                        true => 'green',
+                        false => 'secondary',
+                    ])
                     ->like(),
                 MarkForm::make('user_fav')
                     ->helperText('user fav')
                     ->label('Bookmark')
+                    ->colors([
+                        true => 'info',
+                    ])
                     ->bookMark(),
                 MarkForm::make('user_rate')
+                    ->default(3)
+                    ->colors([
+                        1 => 'yellow',
+                        2 => 'yellow',
+                        3 => 'yellow',
+                        4 => 'yellow',
+                        5 => 'yellow',
+                    ])
                     ->label('Rating')
                     ->rating(),
-
 
                 MarkForm::make('user_mode')
                     ->icons([
                         true => 'tabler-mood-smile',
                         false => 'tabler-mood-sad',
+                    ])
+                    ->colors([
+                        true => 'sky',
+                        false => 'rose',
                     ])
                     ->selectedIcons([
                         true => 'tabler-mood-smile-filled',
