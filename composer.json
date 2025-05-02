@@ -57,7 +57,7 @@
     "lara-zeus/installer": "^1.0",
     "lara-zeus/laravel-seo": "^1.0",
     "lara-zeus/list-group": "^1.0",
-    "lara-zeus/mark": "*",
+    "lara-zeus/mark": "^1.0",
     "lara-zeus/matrix-choice": "^3.2",
     "lara-zeus/pontus": "^1.0",
     "lara-zeus/popover": "^1.0",
@@ -201,10 +201,6 @@
     {
       "type": "github",
       "url": "git@github.com:lara-zeus/chronos.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/mark.git"
     },
     {
       "type": "github",

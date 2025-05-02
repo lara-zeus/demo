@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "62655c86641ce06425cc3ec4481f5c04",
+    "content-hash": "3fdca662fc27ef9d7be145e5e121630b",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -7670,11 +7670,17 @@
         },
         {
             "name": "lara-zeus/mark",
-            "version": "dev-main",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/mark.git",
+                "reference": "3cd251e289b3acc5646b337f680c5b4f87c6a455"
+            },
             "dist": {
-                "type": "path",
-                "url": "../p/mark",
-                "reference": "8dd89009f1a1f3476d0059849407dae2e2d494f3"
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/mark/zipball/3cd251e289b3acc5646b337f680c5b4f87c6a455",
+                "reference": "3cd251e289b3acc5646b337f680c5b4f87c6a455",
+                "shasum": ""
             },
             "require": {
                 "filament/filament": "^3.2",
@@ -7696,12 +7702,12 @@
             "type": "library",
             "extra": {
                 "laravel": {
-                    "providers": [
-                        "LaraZeus\\Mark\\MarkServiceProvider"
-                    ],
                     "aliases": {
                         "Mark": "LaraZeus\\Mark\\Facades\\Mark"
-                    }
+                    },
+                    "providers": [
+                        "LaraZeus\\Mark\\MarkServiceProvider"
+                    ]
                 }
             },
             "autoload": {
@@ -7709,32 +7715,7 @@
                     "LaraZeus\\Mark\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "LaraZeus\\Mark\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "post-autoload-dump": [
-                    "@php ./vendor/bin/testbench package:discover --ansi"
-                ],
-                "analyse": [
-                    "vendor/bin/phpstan analyse"
-                ],
-                "test": [
-                    "vendor/bin/pest"
-                ],
-                "test-coverage": [
-                    "vendor/bin/pest --coverage"
-                ],
-                "format": [
-                    "vendor/bin/pint"
-                ],
-                "lint": [
-                    "@format",
-                    "@analyse"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -7756,9 +7737,13 @@
                 "issues": "https://github.com/lara-zeus/mark/issues",
                 "source": "https://github.com/lara-zeus/mark"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "funding": [
+                {
+                    "url": "https://github.com/lara-zeus",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-05-02T21:40:27+00:00"
         },
         {
             "name": "lara-zeus/matrix-choice",
