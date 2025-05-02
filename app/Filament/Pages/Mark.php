@@ -47,13 +47,26 @@ class Mark extends Page
                         false => 'secondary',
                     ])
                     ->like(),
-                MarkForm::make('user_fav')
-                    ->helperText('user fav')
+                MarkForm::make('user_bookmark')
+                    ->helperText('user Bookmark?')
                     ->label('Bookmark')
                     ->colors([
                         true => 'info',
                     ])
                     ->bookMark(),
+
+                MarkForm::make('user_fav')
+                    ->helperText('or user Favorite?')
+                    ->label('Favorite')
+                    ->bookMark()
+                    ->icons([
+                        true => 'heroicon-o-star',
+                    ])
+                    ->colors([
+                        true => 'violet',
+                    ])
+                    ,
+
                 MarkForm::make('user_rate')
                     ->default(3)
                     ->colors([
