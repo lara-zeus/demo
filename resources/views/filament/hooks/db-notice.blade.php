@@ -8,8 +8,8 @@
     @svg('heroicon-o-exclamation-triangle','w-10 h-10 text-amber-500 dark:text-amber-500')
 
     <div class="w-full">
-        <pre><x-torchlight-code language='php'>
+        <pre>
         DB::migrate("fresh")->weekly()->days([0,2,4,6])->at("4:04")
-        </x-torchlight-code></pre>
+        </pre>
     </div>
 </div>

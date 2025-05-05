@@ -25,7 +25,6 @@ class Kernel extends HttpKernel
         \Illuminate\Http\Middleware\HandleCors::class,
         SetLang::class,
         SetTheme::class,
-        \Torchlight\Middleware\RenderTorchlight::class,
     ];
 
     /**

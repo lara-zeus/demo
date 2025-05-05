@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0cefe383fcbaa64a468a46463c322133",
+    "content-hash": "de0d71ccbf4cfbe855b961245680160a",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -4340,7 +4340,7 @@
         },
         {
             "name": "lara-zeus/delia",
-            "version": "2.x-dev",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/delia",
@@ -4956,7 +4956,7 @@
         },
         {
             "name": "lara-zeus/inline-chart",
-            "version": "2.x-dev",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/inline-chart",
@@ -5582,7 +5582,7 @@
         },
         {
             "name": "lara-zeus/qr",
-            "version": "2.x-dev",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/qr",
@@ -6004,19 +6004,19 @@
             "dist": {
                 "type": "path",
                 "url": "../p/spatie-translatable",
-                "reference": "8cecb1891fb189bc8da9be849209340f392abce9"
+                "reference": "261b36f765ee6c16df96b2fe078ea4b1985e4cbd"
             },
             "require": {
                 "ext-intl": "*",
-                "filament/filament": "*",
+                "filament/filament": "^v4.0.0-alpha4",
                 "php": "^8.1",
                 "spatie/laravel-translatable": "^6.0"
             },
             "require-dev": {
-                "larastan/larastan": "^2.0",
+                "larastan/larastan": "^3.4",
                 "laravel/pint": "^1.0",
-                "orchestra/testbench": "^8.0",
-                "phpstan/extension-installer": "^1.1",
+                "orchestra/testbench": "^10.2",
+                "phpstan/extension-installer": "^1.4",
                 "roave/security-advisories": "dev-latest"
             },
             "type": "library",
@@ -7104,16 +7104,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "2.6.2",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "06c3b0bf2540338094575612f4a1778d0d2d5e94"
+                "reference": "6fbb36d44824ed4091adbcf4c7d4a3923cdb3405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/06c3b0bf2540338094575612f4a1778d0d2d5e94",
-                "reference": "06c3b0bf2540338094575612f4a1778d0d2d5e94",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/6fbb36d44824ed4091adbcf4c7d4a3923cdb3405",
+                "reference": "6fbb36d44824ed4091adbcf4c7d4a3923cdb3405",
                 "shasum": ""
             },
             "require": {
@@ -7150,7 +7150,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.7-dev"
+                    "dev-main": "2.8-dev"
                 }
             },
             "autoload": {
@@ -7207,7 +7207,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-04-18T21:09:27+00:00"
+            "time": "2025-05-05T12:20:28+00:00"
         },
         {
             "name": "league/config",
@@ -14539,74 +14539,6 @@
             "time": "2025-04-02T01:47:48+00:00"
         },
         {
-            "name": "torchlight/torchlight-laravel",
-            "version": "dev-l12-compatibility",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel-shift/torchlight-laravel.git",
-                "reference": "79296de900a15169ae19375d58935bf7dcc96b4a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel-shift/torchlight-laravel/zipball/79296de900a15169ae19375d58935bf7dcc96b4a",
-                "reference": "79296de900a15169ae19375d58935bf7dcc96b4a",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "^7.2",
-                "illuminate/cache": "^8.0|^9.0|^10.0|^11.0|^12.0",
-                "illuminate/console": "^8.0|^9.0|^10.0|^11.0|^12.0",
-                "illuminate/http": "^8.0|^9.0|^10.0|^11.0|^12.0",
-                "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
-                "illuminate/view": "^8.0|^9.0|^10.0|^11.0|^12.0",
-                "php": "^7.3|^8.0",
-                "ramsey/uuid": "^3.7|^4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.3.3",
-                "orchestra/testbench": "^5.0|^6.0|^7.0|^9.0|^10.0",
-                "phpunit/phpunit": "^8.5.23|^9.5|^10.5|^11.5.3"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Torchlight\\TorchlightServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Torchlight\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Torchlight\\Tests\\": "tests/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aaron Francis",
-                    "email": "aaron@hammerstone.dev"
-                }
-            ],
-            "description": "A Laravel Client for Torchlight, the syntax highlighting API.",
-            "homepage": "https://torchlight.dev",
-            "keywords": [
-                "code highlighting",
-                "laravel",
-                "syntax highlighting"
-            ],
-            "support": {
-                "source": "https://github.com/laravel-shift/torchlight-laravel/tree/l12-compatibility"
-            },
-            "time": "2025-03-12T21:54:01+00:00"
-        },
-        {
             "name": "ueberdosis/tiptap-php",
             "version": "1.4.0",
             "source": {
@@ -16087,21 +16019,21 @@
         },
         {
             "name": "rector/rector",
-            "version": "2.0.14",
+            "version": "2.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "63923bc9383c1212476c41d8cebf58a425e6f98d"
+                "reference": "abbbf32474a67e242d26bffc098a712a05b3d32a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/63923bc9383c1212476c41d8cebf58a425e6f98d",
-                "reference": "63923bc9383c1212476c41d8cebf58a425e6f98d",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/abbbf32474a67e242d26bffc098a712a05b3d32a",
+                "reference": "abbbf32474a67e242d26bffc098a712a05b3d32a",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
-                "phpstan/phpstan": "^2.1.12"
+                "phpstan/phpstan": "^2.1.14"
             },
             "conflict": {
                 "rector/rector-doctrine": "*",
@@ -16134,7 +16066,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.0.14"
+                "source": "https://github.com/rectorphp/rector/tree/2.0.15"
             },
             "funding": [
                 {
@@ -16142,7 +16074,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-28T00:03:14+00:00"
+            "time": "2025-05-05T10:00:41+00:00"
         },
         {
             "name": "roave/security-advisories",
@@ -16150,12 +16082,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "45b01f4e60c350f72a8697056674e449e053935a"
+                "reference": "21b49080b0831be9a9a042da8f5042d4ae84e5df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/45b01f4e60c350f72a8697056674e449e053935a",
-                "reference": "45b01f4e60c350f72a8697056674e449e053935a",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/21b49080b0831be9a9a042da8f5042d4ae84e5df",
+                "reference": "21b49080b0831be9a9a042da8f5042d4ae84e5df",
                 "shasum": ""
             },
             "conflict": {
@@ -16628,9 +16560,9 @@
                 "nzo/url-encryptor-bundle": ">=4,<4.3.2|>=5,<5.0.1",
                 "october/backend": "<1.1.2",
                 "october/cms": "<1.0.469|==1.0.469|==1.0.471|==1.1.1",
-                "october/october": "<=3.6.4",
+                "october/october": "<3.7.5",
                 "october/rain": "<1.0.472|>=1.1,<1.1.2",
-                "october/system": "<1.0.476|>=1.1,<1.1.12|>=2,<2.2.34|>=3,<3.5.15",
+                "october/system": "<3.7.5",
                 "oliverklee/phpunit": "<3.5.15",
                 "omeka/omeka-s": "<4.0.3",
                 "onelogin/php-saml": "<2.10.4",
@@ -16758,8 +16690,8 @@
                 "serluck/phpwhois": "<=4.2.6",
                 "sfroemken/url_redirect": "<=1.2.1",
                 "sheng/yiicms": "<1.2.1",
-                "shopware/core": "<6.5.8.17-dev|>=6.6,<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
-                "shopware/platform": "<6.5.8.17-dev|>=6.6,<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
+                "shopware/core": "<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
+                "shopware/platform": "<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
                 "shopware/production": "<=6.3.5.2",
                 "shopware/shopware": "<=5.7.17",
                 "shopware/storefront": "<=6.4.8.1|>=6.5.8,<6.5.8.7-dev",
@@ -16802,7 +16734,7 @@
                 "slim/slim": "<2.6",
                 "slub/slub-events": "<3.0.3",
                 "smarty/smarty": "<4.5.3|>=5,<5.1.1",
-                "snipe/snipe-it": "<=7.0.13",
+                "snipe/snipe-it": "<8.1",
                 "socalnick/scn-social-auth": "<1.15.2",
                 "socialiteproviders/steam": "<1.1",
                 "spatie/browsershot": "<5.0.5",
@@ -17072,7 +17004,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-01T20:05:59+00:00"
+            "time": "2025-05-05T20:05:35+00:00"
         },
         {
             "name": "spatie/backtrace",
@@ -17458,8 +17390,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "filament/filament": 15,
         "rinvex/laravel-subscriptions": 20,
-        "torchlight/torchlight-laravel": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,

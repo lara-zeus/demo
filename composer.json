@@ -10,8 +10,7 @@
   "require": {
     "php": "^8.3",
     "fakerphp/faker": "^1.23",
-    "filament/filament": "^4.0",
-    "lara-zeus/spatie-translatable": "*",
+    "filament/filament": "^4.0@alpha",
     "graham-campbell/github": "^13.0",
     "guzzlehttp/guzzle": "^7.5",
     "jeremykenedy/laravel-packagist": "^1.0",
@@ -45,6 +44,7 @@
     "lara-zeus/replies": "*",
     "lara-zeus/simple-qrcode": "*",
     "lara-zeus/sky": "*",
+    "lara-zeus/spatie-translatable": "*",
     "lara-zeus/tartarus": "*",
     "lara-zeus/thunder": "*",
     "lara-zeus/tiles": "*",
@@ -54,10 +54,8 @@
     "laravel/framework": "^12.0",
     "laravel/prompts": "^0.3",
     "laravel/sanctum": "^4.0",
-    "sentry/sentry-laravel": "^4.3",
-    "torchlight/engine": "^0.1.0",
     "rinvex/laravel-subscriptions": "dev-laravel-12",
-    "torchlight/torchlight-laravel": "dev-l12-compatibility"
+    "sentry/sentry-laravel": "^4.3"
   },
   "require-dev": {
     "barryvdh/laravel-debugbar": "^3.9",
@@ -114,10 +112,6 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/laravel-shift/torchlight-laravel.git"
-    },
     {
       "type": "github",
       "url": "git@github.com:atmonshi/filament-code-editor.git"
