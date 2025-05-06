@@ -4690,7 +4690,7 @@
         },
         {
             "name": "lara-zeus/helen",
-            "version": "2.x-dev",
+            "version": "3.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/helen",
@@ -4956,7 +4956,7 @@
         },
         {
             "name": "lara-zeus/inline-chart",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/inline-chart",
@@ -5238,11 +5238,11 @@
             "dist": {
                 "type": "path",
                 "url": "../p/mark",
-                "reference": "18e22628e1c549908c22965af3db552406f1de55"
+                "reference": "cff6218523e275ec139ec491911f156d543e2cef"
             },
             "require": {
                 "filament/filament": "^4.0",
-                "illuminate/support": "^11.28|^12.0",
+                "illuminate/contracts": "^11.28|^12.0",
                 "php": "^8.2",
                 "spatie/laravel-package-tools": "^1.18"
             },
@@ -5411,7 +5411,7 @@
         },
         {
             "name": "lara-zeus/pontus",
-            "version": "2.x-dev",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/pontus",
@@ -5582,7 +5582,7 @@
         },
         {
             "name": "lara-zeus/qr",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/qr",
