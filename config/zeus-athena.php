@@ -32,7 +32,7 @@ return [
         'Request' => \LaraZeus\Athena\Models\Request::class,
         'Service' => \LaraZeus\Athena\Models\Service::class,
         'TimeLock' => \LaraZeus\Athena\Models\TimeLock::class,
-        'RequestStatus' => \LaraZeus\Athena\Models\RequestStatus::class,
+        'RequestStatus' => \LaraZeus\Athena\Enums\RequestStatus::class,
         'User' => config('auth.providers.users.model'),
     ],
 
