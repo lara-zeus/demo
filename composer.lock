@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de0d71ccbf4cfbe855b961245680160a",
+    "content-hash": "28f71fa1824d45cf50a619975746a729",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -1514,7 +1514,7 @@
         },
         {
             "name": "filament/actions",
-            "version": "v4.0.0-alpha4",
+            "version": "v4.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/actions.git",
@@ -1563,7 +1563,7 @@
         },
         {
             "name": "filament/filament",
-            "version": "v4.0.0-alpha4",
+            "version": "v4.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/panels.git",
@@ -1620,7 +1620,7 @@
         },
         {
             "name": "filament/forms",
-            "version": "v4.0.0-alpha4",
+            "version": "v4.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/forms.git",
@@ -1670,7 +1670,7 @@
         },
         {
             "name": "filament/infolists",
-            "version": "v4.0.0-alpha4",
+            "version": "v4.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/infolists.git",
@@ -1715,7 +1715,7 @@
         },
         {
             "name": "filament/notifications",
-            "version": "v4.0.0-alpha4",
+            "version": "v4.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/notifications.git",
@@ -1762,7 +1762,7 @@
         },
         {
             "name": "filament/schemas",
-            "version": "v4.0.0-alpha4",
+            "version": "v4.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/schemas.git",
@@ -1881,7 +1881,7 @@
         },
         {
             "name": "filament/support",
-            "version": "v4.0.0-alpha4",
+            "version": "v4.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/support.git",
@@ -1939,7 +1939,7 @@
         },
         {
             "name": "filament/tables",
-            "version": "v4.0.0-alpha4",
+            "version": "v4.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/tables.git",
@@ -1984,7 +1984,7 @@
         },
         {
             "name": "filament/widgets",
-            "version": "v4.0.0-alpha4",
+            "version": "v4.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/widgets.git",
@@ -3744,7 +3744,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/athena",
-                "reference": "78c82313cae60c59d7a7a1fea7d8e1d244c70f7c"
+                "reference": "3709ce2aafbb32932028d7bb2934ad5edd2a526d"
             },
             "require": {
                 "blade-ui-kit/blade-ui-kit": "^0.7",
@@ -5238,11 +5238,10 @@
             "dist": {
                 "type": "path",
                 "url": "../p/mark",
-                "reference": "cff6218523e275ec139ec491911f156d543e2cef"
+                "reference": "f5b21af73317a9606a372209ba30b5065d3f3645"
             },
             "require": {
                 "filament/filament": "^4.0",
-                "illuminate/contracts": "^11.28|^12.0",
                 "php": "^8.2",
                 "spatie/laravel-package-tools": "^1.18"
             },
@@ -5411,7 +5410,7 @@
         },
         {
             "name": "lara-zeus/pontus",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/pontus",
@@ -5742,7 +5741,7 @@
         },
         {
             "name": "lara-zeus/replies",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/replies",
@@ -6384,7 +6383,7 @@
         },
         {
             "name": "lara-zeus/torch-filament",
-            "version": "2.x-dev",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/torch-filament",
@@ -15140,7 +15139,7 @@
         },
         {
             "name": "filament/upgrade",
-            "version": "v4.0.0-alpha4",
+            "version": "v4.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/upgrade.git",
@@ -17008,16 +17007,16 @@
         },
         {
             "name": "spatie/backtrace",
-            "version": "1.7.2",
+            "version": "1.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/backtrace.git",
-                "reference": "9807de6b8fecfaa5b3d10650985f0348b02862b2"
+                "reference": "80ae5fabe2a1e3bc7df5c7ca5d91b094dc314b20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/backtrace/zipball/9807de6b8fecfaa5b3d10650985f0348b02862b2",
-                "reference": "9807de6b8fecfaa5b3d10650985f0348b02862b2",
+                "url": "https://api.github.com/repos/spatie/backtrace/zipball/80ae5fabe2a1e3bc7df5c7ca5d91b094dc314b20",
+                "reference": "80ae5fabe2a1e3bc7df5c7ca5d91b094dc314b20",
                 "shasum": ""
             },
             "require": {
@@ -17055,7 +17054,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/backtrace/tree/1.7.2"
+                "source": "https://github.com/spatie/backtrace/tree/1.7.3"
             },
             "funding": [
                 {
@@ -17067,7 +17066,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2025-04-28T14:55:53+00:00"
+            "time": "2025-05-07T07:20:00+00:00"
         },
         {
             "name": "spatie/error-solutions",
@@ -17390,7 +17389,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "filament/filament": 15,
         "rinvex/laravel-subscriptions": 20,
         "roave/security-advisories": 20
     },

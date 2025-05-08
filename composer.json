@@ -10,7 +10,7 @@
   "require": {
     "php": "^8.3",
     "fakerphp/faker": "^1.23",
-    "filament/filament": "^4.0@alpha",
+    "filament/filament": "^4.0",
     "graham-campbell/github": "^13.0",
     "guzzlehttp/guzzle": "^7.5",
     "jeremykenedy/laravel-packagist": "^1.0",
@@ -114,19 +114,7 @@
   "repositories": [
     {
       "type": "github",
-      "url": "git@github.com:atmonshi/filament-code-editor.git"
-    },
-    {
-      "type": "github",
       "url": "https://github.com/still-code/laravel-subscriptions"
-    },
-    {
-      "type": "composer",
-      "url": "https://filament-filter-sets.composer.sh"
-    },
-    {
-      "type": "github",
-      "url": "https://github.com/awcodes/richie"
     },
     {
       "type": "path",
