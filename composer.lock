@@ -4523,7 +4523,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/filament-plugin-tools",
-                "reference": "9f5e0a044eac81fded682ac7afcafc0abe19744b"
+                "reference": "166cae5cea4a4eb977c39cafcac95ef9c725a306"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -5238,7 +5238,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/mark",
-                "reference": "e835c1f9ad3a0561e98d21d9da74529e07b250ab"
+                "reference": "6eef288138e4728a45eedfd753a8220ddf998a89"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -5581,7 +5581,7 @@
         },
         {
             "name": "lara-zeus/qr",
-            "version": "2.x-dev",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/qr",
@@ -6463,7 +6463,7 @@
         },
         {
             "name": "lara-zeus/translatable-pro",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/translatable-pro",
@@ -10589,16 +10589,16 @@
         },
         {
             "name": "sentry/sentry",
-            "version": "4.11.0",
+            "version": "4.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-php.git",
-                "reference": "ebf67deb9902b6da58a4b3383cbd12fed3f4f555"
+                "reference": "53dc0bcb6a667cac5b760b46f98d5380e63e02ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/ebf67deb9902b6da58a4b3383cbd12fed3f4f555",
-                "reference": "ebf67deb9902b6da58a4b3383cbd12fed3f4f555",
+                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/53dc0bcb6a667cac5b760b46f98d5380e63e02ca",
+                "reference": "53dc0bcb6a667cac5b760b46f98d5380e63e02ca",
                 "shasum": ""
             },
             "require": {
@@ -10662,7 +10662,7 @@
             ],
             "support": {
                 "issues": "https://github.com/getsentry/sentry-php/issues",
-                "source": "https://github.com/getsentry/sentry-php/tree/4.11.0"
+                "source": "https://github.com/getsentry/sentry-php/tree/4.11.1"
             },
             "funding": [
                 {
@@ -10674,7 +10674,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-04-14T09:04:23+00:00"
+            "time": "2025-05-12T11:30:33+00:00"
         },
         {
             "name": "sentry/sentry-laravel",
@@ -16018,16 +16018,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "2.0.15",
+            "version": "2.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "abbbf32474a67e242d26bffc098a712a05b3d32a"
+                "reference": "f1366d1f8c7490541c8f7af6e5c7cef7cca1b5a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/abbbf32474a67e242d26bffc098a712a05b3d32a",
-                "reference": "abbbf32474a67e242d26bffc098a712a05b3d32a",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/f1366d1f8c7490541c8f7af6e5c7cef7cca1b5a2",
+                "reference": "f1366d1f8c7490541c8f7af6e5c7cef7cca1b5a2",
                 "shasum": ""
             },
             "require": {
@@ -16065,7 +16065,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.0.15"
+                "source": "https://github.com/rectorphp/rector/tree/2.0.16"
             },
             "funding": [
                 {
@@ -16073,7 +16073,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-05T10:00:41+00:00"
+            "time": "2025-05-12T16:37:16+00:00"
         },
         {
             "name": "roave/security-advisories",
@@ -16081,12 +16081,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "59be420c5cdc0c3c9cdae31804d32fefb515a918"
+                "reference": "1027d9bda31e8db3234e2cb9ca75e97b63b74bf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/59be420c5cdc0c3c9cdae31804d32fefb515a918",
-                "reference": "59be420c5cdc0c3c9cdae31804d32fefb515a918",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/1027d9bda31e8db3234e2cb9ca75e97b63b74bf0",
+                "reference": "1027d9bda31e8db3234e2cb9ca75e97b63b74bf0",
                 "shasum": ""
             },
             "conflict": {
@@ -16690,8 +16690,8 @@
                 "serluck/phpwhois": "<=4.2.6",
                 "sfroemken/url_redirect": "<=1.2.1",
                 "sheng/yiicms": "<1.2.1",
-                "shopware/core": "<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
-                "shopware/platform": "<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
+                "shopware/core": "<6.5.8.18-dev|>=6.6,<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
+                "shopware/platform": "<6.5.8.18-dev|>=6.6,<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
                 "shopware/production": "<=6.3.5.2",
                 "shopware/shopware": "<=5.7.17",
                 "shopware/storefront": "<=6.4.8.1|>=6.5.8,<6.5.8.7-dev",
@@ -17004,7 +17004,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-08T20:06:04+00:00"
+            "time": "2025-05-12T23:05:17+00:00"
         },
         {
             "name": "spatie/backtrace",
