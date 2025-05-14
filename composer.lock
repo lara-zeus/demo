@@ -1484,20 +1484,21 @@
         },
         {
             "name": "bezhansalleh/filament-panel-switch",
-            "version": "1.0.7",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bezhanSalleh/filament-panel-switch.git",
-                "reference": "ff16445ca70551954bd1c6d4a257f13c6f30af47"
+                "reference": "01c5a964b7610766b123dbf83ae4d240025aa7c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bezhanSalleh/filament-panel-switch/zipball/ff16445ca70551954bd1c6d4a257f13c6f30af47",
-                "reference": "ff16445ca70551954bd1c6d4a257f13c6f30af47",
+                "url": "https://api.github.com/repos/bezhanSalleh/filament-panel-switch/zipball/01c5a964b7610766b123dbf83ae4d240025aa7c4",
+                "reference": "01c5a964b7610766b123dbf83ae4d240025aa7c4",
                 "shasum": ""
             },
             "require": {
                 "filament/filament": "^3.0",
+                "league/uri": "^7.0",
                 "php": "^8.1",
                 "spatie/laravel-package-tools": "^1.15.0"
             },
@@ -1558,7 +1559,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-10T18:11:49+00:00"
+            "time": "2025-05-12T15:19:18+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -2039,16 +2040,16 @@
         },
         {
             "name": "codewithdennis/filament-select-tree",
-            "version": "v3.1.51",
+            "version": "v3.1.52",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeWithDennis/filament-select-tree.git",
-                "reference": "64f99b5a32ba0e91f08359e37ec952d44548b2df"
+                "reference": "75dafd2c851c39a887d82db22d8571f60afe7ee6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/64f99b5a32ba0e91f08359e37ec952d44548b2df",
-                "reference": "64f99b5a32ba0e91f08359e37ec952d44548b2df",
+                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/75dafd2c851c39a887d82db22d8571f60afe7ee6",
+                "reference": "75dafd2c851c39a887d82db22d8571f60afe7ee6",
                 "shasum": ""
             },
             "require": {
@@ -2106,7 +2107,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-12T17:12:29+00:00"
+            "time": "2025-05-12T04:27:03+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -6881,16 +6882,16 @@
         },
         {
             "name": "lara-zeus/filament-plugin-tools",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/filament-plugin-tools.git",
-                "reference": "00b19bbbd62dfd200c80408e192e4b749299b438"
+                "reference": "7dc7027d23719a48b7af898f7f99b69c30d6532b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/filament-plugin-tools/zipball/00b19bbbd62dfd200c80408e192e4b749299b438",
-                "reference": "00b19bbbd62dfd200c80408e192e4b749299b438",
+                "url": "https://api.github.com/repos/lara-zeus/filament-plugin-tools/zipball/7dc7027d23719a48b7af898f7f99b69c30d6532b",
+                "reference": "7dc7027d23719a48b7af898f7f99b69c30d6532b",
                 "shasum": ""
             },
             "require": {
@@ -6955,7 +6956,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-03T18:38:17+00:00"
+            "time": "2025-05-11T20:12:50+00:00"
         },
         {
             "name": "lara-zeus/hades",
@@ -7670,16 +7671,16 @@
         },
         {
             "name": "lara-zeus/mark",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/mark.git",
-                "reference": "3cd251e289b3acc5646b337f680c5b4f87c6a455"
+                "reference": "9f05fbc6e016c2187a8fe4bc0f06f647fe01a963"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/mark/zipball/3cd251e289b3acc5646b337f680c5b4f87c6a455",
-                "reference": "3cd251e289b3acc5646b337f680c5b4f87c6a455",
+                "url": "https://api.github.com/repos/lara-zeus/mark/zipball/9f05fbc6e016c2187a8fe4bc0f06f647fe01a963",
+                "reference": "9f05fbc6e016c2187a8fe4bc0f06f647fe01a963",
                 "shasum": ""
             },
             "require": {
@@ -7743,7 +7744,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-02T21:40:27+00:00"
+            "time": "2025-05-09T15:35:24+00:00"
         },
         {
             "name": "lara-zeus/matrix-choice",
@@ -8814,12 +8815,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/translatable-pro.git",
-                "reference": "00b49b5ee5185edca00414c2dab99c6543520d09"
+                "reference": "ce6b7fd5cee1dd861c9ea54217e8bf0addbb3196"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/translatable-pro/zipball/00b49b5ee5185edca00414c2dab99c6543520d09",
-                "reference": "00b49b5ee5185edca00414c2dab99c6543520d09",
+                "url": "https://api.github.com/repos/lara-zeus/translatable-pro/zipball/ce6b7fd5cee1dd861c9ea54217e8bf0addbb3196",
+                "reference": "ce6b7fd5cee1dd861c9ea54217e8bf0addbb3196",
                 "shasum": ""
             },
             "require": {
@@ -8904,7 +8905,7 @@
                     "url": "https://www.buymeacoffee.com/larazeus"
                 }
             ],
-            "time": "2025-03-08T01:22:34+00:00"
+            "time": "2025-05-12T09:55:23+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -8986,16 +8987,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.13.0",
+            "version": "v12.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "52b588bcd8efc6d01bc1493d2d67848f8065f269"
+                "reference": "84b142958d1638a7e89de94ce75c2821c601d3d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/52b588bcd8efc6d01bc1493d2d67848f8065f269",
-                "reference": "52b588bcd8efc6d01bc1493d2d67848f8065f269",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/84b142958d1638a7e89de94ce75c2821c601d3d7",
+                "reference": "84b142958d1638a7e89de94ce75c2821c601d3d7",
                 "shasum": ""
             },
             "require": {
@@ -9197,7 +9198,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-05-07T17:29:01+00:00"
+            "time": "2025-05-13T17:50:51+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -10615,16 +10616,16 @@
         },
         {
             "name": "malzariey/filament-daterangepicker-filter",
-            "version": "3.3.1",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/malzariey/filament-daterangepicker-filter.git",
-                "reference": "d0632c08c57e83087e7482de51bb770a8d615118"
+                "reference": "9705a49703bead5a0177bb7b7d9bb14aeeb30619"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/malzariey/filament-daterangepicker-filter/zipball/d0632c08c57e83087e7482de51bb770a8d615118",
-                "reference": "d0632c08c57e83087e7482de51bb770a8d615118",
+                "url": "https://api.github.com/repos/malzariey/filament-daterangepicker-filter/zipball/9705a49703bead5a0177bb7b7d9bb14aeeb30619",
+                "reference": "9705a49703bead5a0177bb7b7d9bb14aeeb30619",
                 "shasum": ""
             },
             "require": {
@@ -10669,7 +10670,7 @@
             ],
             "support": {
                 "issues": "https://github.com/malzariey/filament-daterangepicker-filter/issues",
-                "source": "https://github.com/malzariey/filament-daterangepicker-filter/tree/3.3.1"
+                "source": "https://github.com/malzariey/filament-daterangepicker-filter/tree/3.4.1"
             },
             "funding": [
                 {
@@ -10677,7 +10678,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-04T14:26:34+00:00"
+            "time": "2025-05-13T13:48:22+00:00"
         },
         {
             "name": "markbaker/complex",
@@ -14232,16 +14233,16 @@
         },
         {
             "name": "sentry/sentry",
-            "version": "4.11.0",
+            "version": "4.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-php.git",
-                "reference": "ebf67deb9902b6da58a4b3383cbd12fed3f4f555"
+                "reference": "53dc0bcb6a667cac5b760b46f98d5380e63e02ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/ebf67deb9902b6da58a4b3383cbd12fed3f4f555",
-                "reference": "ebf67deb9902b6da58a4b3383cbd12fed3f4f555",
+                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/53dc0bcb6a667cac5b760b46f98d5380e63e02ca",
+                "reference": "53dc0bcb6a667cac5b760b46f98d5380e63e02ca",
                 "shasum": ""
             },
             "require": {
@@ -14305,7 +14306,7 @@
             ],
             "support": {
                 "issues": "https://github.com/getsentry/sentry-php/issues",
-                "source": "https://github.com/getsentry/sentry-php/tree/4.11.0"
+                "source": "https://github.com/getsentry/sentry-php/tree/4.11.1"
             },
             "funding": [
                 {
@@ -14317,7 +14318,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-04-14T09:04:23+00:00"
+            "time": "2025-05-12T11:30:33+00:00"
         },
         {
             "name": "sentry/sentry-laravel",
@@ -14968,16 +14969,16 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "6.17.0",
+            "version": "6.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "02ada8f638b643713fa2fb543384738e27346ddb"
+                "reference": "3c05f04d12275dfbe462c8b4aae3290e586c2dde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/02ada8f638b643713fa2fb543384738e27346ddb",
-                "reference": "02ada8f638b643713fa2fb543384738e27346ddb",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/3c05f04d12275dfbe462c8b4aae3290e586c2dde",
+                "reference": "3c05f04d12275dfbe462c8b4aae3290e586c2dde",
                 "shasum": ""
             },
             "require": {
@@ -15039,7 +15040,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-permission/issues",
-                "source": "https://github.com/spatie/laravel-permission/tree/6.17.0"
+                "source": "https://github.com/spatie/laravel-permission/tree/6.18.0"
             },
             "funding": [
                 {
@@ -15047,7 +15048,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-08T15:06:14+00:00"
+            "time": "2025-05-14T03:32:23+00:00"
         },
         {
             "name": "spatie/laravel-query-builder",
@@ -20087,16 +20088,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.14",
+            "version": "2.1.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "8f2e03099cac24ff3b379864d171c5acbfc6b9a2"
+                "reference": "402d11c1aa40ae2e1c3a512e6a4edb957527b20b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/8f2e03099cac24ff3b379864d171c5acbfc6b9a2",
-                "reference": "8f2e03099cac24ff3b379864d171c5acbfc6b9a2",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/402d11c1aa40ae2e1c3a512e6a4edb957527b20b",
+                "reference": "402d11c1aa40ae2e1c3a512e6a4edb957527b20b",
                 "shasum": ""
             },
             "require": {
@@ -20141,25 +20142,25 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-02T15:32:28+00:00"
+            "time": "2025-05-14T11:16:08+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-deprecation-rules.git",
-                "reference": "9d8e7d4e32711715ad78a1fb6ec368df9af01fdf"
+                "reference": "468e02c9176891cc901143da118f09dc9505fc2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-deprecation-rules/zipball/9d8e7d4e32711715ad78a1fb6ec368df9af01fdf",
-                "reference": "9d8e7d4e32711715ad78a1fb6ec368df9af01fdf",
+                "url": "https://api.github.com/repos/phpstan/phpstan-deprecation-rules/zipball/468e02c9176891cc901143da118f09dc9505fc2f",
+                "reference": "468e02c9176891cc901143da118f09dc9505fc2f",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4 || ^8.0",
-                "phpstan/phpstan": "^2.1.13"
+                "phpstan/phpstan": "^2.1.15"
             },
             "require-dev": {
                 "php-parallel-lint/php-parallel-lint": "^1.2",
@@ -20186,9 +20187,9 @@
             "description": "PHPStan rules for detecting usage of deprecated classes, methods, properties, constants and traits.",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-deprecation-rules/issues",
-                "source": "https://github.com/phpstan/phpstan-deprecation-rules/tree/2.0.2"
+                "source": "https://github.com/phpstan/phpstan-deprecation-rules/tree/2.0.3"
             },
-            "time": "2025-04-26T19:59:57+00:00"
+            "time": "2025-05-14T10:56:57+00:00"
         },
         {
             "name": "psy/psysh",
@@ -20275,12 +20276,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "00a1b51fda5bb2305e7ae7ecbfa88cf826856f2c"
+                "reference": "5326c903c04c522c27d45dacfb6a521a448a399a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/00a1b51fda5bb2305e7ae7ecbfa88cf826856f2c",
-                "reference": "00a1b51fda5bb2305e7ae7ecbfa88cf826856f2c",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5326c903c04c522c27d45dacfb6a521a448a399a",
+                "reference": "5326c903c04c522c27d45dacfb6a521a448a399a",
                 "shasum": ""
             },
             "conflict": {
@@ -20298,7 +20299,7 @@
                 "airesvsg/acf-to-rest-api": "<=3.1",
                 "akaunting/akaunting": "<2.1.13",
                 "akeneo/pim-community-dev": "<5.0.119|>=6,<6.0.53",
-                "alextselegidis/easyappointments": "<=1.5",
+                "alextselegidis/easyappointments": "<=1.5.1",
                 "alterphp/easyadmin-extension-bundle": ">=1.2,<1.2.11|>=1.3,<1.3.1",
                 "amazing/media2click": ">=1,<1.3.3",
                 "ameos/ameos_tarteaucitron": "<1.2.23",
@@ -20402,7 +20403,7 @@
                 "contao/managed-edition": "<=1.5",
                 "corveda/phpsandbox": "<1.3.5",
                 "cosenary/instagram": "<=2.3",
-                "craftcms/cms": "<=4.14.14|>=5,<=5.6.16",
+                "craftcms/cms": "<4.15.3|>=5,<5.7.5",
                 "croogo/croogo": "<4",
                 "cuyz/valinor": "<0.12",
                 "czim/file-handling": "<1.5|>=2,<2.3",
@@ -20543,8 +20544,8 @@
                 "geshi/geshi": "<1.0.8.11-dev",
                 "getformwork/formwork": "<1.13.1|>=2.0.0.0-beta1,<2.0.0.0-beta4",
                 "getgrav/grav": "<1.7.46",
-                "getkirby/cms": "<=3.6.6.5|>=3.7,<=3.7.5.4|>=3.8,<=3.8.4.3|>=3.9,<=3.9.8.1|>=3.10,<=3.10.1|>=4,<=4.3",
-                "getkirby/kirby": "<=2.5.12",
+                "getkirby/cms": "<3.9.8.3-dev|>=3.10,<3.10.1.2-dev|>=4,<4.7.1",
+                "getkirby/kirby": "<3.9.8.3-dev|>=3.10,<3.10.1.2-dev|>=4,<4.7.1",
                 "getkirby/panel": "<2.5.14",
                 "getkirby/starterkit": "<=3.7.0.2",
                 "gilacms/gila": "<=1.15.4",
@@ -20635,6 +20636,7 @@
                 "klaviyo/magento2-extension": ">=1,<3",
                 "knplabs/knp-snappy": "<=1.4.2",
                 "kohana/core": "<3.3.3",
+                "koillection/koillection": "<1.6.12",
                 "krayin/laravel-crm": "<=1.3",
                 "kreait/firebase-php": ">=3.2,<3.8.1",
                 "kumbiaphp/kumbiapp": "<=1.1.1",
@@ -20883,8 +20885,8 @@
                 "serluck/phpwhois": "<=4.2.6",
                 "sfroemken/url_redirect": "<=1.2.1",
                 "sheng/yiicms": "<1.2.1",
-                "shopware/core": "<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
-                "shopware/platform": "<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
+                "shopware/core": "<6.5.8.18-dev|>=6.6,<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
+                "shopware/platform": "<6.5.8.18-dev|>=6.6,<6.6.10.3-dev|>=6.7.0.0-RC1-dev,<6.7.0.0-RC2-dev",
                 "shopware/production": "<=6.3.5.2",
                 "shopware/shopware": "<=5.7.17",
                 "shopware/storefront": "<=6.4.8.1|>=6.5.8,<6.5.8.7-dev",
@@ -21197,20 +21199,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-05T21:05:31+00:00"
+            "time": "2025-05-13T20:06:05+00:00"
         },
         {
             "name": "spatie/backtrace",
-            "version": "1.7.3",
+            "version": "1.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/backtrace.git",
-                "reference": "80ae5fabe2a1e3bc7df5c7ca5d91b094dc314b20"
+                "reference": "cd37a49fce7137359ac30ecc44ef3e16404cccbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/backtrace/zipball/80ae5fabe2a1e3bc7df5c7ca5d91b094dc314b20",
-                "reference": "80ae5fabe2a1e3bc7df5c7ca5d91b094dc314b20",
+                "url": "https://api.github.com/repos/spatie/backtrace/zipball/cd37a49fce7137359ac30ecc44ef3e16404cccbe",
+                "reference": "cd37a49fce7137359ac30ecc44ef3e16404cccbe",
                 "shasum": ""
             },
             "require": {
@@ -21248,7 +21250,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/backtrace/tree/1.7.3"
+                "source": "https://github.com/spatie/backtrace/tree/1.7.4"
             },
             "funding": [
                 {
@@ -21260,7 +21262,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2025-05-07T07:20:00+00:00"
+            "time": "2025-05-08T15:41:09+00:00"
         },
         {
             "name": "spatie/error-solutions",
