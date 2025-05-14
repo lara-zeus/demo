@@ -198,7 +198,7 @@ class HermesSeeder extends Seeder
             ]);
     }
 
-    public function getImage(): int
+    /*public function getImage(): int
     {
         $randName = $this->faker->randomNumber();
         $imgUrl = 'https://picsum.photos/1300/700?random=' . $randName;
@@ -230,5 +230,5 @@ class HermesSeeder extends Seeder
                 'size' => $data->filesize() ?? null,
                 'created_at' => now(),
             ]);
-    }
+    }*/
 }

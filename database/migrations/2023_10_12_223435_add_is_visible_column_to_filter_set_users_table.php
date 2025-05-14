@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+    public function shouldRun(): bool
+    {
+        return false;
+    }
+
     public function up(): void
     {
         Schema::table('filament_filter_set_user', function (Blueprint $table) {
