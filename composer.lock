@@ -6802,16 +6802,16 @@
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
-            "version": "v3.0.4",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/dynamic-dashboard.git",
-                "reference": "83a0e64d236f6c745674059ecf908002133de76b"
+                "reference": "57f50fe61e166b514e226e6414b9d7f7418f5715"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/dynamic-dashboard/zipball/83a0e64d236f6c745674059ecf908002133de76b",
-                "reference": "83a0e64d236f6c745674059ecf908002133de76b",
+                "url": "https://api.github.com/repos/lara-zeus/dynamic-dashboard/zipball/57f50fe61e166b514e226e6414b9d7f7418f5715",
+                "reference": "57f50fe61e166b514e226e6414b9d7f7418f5715",
                 "shasum": ""
             },
             "require": {
@@ -6820,17 +6820,16 @@
                 "php": "^8.1"
             },
             "require-dev": {
-                "larastan/larastan": "^2.0",
-                "laravel/pint": "^1.0",
-                "nunomaduro/collision": "^7.0",
-                "nunomaduro/phpinsights": "^2.8",
-                "orchestra/testbench": "^8.0",
-                "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-arch": "^2.0",
-                "pestphp/pest-plugin-laravel": "^2.0",
-                "pestphp/pest-plugin-livewire": "^2.1",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.1"
+                "larastan/larastan": "^3.4",
+                "laravel/pint": "^1.22",
+                "nunomaduro/collision": "^8.0",
+                "orchestra/testbench": "^10.0",
+                "pestphp/pest": "^3.0",
+                "pestphp/pest-plugin-arch": "^3.0",
+                "pestphp/pest-plugin-laravel": "^3.0",
+                "pestphp/pest-plugin-livewire": "^3.0",
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan-deprecation-rules": "^2.0"
             },
             "type": "library",
             "extra": {
@@ -6878,7 +6877,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-17T23:06:18+00:00"
+            "time": "2025-05-15T17:36:49+00:00"
         },
         {
             "name": "lara-zeus/filament-plugin-tools",
@@ -20276,12 +20275,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "4aa0a0890ece3b361fc4179b1e30fdcc0d2c689b"
+                "reference": "98ed8a7be061968455a548ceb0ba2790b11b119f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/4aa0a0890ece3b361fc4179b1e30fdcc0d2c689b",
-                "reference": "4aa0a0890ece3b361fc4179b1e30fdcc0d2c689b",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/98ed8a7be061968455a548ceb0ba2790b11b119f",
+                "reference": "98ed8a7be061968455a548ceb0ba2790b11b119f",
                 "shasum": ""
             },
             "conflict": {
@@ -20949,7 +20948,7 @@
                 "subhh/libconnect": "<7.0.8|>=8,<8.1",
                 "sukohi/surpass": "<1",
                 "sulu/form-bundle": ">=2,<2.5.3",
-                "sulu/sulu": "<1.6.44|>=2,<2.5.21|>=2.6,<2.6.5",
+                "sulu/sulu": "<1.6.44|>=2,<2.5.25|>=2.6,<2.6.9|>=3.0.0.0-alpha1,<3.0.0.0-alpha3",
                 "sumocoders/framework-user-bundle": "<1.4",
                 "superbig/craft-audit": "<3.0.2",
                 "svewap/a21glossary": "<=0.4.10",
@@ -21199,7 +21198,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-14T18:07:05+00:00"
+            "time": "2025-05-15T17:04:55+00:00"
         },
         {
             "name": "spatie/backtrace",
