@@ -515,16 +515,16 @@
         },
         {
             "name": "awcodes/filament-table-repeater",
-            "version": "v3.1.3",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/filament-table-repeater.git",
-                "reference": "fd8df8fbb94a41d0a031a75ef739538290a14a8c"
+                "reference": "275de32e2123a2f7e586404352ee4c794f019a09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/filament-table-repeater/zipball/fd8df8fbb94a41d0a031a75ef739538290a14a8c",
-                "reference": "fd8df8fbb94a41d0a031a75ef739538290a14a8c",
+                "url": "https://api.github.com/repos/awcodes/filament-table-repeater/zipball/275de32e2123a2f7e586404352ee4c794f019a09",
+                "reference": "275de32e2123a2f7e586404352ee4c794f019a09",
                 "shasum": ""
             },
             "require": {
@@ -578,7 +578,7 @@
             ],
             "support": {
                 "issues": "https://github.com/awcodes/filament-table-repeater/issues",
-                "source": "https://github.com/awcodes/filament-table-repeater/tree/v3.1.3"
+                "source": "https://github.com/awcodes/filament-table-repeater/tree/v3.1.4"
             },
             "funding": [
                 {
@@ -586,20 +586,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-03T14:59:55+00:00"
+            "time": "2025-05-15T15:46:52+00:00"
         },
         {
             "name": "awcodes/filament-tiptap-editor",
-            "version": "v3.5.13",
+            "version": "v3.5.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/filament-tiptap-editor.git",
-                "reference": "17684330a0bc0e9cfbd40a1de89efea6f635ef74"
+                "reference": "ba0194224e34a1cd3c5b92c881c474c713321572"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/filament-tiptap-editor/zipball/17684330a0bc0e9cfbd40a1de89efea6f635ef74",
-                "reference": "17684330a0bc0e9cfbd40a1de89efea6f635ef74",
+                "url": "https://api.github.com/repos/awcodes/filament-tiptap-editor/zipball/ba0194224e34a1cd3c5b92c881c474c713321572",
+                "reference": "ba0194224e34a1cd3c5b92c881c474c713321572",
                 "shasum": ""
             },
             "require": {
@@ -660,7 +660,7 @@
             ],
             "support": {
                 "issues": "https://github.com/awcodes/filament-tiptap-editor/issues",
-                "source": "https://github.com/awcodes/filament-tiptap-editor/tree/v3.5.13"
+                "source": "https://github.com/awcodes/filament-tiptap-editor/tree/v3.5.14"
             },
             "funding": [
                 {
@@ -668,7 +668,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-05T14:04:37+00:00"
+            "time": "2025-05-15T15:50:41+00:00"
         },
         {
             "name": "awcodes/filament-versions",
