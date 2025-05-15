@@ -10,13 +10,27 @@ use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentColor;
 use Filament\Support\Facades\FilamentIcon;
 use Filament\Support\View\Components\Modal;
+use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Application;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\RateLimiter;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
+    /**
+     * The path to the "home" route for your application.
+     *
+     * This is used by Laravel authentication to redirect users after login.
+     *
+     * @var string
+     */
+    public const HOME = '/';
+
     /**
      * Bootstrap any application services.
      */
@@ -90,6 +104,8 @@ class AppServiceProvider extends ServiceProvider
 
             return '<!-- no tags for you -->';
         });
+
+        $this->bootRoute();
     }
 
     /*public function hooksRenderer(): void
@@ -114,4 +130,22 @@ class AppServiceProvider extends ServiceProvider
             );
         }
     }*/
+
+    /**
+     * Register any application services.
+     */
+    public function register(): void
+    {
+        //
+    }
+
+    public function bootRoute()
+    {
+        RateLimiter::for('api', function (Request $request) {
+            return Limit::perMinute(60)->by(optional($request->user())->id ?: $request->ip());
+        });
+
+
+
+    }
 }
