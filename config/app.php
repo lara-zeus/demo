@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\ServiceProvider;
-
 return [
 
     'zeus-demo' => true,
@@ -44,6 +42,5 @@ return [
         // 'chaos',
         // 'uranus',
     ],
-
 
 ];
