@@ -187,7 +187,6 @@ class AdminPanelProvider extends PanelProvider
             // plugins
             ->plugins($this->getPlugins())
 
-
             // car
             ->renderHook(
                 'panels::page.start',
@@ -314,8 +313,7 @@ class AdminPanelProvider extends PanelProvider
                 fn (): View => view('filament.hooks.footer'),
             )
             // sidebar search
-            ->renderHook(PanelsRenderHook::SIDEBAR_NAV_START, fn () => view('filament.hooks.sidebar-searcher'))
-            ;
+            ->renderHook(PanelsRenderHook::SIDEBAR_NAV_START, fn () => view('filament.hooks.sidebar-searcher'));
     }
 
     public function getPlugins(): array
