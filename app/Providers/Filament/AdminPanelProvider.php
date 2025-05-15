@@ -95,7 +95,6 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login(Login::class)
             ->font('Montserrat')
-            ->plugins($this->getPlugins())
             ->brandLogo(fn () => view('filament.logo'))
             ->colors([
                 ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
@@ -149,6 +148,44 @@ class AdminPanelProvider extends PanelProvider
                     ->icon('tabler-bow'),*/
             ])
             // ->unsavedChangesAlerts()
+
+            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
+            ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
+            ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
+            ->discoverClusters(in: app_path('Filament/Clusters'), for: 'App\\Filament\\Clusters')
+            //
+            ->pages([
+                Pages\Dashboard::class,
+                DashboardPage::class,
+            ])
+            ->widgets([
+                // UmamiWidgetStatsGrouped::class,
+                // UmamiWidgetTableReferrers::class,
+                // UmamiWidgetTableUrls::class,
+
+                Widgets\AccountWidget::class,
+                Widgets\FilamentInfoWidget::class,
+                VersionsWidget::class,
+                OverlookWidget::class,
+                Feedback::class,
+            ])
+            ->middleware([
+                EncryptCookies::class,
+                AddQueuedCookiesToResponse::class,
+                StartSession::class,
+                AuthenticateSession::class,
+                ShareErrorsFromSession::class,
+                VerifyCsrfToken::class,
+                SubstituteBindings::class,
+                DisableBladeIconComponents::class,
+                DispatchServingFilamentEvent::class,
+            ])
+            ->authMiddleware([
+                Authenticate::class,
+            ])
+
+            // plugins
+            ->plugins($this->getPlugins())
 
             // car
             ->renderHook(
@@ -276,42 +313,7 @@ class AdminPanelProvider extends PanelProvider
                 fn (): View => view('filament.hooks.footer'),
             )
             // sidebar search
-            ->renderHook(PanelsRenderHook::SIDEBAR_NAV_START, fn () => view('filament.hooks.sidebar-searcher'))
-
-            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
-            ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
-            ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
-            ->discoverClusters(in: app_path('Filament/Clusters'), for: 'App\\Filament\\Clusters')
-            //
-            ->pages([
-                Pages\Dashboard::class,
-                DashboardPage::class,
-            ])
-            ->widgets([
-                // UmamiWidgetStatsGrouped::class,
-                // UmamiWidgetTableReferrers::class,
-                // UmamiWidgetTableUrls::class,
-
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
-                VersionsWidget::class,
-                OverlookWidget::class,
-                Feedback::class,
-            ])
-            ->middleware([
-                EncryptCookies::class,
-                AddQueuedCookiesToResponse::class,
-                StartSession::class,
-                AuthenticateSession::class,
-                ShareErrorsFromSession::class,
-                VerifyCsrfToken::class,
-                SubstituteBindings::class,
-                DisableBladeIconComponents::class,
-                DispatchServingFilamentEvent::class,
-            ])
-            ->authMiddleware([
-                Authenticate::class,
-            ]);
+            ->renderHook(PanelsRenderHook::SIDEBAR_NAV_START, fn () => view('filament.hooks.sidebar-searcher'));
     }
 
     public function getPlugins(): array
@@ -351,7 +353,7 @@ class AdminPanelProvider extends PanelProvider
                     LetterResource::class,
                     TicketResource::class,
                 ])
-                //->alphabetical()
+            // ->alphabetical()
             ,
             VersionsPlugin::make()
                 ->widgetSort(4)
