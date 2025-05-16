@@ -14,6 +14,7 @@ use Laravel\Sanctum\HasApiTokens;
 use LaraZeus\Athena\Models\Concerns\BelongToAthena;
 use LaraZeus\Bolt\Models\Concerns\BelongToBolt;
 use LaraZeus\Boredom\Concerns\HasBoringAvatar;
+use LaraZeus\Mark\Traits\Like\HasLikes;
 use LaraZeus\Thunder\Concerns\ManageOffice;
 
 /**
@@ -29,6 +30,7 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
     use HasViews;
     use ManageOffice;
     use Notifiable;
+    use HasLikes;
 
     protected $guarded = [];
 

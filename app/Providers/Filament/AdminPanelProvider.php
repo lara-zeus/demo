@@ -9,6 +9,7 @@ use App\Filament\Pages\Tiles;
 use App\Filament\Resources\CarResource;
 use App\Filament\Resources\UserResource;
 use App\Filament\Widgets\Feedback;
+use App\Models\Post;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
 use Archilex\AdvancedTables\Resources\UserViewResource;
@@ -380,7 +381,10 @@ class AdminPanelProvider extends PanelProvider
             DeliaPlugin::make(),
             BoringAvatarPlugin::make(),
             WindPlugin::make(),
-            SkyPlugin::make(),
+            SkyPlugin::make()
+                ->models([
+                    'Post' => Post::class,
+                ]),
             HeraPlugin::make(),
             HelenPlugin::make()
                 ->baseDomain('demo.larazeus.com')

@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\User;
 use BezhanSalleh\PanelSwitch\PanelSwitch;
 use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;
@@ -19,6 +20,7 @@ use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
+use LaraZeus\Mark\Facades\Mark;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -36,6 +38,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        Mark::markerModel(User::class);
         Model::automaticallyEagerLoadRelationships();
 
         if ($this->app->environment('production')) {
