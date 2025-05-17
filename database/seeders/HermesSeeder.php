@@ -9,8 +9,8 @@ use Illuminate\Support\Facades\DB;
 
 class HermesSeeder extends Seeder
 {
-    use HasImage;
     use HasFaker;
+    use HasImage;
 
     /**
      * @throws \JsonException

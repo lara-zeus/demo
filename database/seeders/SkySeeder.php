@@ -15,8 +15,8 @@ use LaraZeus\Sky\SkyPlugin;
 
 class SkySeeder extends Seeder
 {
-    use HasImage;
     use HasFaker;
+    use HasImage;
 
     public function run()
     {

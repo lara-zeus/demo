@@ -12,15 +12,14 @@ trait HasImage
         string $directory,
         bool $withMedia = false,
         string $disk = 'public'
-    ): string | int
-    {
-        $randName = $this->faker->word().'-'.$this->faker->randomNumber();
-        $imgUrl = 'https://picsum.photos/1300/700?random='.$randName;
+    ): string | int {
+        $randName = $this->faker->word() . '-' . $this->faker->randomNumber();
+        $imgUrl = 'https://picsum.photos/1300/700?random=' . $randName;
         $getImageContent = file_get_contents($imgUrl);
-        $fileName = $randName.'.png';
-        $fullFileName = $directory.'/'.$fileName;
+        $fileName = $randName . '.png';
+        $fullFileName = $directory . '/' . $fileName;
 
-        if (!Storage::disk($disk)->exists($fullFileName)) {
+        if (! Storage::disk($disk)->exists($fullFileName)) {
             Storage::disk($disk)->put($fullFileName, $getImageContent);
         }
 
@@ -30,7 +29,7 @@ trait HasImage
             return DB::table('curator_media')
                 ->insertGetId([
                     'name' => $data->filename,
-                    'path' => $directory.'/'.$fileName,
+                    'path' => $directory . '/' . $fileName,
                     'ext' => $data->extension,
                     'type' => $data->mime(),
                     'alt' => $this->faker->words(rand(3, 8), true),

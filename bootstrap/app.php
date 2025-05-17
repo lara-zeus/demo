@@ -18,7 +18,7 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
-        if(app()->isProduction()){
+        if (app()->isProduction()) {
             $exceptions->reportable(function (Throwable $e) {
                 if ($this->shouldReport($e) && app()->bound('sentry')) {
                     app('sentry')->captureException($e);

@@ -31,7 +31,7 @@ class PostFactory extends Factory
                 'publish', 'future', 'publish', 'draft', 'publish', 'private', 'publish', 'publish', 'publish',
             ]), // , 'future', 'draft', 'private'
             'post_type' => $this->faker->randomElement(['page', 'post']),
-            'featured_image' => null, //$this->getImage('posts'),
+            'featured_image' => null, // $this->getImage('posts'),
         ];
     }
 }
