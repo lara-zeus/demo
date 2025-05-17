@@ -2,10 +2,10 @@
 
 use Illuminate\Support\Facades\Schedule;
 
-Schedule::command('migrate:fresh --seed --force --quiet')
+Schedule::command('zeus:reset')
     ->daily()
     ->at('4:00');
 
-Schedule::command('php artisan seo:scan --quiet')
+/*Schedule::command('php artisan seo:scan --quiet')
     ->weekly()
-    ->at('5:00');
+    ->at('5:00');*/

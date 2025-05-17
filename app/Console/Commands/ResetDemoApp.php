@@ -53,6 +53,8 @@ class ResetDemoApp extends Command
     {
         $this->call('migrate:fresh', [
             '--seed' => true,
+            '--force' => true,
+            '--quiet' => true,
         ]);
     }
 }
