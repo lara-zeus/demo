@@ -2,22 +2,19 @@
 
 namespace Database\Seeders;
 
-use Faker\Generator;
-use Illuminate\Container\Container;
+use Database\Seeders\Concerns\HasFaker;
+use Database\Seeders\Concerns\HasImage;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Storage;
-use Intervention\Image\Facades\Image;
 
 class HermesSeeder extends Seeder
 {
-    protected mixed $faker;
+    use HasImage;
+    use HasFaker;
 
-    public function __construct()
-    {
-        $this->faker = Container::getInstance()->make(Generator::class);
-    }
-
+    /**
+     * @throws \JsonException
+     */
     public function run(): void
     {
         DB::table('menu_item_labels')
@@ -99,23 +96,21 @@ class HermesSeeder extends Seeder
             'tiktok' => 'tiktok',
         ];
 
-        // /$imageID = $this->getImage();
-
         $branch = DB::table('branches')
             ->insertGetId([
-                'name' => json_encode(['en' => 'Main Branch']),
-                'description' => json_encode(['en' => 'our Main Branch']),
-                'image' => 1,
-                'address' => json_encode($address),
-                'hours' => json_encode($houes),
-                'social' => json_encode($social),
+                'name' => json_encode(['en' => 'Main Branch'], JSON_THROW_ON_ERROR),
+                'description' => json_encode(['en' => 'our Main Branch'], JSON_THROW_ON_ERROR),
+                'image' => $this->getImage('branches', true),
+                'address' => json_encode($address, JSON_THROW_ON_ERROR),
+                'hours' => json_encode($houes, JSON_THROW_ON_ERROR),
+                'social' => json_encode($social, JSON_THROW_ON_ERROR),
                 'created_at' => now(),
             ]);
 
         $breakfastMenu = DB::table('menus')
             ->insertGetId([
-                'name' => json_encode(['en' => 'Breakfast Menu']),
-                'description' => json_encode(['en' => 'our Breakfast Menu']),
+                'name' => json_encode(['en' => 'Breakfast Menu'], JSON_THROW_ON_ERROR),
+                'description' => json_encode(['en' => 'our Breakfast Menu'], JSON_THROW_ON_ERROR),
                 'branch_id' => $branch,
                 'is_active' => true,
                 'order' => 1,
@@ -124,17 +119,17 @@ class HermesSeeder extends Seeder
         $breakfastMenuSection_1 = DB::table('menu_sections')
             ->insertGetId([
                 'menu_id' => $breakfastMenu,
-                'cover' => 'https://picsum.photos/600/600?random=' . rand(1, 99),
-                'name' => json_encode(['en' => 'Drinks']),
-                'description' => json_encode(['en' => 'all drinks']),
+                'cover' => $this->getImage('menu_sections'),
+                'name' => json_encode(['en' => 'Drinks'], JSON_THROW_ON_ERROR),
+                'description' => json_encode(['en' => 'all drinks'], JSON_THROW_ON_ERROR),
             ]);
 
         $breakfastMenuSection_2 = DB::table('menu_sections')
             ->insertGetId([
                 'menu_id' => $breakfastMenu,
-                'cover' => 'https://picsum.photos/600/600?random=' . rand(1, 99),
-                'name' => json_encode(['en' => 'sandwiches']),
-                'description' => json_encode(['en' => 'all our sandwiches']),
+                'cover' => $this->getImage('menu_sections'),
+                'name' => json_encode(['en' => 'sandwiches'], JSON_THROW_ON_ERROR),
+                'description' => json_encode(['en' => 'all our sandwiches'], JSON_THROW_ON_ERROR),
             ]);
 
         DB::table('menu_items')
@@ -151,11 +146,11 @@ class HermesSeeder extends Seeder
                         'type' => 'large',
                         'price' => 20,
                     ],
-                ]),
-                'images' => 'https://picsum.photos/600/600?random=' . rand(1, 99),
+                ], JSON_THROW_ON_ERROR),
+                'images' => $this->getImage('menu_items'),
                 'calories' => 10,
                 'prep_time' => '04:04',
-                'labels' => json_encode([1, 2]),
+                'labels' => json_encode([1, 2], JSON_THROW_ON_ERROR),
                 'is_pinned' => true,
             ]);
 
@@ -173,8 +168,8 @@ class HermesSeeder extends Seeder
                         'type' => 'large',
                         'price' => 20,
                     ],
-                ]),
-                'images' => 'https://picsum.photos/600/600?random=' . rand(1, 99),
+                ], JSON_THROW_ON_ERROR),
+                'images' => $this->getImage('menu_items'),
                 'calories' => 20,
             ]);
 
@@ -192,43 +187,9 @@ class HermesSeeder extends Seeder
                         'type' => 'large',
                         'price' => 20,
                     ],
-                ]),
-                'images' => 'https://picsum.photos/600/600?random=' . rand(1, 99),
+                ], JSON_THROW_ON_ERROR),
+                'images' => $this->getImage('menu_items'),
                 'calories' => 20,
-            ]);
-    }
-
-    public function getImage(): int
-    {
-        $randName = $this->faker->randomNumber();
-        $imgUrl = 'https://picsum.photos/1300/700?random=' . $randName;
-        $getImageContent = file_get_contents($imgUrl);
-        $fileName = 'branch' . $randName . '.jpg';
-        $directory = 'branches';
-        $disk = 'public';
-
-        if (! Storage::disk($disk)->exists($directory . '/' . $fileName)) {
-            Storage::disk($disk)->put($directory . '/' . $fileName, $getImageContent);
-        }
-
-        $data = Image::make(Storage::disk($disk)->path($directory . '/' . $fileName));
-
-        return DB::table('curator_media')
-            ->insertGetId([
-                'name' => $data->filename,
-                'path' => $directory . '/' . $fileName,
-                'ext' => $data->extension,
-                'type' => $data->mime(),
-                'alt' => $this->faker->words(rand(3, 8), true),
-                'title' => $data->filename,
-                'caption' => $data->filename,
-                'description' => $data->filename,
-                'width' => $data->getWidth() ?? null,
-                'height' => $data->getHeight() ?? null,
-                'disk' => $disk,
-                'directory' => $directory,
-                'size' => $data->filesize() ?? null,
-                'created_at' => now(),
             ]);
     }
 }

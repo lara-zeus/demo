@@ -132,19 +132,10 @@ class AppServiceProvider extends ServiceProvider
         }
     }*/
 
-    /**
-     * Register any application services.
-     */
-    public function register(): void
-    {
-        //
-    }
-
     public function bootRoute()
     {
         RateLimiter::for('api', function (Request $request) {
             return Limit::perMinute(60)->by(optional($request->user())->id ?: $request->ip());
         });
-
     }
 }
