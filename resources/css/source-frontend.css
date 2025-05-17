@@ -1,3 +1,4 @@
+@source '../views/**/*.blade.php';
 @source '../../vendor/lara-zeus/core/resources/views/**/*.blade.php';
 @source '../../vendor/lara-zeus/core/src/CoreServiceProvider.php';
 @source '../../vendor/lara-zeus/wind/resources/views/**/*.blade.php';

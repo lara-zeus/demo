@@ -3777,7 +3777,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/bolt",
-                "reference": "edd3e1f35684c789b1cb666ab424142430fa9cd7"
+                "reference": "2eae32b58aabb50c1150a86095646fe59ccae66f"
             },
             "require": {
                 "flowframe/laravel-trend": "^0.4",
@@ -4207,18 +4207,19 @@
                 "php": "^8.2"
             },
             "require-dev": {
-                "larastan/larastan": "^2.2",
+                "larastan/larastan": "^3.0",
                 "laravel/pint": "^1.0",
-                "nunomaduro/collision": "^7.0",
-                "orchestra/testbench": "^8.0",
-                "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-laravel": "^2.0",
-                "pestphp/pest-plugin-livewire": "2.x-dev",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan": "^1.10",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.0",
-                "phpunit/phpunit": "^10.1"
+                "nunomaduro/collision": "^8.0",
+                "orchestra/testbench": "^10.0",
+                "pestphp/pest": "^3.5",
+                "pestphp/pest-plugin-arch": "^3.0",
+                "pestphp/pest-plugin-laravel": "^3.0",
+                "pestphp/pest-plugin-livewire": "^3.0",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-deprecation-rules": "^2.0",
+                "phpstan/phpstan-phpunit": "^2.0",
+                "roave/security-advisories": "dev-latest"
             },
             "type": "library",
             "extra": {
@@ -4379,7 +4380,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/rain",
-                "reference": "621c729cd99d34afaddb1d5db9146c6413d3d249"
+                "reference": "8703346cbff68fa1c3539135b47dfb9b5792db14"
             },
             "require": {
                 "lara-zeus/core": "*",
@@ -4387,17 +4388,16 @@
                 "php": "^8.1"
             },
             "require-dev": {
-                "larastan/larastan": "^2.0",
-                "laravel/pint": "^1.0",
-                "nunomaduro/collision": "^7.0",
-                "nunomaduro/phpinsights": "^2.8",
-                "orchestra/testbench": "^8.0",
-                "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-arch": "^2.0",
-                "pestphp/pest-plugin-laravel": "^2.0",
-                "pestphp/pest-plugin-livewire": "^2.1",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.1"
+                "larastan/larastan": "^3.4",
+                "laravel/pint": "^1.22",
+                "nunomaduro/collision": "^8.0",
+                "orchestra/testbench": "^10.0",
+                "pestphp/pest": "^3.0",
+                "pestphp/pest-plugin-arch": "^3.0",
+                "pestphp/pest-plugin-laravel": "^3.0",
+                "pestphp/pest-plugin-livewire": "^3.0",
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan-deprecation-rules": "^2.0"
             },
             "type": "library",
             "extra": {
@@ -4721,7 +4721,7 @@
         },
         {
             "name": "lara-zeus/hera",
-            "version": "2.x-dev",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/hera",
@@ -4901,7 +4901,7 @@
         },
         {
             "name": "lara-zeus/inline-chart",
-            "version": "2.x-dev",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/inline-chart",
@@ -5183,11 +5183,12 @@
             "dist": {
                 "type": "path",
                 "url": "../p/mark",
-                "reference": "8da236d64afd0e853b27a992f696c574ae69fd4f"
+                "reference": "785133da8bc8098671d77487c9c5e052e304e25d"
             },
             "require": {
                 "filament/filament": "^4.0",
                 "illuminate/contracts": "^11.28|^12.0",
+                "illuminate/database": "^11.40|^12.0",
                 "php": "^8.2",
                 "spatie/laravel-package-tools": "^1.18"
             },
@@ -5196,7 +5197,7 @@
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^8.0",
                 "orchestra/testbench": "^10.0",
-                "pestphp/pest": "^3.0",
+                "pestphp/pest": "^3.5",
                 "pestphp/pest-plugin-arch": "^3.0",
                 "pestphp/pest-plugin-laravel": "^3.0",
                 "phpstan/extension-installer": "^1.0",
@@ -5233,7 +5234,7 @@
                     "vendor/bin/phpstan analyse"
                 ],
                 "test": [
-                    "vendor/bin/pest"
+                    "vendor/bin/pest --parallel"
                 ],
                 "test-coverage": [
                     "vendor/bin/pest --coverage"
@@ -5273,7 +5274,7 @@
         },
         {
             "name": "lara-zeus/matrix-choice",
-            "version": "4.x-dev",
+            "version": "3.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/matrix-choice",
@@ -5357,7 +5358,7 @@
         },
         {
             "name": "lara-zeus/pontus",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/pontus",
@@ -5528,7 +5529,7 @@
         },
         {
             "name": "lara-zeus/qr",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/qr",
@@ -6410,7 +6411,7 @@
         },
         {
             "name": "lara-zeus/translatable-pro",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/translatable-pro",
@@ -10478,16 +10479,16 @@
         },
         {
             "name": "secondnetwork/blade-tabler-icons",
-            "version": "v3.31.0",
+            "version": "v3.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/secondnetwork/blade-tabler-icons.git",
-                "reference": "bf069bbdb2a63aa8eaeb10e6fd993464e9340a31"
+                "reference": "523b3ede493ce9f8cbe3a5bdce21769976a80b28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/secondnetwork/blade-tabler-icons/zipball/bf069bbdb2a63aa8eaeb10e6fd993464e9340a31",
-                "reference": "bf069bbdb2a63aa8eaeb10e6fd993464e9340a31",
+                "url": "https://api.github.com/repos/secondnetwork/blade-tabler-icons/zipball/523b3ede493ce9f8cbe3a5bdce21769976a80b28",
+                "reference": "523b3ede493ce9f8cbe3a5bdce21769976a80b28",
                 "shasum": ""
             },
             "require": {
@@ -10530,9 +10531,9 @@
             ],
             "support": {
                 "issues": "https://github.com/secondnetwork/blade-tabler-icons/issues",
-                "source": "https://github.com/secondnetwork/blade-tabler-icons/tree/v3.31.0"
+                "source": "https://github.com/secondnetwork/blade-tabler-icons/tree/v3.33.0"
             },
-            "time": "2025-03-06T09:24:43+00:00"
+            "time": "2025-05-17T06:28:48+00:00"
         },
         {
             "name": "sentry/sentry",
@@ -10714,16 +10715,16 @@
         },
         {
             "name": "spatie/browsershot",
-            "version": "5.0.9",
+            "version": "5.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/browsershot.git",
-                "reference": "667b40b2a283486a7a1fc9208221e0d0471ac3e6"
+                "reference": "9e5ae15487b3cdc3eb03318c1c8ac38971f60e58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/browsershot/zipball/667b40b2a283486a7a1fc9208221e0d0471ac3e6",
-                "reference": "667b40b2a283486a7a1fc9208221e0d0471ac3e6",
+                "url": "https://api.github.com/repos/spatie/browsershot/zipball/9e5ae15487b3cdc3eb03318c1c8ac38971f60e58",
+                "reference": "9e5ae15487b3cdc3eb03318c1c8ac38971f60e58",
                 "shasum": ""
             },
             "require": {
@@ -10770,7 +10771,7 @@
                 "webpage"
             ],
             "support": {
-                "source": "https://github.com/spatie/browsershot/tree/5.0.9"
+                "source": "https://github.com/spatie/browsershot/tree/5.0.10"
             },
             "funding": [
                 {
@@ -10778,7 +10779,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-28T08:54:51+00:00"
+            "time": "2025-05-15T07:10:57+00:00"
         },
         {
             "name": "spatie/color",
@@ -15776,16 +15777,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.14",
+            "version": "2.1.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "8f2e03099cac24ff3b379864d171c5acbfc6b9a2"
+                "reference": "b8c1cf533cba0c305d91c6ccd23f3dd0566ba5f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/8f2e03099cac24ff3b379864d171c5acbfc6b9a2",
-                "reference": "8f2e03099cac24ff3b379864d171c5acbfc6b9a2",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b8c1cf533cba0c305d91c6ccd23f3dd0566ba5f9",
+                "reference": "b8c1cf533cba0c305d91c6ccd23f3dd0566ba5f9",
                 "shasum": ""
             },
             "require": {
@@ -15830,25 +15831,25 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-02T15:32:28+00:00"
+            "time": "2025-05-16T09:40:10+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-deprecation-rules.git",
-                "reference": "9d8e7d4e32711715ad78a1fb6ec368df9af01fdf"
+                "reference": "468e02c9176891cc901143da118f09dc9505fc2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-deprecation-rules/zipball/9d8e7d4e32711715ad78a1fb6ec368df9af01fdf",
-                "reference": "9d8e7d4e32711715ad78a1fb6ec368df9af01fdf",
+                "url": "https://api.github.com/repos/phpstan/phpstan-deprecation-rules/zipball/468e02c9176891cc901143da118f09dc9505fc2f",
+                "reference": "468e02c9176891cc901143da118f09dc9505fc2f",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4 || ^8.0",
-                "phpstan/phpstan": "^2.1.13"
+                "phpstan/phpstan": "^2.1.15"
             },
             "require-dev": {
                 "php-parallel-lint/php-parallel-lint": "^1.2",
@@ -15875,9 +15876,9 @@
             "description": "PHPStan rules for detecting usage of deprecated classes, methods, properties, constants and traits.",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-deprecation-rules/issues",
-                "source": "https://github.com/phpstan/phpstan-deprecation-rules/tree/2.0.2"
+                "source": "https://github.com/phpstan/phpstan-deprecation-rules/tree/2.0.3"
             },
-            "time": "2025-04-26T19:59:57+00:00"
+            "time": "2025-05-14T10:56:57+00:00"
         },
         {
             "name": "psy/psysh",
@@ -16023,12 +16024,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "5326c903c04c522c27d45dacfb6a521a448a399a"
+                "reference": "61a4c6fa210845b4f22b67c79f1833be64a34f29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5326c903c04c522c27d45dacfb6a521a448a399a",
-                "reference": "5326c903c04c522c27d45dacfb6a521a448a399a",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/61a4c6fa210845b4f22b67c79f1833be64a34f29",
+                "reference": "61a4c6fa210845b4f22b67c79f1833be64a34f29",
                 "shasum": ""
             },
             "conflict": {
@@ -16070,6 +16071,7 @@
                 "athlon1600/php-proxy-app": "<=3",
                 "athlon1600/youtube-downloader": "<=4",
                 "austintoddj/canvas": "<=3.4.2",
+                "auth0/auth0-php": ">=8.0.0.0-beta1,<8.14",
                 "auth0/wordpress": "<=4.6",
                 "automad/automad": "<2.0.0.0-alpha5",
                 "automattic/jetpack": "<9.8",
@@ -16523,7 +16525,7 @@
                 "oro/customer-portal": ">=4.1,<=4.1.13|>=4.2,<=4.2.10|>=5,<=5.0.11|>=5.1,<=5.1.3",
                 "oro/platform": ">=1.7,<1.7.4|>=3.1,<3.1.29|>=4.1,<4.1.17|>=4.2,<=4.2.10|>=5,<=5.0.12|>=5.1,<=5.1.3",
                 "oveleon/contao-cookiebar": "<1.16.3|>=2,<2.1.3",
-                "oxid-esales/oxideshop-ce": "<4.5",
+                "oxid-esales/oxideshop-ce": "<=7.0.5",
                 "oxid-esales/paymorrow-module": ">=1,<1.0.2|>=2,<2.0.1",
                 "packbackbooks/lti-1-3-php-library": "<5",
                 "padraic/humbug_get_contents": "<1.1.2",
@@ -16696,7 +16698,7 @@
                 "subhh/libconnect": "<7.0.8|>=8,<8.1",
                 "sukohi/surpass": "<1",
                 "sulu/form-bundle": ">=2,<2.5.3",
-                "sulu/sulu": "<1.6.44|>=2,<2.5.21|>=2.6,<2.6.5",
+                "sulu/sulu": "<1.6.44|>=2,<2.5.25|>=2.6,<2.6.9|>=3.0.0.0-alpha1,<3.0.0.0-alpha3",
                 "sumocoders/framework-user-bundle": "<1.4",
                 "superbig/craft-audit": "<3.0.2",
                 "svewap/a21glossary": "<=0.4.10",
@@ -16946,7 +16948,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-13T20:06:05+00:00"
+            "time": "2025-05-16T18:07:06+00:00"
         },
         {
             "name": "spatie/backtrace",

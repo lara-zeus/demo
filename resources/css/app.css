@@ -6,6 +6,7 @@
 /*@import '/node_modules/tippy.js/themes/light.css';*/
 
 @import "./source-frontend.css";
+@import "./source-filament.css";
 @import "./theme.css";
 
 /* Sky search result highlight */

@@ -115,6 +115,7 @@ class BoltSeeder extends Seeder
             'section_id' => $section1,
             'ordering' => 1,
             'options' => json_encode([
+                'is_active' => true,
                 'htmlId' => Str::random(6),
                 'dateType' => 'string',
                 'is_required' => false,
@@ -132,6 +133,7 @@ class BoltSeeder extends Seeder
             'section_id' => $section1,
             'ordering' => 2,
             'options' => json_encode([
+                'is_active' => true,
                 'htmlId' => Str::random(6),
                 'dateType' => 'email',
                 'is_required' => true,
@@ -144,6 +146,7 @@ class BoltSeeder extends Seeder
             'section_id' => $section2,
             'ordering' => 1,
             'options' => json_encode([
+                'is_active' => true,
                 'htmlId' => Str::random(6),
                 'dataSource' => '1',
                 'is_required' => true,
@@ -159,6 +162,7 @@ class BoltSeeder extends Seeder
             'section_id' => $section2,
             'ordering' => 2,
             'options' => json_encode([
+                'is_active' => true,
                 'htmlId' => Str::random(6),
                 'dataSource' => '2',
                 'is_required' => true,

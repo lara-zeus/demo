@@ -5,9 +5,7 @@ namespace App\Filament\Pages;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Form;
 use Filament\Infolists\Components\TextEntry;
-use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
 use LaraZeus\Accordion\Forms\Accordions;
 
