@@ -18,11 +18,13 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
-        $exceptions->reportable(function (Throwable $e) {
-            if ($this->shouldReport($e) && app()->bound('sentry')) {
-                app('sentry')->captureException($e);
-            }
-        });
+        if(app()->isProduction()){
+            $exceptions->reportable(function (Throwable $e) {
+                if ($this->shouldReport($e) && app()->bound('sentry')) {
+                    app('sentry')->captureException($e);
+                }
+            });
 
-        \Sentry\Laravel\Integration::handles($exceptions);
+            \Sentry\Laravel\Integration::handles($exceptions);
+        }
     })->create();
