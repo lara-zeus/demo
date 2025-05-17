@@ -12,4 +12,9 @@ class Athena extends Page
     protected static string $view = 'filament.clusters.components-demo.pages.athena';
 
     protected static ?string $cluster = ComponentsDemo::class;
+
+    public static function canAccess(): bool
+    {
+        return false;
+    }
 }
