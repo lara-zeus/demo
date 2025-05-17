@@ -10,4 +10,14 @@
             </x-filament::button>
         </div>
     </form>
+
+    <h2 class="text-xl">Likes From Sky Posts</h2>
+    <p>
+        Browse the
+        <x-filament::link target="_blank" href="{{ url('/sky') }}">
+            posts
+        </x-filament::link>
+        and like them to see it in action here
+    </p>
+
 </x-filament-panels::page>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fdca662fc27ef9d7be145e5e121630b",
+    "content-hash": "fcd5ae95281b851a7c96b9f677ff8e4e",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -5068,16 +5068,16 @@
         },
         {
             "name": "jaocero/activity-timeline",
-            "version": "v1.2.11",
+            "version": "v1.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/199ocero/activity-timeline.git",
-                "reference": "f621c7b2478285a96c74d74527487d6390505ae4"
+                "reference": "ea74ae870d385bfec37bed036db204ca6ca31da9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/199ocero/activity-timeline/zipball/f621c7b2478285a96c74d74527487d6390505ae4",
-                "reference": "f621c7b2478285a96c74d74527487d6390505ae4",
+                "url": "https://api.github.com/repos/199ocero/activity-timeline/zipball/ea74ae870d385bfec37bed036db204ca6ca31da9",
+                "reference": "ea74ae870d385bfec37bed036db204ca6ca31da9",
                 "shasum": ""
             },
             "require": {
@@ -5138,7 +5138,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-27T00:01:41+00:00"
+            "time": "2025-05-15T22:09:42+00:00"
         },
         {
             "name": "jaocero/radio-deck",
@@ -7670,20 +7670,21 @@
         },
         {
             "name": "lara-zeus/mark",
-            "version": "1.0.2",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/mark.git",
-                "reference": "9f05fbc6e016c2187a8fe4bc0f06f647fe01a963"
+                "reference": "366e916a1edf2064e37e6775dbf3b20873aab2df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/mark/zipball/9f05fbc6e016c2187a8fe4bc0f06f647fe01a963",
-                "reference": "9f05fbc6e016c2187a8fe4bc0f06f647fe01a963",
+                "url": "https://api.github.com/repos/lara-zeus/mark/zipball/366e916a1edf2064e37e6775dbf3b20873aab2df",
+                "reference": "366e916a1edf2064e37e6775dbf3b20873aab2df",
                 "shasum": ""
             },
             "require": {
                 "filament/filament": "^3.2",
+                "illuminate/database": "^11.40|^12.0",
                 "php": "^8.2",
                 "spatie/laravel-package-tools": "^1.18"
             },
@@ -7692,7 +7693,7 @@
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^8.0",
                 "orchestra/testbench": "^10.0",
-                "pestphp/pest": "^3.0",
+                "pestphp/pest": "^3.5",
                 "pestphp/pest-plugin-arch": "^3.0",
                 "pestphp/pest-plugin-laravel": "^3.0",
                 "phpstan/extension-installer": "^1.0",
@@ -7743,7 +7744,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-09T15:35:24+00:00"
+            "time": "2025-05-16T21:45:31+00:00"
         },
         {
             "name": "lara-zeus/matrix-choice",
@@ -14174,16 +14175,16 @@
         },
         {
             "name": "secondnetwork/blade-tabler-icons",
-            "version": "v3.31.0",
+            "version": "v3.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/secondnetwork/blade-tabler-icons.git",
-                "reference": "bf069bbdb2a63aa8eaeb10e6fd993464e9340a31"
+                "reference": "523b3ede493ce9f8cbe3a5bdce21769976a80b28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/secondnetwork/blade-tabler-icons/zipball/bf069bbdb2a63aa8eaeb10e6fd993464e9340a31",
-                "reference": "bf069bbdb2a63aa8eaeb10e6fd993464e9340a31",
+                "url": "https://api.github.com/repos/secondnetwork/blade-tabler-icons/zipball/523b3ede493ce9f8cbe3a5bdce21769976a80b28",
+                "reference": "523b3ede493ce9f8cbe3a5bdce21769976a80b28",
                 "shasum": ""
             },
             "require": {
@@ -14226,9 +14227,9 @@
             ],
             "support": {
                 "issues": "https://github.com/secondnetwork/blade-tabler-icons/issues",
-                "source": "https://github.com/secondnetwork/blade-tabler-icons/tree/v3.31.0"
+                "source": "https://github.com/secondnetwork/blade-tabler-icons/tree/v3.33.0"
             },
-            "time": "2025-03-06T09:24:43+00:00"
+            "time": "2025-05-17T06:28:48+00:00"
         },
         {
             "name": "sentry/sentry",
@@ -20087,16 +20088,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.15",
+            "version": "2.1.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "402d11c1aa40ae2e1c3a512e6a4edb957527b20b"
+                "reference": "b8c1cf533cba0c305d91c6ccd23f3dd0566ba5f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/402d11c1aa40ae2e1c3a512e6a4edb957527b20b",
-                "reference": "402d11c1aa40ae2e1c3a512e6a4edb957527b20b",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b8c1cf533cba0c305d91c6ccd23f3dd0566ba5f9",
+                "reference": "b8c1cf533cba0c305d91c6ccd23f3dd0566ba5f9",
                 "shasum": ""
             },
             "require": {
@@ -20141,7 +20142,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-14T11:16:08+00:00"
+            "time": "2025-05-16T09:40:10+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -20275,12 +20276,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "98ed8a7be061968455a548ceb0ba2790b11b119f"
+                "reference": "61a4c6fa210845b4f22b67c79f1833be64a34f29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/98ed8a7be061968455a548ceb0ba2790b11b119f",
-                "reference": "98ed8a7be061968455a548ceb0ba2790b11b119f",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/61a4c6fa210845b4f22b67c79f1833be64a34f29",
+                "reference": "61a4c6fa210845b4f22b67c79f1833be64a34f29",
                 "shasum": ""
             },
             "conflict": {
@@ -20322,6 +20323,7 @@
                 "athlon1600/php-proxy-app": "<=3",
                 "athlon1600/youtube-downloader": "<=4",
                 "austintoddj/canvas": "<=3.4.2",
+                "auth0/auth0-php": ">=8.0.0.0-beta1,<8.14",
                 "auth0/wordpress": "<=4.6",
                 "automad/automad": "<2.0.0.0-alpha5",
                 "automattic/jetpack": "<9.8",
@@ -21198,7 +21200,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-15T17:04:55+00:00"
+            "time": "2025-05-16T18:07:06+00:00"
         },
         {
             "name": "spatie/backtrace",
