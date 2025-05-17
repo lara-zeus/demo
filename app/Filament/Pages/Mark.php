@@ -108,7 +108,7 @@ class Mark extends Page
     protected function getFooterWidgets(): array
     {
         return [
-            LoveStats::class
+            LoveStats::class,
         ];
     }
 }

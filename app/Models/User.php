@@ -27,10 +27,10 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
     use HasApiTokens;
     use HasBoringAvatar;
     use HasFactory;
+    use HasLikes;
     use HasViews;
     use ManageOffice;
     use Notifiable;
-    use HasLikes;
 
     protected $guarded = [];
 

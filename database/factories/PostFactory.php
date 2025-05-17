@@ -2,11 +2,14 @@
 
 namespace Database\Factories;
 
+use App\Models\Post;
+use Database\Seeders\Concerns\HasImage;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use LaraZeus\Sky\Models\Post;
 
 class PostFactory extends Factory
 {
+    use HasImage;
+
     protected $model = Post::class;
 
     /**
@@ -28,7 +31,7 @@ class PostFactory extends Factory
                 'publish', 'future', 'publish', 'draft', 'publish', 'private', 'publish', 'publish', 'publish',
             ]), // , 'future', 'draft', 'private'
             'post_type' => $this->faker->randomElement(['page', 'post']),
-            'featured_image' => 'https://picsum.photos/1200/1300?random=' . $this->faker->randomNumber(),
+            'featured_image' => null, // $this->getImage('posts'),
         ];
     }
 }

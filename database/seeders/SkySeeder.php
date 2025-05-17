@@ -2,16 +2,22 @@
 
 namespace Database\Seeders;
 
+use App\Models\Media;
+use App\Models\Post;
+use Database\Seeders\Concerns\HasFaker;
+use Database\Seeders\Concerns\HasImage;
 use Illuminate\Database\Seeder;
 use LaraZeus\Sky\Models\Faq;
 use LaraZeus\Sky\Models\Library;
 use LaraZeus\Sky\Models\Navigation;
-use LaraZeus\Sky\Models\Post;
 use LaraZeus\Sky\Models\Tag;
 use LaraZeus\Sky\SkyPlugin;
 
 class SkySeeder extends Seeder
 {
+    use HasFaker;
+    use HasImage;
+
     public function run()
     {
         Tag::create(['name' => ['en' => 'laravel', 'ar' => 'لارافل'], 'type' => 'category']);
@@ -21,6 +27,7 @@ class SkySeeder extends Seeder
 
         Post::factory()
             ->count(15)
+            ->has(Media::factory())
             ->create();
 
         Post::create([
@@ -33,7 +40,7 @@ class SkySeeder extends Seeder
             'sticky_until' => null,
             'status' => 'publish',
             'post_type' => 'post',
-            'featured_image' => 'https://picsum.photos/1200/1300?random=404',
+            'featured_image' => null,
         ]);
 
         foreach (Post::all() as $post) { // loop through all posts

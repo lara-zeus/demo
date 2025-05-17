@@ -28,10 +28,11 @@ class LikePost extends Page
     public function loveAction(): Action
     {
         return Action::make('love')
-            //->size(ActionSize::ExtraLarge)
+            // ->size(ActionSize::ExtraLarge)
             ->icon(function () {
                 /** @var User $user */
                 $user = auth()->user();
+
                 return (
                     auth()->check() && $user->hasLiked($this->post)
                 )
