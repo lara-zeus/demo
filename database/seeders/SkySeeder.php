@@ -26,7 +26,7 @@ class SkySeeder extends Seeder
         $faqTag = Tag::create(['name' => ['en' => 'all faq', 'ar' => 'كافة الاسئلة الشائعة'], 'type' => 'faq']);
 
         Post::factory()
-            ->count(15)
+            ->count(10)
             ->has(Media::factory())
             ->create();
 
@@ -66,7 +66,13 @@ class SkySeeder extends Seeder
         SkyPlugin::get()->getModel('Tag')::create(['name' => ['en' => 'how to', 'ar' => 'كيف'], 'type' => 'library']);
 
         Library::factory()
-            ->count(8)
+            ->has(
+                Media::factory()
+                    ->state([
+                        'collection_name' => 'library',
+                    ])
+            )
+            ->count(4)
             ->create();
 
         foreach (Library::all() as $library) { // loop through all library

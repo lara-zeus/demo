@@ -2,11 +2,22 @@
 
 namespace Database\Seeders;
 
+use Database\Seeders\Concerns\HasFaker;
+use Database\Seeders\Concerns\HasImage;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use LaraZeus\DynamicDashboard\Widgets\Classes\FaqWidget;
+use LaraZeus\DynamicDashboard\Widgets\Classes\FormsWidget;
+use LaraZeus\DynamicDashboard\Widgets\Classes\HeadingWidget;
+use LaraZeus\DynamicDashboard\Widgets\Classes\ImageWidget;
+use LaraZeus\DynamicDashboard\Widgets\Classes\LibraryWidget;
+use LaraZeus\DynamicDashboard\Widgets\Classes\MenuWidget;
 
 class RainSeeder extends Seeder
 {
+    use HasFaker;
+    use HasImage;
+
     /**
      * @throws \JsonException
      */
@@ -17,6 +28,7 @@ class RainSeeder extends Seeder
                 'user_id' => 1,
                 'layout_title' => 'New page',
                 'layout_slug' => 'new-page',
+                'created_at' => now(),
                 'widgets' => json_encode([
                     'headerColumn' => [
                         [
@@ -24,7 +36,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => null,
                                 'sort' => 2,
-                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\HeadingWidget',
+                                'widget' => HeadingWidget::class,
                                 'content' => 'no title top column content',
                             ],
                         ],
@@ -33,7 +45,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'menu_slug' => 'nav-menu',
                                 'menu_dir' => 'horizontal',
-                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\MenuWidget',
+                                'widget' => MenuWidget::class,
                                 'title' => null,
                                 'sort' => 1,
                             ],
@@ -45,7 +57,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => 'left column',
                                 'sort' => 1,
-                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\HeadingWidget',
+                                'widget' => HeadingWidget::class,
                                 'content' => 'left column',
                             ],
                         ],
@@ -54,7 +66,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'menu_slug' => 'nav-menu',
                                 'menu_dir' => 'vertical',
-                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\MenuWidget',
+                                'widget' => MenuWidget::class,
                                 'title' => null,
                                 'sort' => 1,
                             ],
@@ -66,8 +78,8 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => null,
                                 'sort' => 1,
-                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\ImageWidget',
-                                'url' => 'widgets/d8snXpNRmcxggHsotkH9p8lxZQ2zeA-metaRGVtby5wbmc=-.png',
+                                'widget' => ImageWidget::class,
+                                'url' => $this->getImage('widgets'),
                                 'alt' => 'alt',
                             ],
                         ],
@@ -77,7 +89,7 @@ class RainSeeder extends Seeder
                                 'faq_cat' => 'all-faq',
                                 'title' => null,
                                 'sort' => 2,
-                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\FaqWidget',
+                                'widget' => FaqWidget::class,
                             ],
                         ],
                         [
@@ -86,7 +98,7 @@ class RainSeeder extends Seeder
                                 'form_slug' => 'feedback',
                                 'title' => 'Form Widget',
                                 'sort' => 3,
-                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\FormsWidget',
+                                'widget' => FormsWidget::class,
                             ],
                         ],
                     ],
@@ -96,7 +108,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => 'right column',
                                 'sort' => 1,
-                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\HeadingWidget',
+                                'widget' => HeadingWidget::class,
                                 'content' => 'right column',
                             ],
                         ],
@@ -106,7 +118,7 @@ class RainSeeder extends Seeder
                                 'library_slug' => 'support-docs',
                                 'title' => null,
                                 'sort' => 2,
-                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\LibraryWidget',
+                                'widget' => LibraryWidget::class,
                             ],
                         ],
                     ],
@@ -116,13 +128,12 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => null,
                                 'sort' => 1,
-                                'widget' => 'LaraZeus\\DynamicDashboard\\Widgets\\Classes\\HeadingWidget',
+                                'widget' => HeadingWidget::class,
                                 'content' => 'no title bottom column content',
                             ],
                         ],
                     ],
-                ]),
-                'created_at' => now(),
+                ], JSON_THROW_ON_ERROR),
             ]);
     }
 }

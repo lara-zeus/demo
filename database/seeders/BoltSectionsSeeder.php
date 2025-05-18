@@ -23,7 +23,7 @@ class BoltSectionsSeeder extends Seeder
             'description' => '{"en":"you can setup your form to show/hide sections based on field values"}',
             'slug' => 'dynamic-sections',
             'details' => '{"en":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, extra fields are available now, and more are on the way.<\\/a><\\/p>","pt":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, extra fields are available now, and more are on the way.<\\/a><\\/p>","ko":"<p><a href=\\"https:\\/\\/larazeus.com\\/bolt-pro\\">Get Bolt Pro now, extra fields are available now, and more are on the way.<\\/a><\\/p>"}',
-            'options' => '{"confirmation-message":"<p>Thank you for testing out Bolt Pro \\ud83d\\ude42, use the code: <strong>ATM23ZBP <\\/strong>to get 20% off<\\/p>","require-login":false,"show-as":"page","emails-notification":null}',
+            'options' => '{"confirmation-message":"<p>Thank you for testing out Bolt Pro \\ud83d\\ude42<\\/p>","require-login":false,"show-as":"page","emails-notification":null}',
             'name' => json_encode(
                 ['en' => 'Dynamic Sections', 'pt' => 'Dynamic Sections', 'ko' => 'Dynamic Sections'],
                 JSON_THROW_ON_ERROR

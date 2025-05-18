@@ -2,12 +2,17 @@
 
 namespace Database\Seeders;
 
+use Database\Seeders\Concerns\HasFaker;
+use Database\Seeders\Concerns\HasImage;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use LaraZeus\Wind\Models\Letter;
 
 class WindSeeder extends Seeder
 {
+    use HasFaker;
+    use HasImage;
+
     public function run()
     {
         $department = DB::table('departments')
@@ -15,9 +20,9 @@ class WindSeeder extends Seeder
                 'name' => 'Customer service',
                 'ordering' => 1,
                 'is_active' => 1,
-                'desc' => 'any help with Customer service',
+                'desc' => 'for customer service',
                 'slug' => 'customer-service',
-                'logo' => 'logos/d8snXpNRmcxggHsotkH9p8lxZQ2zeA-metaRGVtby5wbmc=-.png',
+                'logo' => $this->getImage('logos'),
                 'created_at' => now(),
             ]);
 
@@ -26,15 +31,15 @@ class WindSeeder extends Seeder
                 'name' => 'Sales',
                 'ordering' => 2,
                 'is_active' => 1,
-                'desc' => 'any help with Sales',
+                'desc' => 'any help with sales',
                 'slug' => 'sales',
-                // 'logo' => 'new-page',
+                'logo' => $this->getImage('logos'),
                 'created_at' => now(),
             ]);
 
         Letter::factory()
             ->count(5)
-            ->state(function (array $attributes) use ($department) {
+            ->state(function () use ($department) {
                 return [
                     'department_id' => $department,
                 ];
@@ -43,7 +48,7 @@ class WindSeeder extends Seeder
 
         Letter::factory()
             ->count(5)
-            ->state(function (array $attributes) use ($department_2) {
+            ->state(function () use ($department_2) {
                 return [
                     'department_id' => $department_2,
                 ];

@@ -13,13 +13,15 @@ trait HasImage
         bool $withMedia = false,
         string $disk = 'public'
     ): string | int {
+
+        sleep(1);
+
         $randName = $this->faker->word() . '-' . $this->faker->randomNumber();
+        $fullFileName = $directory . '/' . $randName . '.png';
         $imgUrl = 'https://picsum.photos/1300/700?random=' . $randName;
-        $getImageContent = file_get_contents($imgUrl);
-        $fileName = $randName . '.png';
-        $fullFileName = $directory . '/' . $fileName;
 
         if (! Storage::disk($disk)->exists($fullFileName)) {
+            $getImageContent = file_get_contents($imgUrl);
             Storage::disk($disk)->put($fullFileName, $getImageContent);
         }
 
@@ -29,7 +31,7 @@ trait HasImage
             return DB::table('curator_media')
                 ->insertGetId([
                     'name' => $data->filename,
-                    'path' => $directory . '/' . $fileName,
+                    'path' => $fullFileName,
                     'ext' => $data->extension,
                     'type' => $data->mime(),
                     'alt' => $this->faker->words(rand(3, 8), true),
