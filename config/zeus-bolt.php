@@ -33,7 +33,7 @@ return [
         'Field' => \LaraZeus\Bolt\Models\Field::class,
         'FieldResponse' => \LaraZeus\Bolt\Models\FieldResponse::class,
         'Form' => \LaraZeus\Bolt\Models\Form::class,
-        'FormsStatus' => \LaraZeus\Bolt\Enums\FormsStatus::class,
+        'FormsStatus' => \LaraZeus\Bolt\Models\FormsStatus::class,
         'Response' => \LaraZeus\Bolt\Models\Response::class,
         'Section' => \LaraZeus\Bolt\Models\Section::class,
     ],
