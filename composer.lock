@@ -3480,7 +3480,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/accordion",
-                "reference": "2773d5d4ab973390b7623328631ef5456131da44"
+                "reference": "6ec3fe7d4c4da82d699c80e47490d52c96ea1543"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -3777,7 +3777,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/bolt",
-                "reference": "2eae32b58aabb50c1150a86095646fe59ccae66f"
+                "reference": "0f85c08af726b7da402af193321daf5cd5d38641"
             },
             "require": {
                 "flowframe/laravel-trend": "^0.4",
@@ -3882,7 +3882,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/bolt-pro",
-                "reference": "5f9d95f8f75b818c54ff390b233aa4f5b7d05953"
+                "reference": "91ed0ea8163cd75e28c55ba162a98ebc303a6958"
             },
             "require": {
                 "calebporzio/sushi": "^2.4",
@@ -4046,7 +4046,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/chaos",
-                "reference": "e75d452e106732f65645794a5d3682e8414705ba"
+                "reference": "53a7da8784d96655184a44f3f00a157ab7abb4bd"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -4197,7 +4197,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/core",
-                "reference": "6cb9f13854182cea789b14c1e48eaaff150f676e"
+                "reference": "c6495719f9feb838614a6274234c69dd1026142e"
             },
             "require": {
                 "ext-json": "*",
@@ -4806,7 +4806,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/hermes",
-                "reference": "90bac4dc5cad6182c676951ded780b2c0516bcfe"
+                "reference": "d58f9635dba45055e9efe530d7163839433ac6cc"
             },
             "require": {
                 "lara-zeus/core": "*",
@@ -5038,7 +5038,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/laravel-seo",
-                "reference": "3dff9edef2fa234592dfe082f660c8036b3aa8a6"
+                "reference": "1aec521ee56bcc991bc663d7f59add55b0552d05"
             },
             "require": {
                 "illuminate/support": "^10.0|^11.0|^12.0",
@@ -5274,7 +5274,7 @@
         },
         {
             "name": "lara-zeus/matrix-choice",
-            "version": "4.x-dev",
+            "version": "3.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/matrix-choice",
@@ -5362,7 +5362,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/pontus",
-                "reference": "40ec5afedf510da6d70b32ea4f3fc7ebfe2ea3a5"
+                "reference": "a614ad685f47e61b65066b6960028da1a0fcdd26"
             },
             "require": {
                 "ext-json": "*",
@@ -5447,11 +5447,11 @@
         },
         {
             "name": "lara-zeus/popover",
-            "version": "2.x-dev",
+            "version": "1.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/popover",
-                "reference": "001bbc98c23f16d08ff02d151674a9763f405875"
+                "reference": "e3a50381b95a5ad554dd88ce57df697689aacc1b"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -5533,7 +5533,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/qr",
-                "reference": "e9305d213cc2079b79546bc5d93b32c487864090"
+                "reference": "69f69a38dd6e6a3a81fae37a9c53aa3bbc5ea5ff"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -5614,7 +5614,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/quantity",
-                "reference": "8371f10276f325fbd586849b0e0eb7aede112312"
+                "reference": "34e77d233653c80131e1b6bf8b616cbe2a78ed0a"
             },
             "require": {
                 "filament/filament": "^4.0",
@@ -5853,7 +5853,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/sky",
-                "reference": "33dba43c41f71f0058ab8b227308212fa6879683"
+                "reference": "8ab4aacd3a251e10d8da87d36a8bf26601e395bc"
             },
             "require": {
                 "filament/spatie-laravel-media-library-plugin": "*",
@@ -5951,7 +5951,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/spatie-translatable",
-                "reference": "23ff7c9baf5e39edf10642c46f7cdb5e71022a01"
+                "reference": "4b47f6d638c486c688aea325ca9aedd6b0f8346c"
             },
             "require": {
                 "ext-intl": "*",
@@ -6058,7 +6058,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/tartarus",
-                "reference": "5c23263eea3910eda4897b7df7f10ff37be0a11c"
+                "reference": "7dd4fe2fdd93c27e68643b4ebb2aa0dc353b9841"
             },
             "require": {
                 "calebporzio/sushi": "^2.4",
@@ -6151,7 +6151,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/thunder",
-                "reference": "a66ae4196a75740d3244e58f1b5bef43a53ecbd6"
+                "reference": "915ce8a15f312f7d61372d9e4a5002b721eda70c"
             },
             "require": {
                 "lara-zeus/bolt": "*",
@@ -15285,7 +15285,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/upgrade",
-                "reference": "6d0366da06c8012f17e82a25d4ec60241c060b82"
+                "reference": "428ad31cb2cfcea39fb92e2b10ec053dc846d566"
             },
             "require": {
                 "nunomaduro/termwind": "^2.0",
