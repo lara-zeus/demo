@@ -31,7 +31,7 @@ return [
         'Office' => \LaraZeus\Thunder\Models\Office::class,
         'Operations' => \LaraZeus\Thunder\Models\Operations::class,
         'Ticket' => \LaraZeus\Thunder\Models\Ticket::class,
-        'TicketsStatus' => \LaraZeus\Thunder\Models\TicketsStatus::class,
+        'TicketsStatus' => \LaraZeus\Thunder\Enums\TicketsStatus::class,
         'Abilities' => \LaraZeus\Thunder\Enums\Abilities::class,
         'User' => config('auth.providers.users.model'),
         'Staff' => \App\Models\FilamentUser::class,
