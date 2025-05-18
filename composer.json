@@ -58,6 +58,7 @@
     "sentry/sentry-laravel": "^4.3"
   },
   "require-dev": {
+    "lara-zeus/upgrade": "*",
     "barryvdh/laravel-debugbar": "^3.9",
     "filament/upgrade": "^4.0",
     "garygreen/pretty-routes": "^1.0",

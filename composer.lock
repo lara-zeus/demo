@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5fd63383ee975eece0ca47b1481de46",
+    "content-hash": "a300833469b4c50fb8a50ace1f044325",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -4721,7 +4721,7 @@
         },
         {
             "name": "lara-zeus/hera",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/hera",
@@ -4901,7 +4901,7 @@
         },
         {
             "name": "lara-zeus/inline-chart",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/inline-chart",
@@ -5274,7 +5274,7 @@
         },
         {
             "name": "lara-zeus/matrix-choice",
-            "version": "3.x-dev",
+            "version": "4.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/matrix-choice",
@@ -15280,6 +15280,44 @@
             "time": "2025-03-17T16:59:46+00:00"
         },
         {
+            "name": "lara-zeus/upgrade",
+            "version": "1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "../p/upgrade",
+                "reference": "6d0366da06c8012f17e82a25d4ec60241c060b82"
+            },
+            "require": {
+                "nunomaduro/termwind": "^2.0",
+                "php": "^8.1",
+                "rector/rector": "^2.0"
+            },
+            "require-dev": {
+                "roave/security-advisories": "dev-latest"
+            },
+            "bin": [
+                "bin/upgrade"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Upgrade\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "upgrade all lara zeus plugins",
+            "homepage": "https://github.com/lara-zeus/upgrade",
+            "support": {
+                "issues": "https://github.com/lara-zeus/upgrade/issues",
+                "source": "https://github.com/lara-zeus/upgrade"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "larastan/larastan",
             "version": "v3.4.0",
             "source": {
@@ -16024,12 +16062,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "61a4c6fa210845b4f22b67c79f1833be64a34f29"
+                "reference": "0cc529f6cf08a858fcb7a2c5617780fcdc20d1fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/61a4c6fa210845b4f22b67c79f1833be64a34f29",
-                "reference": "61a4c6fa210845b4f22b67c79f1833be64a34f29",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0cc529f6cf08a858fcb7a2c5617780fcdc20d1fe",
+                "reference": "0cc529f6cf08a858fcb7a2c5617780fcdc20d1fe",
                 "shasum": ""
             },
             "conflict": {
@@ -16072,7 +16110,9 @@
                 "athlon1600/youtube-downloader": "<=4",
                 "austintoddj/canvas": "<=3.4.2",
                 "auth0/auth0-php": ">=8.0.0.0-beta1,<8.14",
-                "auth0/wordpress": "<=4.6",
+                "auth0/login": "<7.17",
+                "auth0/symfony": "<5.4",
+                "auth0/wordpress": "<5.3",
                 "automad/automad": "<2.0.0.0-alpha5",
                 "automattic/jetpack": "<9.8",
                 "awesome-support/awesome-support": "<=6.0.7",
@@ -16948,7 +16988,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-16T18:07:06+00:00"
+            "time": "2025-05-17T16:05:20+00:00"
         },
         {
             "name": "spatie/backtrace",
