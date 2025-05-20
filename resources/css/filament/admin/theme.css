@@ -62,7 +62,7 @@
 .fi-sidebar-group-paid {
     @apply rounded-2xl !bg-primary-500/10 dark:!bg-primary-900;
     @apply dark:!text-gray-100;
-    @apply border-2 shadow-lg border-b-4 border-primary-500/70 dark:border-primary-500/30;
+    @apply border shadow-md border-b-2 border-primary-500/70 dark:border-primary-500/30;
 }
 
 .fi-modal-close-overlay {
@@ -147,14 +147,16 @@
     @apply ring-0 shadow-none !important;
 }*/
 
-.fi-page-sub-navigation-sidebar-ctn, .fi-section{
-    @apply px-2 py-3 bg-gray-50 dark:bg-gray-900 border-2 shadow-lg border-b-4 border-primary-500 dark:border-primary-800 rounded-2xl !important;
+.fi-page-sub-navigation-sidebar-ctn, .fi-section {
+    @apply px-2 py-3 bg-white dark:bg-gray-900 border shadow-md hover:shadow-lg
+    transition-all ease-in-out duration-300
+    border-b-8 border-primary-500 border-b-primary-500/70 dark:border-primary-800 rounded-2xl !important;
 }
 
-.fi-page-sub-navigation-sidebar{
+.fi-page-sub-navigation-sidebar {
     @apply rounded-2xl !important;
 }
 
-.fi-active, .fi-active a, .fi-sidebar-item.fi-active{
+.fi-active, .fi-active a, .fi-sidebar-item.fi-active {
     @apply rounded-2xl !important;
 }
