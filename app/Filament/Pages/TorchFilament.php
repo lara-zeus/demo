@@ -4,16 +4,17 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
-use Filament\Infolists\Components\Section;
-use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use LaraZeus\TorchFilament\Infolists\TorchEntry;
+use BackedEnum;
 
 class TorchFilament extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
+    protected static string | BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
 
     protected string $view = 'filament.pages.torch-filament';
 
@@ -21,11 +22,11 @@ class TorchFilament extends Page
 
     public array $data = [];
 
-    public function infolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function infolist(Schema $schema): Schema
     {
         return $schema
             ->components([
-                \Filament\Schemas\Components\Section::make()
+                Section::make()
                     ->schema([
                         TorchEntry::make('code')
                             ->columnSpanFull()
