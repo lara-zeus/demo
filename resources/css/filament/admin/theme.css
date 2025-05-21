@@ -154,7 +154,7 @@
 .fi-page-sub-navigation-sidebar-ctn, .fi-section {
     @apply px-2 py-3 bg-gray-50 dark:bg-gray-900 border shadow-md hover:shadow-lg
     transition-all ease-in-out duration-300
-    border-b-8 border-primary-500 border-b-primary-500/70 dark:border-primary-800 rounded-2xl !important;
+    border-b-8 border-primary-500 border-b-primary-500/70 hover:border-b-primary-500 dark:border-primary-800 rounded-2xl !important;
 }
 
 .fi-page-sub-navigation-sidebar {
