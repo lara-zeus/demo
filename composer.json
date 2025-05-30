@@ -58,16 +58,18 @@
     "sentry/sentry-laravel": "^4.3"
   },
   "require-dev": {
-    "lara-zeus/upgrade": "*",
     "barryvdh/laravel-debugbar": "^3.9",
     "filament/upgrade": "^4.0",
     "garygreen/pretty-routes": "^1.0",
+    "lara-zeus/upgrade": "*",
     "larastan/larastan": "^3.0",
     "laravel/pint": "^1.13",
     "laravel/tinker": "^2.9",
     "nunomaduro/collision": "^8.0",
-    "phpstan/extension-installer": "^1.1",
+    "phpstan/extension-installer": "^1.4",
+    "phpstan/phpstan": "^2.1",
     "phpstan/phpstan-deprecation-rules": "^2.0",
+    "phpstan/phpstan-phpunit": "^2.0",
     "roave/security-advisories": "dev-latest",
     "spatie/laravel-ignition": "^2.4"
   },

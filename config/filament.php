@@ -1,5 +1,7 @@
 <?php
 
+use Filament\Support\Commands\FileGenerators\FileGenerationFlag;
+
 return [
 
     /*
@@ -102,7 +104,18 @@ return [
     */
 
     'file_generation' => [
-        'flags' => [],
+        'flags' => [
+            // Define new forms and infolists inside the resource class instead of a separate schema class.
+            FileGenerationFlag::EMBEDDED_PANEL_RESOURCE_SCHEMAS,
+            // Define new tables inside the resource class instead of a separate table class.
+            FileGenerationFlag::EMBEDDED_PANEL_RESOURCE_TABLES,
+            // Create new cluster classes outside of their directories.
+            FileGenerationFlag::PANEL_CLUSTER_CLASSES_OUTSIDE_DIRECTORIES,
+            // Create new resource classes outside of their directories.
+            FileGenerationFlag::PANEL_RESOURCE_CLASSES_OUTSIDE_DIRECTORIES,
+            // Partially import components such as form fields and table columns instead of importing each component explicitly.
+            // FileGenerationFlag::PARTIAL_IMPORTS,
+        ],
     ],
 
     /*
