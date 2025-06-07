@@ -122,10 +122,6 @@
     {
       "type": "path",
       "url": "../p/*"
-    },
-    {
-      "type": "path",
-      "url": "../filament/packages/*"
     }
   ]
 }

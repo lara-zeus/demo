@@ -23,8 +23,8 @@ class Statistics extends Page
     {
         return [
             // UmamiWidgetStatsGrouped::class,
-            UmamiWidgetTableReferrers::class,
-            UmamiWidgetTableUrls::class,
+            // UmamiWidgetTableReferrers::class,
+            // UmamiWidgetTableUrls::class,
 
             GitStarsChart::class,
             GitDownChart::class,

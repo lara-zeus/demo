@@ -4,11 +4,10 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
-use Filament\Forms\Components\Actions\Action;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Form;
-use Filament\Forms\Get;
+use Filament\Forms\Components\TextInput;
 use Filament\Pages\Page;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Components\Utilities\Get;
 use LaraZeus\Quantity\Components\Quantity as QuantityAlias;
 
 class Quantity extends Page
@@ -37,8 +36,11 @@ class Quantity extends Page
         return $schema
             ->statePath('data')
             ->components([
-                \Filament\Schemas\Components\Section::make()
+                Section::make()
                     ->schema([
+
+                        TextInput::make('sdfsfdsf')
+                            ->label(fn(Get $get)=>$get('name9')),
 
                         QuantityAlias::make('name9')
                             ->label('quantity with steps')
@@ -49,7 +51,6 @@ class Quantity extends Page
                             ->maxValue(1000000)
                             ->minValue(1)
                             ->hiddenLabel()
-                            ->live()
                             ->columnSpanFull(),
 
                         QuantityAlias::make('name1')
@@ -60,7 +61,6 @@ class Quantity extends Page
                             ->maxValue(10)
                             ->minValue(2)
                             ->hiddenLabel()
-                            ->live()
                             ->prefix(fn (\Filament\Schemas\Components\Utilities\Get $get) => 'stop at 0')
                             ->suffix(fn (\Filament\Schemas\Components\Utilities\Get $get) => 'stop at 10')
                             ->columnSpanFull(),
@@ -72,8 +72,7 @@ class Quantity extends Page
                             ->prefix(fn (\Filament\Schemas\Components\Utilities\Get $get) => 'stop at 0')
 
                             ->heading('select quantity')
-                            ->hiddenLabel()
-                            ->live(),
+                            ->hiddenLabel(),
 
                         QuantityAlias::make('name3')
                             ->label('select quantity')
@@ -87,7 +86,6 @@ class Quantity extends Page
                                     ->modalHeading('nothing will happen after ...')
                                     ->modalDescription('just want to let you know')
                             )
-                            ->live()
                             ->stacked()
                             ->columnSpanFull(),
 
@@ -97,7 +95,6 @@ class Quantity extends Page
                             ->required()
                             ->inlineLabel()
                             ->heading('select quantity')
-                            ->live()
                             ->stacked()
                             ->columnSpanFull(),
                     ]),
