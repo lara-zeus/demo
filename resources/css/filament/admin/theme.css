@@ -8,6 +8,7 @@
 @source '../../../../app/Filament';
 @source '../../../../resources/views';
 @source '../../../../vendor/lara-zeus';
+@source '../../../../vendor/lara-zeus/dynamic-dashboard/src/Enums/Columns.php';
 
 [dir=rtl] {
     font-family: 'Almarai', 'Montserrat', sans-serif;

@@ -1,1 +1,2 @@
 @source '../../vendor/filament/**/*.blade.php';
+@source '../../vendor/lara-zeus/dynamic-dashboard/src/Enums/Columns.php';
