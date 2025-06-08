@@ -5,8 +5,12 @@
 /*@import '/node_modules/tippy.js/dist/tippy.css';*/
 /*@import '/node_modules/tippy.js/themes/light.css';*/
 
-@import "./source-frontend.css";
-@import "./source-filament.css";
+@source '../../vendor/filament/**/*.blade.php';
+@source '../../vendor/lara-zeus';
+@source '../views/**/*.blade.php';
+
+/*@import "./source-frontend.css";
+@import "./source-filament.css";*/
 @import "./theme.css";
 
 /* Sky search result highlight */
