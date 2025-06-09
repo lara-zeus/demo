@@ -369,16 +369,16 @@
         },
         {
             "name": "awcodes/filament-curator",
-            "version": "v3.7.6",
+            "version": "v3.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/filament-curator.git",
-                "reference": "62348719d45542a3a662d71d28529c62b68b1a1f"
+                "reference": "eecccb269b8d847239e48c86afdb9d3431424191"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/filament-curator/zipball/62348719d45542a3a662d71d28529c62b68b1a1f",
-                "reference": "62348719d45542a3a662d71d28529c62b68b1a1f",
+                "url": "https://api.github.com/repos/awcodes/filament-curator/zipball/eecccb269b8d847239e48c86afdb9d3431424191",
+                "reference": "eecccb269b8d847239e48c86afdb9d3431424191",
                 "shasum": ""
             },
             "require": {
@@ -438,7 +438,7 @@
             ],
             "support": {
                 "issues": "https://github.com/awcodes/filament-curator/issues",
-                "source": "https://github.com/awcodes/filament-curator/tree/v3.7.6"
+                "source": "https://github.com/awcodes/filament-curator/tree/v3.7.7"
             },
             "funding": [
                 {
@@ -446,7 +446,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-29T17:46:53+00:00"
+            "time": "2025-06-06T17:26:17+00:00"
         },
         {
             "name": "awcodes/filament-quick-create",
@@ -2041,16 +2041,16 @@
         },
         {
             "name": "codewithdennis/filament-select-tree",
-            "version": "v3.1.56",
+            "version": "v3.1.57",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeWithDennis/filament-select-tree.git",
-                "reference": "fdb9dcccc9e800a741d663e3d3dc89d111db5ee0"
+                "reference": "86a0762a7da77cf39b7ac41c2b448702a3d4b4db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/fdb9dcccc9e800a741d663e3d3dc89d111db5ee0",
-                "reference": "fdb9dcccc9e800a741d663e3d3dc89d111db5ee0",
+                "url": "https://api.github.com/repos/CodeWithDennis/filament-select-tree/zipball/86a0762a7da77cf39b7ac41c2b448702a3d4b4db",
+                "reference": "86a0762a7da77cf39b7ac41c2b448702a3d4b4db",
                 "shasum": ""
             },
             "require": {
@@ -2108,7 +2108,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-29T16:34:31+00:00"
+            "time": "2025-06-09T08:23:31+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -4072,16 +4072,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php-lite",
-            "version": "9.0.6",
+            "version": "9.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php-lite.git",
-                "reference": "9842b3b991a2e7a7f21066124e8ed015941040fd"
+                "reference": "353fdd900277e8974b42c23a1f8b2c943e126791"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php-lite/zipball/9842b3b991a2e7a7f21066124e8ed015941040fd",
-                "reference": "9842b3b991a2e7a7f21066124e8ed015941040fd",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php-lite/zipball/353fdd900277e8974b42c23a1f8b2c943e126791",
+                "reference": "353fdd900277e8974b42c23a1f8b2c943e126791",
                 "shasum": ""
             },
             "require": {
@@ -4146,7 +4146,7 @@
                 "issues": "https://github.com/giggsey/libphonenumber-for-php-lite/issues",
                 "source": "https://github.com/giggsey/libphonenumber-for-php-lite"
             },
-            "time": "2025-05-29T10:02:14+00:00"
+            "time": "2025-06-09T07:26:43+00:00"
         },
         {
             "name": "graham-campbell/bounded-cache",
@@ -14167,16 +14167,16 @@
         },
         {
             "name": "secondnetwork/blade-tabler-icons",
-            "version": "v3.33.0",
+            "version": "v3.34.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/secondnetwork/blade-tabler-icons.git",
-                "reference": "523b3ede493ce9f8cbe3a5bdce21769976a80b28"
+                "reference": "e48c0a5a53798d42c7beff760de8cbc7dbbccff4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/secondnetwork/blade-tabler-icons/zipball/523b3ede493ce9f8cbe3a5bdce21769976a80b28",
-                "reference": "523b3ede493ce9f8cbe3a5bdce21769976a80b28",
+                "url": "https://api.github.com/repos/secondnetwork/blade-tabler-icons/zipball/e48c0a5a53798d42c7beff760de8cbc7dbbccff4",
+                "reference": "e48c0a5a53798d42c7beff760de8cbc7dbbccff4",
                 "shasum": ""
             },
             "require": {
@@ -14219,22 +14219,22 @@
             ],
             "support": {
                 "issues": "https://github.com/secondnetwork/blade-tabler-icons/issues",
-                "source": "https://github.com/secondnetwork/blade-tabler-icons/tree/v3.33.0"
+                "source": "https://github.com/secondnetwork/blade-tabler-icons/tree/v3.34.0"
             },
-            "time": "2025-05-17T06:28:48+00:00"
+            "time": "2025-06-09T08:41:55+00:00"
         },
         {
             "name": "sentry/sentry",
-            "version": "4.11.1",
+            "version": "4.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-php.git",
-                "reference": "53dc0bcb6a667cac5b760b46f98d5380e63e02ca"
+                "reference": "0173702ffcbe36ce7638f07f090271294866a7a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/53dc0bcb6a667cac5b760b46f98d5380e63e02ca",
-                "reference": "53dc0bcb6a667cac5b760b46f98d5380e63e02ca",
+                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/0173702ffcbe36ce7638f07f090271294866a7a0",
+                "reference": "0173702ffcbe36ce7638f07f090271294866a7a0",
                 "shasum": ""
             },
             "require": {
@@ -14298,7 +14298,7 @@
             ],
             "support": {
                 "issues": "https://github.com/getsentry/sentry-php/issues",
-                "source": "https://github.com/getsentry/sentry-php/tree/4.11.1"
+                "source": "https://github.com/getsentry/sentry-php/tree/4.12.0"
             },
             "funding": [
                 {
@@ -14310,20 +14310,20 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-05-12T11:30:33+00:00"
+            "time": "2025-06-07T08:37:56+00:00"
         },
         {
             "name": "sentry/sentry-laravel",
-            "version": "4.14.0",
+            "version": "4.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-laravel.git",
-                "reference": "d0b285c118910a81d845831a2290fd50a482d59f"
+                "reference": "8b71a9209e8a01cb5728e743e99299d87d688010"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-laravel/zipball/d0b285c118910a81d845831a2290fd50a482d59f",
-                "reference": "d0b285c118910a81d845831a2290fd50a482d59f",
+                "url": "https://api.github.com/repos/getsentry/sentry-laravel/zipball/8b71a9209e8a01cb5728e743e99299d87d688010",
+                "reference": "8b71a9209e8a01cb5728e743e99299d87d688010",
                 "shasum": ""
             },
             "require": {
@@ -14387,7 +14387,7 @@
             ],
             "support": {
                 "issues": "https://github.com/getsentry/sentry-laravel/issues",
-                "source": "https://github.com/getsentry/sentry-laravel/tree/4.14.0"
+                "source": "https://github.com/getsentry/sentry-laravel/tree/4.14.1"
             },
             "funding": [
                 {
@@ -14399,7 +14399,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-06-02T08:31:09+00:00"
+            "time": "2025-06-07T07:52:41+00:00"
         },
         {
             "name": "spatie/browsershot",
@@ -20275,12 +20275,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "d1d1619048a615bd2836f095f8dd3dd33e4ba457"
+                "reference": "1f25500e8bf958acb60f7cbaf30e6ceb9658ee21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/d1d1619048a615bd2836f095f8dd3dd33e4ba457",
-                "reference": "d1d1619048a615bd2836f095f8dd3dd33e4ba457",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/1f25500e8bf958acb60f7cbaf30e6ceb9658ee21",
+                "reference": "1f25500e8bf958acb60f7cbaf30e6ceb9658ee21",
                 "shasum": ""
             },
             "conflict": {
@@ -20340,7 +20340,7 @@
                 "bagisto/bagisto": "<2.1",
                 "barrelstrength/sprout-base-email": "<1.2.7",
                 "barrelstrength/sprout-forms": "<3.9",
-                "barryvdh/laravel-translation-manager": "<0.6.2",
+                "barryvdh/laravel-translation-manager": "<0.6.8",
                 "barzahlen/barzahlen-php": "<2.0.1",
                 "baserproject/basercms": "<=5.1.1",
                 "bassjobsen/bootstrap-3-typeahead": ">4.0.2",
@@ -21213,7 +21213,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-06T23:05:15+00:00"
+            "time": "2025-06-09T14:06:10+00:00"
         },
         {
             "name": "spatie/backtrace",
