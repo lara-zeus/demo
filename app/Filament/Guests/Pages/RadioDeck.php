@@ -2,22 +2,24 @@
 
 namespace App\Filament\Guests\Pages;
 
-use Filament\Forms\Form;
+use BackedEnum;
 use Filament\Pages\Page;
+use Filament\Schemas\Schema;
 use Filament\Support\Colors\Color;
 use Filament\Support\Enums\Alignment;
 use Filament\Support\Enums\IconPosition;
 use Filament\Support\Enums\IconSize;
+use UnitEnum;
 
 class RadioDeck extends Page
 {
     protected string $view = 'filament.guests.pages.radio-deck';
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-aspect-ratio';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-aspect-ratio';
 
     protected static ?int $navigationSort = 2;
 
-    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
+    protected static string | UnitEnum | null $navigationGroup = 'Plugins';
 
     public ?array $data = [];
 
@@ -26,7 +28,7 @@ class RadioDeck extends Page
         $this->form->fill();
     }
 
-    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function form(Schema $schema): Schema
     {
         return $schema
             ->statePath('data')
@@ -94,7 +96,7 @@ class RadioDeck extends Page
                     ->iconSize(IconSize::Large) // Small | Medium | Large | (string - sm | md | lg)
                     ->iconPosition(IconPosition::Before) // Before | After | (string - before | after)
                     ->alignment(Alignment::End) // Start | Center | End | (string - start | center | end)
-                    ->color(Color::hex('#45B39D'))
+                    ->color(Color::generateV3Palette('#45B39D'))
                     ->columns(3),
 
                 \JaOcero\RadioDeck\Forms\Components\RadioDeck::make('select-os-3')
@@ -127,7 +129,7 @@ class RadioDeck extends Page
                     ->iconSize(IconSize::Small) // Small | Medium | Large | (string - sm | md | lg)
                     ->iconPosition(IconPosition::After) // Before | After | (string - before | after)
                     ->alignment(Alignment::End) // Start | Center | End | (string - start | center | end)
-                    ->color(Color::hex('#F1948A'))
+                    ->color(Color::generateV3Palette('#F1948A'))
                     ->columns(3),
             ]);
     }

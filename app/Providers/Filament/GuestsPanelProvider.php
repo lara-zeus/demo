@@ -4,7 +4,7 @@ namespace App\Providers\Filament;
 
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
-use Filament\Pages;
+use Filament\Pages\Dashboard;
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
@@ -47,7 +47,7 @@ class GuestsPanelProvider extends PanelProvider
             ->discoverResources(in: app_path('Filament/Guests/Resources'), for: 'App\\Filament\\Guests\\Resources')
             ->discoverPages(in: app_path('Filament/Guests/Pages'), for: 'App\\Filament\\Guests\\Pages')
             ->pages([
-                Pages\Dashboard::class,
+                Dashboard::class,
             ])
             ->discoverWidgets(in: app_path('Filament/Guests/Widgets'), for: 'App\\Filament\\Guests\\Widgets')
             ->widgets([

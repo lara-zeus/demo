@@ -2,16 +2,18 @@
 
 namespace App\Filament\Guests\Pages;
 
-use Filament\Forms\Form;
+use BackedEnum;
 use Filament\Pages\Page;
+use Filament\Schemas\Schema;
+use UnitEnum;
 
 class Shout extends Page
 {
     protected string $view = 'filament.guests.pages.shout';
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-message-chatbot';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-message-chatbot';
 
-    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
+    protected static string | UnitEnum | null $navigationGroup = 'Plugins';
 
     protected static ?int $navigationSort = 3;
 
@@ -22,7 +24,7 @@ class Shout extends Page
         $this->form->fill();
     }
 
-    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function form(Schema $schema): Schema
     {
         return $schema
             ->statePath('data')

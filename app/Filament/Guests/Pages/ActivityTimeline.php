@@ -2,22 +2,24 @@
 
 namespace App\Filament\Guests\Pages;
 
-use Filament\Infolists\Infolist;
+use BackedEnum;
 use Filament\Pages\Page;
+use Filament\Schemas\Schema;
 use Filament\Support\Colors\Color;
 use JaOcero\ActivityTimeline\Components\ActivityDate;
 use JaOcero\ActivityTimeline\Components\ActivityDescription;
 use JaOcero\ActivityTimeline\Components\ActivityIcon;
 use JaOcero\ActivityTimeline\Components\ActivitySection;
 use JaOcero\ActivityTimeline\Components\ActivityTitle;
+use UnitEnum;
 
 class ActivityTimeline extends Page
 {
     protected string $view = 'filament.guests.pages.activity-timeline';
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-timeline-event-exclamation';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-timeline-event-exclamation';
 
-    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
+    protected static string | UnitEnum | null $navigationGroup = 'Plugins';
 
     protected static ?int $navigationSort = 3;
 
@@ -28,7 +30,7 @@ class ActivityTimeline extends Page
         $this->form->fill();
     }
 
-    public function infolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function infolist(Schema $schema): Schema
     {
         return $schema
             ->state([

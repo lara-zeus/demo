@@ -3,18 +3,21 @@
 namespace App\Filament\Resources;
 
 use App\Filament\DemoWidgets\MiniChart;
-use App\Filament\Resources\UserResource\Pages;
+use App\Filament\Resources\UserResource\Pages\CreateUser;
+use App\Filament\Resources\UserResource\Pages\EditUser;
+use App\Filament\Resources\UserResource\Pages\ListUsers;
+use App\Filament\Resources\UserResource\Pages\ViewUser;
 use App\Models\User;
+use BackedEnum;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\EditAction;
+use Filament\Actions\ViewAction;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Form;
-use Filament\Infolists\Components\Section;
 use Filament\Infolists\Components\TextEntry;
-use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use Filament\Support\Enums\Alignment;
-use Filament\Tables\Actions\ActionGroup;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
@@ -25,7 +28,6 @@ use Illuminate\Database\Eloquent\Model;
 use LaraZeus\Popover\Infolists\PopoverEntry;
 use LaraZeus\Popover\Tables\PopoverColumn;
 use LaraZeus\Qr\Facades\Qr;
-use STS\FilamentImpersonate\Tables\Actions\Impersonate;
 
 class UserResource extends Resource
 {
@@ -33,7 +35,7 @@ class UserResource extends Resource
 
     protected static ?int $navigationSort = 1;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-users-group';
+    protected static string|BackedEnum|null $navigationIcon = 'tabler-users-group';
 
     public static function getNavigationLabel(): string
     {
@@ -55,27 +57,28 @@ class UserResource extends Resource
         return 'App';
     }
 
-    public static function infolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public static function infolist(Schema $schema): Schema
     {
-        return $schema->components([
-            \Filament\Schemas\Components\Section::make('User Info')->columns()->schema([
-                PopoverEntry::make('name')
-                    // main options
-                    ->trigger('click')
-                    ->placement('right')
-                    // ->offset(10)
-                    ->popOverMaxWidth('none')
-                    ->icon('heroicon-o-chevron-right')
-                    // ->content(fn ($record) => view('filament.test.user-card', ['record' => $record]))
-                    ->content(Qr::render(data: 'dataOrUrl')), // , downloadable:false
+        return $schema
+            ->components([
+                Section::make('User Info')->columns()->schema([
+                    PopoverEntry::make('name')
+                        // main options
+                        ->trigger('click')
+                        ->placement('right')
+                        // ->offset(10)
+                        ->popOverMaxWidth('none')
+                        ->icon('heroicon-o-chevron-right')
+                        // ->content(fn ($record) => view('filament.test.user-card', ['record' => $record]))
+                        ->content(Qr::render(data: 'dataOrUrl')), // , downloadable:false
 
-                // TextEntry::make('name'),
-                TextEntry::make('email'),
-            ]),
-        ]);
+                    // TextEntry::make('name'),
+                    TextEntry::make('email'),
+                ]),
+            ]);
     }
 
-    public static function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public static function form(Schema $schema): Schema
     {
         return $schema->components([
             TextInput::make('name')->required(),
@@ -86,7 +89,7 @@ class UserResource extends Resource
             TextInput::make('password')
                 ->password()
                 ->visibleOn('create')
-                ->required(fn (string $operation): bool => $operation === 'create')
+                ->required(fn(string $operation): bool => $operation === 'create')
                 ->maxLength(255),
         ]);
     }
@@ -97,7 +100,7 @@ class UserResource extends Resource
             ->columns([
                 ImageColumn::make('avatar_url'),
                 PopoverColumn::make('name')
-                    ->content(\LaraZeus\Qr\Facades\Qr::render(
+                    ->content(Qr::render(
                         data: 'https://larazeus.com',
                         options: [
                             'margin' => '1',
@@ -138,10 +141,10 @@ class UserResource extends Resource
                     ->alignment(Alignment::Center)
                     ->wrapHeader(),
             ])
-            ->actions([
-                \Filament\Actions\ActionGroup::make([
-                    \Filament\Actions\ViewAction::make(),
-                    \Filament\Actions\EditAction::make(),
+            ->recordActions([
+                ActionGroup::make([
+                    ViewAction::make(),
+                    EditAction::make(),
                     /*Impersonate::make()
                         ->grouped()
                         ->redirectTo(url('/admin')),*/
@@ -150,9 +153,9 @@ class UserResource extends Resource
             ->defaultSort('id', 'desc')
             ->filters([
                 Filter::make('verified')
-                    ->query(fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
+                    ->query(fn(Builder $query): Builder => $query->whereNotNull('email_verified_at')),
                 Filter::make('unverified')
-                    ->query(fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
+                    ->query(fn(Builder $query): Builder => $query->whereNull('email_verified_at')),
             ]);
     }
 
@@ -181,10 +184,10 @@ class UserResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListUsers::route('/'),
-            'create' => Pages\CreateUser::route('/create'),
-            'view' => Pages\ViewUser::route('/{record}'),
-            'edit' => Pages\EditUser::route('/{record}/edit'),
+            'index' => ListUsers::route('/'),
+            'create' => CreateUser::route('/create'),
+            'view' => ViewUser::route('/{record}'),
+            'edit' => EditUser::route('/{record}/edit'),
         ];
     }
 }

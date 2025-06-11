@@ -4,11 +4,12 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use JsonException;
 
 class RainSeeder extends Seeder
 {
     /**
-     * @throws \JsonException
+     * @throws JsonException
      */
     public function run()
     {

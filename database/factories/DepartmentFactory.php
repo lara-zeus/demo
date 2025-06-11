@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use JsonException;
 use LaraZeus\Wind\Models\Department;
 
 class DepartmentFactory extends Factory
@@ -19,7 +20,7 @@ class DepartmentFactory extends Factory
      *
      * @return array
      *
-     * @throws \JsonException
+     * @throws JsonException
      */
     public function definition()
     {

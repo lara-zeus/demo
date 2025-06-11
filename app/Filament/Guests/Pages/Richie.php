@@ -3,14 +3,16 @@
 namespace App\Filament\Guests\Pages;
 
 use Awcodes\Richie\RichieEditor;
-use Filament\Forms\Form;
+use BackedEnum;
 use Filament\Pages\Page;
+use Filament\Schemas\Schema;
+use UnitEnum;
 
 class Richie extends Page
 {
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-cash-edit';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-cash-edit';
 
-    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
+    protected static string | UnitEnum | null $navigationGroup = 'Plugins';
 
     protected ?string $heading = 'Richie is just another rich text editor for Filament PHP.';
 
@@ -23,7 +25,7 @@ class Richie extends Page
         $this->form->fill([]);
     }
 
-    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function form(Schema $schema): Schema
     {
         return $schema
             ->statePath('data')

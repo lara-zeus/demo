@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use LaraZeus\Hermes\Models\MenuSection;
 
 class CreateMenuItemsTable extends Migration
 {
@@ -15,7 +16,7 @@ class CreateMenuItemsTable extends Migration
     {
         Schema::create('menu_items', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(\LaraZeus\Hermes\Models\MenuSection::class);
+            $table->foreignIdFor(MenuSection::class);
             $table->string('name');
             $table->string('description')->nullable();
             $table->text('prices')->nullable();

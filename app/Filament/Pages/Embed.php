@@ -4,9 +4,9 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
+use BackedEnum;
 use Filament\Actions\Action;
 use Filament\Pages\Page;
-use BackedEnum;
 use Filament\Schemas\Components\View;
 
 class Embed extends Page

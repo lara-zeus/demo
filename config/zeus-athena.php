@@ -1,5 +1,12 @@
 <?php
 
+use LaraZeus\Athena\Enums\RequestStatus;
+use LaraZeus\Athena\Models\Request;
+use LaraZeus\Athena\Models\RequestPeriods;
+use LaraZeus\Athena\Models\Service;
+use LaraZeus\Athena\Models\TimeLock;
+use LaraZeus\Athena\Support\TicketNo;
+
 return [
     /**
      * set the default domain.
@@ -28,16 +35,16 @@ return [
      * ->skyModels([ ... ])
      */
     'models' => [
-        'RequestPeriods' => \LaraZeus\Athena\Models\RequestPeriods::class,
-        'Request' => \LaraZeus\Athena\Models\Request::class,
-        'Service' => \LaraZeus\Athena\Models\Service::class,
-        'TimeLock' => \LaraZeus\Athena\Models\TimeLock::class,
-        'RequestStatus' => \LaraZeus\Athena\Enums\RequestStatus::class,
+        'RequestPeriods' => RequestPeriods::class,
+        'Request' => Request::class,
+        'Service' => Service::class,
+        'TimeLock' => TimeLock::class,
+        'RequestStatus' => RequestStatus::class,
         'User' => config('auth.providers.users.model'),
     ],
 
     /*
      * generate ticket no using:
      */
-    'appointment-no' => \LaraZeus\Athena\Support\TicketNo::class,
+    'appointment-no' => TicketNo::class,
 ];

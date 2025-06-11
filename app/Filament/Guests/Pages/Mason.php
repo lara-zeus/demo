@@ -4,15 +4,17 @@ namespace App\Filament\Guests\Pages;
 
 use App\Mason\BrickCollection;
 use App\Models\Mason as MasonModel;
-use Filament\Forms\Form;
+use BackedEnum;
 use Filament\Notifications\Notification;
 use Filament\Pages\Page;
+use Filament\Schemas\Schema;
+use UnitEnum;
 
 class Mason extends Page
 {
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-building-castle';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-building-castle';
 
-    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
+    protected static string | UnitEnum | null $navigationGroup = 'Plugins';
 
     protected string $view = 'filament.guests.pages.mason';
 
@@ -28,7 +30,7 @@ class Mason extends Page
         $this->form->fill($this->post?->toArray() ?? []);
     }
 
-    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function form(Schema $schema): Schema
     {
         return $schema
             ->statePath('data')

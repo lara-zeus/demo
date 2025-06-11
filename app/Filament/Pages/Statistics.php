@@ -5,6 +5,7 @@ namespace App\Filament\Pages;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use App\Filament\Pages\Widgets\GitDownChart;
 use App\Filament\Pages\Widgets\GitStarsChart;
+use BackedEnum;
 use Filament\Pages\Page;
 use Schmeits\FilamentUmami\Concerns\HasFilter;
 use Schmeits\FilamentUmami\Widgets\UmamiWidgetStatsGrouped;
@@ -13,9 +14,9 @@ use Schmeits\FilamentUmami\Widgets\UmamiWidgetTableUrls;
 
 class Statistics extends Page
 {
-    //use HasFilter;
+    // use HasFilter;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
+    protected static string | BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
 
     protected string $view = 'filament.pages.statistics';
 

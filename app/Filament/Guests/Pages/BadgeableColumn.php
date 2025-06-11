@@ -4,12 +4,14 @@ namespace App\Filament\Guests\Pages;
 
 use App\Models\User;
 use Awcodes\FilamentBadgeableColumn\Components\Badge;
+use BackedEnum;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Pages\Page;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
+use UnitEnum;
 
 class BadgeableColumn extends Page implements HasForms, HasTable
 {
@@ -18,9 +20,9 @@ class BadgeableColumn extends Page implements HasForms, HasTable
 
     protected string $view = 'filament.guests.pages.badgeable-column';
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-badge';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-badge';
 
-    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
+    protected static string | UnitEnum | null $navigationGroup = 'Plugins';
 
     protected static ?int $navigationSort = 3;
 

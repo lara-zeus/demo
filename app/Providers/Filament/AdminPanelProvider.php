@@ -9,6 +9,9 @@ use App\Filament\Pages\Tiles;
 use App\Filament\Resources\CarResource;
 use App\Filament\Resources\UserResource;
 use App\Filament\Widgets\Feedback;
+use App\Zeus\CustomSchema\Field;
+use App\Zeus\CustomSchema\Form;
+use App\Zeus\CustomSchema\Section;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
 use Archilex\AdvancedTables\Resources\UserViewResource;
@@ -21,17 +24,18 @@ use Awcodes\Overlook\OverlookPlugin;
 use Awcodes\Overlook\Widgets\OverlookWidget;
 use Awcodes\Recently\RecentlyPlugin;
 use DiogoGPinto\AuthUIEnhancer\AuthUIEnhancerPlugin;
+use Exception;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Navigation\NavigationGroup;
-use Filament\Pages;
+use Filament\Pages\Dashboard;
 use Filament\Panel;
 use Filament\PanelProvider;
-use Filament\SpatieLaravelTranslatablePlugin;
 use Filament\Support\Colors\Color;
 use Filament\View\PanelsRenderHook;
-use Filament\Widgets;
+use Filament\Widgets\AccountWidget;
+use Filament\Widgets\FilamentInfoWidget;
 use Illuminate\Contracts\View\View;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
@@ -81,7 +85,7 @@ use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 class AdminPanelProvider extends PanelProvider
 {
     /**
-     * @throws \Exception
+     * @throws Exception
      */
     public function panel(Panel $panel): Panel
     {
@@ -91,7 +95,7 @@ class AdminPanelProvider extends PanelProvider
             ->defaultAvatarProvider(
                 BoringAvatarsProvider::class
             )
-            ->databaseNotifications() //todo
+            ->databaseNotifications() // todo
             ->homeUrl('/')
             ->id('admin')
             ->path('admin')
@@ -101,8 +105,8 @@ class AdminPanelProvider extends PanelProvider
             ->brandLogo(fn () => view('filament.logo'))
             ->colors([
                 ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
-                'primary' => Color::hex('#45B39D'),
-                'secondary' => Color::hex('#F1948A'),
+                'primary' => Color::generateV3Palette('#45B39D'),
+                'secondary' => Color::generateV3Palette('#F1948A'),
             ])
 
             ->sidebarCollapsibleOnDesktop()
@@ -286,7 +290,7 @@ class AdminPanelProvider extends PanelProvider
             ->discoverClusters(in: app_path('Filament/Clusters'), for: 'App\\Filament\\Clusters')
             //
             ->pages([
-                Pages\Dashboard::class,
+                Dashboard::class,
                 DashboardPage::class,
             ])
             ->widgets([
@@ -294,10 +298,10 @@ class AdminPanelProvider extends PanelProvider
                 // UmamiWidgetTableReferrers::class,
                 // UmamiWidgetTableUrls::class,
 
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
-                //VersionsWidget::class,
-                //OverlookWidget::class,
+                AccountWidget::class,
+                FilamentInfoWidget::class,
+                // VersionsWidget::class,
+                // OverlookWidget::class,
                 Feedback::class,
             ])
             ->middleware([
@@ -323,7 +327,7 @@ class AdminPanelProvider extends PanelProvider
                 ->showEmptyPanelOnMobile(false)
                 ->formPanelPosition('left')
                 ->formPanelWidth('40%'),*/
-            //FilamentUmamiPlugin::make(),
+            // FilamentUmamiPlugin::make(),
             /*RecentlyPlugin::make()
                 ->renderUsingHook(PanelsRenderHook::USER_MENU_BEFORE)
                 ->tooltip('Zeus is keeping an eye on you! 👿')
@@ -388,13 +392,13 @@ class AdminPanelProvider extends PanelProvider
             /*FilamentFullCalendarPlugin::make()
                 ->selectable()
                 ->editable(),*/
-            //\LaraZeus\Akin\AkinTheme::make(),
+            // \LaraZeus\Akin\AkinTheme::make(),
             BoltPlugin::make()
                 ->hideNavigationBadges()
                 ->customSchema([
-                    'form' => \App\Zeus\CustomSchema\Form::class,
-                    'section' => \App\Zeus\CustomSchema\Section::class,
-                    'field' => \App\Zeus\CustomSchema\Field::class,
+                    'form' => Form::class,
+                    'section' => Section::class,
+                    'field' => Field::class,
                 ])
                 ->formActionsAreSticky(true)
                 ->extensions([
@@ -408,7 +412,7 @@ class AdminPanelProvider extends PanelProvider
             DynamicDashboardPlugin::make(),
             // RheaPlugin::make(),
             HermesPlugin::make(),
-            //PontusPlugin::make(),
+            // PontusPlugin::make(),
         ];
     }
 }

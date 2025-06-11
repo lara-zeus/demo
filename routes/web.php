@@ -1,16 +1,18 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
 
 Route::view('/', 'welcome');
 Route::redirect('/login', '/admin/login')->name('login');
 
 Route::post('/forms', function () {
     // test callbacks for bolt
-    $code = \Illuminate\Support\Str::random(4, 5);
+    $code = Str::random(4, 5);
 
-    \Illuminate\Support\Facades\DB::table('logger')->insert([
+    DB::table('logger')->insert([
         'form_id' => request('form_id'),
         'response' => request('response'),
         'code' => $code,

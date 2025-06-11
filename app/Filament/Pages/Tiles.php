@@ -5,11 +5,9 @@ namespace App\Filament\Pages;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use App\Models\User;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Form;
-use Filament\Infolists\Components\Section as InfolistSection;
-use Filament\Infolists\Infolist;
+use BackedEnum;
 use Filament\Pages\Page;
+use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
@@ -25,7 +23,7 @@ class Tiles extends Page implements HasTable
 
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-photo-circle';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-photo-circle';
 
     protected string $view = 'filament.pages.tiles';
 
@@ -61,7 +59,7 @@ class Tiles extends Page implements HasTable
             ]);
     }
 
-    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function form(Schema $schema): Schema
     {
         return $schema
             ->statePath('data')
@@ -88,7 +86,7 @@ class Tiles extends Page implements HasTable
             ]);
     }
 
-    public function infolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function infolist(Schema $schema): Schema
     {
         return $schema
             ->record(User::first())

@@ -5,6 +5,7 @@ namespace App\Filament\Pages;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use App\Models\User;
+use BackedEnum;
 use Filament\Pages\Page;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
@@ -21,7 +22,7 @@ class Popover extends Page implements HasTable
 
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-stack-pop';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-stack-pop';
 
     protected string $view = 'filament.pages.popover';
 

@@ -1,8 +1,10 @@
 <?php
 
+use App\Models\User;
+
 // config for Awcodes/Recently
 return [
-    'user_model' => App\Models\User::class,
+    'user_model' => User::class,
     'max_items' => 20,
     'width' => 'xs',
     'global_search' => true,

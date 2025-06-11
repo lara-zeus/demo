@@ -4,9 +4,9 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Form;
+use BackedEnum;
 use Filament\Pages\Page;
+use Filament\Schemas\Schema;
 use LaraZeus\Delia\Filament\Actions\BookmarkHeaderAction;
 use LaraZeus\MatrixChoice\Components\Matrix as MatrixAlias;
 
@@ -14,7 +14,7 @@ class Matrix extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-list-check';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-list-check';
 
     protected string $view = 'filament.pages.qrcode';
 
@@ -41,7 +41,7 @@ class Matrix extends Page
         ];
     }
 
-    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function form(Schema $schema): Schema
     {
         return $schema
             ->statePath('data')
@@ -50,11 +50,12 @@ class Matrix extends Page
                     ->schema([
                         MatrixAlias::make('options')
                             // ->disabled()
-                            ->formatStateUsing(fn() => [
+                            ->formatStateUsing(fn () => [
                                 'companies' => ['c' => true],
                                 'clients' => ['m' => true, 'p' => true],
                             ])
-                            ->disableOptionWhen(fn(string $value
+                            ->disableOptionWhen(fn (
+                                string $value
                             ): bool => $value === 'm' || $value === 'p' || $value === 'users')
                             ->rowSelectRequired(false)
                             ->helperText('you can disable any options, like in the users row, the Manage and Approve are disabled')
@@ -75,7 +76,7 @@ class Matrix extends Page
                             ]),
 
                         MatrixAlias::make('question1')
-                            ->disableOptionWhen(fn(string $value): bool => $value === 0)
+                            ->disableOptionWhen(fn (string $value): bool => $value === 0)
                             ->rowSelectRequired(false)
                             ->label('Tell us about your mod')
                             ->asCheckbox()

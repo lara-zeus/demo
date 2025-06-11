@@ -14,7 +14,7 @@ class Mark extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string|BackedEnum|null $navigationIcon = 'tabler-star-half-filled';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-star-half-filled';
 
     protected string $view = 'filament.pages.mark';
 

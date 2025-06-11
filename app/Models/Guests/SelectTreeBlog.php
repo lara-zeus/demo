@@ -12,7 +12,7 @@ class SelectTreeBlog extends Model
         'category_id',
     ];
 
-    public function categories(): belongsToMany
+    public function categories(): BelongsToMany
     {
         return $this->belongsToMany(SelectTreeCategory::class);
     }

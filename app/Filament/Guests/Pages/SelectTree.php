@@ -3,19 +3,20 @@
 namespace App\Filament\Guests\Pages;
 
 use App\Models\Guests\SelectTreeBlog;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Form;
+use BackedEnum;
 use Filament\Pages\Page;
+use Filament\Schemas\Schema;
+use UnitEnum;
 
 class SelectTree extends Page
 {
     protected string $view = 'filament.guests.pages.select-tree';
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-binary-tree-2';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-binary-tree-2';
 
     protected static ?int $navigationSort = 1;
 
-    protected static string | \UnitEnum | null $navigationGroup = 'Plugins';
+    protected static string | UnitEnum | null $navigationGroup = 'Plugins';
 
     public ?array $data = [];
 
@@ -24,7 +25,7 @@ class SelectTree extends Page
         $this->form->fill();
     }
 
-    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function form(Schema $schema): Schema
     {
         return $schema
             ->model(SelectTreeBlog::class)

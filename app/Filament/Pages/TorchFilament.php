@@ -4,11 +4,11 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
+use BackedEnum;
 use Filament\Pages\Page;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 use LaraZeus\TorchFilament\Infolists\TorchEntry;
-use BackedEnum;
 
 class TorchFilament extends Page
 {

@@ -5,11 +5,12 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use JsonException;
 
 class AthenaSeeder extends Seeder
 {
     /**
-     * @throws \JsonException
+     * @throws JsonException
      */
     public function run(): void
     {

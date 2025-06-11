@@ -6,7 +6,7 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Infolists\Concerns\InteractsWithInfolists;
 use Filament\Infolists\Contracts\HasInfolists;
-use Filament\Infolists\Infolist;
+use Filament\Schemas\Schema;
 use Filament\Widgets\Widget;
 use LaraZeus\Delia\Models\Bookmark;
 use LaraZeus\ListGroup\Infolists\ListEntry;
@@ -23,7 +23,7 @@ class BookmarksWidget extends Widget implements HasForms, HasInfolists
 
     protected string $view = 'filament.widgets.bookmarks-widget';
 
-    public function bookmarkInfolist(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function bookmarkInfolist(Schema $schema): Schema
     {
         return $schema
             ->components([

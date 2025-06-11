@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Policies\FormPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use LaraZeus\Bolt\Models\Form;
 
@@ -13,7 +14,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array<class-string, class-string>
      */
     protected $policies = [
-        Form::class => \App\Policies\FormPolicy::class,
+        Form::class => FormPolicy::class,
     ];
 
     /**

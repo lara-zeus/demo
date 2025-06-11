@@ -10,7 +10,6 @@ use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentColor;
 use Filament\Support\Facades\FilamentIcon;
 use Filament\Support\Facades\FilamentView;
-use Filament\Support\View\Components\Modal;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\URL;
@@ -31,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
             'panels::panel-switch-modern-icon' => 'tabler-switch-horizontal',
         ]);*/
 
-        //\Filament\Support\View\Components\ModalComponent::closedByClickingAway(false);
+        // \Filament\Support\View\Components\ModalComponent::closedByClickingAway(false);
 
         /*PanelSwitch::configureUsing(function (PanelSwitch $panelSwitch) {
             $panelSwitch
@@ -63,8 +62,8 @@ class AppServiceProvider extends ServiceProvider
 
         FilamentColor::register([
             ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
-            'primary' => Color::hex('#45B39D'),
-            'secondary' => Color::hex('#F1948A'),
+            'primary' => Color::generateV3Palette('#45B39D'),
+            'secondary' => Color::generateV3Palette('#F1948A'),
             'gray' => Color::Stone,
             'danger' => Color::Red,
             'info' => Color::Blue,
