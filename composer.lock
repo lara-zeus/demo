@@ -4255,7 +4255,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/core",
-                "reference": "2f69466f4b3fb7be0471f98e805dabaa98560021"
+                "reference": "cd67780229e302f5bd96859ee05345446b847c72"
             },
             "require": {
                 "ext-json": "*",
@@ -4344,7 +4344,7 @@
         },
         {
             "name": "lara-zeus/delia",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/delia",
@@ -5420,7 +5420,7 @@
         },
         {
             "name": "lara-zeus/pontus",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/pontus",
@@ -5509,7 +5509,7 @@
         },
         {
             "name": "lara-zeus/popover",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/popover",
@@ -6223,18 +6223,19 @@
                 "php": "^8.1"
             },
             "require-dev": {
-                "larastan/larastan": "^2.2",
+                "larastan/larastan": "^3.0",
                 "laravel/pint": "^1.0",
-                "nunomaduro/collision": "^7.0",
-                "orchestra/testbench": "^8.0",
-                "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-laravel": "^2.0",
-                "pestphp/pest-plugin-livewire": "2.x-dev",
+                "nunomaduro/collision": "^8.6",
+                "nunomaduro/phpinsights": "^2.8",
+                "orchestra/testbench": "^10.0",
+                "pestphp/pest": "^3.0",
+                "pestphp/pest-plugin-arch": "^3.0",
+                "pestphp/pest-plugin-laravel": "^3.0",
+                "pestphp/pest-plugin-livewire": "^3.0",
                 "phpstan/extension-installer": "^1.4",
                 "phpstan/phpstan": "^2.1",
                 "phpstan/phpstan-deprecation-rules": "^2.0",
-                "phpstan/phpstan-phpunit": "^2.0",
-                "phpunit/phpunit": "^10.1"
+                "phpstan/phpstan-phpunit": "^2.0"
             },
             "type": "library",
             "extra": {
@@ -6472,7 +6473,7 @@
         },
         {
             "name": "lara-zeus/translatable-pro",
-            "version": "1.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "../p/translatable-pro",
@@ -6557,7 +6558,7 @@
             "dist": {
                 "type": "path",
                 "url": "../p/wind",
-                "reference": "c42d4d69bbb2b2fc36e9052fdd49824527690468"
+                "reference": "a98bb8693de82c83ec555e5b580b0fd6dfa89ea1"
             },
             "require": {
                 "lara-zeus/core": "*",
@@ -16112,16 +16113,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "2.0.17",
+            "version": "2.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "caa4ffda1d48bde44434e6ba95d132ec32e7fd40"
+                "reference": "be3a452085b524a04056e3dfe72d861948711062"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/caa4ffda1d48bde44434e6ba95d132ec32e7fd40",
-                "reference": "caa4ffda1d48bde44434e6ba95d132ec32e7fd40",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/be3a452085b524a04056e3dfe72d861948711062",
+                "reference": "be3a452085b524a04056e3dfe72d861948711062",
                 "shasum": ""
             },
             "require": {
@@ -16159,7 +16160,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.0.17"
+                "source": "https://github.com/rectorphp/rector/tree/2.0.18"
             },
             "funding": [
                 {
@@ -16167,7 +16168,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-30T10:59:08+00:00"
+            "time": "2025-06-11T11:19:37+00:00"
         },
         {
             "name": "roave/security-advisories",
