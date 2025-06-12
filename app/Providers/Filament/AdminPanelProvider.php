@@ -91,7 +91,7 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
-            //->viteTheme('resources/css/filament/admin/theme.css')
+            ->viteTheme('resources/css/filament/admin/theme.css')
             ->defaultAvatarProvider(
                 BoringAvatarsProvider::class
             )
