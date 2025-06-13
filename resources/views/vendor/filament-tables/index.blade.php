@@ -640,7 +640,7 @@
                                         @if ($recordHasActions)
                                             <x-filament-tables::actions
                                                 :actions="$actions"
-                                                :alignment="(! $contentGrid) ? 'start md:end' : Alignment::Start"
+                                                :alignment="(! $contentGrid) ? 'start md:end' : $actionsAlignment ?? Alignment::Start"
                                                 :record="$record"
                                                 wrap="-sm"
                                                 :class="$recordActionsClasses"
@@ -1244,7 +1244,9 @@
                     @endif
                 </x-filament-tables::table>
             @elseif ($records === null)
-                <div class="h-32"></div>
+                <div class="flex h-32 items-center justify-center">
+                    <x-filament::loading-indicator class="h-8 w-8" />
+                </div>
             @elseif ($emptyState = $getEmptyState())
                 {{ $emptyState }}
             @else
