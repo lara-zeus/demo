@@ -8,6 +8,8 @@ use BackedEnum;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Pages\Page;
+use Filament\Schemas\Components\Tabs;
+use Filament\Schemas\Components\Tabs\Tab;
 use Filament\Schemas\Schema;
 use LaraZeus\Accordion\Forms\Accordions;
 
@@ -15,7 +17,7 @@ class Accordion extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | BackedEnum | null $navigationIcon = 'tabler-table-filled';
+    protected static string|BackedEnum|null $navigationIcon = 'tabler-table-filled';
 
     protected string $view = 'filament.pages.accordion';
 
@@ -74,12 +76,42 @@ class Accordion extends Page
             ]);
     }
 
+    public function mount()
+    {
+        $this->form->fill();
+    }
+
     public function form(Schema $schema): Schema
     {
         return $schema
             ->statePath('data')
             ->components([
-                Accordions::make('Options')
+
+
+                Tabs::make('Tabs')
+                    ->tabs([
+                        Tab::make('Tab 1')
+                            ->schema([
+                                TextInput::make('name_a')
+                                    //->default('first name')
+                                    ->required(),
+                            ]),
+                        Tab::make('Tab 2')
+                            ->schema([
+                                TextInput::make('email_a')
+                                    ->default('first email')
+                                    ->required(),
+                            ]),
+                        Tab::make('Tab 3')
+                            ->schema([
+                                TextInput::make('car_type')
+                                    ->default('car type')
+                                    ->required(),
+                            ]),
+                    ]),
+
+
+                /*Accordions::make('Options')
                     ->activeAccordion(2)
                     ->isolated()
                     ->columnSpanFull()
@@ -112,7 +144,7 @@ class Accordion extends Page
                                 TextInput::make('work-email')->required(),
                                 TextInput::make('work-phone')->required(),
                             ]),
-                    ]),
+                    ]),*/
             ]);
     }
 
@@ -121,5 +153,10 @@ class Accordion extends Page
         return [
             DemoHeaderAction::make(),
         ];
+    }
+
+    public function create(): void
+    {
+        dd($this->form->getState());
     }
 }

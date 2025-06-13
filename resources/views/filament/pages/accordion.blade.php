@@ -1,7 +1,19 @@
 <x-filament-panels::page>
     <div class="mb-6">
         <h3 class="my-4 text-lg capitalize">Using Accordion In Forms</h3>
-        {{ $this->form }}
+
+        <div>
+            <form wire:submit="create">
+                {{ $this->form }}
+
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+
+            <x-filament-actions::modals />
+        </div>
+
     </div>
 
     <div class="my-6">
