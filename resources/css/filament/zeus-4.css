@@ -1,33 +1,3 @@
-@import "tailwindcss";
-@import '../../../../vendor/filament/filament/resources/css/theme.css';
-@import "../../theme.css";
-
-@source '../../../../app/filament';
-@source '../../../views/filament';
-@source '../../../../vendor/lara-zeus';
-@source '../../../../vendor/filament';
-@source '../../../../vendor/lara-zeus/dynamic-dashboard/src/Enums/Columns.php';
-
-[dir=rtl] {
-    font-family: 'Almarai', 'Montserrat', sans-serif;
-}
-
-[dir=rtl] .title-font {
-    font-family: 'Almarai', sans-serif;
-}
-
-[dir=ltr] {
-    font-family: 'Montserrat', 'Almarai', sans-serif;
-}
-
-[dir=ltr] .title-font {
-    font-family: 'Montserrat', 'Almarai', sans-serif;
-    @apply font-semibold
-}
-
-.bord {
-    border: solid 1px red;
-}
 
 .compact-timeline .fi-timeline-item-heading {
     @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col;

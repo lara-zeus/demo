@@ -2,7 +2,6 @@
 
 namespace App\Providers\Filament;
 
-use App\CuratedBySwis;
 use App\Filament\Pages\Auth\Login;
 use App\Filament\Pages\DashboardPage;
 use App\Filament\Pages\Tiles;
@@ -57,9 +56,7 @@ use LaraZeus\BoltPro\Extensions\Grades;
 use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
 use LaraZeus\Delia\DeliaPlugin;
-use LaraZeus\Delia\Filament\Resources\BookmarkResource;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
-use LaraZeus\DynamicDashboard\Filament\Resources\LayoutResource;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
 use LaraZeus\Hera\Filament\Resources\SeoScanResource;
@@ -69,14 +66,12 @@ use LaraZeus\Hermes\Filament\Resources\MenuItemLabelsResource;
 use LaraZeus\Hermes\Filament\Resources\MenuResource;
 use LaraZeus\Hermes\Filament\Resources\MenuSectionResource;
 use LaraZeus\Hermes\HermesPlugin;
-use LaraZeus\Pontus\PontusPlugin;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\SpatieTranslatable\SpatieTranslatablePlugin;
 use LaraZeus\Thunder\Extensions\Thunder;
 use LaraZeus\Thunder\Filament\Resources\OfficeResource;
 use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
-use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
 use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
 use Schmeits\FilamentUmami\FilamentUmamiPlugin;
@@ -102,13 +97,12 @@ class AdminPanelProvider extends PanelProvider
             ->login(Login::class)
             ->font('Montserrat')
             ->plugins($this->getPlugins())
-            ->brandLogo(fn () => view('filament.logo'))
+            ->brandLogo(fn() => view('filament.logo'))
             ->colors([
-                ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
+                //...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
                 'primary' => Color::generateV3Palette('#45B39D'),
                 'secondary' => Color::generateV3Palette('#F1948A'),
             ])
-
             ->sidebarCollapsibleOnDesktop()
             ->maxContentWidth('full')
             ->favicon(asset('favicon.ico'))
@@ -159,7 +153,7 @@ class AdminPanelProvider extends PanelProvider
             // car
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.car', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.car', ['scopes' => $scopes]),
                 scopes: [
                     CarResource::class,
                 ],
@@ -168,7 +162,7 @@ class AdminPanelProvider extends PanelProvider
             // user
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.user', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.user', ['scopes' => $scopes]),
                 scopes: [
                     UserResource::class,
                 ],
@@ -186,7 +180,7 @@ class AdminPanelProvider extends PanelProvider
             // user views resource
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.my-dash', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.my-dash', ['scopes' => $scopes]),
                 scopes: [
                     DashboardPage::class,
                 ],
@@ -195,7 +189,7 @@ class AdminPanelProvider extends PanelProvider
             // hermes
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
                 scopes: [
                     BranchResource::class,
                     MenuItemLabelsResource::class,
@@ -207,7 +201,7 @@ class AdminPanelProvider extends PanelProvider
             // Delia
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.tiles', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.tiles', ['scopes' => $scopes]),
                 scopes: [
                     Tiles::class,
                 ],
@@ -215,7 +209,7 @@ class AdminPanelProvider extends PanelProvider
             // athena
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.athena', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.athena', ['scopes' => $scopes]),
                 scopes: [
                     RequestResource::class,
                     ServiceResource::class,
@@ -224,12 +218,12 @@ class AdminPanelProvider extends PanelProvider
             )
             ->renderHook(
                 'panels::topbar.start',
-                fn (array $scopes): View => view('filament.hooks.store'),
+                fn(array $scopes): View => view('filament.hooks.store'),
             )
             // thunder
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.thunder', ['scopes' => $scopes]),
                 scopes: [
                     OfficeResource::class,
                     TicketResource::class,
@@ -238,7 +232,7 @@ class AdminPanelProvider extends PanelProvider
             // helen
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.helen', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.helen', ['scopes' => $scopes]),
                 scopes: [
                     LinksResource::class,
                 ],
@@ -246,7 +240,7 @@ class AdminPanelProvider extends PanelProvider
             // hera
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.hera', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.hera', ['scopes' => $scopes]),
                 scopes: [
                     SeoScanResource::class,
                 ],
@@ -254,7 +248,7 @@ class AdminPanelProvider extends PanelProvider
             // bolt
             ->renderHook(
                 'panels::page.start',
-                fn (array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
+                fn(array $scopes): View => view('filament.hooks.bolt', ['scopes' => $scopes]),
                 scopes: [
                     FormResource::class,
                     CategoryResource::class,
@@ -269,21 +263,20 @@ class AdminPanelProvider extends PanelProvider
             // lang
             ->renderHook(
                 'panels::user-menu.profile.after',
-                fn (): View => view('filament.hooks.lang-switcher'),
+                fn(): View => view('filament.hooks.lang-switcher'),
             )
             // header
             ->renderHook(
                 PanelsRenderHook::HEAD_END,
-                fn (): View => view('filament.hooks.header'),
+                fn(): View => view('filament.hooks.header'),
             )
             // footer
             ->renderHook(
                 'panels::footer',
-                fn (): View => view('filament.hooks.footer'),
+                fn(): View => view('filament.hooks.footer'),
             )
             // sidebar search
-            ->renderHook(PanelsRenderHook::SIDEBAR_NAV_START, fn () => view('filament.hooks.sidebar-searcher'))
-
+            ->renderHook(PanelsRenderHook::SIDEBAR_NAV_START, fn() => view('filament.hooks.sidebar-searcher'))
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')

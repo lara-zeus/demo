@@ -10,13 +10,13 @@
         "@tailwindcss/forms": "^0.5.10",
         "@tailwindcss/postcss": "^4.1.7",
         "@tailwindcss/typography": "^0.5.16",
-        "@tailwindcss/vite": "^4.1.7",
+        "@tailwindcss/vite": "^4.1.10",
         "cropperjs": "^1.6.0",
         "laravel-vite-plugin": "^1.2.0",
         "photoswipe": "^5.3.9",
         "postcss": "^8.5.3",
         "postcss-nesting": "^13.0.0",
-        "tailwindcss": "^4.1.7",
+        "tailwindcss": "^4.1.10",
         "tippy.js": "^6.3.7",
         "vite": "^6.2.6"
     }
