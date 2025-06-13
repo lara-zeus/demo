@@ -277,85 +277,6 @@
             "time": "2025-02-13T20:35:06+00:00"
         },
         {
-            "name": "blade-ui-kit/blade-ui-kit",
-            "version": "0.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/blade-ui-kit/blade-ui-kit.git",
-                "reference": "3d6034f5425ea41e54a75130555befd1dfec7690"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/blade-ui-kit/blade-ui-kit/zipball/3d6034f5425ea41e54a75130555befd1dfec7690",
-                "reference": "3d6034f5425ea41e54a75130555befd1dfec7690",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/filesystem": "^10.0|^11.0|^12.0",
-                "illuminate/support": "^10.0|^11.0|^12.0",
-                "illuminate/view": "^10.0|^11.0|^12.0",
-                "nesbot/carbon": "^2.38|^3.0",
-                "php": "^8.1"
-            },
-            "require-dev": {
-                "guzzlehttp/guzzle": "^7.4",
-                "league/commonmark": "^1.4|^2.0",
-                "livewire/livewire": "^3.0",
-                "lorisleiva/cron-translator": "^0.1.1|^0.4",
-                "orchestra/testbench": "^8.0|^9.0|^10.0",
-                "orchestra/testbench-dusk": "^8.0|^9.0|^10.0",
-                "pestphp/pest": "^2.34|^3.0",
-                "phpunit/phpunit": "^10.5|^11.0"
-            },
-            "suggest": {
-                "league/commonmark": "Required to use the markdown component (^1.4).",
-                "lorisleiva/cron-translator": "Required to use the cron component (^0.1.1)."
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "BladeUIKit\\BladeUIKitServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "BladeUIKit\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dries Vints",
-                    "homepage": "https://driesvints.com"
-                }
-            ],
-            "description": "A set of renderless components to utilise in your Laravel Blade views.",
-            "homepage": "https://github.com/blade-ui-kit/blade-ui-kit",
-            "keywords": [
-                "blade",
-                "laravel",
-                "ui"
-            ],
-            "support": {
-                "issues": "https://github.com/blade-ui-kit/blade-ui-kit/issues",
-                "source": "https://github.com/blade-ui-kit/blade-ui-kit"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sponsors/driesvints",
-                    "type": "github"
-                }
-            ],
-            "abandoned": true,
-            "time": "2025-02-19T08:32:44+00:00"
-        },
-        {
             "name": "brick/math",
             "version": "0.13.1",
             "source": {
@@ -3750,7 +3671,6 @@
                 "reference": "db92e3def4a5a8d86219d45a22915714b10a130e"
             },
             "require": {
-                "blade-ui-kit/blade-ui-kit": "^0.7",
                 "lara-zeus/bolt": "*",
                 "lara-zeus/filament-plugin-tools": "*",
                 "lara-zeus/quantity": "*",
@@ -16180,12 +16100,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "5a31a1cd05b9114408f90c6cb35f65e9db6ea79d"
+                "reference": "0a95bcf39c5b55601cb073bc307d567a16e31dc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5a31a1cd05b9114408f90c6cb35f65e9db6ea79d",
-                "reference": "5a31a1cd05b9114408f90c6cb35f65e9db6ea79d",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0a95bcf39c5b55601cb073bc307d567a16e31dc0",
+                "reference": "0a95bcf39c5b55601cb073bc307d567a16e31dc0",
                 "shasum": ""
             },
             "conflict": {
@@ -16479,6 +16399,7 @@
                 "guzzlehttp/oauth-subscriber": "<0.8.1",
                 "guzzlehttp/psr7": "<1.9.1|>=2,<2.4.5",
                 "haffner/jh_captcha": "<=2.1.3|>=3,<=3.0.2",
+                "handcraftedinthealps/goodby-csv": "<1.4.3",
                 "harvesthq/chosen": "<1.8.7",
                 "helloxz/imgurl": "<=2.31",
                 "hhxsv5/laravel-s": "<3.7.36",
@@ -17125,7 +17046,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-13T15:05:43+00:00"
+            "time": "2025-06-13T22:05:09+00:00"
         },
         {
             "name": "spatie/backtrace",
