@@ -17,7 +17,7 @@ class Accordion extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string|BackedEnum|null $navigationIcon = 'tabler-table-filled';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-table-filled';
 
     protected string $view = 'filament.pages.accordion';
 
@@ -87,13 +87,12 @@ class Accordion extends Page
             ->statePath('data')
             ->components([
 
-
                 Tabs::make('Tabs')
                     ->tabs([
                         Tab::make('Tab 1')
                             ->schema([
                                 TextInput::make('name_a')
-                                    //->default('first name')
+                                    // ->default('first name')
                                     ->required(),
                             ]),
                         Tab::make('Tab 2')
@@ -109,7 +108,6 @@ class Accordion extends Page
                                     ->required(),
                             ]),
                     ]),
-
 
                 /*Accordions::make('Options')
                     ->activeAccordion(2)

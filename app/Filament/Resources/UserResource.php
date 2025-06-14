@@ -35,7 +35,7 @@ class UserResource extends Resource
 
     protected static ?int $navigationSort = 1;
 
-    protected static string|BackedEnum|null $navigationIcon = 'tabler-users-group';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-users-group';
 
     public static function getNavigationLabel(): string
     {
@@ -89,7 +89,7 @@ class UserResource extends Resource
             TextInput::make('password')
                 ->password()
                 ->visibleOn('create')
-                ->required(fn(string $operation): bool => $operation === 'create')
+                ->required(fn (string $operation): bool => $operation === 'create')
                 ->maxLength(255),
         ]);
     }
@@ -153,9 +153,9 @@ class UserResource extends Resource
             ->defaultSort('id', 'desc')
             ->filters([
                 Filter::make('verified')
-                    ->query(fn(Builder $query): Builder => $query->whereNotNull('email_verified_at')),
+                    ->query(fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
                 Filter::make('unverified')
-                    ->query(fn(Builder $query): Builder => $query->whereNull('email_verified_at')),
+                    ->query(fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
             ]);
     }
 
