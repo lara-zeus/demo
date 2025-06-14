@@ -40,7 +40,10 @@ class QrCode extends Page
                 Section::make()
                     ->heading('Use it as a direct form')
                     ->schema([
-                        ...\LaraZeus\Qr\Facades\Qr::getFormSchema('text', 'text-options'),
+                        ...\LaraZeus\Qr\Facades\Qr::getFormSchema(
+                            statePath: 'text',
+                            optionsStatePath: 'text-options'
+                        ),
                     ]),
 
                 Section::make()
