@@ -102,7 +102,7 @@ class AdminPanelProvider extends PanelProvider
                 ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
                 'primary' => Color::generateV3Palette('#45B39D'),
                 'secondary' => Color::generateV3Palette('#F1948A'),
-                // 'primary' => '#000',
+                // 'primary' => '#45B39D',
                 // 'secondary' => '#F1948A',
                 'gray' => Color::Stone,
             ])
