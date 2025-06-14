@@ -99,9 +99,10 @@ class AdminPanelProvider extends PanelProvider
             ->plugins($this->getPlugins())
             ->brandLogo(fn() => view('filament.logo'))
             ->colors([
-                //...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
-                'primary' => Color::generateV3Palette('#45B39D'),
-                'secondary' => Color::generateV3Palette('#F1948A'),
+                ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
+                'primary' => '#45B39D',
+                'secondary' => '#F1948A',
+                'gray' => Color::Stone,
             ])
             ->sidebarCollapsibleOnDesktop()
             ->maxContentWidth('full')
