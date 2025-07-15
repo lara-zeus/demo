@@ -26,12 +26,12 @@ class ResetDemoApp extends Command
      */
     public function handle(): void
     {
-        $this->call('down');
+        // $this->call('down');
 
         $this->resetStorage();
         $this->resetDatabase();
 
-        $this->call('up');
+        // $this->call('up');
     }
 
     public function resetStorage(): void
