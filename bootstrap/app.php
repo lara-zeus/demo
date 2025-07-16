@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+use Sentry\Laravel\Integration;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -18,13 +19,5 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
-        if (app()->isProduction()) {
-            $exceptions->reportable(function (Throwable $e) {
-                if ($this->shouldReport($e) && app()->bound('sentry')) {
-                    app('sentry')->captureException($e);
-                }
-            });
-
-            \Sentry\Laravel\Integration::handles($exceptions);
-        }
+        Integration::handles($exceptions);
     })->create();
