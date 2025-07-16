@@ -17,8 +17,6 @@ return Application::configure(basePath: dirname(__DIR__))
             \App\Http\Middleware\SetTheme::class,
             \Torchlight\Middleware\RenderTorchlight::class,
         ]);
-
-        //$middleware->trustProxies(at:'*');
     })
     ->withExceptions(function (Exceptions $exceptions) {
         Integration::handles($exceptions);
