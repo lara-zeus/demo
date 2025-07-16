@@ -77,7 +77,7 @@
     "njxqlus/filament-progressbar": "^1.1",
     "pxlrbt/filament-spotlight": "^1.0",
     "schmeits/filament-umami-widgets": "^1.0",
-    "sentry/sentry-laravel": "^4.3",
+    "sentry/sentry-laravel": "^4.15",
     "stechstudio/filament-impersonate": "^3.8",
     "swisnl/filament-backgrounds": "^1.1",
     "torchlight/engine": "^0.1.0",
