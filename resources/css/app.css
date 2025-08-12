@@ -4,7 +4,8 @@
 @import '../../node_modules/tippy.js/dist/tippy.css';
 @import '../../node_modules/tippy.js/themes/light.css';
 
-@config "tailwind.config.js";
+@source '../../../../app/Filament';
+@source '../../../../resources/views/filament';
 
 /* Sky search result highlight */
 span.highlight {

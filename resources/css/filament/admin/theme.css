@@ -3,7 +3,8 @@
 /*@import '/vendor/archilex/filament-filter-sets/resources/css/plugin.css';*/
 @import '../../../../node_modules/cropperjs/dist/cropper.css';
 
-@config 'tailwind.config.js';
+@source '../../../../app/Filament';
+@source '../../../../resources/views/filament';
 
 :root {
     --c-50: var(--primary-50);
