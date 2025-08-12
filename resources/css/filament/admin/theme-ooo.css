@@ -6,55 +6,33 @@
 @source '../../../../app/Filament';
 @source '../../../../resources/views/filament';
 
-
-
-
-@theme {
-    --color-primary-50: #c6e9e2;
-    --color-primary-100: #b8e4db;
-    --color-primary-200: #9ad8cc;
-    --color-primary-300: #7dcdbd;
-    --color-primary-400: #5fc1ae;
-    --color-primary-500: #45b39d;
-    --color-primary-600: #358b79;
-    --color-primary-700: #266256;
-    --color-primary-800: #163a32;
-    --color-primary-900: #07110f;
-    --color-primary-950: #000000;
-    --color-primary: #45b39d;
-
-    --color-secondary-50: #fdf2f0;
-    --color-secondary-100: #fce7e5;
-    --color-secondary-200: #f9d2ce;
-    --color-secondary-300: #f6beb8;
-    --color-secondary-400: #f4a9a1;
-    --color-secondary-500: #f1948a;
-    --color-secondary-600: #eb6658;
-    --color-secondary-700: #e53826;
-    --color-secondary-800: #bc2717;
-    --color-secondary-900: #8a1c11;
-    --color-secondary-950: #71170e;
-    --color-secondary: #f1948a;
+:root {
+    --c-50: var(--primary-50);
+    --c-100: var(--primary-100);
+    --c-200: var(--primary-200);
+    --c-300: var(--primary-300);
+    --c-400: var(--primary-400);
+    --c-500: var(--primary-500);
+    --c-600: var(--primary-600);
+    --c-700: var(--primary-700);
+    --c-800: var(--primary-800);
+    --c-900: var(--primary-900);
 }
 
-
-
-
-
 [dir=rtl] {
-    font-family: 'Almarai', 'Montserrat', sans-serif ;
+    font-family: 'Almarai', 'Montserrat', sans-serif !important;
 }
 
 [dir=rtl] .title-font {
-    font-family: 'Almarai', sans-serif ;
+    font-family: 'Almarai', sans-serif !important;
 }
 
 [dir=ltr] {
-    font-family: 'Montserrat', 'Almarai', sans-serif ;
+    font-family: 'Montserrat', 'Almarai', sans-serif !important;
 }
 
 [dir=ltr] .title-font {
-    font-family: 'Montserrat', 'Almarai', sans-serif ;
+    font-family: 'Montserrat', 'Almarai', sans-serif !important;
     @apply font-semibold
 }
 
@@ -63,15 +41,15 @@
 }
 
 .compact-timeline .fi-timeline-item-heading {
-    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col ;
+    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col !important;
 }
 
 .compact-timeline .fi-timeline-section-content {
-    @apply shadow-none p-0 ;
+    @apply shadow-none p-0 !important;
 }
 
 .compact-timeline {
-    @apply shadow-none ring-0 ;
+    @apply shadow-none ring-0 !important;
 }
 
 .field-type .choices__list--single {
@@ -93,7 +71,7 @@
 }
 
 .fi-sidebar {
-    @apply shadow-md bg-white dark:bg-gray-950 ;
+    @apply shadow-md bg-white dark:bg-gray-950 !important;
 }
 
 .custom-auth-empty-panel {
@@ -142,48 +120,48 @@
 }
 
 .fi-header-heading, .fi-section-header-heading {
-    @apply font-normal text-secondary-600 ;
+    @apply font-normal text-secondary-600 !important;
 }
 
 .fi-breadcrumbs-item-label {
-    @apply text-primary-600 ;
+    @apply text-primary-600 !important;
 }
 
 .fi-main-ctn {
-    @apply bg-gray-100 dark:bg-gray-900 ;
+    @apply bg-gray-100 dark:bg-gray-900 !important;
 }
 
 /*
 .fi-topbar {
-    @apply hidden ;
+    @apply hidden !important;
 }
 
 .fi-main {
-    @apply my-4 mb-4 bg-gray-50 rounded-3xl shadow-lg ;
+    @apply my-4 mb-4 bg-gray-50 rounded-3xl shadow-lg !important;
 }
 
 .fi-main-ctn {
-    @apply mx-10 ;
+    @apply mx-10 !important;
 }
 
 .fi-panel-admin, .fi-main-ctn, .fi-sidebar, .fi-sidebar-header {
-    @apply bg-secondary-50 ;
+    @apply bg-secondary-50 !important;
 }
 
 .fi-sidebar, .fi-sidebar-header {
-    @apply ring-0 shadow-none ;
+    @apply ring-0 shadow-none !important;
 }*/
 
 .fi-page-sub-navigation-sidebar-ctn, .fi-section {
     @apply px-2 py-3 bg-gray-50 dark:bg-gray-950 border shadow-md hover:shadow-lg
     transition-all ease-in-out duration-300
-    border-b-8 border-primary-500 border-b-primary-500/70 hover:border-b-primary-500 dark:border-primary-800 rounded-2xl ;
+    border-b-8 border-primary-500 border-b-primary-500/70 hover:border-b-primary-500 dark:border-primary-800 rounded-2xl !important;
 }
 
 .fi-page-sub-navigation-sidebar {
-    @apply rounded-2xl ;
+    @apply rounded-2xl !important;
 }
 
 .fi-active, .fi-active a, .fi-sidebar-item.fi-active {
-    @apply rounded-2xl ;
+    @apply rounded-2xl !important;
 }

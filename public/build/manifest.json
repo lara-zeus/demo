@@ -1,27 +1,6 @@
 {
-  "node_modules/photoswipe/dist/photoswipe.esm.js": {
-    "file": "assets/photoswipe.esm-GXRgw7eJ.js",
-    "name": "photoswipe.esm",
-    "src": "node_modules/photoswipe/dist/photoswipe.esm.js",
-    "isDynamicEntry": true
-  },
-  "resources/css/another-portfolio.css": {
-    "file": "assets/another-portfolio-B5pn215e.css",
-    "src": "resources/css/another-portfolio.css",
-    "isEntry": true
-  },
-  "resources/css/app.css": {
-    "file": "assets/app-bWsH6sIW.css",
-    "src": "resources/css/app.css",
-    "isEntry": true
-  },
-  "resources/css/daisy.css": {
-    "file": "assets/daisy-BTbddvCX.css",
-    "src": "resources/css/daisy.css",
-    "isEntry": true
-  },
   "resources/css/filament/admin/theme.css": {
-    "file": "assets/theme-MqHnNcJw.css",
+    "file": "assets/theme-DeFgs4al.css",
     "src": "resources/css/filament/admin/theme.css",
     "isEntry": true
   },
@@ -1101,14 +1080,5 @@
   "resources/flags/4x3/zw.svg": {
     "file": "assets/zw-CUCThRVS.svg",
     "src": "resources/flags/4x3/zw.svg"
-  },
-  "resources/js/another-portfolio.js": {
-    "file": "assets/another-portfolio-D2pnwEdv.js",
-    "name": "another-portfolio",
-    "src": "resources/js/another-portfolio.js",
-    "isEntry": true,
-    "dynamicImports": [
-      "node_modules/photoswipe/dist/photoswipe.esm.js"
-    ]
   }
 }
