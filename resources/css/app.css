@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import '/vendor/filament/filament/resources/css/theme.css';
-@import '/vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
-@import '/node_modules/tippy.js/dist/tippy.css';
-@import '/node_modules/tippy.js/themes/light.css';
+@import '../../vendor/filament/filament/resources/css/theme.css';
+@import '../../vendor/lara-zeus/core/resources/css/_checkbox-cards.css';
+@import '../../node_modules/tippy.js/dist/tippy.css';
+@import '../../node_modules/tippy.js/themes/light.css';
 
 @config "tailwind.config.js";
 
