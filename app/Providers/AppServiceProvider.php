@@ -3,7 +3,6 @@
 namespace App\Providers;
 
 use App\Models\User;
-use BezhanSalleh\PanelSwitch\PanelSwitch;
 use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;
 use Filament\Support\Colors\Color;
@@ -49,26 +48,6 @@ class AppServiceProvider extends ServiceProvider
         ]);
 
         Modal::closedByClickingAway(false);
-
-        PanelSwitch::configureUsing(function (PanelSwitch $panelSwitch) {
-            $panelSwitch
-                ->canSwitchPanels(true)
-                ->visible(true)
-                ->modalHeading('Available Panels')
-                ->slideOver()
-                ->modalWidth('sm')
-                ->labels([
-                    'admin' => 'Zeus',
-                    'guests' => __('Showcase'),
-                ])
-                ->icons([
-                    'admin' => 'heroicon-o-bolt',
-                    'guests' => 'tabler-artboard-filled',
-                ])
-                ->iconSize(20)
-                ->renderHook('panels::user-menu.before');
-
-        });
 
         // $this->hooksRenderer();
 

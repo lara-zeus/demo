@@ -14,13 +14,8 @@ use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
 use Archilex\AdvancedTables\Resources\UserViewResource;
 use Awcodes\Curator\CuratorPlugin;
-use Awcodes\FilamentQuickCreate\QuickCreatePlugin;
 use Awcodes\FilamentVersions\VersionsPlugin;
 use Awcodes\FilamentVersions\VersionsWidget;
-use Awcodes\LightSwitch\LightSwitchPlugin;
-use Awcodes\Overlook\OverlookPlugin;
-use Awcodes\Overlook\Widgets\OverlookWidget;
-use Awcodes\Recently\RecentlyPlugin;
 use DiogoGPinto\AuthUIEnhancer\AuthUIEnhancerPlugin;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -54,9 +49,7 @@ use LaraZeus\BoltPro\Extensions\Grades;
 use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\Boredom\BoringAvatarsProvider;
 use LaraZeus\Delia\DeliaPlugin;
-use LaraZeus\Delia\Filament\Resources\BookmarkResource;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
-use LaraZeus\DynamicDashboard\Filament\Resources\LayoutResource;
 use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
 use LaraZeus\Hera\Filament\Resources\SeoScanResource;
@@ -71,10 +64,8 @@ use LaraZeus\Thunder\Extensions\Thunder;
 use LaraZeus\Thunder\Filament\Resources\OfficeResource;
 use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
-use LaraZeus\Wind\Filament\Resources\LetterResource;
 use LaraZeus\Wind\WindPlugin;
 use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
-use Schmeits\FilamentUmami\FilamentUmamiPlugin;
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
@@ -148,7 +139,6 @@ class AdminPanelProvider extends PanelProvider
                 /*NavigationGroup::make()->label('Rhea')
                     ->icon('tabler-bow'),*/
             ])
-            // ->unsavedChangesAlerts()
 
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -160,14 +150,9 @@ class AdminPanelProvider extends PanelProvider
                 DashboardPage::class,
             ])
             ->widgets([
-                // UmamiWidgetStatsGrouped::class,
-                // UmamiWidgetTableReferrers::class,
-                // UmamiWidgetTableUrls::class,
-
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
                 VersionsWidget::class,
-                OverlookWidget::class,
                 Feedback::class,
             ])
             ->middleware([
@@ -324,12 +309,6 @@ class AdminPanelProvider extends PanelProvider
                 ->showEmptyPanelOnMobile(false)
                 ->formPanelPosition('left')
                 ->formPanelWidth('40%'),
-            FilamentUmamiPlugin::make(),
-            RecentlyPlugin::make()
-                ->renderUsingHook(PanelsRenderHook::USER_MENU_BEFORE)
-                ->tooltip('Zeus is keeping an eye on you! 👿')
-                ->icon('tabler-eye')
-                ->globalSearch(condition: false),
             FilamentBackgroundsPlugin::make()
                 ->remember(1)
                 ->imageProvider(
@@ -346,16 +325,6 @@ class AdminPanelProvider extends PanelProvider
                 ->navigationGroup(fn (): string => __('Hermes'))
                 ->navigationSort(99)
                 ->navigationCountBadge(),
-            // SpotlightPlugin::make(),
-            LightSwitchPlugin::make(),
-            OverlookPlugin::make()
-                ->sort(5)
-                ->excludes([
-                    LetterResource::class,
-                    TicketResource::class,
-                ])
-            // ->alphabetical()
-            ,
             VersionsPlugin::make()
                 ->widgetSort(4)
                 ->hasNavigationView(false)
@@ -363,21 +332,8 @@ class AdminPanelProvider extends PanelProvider
                 ->items([
                     new MyCustomVersionProvider,
                 ]),
-            QuickCreatePlugin::make()
-                ->sortBy('navigation')
-                ->excludes([
-                    BookmarkResource::class,
-                    SeoScanResource::class,
-                    UserViewResource::class,
-                    LetterResource::class,
-                    TicketResource::class,
-                    MenuSectionResource::class,
-                    RequestResource::class,
-                    LayoutResource::class,
-                ]),
             SpatieLaravelTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt', 'ko']),
-            // ChronosPlugin::make(),
             DeliaPlugin::make(),
             BoringAvatarPlugin::make(),
             WindPlugin::make(),
@@ -393,8 +349,6 @@ class AdminPanelProvider extends PanelProvider
             FilamentFullCalendarPlugin::make()
                 ->selectable()
                 ->editable(),
-
-            \LaraZeus\Akin\AkinTheme::make(),
 
             BoltPlugin::make()
                 ->hideNavigationBadges()
@@ -413,7 +367,6 @@ class AdminPanelProvider extends PanelProvider
             ThunderPlugin::make(),
             AthenaPlugin::make(),
             DynamicDashboardPlugin::make(),
-            // RheaPlugin::make(),
             HermesPlugin::make(),
         ];
     }

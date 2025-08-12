@@ -22,10 +22,10 @@ class Mark extends Page
 
     public static function getNavigationBadge(): ?string
     {
-        return "New";
+        return 'New';
     }
 
-    public static function getNavigationBadgeColor(): string|array|null
+    public static function getNavigationBadgeColor(): string | array | null
     {
         return 'danger';
     }
