@@ -2,11 +2,11 @@
 
 namespace App\Filament\Widgets;
 
+use Filament\Schemas\Schema;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Infolists\Concerns\InteractsWithInfolists;
 use Filament\Infolists\Contracts\HasInfolists;
-use Filament\Infolists\Infolist;
 use Filament\Widgets\Widget;
 use LaraZeus\Delia\Models\Bookmark;
 use LaraZeus\ListGroup\Infolists\ListEntry;
@@ -21,12 +21,12 @@ class BookmarksWidget extends Widget implements HasForms, HasInfolists
 
     protected int | string | array $columnSpan = '1/2';
 
-    protected static string $view = 'filament.widgets.bookmarks-widget';
+    protected string $view = 'filament.widgets.bookmarks-widget';
 
-    public function bookmarkInfolist(Infolist $infolist): Infolist
+    public function bookmarkInfolist(Schema $schema): Schema
     {
-        return $infolist
-            ->schema([
+        return $schema
+            ->components([
                 ListEntry::make('items')
                     ->state(function () {
                         return Bookmark::query()

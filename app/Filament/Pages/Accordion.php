@@ -2,12 +2,11 @@
 
 namespace App\Filament\Pages;
 
+use Filament\Schemas\Schema;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Form;
 use Filament\Infolists\Components\TextEntry;
-use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
 use LaraZeus\Accordion\Forms\Accordions;
 
@@ -15,9 +14,9 @@ class Accordion extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-table-filled';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-table-filled';
 
-    protected static string $view = 'filament.pages.accordion';
+    protected string $view = 'filament.pages.accordion';
 
     protected static ?int $navigationSort = 4;
 
@@ -27,9 +26,9 @@ class Accordion extends Page
 
     protected static ?string $title = 'Accordion';
 
-    public function infolist(Infolist $infolist): Infolist
+    public function infolist(Schema $schema): Schema
     {
-        return $infolist
+        return $schema
             ->state([
                 'name' => 'Lara Zeus',
                 'email' => 'info@larazeus.com',
@@ -38,7 +37,7 @@ class Accordion extends Page
                 'work-email' => 'info@larazeus.com',
                 'work-phone' => '9999999999',
             ])
-            ->schema([
+            ->components([
                 \LaraZeus\Accordion\Infolists\Accordions::make('Options')
                     ->activeAccordion(2)
                     ->isolated()
@@ -74,11 +73,11 @@ class Accordion extends Page
             ]);
     }
 
-    public function form(Form $form): Form
+    public function form(Schema $schema): Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
-            ->schema([
+            ->components([
                 Accordions::make('Options')
                     ->activeAccordion(2)
                     ->isolated()

@@ -2,19 +2,22 @@
 
 namespace App\Filament\Resources;
 
+use Filament\Schemas\Schema;
+use Filament\Schemas\Components\Section;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\ViewAction;
+use Filament\Actions\EditAction;
+use App\Filament\Resources\UserResource\Pages\ListUsers;
+use App\Filament\Resources\UserResource\Pages\CreateUser;
+use App\Filament\Resources\UserResource\Pages\ViewUser;
+use App\Filament\Resources\UserResource\Pages\EditUser;
 use App\Filament\DemoWidgets\MiniChart;
 use App\Filament\Resources\UserResource\Pages;
 use App\Models\User;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Form;
-use Filament\Infolists\Components\Section;
 use Filament\Infolists\Components\TextEntry;
-use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
 use Filament\Support\Enums\Alignment;
-use Filament\Tables\Actions\ActionGroup;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
@@ -33,7 +36,7 @@ class UserResource extends Resource
 
     protected static ?int $navigationSort = 1;
 
-    protected static ?string $navigationIcon = 'tabler-users-group';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-users-group';
 
     public static function getNavigationLabel(): string
     {
@@ -55,9 +58,9 @@ class UserResource extends Resource
         return 'App';
     }
 
-    public static function infolist(Infolist $infolist): Infolist
+    public static function infolist(Schema $schema): Schema
     {
-        return $infolist->schema([
+        return $schema->components([
             Section::make('User Info')->columns()->schema([
                 PopoverEntry::make('name')
                     // main options
@@ -75,9 +78,9 @@ class UserResource extends Resource
         ]);
     }
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form->schema([
+        return $schema->components([
             TextInput::make('name')->required(),
             TextInput::make('email')
                 ->unique(ignoreRecord: true)
@@ -97,7 +100,7 @@ class UserResource extends Resource
             ->columns([
                 ImageColumn::make('avatar_url'),
                 PopoverColumn::make('name')
-                    ->content(\LaraZeus\Qr\Facades\Qr::render(
+                    ->content(Qr::render(
                         data: 'https://larazeus.com',
                         options: [
                             'margin' => '1',
@@ -138,13 +141,13 @@ class UserResource extends Resource
                     ->alignment(Alignment::Center)
                     ->wrapHeader(),
             ])
-            ->actions([
+            ->recordActions([
                 ActionGroup::make([
                     ViewAction::make(),
                     EditAction::make(),
-                    Impersonate::make()
+                    /*Impersonate::make()
                         ->grouped()
-                        ->redirectTo(url('/admin')),
+                        ->redirectTo(url('/admin')),*/
                 ]),
             ])
             ->defaultSort('id', 'desc')
@@ -181,10 +184,10 @@ class UserResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListUsers::route('/'),
-            'create' => Pages\CreateUser::route('/create'),
-            'view' => Pages\ViewUser::route('/{record}'),
-            'edit' => Pages\EditUser::route('/{record}/edit'),
+            'index' => ListUsers::route('/'),
+            'create' => CreateUser::route('/create'),
+            'view' => ViewUser::route('/{record}'),
+            'edit' => EditUser::route('/{record}/edit'),
         ];
     }
 }

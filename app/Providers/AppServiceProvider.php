@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Filament\Support\View\Components\ModalComponent;
 use App\Models\User;
 use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;
@@ -9,7 +10,6 @@ use Filament\Support\Colors\Color;
 use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentColor;
 use Filament\Support\Facades\FilamentIcon;
-use Filament\Support\View\Components\Modal;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
@@ -47,7 +47,7 @@ class AppServiceProvider extends ServiceProvider
             'panels::panel-switch-modern-icon' => 'tabler-switch-horizontal',
         ]);
 
-        Modal::closedByClickingAway(false);
+        ModalComponent::closedByClickingAway(false);
 
         // $this->hooksRenderer();
 
@@ -60,8 +60,8 @@ class AppServiceProvider extends ServiceProvider
 
         FilamentColor::register([
             ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
-            'primary' => Color::hex('#45B39D'),
-            'secondary' => Color::hex('#F1948A'),
+            'primary' => Color::generateV3Palette('#45B39D'),
+            'secondary' => Color::generateV3Palette('#F1948A'),
             'gray' => Color::Stone,
             'danger' => Color::Red,
             'info' => Color::Blue,

@@ -6,7 +6,7 @@ use LaraZeus\DynamicDashboard\Filament\Pages\DynamicDashboardPage;
 
 class DashboardPage extends DynamicDashboardPage
 {
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
 
     protected static ?string $navigationLabel = 'My Dashboard';
 

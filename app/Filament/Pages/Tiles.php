@@ -2,13 +2,11 @@
 
 namespace App\Filament\Pages;
 
+use Filament\Schemas\Schema;
+use Filament\Schemas\Components\Section;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use App\Models\User;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Form;
-use Filament\Infolists\Components\Section as InfolistSection;
-use Filament\Infolists\Infolist;
 use Filament\Pages\Page;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Concerns\InteractsWithTable;
@@ -25,9 +23,9 @@ class Tiles extends Page implements HasTable
 
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-photo-circle';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-photo-circle';
 
-    protected static string $view = 'filament.pages.tiles';
+    protected string $view = 'filament.pages.tiles';
 
     protected static ?int $navigationSort = 3;
 
@@ -61,11 +59,11 @@ class Tiles extends Page implements HasTable
             ]);
     }
 
-    public function form(Form $form): Form
+    public function form(Schema $schema): Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
-            ->schema([
+            ->components([
                 Section::make('')
                     ->schema([
                         TileLayout::make('name')
@@ -88,12 +86,12 @@ class Tiles extends Page implements HasTable
             ]);
     }
 
-    public function infolist(Infolist $infolist): Infolist
+    public function infolist(Schema $schema): Schema
     {
-        return $infolist
+        return $schema
             ->record(User::first())
-            ->schema([
-                InfolistSection::make('')
+            ->components([
+                Section::make('')
                     ->schema([
                         TileEntry::make('name')
                             ->icon('tabler-dots-vertical')

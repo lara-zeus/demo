@@ -12,11 +12,11 @@ class GitDownChart extends ChartWidget implements ZeusWidget
 {
     use InteractWithWidgets;
 
-    protected static ?string $heading = 'Github Repositories Downloads';
+    protected ?string $heading = 'Github Repositories Downloads';
 
     protected int | string | array $columnSpan = 'full';
 
-    protected static ?string $maxHeight = '200px';
+    protected ?string $maxHeight = '200px';
 
     protected static ?int $sort = 99;
 

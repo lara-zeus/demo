@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Http;
 
@@ -142,7 +143,7 @@ class CheckFilamentCompat extends Command
                 }
             }
 
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             $this->error("Error checking {$package} at {$url}: " . $e->getMessage());
         }
 
@@ -202,7 +203,7 @@ class CheckFilamentCompat extends Command
                     }
                 }
             }
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             $this->error("Error checking if {$package} requires filament/filament: " . $e->getMessage());
         }
 

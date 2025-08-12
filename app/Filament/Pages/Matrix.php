@@ -2,10 +2,10 @@
 
 namespace App\Filament\Pages;
 
+use Filament\Schemas\Schema;
+use Filament\Schemas\Components\Section;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Form;
 use Filament\Pages\Page;
 use LaraZeus\Delia\Filament\Actions\BookmarkHeaderAction;
 use LaraZeus\MatrixChoice\Components\Matrix as MatrixAlias;
@@ -14,9 +14,9 @@ class Matrix extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-list-check';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-list-check';
 
-    protected static string $view = 'filament.pages.qrcode';
+    protected string $view = 'filament.pages.qrcode';
 
     protected static ?int $navigationSort = 1;
 
@@ -41,11 +41,11 @@ class Matrix extends Page
         ];
     }
 
-    public function form(Form $form): Form
+    public function form(Schema $schema): Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
-            ->schema([
+            ->components([
                 Section::make()
                     ->schema([
                         MatrixAlias::make('options')

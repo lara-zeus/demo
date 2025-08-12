@@ -2,12 +2,12 @@
 
 namespace App\Filament\Pages;
 
+use Filament\Schemas\Schema;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Components\Utilities\Get;
+use Filament\Actions\Action;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
-use Filament\Forms\Components\Actions\Action;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Form;
-use Filament\Forms\Get;
 use Filament\Pages\Page;
 use LaraZeus\Quantity\Components\Quantity as QuantityAlias;
 
@@ -15,9 +15,9 @@ class Quantity extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-input-search';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-input-search';
 
-    protected static string $view = 'filament.pages.quantity';
+    protected string $view = 'filament.pages.quantity';
 
     protected static ?int $navigationSort = 6;
 
@@ -32,11 +32,11 @@ class Quantity extends Page
         $this->form->fill();
     }
 
-    public function form(Form $form): Form
+    public function form(Schema $schema): Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
-            ->schema([
+            ->components([
                 Section::make()
                     ->schema([
 

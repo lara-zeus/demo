@@ -18,9 +18,9 @@ class InlineChart extends Page implements HasTable
 
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-chart-bar-square';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-chart-bar-square';
 
-    protected static string $view = 'filament.pages.inline-chart';
+    protected string $view = 'filament.pages.inline-chart';
 
     protected static ?int $navigationSort = 5;
 

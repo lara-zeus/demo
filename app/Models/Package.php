@@ -2,11 +2,12 @@
 
 namespace App\Models;
 
+use Sushi\Sushi;
 use Illuminate\Database\Eloquent\Model;
 
 class Package extends Model
 {
-    use \Sushi\Sushi;
+    use Sushi;
 
     public function getRows(): array
     {

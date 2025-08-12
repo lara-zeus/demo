@@ -1,164 +1,131 @@
 {
-  "name": "laravel/laravel",
-  "type": "project",
-  "description": "The Laravel Framework.",
-  "keywords": [
-    "framework",
-    "laravel"
-  ],
-  "license": "MIT",
-  "require": {
-    "php": "^8.3",
-    "archilex/filament-filter-sets": "^3.5",
-    "awcodes/filament-versions": "*",
-    "diogogpinto/filament-auth-ui-enhancer": "^1.0",
-    "fakerphp/faker": "^1.23",
-    "filament/filament": "^3.0",
-    "graham-campbell/github": "^13.0",
-    "guzzlehttp/guzzle": "^7.5",
-    "jeremykenedy/laravel-packagist": "^1.0",
-    "lara-zeus/accordion": "^1.0",
-    "lara-zeus/athena": "^1.0",
-    "lara-zeus/bolt": "^3.0",
-    "lara-zeus/bolt-pro": "^3.2",
-    "lara-zeus/boredom": "^1.0",
-    "lara-zeus/chaos": "^1.0",
-    "lara-zeus/core": "^3.2",
-    "lara-zeus/delia": "^1.0",
-    "lara-zeus/dynamic-dashboard": "^3.0",
-    "lara-zeus/filament-plugin-tools": "^1.0",
-    "lara-zeus/hades": "^1.0",
-    "lara-zeus/helen": "^2.0",
-    "lara-zeus/hera": "^1.0",
-    "lara-zeus/hermes": "^2.0",
-    "lara-zeus/inline-chart": "^1.0",
-    "lara-zeus/installer": "^1.0",
-    "lara-zeus/laravel-seo": "^1.0",
-    "lara-zeus/list-group": "^1.0",
-    "lara-zeus/mark": "^1.0",
-    "lara-zeus/matrix-choice": "^3.2",
-    "lara-zeus/pontus": "^1.0",
-    "lara-zeus/popover": "^1.0",
-    "lara-zeus/qr": "^1.2",
-    "lara-zeus/quantity": "^1.0",
-    "lara-zeus/replies": "^1.0",
-    "lara-zeus/simple-qrcode": "^5.0",
-    "lara-zeus/sky": "^3.4",
-    "lara-zeus/tartarus": "^1.0",
-    "lara-zeus/thunder": "^3.1",
-    "lara-zeus/tiles": "^1.0",
-    "lara-zeus/torch-filament": "^1.0",
-    "lara-zeus/translatable-pro": "^1.0",
-    "lara-zeus/wind": "^3.2",
-    "laravel/framework": "^12.0",
-    "laravel/prompts": "^0.3",
-    "laravel/sanctum": "^4.0",
-    "sentry/sentry-laravel": "^4.15",
-    "stechstudio/filament-impersonate": "^3.8",
-    "swisnl/filament-backgrounds": "^1.1",
-    "torchlight/engine": "^0.1.0",
-    "torchlight/torchlight-laravel": "^0.6"
-  },
-  "require-dev": {
-    "barryvdh/laravel-debugbar": "^3.9",
-    "larastan/larastan": "^3.0",
-    "laravel/pint": "^1.13",
-    "laravel/tinker": "^2.9",
-    "nunomaduro/collision": "^8.0",
-    "phpstan/extension-installer": "^1.1",
-    "phpstan/phpstan-deprecation-rules": "^2.0",
-    "roave/security-advisories": "dev-latest",
-    "spatie/laravel-ignition": "^2.4"
-  },
-  "autoload": {
-    "psr-4": {
-      "App\\": "app/",
-      "Database\\Factories\\": "database/factories/",
-      "Database\\Seeders\\": "database/seeders/"
-    }
-  },
-  "scripts": {
-    "post-autoload-dump": [
-      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-      "@php artisan package:discover --ansi"
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
     ],
-    "post-update-cmd": [
-      "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
-      "@php artisan vendor:publish --tag=zeus-assets --ansi --force",
-      "@php artisan demo:filament",
-      "@php artisan filament:upgrade"
-    ],
-    "post-root-package-install": [
-      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-    ],
-    "post-create-project-cmd": [
-      "@php artisan key:generate --ansi"
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "archilex/filament-filter-sets": "^4.0",
+        "awcodes/filament-versions": "*",
+        "fakerphp/faker": "^1.23",
+        "filament/filament": "^4.0",
+        "graham-campbell/github": "^13.0",
+        "guzzlehttp/guzzle": "^7.5",
+        "jeremykenedy/laravel-packagist": "^1.0",
+        "guava/filament-icon-picker": "dev-filament-4",
+        "lara-zeus/accordion": "^2.0",
+        "lara-zeus/athena": "^2.0",
+        "lara-zeus/bolt": "^4.0",
+        "lara-zeus/bolt-pro": "^4.0",
+        "lara-zeus/boredom": "^2.0",
+        "lara-zeus/chaos": "^2.0",
+        "lara-zeus/core": "^4.0",
+        "lara-zeus/delia": "^2.0",
+        "lara-zeus/dynamic-dashboard": "^4.0",
+        "lara-zeus/filament-plugin-tools": "^2.0",
+        "lara-zeus/hades": "^2.0",
+        "lara-zeus/helen": "^3.0",
+        "lara-zeus/hera": "^2.0",
+        "lara-zeus/hermes": "^3.0",
+        "lara-zeus/inline-chart": "^2.0",
+        "lara-zeus/installer": "^1.0",
+        "lara-zeus/laravel-seo": "^1.0",
+        "lara-zeus/list-group": "^2.0",
+        "lara-zeus/mark": "dev-filament-4",
+        "lara-zeus/matrix-choice": "^4.0",
+        "lara-zeus/pontus": "^2.0",
+        "lara-zeus/popover": "^2.0",
+        "lara-zeus/qr": "^2.0",
+        "lara-zeus/quantity": "^2.0",
+        "lara-zeus/replies": "^2.0",
+        "lara-zeus/simple-qrcode": "^5.0",
+        "lara-zeus/sky": "^4.0",
+        "lara-zeus/tartarus": "^2.0",
+        "lara-zeus/thunder": "^4.0",
+        "lara-zeus/tiles": "^2.0",
+        "lara-zeus/torch-filament": "^2.0",
+        "lara-zeus/translatable-pro": "^2.0",
+        "lara-zeus/wind": "^4.0",
+        "laravel/framework": "^12.0",
+        "laravel/prompts": "^0.3",
+        "laravel/sanctum": "^4.0",
+        "sentry/sentry-laravel": "^4.15",
+        "torchlight/engine": "^0.1.0",
+        "torchlight/torchlight-laravel": "^0.6"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.9",
+        "filament/upgrade": "^4.0",
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.13",
+        "laravel/tinker": "^2.9",
+        "nunomaduro/collision": "^8.0",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "roave/security-advisories": "dev-latest",
+        "spatie/laravel-ignition": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
+            "@php artisan vendor:publish --tag=zeus-assets --ansi --force",
+            "@php artisan demo:filament",
+            "@php artisan filament:upgrade"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "github",
+            "url": "https://github.com/still-code/laravel-subscriptions"
+        },
+        {
+            "type": "composer",
+            "url": "https://filament-filter-sets.composer.sh"
+        },
+        {
+            "type": "path",
+            "url": "../p/*"
+        },
+        {
+            "type": "path",
+            "url": "../filament-icon-picker"
+        }
     ]
-  },
-  "extra": {
-    "laravel": {
-      "dont-discover": []
-    }
-  },
-  "config": {
-    "optimize-autoloader": true,
-    "preferred-install": "dist",
-    "sort-packages": true,
-    "allow-plugins": {
-      "phpstan/extension-installer": true,
-      "php-http/discovery": true
-    }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "repositories": [
-    {
-      "type": "github",
-      "url": "https://github.com/still-code/laravel-subscriptions"
-    },
-    {
-      "type": "composer",
-      "url": "https://filament-filter-sets.composer.sh"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/hades.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/hera.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/translatable.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/tiles.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/hermes.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/helen.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/thunder.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/athena.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/bolt-pro.git"
-    },
-    {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/translatable-pro.git"
-    }
-  ]
 }

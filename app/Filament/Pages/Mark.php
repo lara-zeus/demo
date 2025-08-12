@@ -2,11 +2,11 @@
 
 namespace App\Filament\Pages;
 
+use Filament\Schemas\Schema;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use App\Filament\Widgets\LoveStats;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Form;
 use Filament\Pages\Page;
 use LaraZeus\Mark\Forms\Components\Mark as MarkForm;
 
@@ -14,9 +14,9 @@ class Mark extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static ?string $navigationIcon = 'tabler-star-half-filled';
+    protected static string | \BackedEnum | null $navigationIcon = 'tabler-star-half-filled';
 
-    protected static string $view = 'filament.pages.mark';
+    protected string $view = 'filament.pages.mark';
 
     protected static ?int $navigationSort = 4;
 
@@ -41,11 +41,11 @@ class Mark extends Page
         $this->form->fill();
     }
 
-    public function form(Form $form): Form
+    public function form(Schema $schema): Schema
     {
-        return $form
+        return $schema
             ->statePath('data')
-            ->schema([
+            ->components([
                 TextInput::make('name'),
                 MarkForm::make('likes')
                     ->label('Like')

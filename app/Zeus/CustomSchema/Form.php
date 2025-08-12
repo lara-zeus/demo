@@ -2,7 +2,7 @@
 
 namespace App\Zeus\CustomSchema;
 
-use Filament\Forms\Components\Tabs\Tab;
+use Filament\Schemas\Components\Tabs\Tab;
 use Filament\Forms\Components\TextInput;
 use LaraZeus\Bolt\Contracts\CustomFormSchema;
 

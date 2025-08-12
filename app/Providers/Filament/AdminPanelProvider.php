@@ -2,7 +2,16 @@
 
 namespace App\Providers\Filament;
 
-use App\CuratedBySwis;
+use Awcodes\Versions\VersionsPlugin;
+use Awcodes\Versions\VersionsWidget;
+use Filament\Pages\Dashboard;
+use Filament\Widgets\AccountWidget;
+use Filament\Widgets\FilamentInfoWidget;
+use LaraZeus\SpatieTranslatable\SpatieTranslatablePlugin;
+use App\Zeus\CustomSchema\Form;
+use App\Zeus\CustomSchema\Section;
+use App\Zeus\CustomSchema\Field;
+use Exception;
 use App\Filament\Pages\Auth\Login;
 use App\Filament\Pages\DashboardPage;
 use App\Filament\Pages\Tiles;
@@ -13,21 +22,14 @@ use App\Models\Post;
 use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
 use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
 use Archilex\AdvancedTables\Resources\UserViewResource;
-use Awcodes\Curator\CuratorPlugin;
-use Awcodes\FilamentVersions\VersionsPlugin;
-use Awcodes\FilamentVersions\VersionsWidget;
-use DiogoGPinto\AuthUIEnhancer\AuthUIEnhancerPlugin;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Navigation\NavigationGroup;
-use Filament\Pages;
 use Filament\Panel;
 use Filament\PanelProvider;
-use Filament\SpatieLaravelTranslatablePlugin;
 use Filament\Support\Colors\Color;
 use Filament\View\PanelsRenderHook;
-use Filament\Widgets;
 use Illuminate\Contracts\View\View;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
@@ -65,13 +67,11 @@ use LaraZeus\Thunder\Filament\Resources\OfficeResource;
 use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\WindPlugin;
-use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
-use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
     /**
-     * @throws \Exception
+     * @throws Exception
      */
     public function panel(Panel $panel): Panel
     {
@@ -90,8 +90,8 @@ class AdminPanelProvider extends PanelProvider
             ->brandLogo(fn () => view('filament.logo'))
             ->colors([
                 ...collect(Color::all())->forget(['slate', 'gray', 'zinc', 'neutral', 'stone'])->toArray(),
-                'primary' => Color::hex('#45B39D'),
-                'secondary' => Color::hex('#F1948A'),
+                'primary' => Color::generateV3Palette('#45B39D'),
+                'secondary' => Color::generateV3Palette('#F1948A'),
             ])
 
             ->sidebarCollapsibleOnDesktop()
@@ -146,12 +146,12 @@ class AdminPanelProvider extends PanelProvider
             ->discoverClusters(in: app_path('Filament/Clusters'), for: 'App\\Filament\\Clusters')
             //
             ->pages([
-                Pages\Dashboard::class,
+                Dashboard::class,
                 DashboardPage::class,
             ])
             ->widgets([
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
+                AccountWidget::class,
+                FilamentInfoWidget::class,
                 VersionsWidget::class,
                 Feedback::class,
             ])
@@ -305,7 +305,7 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
-            AuthUIEnhancerPlugin::make()
+            /*AuthUIEnhancerPlugin::make()
                 ->showEmptyPanelOnMobile(false)
                 ->formPanelPosition('left')
                 ->formPanelWidth('40%'),
@@ -313,18 +313,18 @@ class AdminPanelProvider extends PanelProvider
                 ->remember(1)
                 ->imageProvider(
                     CuratedBySwis::make()
-                ),
+                ),*/
             AdvancedTablesPlugin::make()
                 ->resourceNavigationGroup('Bolt')
                 ->resourceNavigationSort(99)
                 ->favoritesBarTheme(FavoritesBarTheme::Filament),
-            CuratorPlugin::make()
+            /*CuratorPlugin::make()
                 ->label(fn (): string => __('Media'))
                 ->pluralLabel(fn (): string => __('Media'))
                 ->navigationIcon('heroicon-o-photo')
                 ->navigationGroup(fn (): string => __('Hermes'))
                 ->navigationSort(99)
-                ->navigationCountBadge(),
+                ->navigationCountBadge(),*/
             VersionsPlugin::make()
                 ->widgetSort(4)
                 ->hasNavigationView(false)
@@ -332,7 +332,7 @@ class AdminPanelProvider extends PanelProvider
                 ->items([
                     new MyCustomVersionProvider,
                 ]),
-            SpatieLaravelTranslatablePlugin::make()
+            SpatieTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt', 'ko']),
             DeliaPlugin::make(),
             BoringAvatarPlugin::make(),
@@ -346,16 +346,16 @@ class AdminPanelProvider extends PanelProvider
                 ->baseDomain('demo.larazeus.com')
                 ->prefix('not-so-short/'),
 
-            FilamentFullCalendarPlugin::make()
+            /*FilamentFullCalendarPlugin::make()
                 ->selectable()
-                ->editable(),
+                ->editable(),*/
 
             BoltPlugin::make()
                 ->hideNavigationBadges()
                 ->customSchema([
-                    'form' => \App\Zeus\CustomSchema\Form::class,
-                    'section' => \App\Zeus\CustomSchema\Section::class,
-                    'field' => \App\Zeus\CustomSchema\Field::class,
+                    'form' => Form::class,
+                    'section' => Section::class,
+                    'field' => Field::class,
                 ])
                 ->formActionsAreSticky(true)
                 ->extensions([

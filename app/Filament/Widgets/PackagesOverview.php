@@ -10,7 +10,7 @@ class PackagesOverview extends Widget implements ZeusWidget
 {
     use InteractWithWidgets;
 
-    protected static string $view = 'filament.widgets.packages-overview';
+    protected string $view = 'filament.widgets.packages-overview';
 
     protected static ?int $sort = 4;
 
