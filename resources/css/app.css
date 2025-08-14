@@ -4,8 +4,11 @@
 @import '../../node_modules/tippy.js/dist/tippy.css';
 @import '../../node_modules/tippy.js/themes/light.css';
 
-@source '../../../../app/Filament/**/*';
-@source '../../../../resources/views/filament/**/*';
+@source '../../app/**/*';
+@source '../../resources/views/**/*';
+
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
 
 
 /* Sky search result highlight */
@@ -16,19 +19,19 @@ span.highlight {
 /*@import '/vendor/awcodes/filament-tiptap-editor/resources/css/plugin.css';*/
 
 [dir=rtl] {
-    font-family: 'Almarai','Karla', sans-serif !important;
+    font-family: 'Almarai','Karla', sans-serif;
 }
 
 [dir=rtl] .title-font {
-    font-family: 'Almarai', sans-serif !important;
+    font-family: 'Almarai', sans-serif;
 }
 
 [dir=ltr] {
-    font-family: 'Karla', 'Almarai', sans-serif !important;
+    font-family: 'Karla', 'Almarai', sans-serif;
 }
 
 [dir=ltr] .title-font {
-    font-family: 'Montserrat', 'Almarai', sans-serif !important;
+    font-family: 'Montserrat', 'Almarai', sans-serif;
     @apply font-semibold
 }
 
@@ -75,11 +78,11 @@ pre code.torchlight .summary-caret {
 }
 
 .compact-timeline .fi-timeline-item-heading {
-    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col !important;
+    @apply shadow-none flex-col items-start md:space-y-0 md:space-x-0 gap-2 md:flex-col;
 }
 .compact-timeline .fi-timeline-section-content {
-    @apply shadow-none p-0 !important;
+    @apply shadow-none p-0;
 }
 .compact-timeline {
-    @apply shadow-none ring-0 !important;
+    @apply shadow-none ring-0;
 }

@@ -16,7 +16,7 @@ return [
     | When set to null (default), every installed icon set will be used.
     |
     */
-    'sets' => ['heroicons'],
+    'sets' => ['tabler'],
     //     example:
     //     'sets' => 'heroicons',
     //     'sets' => [

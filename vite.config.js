@@ -6,7 +6,7 @@ export default defineConfig({
     plugins: [
         tailwindcss(),
         laravel([
-            //'resources/css/app.css',
+            'resources/css/app.css',
             'resources/css/flag-icons.css',
             'resources/css/filament/admin/theme.css',
         ]),

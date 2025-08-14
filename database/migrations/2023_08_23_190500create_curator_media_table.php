@@ -8,7 +8,7 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create(app(config('curator.model'))->getTable(), function (Blueprint $table) {
+        /*Schema::create(app(config('curator.model'))->getTable(), function (Blueprint $table) {
             $table->id();
             $table->string('disk')->default('public');
             $table->string('directory')->default('media');
@@ -27,7 +27,7 @@ return new class extends Migration
             $table->text('exif')->nullable();
             $table->longText('curations')->nullable();
             $table->timestamps();
-        });
+        });*/
     }
 
     public function down(): void
