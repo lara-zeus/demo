@@ -5,9 +5,13 @@ namespace Database\Seeders\Concerns;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
+use Random\RandomException;
 
 trait HasImage
 {
+    /**
+     * @throws RandomException
+     */
     public function getImage(
         string $directory,
         bool $withMedia = false,
@@ -18,7 +22,7 @@ trait HasImage
 
         $randName = $this->faker->word() . '-' . $this->faker->randomNumber();
         $fullFileName = $directory . '/' . $randName . '.png';
-        $imgUrl = 'https://picsum.photos/1300/700?random=' . $randName;
+        $imgUrl = 'https://picsum.photos/seed/1300/700?random=' . $randName;
 
         if (! Storage::disk($disk)->exists($fullFileName)) {
             $getImageContent = file_get_contents($imgUrl);
@@ -34,15 +38,15 @@ trait HasImage
                     'path' => $fullFileName,
                     'ext' => $data->extension,
                     'type' => $data->mime(),
-                    'alt' => $this->faker->words(rand(3, 8), true),
+                    'alt' => $this->faker->words(random_int(3, 8), true),
                     'title' => $data->filename,
                     'caption' => $data->filename,
                     'description' => $data->filename,
-                    'width' => $data->getWidth() ?? null,
-                    'height' => $data->getHeight() ?? null,
+                    'width' => $data->getWidth(),
+                    'height' => $data->getHeight(),
                     'disk' => $disk,
                     'directory' => $directory,
-                    'size' => $data->filesize() ?? null,
+                    'size' => $data->filesize(),
                     'created_at' => now(),
                 ]);
         }

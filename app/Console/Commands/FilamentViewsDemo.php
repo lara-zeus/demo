@@ -13,7 +13,7 @@ class FilamentViewsDemo extends Command
 
     public function handle(): void
     {
-        $this->call('vendor:publish', ['--tag' => 'filament-views', '--force' => true]);
+        /*$this->call('vendor:publish', ['--tag' => 'filament-views', '--force' => true]);
         $this->call('vendor:publish', ['--tag' => 'filament-actions-views', '--force' => true]);
         $this->call('vendor:publish', ['--tag' => 'filament-forms-views', '--force' => true]);
         $this->call('vendor:publish', ['--tag' => 'filament-infolists-views', '--force' => true]);
@@ -42,6 +42,6 @@ class FilamentViewsDemo extends Command
                 $str = str_replace('-primary-', '-custom-', $file);
                 file_put_contents($view, $str);
             }
-        }
+        }*/
     }
 }

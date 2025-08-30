@@ -16,7 +16,7 @@ return [
     | When set to null (default), every installed icon set will be used.
     |
     */
-    'sets' => ['tabler'],
+    'sets' => ['heroicons'],
     //     example:
     //     'sets' => 'heroicons',
     //     'sets' => [
@@ -75,7 +75,7 @@ return [
     |
     */
     'cache' => [
-        'enabled' => true,
+        'enabled' => false,
         'duration' => '7 days',
     ],
 
