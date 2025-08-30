@@ -14,7 +14,7 @@
         "fakerphp/faker": "^1.23",
         "filament/filament": "^4.0",
         "graham-campbell/github": "^13.0",
-        "guava/filament-icon-picker": "dev-filament-4",
+        "guava/filament-icon-picker": "^3.1",
         "guzzlehttp/guzzle": "^7.5",
         "jeremykenedy/laravel-packagist": "^1.0",
         "lara-zeus/accordion": "^2.0",
@@ -122,10 +122,6 @@
         {
             "type": "path",
             "url": "../p/*"
-        },
-        {
-            "type": "path",
-            "url": "../filament-icon-picker"
         }
     ]
 }

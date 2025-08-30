@@ -4,7 +4,8 @@
 
 @source '../../../../app/Filament';
 @source '../../../../resources/views/filament';
-@source '../../../../vendor/guava/filament-icon-picker/resources/views/**/*.blade.php';
+
+@source '../../../../vendor/guava/filament-icon-picker/resources/**/*';
 
 @theme {
     --color-primary-50: #c6e9e2;
