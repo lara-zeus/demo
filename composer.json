@@ -48,7 +48,6 @@
         "lara-zeus/thunder": "^4.0",
         "lara-zeus/tiles": "^2.0",
         "lara-zeus/torch-filament": "^2.0",
-        "lara-zeus/translatable-pro": "^2.0",
         "lara-zeus/wind": "^4.0",
         "laravel/framework": "^12.0",
         "laravel/prompts": "^0.3",
