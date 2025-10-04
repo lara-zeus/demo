@@ -28,10 +28,11 @@ class Matrix extends Page
 
     public ?string $qrcode;
 
-    public function mount(): void
+    // todo
+    /*public function mount(): void
     {
         $this->form->fill();
-    }
+    }*/
 
     protected function getHeaderActions(): array
     {

@@ -38,7 +38,7 @@ class Mark extends Page
 
     public function mount(): void
     {
-        $this->form->fill();
+        $this->form->fill([]);
     }
 
     public function form(Schema $schema): Schema
