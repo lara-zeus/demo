@@ -4,11 +4,14 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
     plugins: [
+        laravel({
+            input: [
+                'resources/css/app.css',
+                'resources/css/flag-icons.css',
+                'resources/css/filament/admin/theme.css'
+            ],
+            refresh: true,
+        }),
         tailwindcss(),
-        laravel([
-            'resources/css/app.css',
-            'resources/css/flag-icons.css',
-            'resources/css/filament/admin/theme.css',
-        ]),
     ],
 });

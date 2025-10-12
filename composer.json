@@ -117,10 +117,6 @@
         {
             "type": "composer",
             "url": "https://filament-filter-sets.composer.sh"
-        },
-        {
-            "type": "path",
-            "url": "../p/*"
         }
     ]
 }

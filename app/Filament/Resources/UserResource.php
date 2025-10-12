@@ -18,6 +18,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Resources\Resource;
 use Filament\Support\Enums\Alignment;
+use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
@@ -28,7 +29,6 @@ use Illuminate\Database\Eloquent\Model;
 use LaraZeus\Popover\Infolists\PopoverEntry;
 use LaraZeus\Popover\Tables\PopoverColumn;
 use LaraZeus\Qr\Facades\Qr;
-use STS\FilamentImpersonate\Tables\Actions\Impersonate;
 
 class UserResource extends Resource
 {
@@ -36,7 +36,9 @@ class UserResource extends Resource
 
     protected static ?int $navigationSort = 1;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-users-group';
+    //protected static string | \BackedEnum | null $navigationIcon = 'tabler-users-group';
+
+    protected static string|\BackedEnum|null $navigationIcon = Heroicon::OutlinedCpuChip;
 
     public static function getNavigationLabel(): string
     {

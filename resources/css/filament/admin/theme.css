@@ -5,7 +5,9 @@
 @source '../../../../app/Filament';
 @source '../../../../resources/views/filament';
 
+@source '../../../../vendor/lara-zeus/**/*';
 @source '../../../../vendor/guava/filament-icon-picker/resources/**/*';
+@source '../../../../vendor/awcodes/shout/resources/views/components/shout.blade.php';
 
 @theme {
     --color-primary-50: #c6e9e2;
