@@ -154,11 +154,15 @@
     },
     {
       "type": "github",
-      "url": "git@github.com:lara-zeus/bolt-pro.git"
+      "url": "git@github.com:lara-zeus/translatable-pro.git"
     },
     {
-      "type": "github",
-      "url": "git@github.com:lara-zeus/translatable-pro.git"
+      "type": "path",
+      "url": "../p/bolt"
+    },
+    {
+      "type": "path",
+      "url": "../p/bolt-pro"
     }
   ]
 }
