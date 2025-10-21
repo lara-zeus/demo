@@ -1,6 +1,7 @@
 @import '../../../../vendor/filament/filament/resources/css/theme.css';
 /*@import '../../../../vendor/awcodes/filament-curator/resources/css/plugin.css';*/
 /*@import '../../../../vendor/archilex/filament-filter-sets/resources/css/plugin.css';*/
+@import '../../../../vendor/saade/filament-fullcalendar/resources/css/filament-fullcalendar.css';
 
 @source '../../../../app/Filament';
 @source '../../../../resources/views/filament';
@@ -8,6 +9,7 @@
 @source '../../../../vendor/lara-zeus/**/*';
 @source '../../../../vendor/guava/filament-icon-picker/resources/**/*';
 @source '../../../../vendor/awcodes/shout/resources/views/components/shout.blade.php';
+@source '../../../../vendor/saade/filament-fullcalendar/resources/views/**/*.blade.php';
 
 @theme {
     --color-primary-50: #c6e9e2;

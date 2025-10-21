@@ -67,6 +67,7 @@ use LaraZeus\Thunder\Filament\Resources\OfficeResource;
 use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\WindPlugin;
+use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -346,9 +347,9 @@ class AdminPanelProvider extends PanelProvider
                 ->baseDomain('demo.larazeus.com')
                 ->prefix('not-so-short/'),
 
-            /*FilamentFullCalendarPlugin::make()
+            FilamentFullCalendarPlugin::make()
                 ->selectable()
-                ->editable(),*/
+                ->editable(),
 
             BoltPlugin::make()
                 ->hideNavigationBadges()
