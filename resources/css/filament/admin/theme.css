@@ -1,7 +1,10 @@
+@import "tailwindcss" important;
+
 @import '../../../../vendor/filament/filament/resources/css/theme.css';
-/*@import '../../../../vendor/awcodes/filament-curator/resources/css/plugin.css';*/
-/*@import '../../../../vendor/archilex/filament-filter-sets/resources/css/plugin.css';*/
+@import '../../../../vendor/archilex/filament-filter-sets/resources/css/plugin.css';
 @import '../../../../vendor/saade/filament-fullcalendar/resources/css/filament-fullcalendar.css';
+/*@import '../../../../vendor/lara-zeus/akin/resources/css/theme.css';*/
+/*@import '../../../../vendor/awcodes/filament-curator/resources/css/plugin.css';*/
 
 @source '../../../../app/Filament';
 @source '../../../../resources/views/filament';
@@ -73,7 +76,7 @@
 }
 
 .field-type .choices__list--single {
-    @apply !w-full;
+    @apply w-full;
 }
 
 .field-type .choices__list--single .tip, .field-type .choices__list--single .field-desc {

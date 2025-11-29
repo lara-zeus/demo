@@ -13,15 +13,13 @@
         "autoprefixer": "^10.4.21",
         "cropperjs": "^1.6.0",
         "daisyui": "^4.12.10",
-        "laravel-vite-plugin": "^1.0.5",
+        "laravel-vite-plugin": "^2.0.1",
         "photoswipe": "^5.3.9",
         "postcss": "^8.5.3",
         "postcss-nesting": "^13.0.0",
         "tailwindcss": "^4.1.12",
         "tippy.js": "^6.3.7",
-        "vite": "^5.4.7"
-    },
-    "dependencies": {
+        "vite": "7.1.11",
         "@tailwindcss/postcss": "^4.1.11"
     }
 }
