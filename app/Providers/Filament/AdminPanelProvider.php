@@ -56,11 +56,6 @@ use LaraZeus\Helen\Filament\Resources\LinksResource;
 use LaraZeus\Helen\HelenPlugin;
 use LaraZeus\Hera\Filament\Resources\SeoScanResource;
 use LaraZeus\Hera\HeraPlugin;
-use LaraZeus\Hermes\Filament\Resources\BranchResource;
-use LaraZeus\Hermes\Filament\Resources\MenuItemLabelsResource;
-use LaraZeus\Hermes\Filament\Resources\MenuResource;
-use LaraZeus\Hermes\Filament\Resources\MenuSectionResource;
-use LaraZeus\Hermes\HermesPlugin;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\Thunder\Extensions\Thunder;
 use LaraZeus\Thunder\Filament\Resources\OfficeResource;
@@ -211,7 +206,7 @@ class AdminPanelProvider extends PanelProvider
             )
 
             // hermes
-            ->renderHook(
+            /*->renderHook(
                 'panels::page.start',
                 fn (array $scopes): View => view('filament.hooks.hermes', ['scopes' => $scopes]),
                 scopes: [
@@ -220,7 +215,7 @@ class AdminPanelProvider extends PanelProvider
                     MenuResource::class,
                     MenuSectionResource::class,
                 ],
-            )
+            )*/
 
             // Delia
             ->renderHook(
@@ -368,7 +363,7 @@ class AdminPanelProvider extends PanelProvider
             ThunderPlugin::make(),
             AthenaPlugin::make(),
             DynamicDashboardPlugin::make(),
-            HermesPlugin::make(),
+            //HermesPlugin::make(),
         ];
     }
 }
