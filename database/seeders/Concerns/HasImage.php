@@ -18,6 +18,8 @@ trait HasImage
         string $disk = 'public'
     ): string | int {
 
+        return '';
+
         sleep(1);
 
         $randName = $this->faker->word() . '-' . $this->faker->randomNumber();
