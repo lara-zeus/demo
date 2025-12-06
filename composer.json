@@ -40,7 +40,6 @@
         "lara-zeus/list-group": "^2.0",
         "lara-zeus/mark": "dev-filament-4",
         "lara-zeus/matrix-choice": "^4.0",
-        "lara-zeus/pontus": "^2.0",
         "lara-zeus/popover": "^2.0",
         "lara-zeus/progress": "^2.0",
         "lara-zeus/qr": "^2.0",
@@ -115,10 +114,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
-        {
-            "type": "github",
-            "url": "https://github.com/still-code/laravel-subscriptions"
-        },
         {
             "type": "composer",
             "url": "https://filament-filter-sets.composer.sh"

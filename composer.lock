@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f302280f65076fdb3a1af5a265cf0e70",
+    "content-hash": "e66a43418187778b8514a2d74c08669c",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -6001,87 +6001,6 @@
             "time": "2025-10-24T11:05:32+00:00"
         },
         {
-            "name": "lara-zeus/pontus",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lara-zeus/pontus.git",
-                "reference": "8e482cf39c47d13b8c5ae0ae3b84180013ef803f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/pontus/zipball/8e482cf39c47d13b8c5ae0ae3b84180013ef803f",
-                "reference": "8e482cf39c47d13b8c5ae0ae3b84180013ef803f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-pdo_sqlite": "*",
-                "ext-sqlite3": "*",
-                "lara-zeus/chaos": "^2.0",
-                "lara-zeus/filament-plugin-tools": "^2.0",
-                "php": "^8.2",
-                "rinvex/laravel-subscriptions": "dev-laravel-12"
-            },
-            "require-dev": {
-                "larastan/larastan": "^3.8",
-                "laravel/pint": "^1.26",
-                "orchestra/testbench": "^10.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Pontus": "LaraZeus\\Pontus\\Facades\\Pontus"
-                    },
-                    "providers": [
-                        "LaraZeus\\Pontus\\PontusServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "LaraZeus\\Pontus\\": "src",
-                    "LaraZeus\\Pontus\\Database\\Factories\\": "database/factories/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "php coder",
-                    "email": "info@larazeus.com",
-                    "role": "Owner"
-                }
-            ],
-            "description": "subscriptions, plans, invoices, and features",
-            "homepage": "https://larazeus.com/pontus",
-            "keywords": [
-                "features",
-                "filamentphp",
-                "invoices",
-                "lara-zeus",
-                "laravel",
-                "manager",
-                "plans",
-                "pontus",
-                "subscriptions"
-            ],
-            "support": {
-                "issues": "https://github.com/lara-zeus/pontus/issues",
-                "source": "https://github.com/lara-zeus/pontus"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/atmonshi",
-                    "type": "github"
-                }
-            ],
-            "time": "2025-12-06T06:08:18+00:00"
-        },
-        {
             "name": "lara-zeus/popover",
             "version": "2.0.1",
             "source": {
@@ -11350,96 +11269,6 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.1"
             },
             "time": "2025-09-04T20:59:21+00:00"
-        },
-        {
-            "name": "rinvex/laravel-subscriptions",
-            "version": "dev-laravel-12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/still-code/laravel-subscriptions.git",
-                "reference": "d456868f5d02a59d4bcb922d0f2e40510e420006"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/still-code/laravel-subscriptions/zipball/d456868f5d02a59d4bcb922d0f2e40510e420006",
-                "reference": "d456868f5d02a59d4bcb922d0f2e40510e420006",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/console": "^8.0.0 | ^9.0.0 | ^10.0.0 | ^11.0.0 | ^12.0.0",
-                "illuminate/database": "^8.0.0 | ^9.0.0 | ^10.0.0 | ^11.0.0 | ^12.0.0",
-                "illuminate/support": "^8.0.0 | ^9.0.0 | ^10.0.0 | ^11.0.0 | ^12.0.0",
-                "php": "^8.1",
-                "spatie/eloquent-sortable": "^4.0",
-                "spatie/laravel-sluggable": "^3.4",
-                "spatie/laravel-translatable": "^6.4"
-            },
-            "require-dev": {
-                "codedungeon/phpunit-result-printer": "^0.31.0",
-                "illuminate/container": "^8.0.0 | ^9.0.0",
-                "phpunit/phpunit": "^9.5.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Rinvex\\Subscriptions\\Providers\\SubscriptionsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Rinvex\\Subscriptions\\": "src"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Rinvex\\Subscriptions\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Rinvex LLC",
-                    "homepage": "https://rinvex.com",
-                    "email": "help@rinvex.com"
-                },
-                {
-                    "name": "Abdelrahman Omran",
-                    "homepage": "https://omranic.com",
-                    "email": "me@omranic.com",
-                    "role": "Project Lead"
-                },
-                {
-                    "name": "The Generous Laravel Community",
-                    "homepage": "https://github.com/rinvex/laravel-subscriptions/contributors"
-                }
-            ],
-            "description": "Rinvex Subscriptions is a flexible plans and subscription management system for Laravel, with the required tools to run your SAAS like services efficiently. It's simple architecture, accompanied by powerful underlying to afford solid platform for your business.",
-            "homepage": "https://rinvex.com",
-            "keywords": [
-                "database",
-                "feature",
-                "laravel",
-                "plan",
-                "recurring",
-                "subscription",
-                "value"
-            ],
-            "support": {
-                "email": "help@rinvex.com",
-                "issues": "https://github.com/rinvex/laravel-subscriptions/issues",
-                "source": "https://github.com/rinvex/laravel-subscriptions",
-                "docs": "https://github.com/rinvex/laravel-subscriptions/blob/master/README.md"
-            },
-            "time": "2025-03-01T23:41:41+00:00"
         },
         {
             "name": "rupadana/filament-api-service",
