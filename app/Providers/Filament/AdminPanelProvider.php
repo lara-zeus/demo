@@ -373,8 +373,8 @@ class AdminPanelProvider extends PanelProvider
             DynamicDashboardPlugin::make(),
             //HermesPlugin::make(),
 
-            PontusPlugin::make()
-                ->navigationGroupLabel('Pontus'),
+            /*PontusPlugin::make()
+                ->navigationGroupLabel('Pontus'),*/
         ];
     }
 }
