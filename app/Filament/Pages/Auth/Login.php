@@ -6,7 +6,7 @@ use DiogoGPinto\AuthUIEnhancer\Pages\Auth\Concerns\HasCustomLayout;
 
 class Login extends \Filament\Auth\Pages\Login
 {
-    //use HasCustomLayout; // todo
+    use HasCustomLayout;
 
     public function mount(): void
     {

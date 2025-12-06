@@ -2,11 +2,14 @@
 
 namespace App\Providers\Filament;
 
+use App\CuratedBySwis;
 use Awcodes\Versions\VersionsPlugin;
 use Awcodes\Versions\VersionsWidget;
+use DiogoGPinto\AuthUIEnhancer\AuthUIEnhancerPlugin;
 use Filament\Pages\Dashboard;
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
+use LaraZeus\Pontus\PontusPlugin;
 use LaraZeus\SpatieTranslatable\SpatieTranslatablePlugin;
 use App\Zeus\CustomSchema\Form;
 use App\Zeus\CustomSchema\Section;
@@ -63,6 +66,7 @@ use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\WindPlugin;
 use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
+use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -128,6 +132,9 @@ class AdminPanelProvider extends PanelProvider
                     ->icon('tabler-bookmarks-filled'),
                 NavigationGroup::make()->label('Sky')
                     ->icon('tabler-wind'),
+
+                NavigationGroup::make()->label('Pontus'),
+
                 NavigationGroup::make()->label('Wind')
                     ->icon('tabler-wind-electricity'),
                 NavigationGroup::make()->label('Dynamic Dashboard')
@@ -301,7 +308,7 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
-            /*AuthUIEnhancerPlugin::make()
+            AuthUIEnhancerPlugin::make()
                 ->showEmptyPanelOnMobile(false)
                 ->formPanelPosition('left')
                 ->formPanelWidth('40%'),
@@ -309,7 +316,7 @@ class AdminPanelProvider extends PanelProvider
                 ->remember(1)
                 ->imageProvider(
                     CuratedBySwis::make()
-                ),*/
+                ),
             AdvancedTablesPlugin::make()
                 ->resourceNavigationGroup('Bolt')
                 ->resourceNavigationSort(99)
@@ -331,7 +338,8 @@ class AdminPanelProvider extends PanelProvider
             SpatieTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt', 'ko']),
             DeliaPlugin::make(),
-            BoringAvatarPlugin::make(),
+            BoringAvatarPlugin::make()
+                ->url('https://site.test/avatars'),
             WindPlugin::make(),
             SkyPlugin::make()
                 ->models([
@@ -364,6 +372,9 @@ class AdminPanelProvider extends PanelProvider
             AthenaPlugin::make(),
             DynamicDashboardPlugin::make(),
             //HermesPlugin::make(),
+
+            PontusPlugin::make()
+                ->navigationGroupLabel('Pontus'),
         ];
     }
 }

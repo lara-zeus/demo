@@ -56,6 +56,7 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
         return true;
     }
 
+    // for tickets?!!!!!
     protected function avatar(): Attribute
     {
         return Attribute::make(

@@ -13,6 +13,7 @@
 @source '../../../../vendor/guava/filament-icon-picker/resources/**/*';
 @source '../../../../vendor/awcodes/shout/resources/views/components/shout.blade.php';
 @source '../../../../vendor/saade/filament-fullcalendar/resources/views/**/*.blade.php';
+@source '../../../../vendor/diogogpinto/filament-auth-ui-enhancer/resources/**/*.blade.php';
 
 @theme {
     --color-primary-50: #c6e9e2;
