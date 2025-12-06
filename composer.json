@@ -8,7 +8,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.3",
+        "php": "^8.4",
         "archilex/filament-filter-sets": "^4.0",
         "awcodes/filament-versions": "*",
         "diogogpinto/filament-auth-ui-enhancer": "^2.0",
