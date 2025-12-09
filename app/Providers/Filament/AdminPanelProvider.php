@@ -9,7 +9,6 @@ use DiogoGPinto\AuthUIEnhancer\AuthUIEnhancerPlugin;
 use Filament\Pages\Dashboard;
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
-use LaraZeus\Pontus\PontusPlugin;
 use LaraZeus\SpatieTranslatable\SpatieTranslatablePlugin;
 use App\Zeus\CustomSchema\Form;
 use App\Zeus\CustomSchema\Section;
@@ -132,8 +131,6 @@ class AdminPanelProvider extends PanelProvider
                     ->icon('tabler-bookmarks-filled'),
                 NavigationGroup::make()->label('Sky')
                     ->icon('tabler-wind'),
-
-                NavigationGroup::make()->label('Pontus'),
 
                 NavigationGroup::make()->label('Wind')
                     ->icon('tabler-wind-electricity'),
@@ -371,10 +368,6 @@ class AdminPanelProvider extends PanelProvider
             ThunderPlugin::make(),
             AthenaPlugin::make(),
             DynamicDashboardPlugin::make(),
-            //HermesPlugin::make(),
-
-            /*PontusPlugin::make()
-                ->navigationGroupLabel('Pontus'),*/
         ];
     }
 }
