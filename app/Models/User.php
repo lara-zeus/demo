@@ -28,7 +28,7 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
     use HasBoringAvatar;
     use HasFactory;
     use HasLikes;
-    use HasViews;
+    //use HasViews;
     use ManageOffice;
     use Notifiable;
 
