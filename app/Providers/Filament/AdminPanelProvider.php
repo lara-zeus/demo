@@ -347,9 +347,9 @@ class AdminPanelProvider extends PanelProvider
                 ->baseDomain('demo.larazeus.com')
                 ->prefix('not-so-short/'),
 
-            FilamentFullCalendarPlugin::make()
+            /*FilamentFullCalendarPlugin::make()
                 ->selectable()
-                ->editable(),
+                ->editable(),*/
 
             BoltPlugin::make()
                 ->hideNavigationBadges()
