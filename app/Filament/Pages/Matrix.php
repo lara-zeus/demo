@@ -2,11 +2,11 @@
 
 namespace App\Filament\Pages;
 
-use Filament\Schemas\Schema;
-use Filament\Schemas\Components\Section;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use Filament\Pages\Page;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use LaraZeus\Delia\Filament\Actions\BookmarkHeaderAction;
 use LaraZeus\MatrixChoice\Components\Matrix as MatrixAlias;
 
@@ -14,13 +14,11 @@ class Matrix extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-list-check';
+    protected static string|\BackedEnum|null $navigationIcon = 'tabler-list-check';
 
-    protected string $view = 'filament.pages.qrcode';
+    protected string $view = 'filament.pages.matrix';
 
     protected static ?int $navigationSort = 1;
-
-    public ?array $data = [];
 
     protected static ?string $navigationLabel = 'Matrix Grid';
 
@@ -28,11 +26,12 @@ class Matrix extends Page
 
     public ?string $qrcode;
 
-    // todo
-    /*public function mount(): void
+    public ?array $data = [];
+
+    public function mount(): void
     {
         $this->form->fill();
-    }*/
+    }
 
     protected function getHeaderActions(): array
     {
@@ -45,22 +44,22 @@ class Matrix extends Page
     public function form(Schema $schema): Schema
     {
         return $schema
-            ->statePath('data')
             ->components([
                 Section::make()
                     ->schema([
                         MatrixAlias::make('options')
                             // ->disabled()
-                            ->formatStateUsing(fn () => [
+                            // todo set values
+                            /*->state([
                                 'companies' => ['c' => true],
                                 'clients' => ['m' => true, 'p' => true],
-                            ])
-                            ->disableOptionWhen(fn (
+                            ])*/
+                            ->disableOptionWhen(fn(
                                 string $value
                             ): bool => $value === 'm' || $value === 'p' || $value === 'users')
                             ->rowSelectRequired(false)
                             ->helperText('you can disable any options, like in the users row, the Manage and Approve are disabled')
-                            ->label('Resources Operations')
+                            ->label('test')
                             ->asCheckbox()
                             ->columnData([
                                 'c' => 'Create',
@@ -106,6 +105,12 @@ class Matrix extends Page
                                 'Monday',
                             ]),
                     ]),
-            ]);
+            ])
+            ->statePath('data');
+    }
+
+    public function create(): void
+    {
+        dd($this->form->getState());
     }
 }

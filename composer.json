@@ -51,22 +51,19 @@
         "laravel/framework": "^12.0",
         "laravel/prompts": "^0.3",
         "laravel/sanctum": "^4.0",
-        "livewire/livewire": "^4.0@beta",
+        "livewire/livewire": "^4.0",
         "sentry/sentry-laravel": "^4.15",
         "torchlight/engine": "^0.1.0",
         "torchlight/torchlight-laravel": "^0.6"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.9",
         "filament/upgrade": "^5.0",
         "larastan/larastan": "^3.0",
         "laravel/pint": "^1.13",
         "laravel/tinker": "^2.9",
         "nunomaduro/collision": "^8.0",
         "phpstan/extension-installer": "^1.1",
-        "phpstan/phpstan-deprecation-rules": "^2.0",
-        "roave/security-advisories": "dev-latest",
-        "spatie/laravel-ignition": "^2.4"
+        "phpstan/phpstan-deprecation-rules": "^2.0"
     },
     "autoload": {
         "psr-4": {

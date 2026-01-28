@@ -110,4 +110,9 @@ class Quantity extends Page
             DemoHeaderAction::make(),
         ];
     }
+
+    public function create(): void
+    {
+        dd($this->form->getState());
+    }
 }
