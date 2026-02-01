@@ -29,10 +29,10 @@ class Matrix extends Page
     public ?string $qrcode;
 
     // todo
-    /*public function mount(): void
+    public function mount(): void
     {
         $this->form->fill();
-    }*/
+    }
 
     protected function getHeaderActions(): array
     {
@@ -51,10 +51,12 @@ class Matrix extends Page
                     ->schema([
                         MatrixAlias::make('options')
                             // ->disabled()
-                            ->formatStateUsing(fn () => [
-                                'companies' => ['c' => true],
-                                'clients' => ['m' => true, 'p' => true],
-                            ])
+                            ->formatStateUsing(function () {
+                                return [
+                                    'companies' => ['c'],
+                                    'clients' => ['m' => true, 'p' => true],
+                                ];
+                            })
                             ->disableOptionWhen(fn (
                                 string $value
                             ): bool => $value === 'm' || $value === 'p' || $value === 'users')
