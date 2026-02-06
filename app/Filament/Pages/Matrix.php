@@ -50,10 +50,12 @@ class Matrix extends Page
                         MatrixAlias::make('options')
                             // ->disabled()
                             // todo set values
-                            /*->state([
-                                'companies' => ['c' => true],
-                                'clients' => ['m' => true, 'p' => true],
-                            ])*/
+                            ->formatStateUsing(function () {
+                                return [
+                                    'companies' => ['c'],
+                                    'clients' => ['m' => true, 'p' => true],
+                                ];
+                            })
                             ->disableOptionWhen(fn(
                                 string $value
                             ): bool => $value === 'm' || $value === 'p' || $value === 'users')
