@@ -53,7 +53,7 @@ class Matrix extends Page
                             // ->disabled()
                             ->formatStateUsing(function () {
                                 return [
-                                    'companies' => ['c'],
+                                    'companies' => ['c' => true],
                                     'clients' => ['m' => true, 'p' => true],
                                 ];
                             })
