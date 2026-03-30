@@ -78,14 +78,6 @@ class AppServiceProvider extends ServiceProvider
             return '<span class="title-font text-gray-700 group"><span class="title-font font-semibold text-primary-500 group-hover:text-secondary-500 transition ease-in-out duration-300">Lara&nbsp;<span class="title-font line-through italic text-secondary-500 group-hover:text-primary-500 transition ease-in-out duration-300">Z</span>eus</span></span>';
         });
 
-        Blade::directive('stillStats', function ($code) {
-            if (! app()->isLocal()) {
-                return '<!-- stats --><script async defer data-website-id="' . $code . '" src="https://stats.larazeus.com/script.js"></script>';
-            }
-
-            return '<!-- no tags for you -->';
-        });
-
         $this->bootRoute();
     }
 
