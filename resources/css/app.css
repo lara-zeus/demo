@@ -7,6 +7,7 @@
 @source '../../app/**/*';
 @source '../../resources/views/**/*';
 @source '../../vendor/awcodes/shout/resources/views/components/shout.blade.php';
+@source '../../vendor/lara-zeus/athena/resources/**/*';
 
 @plugin "@tailwindcss/typography";
 @plugin "@tailwindcss/forms";
