@@ -4453,12 +4453,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "2602801864748b5253b4d602e5587050e68db874"
+                "reference": "3ff1c827eb362c9f4e784472b8cc776855a2b82c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/2602801864748b5253b4d602e5587050e68db874",
-                "reference": "2602801864748b5253b4d602e5587050e68db874",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/3ff1c827eb362c9f4e784472b8cc776855a2b82c",
+                "reference": "3ff1c827eb362c9f4e784472b8cc776855a2b82c",
                 "shasum": ""
             },
             "require": {
@@ -4540,7 +4540,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-24T13:26:18+00:00"
+            "time": "2026-04-24T14:05:07+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
@@ -6041,12 +6041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/progress.git",
-                "reference": "677f495cd4cc6626828a2781f44e7559bfb34d04"
+                "reference": "14d3bc0a11b30a45f81b5ae6093acca7e241d197"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/progress/zipball/677f495cd4cc6626828a2781f44e7559bfb34d04",
-                "reference": "677f495cd4cc6626828a2781f44e7559bfb34d04",
+                "url": "https://api.github.com/repos/lara-zeus/progress/zipball/14d3bc0a11b30a45f81b5ae6093acca7e241d197",
+                "reference": "14d3bc0a11b30a45f81b5ae6093acca7e241d197",
                 "shasum": ""
             },
             "require": {
@@ -6113,7 +6113,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-23T17:20:46+00:00"
+            "time": "2026-04-24T14:23:18+00:00"
         },
         {
             "name": "lara-zeus/qr",
