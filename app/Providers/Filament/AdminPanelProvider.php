@@ -3,6 +3,12 @@
 namespace App\Providers\Filament;
 
 use App\CuratedBySwis;
+use Archilex\AdvancedTables\Enums\FavoritesBarTheme;
+use Archilex\AdvancedTables\Plugin\AdvancedTablesPlugin;
+use Archilex\AdvancedTables\Resources\UserViewResource;
+use Awcodes\Versions\VersionsPlugin;
+use Awcodes\Versions\VersionsWidget;
+use DiogoGPinto\AuthUIEnhancer\AuthUIEnhancerPlugin;
 use Filament\Pages\Dashboard;
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
@@ -58,6 +64,8 @@ use LaraZeus\Thunder\Filament\Resources\OfficeResource;
 use LaraZeus\Thunder\Filament\Resources\TicketResource;
 use LaraZeus\Thunder\ThunderPlugin;
 use LaraZeus\Wind\WindPlugin;
+use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
+use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -144,7 +152,7 @@ class AdminPanelProvider extends PanelProvider
             ->widgets([
                 AccountWidget::class,
                 FilamentInfoWidget::class,
-                //VersionsWidget::class,
+                VersionsWidget::class,
                 Feedback::class,
             ])
             ->middleware([
@@ -184,13 +192,13 @@ class AdminPanelProvider extends PanelProvider
             )
 
             // user views resource
-            /*->renderHook(
+            ->renderHook(
                 'panels::page.start',
                 fn (array $scopes): View => view('filament.hooks.user-view-resource', ['scopes' => $scopes]),
                 scopes: [
                     UserViewResource::class,
                 ],
-            )*/
+            )
 
             // user views resource
             ->renderHook(
@@ -297,7 +305,7 @@ class AdminPanelProvider extends PanelProvider
     public function getPlugins(): array
     {
         return [
-            /*AuthUIEnhancerPlugin::make()
+            AuthUIEnhancerPlugin::make()
                 ->showEmptyPanelOnMobile(false)
                 ->formPanelPosition('left')
                 ->formPanelWidth('40%'),
@@ -309,7 +317,7 @@ class AdminPanelProvider extends PanelProvider
             AdvancedTablesPlugin::make()
                 ->resourceNavigationGroup('Bolt')
                 ->resourceNavigationSort(99)
-                ->favoritesBarTheme(FavoritesBarTheme::Filament),*/
+                ->favoritesBarTheme(FavoritesBarTheme::Filament),
             /*CuratorPlugin::make()
                 ->label(fn (): string => __('Media'))
                 ->pluralLabel(fn (): string => __('Media'))
@@ -317,13 +325,13 @@ class AdminPanelProvider extends PanelProvider
                 ->navigationGroup(fn (): string => __('Hermes'))
                 ->navigationSort(99)
                 ->navigationCountBadge(),*/
-            /*VersionsPlugin::make()
+            VersionsPlugin::make()
                 ->widgetSort(4)
                 ->hasNavigationView(false)
                 ->widgetColumnSpan('full')
                 ->items([
                     new MyCustomVersionProvider,
-                ]),*/
+                ]),
             SpatieTranslatablePlugin::make()
                 ->defaultLocales(['en', 'pt', 'ko']),
             DeliaPlugin::make(),
@@ -339,9 +347,9 @@ class AdminPanelProvider extends PanelProvider
                 ->baseDomain('demo.larazeus.com')
                 ->prefix('not-so-short/'),
 
-            /*FilamentFullCalendarPlugin::make()
+            FilamentFullCalendarPlugin::make()
                 ->selectable()
-                ->editable(),*/
+                ->editable(),
 
             BoltPlugin::make()
                 ->hideNavigationBadges()
