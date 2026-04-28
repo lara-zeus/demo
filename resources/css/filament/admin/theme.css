@@ -1,10 +1,9 @@
 @import "tailwindcss" important;
 
 @import '../../../../vendor/filament/filament/resources/css/theme.css';
-/*@import '../../../../vendor/archilex/filament-filter-sets/resources/css/plugin.css';*/
-/*@import '../../../../vendor/saade/filament-fullcalendar/resources/css/filament-fullcalendar.css';*/
-/*@import '../../../../vendor/lara-zeus/akin/resources/css/theme.css';*/
-/*@import '../../../../vendor/awcodes/filament-curator/resources/css/plugin.css';*/
+@import '../../../../vendor/archilex/filament-filter-sets/resources/css/plugin.css';
+@import '../../../../vendor/saade/filament-fullcalendar/resources/css/filament-fullcalendar.css';
+@import '../../../../vendor/lara-zeus/akin/resources/css/theme.css';
 
 @source '../../../../app/Filament';
 @source '../../../../resources/views/filament';
@@ -85,7 +84,7 @@
 }
 
 .fi-sidebar-group-paid {
-    @apply rounded-2xl !bg-primary-500/10 dark:!bg-primary-900;
+    @apply rounded-2xl !bg-primary-500/10 dark:!bg-primary-900 !my-2;
     @apply dark:!text-gray-100;
     @apply border shadow-md border-b-2 border-primary-500/70 dark:border-primary-500/30;
 }
@@ -144,37 +143,16 @@
 }
 
 .fi-header-heading, .fi-section-header-heading {
-    @apply font-normal text-secondary-600 ;
+    @apply font-semibold text-secondary-700 dark:text-secondary-300 tracking-tight ;
 }
 
 .fi-breadcrumbs-item-label {
-    @apply text-primary-600 ;
+    @apply text-primary-700 dark:text-primary-300 ;
 }
 
 .fi-main-ctn {
     @apply bg-gray-100 dark:bg-gray-900 ;
 }
-
-/*
-.fi-topbar {
-    @apply hidden ;
-}
-
-.fi-main {
-    @apply my-4 mb-4 bg-gray-50 rounded-3xl shadow-lg ;
-}
-
-.fi-main-ctn {
-    @apply mx-10 ;
-}
-
-.fi-panel-admin, .fi-main-ctn, .fi-sidebar, .fi-sidebar-header {
-    @apply bg-secondary-50 ;
-}
-
-.fi-sidebar, .fi-sidebar-header {
-    @apply ring-0 shadow-none ;
-}*/
 
 .fi-page-sub-navigation-sidebar-ctn, .fi-section {
     @apply px-2 py-3 bg-gray-50 dark:bg-gray-950 border shadow-md hover:shadow-lg
@@ -188,4 +166,37 @@
 
 .fi-active, .fi-active a, .fi-sidebar-item.fi-active {
     @apply rounded-2xl ;
+}
+
+/* Flatpickr plugin CSS workaround:
+   prevent table dropdowns (filters/selects/actions) from being clipped. */
+.fi-ta-content-ctn,
+.fi-ta-header-ctn,
+.fi-ta-filters {
+    overflow: visible !important;
+}
+
+.fi-dropdown-panel,
+.fi-dropdown-list,
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+    z-index: 9999 !important;
+}
+
+/* Reset conflicting dropdown sizing/position coming from flatpickr bundled CSS */
+.fi-ta-ctn .fi-dropdown-panel,
+.fi-ta-header-ctn .fi-dropdown-panel,
+.fi-ta-filters .fi-dropdown-panel {
+    width: max-content !important;
+    min-width: 12rem !important;
+    max-width: min(22rem, calc(100vw - 1rem)) !important;
+}
+
+/* Ensure all table wrappers allow dropdown escape */
+.fi-ta-ctn,
+.fi-ta-content,
+.fi-ta-content-ctn,
+.fi-ta-table,
+.fi-ta-table-container {
+    overflow: visible !important;
 }
