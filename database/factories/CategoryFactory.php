@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use JsonException;
 
 class CategoryFactory extends Factory
 {
@@ -16,7 +17,7 @@ class CategoryFactory extends Factory
      *
      * @return array
      *
-     * @throws \JsonException
+     * @throws JsonException
      */
     public function definition()
     {

@@ -4,6 +4,7 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
+use BackedEnum;
 use Filament\Pages\Page;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
@@ -14,7 +15,7 @@ class Progress extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-progress';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-progress';
 
     protected string $view = 'filament.pages.progress';
 

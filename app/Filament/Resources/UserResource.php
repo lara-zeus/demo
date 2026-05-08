@@ -2,21 +2,21 @@
 
 namespace App\Filament\Resources;
 
-use Filament\Schemas\Schema;
-use Filament\Schemas\Components\Section;
-use Filament\Actions\ActionGroup;
-use Filament\Actions\ViewAction;
-use Filament\Actions\EditAction;
-use App\Filament\Resources\UserResource\Pages\ListUsers;
-use App\Filament\Resources\UserResource\Pages\CreateUser;
-use App\Filament\Resources\UserResource\Pages\ViewUser;
-use App\Filament\Resources\UserResource\Pages\EditUser;
 use App\Filament\DemoWidgets\MiniChart;
-use App\Filament\Resources\UserResource\Pages;
+use App\Filament\Resources\UserResource\Pages\CreateUser;
+use App\Filament\Resources\UserResource\Pages\EditUser;
+use App\Filament\Resources\UserResource\Pages\ListUsers;
+use App\Filament\Resources\UserResource\Pages\ViewUser;
 use App\Models\User;
+use BackedEnum;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\EditAction;
+use Filament\Actions\ViewAction;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Resources\Resource;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use Filament\Support\Enums\Alignment;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Columns\ColumnGroup;
@@ -36,9 +36,9 @@ class UserResource extends Resource
 
     protected static ?int $navigationSort = 1;
 
-    //protected static string | \BackedEnum | null $navigationIcon = 'tabler-users-group';
+    // protected static string | \BackedEnum | null $navigationIcon = 'tabler-users-group';
 
-    protected static string|\BackedEnum|null $navigationIcon = Heroicon::OutlinedCpuChip;
+    protected static string | BackedEnum | null $navigationIcon = Heroicon::OutlinedCpuChip;
 
     public static function getNavigationLabel(): string
     {

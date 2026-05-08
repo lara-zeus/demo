@@ -2,19 +2,20 @@
 
 namespace App\Filament\Pages;
 
-use Filament\Schemas\Schema;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
+use BackedEnum;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Pages\Page;
+use Filament\Schemas\Schema;
 use LaraZeus\Accordion\Forms\Accordions;
 
 class Accordion extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-table-filled';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-table-filled';
 
     protected string $view = 'filament.pages.accordion';
 

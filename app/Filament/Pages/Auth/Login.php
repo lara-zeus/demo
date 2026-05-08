@@ -4,7 +4,7 @@ namespace App\Filament\Pages\Auth;
 
 class Login extends \Filament\Auth\Pages\Login
 {
-    //use HasCustomLayout;
+    // use HasCustomLayout;
 
     public function mount(): void
     {

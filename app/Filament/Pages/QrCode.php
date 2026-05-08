@@ -2,11 +2,12 @@
 
 namespace App\Filament\Pages;
 
-use Filament\Schemas\Schema;
-use Filament\Schemas\Components\Section;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
+use BackedEnum;
 use Filament\Pages\Page;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use LaraZeus\MatrixChoice\Components\Matrix as MatrixAlias;
 use LaraZeus\Qr\Components\Qr;
 
@@ -14,7 +15,7 @@ class QrCode extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-m-qr-code';
+    protected static string | BackedEnum | null $navigationIcon = 'heroicon-m-qr-code';
 
     protected string $view = 'filament.pages.qrcode';
 
@@ -39,7 +40,7 @@ class QrCode extends Page
             ->statePath('data')
             ->components([
                 MatrixAlias::make('question1')
-                    ->disableOptionWhen(fn(string $value): bool => $value === 0)
+                    ->disableOptionWhen(fn (string $value): bool => $value === 0)
                     ->rowSelectRequired(false)
                     ->label('Tell us about your mod')
                     ->asCheckbox()

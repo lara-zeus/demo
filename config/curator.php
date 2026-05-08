@@ -1,5 +1,11 @@
 <?php
 
+use App\Models\Curator;
+use Awcodes\Curator\Glide\DefaultServerFactory;
+use Awcodes\Curator\Resources\MediaResource;
+use LaraZeus\Hermes\Concerns\BranchThumbnailPreset;
+use LaraZeus\Hermes\Filament\Resources\BranchResource;
+
 return [
     'accepted_file_types' => [
         'image/jpeg',
@@ -14,12 +20,12 @@ return [
         'imgix',
     ],
     'curation_presets' => [
-        \LaraZeus\Hermes\Concerns\BranchThumbnailPreset::class,
+        BranchThumbnailPreset::class,
     ],
     'directory' => 'media',
     'disk' => env('FILAMENT_FILESYSTEM_DISK', 'public'),
     'glide' => [
-        'server' => \Awcodes\Curator\Glide\DefaultServerFactory::class,
+        'server' => DefaultServerFactory::class,
         'fallbacks' => [],
     ],
     'image_crop_aspect_ratio' => null,
@@ -28,7 +34,7 @@ return [
     'image_resize_target_width' => null,
     'is_limited_to_directory' => false,
     'max_size' => 5000,
-    'model' => \App\Models\Curator::class,
+    'model' => Curator::class,
     'min_size' => 0,
     'path_generator' => null,
     'resources' => [
@@ -38,14 +44,14 @@ return [
         'navigation_icon' => 'heroicon-o-photo',
         'navigation_sort' => 1,
         'navigation_count_badge' => false,
-        'resource' => \Awcodes\Curator\Resources\MediaResource::class,
+        'resource' => MediaResource::class,
     ],
     'should_preserve_filenames' => false,
     'should_register_navigation' => true,
     'visibility' => 'public',
     'created_for' => [
         [
-            'resource' => \LaraZeus\Hermes\Filament\Resources\BranchResource::class,
+            'resource' => BranchResource::class,
             'component' => 'image',
             'title' => 'name',
         ],

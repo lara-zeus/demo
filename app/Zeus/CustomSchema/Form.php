@@ -2,8 +2,8 @@
 
 namespace App\Zeus\CustomSchema;
 
-use Filament\Schemas\Components\Tabs\Tab;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Tabs\Tab;
 use LaraZeus\Bolt\Contracts\CustomFormSchema;
 
 class Form implements CustomFormSchema

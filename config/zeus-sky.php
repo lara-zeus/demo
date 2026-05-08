@@ -1,5 +1,14 @@
 <?php
 
+use App\Models\Post;
+use LaraZeus\Sky\Classes\BoltParser;
+use LaraZeus\Sky\Editors\RichEditor;
+use LaraZeus\Sky\Enums\PostStatus;
+use LaraZeus\Sky\Models\Faq;
+use LaraZeus\Sky\Models\Library;
+use LaraZeus\Sky\Models\Navigation;
+use LaraZeus\Sky\Models\Tag;
+
 return [
     /**
      * set the default path for the blog homepage.
@@ -28,16 +37,16 @@ return [
      * ->skyModels([ ... ])
      */
     'models' => [
-        'Faq' => \LaraZeus\Sky\Models\Faq::class,
-        'Post' => \App\Models\Post::class,
-        'PostStatus' => \LaraZeus\Sky\Enums\PostStatus::class,
-        'Tag' => \LaraZeus\Sky\Models\Tag::class,
-        'Library' => \LaraZeus\Sky\Models\Library::class,
-        'Navigation' => \LaraZeus\Sky\Models\Navigation::class,
+        'Faq' => Faq::class,
+        'Post' => Post::class,
+        'PostStatus' => PostStatus::class,
+        'Tag' => Tag::class,
+        'Library' => Library::class,
+        'Navigation' => Navigation::class,
     ],
 
     'parsers' => [
-        \LaraZeus\Sky\Classes\BoltParser::class,
+        BoltParser::class,
     ],
 
     'recentPostsLimit' => 5,
@@ -55,5 +64,5 @@ return [
      * \LaraZeus\Sky\Editors\MarkdownEditor::class,
      * \LaraZeus\Sky\Editors\RichEditor::class,
      */
-    'editor' => \LaraZeus\Sky\Editors\RichEditor::class,
+    'editor' => RichEditor::class,
 ];

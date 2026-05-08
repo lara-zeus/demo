@@ -1,5 +1,12 @@
 <?php
 
+use App\Models\FilamentUser;
+use LaraZeus\Thunder\Enums\Abilities;
+use LaraZeus\Thunder\Enums\TicketsStatus;
+use LaraZeus\Thunder\Models\Office;
+use LaraZeus\Thunder\Models\Operations;
+use LaraZeus\Thunder\Models\Ticket;
+
 return [
     /**
      * set the default domain.
@@ -28,13 +35,13 @@ return [
      * ->skyModels([ ... ])
      */
     'models' => [
-        'Office' => \LaraZeus\Thunder\Models\Office::class,
-        'Operations' => \LaraZeus\Thunder\Models\Operations::class,
-        'Ticket' => \LaraZeus\Thunder\Models\Ticket::class,
-        'TicketsStatus' => \LaraZeus\Thunder\Enums\TicketsStatus::class,
-        'Abilities' => \LaraZeus\Thunder\Enums\Abilities::class,
+        'Office' => Office::class,
+        'Operations' => Operations::class,
+        'Ticket' => Ticket::class,
+        'TicketsStatus' => TicketsStatus::class,
+        'Abilities' => Abilities::class,
         'User' => config('auth.providers.users.model'),
-        'Staff' => \App\Models\FilamentUser::class,
+        'Staff' => FilamentUser::class,
     ],
 
     'default-status' => 'OPEN',

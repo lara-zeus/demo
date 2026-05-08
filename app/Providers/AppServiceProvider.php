@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Filament\Support\View\Components\ModalComponent;
 use App\Models\User;
 use Filament\Facades\Filament;
 use Filament\Support\Assets\Css;
@@ -10,6 +9,7 @@ use Filament\Support\Colors\Color;
 use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentColor;
 use Filament\Support\Facades\FilamentIcon;
+use Filament\Support\View\Components\ModalComponent;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;

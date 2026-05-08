@@ -5,11 +5,12 @@ namespace App\Filament\Pages;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use App\Filament\Pages\Widgets\GitDownChart;
 use App\Filament\Pages\Widgets\GitStarsChart;
+use BackedEnum;
 use Filament\Pages\Page;
 
 class Statistics extends Page
 {
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
+    protected static string | BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
 
     protected string $view = 'filament.pages.statistics';
 

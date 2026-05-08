@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use JsonException;
 use LaraZeus\Wind\Models\Department;
 use LaraZeus\Wind\Models\Letter;
 
@@ -20,7 +21,7 @@ class LetterFactory extends Factory
      *
      * @return array
      *
-     * @throws \JsonException
+     * @throws JsonException
      */
     public function definition()
     {

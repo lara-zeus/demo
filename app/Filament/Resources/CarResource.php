@@ -2,30 +2,29 @@
 
 namespace App\Filament\Resources;
 
-use Filament\Schemas\Schema;
-use Filament\Forms\Components\FileUpload;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Actions\EditAction;
-use Filament\Actions\BulkActionGroup;
-use Filament\Actions\DeleteBulkAction;
-use App\Filament\Resources\CarResource\Pages\ListCars;
 use App\Filament\Resources\CarResource\Pages\CreateCar;
 use App\Filament\Resources\CarResource\Pages\EditCar;
-use App\Filament\Resources\CarResource\Pages;
+use App\Filament\Resources\CarResource\Pages\ListCars;
 use App\Models\Car;
-use Filament\Forms;
+use BackedEnum;
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Resource;
-use Filament\Tables;
+use Filament\Schemas\Schema;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use UnitEnum;
 
 class CarResource extends Resource
 {
     protected static ?string $model = Car::class;
 
-    protected static string | \UnitEnum | null $navigationGroup = 'App';
+    protected static string | UnitEnum | null $navigationGroup = 'App';
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-car';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-car';
 
     public static function form(Schema $schema): Schema
     {

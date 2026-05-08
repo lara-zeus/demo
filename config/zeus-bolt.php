@@ -1,5 +1,15 @@
 <?php
 
+use LaraZeus\Bolt\Enums\FormsStatus;
+use LaraZeus\Bolt\Mail\FormSubmission;
+use LaraZeus\Bolt\Models\Category;
+use LaraZeus\Bolt\Models\Collection;
+use LaraZeus\Bolt\Models\Field;
+use LaraZeus\Bolt\Models\FieldResponse;
+use LaraZeus\Bolt\Models\Form;
+use LaraZeus\Bolt\Models\Response;
+use LaraZeus\Bolt\Models\Section;
+
 return [
     /**
      * set the default domain.
@@ -28,17 +38,17 @@ return [
      * ->skyModels([ ... ])
      */
     'models' => [
-        'Category' => \LaraZeus\Bolt\Models\Category::class,
-        'Collection' => \LaraZeus\Bolt\Models\Collection::class,
-        'Field' => \LaraZeus\Bolt\Models\Field::class,
-        'FieldResponse' => \LaraZeus\Bolt\Models\FieldResponse::class,
-        'Form' => \LaraZeus\Bolt\Models\Form::class,
-        'FormsStatus' => \LaraZeus\Bolt\Enums\FormsStatus::class,
-        'Response' => \LaraZeus\Bolt\Models\Response::class,
-        'Section' => \LaraZeus\Bolt\Models\Section::class,
+        'Category' => Category::class,
+        'Collection' => Collection::class,
+        'Field' => Field::class,
+        'FieldResponse' => FieldResponse::class,
+        'Form' => Form::class,
+        'FormsStatus' => FormsStatus::class,
+        'Response' => Response::class,
+        'Section' => Section::class,
     ],
 
-    'defaultMailable' => \LaraZeus\Bolt\Mail\FormSubmission::class,
+    'defaultMailable' => FormSubmission::class,
 
     'uploadDisk' => 'public',
 

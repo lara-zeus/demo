@@ -2,9 +2,8 @@
 
 namespace App\Filament\Resources\CarResource\Pages;
 
-use Filament\Actions\DeleteAction;
 use App\Filament\Resources\CarResource;
-use Filament\Actions;
+use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
 
 class EditCar extends EditRecord

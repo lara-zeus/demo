@@ -2,11 +2,12 @@
 
 namespace App\Filament\Pages;
 
-use Filament\Schemas\Schema;
-use Filament\Schemas\Components\Section;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
+use BackedEnum;
 use Filament\Pages\Page;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use LaraZeus\ListGroup\Infolists\ListEntry;
 use LaraZeus\ListGroup\Item\ListItem;
 
@@ -14,7 +15,7 @@ class ListGroup extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-list-details';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-list-details';
 
     protected string $view = 'filament.pages.list-group';
 

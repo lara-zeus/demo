@@ -2,19 +2,20 @@
 
 namespace App\Filament\Pages;
 
-use Filament\Schemas\Schema;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
 use App\Filament\Widgets\LoveStats;
+use BackedEnum;
 use Filament\Forms\Components\TextInput;
 use Filament\Pages\Page;
+use Filament\Schemas\Schema;
 use LaraZeus\Mark\Forms\Components\Mark as MarkForm;
 
 class Mark extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-star-half-filled';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-star-half-filled';
 
     protected string $view = 'filament.pages.mark';
 

@@ -18,7 +18,8 @@ class FilamentUser extends Authenticatable implements \Filament\Models\Contracts
     use BelongToBolt;
     use HasApiTokens;
     use HasBoringAvatar;
-    //use HasViews;
+
+    // use HasViews;
     use ManageOffice;
     use Notifiable;
 

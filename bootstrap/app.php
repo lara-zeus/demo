@@ -2,10 +2,13 @@
 
 ini_set('memory_limit', '-1');
 
+use App\Http\Middleware\SetLang;
+use App\Http\Middleware\SetTheme;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
 use Sentry\Laravel\Integration;
+use Torchlight\Middleware\RenderTorchlight;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -15,9 +18,9 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->append([
-            \App\Http\Middleware\SetLang::class,
-            \App\Http\Middleware\SetTheme::class,
-            \Torchlight\Middleware\RenderTorchlight::class,
+            SetLang::class,
+            SetTheme::class,
+            RenderTorchlight::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

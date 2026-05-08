@@ -6,6 +6,7 @@ use Database\Seeders\Concerns\HasFaker;
 use Database\Seeders\Concerns\HasImage;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use JsonException;
 use LaraZeus\DynamicDashboard\Widgets\Classes\FaqWidget;
 use LaraZeus\DynamicDashboard\Widgets\Classes\FormsWidget;
 use LaraZeus\DynamicDashboard\Widgets\Classes\HeadingWidget;
@@ -19,7 +20,7 @@ class RainSeeder extends Seeder
     use HasImage;
 
     /**
-     * @throws \JsonException
+     * @throws JsonException
      */
     public function run()
     {

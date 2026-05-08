@@ -2,17 +2,18 @@
 
 namespace App\Filament\Pages;
 
-use Filament\Schemas\Components\View;
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
+use BackedEnum;
 use Filament\Actions\Action;
 use Filament\Pages\Page;
+use Filament\Schemas\Components\View;
 
 class Embed extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-chart-donut-4';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-chart-donut-4';
 
     protected string $view = 'filament.pages.embed';
 

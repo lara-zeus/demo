@@ -2,8 +2,8 @@
 
 namespace App\Models;
 
-use Sushi\Sushi;
 use Illuminate\Database\Eloquent\Model;
+use Sushi\Sushi;
 
 class Package extends Model
 {

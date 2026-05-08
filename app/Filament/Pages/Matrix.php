@@ -4,6 +4,7 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
+use BackedEnum;
 use Filament\Pages\Page;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
@@ -14,7 +15,7 @@ class Matrix extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string|\BackedEnum|null $navigationIcon = 'tabler-list-check';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-list-check';
 
     protected string $view = 'filament.pages.matrix';
 
@@ -56,7 +57,7 @@ class Matrix extends Page
                                     'clients' => ['m' => true, 'p' => true],
                                 ];
                             })
-                            ->disableOptionWhen(fn(
+                            ->disableOptionWhen(fn (
                                 string $value
                             ): bool => $value === 'm' || $value === 'p' || $value === 'users')
                             ->rowSelectRequired(false)

@@ -45,7 +45,7 @@ return [
     */
 
     'component_layout' => 'layouts::app',
-    //'layout' => 'components.layouts.app',
+    // 'layout' => 'components.layouts.app',
 
     /*
     |---------------------------------------------------------------------------

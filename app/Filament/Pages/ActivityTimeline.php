@@ -4,8 +4,8 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
+use BackedEnum;
 use Filament\Pages\Page;
-use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 use LaraZeus\ActivityTimeline\Components\ActivityDate;
 use LaraZeus\ActivityTimeline\Components\ActivityDescription;
@@ -17,7 +17,7 @@ class ActivityTimeline extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'tabler-clock-hour-4';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-clock-hour-4';
 
     protected string $view = 'filament.pages.activity-timeline';
 

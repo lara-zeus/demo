@@ -4,20 +4,19 @@ namespace App\Filament\Pages;
 
 use App\Filament\Clusters\ComponentsDemo;
 use App\Filament\Pages\Actions\DemoHeaderAction;
-use Awcodes\Shout\Components\Shout;
+use BackedEnum;
 use Filament\Actions\Action;
 use Filament\Pages\Page;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Schema;
-use Filament\Support\Colors\Color;
 use LaraZeus\Quantity\Components\Quantity as QuantityAlias;
 
 class Quantity extends Page
 {
     protected static ?string $cluster = ComponentsDemo::class;
 
-    protected static string|\BackedEnum|null $navigationIcon = 'tabler-input-search';
+    protected static string | BackedEnum | null $navigationIcon = 'tabler-input-search';
 
     protected string $view = 'filament.pages.quantity';
 
@@ -62,15 +61,15 @@ class Quantity extends Page
                             ->minValue(2)
                             ->hiddenLabel()
                             ->live()
-                            ->prefix(fn(Get $get) => 'stop at 0')
-                            ->suffix(fn(Get $get) => 'stop at 10')
+                            ->prefix(fn (Get $get) => 'stop at 0')
+                            ->suffix(fn (Get $get) => 'stop at 10')
                             ->columnSpanFull(),
 
                         QuantityAlias::make('name2')
                             ->label('select quantity')
                             ->default(10)
                             ->required()
-                            ->prefix(fn(Get $get) => 'stop at 0')
+                            ->prefix(fn (Get $get) => 'stop at 0')
                             ->heading('select quantity')
                             ->hiddenLabel()
                             ->live(),
@@ -79,7 +78,7 @@ class Quantity extends Page
                             ->label('select quantity')
                             ->default(100)
                             ->required()
-                            ->suffix(fn(Get $get) => 'stop at 0')
+                            ->suffix(fn (Get $get) => 'stop at 0')
                             ->suffixAction(
                                 Action::make('copyCostToPrice')
                                     ->icon('heroicon-m-clipboard')
