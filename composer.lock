@@ -6677,16 +6677,16 @@
         },
         {
             "name": "lara-zeus/thunder",
-            "version": "v5.0.1",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/thunder.git",
-                "reference": "2cb3eac51a853c40dd2526ed264df73cf3fc8c99"
+                "reference": "aefd5465977891161a7217db4d9d821eb08e3c5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/2cb3eac51a853c40dd2526ed264df73cf3fc8c99",
-                "reference": "2cb3eac51a853c40dd2526ed264df73cf3fc8c99",
+                "url": "https://api.github.com/repos/lara-zeus/thunder/zipball/aefd5465977891161a7217db4d9d821eb08e3c5a",
+                "reference": "aefd5465977891161a7217db4d9d821eb08e3c5a",
                 "shasum": ""
             },
             "require": {
@@ -6777,7 +6777,7 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/thunder",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/thunder/tree/v5.0.1",
+                "source": "https://github.com/lara-zeus/thunder/tree/v5.0.2",
                 "issues": "https://github.com/lara-zeus/thunder/issues"
             },
             "funding": [
@@ -6786,7 +6786,7 @@
                     "url": "https://github.com/atmonshi"
                 }
             ],
-            "time": "2026-04-28T11:22:06+00:00"
+            "time": "2026-05-08T22:01:16+00:00"
         },
         {
             "name": "lara-zeus/tiles",
@@ -6972,16 +6972,16 @@
         },
         {
             "name": "lara-zeus/wind",
-            "version": "5.0.0",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "0d8fd9ce4f688db2b8fa0702638f42c72810c92f"
+                "reference": "80e3210b070b5a1c1abf5a900f0b1807420df640"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/0d8fd9ce4f688db2b8fa0702638f42c72810c92f",
-                "reference": "0d8fd9ce4f688db2b8fa0702638f42c72810c92f",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/80e3210b070b5a1c1abf5a900f0b1807420df640",
+                "reference": "80e3210b070b5a1c1abf5a900f0b1807420df640",
                 "shasum": ""
             },
             "require": {
@@ -7044,7 +7044,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-16T19:04:46+00:00"
+            "time": "2026-05-08T22:10:43+00:00"
         },
         {
             "name": "laravel/framework",
