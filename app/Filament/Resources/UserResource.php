@@ -29,6 +29,7 @@ use Illuminate\Database\Eloquent\Model;
 use LaraZeus\Popover\Infolists\PopoverEntry;
 use LaraZeus\Popover\Tables\PopoverColumn;
 use LaraZeus\Qr\Facades\Qr;
+use STS\FilamentImpersonate\Actions\Impersonate;
 
 class UserResource extends Resource
 {
@@ -147,9 +148,9 @@ class UserResource extends Resource
                 ActionGroup::make([
                     ViewAction::make(),
                     EditAction::make(),
-                    /*Impersonate::make()
+                    Impersonate::make()
                         ->grouped()
-                        ->redirectTo(url('/admin')),*/
+                        ->redirectTo(url('/admin')),
                 ]),
             ])
             ->defaultSort('id', 'desc')

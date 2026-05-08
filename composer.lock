@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9a1b1b553f0244f608d7e70fd16c4d9",
+    "content-hash": "03b3f84096e99f596a9fc327b97c0009",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -1538,16 +1538,16 @@
         },
         {
             "name": "diogogpinto/filament-auth-ui-enhancer",
-            "version": "dev-main",
+            "version": "v2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/diogogpinto/filament-auth-ui-enhancer.git",
-                "reference": "25f3a99b4a165790a60ad71cf4ab222a445819d4"
+                "reference": "dcaf3eb200fa7120987d92d8b8df760ed5dd13df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/diogogpinto/filament-auth-ui-enhancer/zipball/25f3a99b4a165790a60ad71cf4ab222a445819d4",
-                "reference": "25f3a99b4a165790a60ad71cf4ab222a445819d4",
+                "url": "https://api.github.com/repos/diogogpinto/filament-auth-ui-enhancer/zipball/dcaf3eb200fa7120987d92d8b8df760ed5dd13df",
+                "reference": "dcaf3eb200fa7120987d92d8b8df760ed5dd13df",
                 "shasum": ""
             },
             "require": {
@@ -1562,7 +1562,6 @@
                 "pestphp/pest-plugin-laravel": "^3.0",
                 "pestphp/pest-plugin-livewire": "^3.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1609,7 +1608,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-01-18T00:14:59+00:00"
+            "time": "2026-01-18T00:13:04+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -12945,17 +12944,63 @@
             "time": "2026-01-12T07:42:22+00:00"
         },
         {
-            "name": "swisnl/filament-backgrounds",
-            "version": "dev-main",
+            "name": "stechstudio/filament-impersonate",
+            "version": "v5.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/swisnl/filament-backgrounds.git",
-                "reference": "16cccc4baed0e665abe1fdd59bc1b92e2bd52ef5"
+                "url": "https://github.com/stechstudio/filament-impersonate.git",
+                "reference": "00197ab5a7cbb18a2b8726a70eddefc943317794"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swisnl/filament-backgrounds/zipball/16cccc4baed0e665abe1fdd59bc1b92e2bd52ef5",
-                "reference": "16cccc4baed0e665abe1fdd59bc1b92e2bd52ef5",
+                "url": "https://api.github.com/repos/stechstudio/filament-impersonate/zipball/00197ab5a7cbb18a2b8726a70eddefc943317794",
+                "reference": "00197ab5a7cbb18a2b8726a70eddefc943317794",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^4.0|^5.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^10.0",
+                "pestphp/pest": "^3.0",
+                "pestphp/pest-plugin-laravel": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "STS\\FilamentImpersonate\\FilamentImpersonateServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "STS\\FilamentImpersonate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Filament package to impersonate your users.",
+            "support": {
+                "issues": "https://github.com/stechstudio/filament-impersonate/issues",
+                "source": "https://github.com/stechstudio/filament-impersonate/tree/v5.3.0"
+            },
+            "time": "2026-04-14T01:55:02+00:00"
+        },
+        {
+            "name": "swisnl/filament-backgrounds",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swisnl/filament-backgrounds.git",
+                "reference": "c108f8024de047754773f37fd49ce4192e49fc59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swisnl/filament-backgrounds/zipball/c108f8024de047754773f37fd49ce4192e49fc59",
+                "reference": "c108f8024de047754773f37fd49ce4192e49fc59",
                 "shasum": ""
             },
             "require": {
@@ -12976,7 +13021,6 @@
                 "phpstan/phpstan-deprecation-rules": "^1.2|^2.0",
                 "phpstan/phpstan-phpunit": "^1.4|^2.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -13019,7 +13063,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-20T11:12:25+00:00"
+            "time": "2026-03-20T09:07:43+00:00"
         },
         {
             "name": "symfony/cache",
@@ -18389,10 +18433,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "awcodes/filament-versions": 20,
-        "diogogpinto/filament-auth-ui-enhancer": 20,
         "lara-zeus/mark": 20,
-        "roave/security-advisories": 20,
-        "swisnl/filament-backgrounds": 20
+        "roave/security-advisories": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
