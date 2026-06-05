@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03b3f84096e99f596a9fc327b97c0009",
+    "content-hash": "be7f16615db21dc2ee6336f6693a7b48",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -5235,35 +5235,35 @@
         },
         {
             "name": "lara-zeus/hades",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/hades.git",
-                "reference": "debdc3250ecf14f4a28bbb54481fb0f6b517fb0f"
+                "reference": "89a6ace15aef274a22cb093e2bcaab9ee178bc4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/hades/zipball/debdc3250ecf14f4a28bbb54481fb0f6b517fb0f",
-                "reference": "debdc3250ecf14f4a28bbb54481fb0f6b517fb0f",
+                "url": "https://api.github.com/repos/lara-zeus/hades/zipball/89a6ace15aef274a22cb093e2bcaab9ee178bc4f",
+                "reference": "89a6ace15aef274a22cb093e2bcaab9ee178bc4f",
                 "shasum": ""
             },
             "require": {
-                "lara-zeus/filament-plugin-tools": "*",
+                "lara-zeus/filament-plugin-tools": "^3.0",
                 "php": "^8.1"
             },
             "require-dev": {
-                "larastan/larastan": "^2.2",
+                "larastan/larastan": "^3.0",
                 "laravel/pint": "^1.0",
-                "nunomaduro/collision": "^7.0",
-                "orchestra/testbench": "^8.0",
-                "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-laravel": "^2.0",
-                "pestphp/pest-plugin-livewire": "2.x-dev",
+                "nunomaduro/collision": "^8.0",
+                "orchestra/testbench": "^10.0",
+                "pestphp/pest": "^3.5",
+                "pestphp/pest-plugin-arch": "^3.0",
+                "pestphp/pest-plugin-laravel": "^3.0",
                 "phpstan/extension-installer": "^1.4",
                 "phpstan/phpstan": "^2.1",
                 "phpstan/phpstan-deprecation-rules": "^2.0",
                 "phpstan/phpstan-phpunit": "^2.0",
-                "phpunit/phpunit": "^10.1"
+                "roave/security-advisories": "dev-latest"
             },
             "type": "library",
             "extra": {
@@ -5333,7 +5333,7 @@
                     "url": "https://www.buymeacoffee.com/larazeus"
                 }
             ],
-            "time": "2025-06-11T19:09:54+00:00"
+            "time": "2026-06-05T04:46:35+00:00"
         },
         {
             "name": "lara-zeus/helen",
@@ -5435,32 +5435,33 @@
         },
         {
             "name": "lara-zeus/hera",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:lara-zeus/hera.git",
-                "reference": "183a4da0ef9e81a5bfdeb43e56f92e7daa3fa1bf"
+                "reference": "9ba48de78332026cc6951b000b0b014b4ef49c2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/hera/zipball/183a4da0ef9e81a5bfdeb43e56f92e7daa3fa1bf",
-                "reference": "183a4da0ef9e81a5bfdeb43e56f92e7daa3fa1bf",
+                "url": "https://api.github.com/repos/lara-zeus/hera/zipball/9ba48de78332026cc6951b000b0b014b4ef49c2f",
+                "reference": "9ba48de78332026cc6951b000b0b014b4ef49c2f",
                 "shasum": ""
             },
             "require": {
-                "lara-zeus/filament-plugin-tools": "*",
+                "lara-zeus/filament-plugin-tools": "^3.0",
                 "php": "^8.1",
                 "vormkracht10/laravel-seo-scanner": "^3.13"
             },
             "require-dev": {
-                "larastan/larastan": "^2.2",
+                "larastan/larastan": "^3.0",
                 "laravel/pint": "^1.0",
-                "nunomaduro/collision": "^7.0",
-                "orchestra/testbench": "^8.0",
+                "nunomaduro/collision": "^8.0",
+                "orchestra/testbench": "^10.0",
                 "phpstan/extension-installer": "^1.4",
                 "phpstan/phpstan": "^2.1",
                 "phpstan/phpstan-deprecation-rules": "^2.0",
-                "phpstan/phpstan-phpunit": "^2.0"
+                "phpstan/phpstan-phpunit": "^2.0",
+                "roave/security-advisories": "dev-latest"
             },
             "type": "library",
             "extra": {
@@ -5515,7 +5516,7 @@
                 "contact": "https://larazeus.com/contact-us",
                 "docs": "https://larazeus.com/hera",
                 "email": "info@larazeus.com",
-                "source": "https://github.com/lara-zeus/hera/tree/2.0.0",
+                "source": "https://github.com/lara-zeus/hera/tree/3.0.0",
                 "issues": "https://github.com/lara-zeus/hera/issues"
             },
             "funding": [
@@ -5528,7 +5529,7 @@
                     "url": "https://www.buymeacoffee.com/larazeus"
                 }
             ],
-            "time": "2025-06-11T19:14:53+00:00"
+            "time": "2026-06-05T04:50:36+00:00"
         },
         {
             "name": "lara-zeus/inline-chart",
@@ -5911,28 +5912,30 @@
         },
         {
             "name": "lara-zeus/matrix-choice",
-            "version": "5.0.0",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/matrix-choice.git",
-                "reference": "64d37a36e194a39ed08a77b95657c559858174ed"
+                "reference": "cc175bd1d03ad7513b38059f58da640bbefd1a20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/matrix-choice/zipball/64d37a36e194a39ed08a77b95657c559858174ed",
-                "reference": "64d37a36e194a39ed08a77b95657c559858174ed",
+                "url": "https://api.github.com/repos/lara-zeus/matrix-choice/zipball/cc175bd1d03ad7513b38059f58da640bbefd1a20",
+                "reference": "cc175bd1d03ad7513b38059f58da640bbefd1a20",
                 "shasum": ""
             },
             "require": {
                 "filament/filament": "^5.0",
-                "php": "^8.1",
+                "php": "^8.4",
                 "spatie/laravel-package-tools": "^1.16"
             },
             "require-dev": {
                 "larastan/larastan": "^3.0",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^8.0",
-                "orchestra/testbench": "^10.0",
+                "orchestra/testbench": "^11.0",
+                "pestphp/pest": "^4.7",
+                "pestphp/pest-plugin-laravel": "^4.1",
                 "phpstan/extension-installer": "^1.4",
                 "phpstan/phpstan": "^2.1",
                 "phpstan/phpstan-deprecation-rules": "^2.0",
@@ -5993,7 +5996,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-06T18:25:27+00:00"
+            "time": "2026-06-05T04:34:59+00:00"
         },
         {
             "name": "lara-zeus/popover",
@@ -6241,16 +6244,16 @@
         },
         {
             "name": "lara-zeus/quantity",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/quantity.git",
-                "reference": "15dea2bd80dc86747bbc2e3299f3b5688359c00e"
+                "reference": "088e89cf7d424510387f0a764ffe670e2f0fb25d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/quantity/zipball/15dea2bd80dc86747bbc2e3299f3b5688359c00e",
-                "reference": "15dea2bd80dc86747bbc2e3299f3b5688359c00e",
+                "url": "https://api.github.com/repos/lara-zeus/quantity/zipball/088e89cf7d424510387f0a764ffe670e2f0fb25d",
+                "reference": "088e89cf7d424510387f0a764ffe670e2f0fb25d",
                 "shasum": ""
             },
             "require": {
@@ -6314,7 +6317,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-06T18:19:21+00:00"
+            "time": "2026-06-05T05:28:30+00:00"
         },
         {
             "name": "lara-zeus/replies",
