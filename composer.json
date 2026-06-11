@@ -10,7 +10,7 @@
     "require": {
         "php": "^8.4",
         "archilex/filament-filter-sets": "^5.3",
-        "awcodes/filament-versions": "4.x-dev",
+        "awcodes/filament-versions": "^4.0",
         "calebporzio/sushi": "^2.4",
         "diogogpinto/filament-auth-ui-enhancer": "^2.0",
         "fakerphp/faker": "^1.23",
@@ -63,10 +63,13 @@
         "torchlight/torchlight-laravel": "^0.6"
     },
     "require-dev": {
-        "roave/security-advisories": "dev-latest",
+        "filament/blueprint": "^2.2",
+        "fruitcake/laravel-debugbar": "^4.3",
         "larastan/larastan": "^3.0",
+        "laravel/boost": "^2.4",
         "laravel/pint": "^1.13",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "roave/security-advisories": "dev-latest"
     },
     "autoload": {
         "psr-4": {
@@ -110,6 +113,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.filamentphp.com/composer"
+        },
         {
             "type": "composer",
             "url": "https://filament-filter-sets.composer.sh"
