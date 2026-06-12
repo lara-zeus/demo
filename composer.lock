@@ -6158,16 +6158,16 @@
         },
         {
             "name": "lara-zeus/qr",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/qr.git",
-                "reference": "05f1dd10a29ab7985e9c872dc362cc0eb40abf6a"
+                "reference": "a243c08a1817bc95fc1d64ea99c1cc4905ba2265"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/qr/zipball/05f1dd10a29ab7985e9c872dc362cc0eb40abf6a",
-                "reference": "05f1dd10a29ab7985e9c872dc362cc0eb40abf6a",
+                "url": "https://api.github.com/repos/lara-zeus/qr/zipball/a243c08a1817bc95fc1d64ea99c1cc4905ba2265",
+                "reference": "a243c08a1817bc95fc1d64ea99c1cc4905ba2265",
                 "shasum": ""
             },
             "require": {
@@ -6183,6 +6183,9 @@
                 "nunomaduro/collision": "^8.6",
                 "nunomaduro/phpinsights": "^2.8",
                 "orchestra/testbench": "^10.0",
+                "pestphp/pest": "^4.7",
+                "pestphp/pest-plugin-laravel": "^4.1",
+                "pestphp/pest-plugin-livewire": "^4.1",
                 "phpstan/extension-installer": "^1.4"
             },
             "type": "library",
@@ -6236,7 +6239,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-10T23:22:11+00:00"
+            "time": "2026-06-12T10:01:07+00:00"
         },
         {
             "name": "lara-zeus/quantity",
@@ -14654,16 +14657,16 @@
         },
         {
             "name": "symfony/polyfill-deepclone",
-            "version": "v1.39.0",
+            "version": "v1.40.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-deepclone.git",
-                "reference": "1b034bc050d84cc9c187de373f744912e1e35f1f"
+                "reference": "dca4ccba5f360070b574414dce4c1e7a559844fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-deepclone/zipball/1b034bc050d84cc9c187de373f744912e1e35f1f",
-                "reference": "1b034bc050d84cc9c187de373f744912e1e35f1f",
+                "url": "https://api.github.com/repos/symfony/polyfill-deepclone/zipball/dca4ccba5f360070b574414dce4c1e7a559844fa",
+                "reference": "dca4ccba5f360070b574414dce4c1e7a559844fa",
                 "shasum": ""
             },
             "require": {
@@ -14717,7 +14720,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-deepclone/tree/v1.39.0"
+                "source": "https://github.com/symfony/polyfill-deepclone/tree/v1.40.0"
             },
             "funding": [
                 {
@@ -14737,7 +14740,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-10T20:07:50+00:00"
+            "time": "2026-06-12T07:27:17+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
@@ -17979,12 +17982,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "86b072394ae2749d138564c5322af87502ed6520"
+                "reference": "5d4f7cc7622a8e3a4d3771a9133ac6b5a228c19f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/86b072394ae2749d138564c5322af87502ed6520",
-                "reference": "86b072394ae2749d138564c5322af87502ed6520",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5d4f7cc7622a8e3a4d3771a9133ac6b5a228c19f",
+                "reference": "5d4f7cc7622a8e3a4d3771a9133ac6b5a228c19f",
                 "shasum": ""
             },
             "conflict": {
@@ -18260,10 +18263,10 @@
                 "feehi/cms": "<=2.1.1",
                 "feehi/feehicms": "<=2.1.1",
                 "fenom/fenom": "<=2.12.1",
-                "filament/actions": ">=3.2,<3.2.123",
+                "filament/actions": ">=3.2,<3.2.123|>=4,<=4.11.3|>=5,<=5.6.3",
                 "filament/filament": ">=4,<4.3.1",
                 "filament/infolists": ">=3,<3.2.115",
-                "filament/tables": ">=3,<3.2.115|>=4,<4.8.5|>=5,<5.3.5",
+                "filament/tables": ">=3,<=3.3.50|>=4,<4.8.5|>=5,<5.3.5",
                 "filegator/filegator": "<7.8",
                 "filp/whoops": "<2.1.13",
                 "fineuploader/php-traditional-server": "<=1.2.2",
@@ -18887,7 +18890,7 @@
                 "typo3/cms-backend": "<4.1.14|>=4.2,<4.2.15|>=4.3,<4.3.7|>=4.4,<4.4.4|>=7,<=7.6.50|>=8,<=8.7.39|>=9,<9.5.55|>=10,<=10.4.54|>=11,<=11.5.48|>=12,<=12.4.40|>=13,<=13.4.22|>=14,<=14.0.1|==14.2",
                 "typo3/cms-belog": ">=10,<=10.4.47|>=11,<=11.5.41|>=12,<=12.4.24|>=13,<=13.4.2",
                 "typo3/cms-beuser": ">=9,<9.5.55|>=10,<10.4.54|>=11,<11.5.48|>=12,<12.4.37|>=13,<13.4.18",
-                "typo3/cms-core": "<=8.7.56|>=9,<9.5.55|>=10,<=10.4.54|>=11,<=11.5.48|>=12,<=12.4.40|>=13,<=13.4.22|>=14,<=14.0.1",
+                "typo3/cms-core": "<10.4.57|>=11,<11.5.51|>=12,<12.4.46|>=13,<13.4.31|>=14,<14.3.3",
                 "typo3/cms-dashboard": ">=10,<10.4.54|>=11,<11.5.48|>=12,<12.4.37|>=13,<13.4.18",
                 "typo3/cms-extbase": "<6.2.24|>=7,<7.6.8|==8.1.1",
                 "typo3/cms-extensionmanager": ">=10,<=10.4.47|>=11,<=11.5.41|>=12,<=12.4.24|>=13,<=13.4.2",
@@ -18907,7 +18910,7 @@
                 "typo3/cms-webhooks": ">=12,<=12.4.30|>=13,<=13.4.11",
                 "typo3/cms-workspaces": ">=9,<9.5.55|>=10,<10.4.54|>=11,<11.5.48|>=12,<12.4.37|>=13,<13.4.18",
                 "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.12|>=3.1,<3.1.10|>=3.2,<3.2.13|>=3.3,<3.3.13|>=4,<4.0.6",
-                "typo3/html-sanitizer": ">=1,<=1.5.2|>=2,<=2.1.3",
+                "typo3/html-sanitizer": "<2.3.2",
                 "typo3/neos": ">=1.1,<1.1.3|>=1.2,<1.2.13|>=2,<2.0.4|>=2.3,<2.3.99|>=3,<3.0.20|>=3.1,<3.1.18|>=3.2,<3.2.14|>=3.3,<3.3.23|>=4,<4.0.17|>=4.1,<4.1.16|>=4.2,<4.2.12|>=4.3,<4.3.3",
                 "typo3/phar-stream-wrapper": ">=1,<2.1.1|>=3,<3.1.1",
                 "typo3/swiftmailer": ">=4.1,<4.1.99|>=5.4,<5.4.5",
@@ -19066,7 +19069,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-11T17:18:46+00:00"
+            "time": "2026-06-11T23:34:40+00:00"
         },
         {
             "name": "symfony/yaml",

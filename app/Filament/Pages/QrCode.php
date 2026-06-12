@@ -39,22 +39,6 @@ class QrCode extends Page
         return $schema
             ->statePath('data')
             ->components([
-                MatrixAlias::make('question1')
-                    ->disableOptionWhen(fn (string $value): bool => $value === 0)
-                    ->rowSelectRequired(false)
-                    ->label('Tell us about your mod')
-                    ->asCheckbox()
-                    ->columnData([
-                        '🙂',
-                        '😐',
-                        '🙁',
-                    ])
-                    ->rowData([
-                        'Saturday',
-                        'Sunday',
-                        'Monday',
-                    ]),
-
                 Section::make()
                     ->heading('Use it as a direct form')
                     ->schema([
