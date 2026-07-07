@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c5b703f2f13dd9b1e461b04c6cc11279",
+    "content-hash": "9b9f4d4a67e81918a85ea2a97cd1a691",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -5093,16 +5093,16 @@
         },
         {
             "name": "lara-zeus/echoo",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/echoo.git",
-                "reference": "0fa35b7ee1e68f409ac42c0edbed3e6b579c73f9"
+                "reference": "c69bdb38561dace6855fa8c591cced7105922be5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/echoo/zipball/0fa35b7ee1e68f409ac42c0edbed3e6b579c73f9",
-                "reference": "0fa35b7ee1e68f409ac42c0edbed3e6b579c73f9",
+                "url": "https://api.github.com/repos/lara-zeus/echoo/zipball/c69bdb38561dace6855fa8c591cced7105922be5",
+                "reference": "c69bdb38561dace6855fa8c591cced7105922be5",
                 "shasum": ""
             },
             "require": {
@@ -5168,7 +5168,7 @@
                 "issues": "https://github.com/lara-zeus/echoo/issues",
                 "source": "https://github.com/lara-zeus/echoo"
             },
-            "time": "2026-07-07T19:25:37+00:00"
+            "time": "2026-07-07T20:36:25+00:00"
         },
         {
             "name": "lara-zeus/filament-locationpickr-field",
