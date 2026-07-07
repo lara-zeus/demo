@@ -21,16 +21,6 @@ class Mark extends Page
 
     protected static ?int $navigationSort = 4;
 
-    public static function getNavigationBadge(): ?string
-    {
-        return 'New';
-    }
-
-    public static function getNavigationBadgeColor(): string | array | null
-    {
-        return 'danger';
-    }
-
     public ?array $data = [];
 
     protected static ?string $navigationLabel = 'Mark';

@@ -29,6 +29,7 @@
         "lara-zeus/core": "^5.0",
         "lara-zeus/delia": "^3.0",
         "lara-zeus/dynamic-dashboard": "^5.0",
+        "lara-zeus/echoo": "^1.0",
         "lara-zeus/filament-locationpickr-field": "^5.0",
         "lara-zeus/filament-plugin-tools": "^3.0",
         "lara-zeus/hades": "^3.0",
