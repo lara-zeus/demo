@@ -8,6 +8,7 @@
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.10",
+        "@tailwindcss/postcss": "^4.1.11",
         "@tailwindcss/typography": "^0.5.16",
         "@tailwindcss/vite": "^4.1.12",
         "autoprefixer": "^10.4.21",
@@ -19,7 +20,12 @@
         "postcss-nesting": "^13.0.0",
         "tailwindcss": "^4.1.12",
         "tippy.js": "^6.3.7",
-        "vite": "7.1.11",
-        "@tailwindcss/postcss": "^4.1.11"
+        "vite": "^7.3.6"
+    },
+    "allowScripts": {
+        "@tailwindcss/oxide@4.1.11": true,
+        "@tailwindcss/oxide@4.1.12": true,
+        "esbuild@0.28.2": true,
+        "fsevents@2.3.3": true
     }
 }

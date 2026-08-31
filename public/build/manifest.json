@@ -1,16 +1,18 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-CkmFR5_U.css",
+    "file": "assets/app-lNSH5vEJ.css",
     "src": "resources/css/app.css",
     "isEntry": true,
+    "name": "app",
     "names": [
       "app.css"
     ]
   },
   "resources/css/filament/admin/theme.css": {
-    "file": "assets/theme-CycnCTPf.css",
+    "file": "assets/theme-B9arOMmv.css",
     "src": "resources/css/filament/admin/theme.css",
     "isEntry": true,
+    "name": "theme",
     "names": [
       "theme.css"
     ]
@@ -19,6 +21,7 @@
     "file": "assets/flag-icons-CCdnE5UO.css",
     "src": "resources/css/flag-icons.css",
     "isEntry": true,
+    "name": "flag-icons",
     "names": [
       "flag-icons.css"
     ]
