@@ -3,7 +3,7 @@
 @import '../../../../vendor/filament/filament/resources/css/theme.css';
 @import '../../../../vendor/archilex/filament-filter-sets/resources/css/plugin.css';
 @import '../../../../vendor/saade/filament-fullcalendar/resources/css/filament-fullcalendar.css';
-@import '../../../../vendor/lara-zeus/akin/resources/css/theme.css';
+/*@import '../../../../vendor/lara-zeus/akin/resources/css/theme.css';*/
 
 @source '../../../../app/Filament';
 @source '../../../../resources/views/filament';
