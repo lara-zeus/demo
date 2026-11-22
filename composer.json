@@ -39,7 +39,7 @@
         "lara-zeus/installer": "^1.0",
         "lara-zeus/laravel-seo": "^2.0",
         "lara-zeus/list-group": "^3.0",
-        "lara-zeus/mark": "dev-filament-5",
+        "lara-zeus/mark": "^3.0",
         "lara-zeus/matrix-choice": "^5.0",
         "lara-zeus/popover": "^3.0",
         "lara-zeus/progress": "^3.0",

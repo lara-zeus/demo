@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b9f4d4a67e81918a85ea2a97cd1a691",
+    "content-hash": "760f4cd530599e99e5d2a5d6249e277c",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -5102,21 +5102,21 @@
         },
         {
             "name": "lara-zeus/dynamic-dashboard",
-            "version": "5.0.0",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/dynamic-dashboard.git",
-                "reference": "d50f504e21dbfe4ed54f56c1556d30511c969f9e"
+                "reference": "19294deb1686e4d5ff3d0668cc761b7bab2d0682"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/dynamic-dashboard/zipball/d50f504e21dbfe4ed54f56c1556d30511c969f9e",
-                "reference": "d50f504e21dbfe4ed54f56c1556d30511c969f9e",
+                "url": "https://api.github.com/repos/lara-zeus/dynamic-dashboard/zipball/19294deb1686e4d5ff3d0668cc761b7bab2d0682",
+                "reference": "19294deb1686e4d5ff3d0668cc761b7bab2d0682",
                 "shasum": ""
             },
             "require": {
                 "lara-zeus/core": "^5.0",
-                "lara-zeus/filament-plugin-tools": "^3.0",
+                "lara-zeus/filament-plugin-tools": "^3.0.3",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -5180,8 +5180,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-16T19:20:53+00:00",
-            "published-time": "2026-04-16T19:21:32+00:00"
+            "time": "2026-11-22T18:44:59+00:00",
+            "published-time": "2026-11-22T18:45:40+00:00"
         },
         {
             "name": "lara-zeus/echoo",
@@ -5330,16 +5330,16 @@
         },
         {
             "name": "lara-zeus/filament-plugin-tools",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/filament-plugin-tools.git",
-                "reference": "eefdfc0708c7aa4b7372f16289c06ec8223ef921"
+                "reference": "68cdb249d09d948ec319220a3dae883f2da63218"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/filament-plugin-tools/zipball/eefdfc0708c7aa4b7372f16289c06ec8223ef921",
-                "reference": "eefdfc0708c7aa4b7372f16289c06ec8223ef921",
+                "url": "https://api.github.com/repos/lara-zeus/filament-plugin-tools/zipball/68cdb249d09d948ec319220a3dae883f2da63218",
+                "reference": "68cdb249d09d948ec319220a3dae883f2da63218",
                 "shasum": ""
             },
             "require": {
@@ -5403,8 +5403,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-16T08:39:52+00:00",
-            "published-time": "2026-04-16T08:40:18+00:00"
+            "time": "2026-11-22T18:31:17+00:00",
+            "published-time": "2026-11-22T18:33:11+00:00"
         },
         {
             "name": "lara-zeus/hades",
@@ -6010,21 +6010,21 @@
         },
         {
             "name": "lara-zeus/mark",
-            "version": "dev-filament-5",
+            "version": "3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/mark.git",
-                "reference": "c744299ddec6621fa497b780e72b55fd5a8d04ff"
+                "reference": "a310531455a38407ba050ea71de7f1721225a950"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/mark/zipball/c744299ddec6621fa497b780e72b55fd5a8d04ff",
-                "reference": "c744299ddec6621fa497b780e72b55fd5a8d04ff",
+                "url": "https://api.github.com/repos/lara-zeus/mark/zipball/a310531455a38407ba050ea71de7f1721225a950",
+                "reference": "a310531455a38407ba050ea71de7f1721225a950",
                 "shasum": ""
             },
             "require": {
                 "filament/filament": "^5.0",
-                "php": "^8.3",
+                "php": "^8.4",
                 "spatie/laravel-package-tools": "^1.18"
             },
             "require-dev": {
@@ -6085,8 +6085,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-07-25T03:09:58+00:00",
-            "published-time": "2026-07-25T03:10:07+00:00"
+            "time": "2026-11-22T19:22:12+00:00",
+            "published-time": "2026-11-22T19:29:22+00:00"
         },
         {
             "name": "lara-zeus/matrix-choice",
@@ -6678,23 +6678,23 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v5.0.1",
+            "version": "v5.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "f9367f5ab37a72e7cba846a965ad79006f57a6f6"
+                "reference": "01b2e2c6a5329b92bc7b2de097069b1bcb03d704"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/f9367f5ab37a72e7cba846a965ad79006f57a6f6",
-                "reference": "f9367f5ab37a72e7cba846a965ad79006f57a6f6",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/01b2e2c6a5329b92bc7b2de097069b1bcb03d704",
+                "reference": "01b2e2c6a5329b92bc7b2de097069b1bcb03d704",
                 "shasum": ""
             },
             "require": {
                 "filament/spatie-laravel-media-library-plugin": "^5.0",
                 "filament/spatie-laravel-tags-plugin": "^5.0",
                 "lara-zeus/core": "^5.0",
-                "lara-zeus/filament-plugin-tools": "^3.0",
+                "lara-zeus/filament-plugin-tools": "^3.0.3",
                 "php": "^8.2",
                 "spatie/laravel-medialibrary": "^11.0",
                 "spatie/laravel-sluggable": "^3.3",
@@ -6759,8 +6759,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-29T19:26:59+00:00",
-            "published-time": "2026-04-29T19:27:33+00:00"
+            "time": "2026-11-22T18:57:43+00:00",
+            "published-time": "2026-11-22T18:58:13+00:00"
         },
         {
             "name": "lara-zeus/spatie-translatable",
@@ -7188,20 +7188,21 @@
         },
         {
             "name": "lara-zeus/wind",
-            "version": "5.0.1",
+            "version": "5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "80e3210b070b5a1c1abf5a900f0b1807420df640"
+                "reference": "f6e9ffeae7b8a29b9a33ce7d1fcae7999190b637"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/80e3210b070b5a1c1abf5a900f0b1807420df640",
-                "reference": "80e3210b070b5a1c1abf5a900f0b1807420df640",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/f6e9ffeae7b8a29b9a33ce7d1fcae7999190b637",
+                "reference": "f6e9ffeae7b8a29b9a33ce7d1fcae7999190b637",
                 "shasum": ""
             },
             "require": {
                 "lara-zeus/core": "^5.0",
+                "lara-zeus/filament-plugin-tools": "^3.0.3",
                 "php": "^8.2"
             },
             "require-dev": {
@@ -7260,8 +7261,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-08T22:10:43+00:00",
-            "published-time": "2026-05-08T22:11:49+00:00"
+            "time": "2026-11-22T18:44:01+00:00",
+            "published-time": "2026-11-22T18:44:50+00:00"
         },
         {
             "name": "laravel/framework",
@@ -19684,7 +19685,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "lara-zeus/mark": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
