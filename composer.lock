@@ -4576,16 +4576,16 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v5.2.0",
+            "version": "v5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "a5edbe40a004fb46565cbd6657e9621366006d7b"
+                "reference": "557a5c0a3a543f8f7c8ad9a27916642776b6d66a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/a5edbe40a004fb46565cbd6657e9621366006d7b",
-                "reference": "a5edbe40a004fb46565cbd6657e9621366006d7b",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/557a5c0a3a543f8f7c8ad9a27916642776b6d66a",
+                "reference": "557a5c0a3a543f8f7c8ad9a27916642776b6d66a",
                 "shasum": ""
             },
             "require": {
@@ -4596,8 +4596,7 @@
                 "lara-zeus/filament-plugin-tools": "^3.0",
                 "lara-zeus/list-group": "^3.0",
                 "lara-zeus/tabler-icons-enum": "^2.0",
-                "php": "^8.4",
-                "voku/anti-xss": "^4.1"
+                "php": "^8.4"
             },
             "require-dev": {
                 "larastan/larastan": "^3.0",
@@ -4666,8 +4665,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-26T04:22:00+00:00",
-            "published-time": "2026-11-26T04:22:15+00:00"
+            "time": "2026-11-27T11:34:04+00:00",
+            "published-time": "2026-11-27T11:34:40+00:00"
         },
         {
             "name": "lara-zeus/bolt-pro",
@@ -4933,21 +4932,21 @@
         },
         {
             "name": "lara-zeus/core",
-            "version": "5.2.1",
+            "version": "5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "da54866107b1259f8ff442cc54560ae0bf382b63"
+                "reference": "0629e5e174707b8ea0838335ce16eb678580f035"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/da54866107b1259f8ff442cc54560ae0bf382b63",
-                "reference": "da54866107b1259f8ff442cc54560ae0bf382b63",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/0629e5e174707b8ea0838335ce16eb678580f035",
+                "reference": "0629e5e174707b8ea0838335ce16eb678580f035",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "filament/filament": "^5.6",
+                "filament/filament": "^5.7",
                 "lara-zeus/laravel-seo": "^2.0",
                 "lara-zeus/spatie-translatable": "^2.0",
                 "php": "^8.2"
@@ -4956,7 +4955,7 @@
                 "larastan/larastan": "^3.0",
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^8.0",
-                "orchestra/testbench": "^10.0",
+                "orchestra/testbench": "^11.0",
                 "pestphp/pest": "^4.0",
                 "pestphp/pest-plugin-arch": "^4.0",
                 "pestphp/pest-plugin-laravel": "^4.0",
@@ -5013,8 +5012,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-26T04:31:48+00:00",
-            "published-time": "2026-11-26T04:32:02+00:00"
+            "time": "2026-11-27T11:25:11+00:00",
+            "published-time": "2026-11-27T11:27:57+00:00"
         },
         {
             "name": "lara-zeus/delia",
@@ -14730,91 +14729,6 @@
             "published-time": "2026-10-14T09:42:25+00:00"
         },
         {
-            "name": "symfony/polyfill-iconv",
-            "version": "v1.43.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-iconv.git",
-                "reference": "254724d95fe01b679cd97d88786e9623ee00bfb7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/254724d95fe01b679cd97d88786e9623ee00bfb7",
-                "reference": "254724d95fe01b679cd97d88786e9623ee00bfb7",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2"
-            },
-            "provide": {
-                "ext-iconv": "*"
-            },
-            "suggest": {
-                "ext-iconv": "For best performance"
-            },
-            "type": "library",
-            "extra": {
-                "thanks": {
-                    "url": "https://github.com/symfony/polyfill",
-                    "name": "symfony/polyfill"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ],
-                "psr-4": {
-                    "Symfony\\Polyfill\\Iconv\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill for the Iconv extension",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "iconv",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-iconv/tree/v1.43.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/nicolas-grekas",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2026-09-29T06:25:14+00:00",
-            "published-time": "2026-09-30T10:23:39+00:00"
-        },
-        {
             "name": "symfony/polyfill-intl-grapheme",
             "version": "v1.43.3",
             "source": {
@@ -15156,72 +15070,6 @@
             ],
             "time": "2026-10-28T09:35:49+00:00",
             "published-time": "2026-10-28T10:07:45+00:00"
-        },
-        {
-            "name": "symfony/polyfill-php72",
-            "version": "v1.31.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php72.git",
-                "reference": "fa2ae56c44f03bed91a39bfc9822e31e7c5c38ce"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/fa2ae56c44f03bed91a39bfc9822e31e7c5c38ce",
-                "reference": "fa2ae56c44f03bed91a39bfc9822e31e7c5c38ce",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2"
-            },
-            "type": "metapackage",
-            "extra": {
-                "thanks": {
-                    "url": "https://github.com/symfony/polyfill",
-                    "name": "symfony/polyfill"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php72/tree/v1.31.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2024-09-09T11:45:10+00:00",
-            "published-time": "2024-09-09T12:24:36+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
@@ -17097,90 +16945,6 @@
             "published-time": "2026-11-23T00:53:39+00:00"
         },
         {
-            "name": "voku/anti-xss",
-            "version": "4.1.50",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/voku/anti-xss.git",
-                "reference": "50c82fd627da92c634bca97e235af71286ecd664"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/voku/anti-xss/zipball/50c82fd627da92c634bca97e235af71286ecd664",
-                "reference": "50c82fd627da92c634bca97e235af71286ecd664",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1.0",
-                "voku/portable-utf8": "~6.1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~7.0 || ~8.0 || ~9.0 || ~10.0 || ~11.0 || ~12.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "voku\\helper\\": "src/voku/helper/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "EllisLab Dev Team",
-                    "homepage": "http://ellislab.com/"
-                },
-                {
-                    "name": "Lars Moelleken",
-                    "email": "lars@moelleken.org",
-                    "homepage": "https://www.moelleken.org/"
-                }
-            ],
-            "description": "anti xss-library",
-            "homepage": "https://github.com/voku/anti-xss",
-            "keywords": [
-                "anti-xss",
-                "clean",
-                "security",
-                "xss"
-            ],
-            "support": {
-                "issues": "https://github.com/voku/anti-xss/issues",
-                "source": "https://github.com/voku/anti-xss/tree/4.1.50"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/moelleken",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/voku",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/anti-xss",
-                    "type": "open_collective"
-                },
-                {
-                    "url": "https://www.patreon.com/voku",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/voku/anti-xss",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2026-11-19T22:24:44+00:00",
-            "published-time": "2026-11-19T22:28:30+00:00"
-        },
-        {
             "name": "voku/portable-ascii",
             "version": "2.1.1",
             "source": {
@@ -17254,106 +17018,6 @@
             ],
             "time": "2026-04-26T05:33:54+00:00",
             "published-time": "2026-04-26T05:43:38+00:00"
-        },
-        {
-            "name": "voku/portable-utf8",
-            "version": "6.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/voku/portable-utf8.git",
-                "reference": "837e32cd4b166320cc3e70e3ffe1ba413e81ee46"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/837e32cd4b166320cc3e70e3ffe1ba413e81ee46",
-                "reference": "837e32cd4b166320cc3e70e3ffe1ba413e81ee46",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1.0",
-                "symfony/polyfill-iconv": "~1.0",
-                "symfony/polyfill-intl-grapheme": "~1.0",
-                "symfony/polyfill-intl-normalizer": "~1.0",
-                "symfony/polyfill-mbstring": "~1.0",
-                "symfony/polyfill-php72": "~1.0",
-                "voku/portable-ascii": "~2.1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~6.0 || ~7.0 || ~8.0 || ~9.0"
-            },
-            "suggest": {
-                "ext-ctype": "Use Ctype for e.g. hexadecimal digit detection",
-                "ext-fileinfo": "Use Fileinfo for better binary file detection",
-                "ext-iconv": "Use iconv for best performance",
-                "ext-intl": "Use Intl for best performance",
-                "ext-json": "Use JSON for string detection",
-                "ext-mbstring": "Use Mbstring for best performance"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ],
-                "psr-4": {
-                    "voku\\": "src/voku/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "(Apache-2.0 or GPL-2.0)"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Hamid Sarfraz",
-                    "homepage": "http://pageconfig.com/"
-                },
-                {
-                    "name": "Lars Moelleken",
-                    "homepage": "http://www.moelleken.org/"
-                }
-            ],
-            "description": "Portable UTF-8 library - performance optimized (unicode) string functions for php.",
-            "homepage": "https://github.com/voku/portable-utf8",
-            "keywords": [
-                "UTF",
-                "clean",
-                "php",
-                "unicode",
-                "utf-8",
-                "utf8"
-            ],
-            "support": {
-                "issues": "https://github.com/voku/portable-utf8/issues",
-                "source": "https://github.com/voku/portable-utf8/tree/6.1.1"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/moelleken",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/voku",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/portable-utf8",
-                    "type": "open_collective"
-                },
-                {
-                    "url": "https://www.patreon.com/voku",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/voku/portable-utf8",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2026-04-17T02:42:01+00:00",
-            "published-time": "2026-04-17T02:42:57+00:00"
         },
         {
             "name": "vormkracht10/laravel-seo-scanner",
